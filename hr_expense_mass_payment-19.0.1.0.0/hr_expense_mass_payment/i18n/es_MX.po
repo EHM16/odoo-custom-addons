@@ -1,0 +1,43 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_expense_mass_payment
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Mass Register Expense Payment"
+msgstr "Pago de gastos de registro masivo"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Register the payments of multiple expenses together."
+msgstr "Registra los pagos de múltiples gastos juntos."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This module allows you to register payments of multiple \n"
+"    expenses at once. This makes the payment and journal posting of \n"
+"    expenses quicker and makes the process more efficient."
+msgstr ""
+"Este módulo le permite registrar pagos de múltiples \n"
+"    gastos a la vez. Esto hace que el pago y la contabilización en el diario de \n"
+"    agiliza los gastos y hace el proceso más eficiente."
+
+#, fuzzy
+#: code:models/hr_expense.py:39
+msgid "You can only generate accounting entries for the approved expense(s)."
+msgstr "Solo puede generar asientos contables para los gastos aprobados."

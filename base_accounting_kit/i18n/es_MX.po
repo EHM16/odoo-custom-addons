@@ -1,0 +1,3384 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_accounting_kit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"\n"
+"                                        Four person modern office workstation\n"
+"                                    "
+msgstr "Estación de trabajo de oficina moderna para cuatro personas"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"\n"
+"                                        Three Seater Sofa with Lounger in Steel\n"
+"                                        Grey Colour\n"
+"                                    "
+msgstr ""
+"Sofá de tres plazas con tumbona en acero\n"
+"                                        Color gris"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid ""
+"\n"
+"                                        Total amount in words: "
+msgstr "Monto total en palabras:"
+
+#, fuzzy
+#: model_terms:report/report_trial_balance_template.xml
+msgid ""
+"\n"
+"                                    All accounts\n"
+"                                "
+msgstr "Todas las cuentas"
+
+#, fuzzy
+#: model_terms:report/account_cash_book_template.xml
+msgid ""
+"\n"
+"                                    All accounts'\n"
+"                                "
+msgstr "Todas las cuentas"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid ""
+"\n"
+"                                    Amount\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Importe\n"
+"                                "
+
+#, fuzzy
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_trial_balance_template.xml
+msgid ""
+"\n"
+"                                    Comparison\n"
+"                                "
+msgstr "Comparación"
+
+#, fuzzy
+#: model_terms:report/account_cash_book_template.xml
+msgid ""
+"\n"
+"                                    Currency\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Moneda\n"
+"                                "
+
+#, fuzzy
+#: model_terms:report/report_trial_balance_template.xml
+msgid ""
+"\n"
+"                                    Variance\n"
+"                                "
+msgstr "Variación"
+
+#, fuzzy
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/report_trial_balance_template.xml
+msgid ""
+"\n"
+"                                    With balance not equal to zero\n"
+"                                "
+msgstr "Con saldo no igual a cero"
+
+#, fuzzy
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/report_trial_balance_template.xml
+msgid ""
+"\n"
+"                                    With movements\n"
+"                                "
+msgstr "Con movimientos"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"\n"
+"                                INV/2020/07/0003\n"
+"                            "
+msgstr "INV/2020/07/0003"
+
+#, fuzzy
+#: model_terms:report/account_cash_book_template.xml
+msgid ""
+"\n"
+"                                Journal and Partner\n"
+"                            "
+msgstr "Revista y socio"
+
+#, fuzzy
+#: code:models/account_journal.py:110
+msgid ""
+"\n"
+"                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
+"                                Nothing to do here!\n"
+"                            </p>\n"
+"                            <p>\n"
+"                                No transactions matching your filters were found.\n"
+"                            </p>\n"
+"                        "
+msgstr ""
+"<p class=\\\"o_view_nocontent_smiling_face\\\">\n"
+"                                ¡Nada que hacer aquí!\n"
+"                            </p>\n"
+"                            <p>\n"
+"                                No se encontraron transacciones que coincidan con sus filtros.\n"
+"                            </p>"
+
+#, fuzzy
+#: model_terms:report/followup_report_templates.xml
+msgid ""
+"\n"
+"                            According to our records, the following invoices are\n"
+"                            still unpaid and now overdue. We kindly ask you to\n"
+"                            arrange payment at your earliest convenience.\n"
+"                        "
+msgstr ""
+"Según nuestros registros, las siguientes facturas son\n"
+"                            todavía impago y ahora vencido. Le pedimos amablemente que\n"
+"                            organizar el pago lo antes posible."
+
+#, fuzzy
+#: model_terms:report/followup_report_templates.xml
+msgid ""
+"\n"
+"                            If payment has already been made, please disregard\n"
+"                            this letter.\n"
+"                        "
+msgstr ""
+"Si ya se ha realizado el pago, ignore\n"
+"                            esta carta."
+
+#, fuzzy
+#: model_terms:report/report_journal_audit_template.xml
+msgid ""
+"\n"
+"                            Journal\n"
+"                        "
+msgstr "Diario"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid ""
+"\n"
+"                        Cancelled Invoice\n"
+"                    "
+msgstr "Factura cancelada"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid ""
+"\n"
+"                        Draft Invoice\n"
+"                    "
+msgstr "Borrador de factura"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid ""
+"\n"
+"                        Invoice\n"
+"                    "
+msgstr "factura"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"\n"
+"                        Please use the following communication for your payment\n"
+"                        :\n"
+"                        "
+msgstr ""
+"Por favor utilice la siguiente comunicación para su pago.\n"
+"                        :"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"\n"
+"                    of\n"
+"                    "
+msgstr "de"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"\n"
+"                    Page:\n"
+"                    "
+msgstr "Página:"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid ""
+"\n"
+"                    Please use the following communication for your payment :\n"
+"                    "
+msgstr "Por favor utilice la siguiente comunicación para su pago:"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+" \n"
+"      Full Accounting Kit for Odoo 19 Community\n"
+"      =========================================\n"
+"      Restores full accounting capabilities to Odoo 19 Community Edition.\n"
+"        * Financial Reports - Profit and Loss, Balance Sheet, General Ledger,\n"
+"          Trial Balance, Partner Ledger, Aged Receivable, Aged Payable,\n"
+"          Cash Flow Statement, Tax Report and Journal Audit (PDF and XLSX export).\n"
+"        * Asset Management - asset creation, depreciation schedules and disposal.\n"
+"        * Budget Management - budgets per analytic account and period.\n"
+"        * Bank statement import and bank reconciliation.\n"
+"        * PDC (Post-Dated Cheque) management.\n"
+"        * Customer follow-ups and recurring payments, odoo19 accounting, odoo19 assets, odoo19 pdc, odoo19 full accounting.\n"
+"    "
+msgstr ""
+" \n"
+"      Full Cuentaing Kit for Odoo 19 Community\n"
+"      =========================================\n"
+"      Restores full accounting capabilities to Odoo 19 Community Edition.\n"
+"        * Financial Reports - Profit and Loss, Balance Sheet, General Ledger,\n"
+"          Trial Balance, Partner Ledger, Aged Receivable, Aged Payable,\n"
+"          Cash Flow Statement, Tax Report and Journal Audit (PDF and XLSX export).\n"
+"        * Asset Management - asset creation, depreciation schedules and disposal.\n"
+"        * Budget Management - budgets per analytic account and period.\n"
+"        * Bank statement import and bank reconciliation.\n"
+"        * PDC (Post-Fechad Cheque) management.\n"
+"        * Cliente follow-ups and recurring payments, odoo19 accounting, odoo19 assets, odoo19 pdc, odoo19 full accounting.\n"
+"    "
+
+#, fuzzy
+#: code:models/account_asset_asset.py:39
+msgid "# Asset Entries"
+msgstr "# Entradas de activos"
+
+#, fuzzy
+#: code:report/account_asset_report.py:41
+msgid "# of Depreciation Lines"
+msgstr "# de líneas de depreciación"
+
+#, fuzzy
+#: code:report/account_asset_report.py:40
+msgid "# of Installment Lines"
+msgstr "# de líneas de pago a plazos"
+
+#, fuzzy
+#: code:models/account_move.py:70
+#: code:models/sale_order.py:45
+msgid "%s is in Blocking Stage and has a due amount of %s %s to pay"
+msgstr "%s está en etapa de bloqueo y tiene un monto adeudado de %s %s para pagar"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:637
+msgid "(copy)"
+msgstr "(copiar)"
+
+#, fuzzy
+#: code:models/account_asset_depreciation_line.py:144
+msgid "(grouped)"
+msgstr "(agrupado)"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"77\n"
+"                                                Santa Barbara\n"
+"                                                Rd"
+msgstr ""
+"77\n"
+"                                                Santa Bárbara\n"
+"                                                Rd"
+
+#, fuzzy
+#: model_terms:report/account_bank_book_template.xml
+msgid ": Bank Book Report"
+msgstr ": Informe del libro bancario"
+
+#, fuzzy
+#: model_terms:report/account_cash_book_template.xml
+msgid ""
+": Cash Book Report\n"
+"                    "
+msgstr ": Informe del libro de caja"
+
+#, fuzzy
+#: model_terms:report/account_day_book_template.xml
+msgid ""
+": Day Book Report\n"
+"                    "
+msgstr ": Informe del libro diario"
+
+#, fuzzy
+#: model_terms:report/general_ledger_report_template.xml
+msgid ": General ledger"
+msgstr ": Libro mayor"
+
+#, fuzzy
+#: model_terms:report/report_trial_balance_template.xml
+msgid ": Trial Balance"
+msgstr ": Saldo de prueba"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"[FURN_8220] Four Person Desk\n"
+"                                        "
+msgstr "[FURN_8220] Escritorio para cuatro personas"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"[FURN_8999] Three-Seat Sofa\n"
+"                                        "
+msgstr "[FURN_8999] Sofá de tres plazas"
+
+#, fuzzy
+#: code:models/res_partner.py:62
+msgid "A warning message will appear once the selected customer is crossed warning amount. Set its value to 0.00 to disable this feature"
+msgstr "Aparecerá un mensaje de advertencia una vez que al cliente seleccionado se le cruce el monto de advertencia. Establezca su valor en 0,00 para desactivar esta función"
+
+#: code:models/account_bank_statement_line.py:36
+#: code:models/account_recurring_invoice.py:236
+#: code:static/src/js/bank_reconcile_form_lines_widget.js
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:report/report_trial_balance_template.xml
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Account"
+msgstr "Cuenta"
+
+#: code:wizard/account_aged_trial_balance.py:33
+msgid "Account Aged Trial balance Report"
+msgstr "Informe de saldo de prueba de la cuenta"
+
+#, fuzzy
+#: code:models/res_company.py:36
+msgid "Account crediting the unrealized foreign-exchange gains."
+msgstr "Cuenta crediting the unrealized foreign-exchange gains."
+
+#, fuzzy
+#: code:wizard/asset_disposal.py:40
+msgid "Account debited with the sale proceeds (e.g. a bank or receivable account)."
+msgstr "Cuenta debited with the sale proceeds (e.g. a bank or receivable account)."
+
+#, fuzzy
+#: code:models/res_company.py:39
+msgid "Account debiting the unrealized foreign-exchange losses."
+msgstr "Cuenta debiting the unrealized foreign-exchange losses."
+
+#, fuzzy
+#: model_terms:views/account_group.xml
+msgid "Account Groups"
+msgstr "Cuenta Groups"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:300
+msgid "Account name is not set"
+msgstr "Cuenta name is not set"
+
+#: model_terms:views/reports_config_view.xml
+msgid "Account Report"
+msgstr "Informe de cuenta"
+
+#: code:wizard/cash_flow_report.py:43
+#: code:wizard/financial_report.py:64
+msgid "Account Reports"
+msgstr "Total de la cuenta Informes de la cuenta"
+
+#: model_terms:report/report_aged_partner_template.xml
+msgid "Account Total"
+msgstr "Total de la cuenta"
+
+#: code:report/report_financial.py:79
+msgid "Account Type"
+msgstr "Tipo de cuenta"
+
+#: code:models/account_asset_asset.py:113
+#: code:models/account_asset_category.py:47
+msgid "Account used in the depreciation entries, to decrease the asset value."
+msgstr "Cuenta utilizada en los asientos de depreciación, para disminuir el valor del activo."
+
+#, fuzzy
+#: code:models/account_asset_asset.py:118
+#: code:models/account_asset_category.py:52
+msgid "Account used in the periodical entries, to record a part of the asset as expense."
+msgstr "Cuenta used in the periodical entries, to record a part of the asset as expense."
+
+#, fuzzy
+#: code:models/account_asset_asset.py:123
+msgid "Account used to book the gain or loss when the asset is sold or scrapped."
+msgstr "Cuenta used to book the gain or loss when the asset is sold or scrapped."
+
+#, fuzzy
+#: code:models/account_asset_category.py:57
+msgid "Account used to record the gain or loss when an asset of this category is sold or scrapped."
+msgstr "Cuenta used to record the gain or loss when an asset of this category is sold or scrapped."
+
+#, fuzzy
+#: code:models/account_asset_asset.py:109
+#: code:models/account_asset_category.py:43
+msgid "Account used to record the purchase of the asset at its original price."
+msgstr "Cuenta used to record the purchase of the asset at its original price."
+
+#: model_terms:views/account_recurring_payments_view.xml
+msgid "Accounting Info"
+msgstr "Información contable"
+
+#: code:wizard/account_fx_revaluation.py:35
+msgid "Accounts"
+msgstr "Cuentas"
+
+#, fuzzy
+#: model_terms:views/res_config_settings_views.xml
+msgid "Accounts and journal used to book unrealized foreign-currency gains/losses."
+msgstr "Cuentas and journal used to book unrealized foreign-currency gains/losses."
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:35
+msgid "Accounts whose open foreign-currency lines are revalued."
+msgstr "Cuentas whose open foreign-currency lines are revalued."
+
+#, fuzzy
+#: code:models/account_asset_asset.py:488
+msgid "Accumulated depreciation"
+msgstr "Depreciación acumulada"
+
+#, fuzzy
+#: code:wizard/account_balance_report.py:36
+msgid "Add a balance column for a second (comparison) period, plus a variance column."
+msgstr "Agregue una columna de saldo para un segundo período (de comparación), más una columna de variación."
+
+#, fuzzy
+#: code:wizard/account_report_general_ledger.py:45
+msgid "Add a column with each account's balance over a second (comparison) period."
+msgstr "Agregue una columna con el saldo de cada cuenta durante un segundo período (de comparación)."
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Add a Transaction"
+msgstr "Agregar una transacción"
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:114
+msgid "Add at least one line before starting '%s'."
+msgstr "Agregue al menos una línea antes de iniciar '%s'."
+
+#, fuzzy
+#: code:models/account_bulk_payment.py:99
+msgid "Add at least one payment to the batch."
+msgstr "Agregue al menos un pago al lote."
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Additional Options"
+msgstr "Opciones adicionales"
+
+#: model_terms:report/report_aged_partner_template.xml
+msgid "Aged Partner Balance"
+msgstr "Saldo de pareja envejecida"
+
+#, fuzzy
+#: model_terms:report/report_trial_balance_template.xml
+msgid ""
+"All\n"
+"                                    Entries\n"
+"                                "
+msgstr ""
+"Todos\n"
+"                                    Entradas"
+
+#, fuzzy
+#: model_terms:report/report_trial_balance_template.xml
+msgid ""
+"All\n"
+"                                    Posted Entries\n"
+"                                "
+msgstr ""
+"Todos\n"
+"                                    Entradas publicadas"
+
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+msgid "All accounts'"
+msgstr "Todas las cuentas"
+
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/cash_flow_report_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_aged_partner_template.xml
+#: model_terms:report/report_financial_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+msgid "All Entries"
+msgstr "Todas las entradas"
+
+#, fuzzy
+#: model_terms:report/account_cash_book_template.xml
+msgid ""
+"All Entries\n"
+"                            "
+msgstr "Todas las entradas"
+
+#, fuzzy
+#: code:models/account_bulk_payment.py:86
+msgid "All payments in the batch must be of type '%s'."
+msgstr "Todos los pagos del lote deben ser del tipo '%s'."
+
+#, fuzzy
+#: code:models/account_bulk_payment.py:82
+msgid "All payments in the batch must use the journal %s."
+msgstr "Todos los pagos del lote deben utilizar el diario %s."
+
+#, fuzzy
+#: code:models/account_bulk_payment.py:91
+msgid "All payments must use the payment method %s."
+msgstr "Todos los pagos deben utilizar el método de pago %s."
+
+#, fuzzy
+#: model_terms:report/account_cash_book_template.xml
+msgid ""
+"All Posted\n"
+"                                Entries\n"
+"                            "
+msgstr ""
+"Todo publicado\n"
+"                                Entradas"
+
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/cash_flow_report_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_aged_partner_template.xml
+#: model_terms:report/report_financial_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+msgid "All Posted Entries"
+msgstr "Todas las entradas publicadas"
+
+#: code:models/account_asset_depreciation_line.py:211
+#: model_terms:report/bulk_payment_report_templates.xml
+#: model_terms:report/multiple_invoice_layouts.xml
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Amount"
+msgstr "Cantidad"
+
+#, fuzzy
+#: code:wizard/asset_revaluation.py:34
+msgid "Amount added to the asset's gross value."
+msgstr "Importe added to the asset's gross value."
+
+#, fuzzy
+#: model_terms:report/followup_report_templates.xml
+#: model_terms:report/multiple_invoice_report_template.xml
+#: model_terms:views/res_partner_views.xml
+msgid "Amount Due"
+msgstr "Importe Due"
+
+#, fuzzy
+#: code:static/src/js/bank_reconcile_form_lines_widget.js
+msgid "Amount in Currency"
+msgstr "Importe in Moneda"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:303
+msgid "Amount is not set"
+msgstr "Importe is not set"
+
+#: code:report/account_asset_report.py:37
+msgid "Amount of Depreciation Lines"
+msgstr "Monto de las líneas de depreciación"
+
+#: code:report/account_asset_report.py:38
+msgid "Amount of Installment Lines"
+msgstr "Cantidad de líneas de pago a plazos"
+
+#: code:models/account_asset_asset.py:106
+#: code:models/account_asset_category.py:40
+#: code:static/src/js/bank_reconcile_form_lines_widget.js
+msgid "Analytic Account"
+msgstr "Cuenta analítica"
+
+#: code:models/account_asset_depreciation_line.py:34
+#: code:report/account_asset_report.py:33
+#: code:wizard/asset_disposal.py:30
+#: code:wizard/asset_revaluation.py:31
+#: model_terms:report/account_asset_report_views.xml
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Asset"
+msgstr "Activo"
+
+#: code:models/account_asset_asset.py:109
+#: code:models/account_asset_category.py:43
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Asset Account"
+msgstr "Cuenta de activos"
+
+#: code:models/account_move_line.py:34
+#: model_terms:report/account_asset_report_views.xml
+#: model_terms:views/account_move_views.xml
+msgid "Asset Category"
+msgstr "Categoría de activo"
+
+#: code:report/account_asset_report.py:34
+#: model_terms:views/account_asset_category_views.xml
+msgid "Asset category"
+msgstr "Categoría de activo"
+
+#: code:models/account_asset_asset.py:382
+msgid "Asset created"
+msgstr "Activo creado"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:414
+msgid "Asset depreciation paused."
+msgstr "La depreciación de los activos se detuvo."
+
+#, fuzzy
+#: code:models/account_asset_asset.py:433
+msgid "Asset depreciation resumed."
+msgstr "Se reanudó la depreciación de los activos."
+
+#, fuzzy
+#: code:models/account_asset_asset.py:492
+msgid "Asset disposal"
+msgstr "Enajenación de activos"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:521
+msgid "Asset disposed. Disposal entry %s posted."
+msgstr "Bien enajenado. Entrada de eliminación %s publicada."
+
+#: model_terms:wizard/asset_modify_views.xml
+msgid "Asset Durations to Modify"
+msgstr "Duraciones de activos para modificar"
+
+#: code:models/account_move_line.py:39
+msgid "Asset End Date"
+msgstr "Fecha de finalización del activo"
+
+#: code:wizard/asset_modify.py:35
+msgid "Asset Method Time"
+msgstr "Tiempo de método de activo"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:52
+#: code:models/account_asset_asset.py:669
+msgid "Asset Model"
+msgstr "Modelo de activos"
+
+#: code:models/account_asset_asset.py:41
+msgid "Asset Name"
+msgstr "Nombre del activo"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:536
+#: code:models/account_asset_asset.py:540
+msgid "Asset revaluation"
+msgstr "Revalorización de activos"
+
+#: code:models/account_move_line.py:36
+msgid "Asset Start Date"
+msgstr "Fecha de inicio del activo"
+
+#: code:models/account_asset_category.py:30
+#: code:models/product_template.py:29
+#: model_terms:views/account_asset_category_views.xml
+msgid "Asset Type"
+msgstr "Tipo de activo"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:549
+msgid "Asset value increased by %s. Revaluation entry %s posted."
+msgstr "El valor del activo aumentó en %s. Se ha publicado la entrada de revalorización %s."
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Assets"
+msgstr "Bienes"
+
+#: model_terms:report/account_asset_report_views.xml
+msgid "Assets Analysis"
+msgstr "Análisis de activos"
+
+#: code:models/account_move.py:40
+msgid "Assets Depreciation Lines"
+msgstr "Líneas de depreciación de activos"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Assets in closed state"
+msgstr "Activos en estado cerrado"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Assets in draft and open states"
+msgstr "Activos en estado de borrador y abiertos"
+
+#: model_terms:report/account_asset_report_views.xml
+msgid "Assets in draft state"
+msgstr "Activos en estado de borrador"
+
+#: model_terms:report/account_asset_report_views.xml
+msgid "Assets in running state"
+msgstr "Activos en funcionamiento"
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:69
+msgid "Auto Post"
+msgstr "Publicación automática"
+
+#: code:models/account_asset_asset.py:130
+#: code:models/account_asset_category.py:85
+msgid "Auto-confirm Assets"
+msgstr "Confirmar activos automáticamente"
+
+#, fuzzy
+#: model_terms:views/account_payment_view.xml
+msgid "Auto-Reconcile"
+msgstr "Conciliación automática"
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:69
+msgid "Automatically post the generated invoices. When disabled the invoices are created as drafts for review."
+msgstr "Contabiliza automáticamente las facturas generadas. Cuando está deshabilitado, las facturas se crean como borradores para su revisión."
+
+#, fuzzy
+#: model_terms:views/account_payment_view.xml
+msgid "Automatically reconcile the selected lines by matching partner + amount, or a reconciliation-model rule."
+msgstr "Concilie automáticamente las líneas seleccionadas haciendo coincidir el socio + el monto, o una regla de modelo de conciliación."
+
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/cash_flow_report_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_financial_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+#: model_terms:report/report_trial_balance_template.xml
+#: model_terms:report/res_partner_templates.xml
+#: model_terms:views/res_partner_views.xml
+msgid "Balance"
+msgstr "Equilibrar"
+
+#, fuzzy
+#: code:models/account_bulk_payment.py:39
+#: model_terms:views/account_bulk_payment_views.xml
+msgid "Bank"
+msgstr "banco"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Bank and Cash"
+msgstr "Banco y efectivo"
+
+#: model_terms:wizard/account_bank_book_report_views.xml
+msgid "Bank Book Report"
+msgstr "Informe del libro bancario"
+
+#: code:models/account_journal.py:99
+msgid "Bank Reconciliation"
+msgstr "Conciliación bancaria"
+
+#: code:models/account_payment.py:31
+#: code:models/account_payment.py:63
+msgid "Bank Reference"
+msgstr "Referencia bancaria"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_views.xml
+msgid "Bank Statement"
+msgstr "Extracto bancario"
+
+#, fuzzy
+#: model_terms:report/bulk_payment_report_templates.xml
+msgid "Bank:"
+msgstr "Banco:"
+
+#: model_terms:report/report_journal_audit_template.xml
+msgid "Base Amount"
+msgstr "Cantidad base"
+
+#, fuzzy
+#: code:models/account_payment.py:68
+msgid "Batch this payment is grouped into for bank processing."
+msgstr "Lote en el que se agrupa este pago para su procesamiento bancario."
+
+#, fuzzy
+#: model_terms:views/res_partner_views.xml
+msgid "Bill Date"
+msgstr "Bill Fecha"
+
+#, fuzzy
+#: model_terms:views/res_partner_views.xml
+msgid "Bill No."
+msgstr "Factura No."
+
+#: code:models/res_partner.py:67
+msgid "Blocking Amount"
+msgstr "Cantidad de bloqueo"
+
+#, fuzzy
+#: code:models/account_journal.py:65
+msgid "Body Text Position"
+msgstr "Posición del texto del cuerpo"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid ""
+"Brings full accounting features back to Odoo 19 Community: financial reports (P&L, Balance Sheet,\n"
+"                  General Ledger, Trial Balance, Partner Ledger, Aged Receivable/Payable), asset management,\n"
+"                  budgets, bank statement import, PDC, and customer follow-ups — everything Community is missing."
+msgstr ""
+"Recupera todas las funciones contables de la comunidad Odoo 19: informes financieros (PyG, balance general,\n"
+"                  Libro mayor, balance de comprobación, libro mayor de socios, antigüedad por cobrar/pagar), gestión de activos,\n"
+"                  presupuestos, importación de extractos bancarios, PDC y seguimiento de clientes: todo lo que le falta a Community."
+
+#, fuzzy
+#: code:models/account_payment.py:68
+#: code:models/account_payment.py:89
+#: model_terms:report/bulk_payment_report_templates.xml
+#: model_terms:views/account_bulk_payment_views.xml
+msgid "Bulk Payment"
+msgstr "Pago al por mayor"
+
+#, fuzzy
+#: model_terms:views/account_bulk_payment_views.xml
+msgid "Bulk Payments"
+msgstr "Pagos al por mayor"
+
+#: model_terms:data/account_financial_report_data.xml
+#: model_terms:views/multiple_invoice_layout_view.xml
+#: model_terms:wizard/account_aged_trial_balance_views.xml
+#: model_terms:wizard/account_bank_book_report_views.xml
+#: model_terms:wizard/account_cash_book_report_views.xml
+#: model_terms:wizard/account_day_book_report_views.xml
+#: model_terms:wizard/account_fx_revaluation_views.xml
+#: model_terms:wizard/account_lock_date_views.xml
+#: model_terms:wizard/asset_depreciation_confirmation_views.xml
+#: model_terms:wizard/asset_disposal_views.xml
+#: model_terms:wizard/asset_modify_views.xml
+#: model_terms:wizard/asset_revaluation_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#, fuzzy
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Cancel Asset"
+msgstr "Cancelar activo"
+
+#, fuzzy
+#: code:models/res_partner.py:67
+msgid "Cannot make sales once the selected customer is crossed blocking amount.Set its value to 0.00 to disable this feature"
+msgstr "No se pueden realizar ventas una vez que el cliente seleccionado haya cruzado el monto de bloqueo. Establezca su valor en 0.00 para deshabilitar esta función."
+
+#: model_terms:wizard/account_cash_book_report_views.xml
+#: model_terms:wizard/account_day_book_report_views.xml
+msgid "Cash Book Report"
+msgstr "Informe del libro de caja"
+
+#: code:wizard/cash_flow_report.py:30
+msgid "Cash Flow Report"
+msgstr "Informe de flujo de caja"
+
+#: code:models/account_account.py:36
+msgid "Cash Flow type"
+msgstr "Tipo de flujo de caja"
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Category"
+msgstr "Categoría"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Category of asset"
+msgstr "Categoría de activo"
+
+#, fuzzy
+#: code:models/account_journal.py:71
+msgid "Center Align Text Position"
+msgstr "Posición del texto de alineación central"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:130
+#: code:models/account_asset_category.py:85
+msgid "Check this if you want to automatically confirm the assets of this category when created by invoices."
+msgstr "Marque esto si desea confirmar automáticamente los activos de esta categoría cuando se crean mediante facturas."
+
+#: code:models/account_asset_asset.py:132
+#: code:models/account_asset_category.py:87
+msgid "Check this if you want to group the generated entries by categories."
+msgstr "Marque esto si desea agrupar las entradas generadas por categorías."
+
+#: code:models/account_payment.py:32
+#: code:models/account_payment.py:64
+msgid "Cheque Reference"
+msgstr "Consultar referencia"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:269
+#: code:wizard/import_bank_statement.py:446
+msgid "Choose correct file"
+msgstr "Elija el archivo correcto"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:42
+msgid "Choose the file to import"
+msgstr "Elige el archivo a importar"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:68
+#: code:models/account_asset_category.py:64
+msgid ""
+"Choose the method to use to compute the amount of depreciation lines.\n"
+"  * Linear: Calculated on basis of: Gross Value / Number of Depreciations\n"
+"  * Degressive: Calculated on basis of: Residual Value * Degressive Factor"
+msgstr ""
+"Elija el método a utilizar para calcular el importe de las líneas de depreciación.\n"
+"  * Lineal: Calculado en base a: Valor Bruto / Número de Depreciaciones\n"
+"  * Degresivo: Calculado en base a: Valor Residual * Factor Degresivo"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:84
+#: code:models/account_asset_category.py:76
+msgid ""
+"Choose the method to use to compute the dates and number of entries.\n"
+"  * Number of Entries: Fix the number of entries and the time between 2 depreciations.\n"
+"  * Ending Date: Choose the time between 2 depreciations and the date the depreciations won't go beyond."
+msgstr ""
+"Choose the method to use to compute the dates and number of entries.\n"
+"  * Number of Entries: Fix the number of entries and the time between 2 depreciations.\n"
+"  * Ending Fecha: Choose the time between 2 depreciations and the date the depreciations won't go beyond."
+
+#, fuzzy
+#: code:wizard/asset_depreciation_confirmation.py:29
+msgid "Choose the period for which you want to automatically post the depreciation lines of running assets"
+msgstr "Elija el período para el cual desea contabilizar automáticamente las líneas de depreciación de los activos en funcionamiento"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Closed"
+msgstr "Cerrado"
+
+#: model_terms:report/report_trial_balance_template.xml
+msgid "Code"
+msgstr "Código"
+
+#: code:wizard/cash_flow_report.py:47
+msgid "Column Label"
+msgstr "Etiqueta de columna"
+
+#, fuzzy
+#: model_terms:report/report_financial_template.xml
+msgid "Comp"
+msgstr "compensación"
+
+#: code:models/account_asset_asset.py:48
+#: code:models/account_asset_category.py:31
+#: code:models/account_common_report.py:38
+#: code:report/account_asset_report.py:45
+#: code:wizard/account_bank_book_report.py:31
+#: code:wizard/account_cash_book_report.py:31
+#: code:wizard/account_day_book_report.py:32
+#: code:wizard/account_lock_date.py:30
+#: model_terms:report/account_asset_report_views.xml
+msgid "Company"
+msgstr "Compañía"
+
+#, fuzzy
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+#: model_terms:report/report_tax_template.xml
+msgid "Company:"
+msgstr "Empresa:"
+
+#: model_terms:wizard/cash_flow_report_views.xml
+msgid "Comparison"
+msgstr "Comparación"
+
+#, fuzzy
+#: code:wizard/account_balance_report.py:41
+#: code:wizard/account_report_general_ledger.py:50
+msgid "Comparison End Date"
+msgstr "Comparison Fecha final"
+
+#, fuzzy
+#: code:wizard/account_balance_report.py:40
+#: code:wizard/account_report_general_ledger.py:49
+msgid "Comparison Start Date"
+msgstr "Comparison Fecha inicial"
+
+#: code:models/account_asset_asset.py:68
+#: code:models/account_asset_category.py:64
+msgid "Computation Method"
+msgstr "Método de cálculo"
+
+#: model_terms:wizard/asset_depreciation_confirmation_views.xml
+msgid "Compute Asset"
+msgstr "Calcular activo"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Compute Depreciation"
+msgstr "Calcular la depreciación"
+
+#, fuzzy
+#: model_terms:views/multiple_invoice_form.xml
+msgid "Configure Copy Layout"
+msgstr "Configurar el diseño de copia"
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:wizard/asset_disposal_views.xml
+#: model_terms:wizard/asset_revaluation_views.xml
+msgid "Confirm"
+msgstr "Confirmar"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Cost of Revenue"
+msgstr "Costo de ingresos"
+
+#, fuzzy
+#: code:static/src/js/action_manager.js
+msgid "Could not download the XLSX report."
+msgstr "No se pudo descargar el informe XLSX."
+
+#, fuzzy
+#: code:wizard/asset_revaluation.py:38
+msgid "Counterpart Account"
+msgstr "Counterpart Cuenta"
+
+#: code:wizard/asset_depreciation_confirmation.py:42
+msgid "Created Asset Moves"
+msgstr "Movimientos de activos creados"
+
+#: code:wizard/asset_depreciation_confirmation.py:42
+msgid "Created Revenue Moves"
+msgstr "Movimientos de ingresos creados"
+
+#: code:static/src/js/bank_reconcile_form_lines_widget.js
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/cash_flow_report_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_financial_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+#: model_terms:report/report_trial_balance_template.xml
+msgid "Credit"
+msgstr "Crédito"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Credit Card"
+msgstr "Tarjeta de crédito"
+
+#: model_terms:views/credit_limit_view.xml
+msgid "Credit Limit"
+msgstr "Límite de crédito"
+
+#: code:models/res_partner.py:76
+msgid "Credit Limit Enabled"
+msgstr "Límite de crédito habilitado"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Credit Note"
+msgstr "Nota de crédito"
+
+#, fuzzy
+#: code:wizard/asset_revaluation.py:38
+msgid "Credited by the revaluation entry (the asset account is debited)."
+msgstr "Abonado por el asiento de revaluación (se carga en la cuenta del activo)."
+
+#: code:models/account_asset_depreciation_line.py:42
+msgid "Cumulative Depreciation"
+msgstr "Depreciación acumulada"
+
+#: code:models/account_asset_asset.py:45
+#: code:models/account_asset_depreciation_line.py:210
+#: code:models/account_recurring_invoice.py:51
+#: code:static/src/js/bank_reconcile_form_lines_widget.js
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+msgid "Currency"
+msgstr "Moneda"
+
+#, fuzzy
+#: code:models/res_partner.py:285
+msgid "currency related to Customer or Vendor"
+msgstr "currency related to Cliente or Proveedor"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Current"
+msgstr "Actual"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Current Assets"
+msgstr "Activos corrientes"
+
+#: code:models/account_asset_depreciation_line.py:38
+msgid "Current Depreciation"
+msgstr "Depreciación actual"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Current Liabilities"
+msgstr "Pasivos corrientes"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Current Year Earnings"
+msgstr "Ganancias del año actual"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Customer Code:"
+msgstr "Cliente Code:"
+
+#: code:models/res_config_settings.py:30
+msgid "Customer Credit Limit"
+msgstr "Límite de crédito del cliente"
+
+#, fuzzy
+#: model_terms:views/res_partner_views.xml
+msgid "Customer Statement"
+msgstr "Cliente Statement"
+
+#: code:models/account_asset_asset.py:55
+#: code:models/account_bulk_payment.py:45
+#: code:static/src/js/bank_reconcile_form_lines_widget.js
+#: code:wizard/asset_revaluation.py:36
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/bulk_payment_report_templates.xml
+#: model_terms:report/followup_report_templates.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+#: model_terms:report/res_partner_templates.xml
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Date"
+msgstr "Fecha"
+
+#: code:wizard/cash_flow_report.py:54
+msgid "Date End"
+msgstr "Fecha fin"
+
+#, fuzzy
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/cash_flow_report_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_financial_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+#: model_terms:report/report_tax_template.xml
+#: model_terms:report/report_trial_balance_template.xml
+msgid "Date from :"
+msgstr "Fecha from :"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Date of asset"
+msgstr "Fecha de activo"
+
+#: model_terms:report/account_asset_report_views.xml
+msgid "Date of asset purchase"
+msgstr "Fecha de compra del activo"
+
+#: model_terms:report/account_asset_report_views.xml
+msgid "Date of depreciation"
+msgstr "Fecha de depreciación"
+
+#: code:wizard/cash_flow_report.py:53
+msgid "Date Start"
+msgstr "Fecha de inicio"
+
+#, fuzzy
+#: code:models/res_partner.py:58
+msgid "Date the last follow-up was sent to this customer."
+msgstr "Fecha the last follow-up was sent to this customer."
+
+#, fuzzy
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/cash_flow_report_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_financial_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+#: model_terms:report/report_tax_template.xml
+#: model_terms:report/report_trial_balance_template.xml
+msgid "Date to :"
+msgstr "Fecha to :"
+
+#, fuzzy
+#: model_terms:report/bulk_payment_report_templates.xml
+msgid "Date:"
+msgstr "Fecha:"
+
+#: model_terms:wizard/cash_flow_report_views.xml
+#: model_terms:wizard/financial_report_views.xml
+msgid "Dates"
+msgstr "fechas"
+
+#: code:models/recurring_payments.py:66
+msgid "Days"
+msgstr "Dias"
+
+#: code:static/src/js/bank_reconcile_form_lines_widget.js
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/cash_flow_report_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_financial_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+#: model_terms:report/report_trial_balance_template.xml
+msgid "Debit"
+msgstr "Débito"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid "Deco Addict"
+msgstr "Adicto a la decoración"
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Deferred Revenue Account"
+msgstr "Cuenta de ingresos diferidos"
+
+#: code:models/product_template.py:33
+#: model_terms:views/account_asset_category_views.xml
+msgid "Deferred Revenue Type"
+msgstr "Tipo de ingresos diferidos"
+
+#: model_terms:views/account_asset_category_views.xml
+msgid "Deferred Revenues"
+msgstr "Ingresos diferidos"
+
+#: code:models/account_asset_asset.py:80
+msgid "Degressive Factor"
+msgstr "Factor degresivo"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Deposits"
+msgstr "Depósitos"
+
+#: code:report/report_financial.py:79
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Depreciation"
+msgstr "Depreciación"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:113
+#: code:models/account_asset_category.py:47
+msgid "Depreciation Account"
+msgstr "Depreciation Cuenta"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Depreciation Board"
+msgstr "Junta de depreciación"
+
+#: code:wizard/asset_modify.py:67
+msgid "Depreciation board modified"
+msgstr "Tablero de depreciación modificado"
+
+#: code:report/account_asset_report.py:32
+msgid "Depreciation Date"
+msgstr "Fecha de depreciación"
+
+#: code:models/account_asset_depreciation_line.py:45
+msgid "Depreciation Entry"
+msgstr "Entrada de depreciación"
+
+#: code:models/account_asset_depreciation_line.py:214
+msgid "Depreciation line posted."
+msgstr "Línea de depreciación contabilizada."
+
+#: code:models/account_asset_asset.py:92
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Depreciation Lines"
+msgstr "Líneas de depreciación"
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Depreciation Method"
+msgstr "Método de depreciación"
+
+#: model_terms:report/account_asset_report_views.xml
+msgid "Depreciation Month"
+msgstr "Mes de depreciación"
+
+#: code:models/account_asset_depreciation_line.py:32
+msgid "Depreciation Name"
+msgstr "Nombre de depreciación"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_views.xml
+msgid "Derived from the transaction lines below."
+msgstr "Derivado de las líneas de transacción a continuación."
+
+#: code:models/account_recurring_invoice.py:232
+#: model_terms:report/multiple_invoice_layouts.xml
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Description"
+msgstr "Descripción"
+
+#: model_terms:views/account_recurring_payments_view.xml
+msgid "Description..."
+msgstr "Descripción..."
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Disc.%"
+msgstr "Desc. %"
+
+#: model_terms:wizard/financial_report_views.xml
+msgid "Discard"
+msgstr "Descarte"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Discuss"
+msgstr "Discutir"
+
+#, fuzzy
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+msgid "Display Account"
+msgstr "Display Cuenta"
+
+#, fuzzy
+#: model_terms:report/report_trial_balance_template.xml
+msgid "Display Account:"
+msgstr "Display Cuenta:"
+
+#: code:report/account_report_common_account.py:30
+#: code:wizard/account_bank_book_report.py:42
+#: code:wizard/account_cash_book_report.py:41
+msgid "Display Accounts"
+msgstr "Mostrar cuentas"
+
+#: code:wizard/cash_flow_report.py:55
+#: code:wizard/financial_report.py:69
+msgid "Display Debit/Credit Columns"
+msgstr "Mostrar columnas de débito / crédito"
+
+#, fuzzy
+#: code:models/account_journal.py:57
+msgid "Display Type"
+msgstr "Tipo de pantalla"
+
+#, fuzzy
+#: code:wizard/asset_disposal.py:36
+msgid "Disposal Date"
+msgstr "Disposal Fecha"
+
+#, fuzzy
+#: code:wizard/asset_disposal.py:53
+msgid "Disposal Entry"
+msgstr "Entrada de eliminación"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:513
+msgid "Disposal of %s"
+msgstr "Eliminación de %s"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:497
+msgid "Disposal proceeds"
+msgstr "Producto de la enajenación"
+
+#, fuzzy
+#: code:wizard/asset_disposal.py:33
+msgid "Disposal Type"
+msgstr "Tipo de eliminación"
+
+#: code:models/account_asset_depreciation_line.py:189
+msgid "Document closed."
+msgstr "Documento cerrado."
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:38
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Document Type"
+msgstr "Tipo de documento"
+
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Done"
+msgstr "Hecho"
+
+#: code:models/recurring_payments.py:73
+#: model_terms:report/account_asset_report_views.xml
+#: model_terms:views/account_bulk_payment_views.xml
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Draft"
+msgstr "Sequía"
+
+#, fuzzy
+#: code:models/account_move.py:33
+#: code:models/sale_order.py:34
+msgid "Due Amount"
+msgstr "Due Importe"
+
+#: model_terms:report/followup_report_templates.xml
+#: model_terms:report/res_partner_templates.xml
+msgid "Due Date"
+msgstr "Fecha de vencimiento"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Due Date:"
+msgstr "Due Fecha:"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_views.xml
+msgid "e.g. BNK/2026/06"
+msgstr "por ej. BNK/2026/06"
+
+#: model_terms:views/account_asset_category_views.xml
+msgid "e.g. Computers"
+msgstr "p.ej. Ordenadores"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "e.g. Laptop iBook"
+msgstr "p.ej. IBook portátil"
+
+#, fuzzy
+#: code:models/account_payment.py:33
+#: code:models/account_payment.py:65
+msgid "Effective date of PDC"
+msgstr "Fecha de vigencia del PDC"
+
+#, fuzzy
+#: code:models/followup_line.py:43
+msgid "Email Template"
+msgstr "Plantilla de correo electrónico"
+
+#, fuzzy
+#: code:wizard/account_balance_report.py:36
+#: code:wizard/account_report_general_ledger.py:45
+#: code:wizard/cash_flow_report.py:42
+#: code:wizard/financial_report.py:61
+msgid "Enable Comparison"
+msgstr "Habilitar comparación"
+
+#, fuzzy
+#: model_terms:views/res_config_settings_views.xml
+msgid "Enable credit limit for customers"
+msgstr "Habilitar límite de crédito para clientes"
+
+#: code:models/account_common_report.py:49
+#: code:models/account_recurring_invoice.py:67
+#: code:wizard/account_bank_book_report.py:40
+#: code:wizard/account_cash_book_report.py:39
+#: code:wizard/account_day_book_report.py:50
+msgid "End Date"
+msgstr "Fecha final"
+
+#: code:models/account_asset_asset.py:79
+msgid "Ending Date"
+msgstr "Fecha de finalización"
+
+#: code:wizard/asset_modify.py:32
+msgid "Ending date"
+msgstr "Fecha de finalización"
+
+#, fuzzy
+#: model_terms:report/report_journal_audit_template.xml
+msgid "Entries Sorted By:"
+msgstr "Entradas ordenadas por:"
+
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+msgid "Entry Label"
+msgstr "Etiqueta de entrada"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Equity"
+msgstr "Equidad"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:398
+msgid "Error parsing QIF file: %s"
+msgstr "Error al analizar el archivo QIF: %s"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:113
+msgid "Error reading CSV file: %s"
+msgstr "Error al leer el archivo CSV: %s"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:118
+#: code:models/account_asset_category.py:52
+msgid "Expense Account"
+msgstr "Expense Cuenta"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Expenses"
+msgstr "Gastos"
+
+#, fuzzy
+#: model_terms:data/account_financial_report_data.xml
+#: model_terms:wizard/account_aged_trial_balance_views.xml
+#: model_terms:wizard/account_bank_book_report_views.xml
+#: model_terms:wizard/account_cash_book_report_views.xml
+#: model_terms:wizard/account_day_book_report_views.xml
+#: model_terms:wizard/financial_report_views.xml
+msgid "Export XLSX"
+msgstr "Exportar XLSX"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:42
+msgid "File"
+msgstr "Archivo"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:44
+msgid "File Name"
+msgstr "File Nombre"
+
+#: code:wizard/cash_flow_report.py:50
+msgid "Filter by"
+msgstr "Filtrado por"
+
+#: code:wizard/financial_report.py:31
+msgid "Financial Report"
+msgstr "Informe financiero"
+
+#, fuzzy
+#: model_terms:views/res_config_settings_views.xml
+msgid "Fiscal Year"
+msgstr "Año fiscal"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Fixed Assets"
+msgstr "Activos fijos"
+
+#: model_terms:views/account_followup.xml
+msgid "Follow-up"
+msgstr "Seguimiento"
+
+#, fuzzy
+#: code:models/res_partner.py:209
+msgid "Follow-up '%s' sent to %s."
+msgstr "Seguimiento '%s' enviado a %s."
+
+#, fuzzy
+#: code:models/res_partner.py:55
+msgid "Follow-up Level"
+msgstr "Nivel de seguimiento"
+
+#: model_terms:views/followup_report.xml
+msgid "Follow-up Reports Tree View"
+msgstr "Vista de árbol de informes de seguimiento"
+
+#, fuzzy
+#: code:models/res_partner.py:219
+msgid "Follow-up sent."
+msgstr "Seguimiento enviado."
+
+#: model_terms:views/followup_line_views.xml
+msgid "Follow-up Steps"
+msgstr "Pasos de seguimiento"
+
+#: code:models/res_partner.py:49
+msgid "Followup status"
+msgstr "Estado de seguimiento"
+
+#, fuzzy
+#: code:report/report_financial.py:105
+msgid "For accounts that are typically more debited than credited and that you would like to print as negative amounts in your reports, you should reverse the sign of the balance; e.g.: Expense account. The same applies for accounts that are typically more credited than debited and that you would like to print as positive amounts in your reports; e.g.: Income account."
+msgstr "Para las cuentas que normalmente tienen más cargos que créditos y que le gustaría imprimir como montos negativos en sus informes, debe invertir el signo del saldo; Ej.: Cuenta de gastos. Lo mismo se aplica a las cuentas en las que normalmente se acredita más que se debita y que le gustaría imprimir como montos positivos en sus informes; Ej.: Cuenta de ingresos."
+
+#, fuzzy
+#: model_terms:views/res_config_settings_views.xml
+#: model_terms:wizard/account_fx_revaluation_views.xml
+msgid "Foreign Currency Revaluation"
+msgstr "Foreign Moneda Revaluation"
+
+#, fuzzy
+#: code:report/account_bank_book.py:140
+#: code:report/account_cash_book.py:182
+#: code:report/account_day_book.py:85
+#: code:report/cash_flow_report.py:202
+#: code:report/general_ledger_report.py:155
+#: code:report/report_aged_partner.py:268
+#: code:report/report_journal_audit.py:137
+#: code:report/report_partner_ledger.py:106
+#: code:report/report_tax.py:35
+#: code:report/report_trial_balance.py:94
+msgid "Form content is missing, this report cannot be printed."
+msgstr "Falta el contenido del formulario, este informe no se puede imprimir."
+
+#: code:wizard/financial_report.py:33
+msgid "Format"
+msgstr "Formato"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:106
+#: code:wizard/account_fx_revaluation.py:115
+msgid "FX revaluation"
+msgstr "Revaluación de divisas"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:125
+msgid "FX revaluation - %s"
+msgstr "Revaluación de divisas - %s"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:138
+msgid "FX Revaluation Entries"
+msgstr "Entradas de revaluación de divisas"
+
+#, fuzzy
+#: code:models/res_company.py:32
+msgid "FX Revaluation Journal"
+msgstr "Diario de revaluación de divisas"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:504
+msgid "Gain on disposal"
+msgstr "Ganancia por disposición"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:123
+#: code:models/account_asset_category.py:57
+msgid "Gain/Loss Account"
+msgstr "Gain/Loss Cuenta"
+
+#: code:wizard/account_report_general_ledger.py:31
+msgid "General Ledger"
+msgstr "Libro mayor"
+
+#: model_terms:wizard/asset_depreciation_confirmation_views.xml
+msgid "Generate Entries"
+msgstr "Generar entradas"
+
+#: code:models/recurring_payments.py:76
+msgid "Generate Journal As"
+msgstr "Generar diario como"
+
+#, fuzzy
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Generate Now"
+msgstr "Generar ahora"
+
+#, fuzzy
+#: code:models/followup_line.py:32
+msgid "Gives the sequence order when displaying a list of follow-up lines."
+msgstr "Da el orden de secuencia al mostrar una lista de líneas de seguimiento."
+
+#: code:report/account_asset_report.py:42
+msgid "Gross Amount"
+msgstr "Cantidad bruta"
+
+#: code:models/account_asset_asset.py:43
+msgid "Gross Value"
+msgstr "Valor bruto"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Gross value of asset"
+msgstr "Valor bruto del activo"
+
+#: code:models/account_asset_asset.py:132
+#: code:models/account_asset_category.py:87
+msgid "Group Journal Entries"
+msgstr "Entradas de diario de grupo"
+
+#, fuzzy
+#: code:models/account_move.py:31
+#: code:models/sale_order.py:32
+msgid "Has due"
+msgstr "tiene debido"
+
+#, fuzzy
+#: code:models/account_recurring_entries_line.py:33
+msgid "id"
+msgstr "identificación"
+
+#, fuzzy
+#: code:models/account_move.py:43
+msgid "If this checkbox is ticked, it means that the user was not sure of all the related information at the time of the creation of the move and that the move needs to be checked again."
+msgstr "Si esta casilla de verificación está marcada, significa que el usuario no estaba seguro de toda la información relacionada en el momento de la creación del movimiento y que es necesario verificar el movimiento nuevamente."
+
+#, fuzzy
+#: code:wizard/account_bank_book_report.py:49
+#: code:wizard/account_cash_book_report.py:49
+#: code:wizard/account_report_general_ledger.py:32
+msgid "If you selected date, this field allow you to add a row to display the amount of debit/credit/balance that precedes the filter you've set."
+msgstr "Si seleccionó la fecha, este campo le permite agregar una fila para mostrar el monto de débito/crédito/saldo que precede al filtro que ha configurado."
+
+#, fuzzy
+#: model_terms:wizard/import_bank_statement_views.xml
+msgid "IMPORT"
+msgstr "IMPORTAR"
+
+#, fuzzy
+#: model_terms:wizard/import_bank_statement_views.xml
+msgid "Import bank statement in CSV or XLSX format"
+msgstr "Importar extracto bancario en formato CSV o XLSX"
+
+#: model_terms:views/followup_report.xml
+msgid "In need of action"
+msgstr "Necesito acción"
+
+#, fuzzy
+#: code:models/account_payment.py:134
+msgid "In order to print multiple checks at once, they must belong to the same bank journal."
+msgstr "Para poder imprimir varios cheques a la vez, deben pertenecer al mismo diario bancario."
+
+#: code:wizard/account_bank_book_report.py:49
+#: code:wizard/account_cash_book_report.py:49
+#: code:wizard/account_report_general_ledger.py:32
+msgid "Include Initial Balances"
+msgstr "Incluir saldos iniciales"
+
+#: code:report/report_financial.py:79
+msgid "Income"
+msgstr "Ingresos"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Incoterm:"
+msgstr "Incoterm:"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:90
+msgid "Indicates that the first depreciation entry for this asset have to be done from the purchase date instead of the first January / Start date of fiscal year"
+msgstr "Indica que el primer asiento de depreciación para este activo debe realizarse a partir de la fecha de compra en lugar del primer enero/fecha de inicio del año fiscal."
+
+#, fuzzy
+#: code:models/account_asset_category.py:83
+msgid "Indicates that the first depreciation entry for this asset have to be done from the purchase date instead of the first of January"
+msgstr "Indica que el primer asiento de depreciación de este activo debe realizarse a partir de la fecha de compra en lugar del primero de enero."
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid "INV/2020/07/0003"
+msgstr "INV/2020/07/0003"
+
+#, fuzzy
+#: code:models/account_bank_statement_line.py:46
+msgid "Invalid"
+msgstr "Inválido"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Invalid Statement"
+msgstr "Declaración no válida"
+
+#: code:models/account_asset_asset.py:99
+#: model_terms:report/followup_report_templates.xml
+#: model_terms:report/multiple_invoice_layouts.xml
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Invoice"
+msgstr "Factura"
+
+#, fuzzy
+#: code:models/multiple_invoice.py:32
+msgid "Invoice Copy Name"
+msgstr "Invoice Copy Nombre"
+
+#, fuzzy
+#: model_terms:views/res_partner_views.xml
+msgid "Invoice Date"
+msgstr "Invoice Fecha"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Invoice Date:"
+msgstr "Invoice Fecha:"
+
+#: code:models/res_partner.py:37
+#: model_terms:views/followup_report.xml
+msgid "Invoice Details"
+msgstr "Detalles de la factura"
+
+#, fuzzy
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Invoice Lines"
+msgstr "Líneas de factura"
+
+#, fuzzy
+#: model_terms:views/res_partner_views.xml
+msgid "Invoice No."
+msgstr "Factura No."
+
+#, fuzzy
+#: model_terms:report/res_partner_templates.xml
+msgid "Invoice/Bill Number"
+msgstr "Número de factura/factura"
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:204
+#: code:models/account_recurring_invoice.py:76
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Invoices"
+msgstr "Facturas"
+
+#, fuzzy
+#: model_terms:report/res_partner_templates.xml
+msgid "Invoices/Debit"
+msgstr "Facturas/Débito"
+
+#, fuzzy
+#: code:models/account_move.py:32
+#: code:models/sale_order.py:33
+msgid "Is warning"
+msgstr "es advertencia"
+
+#, fuzzy
+#: code:wizard/account_report_partner_ledger.py:31
+msgid "It adds the currency column on report if the currency differs from the company currency."
+msgstr "Agrega la columna de moneda en el informe si la moneda difiere de la moneda de la empresa."
+
+#, fuzzy
+#: code:models/account_asset_asset.py:96
+msgid "It is the amount you plan to have that you cannot depreciate."
+msgstr "Es la cantidad que planeas tener y que no puedes depreciar."
+
+#, fuzzy
+#: model_terms:views/res_config_settings_views.xml
+msgid "It will record the cost of good sold"
+msgstr "Registrará el costo del bien vendido."
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Items"
+msgstr "Artículos"
+
+#: code:models/account_asset_asset.py:128
+#: code:models/account_asset_category.py:62
+#: code:models/account_recurring_invoice.py:44
+#: code:models/multiple_invoice.py:33
+#: code:models/multiple_invoice_layout.py:46
+#: code:wizard/account_fx_revaluation.py:38
+msgid "Journal"
+msgstr "Diario"
+
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+msgid "Journal and Partner"
+msgstr "Diario y compañero"
+
+#, fuzzy
+#: code:wizard/account_print_journal.py:30
+msgid "Journal Audit"
+msgstr "Auditoría de revista"
+
+#: code:models/account_asset_asset.py:657
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Journal Entries"
+msgstr "Entradas de diario"
+
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#: model_terms:report/report_journal_audit_template.xml
+msgid "Journal Entry Number"
+msgstr "Número de asiento"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:45
+msgid "Journal ID"
+msgstr "ID de diario"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:45
+msgid "Journal in which the file importing"
+msgstr "Diario en el que se importa el archivo"
+
+#, fuzzy
+#: code:models/res_company.py:32
+msgid "Journal used for foreign-currency revaluation entries."
+msgstr "Diario utilizado para asientos de revaluación de moneda extranjera."
+
+#, fuzzy
+#: model_terms:report/report_journal_audit_template.xml
+msgid "Journal:"
+msgstr "Diario:"
+
+#: code:models/account_common_report.py:41
+#: code:wizard/account_aged_trial_balance.py:35
+#: code:wizard/account_balance_report.py:31
+#: code:wizard/account_bank_book_report.py:67
+#: code:wizard/account_cash_book_report.py:65
+#: code:wizard/account_day_book_report.py:35
+#: code:wizard/account_print_journal.py:34
+#: code:wizard/account_report_general_ledger.py:41
+msgid "Journals"
+msgstr "Diarios contables"
+
+#, fuzzy
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+msgid "Journals:"
+msgstr "Revistas:"
+
+#, fuzzy
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+msgid "JRNL"
+msgstr "JNL"
+
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:views/account_bank_statement_line_views.xml
+#: model_terms:views/account_bank_statement_views.xml
+msgid "Label"
+msgstr "Etiqueta"
+
+#, fuzzy
+#: model_terms:views/res_config_settings_views.xml
+msgid "Last Day"
+msgstr "último día"
+
+#, fuzzy
+#: code:models/res_partner.py:55
+msgid "Last follow-up level applied to this customer."
+msgstr "Último nivel de seguimiento aplicado a este cliente."
+
+#, fuzzy
+#: code:models/res_partner.py:58
+msgid "Latest Follow-up"
+msgstr "Último seguimiento"
+
+#, fuzzy
+#: code:models/account_journal.py:76
+msgid "Layout"
+msgstr "Diseño"
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:44
+msgid "Leave empty to use the default journal for the document type."
+msgstr "Déjelo vacío para utilizar el diario predeterminado para el tipo de documento."
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:236
+msgid "Leave empty to use the product/journal default account."
+msgstr "Déjelo vacío para usar la cuenta predeterminada del producto/revista."
+
+#: code:report/report_financial.py:62
+msgid "Level"
+msgstr "Nivel"
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:54
+msgid "Lines"
+msgstr "Líneas"
+
+#, fuzzy
+#: code:models/account_bank_statement_line.py:35
+msgid "Lines Widget"
+msgstr "Widget de líneas"
+
+#: code:models/account_asset_depreciation_line.py:46
+msgid "Linked"
+msgstr "Vinculado"
+
+#, fuzzy
+#: code:wizard/account_lock_date.py:34
+msgid "Lock Everyone"
+msgstr "Bloquear a todos"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid "Logo"
+msgstr "Logotipo"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:509
+msgid "Loss on disposal"
+msgstr "Pérdida por disposición"
+
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Manual Operations"
+msgstr "Operaciones manuales"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Match Existing Entries"
+msgstr "Coincidir con entradas existentes"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Matched"
+msgstr "emparejado"
+
+#, fuzzy
+#: code:models/account_payment.py:105
+msgid "Matching"
+msgstr "Coincidencia"
+
+#, fuzzy
+#: code:models/account_bank_statement_line.py:41
+msgid "MatchRowData"
+msgstr "MatchRowData"
+
+#, fuzzy
+#: model_terms:report/bulk_payment_report_templates.xml
+msgid "Memo"
+msgstr "Nota"
+
+#: model_terms:wizard/asset_modify_views.xml
+msgid "Modify"
+msgstr "Modificar"
+
+#: model_terms:wizard/asset_modify_views.xml
+msgid "Modify Asset"
+msgstr "Modificar activo"
+
+#, fuzzy
+#: model_terms:wizard/asset_revaluation_views.xml
+msgid "Modify Asset Value"
+msgstr "Modificar el valor del activo"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Modify Depreciation"
+msgstr "Modificar depreciación"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:459
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Modify Value"
+msgstr "Modificar valor"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Month"
+msgstr "Mes"
+
+#: code:models/account_move_line.py:42
+msgid "Monthly Recurring Revenue"
+msgstr "Ingresos recurrentes mensuales"
+
+#: code:models/recurring_payments.py:66
+msgid "Months"
+msgstr "Meses"
+
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+msgid "Move"
+msgstr "Moverse"
+
+#, fuzzy
+#: code:models/account_journal.py:54
+msgid "Multiple Invoice"
+msgstr "Factura múltiple"
+
+#, fuzzy
+#: model_terms:views/multiple_invoice_form.xml
+msgid "Multiple Invoice Copies"
+msgstr "Varias copias de facturas"
+
+#: code:models/recurring_payments.py:54
+#: model_terms:report/cash_flow_report_template.xml
+#: model_terms:report/report_financial_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+msgid "Name"
+msgstr "Nombre"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:44
+msgid "Name of the file"
+msgstr "Nombre of the file"
+
+#: model_terms:report/report_tax_template.xml
+msgid "Net"
+msgstr "Neto"
+
+#: code:models/account_bulk_payment.py:35
+#: code:models/account_bulk_payment.py:71
+#: code:models/account_bulk_payment.py:73
+#: code:models/account_recurring_invoice.py:100
+#: code:models/account_recurring_invoice.py:102
+#: code:models/account_recurring_invoice.py:37
+msgid "New"
+msgstr "Nuevo"
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:65
+msgid "Next Invoice Date"
+msgstr "Next Invoice Fecha"
+
+#: code:models/account_asset_depreciation_line.py:40
+msgid "Next Period Depreciation"
+msgstr "Depreciación del siguiente período"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:334
+msgid "No account information found in OFX file."
+msgstr "No se encontró información de cuenta en el archivo OFX."
+
+#: model_terms:views/followup_report.xml
+msgid "No action needed"
+msgstr "No se necesita acción"
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:189
+msgid "No invoice is due for '%s' yet."
+msgstr "Aún no se debe pagar ninguna factura por '%s'."
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:67
+msgid "No invoices are generated past this date."
+msgstr "No se generan facturas después de esta fecha."
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:98
+msgid "No open foreign-currency balances to revalue on %s."
+msgstr "No hay saldos abiertos en moneda extranjera para revaluar en %s."
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "No Statement"
+msgstr "Sin declaración"
+
+#, fuzzy
+#: code:wizard/account_lock_date.py:34
+msgid "No users, including Advisers, can edit accounts prior to and inclusive of this date. Use it for fiscal year locking for example."
+msgstr "Ningún usuario, incluidos los Asesores, puede editar cuentas antes e inclusive de esta fecha. Úselo para bloquear el año fiscal, por ejemplo."
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:382
+msgid "No valid transactions found in the OFX file."
+msgstr "No se encontraron transacciones válidas en el archivo OFX."
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:436
+msgid "No valid transactions found in the QIF file."
+msgstr "No se encontraron transacciones válidas en el archivo QIF."
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Non-current Assets"
+msgstr "Activos no corrientes"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Non-current Liabilities"
+msgstr "Pasivos no corrientes"
+
+#: model_terms:report/account_asset_report_views.xml
+msgid "Not archived"
+msgstr "No archivado"
+
+#, fuzzy
+#: model_terms:report/report_aged_partner_template.xml
+msgid "Not due"
+msgstr "no debido"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Not Matched"
+msgstr "No coincidente"
+
+#: model_terms:views/account_bank_statement_line_views.xml
+#: model_terms:views/account_payment_view.xml
+msgid "Notes"
+msgstr "Notas"
+
+#: code:models/account_asset_asset.py:73
+#: code:models/account_asset_category.py:70
+#: code:wizard/asset_modify.py:30
+msgid "Number of Depreciations"
+msgstr "Número de depreciaciones"
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Number of Entries"
+msgstr "Número de entradas"
+
+#: code:models/account_asset_asset.py:76
+msgid "Number of Months in a Period"
+msgstr "Número de meses en un período"
+
+#, fuzzy
+#: model_terms:static/src/xml/bank_rec_widget.xml
+msgid "o_kanban_renderer o_custom_class"
+msgstr "o_kanban_renderer o_custom_class"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Odoo 19 Accounting for Community : Financial Report, PDC, Assets, Bank Reconciliation, Lock Dates"
+msgstr "Odoo 19 Cuentaing for Community : Financial Report, PDC, Assets, Bank Reconciliation, Lock Fechas"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Off-Balance Sheet"
+msgstr "Fuera de balance"
+
+#, fuzzy
+#: code:models/followup_line.py:48
+msgid "Offer a printable reminder letter (PDF) at this level."
+msgstr "Ofrezca una carta recordatoria imprimible (PDF) en este nivel."
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "One Entry Every"
+msgstr "Una entrada cada"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:530
+msgid "Only a running asset can be revaluated."
+msgstr "Sólo se puede revaluar un activo fijo."
+
+#, fuzzy
+#: model_terms:views/account_move_line_views.xml
+msgid "Open Amount"
+msgstr "Open Importe"
+
+#, fuzzy
+#: model_terms:views/account_move_line_views.xml
+msgid "Open Amount In Currency"
+msgstr "Open Importe In Moneda"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Other Income"
+msgstr "Otros ingresos"
+
+#: model_terms:views/account_recurring_payments_view.xml
+msgid "Other Info"
+msgstr "Otra información"
+
+#: model_terms:views/followup_report.xml
+msgid "Overdue Invoices"
+msgstr "Facturas vencidas"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Paid on"
+msgstr "Pagado en"
+
+#: model_terms:views/reports_config_view.xml
+msgid "Parent Report"
+msgstr "Informe de padres"
+
+#: code:models/account_asset_asset.py:67
+#: code:models/account_asset_depreciation_line.py:213
+#: code:models/account_recurring_invoice.py:42
+#: code:report/account_asset_report.py:35
+#: code:static/src/js/bank_reconcile_form_lines_widget.js
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/bulk_payment_report_templates.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:views/account_bank_statement_line_views.xml
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Partner"
+msgstr "Compañero"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:236
+msgid "Partner '%s' does not exist"
+msgstr "El socio '%s' no existe"
+
+#, fuzzy
+#: code:models/res_partner.py:281
+msgid "Partner Bills related to Vendor"
+msgstr "Partner Bills related to Proveedor"
+
+#, fuzzy
+#: code:models/res_partner.py:277
+msgid "Partner Invoices related to Customer"
+msgstr "Partner Invoices related to Cliente"
+
+#: model_terms:report/report_partner_ledger_template.xml
+msgid "Partner Ledger"
+msgstr "Libro mayor de socios"
+
+#: code:wizard/account_report_partner_ledger.py:30
+msgid "Partner Ledger Report"
+msgstr "Informe del libro mayor de socios"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:296
+msgid "Partner not exist"
+msgstr "El socio no existe"
+
+#: code:wizard/account_common_partner_report.py:30
+msgid "Partner's"
+msgstr "Socios"
+
+#, fuzzy
+#: model_terms:report/report_aged_partner_template.xml
+msgid "Partner's:"
+msgstr "Socios:"
+
+#: model_terms:report/report_aged_partner_template.xml
+msgid "Partners"
+msgstr "Socios"
+
+#, fuzzy
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Pause"
+msgstr "Pausa"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:65
+msgid "Paused On"
+msgstr "En pausa"
+
+#: code:models/recurring_payments.py:82
+msgid "Pay Directly"
+msgstr "Pagar directamente"
+
+#: code:models/recurring_payments.py:82
+msgid "Pay Later"
+msgstr "Paga después"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Payable"
+msgstr "por pagar"
+
+#: model_terms:report/report_aged_partner_template.xml
+msgid "Payable Accounts"
+msgstr "Cuentas por pagar"
+
+#, fuzzy
+#: model_terms:report/bulk_payment_report_templates.xml
+msgid "Payment"
+msgstr "Pago"
+
+#, fuzzy
+#: code:models/account_bulk_payment.py:42
+msgid "Payment Method"
+msgstr "Método de pago"
+
+#, fuzzy
+#: model_terms:report/followup_report_templates.xml
+msgid "Payment Reminder"
+msgstr "Recordatorio de pago"
+
+#, fuzzy
+#: model_terms:report/res_partner_templates.xml
+msgid "Payment Statement Report"
+msgstr "Informe de estado de cuenta de pago"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid "Payment terms: 300 Days"
+msgstr "Condiciones de pago: 300 días"
+
+#: code:models/account_bulk_payment.py:114
+#: code:models/account_bulk_payment.py:50
+#: model_terms:views/account_bank_statement_line_views.xml
+#: model_terms:views/account_bulk_payment_views.xml
+msgid "Payments"
+msgstr "Pagos"
+
+#, fuzzy
+#: code:models/account_payment.py:129
+msgid "Payments to print as a checks must have 'Check' or 'PDC' selected as payment method and not have already been sent"
+msgstr "Los pagos para imprimir como cheques deben tener seleccionado \"Cheque\" o \"PDC\" como método de pago y no haberse enviado ya."
+
+#: code:models/account_payment.py:102
+msgid "Payments without a customer can't be matched"
+msgstr "Los pagos sin un cliente no se pueden igualar"
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:59
+msgid "Period"
+msgstr "Periodo"
+
+#: code:models/account_asset_category.py:72
+#: code:wizard/asset_modify.py:31
+msgid "Period Length"
+msgstr "Duración del período"
+
+#: code:wizard/account_aged_trial_balance.py:37
+#: model_terms:report/report_aged_partner_template.xml
+msgid "Period Length (days)"
+msgstr "Duración del período (días)"
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Periodicity"
+msgstr "Periodicidad"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"Pleasant Hill CA 94523\n"
+"                                                "
+msgstr "Pleasant Hill CA 94523"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:46
+msgid "Post a reversal entry the day after the revaluation date (unrealized amounts are reversed next period)."
+msgstr "Registre una entrada de reversión el día después de la fecha de revaluación (los montos no realizados se revierten en el siguiente período)."
+
+#: code:models/account_asset_depreciation_line.py:48
+#: code:models/recurring_payments.py:76
+#: code:report/account_asset_report.py:39
+#: model_terms:report/account_asset_report_views.xml
+msgid "Posted"
+msgstr "Al corriente"
+
+#: code:report/account_asset_report.py:43
+msgid "Posted Amount"
+msgstr "Importe contabilizado"
+
+#: model_terms:report/account_asset_report_views.xml
+msgid "Posted depreciation lines"
+msgstr "Líneas de depreciación contabilizadas"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Prepayments"
+msgstr "Prepagos"
+
+#, fuzzy
+#: code:wizard/account_lock_date.py:33
+msgid "Prevents creating and modifying bills up to the date."
+msgstr "Impide crear y modificar facturas al día."
+
+#, fuzzy
+#: code:wizard/account_lock_date.py:32
+msgid "Prevents creating and modifying invoices up to the date."
+msgstr "Impide crear y modificar facturas al día."
+
+#, fuzzy
+#: code:models/account_asset_category.py:34
+msgid "Price"
+msgstr "Precio"
+
+#: model_terms:data/account_financial_report_data.xml
+#: model_terms:views/account_bulk_payment_views.xml
+#: model_terms:wizard/account_aged_trial_balance_views.xml
+#: model_terms:wizard/account_bank_book_report_views.xml
+#: model_terms:wizard/account_cash_book_report_views.xml
+#: model_terms:wizard/account_day_book_report_views.xml
+#: model_terms:wizard/financial_report_views.xml
+msgid "Print"
+msgstr "Impresión"
+
+#, fuzzy
+#: code:models/followup_line.py:48
+msgid "Print a Letter"
+msgstr "imprimir una carta"
+
+#, fuzzy
+#: model_terms:views/account_payment_view.xml
+msgid "Print Check"
+msgstr "Imprimir cheque"
+
+#, fuzzy
+#: model_terms:views/followup_report.xml
+msgid "Print Letter"
+msgstr "Imprimir carta"
+
+#: code:models/account_payment.py:154
+msgid "Print Pre-numbered Checks"
+msgstr "Imprimir cheques numerados previamente"
+
+#: code:models/account_account.py:61
+msgid "Print Report with the currency column if the currency differs from the company currency."
+msgstr "Imprimir informe con columna moneda si la moneda difiere de la de la compañía"
+
+#, fuzzy
+#: code:wizard/asset_disposal.py:40
+msgid "Proceeds Account"
+msgstr "Proceeds Cuenta"
+
+#, fuzzy
+#: code:wizard/asset_disposal.py:38
+msgid "Proceeds received from the sale."
+msgstr "Ingresos recibidos de la venta."
+
+#: code:models/account_recurring_invoice.py:231
+msgid "Product"
+msgstr "Producto"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:90
+#: code:models/account_asset_category.py:83
+msgid "Prorata Temporis"
+msgstr "prorrata temporis"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:591
+msgid "Prorata temporis can be applied only for time method \"number of depreciations\"."
+msgstr "La prorata temporis sólo se puede aplicar al método de tiempo \"número de depreciaciones\"."
+
+#: model_terms:report/report_tax_template.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Purchase"
+msgstr "Compra"
+
+#, fuzzy
+#: code:wizard/account_lock_date.py:33
+msgid "Purchase Lock date"
+msgstr "Fecha de bloqueo de compra"
+
+#: model_terms:report/account_asset_report_views.xml
+msgid "Purchase Month"
+msgstr "Mes de compra"
+
+#: code:models/account_recurring_invoice.py:233
+#: model_terms:report/multiple_invoice_layouts.xml
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: code:wizard/asset_modify.py:29
+msgid "Reason"
+msgstr "Razón"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "Receivable"
+msgstr "Por cobrar"
+
+#: model_terms:report/report_aged_partner_template.xml
+msgid "Receivable Accounts"
+msgstr "Cuentas por cobrar"
+
+#: model_terms:report/report_aged_partner_template.xml
+msgid "Receivable and Payable Accounts"
+msgstr "Cuentas por cobrar y por pagar"
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Recognition Account"
+msgstr "Cuenta de reconocimiento"
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Recognition Income Account"
+msgstr "Cuenta de ingresos por reconocimiento"
+
+#, fuzzy
+#: code:models/account_bank_statement_line.py:46
+msgid "Reconciled"
+msgstr "reconciliado"
+
+#, fuzzy
+#: code:models/account_journal.py:126
+msgid "Reconciliation"
+msgstr "reconciliación"
+
+#, fuzzy
+#: code:models/account_move.py:36
+#: code:models/account_recurring_invoice.py:226
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Recurring Invoice"
+msgstr "Factura recurrente"
+
+#, fuzzy
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Recurring Invoices"
+msgstr "Facturas recurrentes"
+
+#: code:models/account_move.py:35
+msgid "Recurring Ref"
+msgstr "Ref recurrente"
+
+#: model_terms:views/account_recurring_payments_view.xml
+msgid "Recurring Template"
+msgstr "Plantilla recurrente"
+
+#: model_terms:views/account_recurring_payments_view.xml
+msgid "Recurring Templates"
+msgstr "Plantilla recurrente"
+
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+msgid "Ref"
+msgstr "Árbitro"
+
+#: code:models/account_asset_asset.py:42
+#: code:models/account_bulk_payment.py:34
+#: code:models/account_recurring_invoice.py:35
+msgid "Reference"
+msgstr "Referencia"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Reference:"
+msgstr "Referencia:"
+
+#, fuzzy
+#: code:models/account_recurring_invoice.py:57
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Repeat Every"
+msgstr "Repetir cada"
+
+#: model_terms:views/followup_report.xml
+msgid "report"
+msgstr "reporte"
+
+#: model_terms:views/reports_config_view.xml
+msgid "Report"
+msgstr "Reporte"
+
+#: model_terms:data/account_financial_report_data.xml
+#: model_terms:wizard/account_aged_trial_balance_views.xml
+msgid "Report Options"
+msgstr "Opciones de informe"
+
+#: model_terms:views/reports_config_view.xml
+msgid "Report Type"
+msgstr "Tipo de informe"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Residual"
+msgstr "Residual"
+
+#: code:models/account_asset_asset.py:82
+msgid "Residual Value"
+msgstr "Valor residual"
+
+#, fuzzy
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Resume"
+msgstr "Currículum"
+
+#, fuzzy
+#: model_terms:wizard/account_fx_revaluation_views.xml
+msgid "Revaluate"
+msgstr "Revaluar"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:33
+msgid "Revaluation Date"
+msgstr "Revaluation Fecha"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:532
+msgid "Revaluation of %s"
+msgstr "Revalorización de %s"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:703
+msgid "Reversal of asset %s"
+msgstr "Reversión del activo %s"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:133
+msgid "Reversal of FX revaluation - %s"
+msgstr "Reversión de la revaluación de divisas - %s"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:46
+msgid "Reverse Automatically"
+msgstr "Revertir automáticamente"
+
+#, fuzzy
+#: code:models/account_bank_statement_line.py:40
+msgid "RowData"
+msgstr "Datos de fila"
+
+#: code:models/recurring_payments.py:73
+#: model_terms:report/account_asset_report_views.xml
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Running"
+msgstr "Corriendo"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Running Balance"
+msgstr "Equilibrio de carrera"
+
+#: model_terms:report/report_tax_template.xml
+msgid "Sale"
+msgstr "Rebaja"
+
+#, fuzzy
+#: code:wizard/asset_disposal.py:38
+msgid "Sale Value"
+msgstr "Valor de venta"
+
+#: model_terms:views/account_asset_category_views.xml
+msgid "Sales"
+msgstr "Ventas"
+
+#, fuzzy
+#: code:wizard/account_lock_date.py:32
+msgid "Sales Lock Date"
+msgstr "Sales Lock Fecha"
+
+#: code:models/account_asset_asset.py:96
+msgid "Salvage Value"
+msgstr "Valor del rescate"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid "Sample Name"
+msgstr "Sample Nombre"
+
+#: model_terms:views/multiple_invoice_layout_view.xml
+msgid "Save"
+msgstr "Guardar"
+
+#, fuzzy
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Save as model"
+msgstr "Guardar como modelo"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid ""
+"Scan me with your banking\n"
+"                            app.\n"
+"                        "
+msgstr ""
+"Escanéame con tu banca\n"
+"                            aplicación."
+
+#: model_terms:views/account_asset_category_views.xml
+msgid "Search Asset Category"
+msgstr "Buscar categoría de activos"
+
+#: model_terms:views/account_followup.xml
+msgid "Search Follow-up"
+msgstr "Seguimiento de búsqueda"
+
+#, fuzzy
+#: code:models/account_bank_statement_line.py:126
+msgid "Select an account or an existing entry to reconcile with."
+msgstr "Seleccione una cuenta o una entrada existente para conciliar."
+
+#, fuzzy
+#: code:models/account_payment.py:77
+msgid "Select at least one payment."
+msgstr "Seleccione al menos un pago."
+
+#, fuzzy
+#: code:models/account_payment.py:80
+msgid "Select payments that share the same journal and type."
+msgstr "Seleccione pagos que compartan el mismo diario y tipo."
+
+#: code:models/account_asset_asset.py:446
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:wizard/asset_disposal_views.xml
+msgid "Sell or Dispose"
+msgstr "Vender o disponer"
+
+#, fuzzy
+#: code:models/followup_line.py:40
+msgid "Send an Email"
+msgstr "Enviar un correo electrónico"
+
+#, fuzzy
+#: model_terms:views/followup_report.xml
+msgid "Send Follow-up"
+msgstr "Enviar seguimiento"
+
+#, fuzzy
+#: model_terms:views/account_bulk_payment_views.xml
+#: model_terms:views/account_payment_view.xml
+msgid "Sent"
+msgstr "Enviado"
+
+#, fuzzy
+#: code:models/multiple_invoice.py:31
+msgid "Sequence No"
+msgstr "Número de secuencia"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:474
+msgid "Set a Gain/Loss account on the asset (or its category) before disposing of it."
+msgstr "Establezca una cuenta de ganancias/pérdidas sobre el activo (o su categoría) antes de disponer de él."
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Set as Checked"
+msgstr "Establecer como marcado"
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Set to Draft"
+msgstr "Establecer en borrador"
+
+#, fuzzy
+#: code:models/res_company.py:102
+msgid "Show unposted entries"
+msgstr "Mostrar entradas no publicadas"
+
+#, fuzzy
+#: code:models/res_company.py:123
+msgid "Show Unreconciled Bank Statement Lines"
+msgstr "Mostrar líneas de extracto bancario no conciliadas"
+
+#: code:wizard/account_bank_book_report.py:46
+#: code:wizard/account_cash_book_report.py:45
+#: code:wizard/account_report_general_ledger.py:38
+msgid "Sort by"
+msgstr "Ordenar por"
+
+#, fuzzy
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+msgid "Sorted By:"
+msgstr "Ordenado por:"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Source:"
+msgstr "Fuente:"
+
+#, fuzzy
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Start"
+msgstr "Empezar"
+
+#: code:models/account_common_report.py:48
+#: code:models/account_recurring_invoice.py:63
+#: code:wizard/account_bank_book_report.py:38
+#: code:wizard/account_cash_book_report.py:37
+#: code:wizard/account_day_book_report.py:48
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#, fuzzy
+#: model_terms:report/report_aged_partner_template.xml
+msgid "Start Date:"
+msgstr "Fecha inicial:"
+
+#: code:models/account_asset_category.py:72
+msgid "State here the time between 2 depreciations, in months"
+msgstr "Indique aquí el tiempo entre 2 depreciaciones, en meses"
+
+#: code:models/account_asset_depreciation_line.py:36
+msgid "State of Asset"
+msgstr "Estado del activo"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Statement"
+msgstr "Declaración"
+
+#, fuzzy
+#: model_terms:views/account_payment_view.xml
+msgid "Statement lines"
+msgstr "Líneas de declaración"
+
+#: code:models/account_recurring_invoice.py:73
+#: code:models/recurring_payments.py:73
+#: code:report/account_asset_report.py:36
+#: model_terms:views/account_bulk_payment_views.xml
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Status"
+msgstr "Estado"
+
+#, fuzzy
+#: model_terms:views/account_recurring_invoice_views.xml
+msgid "Stop"
+msgstr "Detener"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#, fuzzy
+#: model_terms:views/res_partner_views.xml
+msgid "Supplier Statement"
+msgstr "Declaración del proveedor"
+
+#: code:models/account_common_report.py:50
+#: code:wizard/account_bank_book_report.py:34
+#: code:wizard/account_cash_book_report.py:34
+#: code:wizard/account_day_book_report.py:39
+msgid "Target Moves"
+msgstr "Movimientos destino"
+
+#, fuzzy
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/account_cash_book_template.xml
+#: model_terms:report/account_day_book_template.xml
+#: model_terms:report/cash_flow_report_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+#: model_terms:report/report_aged_partner_template.xml
+#: model_terms:report/report_financial_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+#: model_terms:report/report_partner_ledger_template.xml
+#: model_terms:report/report_trial_balance_template.xml
+msgid "Target Moves:"
+msgstr "Movimientos objetivo:"
+
+#: model_terms:report/report_tax_template.xml
+msgid "Tax"
+msgstr "Impuesto"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"Tax\n"
+"                                                    15%\n"
+"                                                "
+msgstr ""
+"Impuesto\n"
+"                                                    15%"
+
+#: model_terms:report/report_journal_audit_template.xml
+msgid "Tax Amount"
+msgstr "Importe del impuesto"
+
+#: model_terms:report/report_journal_audit_template.xml
+msgid "Tax Declaration"
+msgstr "Declaración de impuestos"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Tax ID"
+msgstr "Identificación fiscal"
+
+#: code:wizard/kit_account_tax_report.py:30
+#: model_terms:report/report_tax_template.xml
+msgid "Tax Report"
+msgstr "Informe de impuestos"
+
+#: code:models/account_bank_statement_line.py:37
+#: code:models/account_recurring_invoice.py:235
+#: code:static/src/js/bank_reconcile_form_lines_widget.js
+#: model_terms:report/multiple_invoice_layouts.xml
+#: model_terms:report/multiple_invoice_report_template.xml
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Taxes"
+msgstr "Impuestos"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"Tel:\n"
+"                                "
+msgstr "Teléfono:"
+
+#, fuzzy
+#: code:models/followup_line.py:43
+msgid "Template used for the reminder email. Falls back to the default follow-up template when empty."
+msgstr "Plantilla utilizada para el correo electrónico de recordatorio. Vuelve a la plantilla de seguimiento predeterminada cuando está vacía."
+
+#, fuzzy
+#: model_terms:views/multiple_invoice_layout_view.xml
+msgid "Text Align"
+msgstr "Alinear texto"
+
+#, fuzzy
+#: code:models/account_journal.py:60
+msgid "Text Position"
+msgstr "Posición del texto"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:76
+msgid "The amount of time between two depreciation's, in months"
+msgstr "La cantidad de tiempo entre dos depreciaciones, en meses."
+
+#, fuzzy
+#: code:models/res_partner.py:230
+msgid "The follow-up letter report is not available."
+msgstr "El informe de la carta de seguimiento no está disponible."
+
+#, fuzzy
+#: code:models/followup_line.py:34
+msgid "The number of days after the due date of the invoice to wait before sending the reminder. Could be negative if you want to send a polite alert beforehand."
+msgstr "El número de días después de la fecha de vencimiento de la factura que se deben esperar antes de enviar el recordatorio. Podría ser negativo si desea enviar una alerta cortés de antemano."
+
+#, fuzzy
+#: code:models/account_asset_asset.py:73
+msgid "The number of depreciation's needed to depreciate your asset"
+msgstr "El número de depreciaciones necesarias para depreciar su activo"
+
+#: code:models/account_asset_category.py:70
+msgid "The number of depreciations needed to depreciate your asset"
+msgstr "La cantidad de depreciaciones necesarias para depreciar su activo."
+
+#, fuzzy
+#: code:models/account_move_line.py:57
+msgid "The number of depreciations or the period length of your asset category cannot be null."
+msgstr "El número de depreciaciones o la duración del período de su categoría de activo no pueden ser nulos."
+
+#, fuzzy
+#: code:models/account_move.py:36
+msgid "The recurring template that generated this invoice."
+msgstr "La plantilla recurrente que generó esta factura."
+
+#, fuzzy
+#: code:models/res_company.py:90
+msgid "There are still unposted entries in the period you want to lock. You should either post or delete them."
+msgstr "Todavía hay entradas sin publicar en el período que desea bloquear. Deberías publicarlos o eliminarlos."
+
+#, fuzzy
+#: code:models/res_company.py:111
+msgid "There are still unreconciled bank statement lines in the period you want to lock.You should either reconcile or delete them."
+msgstr "Todavía hay líneas de extracto bancario sin conciliar en el período que desea bloquear. Debe conciliarlas o eliminarlas."
+
+#, fuzzy
+#: code:models/res_partner.py:416
+#: code:models/res_partner.py:454
+#: code:models/res_partner.py:689
+#: code:models/res_partner.py:698
+msgid "There is no statement to print"
+msgstr "No hay declaración para imprimir"
+
+#, fuzzy
+#: code:models/res_partner.py:387
+#: code:models/res_partner.py:638
+#: code:models/res_partner.py:714
+#: code:models/res_partner.py:736
+msgid "There is no statement to send"
+msgstr "No hay declaración para enviar"
+
+#, fuzzy
+#: code:report/report_financial.py:79
+msgid "These types are defined according to your country. The type contains more information about the account and its specificities."
+msgstr "Estos tipos se definen según su país. El tipo contiene más información sobre la cuenta y sus especificidades."
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Thirty one dollar and Five cents"
+msgstr "Treinta y un dólar y cinco centavos"
+
+#, fuzzy
+#: code:models/account_asset_depreciation_line.py:70
+msgid "This depreciation is already linked to a journal entry! Please post or delete it."
+msgstr "¡Esta depreciación ya está vinculada a un asiento de diario! Por favor publíquelo o elimínelo."
+
+#, fuzzy
+#: code:wizard/cash_flow_report.py:47
+msgid "This label will be displayed on report to show the balance computed for the given comparison filter."
+msgstr "Esta etiqueta se mostrará en el informe para mostrar el saldo calculado para el filtro de comparación dado."
+
+#, fuzzy
+#: code:wizard/cash_flow_report.py:55
+#: code:wizard/financial_report.py:69
+msgid "This option allows you to get more details about the way your balances are computed. Because it is space consuming, we do not allow to use it while doing a comparison."
+msgstr "Esta opción le permite obtener más detalles sobre la forma en que se calculan sus saldos. Debido a que consume espacio, no permitimos usarlo mientras hacemos una comparación."
+
+#: code:models/account_asset_asset.py:84
+#: code:models/account_asset_category.py:76
+msgid "Time Method"
+msgstr "Método de tiempo"
+
+#: model_terms:views/account_asset_asset_views.xml
+#: model_terms:views/account_asset_category_views.xml
+msgid "Time Method Based On"
+msgstr "Método de tiempo basado en"
+
+#: code:models/account_move.py:43
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "To Check"
+msgstr "Verificar"
+
+#: model_terms:report/multiple_invoice_layouts.xml
+#: model_terms:report/report_aged_partner_template.xml
+#: model_terms:report/report_journal_audit_template.xml
+msgid "Total"
+msgstr "Total"
+
+#, fuzzy
+#: model_terms:views/res_partner_views.xml
+msgid "Total Amount"
+msgstr "Total Importe"
+
+#, fuzzy
+#: model_terms:report/res_partner_templates.xml
+msgid "Total Amount:"
+msgstr "Total Importe:"
+
+#, fuzzy
+#: model_terms:report/res_partner_templates.xml
+msgid "Total Balance:"
+msgstr "Saldo total:"
+
+#, fuzzy
+#: model_terms:report/followup_report_templates.xml
+msgid "Total overdue:"
+msgstr "Total vencido:"
+
+#: code:models/res_partner.py:72
+msgid "Total Sale"
+msgstr "Venta total"
+
+#, fuzzy
+#: model_terms:report/bulk_payment_report_templates.xml
+msgid "Total:"
+msgstr "Totales:"
+
+#: model_terms:views/account_bank_statement_line_views.xml
+msgid "Transaction"
+msgstr "Transacción"
+
+#, fuzzy
+#: model_terms:views/account_bank_statement_views.xml
+msgid "Transactions"
+msgstr "Transacciones"
+
+#: code:wizard/account_balance_report.py:30
+msgid "Trial Balance"
+msgstr "Balance de prueba"
+
+#: code:models/account_bulk_payment.py:36
+#: model_terms:views/account_asset_category_views.xml
+#: model_terms:wizard/financial_report_views.xml
+msgid "Type"
+msgstr "Tipo"
+
+#, fuzzy
+#: model_terms:report/bulk_payment_report_templates.xml
+msgid "Type:"
+msgstr "Tipo:"
+
+#: code:models/account_recurring_invoice.py:234
+#: model_terms:report/multiple_invoice_layouts.xml
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_layouts.xml
+msgid ""
+"United States\n"
+"                                            "
+msgstr "Estados Unidos"
+
+#: code:report/report_aged_partner.py:254
+msgid "Unknown Partner"
+msgstr "Socio desconocido"
+
+#, fuzzy
+#: model_terms:views/account_payment_view.xml
+msgid "Unmark Sent"
+msgstr "Desmarcar enviado"
+
+#: code:models/recurring_payments.py:76
+msgid "Unposted"
+msgstr "Dispuesto"
+
+#: code:report/account_asset_report.py:44
+msgid "Unposted Amount"
+msgstr "Monto no contabilizado"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:110
+msgid "Unrealized FX gain"
+msgstr "Ganancia FX no realizada"
+
+#, fuzzy
+#: code:models/res_company.py:36
+msgid "Unrealized FX Gain Account"
+msgstr "Unrealized FX Gain Cuenta"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:119
+msgid "Unrealized FX loss"
+msgstr "Pérdida cambiaria no realizada"
+
+#, fuzzy
+#: code:models/res_company.py:39
+msgid "Unrealized FX Loss Account"
+msgstr "Unrealized FX Loss Cuenta"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:40
+msgid "Unrealized Gain Account"
+msgstr "Unrealized Gain Cuenta"
+
+#, fuzzy
+#: code:wizard/account_fx_revaluation.py:43
+msgid "Unrealized Loss Account"
+msgstr "Unrealized Loss Cuenta"
+
+#: model_terms:wizard/account_lock_date_views.xml
+msgid "Update"
+msgstr "Actualizar"
+
+#, fuzzy
+#: code:models/res_config_settings.py:32
+msgid "Use Anglo-Saxon accounting"
+msgstr "Utilice la contabilidad anglosajona"
+
+#, fuzzy
+#: code:models/account_bank_statement_line.py:46
+msgid "Valid"
+msgstr "Válido"
+
+#: model_terms:views/account_bank_statement_line_views.xml
+#: model_terms:views/account_bulk_payment_views.xml
+msgid "Validate"
+msgstr "Validar"
+
+#, fuzzy
+#: code:wizard/asset_revaluation.py:34
+msgid "Value Increase"
+msgstr "Aumento de valor"
+
+#: model_terms:views/account_asset_asset_views.xml
+msgid "Vendor"
+msgstr "Vendedor"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid "Vendor Bill"
+msgstr "Proveedor Bill"
+
+#, fuzzy
+#: model_terms:report/multiple_invoice_report_template.xml
+msgid ""
+"Vendor Credit Note\n"
+"                    "
+msgstr ""
+"Proveedor Credit Note\n"
+"                    "
+
+#: model_terms:views/account_move_line_views.xml
+msgid "View"
+msgstr "Ver"
+
+#: code:models/res_partner.py:62
+msgid "Warning Amount"
+msgstr "Cantidad de advertencia"
+
+#: code:models/res_partner.py:272
+msgid "Warning amount should be less than Blocking amount"
+msgstr "La cantidad de advertencia debe ser menor que la cantidad de bloqueo"
+
+#: code:models/recurring_payments.py:66
+msgid "Weeks"
+msgstr "Semanas"
+
+#, fuzzy
+#: code:models/account_asset_asset.py:57
+msgid ""
+"When an asset is created, the status is 'Draft'.\n"
+"If the asset is confirmed, the status goes in 'Running' and the depreciation lines can be posted in the accounting.\n"
+"A running asset can be 'Paused' to temporarily stop its depreciation, then resumed.\n"
+"You can manually close an asset when the depreciation is over. If the last line of depreciation is posted, the asset automatically goes in that status."
+msgstr ""
+"Cuando se crea un activo, el estado es \\\"Borrador\\\".\n"
+"Si se confirma el activo, el estado pasa a 'En ejecución' y las líneas de depreciación se pueden registrar en la contabilidad.\n"
+"Un activo en funcionamiento puede \\\"Pausarse\\\" para detener temporalmente su depreciación y luego reanudarse.\n"
+"Puede cerrar manualmente un activo cuando finalice la depreciación. Si se contabiliza la última línea de depreciación, el activo pasa automáticamente a ese estado."
+
+#, fuzzy
+#: code:models/followup_line.py:40
+msgid "When reached, email the reminder to the customer."
+msgstr "Cuando llegue, envíe el recordatorio por correo electrónico al cliente."
+
+#, fuzzy
+#: model_terms:static/src/xml/bank_rec_widget.xml
+msgid "width:30%;"
+msgstr "ancho: 30%;"
+
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+msgid "With balance not equal to zero"
+msgstr "Con saldo no igual a cero"
+
+#: model_terms:report/account_bank_book_template.xml
+#: model_terms:report/general_ledger_report_template.xml
+msgid "With movements"
+msgstr "With movements"
+
+#, fuzzy
+#: code:wizard/import_bank_statement.py:331
+msgid "Wrong file format or parsing error: %s"
+msgstr "Formato de archivo incorrecto o error de análisis: %s"
+
+#: code:report/account_asset_report.py:30
+msgid "Year"
+msgstr "Año"
+
+#: code:models/recurring_payments.py:66
+msgid "Years"
+msgstr "Años"
+
+#: code:wizard/account_lock_date.py:55
+msgid "You are not allowed to execute this action."
+msgstr "No se le permite ejecutar esta acción."
+
+#, fuzzy
+#: code:report/report_financial.py:124
+msgid "You can set up here the format you want this record to be displayed. If you leave the automatic formatting, it will be computed based on the financial reports hierarchy (auto-computed field 'level')."
+msgstr "Puede configurar aquí el formato en el que desea que se muestre este registro. Si deja el formato automático, se calculará en función de la jerarquía de informes financieros (campo 'nivel' calculado automáticamente)."
+
+#: code:models/account_asset_asset.py:140
+msgid "You cannot delete a document is in %s state."
+msgstr "No se puede eliminar un documento que está en estado %s."
+
+#: code:models/account_asset_asset.py:144
+msgid "You cannot delete a document that contains posted entries."
+msgstr "No puede eliminar un documento que contiene entradas publicadas."
+
+#: code:wizard/account_bank_book_report.py:107
+#: code:wizard/account_bank_book_report.py:88
+#: code:wizard/account_cash_book_report.py:106
+#: code:wizard/account_cash_book_report.py:86
+msgid "You must choose a Start Date"
+msgstr "Debes elegir una fecha de inicio"
+
+#: code:wizard/account_report_general_ledger.py:65
+#: code:wizard/account_report_general_ledger.py:83
+msgid "You must define a Start Date"
+msgstr "Debes definir una fecha de inicio"
+
+#: code:wizard/account_aged_trial_balance.py:47
+#: code:wizard/account_aged_trial_balance.py:94
+msgid "You must set a period length greater than 0."
+msgstr "Debe establecer una duración del período superior a 0."
+
+#: code:wizard/account_aged_trial_balance.py:49
+#: code:wizard/account_aged_trial_balance.py:96
+msgid "You must set a start date."
+msgstr "Debe establecer una fecha de inicio."

@@ -1,0 +1,214 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_discount_total
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model_terms:views/sale_order_views.xml
+msgid "(update)"
+msgstr "(actualización)"
+
+#, fuzzy
+#: code:models/res_config_settings.py:30
+msgid "Activate/disable sale order approval."
+msgstr "Activar/desactivar la aprobación de órdenes de venta."
+
+#: model_terms:views/sale_order_views.xml
+msgid "Approve"
+msgstr "Aprobar"
+
+#, fuzzy
+#: code:models/account_move.py:37
+#: code:models/sale_order.py:62
+#: model_terms:views/account_move_templates.xml
+msgid "Discount"
+msgstr "Descuento"
+
+#, fuzzy
+#: code:models/account_move.py:188
+#: code:models/sale_order_line.py:30
+msgid "Discount (%)"
+msgstr "Descuento (%)"
+
+#, fuzzy
+#: code:models/res_config_settings.py:39
+msgid "Discount limit requires approval in %"
+msgstr "El límite de descuento requiere aprobación en %"
+
+#, fuzzy
+#: code:models/sale_order_line.py:30
+msgid "Discount needed."
+msgstr "Se necesita descuento."
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Discount on Total in Sale and Invoice With Discount Limit and Approval"
+msgstr "Descuento sobre Total en Venta y Factura con Límite de Descuento y Aprobación"
+
+#, fuzzy
+#: code:models/account_move.py:31
+#: code:models/sale_order.py:56
+msgid "Discount type"
+msgstr "Tipo de descuento"
+
+#, fuzzy
+#: code:models/account_move.py:37
+#: code:models/sale_order.py:62
+msgid "Give the amount to be discounted."
+msgstr "Indique el importe a descontar."
+
+#, fuzzy
+#: code:models/account_move.py:188
+msgid "Give the discount needed"
+msgstr "Dar el descuento necesario"
+
+#, fuzzy
+#: code:models/account_move.py:35
+#: code:models/sale_order.py:60
+msgid "Give the discount rate."
+msgstr "Dé la tasa de descuento."
+
+#, fuzzy
+#: code:models/res_company.py:30
+msgid "Levels of Approvals"
+msgstr "Niveles de aprobaciones"
+
+#, fuzzy
+#: code:models/res_config_settings.py:35
+msgid "Levels of Approvals *"
+msgstr "Niveles de aprobaciones *"
+
+#, fuzzy
+#: model_terms:views/res_config_settings_views.xml
+msgid "Managers must approve document"
+msgstr "Los gerentes deben aprobar el documento."
+
+#, fuzzy
+#: code:models/sale_order.py:74
+msgid "Margin"
+msgstr "Margen"
+
+#, fuzzy
+#: code:models/res_company.py:35
+#: code:models/res_config_settings.py:39
+msgid "Minimum discount percentage for which a double validation is required."
+msgstr "Porcentaje mínimo de descuento para el que se requiere doble validación."
+
+#, fuzzy
+#: code:models/res_company.py:35
+msgid "Percentage of Discount that requires double validation'"
+msgstr "Porcentaje de Descuento que requiere doble validación'"
+
+#, fuzzy
+#: code:models/res_company.py:30
+#: code:models/res_config_settings.py:35
+msgid "Provide a double validation mechanism for sales discount."
+msgstr "Proporcionar un mecanismo de doble validación para el descuento de ventas."
+
+#, fuzzy
+#: code:models/res_config_settings.py:30
+#: model_terms:views/res_config_settings_views.xml
+msgid "Sale Discount Approval"
+msgstr "Aprobación de descuento de venta"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Sale Discount on Total Amount"
+msgstr "Sale Discount on Total Importe"
+
+#, fuzzy
+#: code:models/sale_order.py:120
+msgid "Some order lines are missing a product, you need to correct them before going further."
+msgstr "A algunas líneas de pedido les falta un producto; debe corregirlas antes de continuar."
+
+#, fuzzy
+#: code:models/sale_order.py:113
+msgid "Some orders are not in a state requiring confirmation."
+msgstr "Algunos pedidos no se encuentran en un estado que requiera confirmación."
+
+#, fuzzy
+#: code:reports/sale_report.py:30
+msgid "Specify the discount amount."
+msgstr "Especifique el monto del descuento."
+
+#, fuzzy
+#: code:reports/account_invoice_report.py:30
+msgid "Specify the discount."
+msgstr "Especifique el descuento."
+
+#: code:models/sale_order.py:54
+msgid "Status"
+msgstr "Estado"
+
+#, fuzzy
+#: code:models/sale_order.py:54
+msgid "Status of quotation."
+msgstr "Estado of quotation."
+
+#, fuzzy
+#: code:models/sale_order.py:68
+msgid "Taxes"
+msgstr "Taxes"
+
+#, fuzzy
+#: code:models/sale_order.py:68
+msgid "Taxes of product."
+msgstr "Impuestos del producto."
+
+#, fuzzy
+#: model_terms:views/sale_order_views.xml
+msgid "Terms and conditions..."
+msgstr "Términos y condiciones..."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "This module is designed to manage discounts on the total amount in sales. It will include features to apply discounts either as a specific amount or a percentage. This module will enhance the functionality of Odoo's sales module, allowing users to easily manage and apply discounts to sales orders based on their requirements."
+msgstr "Este módulo está diseñado para gestionar descuentos sobre el importe total en ventas. Incluirá funciones para aplicar descuentos ya sea como una cantidad específica o como un porcentaje. Este módulo mejorará la funcionalidad del módulo de ventas de Odoo, permitiendo a los usuarios administrar y aplicar descuentos fácilmente a los pedidos de ventas según sus requisitos."
+
+#: code:models/sale_order.py:71
+msgid "Total"
+msgstr "Total"
+
+#, fuzzy
+#: code:models/sale_order.py:71
+msgid "Total amount provided."
+msgstr "Importe total aportado."
+
+#, fuzzy
+#: code:models/sale_order_line.py:32
+msgid "Total Discount"
+msgstr "Descuento Total"
+
+#, fuzzy
+#: code:models/sale_order_line.py:32
+msgid "Total discount can bespecified here."
+msgstr "El descuento total se puede especificar aquí."
+
+#, fuzzy
+#: code:models/account_move.py:31
+#: code:models/sale_order.py:56
+msgid "Type of discount."
+msgstr "Tipo de descuento."
+
+#, fuzzy
+#: code:models/sale_order.py:65
+msgid "Untaxed Amount"
+msgstr "Untaxed Importe"
+
+#, fuzzy
+#: code:models/sale_order.py:65
+msgid "Untaxed amount displayed."
+msgstr "Monto libre de impuestos mostrado."

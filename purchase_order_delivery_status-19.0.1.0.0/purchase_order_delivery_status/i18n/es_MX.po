@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* purchase_order_delivery_status
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: code:models/purchase_order.py:29
+msgid "Delivery Status"
+msgstr "Delivery Estado"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Delivery Status on Purchase Order"
+msgstr "Delivery Estado on Orden de compra"
+
+#, fuzzy
+#: code:models/purchase_order.py:29
+msgid "Nothing to Receive"
+msgstr "Nada que recibir"
+
+#, fuzzy
+#: code:models/purchase_order.py:29
+msgid "Partially Received"
+msgstr "Recibido parcialmente"
+
+#, fuzzy
+#: code:models/purchase_order.py:29
+msgid "Received"
+msgstr "Recibido"
+
+#, fuzzy
+#: code:models/purchase_order.py:29
+msgid "Status of delivery of purchase order."
+msgstr "Estado of delivery of purchase order."
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Status of delivery on purchase order."
+msgstr "Estado of delivery on purchase order."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This module adds delivery status on purchase order form \n"
+"     and tree view."
+msgstr ""
+"Este módulo agrega el estado de entrega en el formulario de orden de compra. \n"
+"     y vista de árbol."
+
+#, fuzzy
+#: code:models/purchase_order.py:29
+msgid "To Receive"
+msgstr "Para recibir"

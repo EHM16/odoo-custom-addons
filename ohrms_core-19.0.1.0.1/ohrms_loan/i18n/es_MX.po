@@ -1,0 +1,340 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ohrms_loan
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: code:models/hr_loan_line.py:35
+msgid "Amount"
+msgstr "Importe"
+
+#: model_terms:views/hr_loan_views.xml
+msgid "Approve"
+msgstr "Aprobar"
+
+#, fuzzy
+#: code:models/hr_loan.py:87
+msgid "Balance Amount"
+msgstr "Balance Importe"
+
+#: model_terms:views/hr_loan_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: code:models/hr_loan.py:71
+msgid "Company"
+msgstr "Empresa"
+
+#, fuzzy
+#: model_terms:views/hr_loan_views.xml
+msgid "Compute Installment"
+msgstr "Calcular cuota"
+
+#: code:models/hr_loan.py:74
+msgid "Currency"
+msgstr "Moneda"
+
+#: code:models/hr_loan.py:51
+msgid "Date"
+msgstr "Fecha"
+
+#, fuzzy
+#: code:models/hr_payslip_input.py:37
+msgid "Date from"
+msgstr "Fecha from"
+
+#, fuzzy
+#: code:models/hr_loan.py:51
+msgid "Date of the loan request"
+msgstr "Fecha of the loan request"
+
+#, fuzzy
+#: code:models/hr_loan.py:63
+#: code:models/hr_loan_line.py:31
+msgid "Date of the payment"
+msgstr "Fecha of the payment"
+
+#, fuzzy
+#: code:models/hr_payslip_input.py:35
+msgid "Date To"
+msgstr "Fecha To"
+
+#, fuzzy
+#: code:models/hr_loan.py:55
+#: model_terms:views/hr_loan_views.xml
+msgid "Department"
+msgstr "Departamento"
+
+#, fuzzy
+#: code:models/hr_loan.py:66
+msgid "Details of installment lines associated with the loan."
+msgstr "Detalles de las líneas de pago asociadas con el préstamo."
+
+#: code:models/hr_loan.py:53
+#: code:models/hr_loan_line.py:33
+#: model_terms:views/hr_loan_views.xml
+msgid "Employee"
+msgstr "Empleado"
+
+#, fuzzy
+#: code:models/hr_loan.py:53
+msgid "Employee Name"
+msgstr "Empleado Nombre"
+
+#, fuzzy
+#: code:models/hr_payslip_input.py:35
+msgid "End date for the payslip input."
+msgstr "Fecha de finalización del ingreso de nómina."
+
+#, fuzzy
+#: code:models/hr_loan_line.py:36
+msgid "Indicates whether the installment has been paid."
+msgstr "Indica si la cuota ha sido pagada."
+
+#, fuzzy
+#: model_terms:views/hr_loan_views.xml
+msgid "Installments"
+msgstr "Cuotas"
+
+#, fuzzy
+#: code:models/hr_loan.py:78
+msgid "Job Position"
+msgstr "Puesto de trabajo"
+
+#, fuzzy
+#: code:models/hr_loan.py:78
+msgid "Job position of the employee"
+msgstr "Puesto de trabajo del empleado."
+
+#, fuzzy
+#: model_terms:views/hr_loan_views.xml
+msgid "Loan"
+msgstr "Préstamo"
+
+#, fuzzy
+#: code:models/hr_loan.py:82
+msgid "Loan Amount"
+msgstr "Loan Importe"
+
+#, fuzzy
+#: code:models/hr_loan.py:82
+msgid "Loan amount"
+msgstr "Monto del préstamo"
+
+#, fuzzy
+#: code:models/hr_employee.py:30
+msgid "Loan Count"
+msgstr "Recuento de préstamos"
+
+#, fuzzy
+#: code:models/hr_payslip_input.py:31
+msgid "Loan Installment"
+msgstr "Cuota del préstamo"
+
+#, fuzzy
+#: code:models/hr_payslip_input.py:31
+msgid "Loan installment associated with this payslip input."
+msgstr "Cuota del préstamo asociada a esta entrada de nómina."
+
+#, fuzzy
+#: code:models/hr_loan.py:66
+msgid "Loan Line"
+msgstr "Línea de préstamo"
+
+#, fuzzy
+#: code:models/hr_loan.py:49
+msgid "Loan Name"
+msgstr "Loan Nombre"
+
+#, fuzzy
+#: code:models/hr_loan_line.py:38
+msgid "Loan Ref."
+msgstr "Ref. de préstamo."
+
+#, fuzzy
+#: model_terms:views/hr_loan_views.xml
+msgid "Loan Request"
+msgstr "Solicitud de préstamo"
+
+#, fuzzy
+#: model_terms:views/hr_loan_views.xml
+msgid "Loan Requests"
+msgstr "Solicitudes de préstamo"
+
+#, fuzzy
+#: model_terms:views/hr_employee_views.xml
+msgid "Loans"
+msgstr "Préstamos"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Manage Employee Loan Requests"
+msgstr "Manage Empleado Loan Requests"
+
+#, fuzzy
+#: model_terms:views/hr_loan_views.xml
+msgid "My Requests"
+msgstr "Mis solicitudes"
+
+#, fuzzy
+#: code:models/hr_loan.py:49
+msgid "Name of the loan"
+msgstr "Nombre of the loan"
+
+#, fuzzy
+#: code:models/hr_loan.py:129
+#: code:models/hr_loan.py:131
+msgid "New"
+msgstr "New"
+
+#, fuzzy
+#: code:models/hr_loan.py:61
+msgid "No Of Installments"
+msgstr "No de cuotas"
+
+#, fuzzy
+#: code:models/hr_loan.py:61
+msgid "Number of installments"
+msgstr "Número de cuotas"
+
+#, fuzzy
+#: code:models/hr_employee.py:30
+msgid "Number of loans associated with the employee"
+msgstr "Número de préstamos asociados al empleado"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Open HRMS Loan Management"
+msgstr "Gestión de préstamos abierta HRMS"
+
+#, fuzzy
+#: code:models/hr_loan_line.py:36
+msgid "Paid"
+msgstr "Pagado"
+
+#, fuzzy
+#: code:models/hr_loan_line.py:31
+msgid "Payment Date"
+msgstr "Payment Fecha"
+
+#, fuzzy
+#: code:models/hr_loan.py:63
+msgid "Payment Start Date"
+msgstr "Payment Fecha inicial"
+
+#, fuzzy
+#: code:models/hr_loan_line.py:40
+msgid "Payslip Ref."
+msgstr "Nómina Ref."
+
+#, fuzzy
+#: code:models/hr_loan.py:169
+msgid "Please Compute installment"
+msgstr "Por favor calcule la cuota"
+
+#, fuzzy
+#: code:models/hr_loan_line.py:38
+msgid "Reference to the associated loan."
+msgstr "Referencia al préstamo asociado."
+
+#, fuzzy
+#: code:models/hr_loan_line.py:40
+msgid "Reference to the associated payslip, if any."
+msgstr "Referencia a la nómina asociada, en su caso."
+
+#, fuzzy
+#: model_terms:views/hr_loan_views.xml
+msgid "Refuse"
+msgstr "Rechazar"
+
+#, fuzzy
+#: code:models/hr_payslip_input.py:37
+msgid "Start date for the payslip input."
+msgstr "Fecha de inicio del ingreso de nómina."
+
+#: code:models/hr_loan.py:96
+msgid "State"
+msgstr "Estado"
+
+#: model_terms:views/hr_loan_views.xml
+msgid "Status"
+msgstr "Estado"
+
+#, fuzzy
+#: model_terms:views/hr_loan_views.xml
+msgid "Submit"
+msgstr "Submit"
+
+#, fuzzy
+#: code:models/hr_loan.py:96
+msgid "The current state of the loan request."
+msgstr "El estado actual de la solicitud de préstamo."
+
+#, fuzzy
+#: code:models/hr_loan.py:55
+msgid "The department to which the employee belongs."
+msgstr "El departamento al que pertenece el empleado."
+
+#, fuzzy
+#: code:models/hr_loan.py:125
+msgid "The Employee already has a pending installment"
+msgstr "The Empleado already has a pending installment"
+
+#, fuzzy
+#: code:models/hr_loan.py:87
+msgid ""
+"The remaining balance amount of the \n"
+"                                  loan after deducting \n"
+"                                  the total paid amount."
+msgstr ""
+"El importe del saldo restante del \n"
+"                                  préstamo después de deducir \n"
+"                                  el monto total pagado."
+
+#, fuzzy
+#: code:models/hr_loan.py:84
+msgid "The total amount of the loan"
+msgstr "El monto total del préstamo."
+
+#, fuzzy
+#: code:models/hr_loan.py:92
+msgid "The total amount that has been paid towards the loan."
+msgstr "El monto total que se ha pagado por el préstamo."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This module facilitates the creation and management of \n"
+"     employee loan requests. The loan amount is automatically deducted from the \n"
+"     salary"
+msgstr ""
+"Este módulo facilita la creación y gestión de \n"
+"     Solicitudes de préstamos para empleados. El importe del préstamo se deduce automáticamente del \n"
+"     salario"
+
+#, fuzzy
+#: code:models/hr_loan.py:84
+msgid "Total Amount"
+msgstr "Total Importe"
+
+#, fuzzy
+#: code:models/hr_loan.py:92
+msgid "Total Paid Amount"
+msgstr "Total Paid Importe"
+
+#, fuzzy
+#: code:models/hr_loan.py:178
+msgid "You cannot delete a loan which is not in draft or cancelled state"
+msgstr "No puede eliminar un préstamo que no esté en estado de borrador o cancelado."

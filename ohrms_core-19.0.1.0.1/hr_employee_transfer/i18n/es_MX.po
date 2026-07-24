@@ -1,0 +1,183 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_employee_transfer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: model_terms:views/employee_transfer_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: code:models/employee_transfer.py:56
+msgid "Company"
+msgstr "Empresa"
+
+#: code:models/employee_transfer.py:41
+msgid "Date"
+msgstr "Fecha"
+
+#: model_terms:views/employee_transfer_views.xml
+msgid "Done"
+msgstr "Hecho"
+
+#: model_terms:views/employee_transfer_views.xml
+msgid "Draft"
+msgstr "Borrador"
+
+#: code:models/employee_transfer.py:36
+#: model_terms:views/employee_transfer_views.xml
+msgid "Employee"
+msgstr "Empleado"
+
+#, fuzzy
+#: model_terms:views/employee_transfer_views.xml
+msgid "Employee Transfer"
+msgstr "Empleado Transfer"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Employee transfer between branches"
+msgstr "Empleado transfer between branches"
+
+#, fuzzy
+#: code:models/employee_transfer.py:112
+msgid "Employees"
+msgstr "Empleados"
+
+#, fuzzy
+#: code:models/employee_transfer.py:59
+msgid "Enter any relevant notes regarding the transfer process or reasons for transfer."
+msgstr "Ingrese cualquier nota relevante sobre el proceso de transferencia o los motivos de la transferencia."
+
+#, fuzzy
+#: code:models/employee_transfer.py:59
+#: model_terms:views/employee_transfer_views.xml
+msgid "Internal Notes"
+msgstr "Notas internas"
+
+#: code:models/employee_transfer.py:33
+#: model_terms:views/employee_transfer_views.xml
+msgid "Name"
+msgstr "Nombre"
+
+#, fuzzy
+#: code:models/employee_transfer.py:33
+msgid "Name of the Transfer"
+msgstr "Nombre of the Transfer"
+
+#, fuzzy
+#: code:models/employee_transfer.py:35
+msgid "New"
+msgstr "New"
+
+#, fuzzy
+#: code:models/employee_transfer.py:47
+msgid ""
+"New: Transfer is created and not confirmed.\n"
+"        Transferred: Transfer is confirmed. Transfer stays in this status till\n"
+"         the transferred Branch receive the employee.\n"
+"        Done: Employee is Joined/Received in the transferred Branch.\n"
+"        Cancelled: Transfer is cancelled."
+msgstr ""
+"New: Transfer is created and not confirmed.\n"
+"        Transferred: Transfer is confirmed. Transfer stays in this status till\n"
+"         the transferred Branch receive the employee.\n"
+"        Done: Empleado is Joined/Received in the transferred Branch.\n"
+"        Cancelled: Transfer is cancelled."
+
+#, fuzzy
+#: code:models/employee_transfer.py:39
+msgid "Old Employee"
+msgstr "Old Empleado"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Open HRMS Branch Transfer"
+msgstr "Transferencia de sucursal abierta de HRMS"
+
+#, fuzzy
+#: code:models/employee_transfer.py:88
+msgid "Please select a company for the transfer."
+msgstr "Por favor seleccione una empresa para la transferencia."
+
+#, fuzzy
+#: model_terms:views/employee_transfer_views.xml
+msgid "Receive"
+msgstr "Recibir"
+
+#: code:models/employee_transfer.py:65
+msgid "Responsible"
+msgstr "Responsable"
+
+#, fuzzy
+#: model_terms:views/employee_transfer_views.xml
+msgid "Responsible Person"
+msgstr "Persona Responsable"
+
+#, fuzzy
+#: code:models/employee_transfer.py:43
+msgid "Select the company to which the employee is being transferred"
+msgstr "Seleccione la empresa a la que se transfiere el empleado"
+
+#, fuzzy
+#: code:models/employee_transfer.py:36
+msgid "Select the employee who is being transferred."
+msgstr "Seleccione el empleado que está siendo transferido."
+
+#: code:models/employee_transfer.py:47
+#: model_terms:views/employee_transfer_views.xml
+msgid "Status"
+msgstr "Estado"
+
+#, fuzzy
+#: code:models/employee_transfer.py:56
+msgid "The current company of the employee before the transfer."
+msgstr "La empresa actual del empleado antes del traslado."
+
+#, fuzzy
+#: code:models/employee_transfer.py:65
+msgid "The person responsible for the transfer."
+msgstr "El responsable de la transferencia."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "This modules allows the user to transfer an employee from one branch to another branch"
+msgstr "Este módulo permite al usuario transferir un empleado de una sucursal a otra sucursal."
+
+#, fuzzy
+#: model_terms:views/employee_transfer_views.xml
+msgid "Transfer"
+msgstr "Transferir"
+
+#, fuzzy
+#: code:models/employee_transfer.py:41
+msgid "Transfer date"
+msgstr "fecha de transferencia"
+
+#, fuzzy
+#: code:models/employee_transfer.py:43
+msgid "Transfer To"
+msgstr "Transferir a"
+
+#, fuzzy
+#: code:models/employee_transfer.py:62
+#: model_terms:views/employee_transfer_views.xml
+msgid "Transferred"
+msgstr "Transferido"
+
+#, fuzzy
+#: code:models/employee_transfer.py:90
+msgid "You cannot transfer the employee to the same company."
+msgstr "No se puede transferir al empleado a la misma empresa."

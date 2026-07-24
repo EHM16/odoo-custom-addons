@@ -1,0 +1,472 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_vacation_mngmt
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: code:models/pending_task.py:43
+msgid "Assigned to"
+msgstr "Asignado a"
+
+#, fuzzy
+#: code:models/hr_leave.py:129
+#: model_terms:views/hr_leave_views.xml
+msgid "Book Flight Ticket"
+msgstr "Reservar billete de avión"
+
+#, fuzzy
+#: model_terms:views/hr_flight_ticket_views.xml
+msgid "Book Ticket"
+msgstr "Reservar billete"
+
+#: model_terms:views/hr_flight_ticket_views.xml
+#: model_terms:wizard/task_reassign_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#, fuzzy
+#: code:models/hr_payslip.py:30
+msgid "Check leave if salary should be paid for the employee if is on ,leave"
+msgstr "Verifique la licencia si se debe pagar el salario del empleado si está de licencia"
+
+#, fuzzy
+#: model_terms:views/res_config_settings_views.xml
+msgid "Choose the expense account to post the flight tickets accounting entries"
+msgstr "Elija la cuenta de gastos para contabilizar los asientos contables de los billetes de avión"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:49
+msgid "Class"
+msgstr "clase"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:72
+msgid "Company of the employee."
+msgstr "Empresa of the employee."
+
+#: model_terms:views/hr_flight_ticket_views.xml
+#: model_terms:wizard/task_reassign_views.xml
+msgid "Confirm"
+msgstr "Confirmar"
+
+#, fuzzy
+#: code:models/pending_task.py:35
+msgid "Department"
+msgstr "Departamento"
+
+#, fuzzy
+#: code:models/pending_task.py:35
+msgid "Department of the employee."
+msgstr "Departamento del empleado."
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:42
+msgid "Departure"
+msgstr "Salida"
+
+#: code:models/pending_task.py:41
+msgid "Description"
+msgstr "Descripción"
+
+#, fuzzy
+#: code:models/pending_task.py:41
+msgid "Description of the task."
+msgstr "Descripción of the task."
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:44
+msgid "Destination"
+msgstr "Destino"
+
+#, fuzzy
+#: code:models/hr_leave.py:57
+msgid "Details about leave salary of employee."
+msgstr "Detalles sobre el salario de licencia del empleado."
+
+#, fuzzy
+#: code:models/hr_leave.py:42
+msgid "Details of pending tasks"
+msgstr "Detalles de tareas pendientes"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:59
+msgid "Details of return flight"
+msgstr "Detalles del vuelo de regreso"
+
+#: code:models/hr_flight_ticket.py:37
+msgid "Employee"
+msgstr "Empleado"
+
+#, fuzzy
+#: code:models/pending_task.py:43
+msgid "Employee who is assigned to"
+msgstr "Empleado who is assigned to"
+
+#, fuzzy
+#: code:models/res_config_settings.py:30
+msgid "Enable this field send leave remainder emails to hr managers"
+msgstr "Habilite este campo para enviar correos electrónicos de permiso restante a los gerentes de recursos humanos"
+
+#, fuzzy
+#: code:models/hr_leave.py:53
+#: model_terms:views/res_config_settings_views.xml
+msgid "Expense Account"
+msgstr "Expense Cuenta"
+
+#, fuzzy
+#: code:models/hr_leave.py:53
+msgid "Expense account to account the flight expenses."
+msgstr "Cuenta de gastos para contabilizar los gastos de vuelo."
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:57
+msgid "Flight Details"
+msgstr "Detalles del vuelo"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:57
+msgid "Flight details of the employee."
+msgstr "Detalles del vuelo del empleado."
+
+#, fuzzy
+#: code:models/hr_leave.py:149
+#: code:models/hr_leave.py:49
+#: model_terms:views/hr_flight_ticket_views.xml
+#: model_terms:views/hr_leave_views.xml
+#: model_terms:views/res_config_settings_views.xml
+msgid "Flight Ticket"
+msgstr "Billete de avión"
+
+#, fuzzy
+#: code:models/hr_leave.py:49
+msgid "Flight ticket Details"
+msgstr "Detalles del billete de avión"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:174
+msgid "Flight Ticket Invoice"
+msgstr "Factura de billete de avión"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:93
+msgid "Flight travelling start date must be less than flight return date."
+msgstr "La fecha de inicio del viaje del vuelo debe ser anterior a la fecha de regreso del vuelo."
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:55
+msgid "Give the ticket fare"
+msgstr "Dar la tarifa del billete"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:68
+#: model_terms:views/hr_flight_ticket_views.xml
+msgid "Invoice"
+msgstr "Invoice"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:68
+msgid "Invoice of the employee"
+msgstr "factura del empleado"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:70
+msgid "Leave"
+msgstr "salir"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:70
+msgid "Leave of the employee."
+msgstr "Licencia del empleado."
+
+#, fuzzy
+#: code:models/res_config_settings.py:30
+msgid "Leave Reminder Email"
+msgstr "Dejar correo electrónico de recordatorio"
+
+#, fuzzy
+#: code:models/pending_task.py:33
+#: code:wizard/task_reassign.py:38
+msgid "Leave Request"
+msgstr "Solicitud de licencia"
+
+#, fuzzy
+#: code:models/hr_leave.py:99
+msgid "Leave request must be confirmed (\"To Approve\") in order to approve it."
+msgstr "La solicitud de licencia debe ser confirmada (\"Para Aprobar\") para poder aprobarla."
+
+#, fuzzy
+#: code:models/pending_task.py:33
+msgid "Leave request of the employee."
+msgstr "Solicitud de licencia del empleado."
+
+#, fuzzy
+#: code:wizard/task_reassign.py:38
+msgid "Leave request to which the pending tasks are related."
+msgstr "Dejar solicitud con la que se relacionan las tareas pendientes."
+
+#, fuzzy
+#: code:models/hr_leave.py:57
+#: code:models/hr_payslip.py:30
+#: code:models/res_config_settings.py:41
+msgid "Leave Salary"
+msgstr "Salario Salario"
+
+#, fuzzy
+#: model_terms:views/res_config_settings_views.xml
+msgid "Leave salary calculation"
+msgstr "Dejar cálculo de salario"
+
+#, fuzzy
+#: code:wizard/task_reassign.py:32
+msgid "List of pending tasks associated with the leave request."
+msgstr "Listado de tareas pendientes asociadas a la solicitud de baja."
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:37
+msgid "Name of the employee"
+msgstr "Nombre of the employee"
+
+#, fuzzy
+#: code:models/pending_task.py:31
+msgid "Name of the pending task."
+msgstr "Nombre of the pending task."
+
+#, fuzzy
+#: code:models/pending_task.py:48
+msgid "Name of unavailableemployees"
+msgstr "Nombre of unavailableemployees"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:34
+#: code:models/hr_flight_ticket.py:80
+#: code:models/hr_flight_ticket.py:82
+msgid "New"
+msgstr "New"
+
+#, fuzzy
+#: code:models/hr_leave.py:95
+msgid "Only an HR Officer or Manager can approve leave requests."
+msgstr "Sólo un responsable o gerente de recursos humanos puede aprobar solicitudes de licencia."
+
+#, fuzzy
+#: code:models/hr_leave.py:123
+msgid "Only an HR Officer or Manager can book flight tickets."
+msgstr "Sólo un responsable o gerente de recursos humanos puede reservar billetes de avión."
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Open HRMS Vacation Management"
+msgstr "Abrir Gestión de Vacaciones HRMS"
+
+#, fuzzy
+#: code:models/hr_leave.py:37
+#: model_terms:views/hr_leave_views.xml
+msgid "Overlapping Leaves"
+msgstr "Hojas superpuestas"
+
+#, fuzzy
+#: code:models/hr_leave.py:37
+msgid "Overlapping leaves of employees."
+msgstr "Hojas superpuestas de empleados."
+
+#, fuzzy
+#: code:models/hr_leave.py:42
+#: code:wizard/task_reassign.py:32
+#: model_terms:views/pending_task_views.xml
+msgid "Pending Tasks"
+msgstr "Pending Tareas"
+
+#, fuzzy
+#: model_terms:views/hr_leave_views.xml
+msgid "Pending Works"
+msgstr "Obras Pendientes"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:102
+msgid "Please add ticket fare."
+msgstr "Por favor agregue la tarifa del boleto."
+
+#, fuzzy
+#: code:wizard/task_reassign.py:52
+msgid "Please assign pending task to employees."
+msgstr "Asigne tareas pendientes a los empleados."
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:107
+msgid "Please select expense account for the flight tickets."
+msgstr "Seleccione la cuenta de gastos para los billetes de avión."
+
+#: code:models/pending_task.py:38
+msgid "Project"
+msgstr "Proyecto"
+
+#, fuzzy
+#: code:models/pending_task.py:38
+msgid "Project of the employee"
+msgstr "Proyecto of the employee"
+
+#, fuzzy
+#: code:models/hr_leave.py:108
+msgid "Re-Assign Task"
+msgstr "Re-Assign Tarea"
+
+#, fuzzy
+#: code:models/hr_leave.py:32
+msgid "Remaining Legal Leaves"
+msgstr "Licencias legales restantes"
+
+#, fuzzy
+#: code:models/hr_leave.py:32
+msgid "Remaining legal leaves"
+msgstr "Resto de permisos legales"
+
+#, fuzzy
+#: code:models/res_config_settings.py:34
+msgid "Reminder Day Before"
+msgstr "Recordatorio el día anterior"
+
+#, fuzzy
+#: code:models/hr_leave.py:46
+msgid "Responsible holiday managers"
+msgstr "Gestores de vacaciones responsables"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:48
+msgid "Return Date"
+msgstr "Return Fecha"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:48
+msgid "Return date"
+msgstr "fecha de regreso"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:59
+msgid "Return Flight Details"
+msgstr "Detalles del vuelo de regreso"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:49
+msgid "Select the ticket class"
+msgstr "Selecciona la clase de billete"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:39
+msgid "Select the ticket type"
+msgstr "Seleccione el tipo de billete"
+
+#, fuzzy
+#: code:wizard/task_reassign.py:61
+msgid "Selected employee %s is not available"
+msgstr "El empleado seleccionado %s no está disponible"
+
+#, fuzzy
+#: code:wizard/task_reassign.py:63
+msgid "Selected employees %s are not available"
+msgstr "Los empleados seleccionados %s no están disponibles"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:33
+msgid "Sequence No"
+msgstr "Número de secuencia"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:33
+msgid "Sequence number of Flight Ticket"
+msgstr "Número de secuencia del billete de avión"
+
+#, fuzzy
+#: code:models/res_config_settings.py:34
+msgid "Set the day to send reminder ."
+msgstr "Configure el día para enviar el recordatorio."
+
+#, fuzzy
+#: code:models/res_config_settings.py:37
+msgid "Set the default expense account"
+msgstr "Establecer la cuenta de gastos predeterminada"
+
+#, fuzzy
+#: code:models/res_config_settings.py:41
+msgid "Set the default leave salary of employee."
+msgstr "Establezca el salario de licencia predeterminado del empleado."
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:42
+msgid "Specify the departure place."
+msgstr "Especifique el lugar de salida."
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:44
+msgid "Specify the destination place."
+msgstr "Especifique el lugar de destino."
+
+#: code:models/hr_flight_ticket.py:46
+msgid "Start Date"
+msgstr "Fecha inicial"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:46
+msgid "Start date of the travel."
+msgstr "Fecha de inicio del viaje."
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:61
+msgid "States of the flight ticket."
+msgstr "Estados del billete de avión."
+
+#: code:models/hr_flight_ticket.py:61
+msgid "Status"
+msgstr "Estado"
+
+#: code:models/pending_task.py:31
+msgid "Task"
+msgstr "Tarea"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"The 'Vacation Management System' is a robust platform\n"
+"     designed to streamline and optimize the management of employee \n"
+"     vacations within an organization."
+msgstr ""
+"El 'Sistema de Gestión de Vacaciones' es una plataforma robusta\n"
+"     diseñado para agilizar y optimizar la gestión de los empleados \n"
+"     vacaciones dentro de una organización."
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:55
+msgid "Ticket Fare"
+msgstr "Tarifa del billete"
+
+#, fuzzy
+#: code:models/hr_flight_ticket.py:39
+msgid "Ticket Type"
+msgstr "Tipo de billete"
+
+#, fuzzy
+#: code:models/res_config_settings.py:37
+msgid "Travel Expense Account"
+msgstr "Travel Expense Cuenta"
+
+#, fuzzy
+#: code:models/pending_task.py:48
+msgid "Unavailable Employees"
+msgstr "Unavailable Empleados"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Vacation Management,manages employee vacation"
+msgstr "Gestión de vacaciones, gestiona las vacaciones de los empleados."

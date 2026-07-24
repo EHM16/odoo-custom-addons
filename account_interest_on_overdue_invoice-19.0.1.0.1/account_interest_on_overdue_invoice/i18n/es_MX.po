@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-23 00:00+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
-"Last-Translator: \n"
+"Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
 "Language: es_MX\n"
 "MIME-Version: 1.0\n"
@@ -16,149 +16,115 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_payment_term__interest_account_id
-msgid "Account for Interest"
-msgstr "Cuenta para intereses"
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_payment_term__interest_account_id
-msgid "Account used for creating accounting entries."
-msgstr "Cuenta utilizada para crear asientos contables."
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.actions.server,name:account_interest_on_overdue_invoice.ir_cron_daily_interest_compute_ir_actions_server
-#: model:ir.cron,cron_name:account_interest_on_overdue_invoice.ir_cron_daily_interest_compute
-msgid "Account:Daily Invoice Interest check"
-msgstr "Contabilidad: revisión diaria de intereses de facturas"
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields.selection,name:account_interest_on_overdue_invoice.selection__account_payment_term__interest_type__daily
-msgid "Daily"
-msgstr "Diario"
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.constraint,message:account_interest_on_overdue_invoice.constraint_account_payment_term_interest_percentage
-msgid "Enter Positive value as Interest percentage"
-msgstr "Ingrese un valor positivo como porcentaje de interés"
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_move__interest_amount
-msgid "Interest Amount"
-msgstr "Importe de intereses"
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_move__interest_calculated_period
-msgid "Interest calculated date"
-msgstr "Fecha de cálculo de intereses"
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_payment_term__interest_overdue_act
-msgid "Interest on Overdue Invoices"
-msgstr "Intereses sobre facturas vencidas"
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_payment_term__interest_percentage
-msgid "Interest Percentage"
-msgstr "Porcentaje de interés"
-
-#. module: account_interest_on_overdue_invoice
-#: model_terms:ir.ui.view,arch_db:account_interest_on_overdue_invoice.report_invoice_document_inherit_interest
-msgid "Interest Ratio :"
-msgstr "Tasa de interés:"
-
-#. module: account_interest_on_overdue_invoice
-#: model_terms:ir.ui.view,arch_db:account_interest_on_overdue_invoice.report_invoice_document_inherit_interest
-msgid "Interest Type :"
-msgstr "Tipo de interés:"
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_payment_term__interest_type
-msgid "Interest Type"
-msgstr "Tipo de interés"
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_payment_term__interest_type
-msgid "Base duration for interest calculation"
-msgstr "Periodo base para calcular los intereses"
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_move__interest_amount
-msgid "The amount of interest accrued."
-msgstr "El importe de los intereses acumulados."
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_move__interest_calculated_period
-msgid "The date when interest was calculated."
-msgstr "La fecha en que se calcularon los intereses."
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_move__interest_overdue_act
-msgid "Flag indicating whether overdue interest is active."
-msgstr "Indica si los intereses por vencimiento están activos."
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_move__interest_percentage
-msgid "The percentage rate of interest applied."
-msgstr "La tasa porcentual de interés aplicada."
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_move__interest_type
-msgid "The type of interest applied."
-msgstr "El tipo de interés aplicado."
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_payment_term__interest_percentage
-msgid "Interest percentage ratio per selected Interest type duration."
-msgstr "Porcentaje de interés por cada periodo del tipo de interés seleccionado."
-
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields.selection,name:account_interest_on_overdue_invoice.selection__account_payment_term__interest_type__monthly
-msgid "Monthly"
-msgstr "Mensual"
-
-#. module: account_interest_on_overdue_invoice
-#: model_terms:ir.ui.view,arch_db:account_interest_on_overdue_invoice.view_move_form
+#: model_terms:views/account_move_views.xml
 msgid "(Reset)"
 msgstr "(Restablecer)"
 
-#. module: account_interest_on_overdue_invoice
-#: model_terms:ir.ui.view,arch_db:account_interest_on_overdue_invoice.view_move_form
+#: model_terms:views/account_move_views.xml
 msgid "(Update Interest)"
 msgstr "(Actualizar intereses)"
 
-#. module: account_interest_on_overdue_invoice
-#: model:ir.model.fields.selection,name:account_interest_on_overdue_invoice.selection__account_payment_term__interest_type__weekly
-msgid "Weekly"
-msgstr "Semanal"
+#: code:models/account_payment_term.py:41
+msgid "Account for Interest"
+msgstr "Cuenta para intereses"
 
-#. module: account_interest_on_overdue_invoice
-#. odoo-python
-#: code:addons/account_interest_on_overdue_invoice/models/account_move.py:0
-#, python-format
-msgid "Your payment term is daily, and you can update it only once in a day."
-msgstr "El plazo de pago es diario y sólo puede actualizarlo una vez al día."
+#: code:models/account_payment_term.py:41
+msgid "Account used for creating accounting entries."
+msgstr "Cuenta utilizada para crear asientos contables."
 
-#. module: account_interest_on_overdue_invoice
-#. odoo-python
-#: code:addons/account_interest_on_overdue_invoice/models/account_move.py:0
-#, python-format
-msgid "Your payment term is monthly, and you can update it only once in a month."
-msgstr "El plazo de pago es mensual y sólo puede actualizarlo una vez al mes."
+#: code:models/account_payment_term.py:32
+msgid "Base duration for interest calculation"
+msgstr "Periodo base para calcular los intereses"
 
-#. module: account_interest_on_overdue_invoice
-#. odoo-python
-#: code:addons/account_interest_on_overdue_invoice/models/account_move.py:0
-#, python-format
-msgid "Your payment term is weekly, and you can update it only once in a week."
-msgstr "El plazo de pago es semanal y sólo puede actualizarlo una vez a la semana."
+#: code:models/account_payment_term.py:32
+msgid "Daily"
+msgstr "Diario"
 
-#. module: account_interest_on_overdue_invoice
-#: model:ir.module.module,name:account_interest_on_overdue_invoice.module_account_interest_on_overdue_invoice
+#: code:models/account_payment_term.py:55
+msgid "Enter Positive value as Interest percentage"
+msgstr "Ingrese un valor positivo como porcentaje de interés"
+
+#: code:models/account_move.py:35
+msgid "Flag indicating whether overdue interest is active."
+msgstr "Indica si los intereses por vencimiento están activos."
+
+#: code:models/account_move.py:33
+msgid "Interest Amount"
+msgstr "Importe de intereses"
+
+#: code:models/account_move.py:38
+msgid "Interest calculated date"
+msgstr "Fecha de cálculo de intereses"
+
+#: model:ir.module.module,name:__manifest__.py
 msgid "Interest for Overdue Invoice"
 msgstr "Intereses para facturas vencidas"
 
-#. module: account_interest_on_overdue_invoice
-#: model:ir.module.module,summary:account_interest_on_overdue_invoice.module_account_interest_on_overdue_invoice
+#: code:models/account_payment_term.py:31
+msgid "Interest on Overdue Invoices"
+msgstr "Intereses sobre facturas vencidas"
+
+#: code:models/account_payment_term.py:37
+msgid "Interest Percentage"
+msgstr "Porcentaje de interés"
+
+#: code:models/account_payment_term.py:37
+msgid "Interest percentage ratio per selected Interest type duration."
+msgstr "Porcentaje de interés por cada periodo del tipo de interés seleccionado."
+
+#: model_terms:views/report_invoice.xml
+msgid "Interest Ratio :"
+msgstr "Tasa de interés:"
+
+#: code:models/account_payment_term.py:32
+msgid "Interest Type"
+msgstr "Tipo de interés"
+
+#: model_terms:views/report_invoice.xml
+msgid "Interest Type :"
+msgstr "Tipo de interés:"
+
+#: code:models/account_payment_term.py:32
+msgid "Monthly"
+msgstr "Mensual"
+
+#: code:models/account_move.py:33
+msgid "The amount of interest accrued."
+msgstr "El importe de los intereses acumulados."
+
+#: code:models/account_move.py:38
+msgid "The date when interest was calculated."
+msgstr "La fecha en que se calcularon los intereses."
+
+#: code:models/account_move.py:43
+msgid "The percentage rate of interest applied."
+msgstr "La tasa porcentual de interés aplicada."
+
+#: code:models/account_move.py:40
+msgid "The type of interest applied."
+msgstr "El tipo de interés aplicado."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "This module helps to calculate daily, weekly or monthlyInterest for Overdue Invoices based on payment termconfiguration."
+msgstr "Este módulo ayuda a calcular el interés diario, semanal o mensual de facturas vencidas según la configuración del plazo de pago."
+
+#: model:ir.module.module,summary:__manifest__.py
 msgid "This module helps to manage Interest on Overdue Invoices."
 msgstr "Este módulo ayuda a gestionar los intereses sobre facturas vencidas."
+
+#: code:models/account_payment_term.py:32
+msgid "Weekly"
+msgstr "Semanal"
+
+#: code:models/account_move.py:95
+msgid "Your payment term is daily, and you can update it only once in a day."
+msgstr "El plazo de pago es diario y sólo puede actualizarlo una vez al día."
+
+#: code:models/account_move.py:79
+msgid "Your payment term is monthly, and you can update it only once in a month."
+msgstr "El plazo de pago es mensual y sólo puede actualizarlo una vez al mes."
+
+#: code:models/account_move.py:87
+msgid "Your payment term is weekly, and you can update it only once in a week."
+msgstr "El plazo de pago es semanal y sólo puede actualizarlo una vez a la semana."

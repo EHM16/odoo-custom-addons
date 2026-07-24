@@ -39,7 +39,7 @@ msgstr "Cancelado"
 
 #: model_terms:views/sale_recurring_views.xml
 msgid "Channel"
-msgstr "canal"
+msgstr "Canal"
 
 #: code:models/sale_recurring.py:54
 msgid "Count of total quotations"
@@ -218,7 +218,7 @@ msgstr "Solicitud de cotización total"
 
 #: code:models/sale_recurring.py:51
 msgid "Total SO"
-msgstr "Total de SO"
+msgstr "Total de ordenes de venta"
 
 #: model_terms:views/sale_recurring_views.xml
 msgid "Unarchive"

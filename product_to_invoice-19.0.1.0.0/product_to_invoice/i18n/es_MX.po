@@ -31,7 +31,7 @@ msgstr "Añadir a factura"
 
 #: model_terms:views/product_product_views.xml
 msgid "Add to Invoice/Bill"
-msgstr "Agregar a factura/factura"
+msgstr "Agregar a factura/recibo"
 
 #: model_terms:wizard/invoice_product_details_views.xml
 msgid "Cancel"
@@ -71,7 +71,7 @@ msgstr "No se pudo crear la línea de factura."
 
 #: model_terms:wizard/invoice_product_details_views.xml
 msgid "History"
-msgstr "Historia"
+msgstr "Historial"
 
 #: code:wizard/invoice_product_details.py:43
 msgid "History of invoices related to this product."
@@ -83,11 +83,11 @@ msgstr "Historial de facturas"
 
 #: code:wizard/product_invoice_history.py:35
 msgid "Invoice/Bill"
-msgstr "Factura/factura"
+msgstr "Factura/Recibo"
 
 #: code:wizard/product_invoice_history.py:38
 msgid "Invoice/Bill No"
-msgstr "Número de factura/factura"
+msgstr "Número de factura/recibo"
 
 #: code:wizard/invoice_product_details.py:51
 msgid "Limit"
@@ -113,7 +113,7 @@ msgstr "Cantidad"
 
 #: model_terms:wizard/invoice_product_details_views.xml
 msgid "Recent Invoice/Bill History"
-msgstr "Historial reciente de facturas/facturas"
+msgstr "Historial reciente de facturas/recibos"
 
 #: code:wizard/invoice_product_details.py:32
 msgid "Select the product for this record."
@@ -141,7 +141,7 @@ msgstr "La fecha de la factura."
 
 #: code:wizard/product_invoice_history.py:38
 msgid "The number of the invoice/bill"
-msgstr "El número de la factura/factura"
+msgstr "El número de la factura/recibo"
 
 #: code:wizard/product_invoice_history.py:47
 msgid "The quantity of the product or service"

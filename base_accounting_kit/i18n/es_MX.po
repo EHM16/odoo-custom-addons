@@ -23,7 +23,7 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"Estación de trabajo de oficina moderna para cuatro personas"
+"                                        Estación de trabajo de oficina moderna para cuatro personas\n"
 
 #: model_terms:report/multiple_invoice_layouts.xml
 msgid ""
@@ -33,7 +33,8 @@ msgid ""
 "                                    "
 msgstr ""
 "\n"
-"Sofá de tres plazas con chaise longue en color gris acero"
+"                                        Sofá de tres plazas con chaise longue en\n"
+"                                        color gris acero\n"
 
 #: model_terms:report/multiple_invoice_report_template.xml
 msgid ""
@@ -41,7 +42,7 @@ msgid ""
 "                                        Total amount in words: "
 msgstr ""
 "\n"
-"Monto total en palabras:"
+"                                        Monto total en palabras: "
 
 #: model_terms:report/report_trial_balance_template.xml
 msgid ""
@@ -50,7 +51,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Todas las cuentas"
+"                                    Todas las cuentas\n"
 
 #: model_terms:report/account_cash_book_template.xml
 msgid ""
@@ -59,7 +60,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Todas las cuentas"
+"                                    Todas las cuentas\n"
 
 #: model_terms:report/multiple_invoice_report_template.xml
 msgid ""
@@ -79,7 +80,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Comparación"
+"                                    Comparación\n"
 
 #: model_terms:report/account_cash_book_template.xml
 msgid ""
@@ -98,7 +99,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Variación"
+"                                    Variación\n"
 
 #: model_terms:report/account_cash_book_template.xml
 #: model_terms:report/report_trial_balance_template.xml
@@ -108,7 +109,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Con saldo distinto de cero"
+"                                    Con saldo distinto de cero\n"
 
 #: model_terms:report/account_cash_book_template.xml
 #: model_terms:report/report_trial_balance_template.xml
@@ -118,7 +119,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"Con movimientos"
+"                                    Con movimientos\n"
 
 #: model_terms:report/multiple_invoice_layouts.xml
 msgid ""
@@ -127,7 +128,7 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"INV/2020/07/0003"
+"                                INV/2020/07/0003\n"
 
 #: model_terms:report/account_cash_book_template.xml
 msgid ""
@@ -136,7 +137,7 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"Diario y contacto"
+"                                  Diario y contacto\n"
 
 #: code:models/account_journal.py:110
 msgid ""
@@ -150,7 +151,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"<p class=\\\"o_view_nocontent_smiling_face\\\">\n"
+"                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
 "                                ¡Nada que hacer aquí!\n"
 "                            </p>\n"
 "                            <p>\n"
@@ -166,7 +167,9 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Según nuestros registros, las siguientes facturas continúan pendientes de pago y ya están vencidas. Le agradeceremos realizar el pago a la brevedad."
+"                            Según nuestros registros, las siguientes facturas \n"
+"                            continúan pendientes de pago y ya están vencidas. \n"
+"                            Le agradeceremos realizar el pago a la brevedad. \n"
 
 #: model_terms:report/followup_report_templates.xml
 msgid ""
@@ -176,7 +179,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Si ya realizó el pago, haga caso omiso de esta carta."
+"                            Si ya realizó el pago, haga caso omiso de esta carta."
 
 #: model_terms:report/report_journal_audit_template.xml
 msgid ""
@@ -185,7 +188,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Diario"
+"                            Diario\n"
 
 #: model_terms:report/multiple_invoice_report_template.xml
 msgid ""
@@ -194,7 +197,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Factura cancelada"
+"                        Factura cancelada\n"
 
 #: model_terms:report/multiple_invoice_report_template.xml
 msgid ""
@@ -203,7 +206,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Borrador de factura"
+"                        Borrador de factura\n"
 
 #: model_terms:report/multiple_invoice_report_template.xml
 msgid ""
@@ -212,7 +215,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Factura"
+"                        Factura\n"
 
 #: model_terms:report/multiple_invoice_layouts.xml
 msgid ""
@@ -222,7 +225,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Utilice la siguiente referencia al realizar su pago:"
+"                        Utilice la siguiente referencia al realizar su pago:\n"
 
 #: model_terms:report/multiple_invoice_layouts.xml
 msgid ""
@@ -231,7 +234,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"de"
+"                    de\n"
 
 #: model_terms:report/multiple_invoice_layouts.xml
 msgid ""
@@ -240,7 +243,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Página:"
+"                    Página:\n"
 
 #: model_terms:report/multiple_invoice_report_template.xml
 msgid ""
@@ -249,7 +252,7 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Utilice la siguiente referencia al realizar su pago:"
+"                    Utilice la siguiente referencia al realizar su pago : \n"
 
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
@@ -324,13 +327,17 @@ msgstr ": Informe del libro bancario"
 msgid ""
 ": Cash Book Report\n"
 "                    "
-msgstr ": Informe del libro de caja"
+msgstr ""
+": Informe del libro de caja\n"
+"                    "
 
 #: model_terms:report/account_day_book_template.xml
 msgid ""
 ": Day Book Report\n"
 "                    "
-msgstr ": Informe del libro diario"
+msgstr ""
+": Informe del libro diario\n"
+"                    "
 
 #: model_terms:report/general_ledger_report_template.xml
 msgid ": General ledger"
@@ -483,14 +490,20 @@ msgid ""
 "All\n"
 "                                    Entries\n"
 "                                "
-msgstr "Todos los asientos"
+msgstr ""
+"Todos los\n"
+"                                    asientos\n"
+"                                "
 
 #: model_terms:report/report_trial_balance_template.xml
 msgid ""
 "All\n"
 "                                    Posted Entries\n"
 "                                "
-msgstr "Todos los asientos contabilizados"
+msgstr ""
+"Todos los\n"
+"                                    asientos contabilizados/n"
+"                                "
 
 #: model_terms:report/account_bank_book_template.xml
 #: model_terms:report/general_ledger_report_template.xml
@@ -512,7 +525,9 @@ msgstr "Todos los asientos"
 msgid ""
 "All Entries\n"
 "                            "
-msgstr "Todos los asientos"
+msgstr ""
+"Todos los asientos\n"
+"                            "
 
 #: code:models/account_bulk_payment.py:86
 msgid "All payments in the batch must be of type '%s'."
@@ -531,7 +546,10 @@ msgid ""
 "All Posted\n"
 "                                Entries\n"
 "                            "
-msgstr "Todos los asientos contabilizados"
+msgstr ""
+"Todos los\n"
+"                                asientos contabilizados\n"
+"                            "
 
 #: model_terms:report/account_bank_book_template.xml
 #: model_terms:report/account_day_book_template.xml
@@ -1175,7 +1193,7 @@ msgstr "Débito"
 
 #: model_terms:report/multiple_invoice_layouts.xml
 msgid "Deco Addict"
-msgstr "Deco Addict"
+msgstr "Adictos a la Decoración"
 
 #: model_terms:views/account_asset_asset_views.xml
 #: model_terms:views/account_asset_category_views.xml
@@ -1363,7 +1381,7 @@ msgstr "p.ej. Ordenadores"
 
 #: model_terms:views/account_asset_asset_views.xml
 msgid "e.g. Laptop iBook"
-msgstr "p.ej. IBook portátil"
+msgstr "p.ej. iBook portátil"
 
 #: code:models/account_payment.py:33
 #: code:models/account_payment.py:65
@@ -1687,7 +1705,7 @@ msgstr "Factura No."
 
 #: model_terms:report/res_partner_templates.xml
 msgid "Invoice/Bill Number"
-msgstr "Número de factura"
+msgstr "Número de factura/recibo"
 
 #: code:models/account_recurring_invoice.py:204
 #: code:models/account_recurring_invoice.py:76
@@ -1802,7 +1820,7 @@ msgstr "Etiqueta"
 
 #: model_terms:views/res_config_settings_views.xml
 msgid "Last Day"
-msgstr "último día"
+msgstr "Último día"
 
 #: code:models/res_partner.py:55
 msgid "Last follow-up level applied to this customer."
@@ -2220,7 +2238,9 @@ msgstr "Periodicidad"
 msgid ""
 "Pleasant Hill CA 94523\n"
 "                                                "
-msgstr "Pleasant Hill CA 94523"
+msgstr ""
+"Pleasant Hill CA 94523\n"
+"
 
 #: code:wizard/account_fx_revaluation.py:46
 msgid "Post a reversal entry the day after the revaluation date (unrealized amounts are reversed next period)."
@@ -2247,11 +2267,11 @@ msgstr "Prepagos"
 
 #: code:wizard/account_lock_date.py:33
 msgid "Prevents creating and modifying bills up to the date."
-msgstr "Impide crear y modificar facturas de proveedor hasta la fecha indicada, inclusive."
+msgstr "Impide crear y modificar recibos de proveedor hasta la fecha indicada."
 
 #: code:wizard/account_lock_date.py:32
 msgid "Prevents creating and modifying invoices up to the date."
-msgstr "Impide crear y modificar facturas de cliente hasta la fecha indicada, inclusive."
+msgstr "Impide crear y modificar facturas de cliente hasta la fecha indicada."
 
 #: code:models/account_asset_category.py:34
 msgid "Price"
@@ -2515,8 +2535,9 @@ msgid ""
 "                            app.\n"
 "                        "
 msgstr ""
-"Escanéame con tu banca\n"
-"                            aplicación."
+"Escanéame con tu aplicación\n"
+"                            bancaria."
+"                        "
 
 #: model_terms:views/account_asset_category_views.xml
 msgid "Search Asset Category"
@@ -2678,11 +2699,12 @@ msgstr "Impuesto"
 #: model_terms:report/multiple_invoice_layouts.xml
 msgid ""
 "Tax\n"
-"                                                    15%\n"
+"                                                    16%\n"
 "                                                "
 msgstr ""
 "Impuesto\n"
-"                                                    15%"
+"                                                    16%"
+"                                                "
 
 #: model_terms:report/report_journal_audit_template.xml
 msgid "Tax Amount"
@@ -2714,7 +2736,9 @@ msgstr "Impuestos"
 msgid ""
 "Tel:\n"
 "                                "
-msgstr "Teléfono:"
+msgstr ""
+"Teléfono:\n"
+"                                "
 
 #: code:models/followup_line.py:43
 msgid "Template used for the reminder email. Falls back to the default follow-up template when empty."
@@ -2876,7 +2900,9 @@ msgstr "Precio unitario"
 msgid ""
 "United States\n"
 "                                            "
-msgstr "Estados Unidos"
+msgstr ""
+"Estados Unidos\n"
+"                                            "
 
 #: code:report/report_aged_partner.py:254
 msgid "Unknown Partner"
@@ -2888,7 +2914,7 @@ msgstr "Desmarcar enviado"
 
 #: code:models/recurring_payments.py:76
 msgid "Unposted"
-msgstr "Dispuesto"
+msgstr "No publicado"
 
 #: code:report/account_asset_report.py:44
 msgid "Unposted Amount"

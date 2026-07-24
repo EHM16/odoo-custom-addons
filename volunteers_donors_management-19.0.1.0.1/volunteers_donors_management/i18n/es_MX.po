@@ -52,7 +52,7 @@ msgstr "Fecha de asignación"
 
 #: code:models/res_partner.py:34
 msgid "Check this box if the partner is a donor"
-msgstr "Marque esta casilla si la pareja es donante"
+msgstr "Marque esta casilla si el socio es donante"
 
 #: code:models/res_partner.py:31
 msgid "Check this box if the partner is a volunteer"
@@ -164,15 +164,15 @@ msgstr "El código del código del donante."
 
 #: code:models/volunteer_skill.py:42
 msgid "The code of the volunteer skill"
-msgstr "El código de la habilidad voluntaria."
+msgstr "El código de la habilidad del voluntario."
 
 #: code:models/volunteer_type.py:34
 msgid "The code of the volunteer type"
-msgstr "El código del tipo voluntario."
+msgstr "El código del tipo de voluntario."
 
 #: code:models/volunteer_skill.py:45
 msgid "The color code of the volunteer skill"
-msgstr "El código de color de la habilidad voluntaria."
+msgstr "El código de color de la habilidad del voluntario."
 
 #: code:models/donor_type.py:32
 msgid "The name of the donor type"
@@ -180,7 +180,7 @@ msgstr "El nombre del tipo de donante."
 
 #: code:models/volunteer_skill.py:39
 msgid "The name of the volunteer skill"
-msgstr "El nombre de la habilidad voluntaria."
+msgstr "El nombre de la habilidad del voluntario."
 
 #: code:models/volunteer_type.py:31
 msgid "The name of the volunteer type"
@@ -192,7 +192,7 @@ msgstr "Las habilidades del voluntario asociado a este socio."
 
 #: code:models/crm_lead.py:41
 msgid "The skills possessed by the volunteer associated with this lead"
-msgstr "Las habilidades que posee el voluntario asociado con este líder."
+msgstr "Las habilidades que posee el voluntario asociado con este cliente potencial."
 
 #: code:models/crm_lead.py:30
 msgid "The type of donor associated with this lead"
@@ -246,7 +246,7 @@ msgstr "Detalles del voluntario"
 #: code:models/crm_lead.py:41
 #: model_terms:report/project_report_templates.xml
 msgid "Volunteer Skill"
-msgstr "Habilidad voluntaria"
+msgstr "Habilidad del voluntario"
 
 #: code:models/crm_lead.py:35
 #: model_terms:report/project_report_templates.xml

@@ -253,7 +253,7 @@ msgstr "Alerta de disponibilidad"
 
 #: code:models/workers_details.py:100
 msgid "Availability Status"
-msgstr "Availability Estado"
+msgstr "Estado de disponibilidad"
 
 #: model_terms:views/workers_details_views.xml
 msgid "Available"
@@ -376,7 +376,7 @@ msgstr "Factura de cliente generada para este contrato de suministro de mano de 
 
 #: code:wizard/labour_supply_report.py:32
 msgid "Customer wise"
-msgstr "Cliente wise"
+msgstr "Por cliente"
 
 #: model_terms:report/form_print_labour_supply_templates.xml
 #: model_terms:report/labour_supply_templates.xml
@@ -425,7 +425,7 @@ msgstr "Dirección de correo electrónico del trabajador."
 
 #: model_terms:views/labour_supply_portal_templates.xml
 msgid "End Date"
-msgstr "Fecha final"
+msgstr "Fecha de finalización"
 
 #: code:models/labour_supply.py:293
 msgid "End date cannot be earlier than start date."
@@ -630,7 +630,7 @@ msgstr "Contrato en curso"
 
 #: code:models/workers_details.py:52
 msgid "Partner record automatically created and linked to this worker."
-msgstr "Registro de socio creado automáticamente y vinculado a este trabajador."
+msgstr "Contacto creado automáticamente y vinculado con este trabajador."
 
 #: model_terms:views/workers_details_views.xml
 msgid "Phone"
@@ -744,7 +744,7 @@ msgstr ""
 
 #: code:models/skill_details.py:37
 msgid "Skill Name"
-msgstr "Skill Nombre"
+msgstr "Nombre de la habilidad"
 
 #: model_terms:views/labour_on_skill_views.xml
 msgid "Skill required"
@@ -769,7 +769,7 @@ msgstr "Especifique el número total de trabajadores necesarios para la habilida
 
 #: model_terms:views/labour_supply_portal_templates.xml
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
 #: code:models/labour_on_skill.py:58
 msgid "Start date from which the labour is required for the selected skill."
@@ -797,7 +797,7 @@ msgstr "Estado"
 
 #: model:ir.module.module,description:__manifest__.py
 msgid "The Manpower Supply module in Odoo automates the process of matching client requirements with suitable resources and streamlines the allocation and management of manpower, ensuring efficient service delivery."
-msgstr "El módulo Manpower Supply en Odoo automatiza el proceso de hacer coincidir los requisitos del cliente con los recursos adecuados y agiliza la asignación y gestión de la mano de obra, asegurando una prestación eficiente del servicio."
+msgstr "El módulo de suministro de personal de Odoo automatiza la asignación de recursos adecuados a los requisitos del cliente y simplifica la gestión del personal para prestar el servicio de forma eficiente."
 
 #: model_terms:views/labour_on_supply_form_template.xml
 msgid "To"
@@ -827,12 +827,12 @@ msgstr "Fecha hasta:"
 
 #: model_terms:static/src/xml/labour_supply_dashboard.xml
 msgid "Top 10 Customers"
-msgstr "Top 10 Clientes"
+msgstr "10 clientes principales"
 
 #: code:models/labour_supply.py:111
 #: model_terms:report/labour_supply_templates.xml
 msgid "Total Amount"
-msgstr "Total Importe"
+msgstr "Importe total"
 
 #: code:models/labour_supply.py:111
 msgid "Total contract amount calculated based on worker rates and contract period."
@@ -862,7 +862,7 @@ msgstr "Imagen del trabajador"
 
 #: code:models/workers_details.py:40
 msgid "Worker Name"
-msgstr "Worker Nombre"
+msgstr "Nombre del trabajador"
 
 #: model_terms:static/src/xml/labour_supply_dashboard.xml
 msgid "Workers"

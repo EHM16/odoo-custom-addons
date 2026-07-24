@@ -18,7 +18,7 @@ msgstr ""
 
 #: code:models/res_partner.py:30
 msgid "Due Amount"
-msgstr "Due Importe"
+msgstr "Importe pendiente"
 
 #: model_terms:views/res_partner_views.xml
 msgid "Due Statement"

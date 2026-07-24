@@ -31,11 +31,11 @@ msgstr "Empresa de la asistencia."
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Enables Multi-Company"
-msgstr "Enables Multi-Empresa"
+msgstr "Habilita el entorno multiempresa"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Multi-Company"
-msgstr "Open HRMS Multi-Empresa"
+msgstr "Open HRMS: multiempresa"
 
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module enables multi company features"

@@ -75,7 +75,7 @@ msgstr "Identificador del módulo"
 
 #: code:models/module_activity.py:31
 msgid "Module Name"
-msgstr "Module Nombre"
+msgstr "Nombre del módulo"
 
 #: code:models/module_activity.py:31
 msgid "Name of the module"
@@ -115,7 +115,7 @@ msgstr "Estado del módulo"
 #: code:models/module_activity.py:70
 #: code:models/module_activity.py:86
 msgid "Technical Name"
-msgstr "Technical Nombre"
+msgstr "Nombre técnico"
 
 #: code:models/module_activity.py:103
 #: code:models/module_activity.py:36
@@ -130,9 +130,9 @@ msgid ""
 "    users, the activities like upgrade install and uninstall.While installing a\n"
 "    module record will be created to record the activity."
 msgstr ""
-"Este imodule se utiliza para registrar la actividad del módulo de cada\n"
-"    usuarios, las actividades como la instalación y desinstalación de actualizaciones. Al instalar un\n"
-"    Se creará un registro de módulo para registrar la actividad."
+"Este módulo registra la actividad de módulos de cada usuario,\n"
+"    como actualizaciones, instalaciones y desinstalaciones. Al instalar un\n"
+"    módulo se crea un registro de la actividad."
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid ""

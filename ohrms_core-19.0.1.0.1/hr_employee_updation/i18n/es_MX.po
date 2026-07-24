@@ -18,7 +18,7 @@ msgstr ""
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Adding Advanced Fields In Employee Master"
-msgstr "Adding Advanced Fields In Empleado Master"
+msgstr "Campos avanzados en la ficha del empleado"
 
 #: code:models/hr_employee.py:46
 msgid "Attach the copy of Identification document"
@@ -64,7 +64,7 @@ msgstr "Fecha de incorporación del empleado computada a partir de la fecha de i
 #: code:models/hr_employee.py:42
 #: code:models/hr_employee.py:44
 msgid "Expiry Date"
-msgstr "Expiry Fecha"
+msgstr "Fecha de vencimiento"
 
 #: code:models/hr_employee.py:42
 msgid "Expiry date of Identification document"
@@ -96,11 +96,11 @@ msgstr "Identificación de identificación"
 
 #: code:models/hr_employee.py:38
 msgid "Joining Date"
-msgstr "Joining Fecha"
+msgstr "Fecha de ingreso"
 
 #: code:models/hr_employee.py:35
 msgid "Mobile"
-msgstr "Móvil"
+msgstr "Celular"
 
 #: code:models/hr_employee_family.py:37
 msgid "Name"
@@ -120,7 +120,7 @@ msgstr "Número de días requeridos para el aviso antes de la terminación."
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Employee Info"
-msgstr "Open HRMS Empleado Info"
+msgstr "Open HRMS: información del empleado"
 
 #: model_terms:views/hr_employee_views.xml
 msgid "Passport ID"
@@ -132,7 +132,7 @@ msgstr "Pasaporte-%s expiró en %s"
 
 #: code:models/hr_employee.py:35
 msgid "Personal mobile number of the employee"
-msgstr "Número de móvil personal del empleado."
+msgstr "Número de celular personal del empleado"
 
 #: model_terms:views/hr_employee_views.xml
 msgid "Received Badges"

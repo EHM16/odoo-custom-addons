@@ -18,7 +18,7 @@ msgstr ""
 
 #: code:models/project_sub_task.py:45
 msgid "Assignees"
-msgstr "Cesionarios"
+msgstr "Personas asignadas"
 
 #: model_terms:views/project_project_views.xml
 msgid "Create Project from Template"
@@ -62,7 +62,7 @@ msgstr "Nombre de la plantilla de tarea."
 
 #: code:models/project_sub_task.py:49
 msgid "Parent Task"
-msgstr "Parent Tarea"
+msgstr "Tarea principal"
 
 #: code:models/project_stage.py:34
 msgid "Project Stage"
@@ -72,11 +72,11 @@ msgstr "Etapa del proyecto"
 #: code:models/project_stage.py:31
 #: code:models/project_sub_task.py:40
 msgid "Project Template"
-msgstr "Proyecto Template"
+msgstr "Plantilla de proyecto"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Project Templates"
-msgstr "Proyecto Templates"
+msgstr "Plantillas de proyecto"
 
 #: code:models/project_sub_task.py:58
 msgid "Represents the current status of the sub-task."
@@ -112,7 +112,7 @@ msgstr "Seleccione los usuarios que están asignados a esta tarea."
 
 #: code:models/project_sub_task.py:55
 msgid "Show Tasks Page"
-msgstr "Show Tareas Page"
+msgstr "Mostrar página de tareas"
 
 #: code:models/project_task_template.py:36
 #: model_terms:views/project_task_template_views.xml
@@ -125,7 +125,7 @@ msgstr "Estado"
 
 #: code:models/project_sub_task.py:52
 msgid "Sub-Tasks"
-msgstr "Sub-Tareas"
+msgstr "Subtareas"
 
 #: code:models/project_stage.py:37
 msgid "Subtasks"
@@ -137,7 +137,7 @@ msgstr "Subtareas asociadas a esta etapa."
 
 #: code:models/project_sub_task.py:43
 msgid "Task Description"
-msgstr "Tarea Descripción"
+msgstr "Descripción de la tarea"
 
 #: code:models/project_task_template.py:32
 #: model_terms:views/project_sub_task_views.xml
@@ -147,7 +147,7 @@ msgstr "Tareas"
 
 #: code:models/project_task_template.py:30
 msgid "Template Name"
-msgstr "Template Nombre"
+msgstr "Nombre de la plantilla"
 
 #: code:models/project_task_type.py:29
 msgid "The template associated with this task type."
@@ -159,7 +159,7 @@ msgstr "Esta aplicación le permite a su equipo de proyecto crear una plantilla 
 
 #: model_terms:views/project_task_template_views.xml
 msgid "View Task"
-msgstr "View Tarea"
+msgstr "Ver tarea"
 
 #: model:ir.module.module,description:__manifest__.py
 msgid "When faced with the need to create multiple projects that share similar tasks, manually inputting data such as task names, descriptions, and assigned individuals can be time-consuming. In such situations, this module offers assistance in creating and managing projects based on pre-defined templates."

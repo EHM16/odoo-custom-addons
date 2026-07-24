@@ -26,7 +26,7 @@ msgstr "Open HRMS: empleados a partir de usuarios"
 
 #: code:models/res_users.py:30
 msgid "Related Employee"
-msgstr "Related Empleado"
+msgstr "Empleado relacionado"
 
 #: code:models/res_users.py:30
 msgid "Related employee based on the data of the user"

@@ -63,7 +63,7 @@ msgstr "Contrato"
 
 #: code:models/salary_advance.py:79
 msgid "Credit Account"
-msgstr "Credit Cuenta"
+msgstr "Cuenta acreedora"
 
 #: code:models/salary_advance.py:79
 msgid "Credit account of the salary advance."
@@ -84,7 +84,7 @@ msgstr "Fecha"
 
 #: code:models/salary_advance.py:77
 msgid "Debit Account"
-msgstr "Debit Cuenta"
+msgstr "Cuenta deudora"
 
 #: code:models/salary_advance.py:77
 msgid "Debit account of the salary advance."

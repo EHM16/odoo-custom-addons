@@ -34,7 +34,7 @@ msgstr "Nombre del lote a crear para esta línea de pedido"
 
 #: code:models/purchase_order_line.py:33
 msgid "Lot Product"
-msgstr "Lot Producto"
+msgstr "Producto del lote"
 
 #: code:models/custom_stock_lot.py:31
 msgid "Name"

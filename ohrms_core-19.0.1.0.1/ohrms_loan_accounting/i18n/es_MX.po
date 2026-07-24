@@ -50,7 +50,7 @@ msgstr "Diario del préstamo"
 
 #: code:models/hr_loan.py:33
 msgid "Loan Account"
-msgstr "Loan Cuenta"
+msgstr "Cuenta de préstamo"
 
 #: code:models/res_config_settings.py:30
 msgid "Loan Approval from account manager"
@@ -91,7 +91,7 @@ msgstr "Enviar"
 
 #: code:models/hr_loan.py:36
 msgid "Treasury Account"
-msgstr "Treasury Cuenta"
+msgstr "Cuenta de tesorería"
 
 #: code:models/hr_loan.py:36
 msgid "Treasury account for the loan"

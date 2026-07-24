@@ -28,7 +28,7 @@ msgstr "Cancelar"
 #: code:wizard/split_order.py:215
 #: code:wizard/split_order.py:67
 msgid "Choose Valid Quantity"
-msgstr "Choose Valid Cantidad"
+msgstr "Seleccione una cantidad válida"
 
 #: code:wizard/split_order.py:245
 msgid "Enter the correct value"
@@ -36,7 +36,7 @@ msgstr "Introduzca el valor correcto"
 
 #: code:wizard/split_order.py:49
 msgid "For visible work center on wizard"
-msgstr "Para centro de trabajo visible en el asistente"
+msgstr "Indica si debe mostrarse el centro de trabajo en el asistente"
 
 #: code:models/mrp_production.py:32
 msgid "Here, splitting is not possible. Enter enough quantity."

@@ -172,7 +172,7 @@ msgstr "Tipo de descuento."
 
 #: code:models/sale_order.py:65
 msgid "Untaxed Amount"
-msgstr "Untaxed Importe"
+msgstr "Importe sin impuestos"
 
 #: code:models/sale_order.py:65
 msgid "Untaxed amount displayed."

@@ -23,7 +23,7 @@ msgid ""
 "                        </p>"
 msgstr ""
 "<p class=\\\"oe_view_nocontent_create\\\">\n"
-"                           Haga clic para crear para nuevos documentos\n"
+"                           Haga clic para crear un documento nuevo\n"
 "                        </p>"
 
 #: code:models/hr_document.py:34
@@ -57,7 +57,7 @@ msgstr "Descripción de los documentos."
 #: code:models/hr_document.py:31
 #: model_terms:views/document_type_views.xml
 msgid "Document Name"
-msgstr "Document Nombre"
+msgstr "Nombre del documento"
 
 #: code:models/hr_employee_document.py:34
 msgid "Document Number"
@@ -83,7 +83,7 @@ msgstr "Empleado"
 
 #: code:models/hr_employee_document.py:38
 msgid "Expiry Date"
-msgstr "Expiry Fecha"
+msgstr "Fecha de vencimiento"
 
 #: code:models/hr_employee_document.py:38
 msgid "Expiry date of the documents."
@@ -95,7 +95,7 @@ msgstr "Cuántos días antes para recibir el correo electrónico de notificació
 
 #: code:models/hr_employee_document.py:49
 msgid "Issue Date"
-msgstr "Issue Fecha"
+msgstr "Fecha de emisión"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Manages Employee Documents With Expiry Notifications."
@@ -142,7 +142,7 @@ msgstr ""
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Employee Documents Expiry"
-msgstr "Open HRMS Empleado Documents Expiry"
+msgstr "Open HRMS: vencimiento de documentos de empleados"
 
 #: code:models/hr_employee_document.py:57
 msgid "Select type of the documents expiry notification."

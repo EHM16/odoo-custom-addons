@@ -74,7 +74,7 @@ msgstr "Gestión de Custodia"
 
 #: code:wizard/ohrms_core_support.py:44
 msgid "Customer Name"
-msgstr "Cliente Nombre"
+msgstr "Nombre del cliente"
 
 #: code:wizard/ohrms_core_support.py:59
 msgid "Description"
@@ -90,11 +90,11 @@ msgstr "Correo electrónico"
 
 #: model_terms:views/hr_config_view.xml
 msgid "Employee Insurance"
-msgstr "Empleado Insurance"
+msgstr "Seguro del empleado"
 
 #: model_terms:views/hr_config_view.xml
 msgid "Employee Shift"
-msgstr "Empleado Shift"
+msgstr "Turno del empleado"
 
 #: code:wizard/ohrms_core_support.py:44
 msgid "Enter name"
@@ -179,7 +179,7 @@ msgstr "Módulo de Custodia de Recursos Humanos instalado o no"
 
 #: code:models/hr_general_settings.py:64
 msgid "HR Employee Shift"
-msgstr "HR Empleado Shift"
+msgstr "Turno del empleado de RR. HH."
 
 #: code:models/hr_general_settings.py:64
 msgid "HR Employee Shift module installed or not"
@@ -401,7 +401,7 @@ msgstr "El envío del ticket fue rechazado. Por favor verifique sus entradas e i
 
 #: code:wizard/ohrms_core_support.py:202
 msgid "Ticket Reference : %s"
-msgstr "Referencia del billete: %s"
+msgstr "Referencia del ticket: %s"
 
 #: code:models/hr_general_settings.py:78
 #: model_terms:views/hr_config_view.xml
@@ -426,4 +426,4 @@ msgstr "Tus archivos adjuntos son demasiado grandes. Reduzca su tamaño e intén
 
 #: code:wizard/ohrms_core_support.py:200
 msgid "Your Ticket Created Successfully"
-msgstr "Su boleto creado exitosamente"
+msgstr "Su ticket se creó correctamente"

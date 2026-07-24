@@ -36,7 +36,7 @@ msgstr "Es la barra de progreso"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Keep your finger on the projects pulse with this module. Featuring a dynamic progress bar, it provides a visual snapshot of project and task advancement. Toggle effortlessly between Kanban and list views for a personalized project tracking experience."
-msgstr "Mantenga su dedo en el pulso de los proyectos con este módulo. Con una barra de progreso dinámica, proporciona una instantánea visual del avance del proyecto y la tarea. Alterne sin esfuerzo entre vistas Kanban y de lista para disfrutar de una experiencia personalizada de seguimiento de proyectos."
+msgstr "Mantenga el control del avance de sus proyectos con este módulo. La barra de progreso dinámica ofrece una vista rápida del avance de proyectos y tareas. Cambie fácilmente entre las vistas kanban y de lista para adaptar el seguimiento a sus necesidades."
 
 #: code:models/project_task_type.py:31
 msgid "Progress (%)"

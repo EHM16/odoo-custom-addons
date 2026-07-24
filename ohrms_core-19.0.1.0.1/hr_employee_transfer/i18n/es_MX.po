@@ -43,11 +43,11 @@ msgstr "Empleado"
 
 #: model_terms:views/employee_transfer_views.xml
 msgid "Employee Transfer"
-msgstr "Empleado Transfer"
+msgstr "Transferencia de empleado"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Employee transfer between branches"
-msgstr "Empleado transfer between branches"
+msgstr "Transferencia de empleados entre sucursales"
 
 #: code:models/employee_transfer.py:112
 msgid "Employees"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: code:models/employee_transfer.py:39
 msgid "Old Employee"
-msgstr "Old Empleado"
+msgstr "Empleado anterior"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Branch Transfer"

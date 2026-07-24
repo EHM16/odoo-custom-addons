@@ -28,7 +28,7 @@ msgstr ""
 
 #: model_terms:static/src/xml/cashflow.xml
 msgid "Balance"
-msgstr "Balance"
+msgstr "Saldo"
 
 #: model_terms:static/src/xml/cashflow.xml
 msgid "Cash In"

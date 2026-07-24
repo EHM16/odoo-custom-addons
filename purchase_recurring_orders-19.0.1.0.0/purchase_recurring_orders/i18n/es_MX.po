@@ -43,7 +43,7 @@ msgstr "Líneas de acuerdo"
 
 #: model_terms:views/recurring_orders_views.xml
 msgid "Agreement Name"
-msgstr "Agreement Nombre"
+msgstr "Nombre del acuerdo"
 
 #: code:models/purchase_recurring_agreement.py:148
 msgid "Agreement not Renewed"
@@ -202,7 +202,7 @@ msgstr "Último pedido"
 
 #: code:models/purchase_recurring_agreement.py:134
 msgid "Last Renovation Date"
-msgstr "Last Renovation Fecha"
+msgstr "Fecha de la última renovación"
 
 #: model_terms:views/recurring_orders_views.xml
 msgid "Lines"
@@ -231,7 +231,7 @@ msgstr "Nombre que ayuda a identificar el acuerdo"
 
 #: code:models/purchase_recurring_agreement.py:138
 msgid "Next Expiration Date"
-msgstr "Next Expiration Fecha"
+msgstr "Próxima fecha de vencimiento"
 
 #: model_terms:views/purchase_order_views.xml
 msgid "Not from agreements"
@@ -302,7 +302,7 @@ msgstr "Comentarios de renovación"
 
 #: code:wizard/renew_wizard.py:36
 msgid "Renewal Date"
-msgstr "Renewal Fecha"
+msgstr "Fecha de renovación"
 
 #: code:models/purchase_recurring_agreement.py:129
 msgid "Renewal Lines"
@@ -334,7 +334,7 @@ msgstr "Precio específico para este producto. Manténgalo vacío para usar el p
 
 #: code:models/purchase_recurring_agreement.py:95
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
 #: code:models/purchase_recurring_agreement.py:142
 msgid "State"

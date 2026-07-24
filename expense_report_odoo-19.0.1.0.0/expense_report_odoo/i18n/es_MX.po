@@ -96,15 +96,15 @@ msgstr "Nombre del empleado"
 
 #: code:wizard/expense_report_filter.py:34
 msgid "Employee Name"
-msgstr "Empleado Nombre"
+msgstr "Nombre del empleado"
 
 #: model_terms:report/expense_report_filter_templates.xml
 msgid "Employee Name:"
-msgstr "Empleado Nombre:"
+msgstr "Nombre del empleado:"
 
 #: code:wizard/expense_report_filter.py:32
 msgid "End Date"
-msgstr "Fecha final"
+msgstr "Fecha de finalización"
 
 #: code:wizard/expense_report_filter.py:91
 msgid "End date cannot be before start date"
@@ -129,7 +129,7 @@ msgstr "Núm."
 
 #: code:wizard/expense_report_filter.py:30
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
 #: code:wizard/expense_report_filter.py:40
 #: model_terms:report/expense_report_filter_templates.xml
@@ -158,7 +158,7 @@ msgstr "La fecha de inicio del período de gastos."
 
 #: model:ir.module.module,description:__manifest__.py
 msgid "This apps helps Admin to print multiples employee expense reports with custom dates and the printthe report of the current status like to submit, submitted, approved, paid, refused, all, etc."
-msgstr "Esta aplicación ayuda al administrador a imprimir múltiples informes de gastos de empleados con fechas personalizadas y a imprimir el informe del estado actual, como enviar, enviar, aprobar, pagar, rechazar, todo, etc."
+msgstr "Esta aplicación permite al administrador imprimir varios reportes de gastos de empleados para fechas personalizadas y filtrar por el estado actual: por enviar, enviado, aprobado, pagado, rechazado o todos."
 
 #: model_terms:report/expense_report_filter_templates.xml
 msgid "Total"

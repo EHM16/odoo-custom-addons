@@ -30,7 +30,7 @@ msgstr "Crear gasto a partir de tarea"
 
 #: code:wizards/expense_amount.py:36
 msgid "Employee Name"
-msgstr "Empleado Nombre"
+msgstr "Nombre del empleado"
 
 #: model_terms:views/project_task_views.xml
 msgid "Expense"
@@ -46,7 +46,7 @@ msgstr "Generar Gasto"
 
 #: code:wizards/expense_amount.py:33
 msgid "Service Name"
-msgstr "Service Nombre"
+msgstr "Nombre del servicio"
 
 #: code:wizards/expense_amount.py:36
 msgid "The employees associated with this record."
@@ -74,7 +74,7 @@ msgstr "Esta aplicación permite crear múltiples gastos desde una tarea de proy
 
 #: code:wizards/expense_amount.py:40
 msgid "Total Amount"
-msgstr "Total Importe"
+msgstr "Importe total"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "User can create Expense from Task"

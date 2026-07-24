@@ -58,7 +58,7 @@ msgstr "¡Solo un gerente puede realizar ese movimiento!"
 
 #: code:models/res_partner.py:77
 msgid "Only Managers can perform that move!"
-msgstr "¡Solo los Managers pueden realizar ese movimiento!"
+msgstr "¡Solo los gerentes pueden realizar ese movimiento!"
 
 #: code:models/stock_picking.py:28
 msgid "Receive From"
@@ -82,7 +82,7 @@ msgstr "El estado de los contactos."
 
 #: code:models/res_partner.py:37
 msgid "This boolean field is used to hide the Validate button"
-msgstr "Este campo booleano se utiliza para ocultar el botón Validar."
+msgstr "Indica si debe ocultarse el botón Validar"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "This module allows users to validate or approve contacts"
@@ -104,4 +104,4 @@ msgstr "Proveedor"
 #: code:models/sale_order.py:28
 #: code:models/stock_picking.py:28
 msgid "We can see the approved partner here"
-msgstr "Podemos ver el socio aprobado aquí."
+msgstr "Muestra el contacto aprobado"

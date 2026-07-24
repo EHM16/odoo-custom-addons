@@ -115,7 +115,7 @@ msgstr "Habilitar, si se trata de un anuncio general"
 
 #: code:models/hr_announcement.py:84
 msgid "End Date"
-msgstr "Fecha final"
+msgstr "Fecha de finalización"
 
 #: code:models/hr_announcement.py:84
 msgid "End date of announcement"
@@ -180,7 +180,7 @@ msgstr "Rechazado"
 
 #: code:models/hr_announcement.py:43
 msgid "Requested Date"
-msgstr "Requested Fecha"
+msgstr "Fecha solicitada"
 
 #: model_terms:views/hr_announcement_views.xml
 msgid "Send For Approval"
@@ -192,7 +192,7 @@ msgstr "Secuencia de anuncio"
 
 #: code:models/hr_announcement.py:82
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
 #: code:models/hr_announcement.py:82
 msgid "Start date of announcement"

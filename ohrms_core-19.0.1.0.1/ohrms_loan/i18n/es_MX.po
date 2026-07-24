@@ -82,7 +82,7 @@ msgstr "Empleado"
 
 #: code:models/hr_loan.py:53
 msgid "Employee Name"
-msgstr "Empleado Nombre"
+msgstr "Nombre del empleado"
 
 #: code:models/hr_payslip_input.py:35
 msgid "End date for the payslip input."
@@ -110,7 +110,7 @@ msgstr "Préstamo"
 
 #: code:models/hr_loan.py:82
 msgid "Loan Amount"
-msgstr "Loan Importe"
+msgstr "Importe del préstamo"
 
 #: code:models/hr_loan.py:82
 msgid "Loan amount"
@@ -134,7 +134,7 @@ msgstr "Línea de préstamo"
 
 #: code:models/hr_loan.py:49
 msgid "Loan Name"
-msgstr "Loan Nombre"
+msgstr "Nombre del préstamo"
 
 #: code:models/hr_loan_line.py:38
 msgid "Loan Ref."
@@ -154,7 +154,7 @@ msgstr "Préstamos"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Manage Employee Loan Requests"
-msgstr "Manage Empleado Loan Requests"
+msgstr "Gestionar solicitudes de préstamos de empleados"
 
 #: model_terms:views/hr_loan_views.xml
 msgid "My Requests"
@@ -199,7 +199,7 @@ msgstr "Fecha de inicio del pago"
 
 #: code:models/hr_loan_line.py:40
 msgid "Payslip Ref."
-msgstr "Nómina Ref."
+msgstr "Ref. del recibo de nómina"
 
 #: code:models/hr_loan.py:169
 msgid "Please Compute installment"
@@ -275,11 +275,11 @@ msgstr ""
 
 #: code:models/hr_loan.py:84
 msgid "Total Amount"
-msgstr "Total Importe"
+msgstr "Importe total"
 
 #: code:models/hr_loan.py:92
 msgid "Total Paid Amount"
-msgstr "Total Paid Importe"
+msgstr "Importe total pagado"
 
 #: code:models/hr_loan.py:178
 msgid "You cannot delete a loan which is not in draft or cancelled state"

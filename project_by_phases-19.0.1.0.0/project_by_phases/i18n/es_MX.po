@@ -71,12 +71,12 @@ msgstr "Proyecto"
 
 #: code:models/project_task.py:29
 msgid "Project Phase"
-msgstr "Proyecto Phase"
+msgstr "Fase del proyecto"
 
 #: model:ir.module.module,name:__manifest__.py
 #: model_terms:views/project_task_views.xml
 msgid "Project Phases"
-msgstr "Proyecto Phases"
+msgstr "Fases del proyecto"
 
 #: model_terms:views/project_phase_views.xml
 msgid "project_phase"

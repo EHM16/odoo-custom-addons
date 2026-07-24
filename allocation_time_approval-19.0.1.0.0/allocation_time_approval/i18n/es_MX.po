@@ -26,7 +26,7 @@ msgstr "Aprobación del tiempo asignado"
 
 #: code:models/manager_approval.py:37
 msgid "Allocation time for assignees"
-msgstr "Asignación de tiempo para los cesionarios"
+msgstr "Tiempo asignado a las personas responsables"
 
 #: model_terms:views/manager_approval_views.xml
 msgid "Approve"
@@ -38,19 +38,19 @@ msgstr "Aprobar el tiempo asignado a las tareas del proyecto y las hojas de hora
 
 #: code:models/manager_approval.py:34
 msgid "Assignees"
-msgstr "Cesionarios"
+msgstr "Personas asignadas"
 
 #: code:models/project_task.py:34
 msgid "Boolean to change to approve"
-msgstr "Booleano para cambiar para aprobar"
+msgstr "Indica si la tarea está en la etapa Por aprobar"
 
 #: code:models/project_task.py:37
 msgid "Boolean to progress stage"
-msgstr "Booleano a etapa de progreso"
+msgstr "Indica si la tarea está en la etapa En progreso"
 
 #: code:models/project_task.py:31
 msgid "Boolean to visible manager approve"
-msgstr "Booleano a administrador visible aprobado"
+msgstr "Indica si la tarea está en una etapa nueva"
 
 #: code:models/manager_approval.py:39
 msgid "Button for approve button"
@@ -74,7 +74,7 @@ msgstr "Botón Cancelar"
 
 #: code:models/manager_approval.py:34
 msgid "Corresponding assignees name"
-msgstr "Nombre de los cesionarios correspondientes"
+msgstr "Nombre de las personas asignadas"
 
 #: code:models/manager_approval.py:32
 msgid "Corresponding project name"
@@ -82,7 +82,7 @@ msgstr "Nombre del proyecto correspondiente"
 
 #: code:models/manager_approval.py:43
 msgid "Getting corresponding task"
-msgstr "Obteniendo la tarea correspondiente"
+msgstr "Tarea relacionada"
 
 #: code:models/project_task.py:40
 #: model_terms:views/manager_approval_views.xml
@@ -116,7 +116,7 @@ msgstr "Tarea"
 
 #: code:models/project_task.py:43
 msgid "Task Create Boolean"
-msgstr "Tarea crear booleano"
+msgstr "Crear solicitud de aprobación"
 
 #: code:models/project_task.py:37
 msgid "Task Done"

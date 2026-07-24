@@ -62,7 +62,7 @@ msgstr "Añade una nota interna..."
 
 #: model_terms:views/hr_contract_advantage_template_views.xml
 msgid "Advantage Name"
-msgstr "Advantage Nombre"
+msgstr "Nombre de la prestación"
 
 #: code:models/hr_payslip_input.py:51
 #: code:models/hr_payslip_line.py:49
@@ -93,7 +93,7 @@ msgstr "Firma autorizada"
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Bank Account"
-msgstr "Bank Cuenta"
+msgstr "Cuenta bancaria"
 
 #: code:models/res_config_settings.py:34
 msgid "Belgium Payroll"
@@ -271,7 +271,7 @@ msgstr "Empresa"
 
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Company Contribution"
-msgstr "Empresa Contribution"
+msgstr "Aportación de la empresa"
 
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Computation"
@@ -311,7 +311,7 @@ msgstr "Registro de contribuciones"
 
 #: code:models/hr_contribution_register.py:35
 msgid "Contribution Register Name"
-msgstr "Contribution Register Nombre"
+msgstr "Nombre del registro de aportaciones"
 
 #: model_terms:wizard/payslip_lines_contribution_register_views.xml
 msgid "Contribution Register's Payslip Lines"
@@ -442,7 +442,7 @@ msgstr "Lotes de recibos de nómina hechos"
 
 #: model_terms:views/hr_payslip_views.xml
 msgid "Done Slip"
-msgstr "Resbalón hecho"
+msgstr "Recibo de nómina finalizado"
 
 #: code:models/hr_payslip.py:67
 #: model_terms:views/hr_payslip_run_views.xml
@@ -471,7 +471,7 @@ msgstr "Empleado"
 
 #: model_terms:views/hr_payroll_structure_views.xml
 msgid "Employee Function"
-msgstr "Empleado Function"
+msgstr "Puesto del empleado"
 
 #: model_terms:views/hr_payslip_line_views.xml
 #: model_terms:views/hr_payslip_views.xml
@@ -494,11 +494,11 @@ msgstr "Fecha de finalización de las líneas de recibo de nómina"
 
 #: code:models/hr_payslip.py:50
 msgid "Enter Payslip Name"
-msgstr "Enter Payslip Nombre"
+msgstr "Ingrese el nombre del recibo de nómina"
 
 #: code:models/hr_salary_rule.py:35
 msgid "Enter Salary Rule Name"
-msgstr "Enter Salary Rule Nombre"
+msgstr "Ingrese el nombre de la regla salarial"
 
 #: code:models/hr_salary_rule_category.py:59
 msgid "Error! You cannot create recursive hierarchy of Salary Rule Category."
@@ -510,11 +510,11 @@ msgstr "¡Error! No se puede crear una jerarquía recursiva de reglas salariales
 
 #: code:models/hr_salary_rule.py:149
 msgid "Eventual third party involved in the salary payment of the employees."
-msgstr "Eventual tercero involucrado en el pago de salarios de los empleados."
+msgstr "Posible tercero que interviene en el pago de salarios de los empleados."
 
 #: code:models/hr_salary_rule.py:118
 msgid "Fixed Amount"
-msgstr "Fixed Importe"
+msgstr "Importe fijo"
 
 #: code:models/hr_salary_rule.py:122
 msgid "For example, enter 50.0 to apply a percentage of 50%"
@@ -554,7 +554,7 @@ msgstr "Código de categoría de regla salarial de recursos humanos"
 
 #: code:models/hr_salary_rule_category.py:32
 msgid "Hr Salary Rule Category Name"
-msgstr "Hr Salary Rule Category Nombre"
+msgstr "Nombre de la categoría de regla salarial de RR. HH."
 
 #: code:models/hr_version.py:46
 msgid "HRA"
@@ -621,11 +621,11 @@ msgstr "Es orden de pago"
 
 #: code:models/hr_salary_rule.py:44
 msgid "It is used in computation for percentageand fixed amount. For e.g. A rule for MealVoucher having fixed amount of 1€ per worked day can have its quantitydefined in expression like worked_days.WORK100.number_of_days."
-msgstr "Se utiliza para calcular porcentajes y cantidades fijas. Por ej. Una regla para MealVoucher que tiene una cantidad fija de 1 € por día trabajado puede tener su cantidad definida en una expresión como días_trabajados.TRABAJO100.número_de_días."
+msgstr "Se utiliza para calcular porcentajes e importes fijos. Por ejemplo, una regla de vales de comida con un importe fijo de 1 € por día trabajado puede definir su cantidad mediante la expresión worked_days.WORK100.number_of_days."
 
 #: code:models/hr_payslip_input.py:51
 msgid "It is used in computation.For e.g. A rule for sales having 1% commission of basic salary forper product can defined in expression like result = inputs.SALEURO.amount * contract.wage*0.01."
-msgstr "Se utiliza en computación. Por ej. Una regla para ventas que tienen 1% c comisión de salario básico por producto se puede definir en una expresión como resultado = entradas.SALEURO.monto * contrato.salario*0.01."
+msgstr "Se utiliza en los cálculos. Por ejemplo, una regla de ventas con una comisión del 1 % del salario base por producto puede definirse con la expresión result = inputs.SALEURO.amount * contract.wage * 0.01."
 
 #: code:models/hr_salary_rule_category.py:36
 msgid "Linking a salary category to its parentis used only for the reporting purpose."
@@ -836,11 +836,11 @@ msgstr "Líneas de nómina por registro de aportaciones"
 
 #: code:models/hr_payslip.py:50
 msgid "Payslip Name"
-msgstr "Payslip Nombre"
+msgstr "Nombre del recibo de nómina"
 
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "PaySlip Name"
-msgstr "PaySlip Nombre"
+msgstr "Nombre del recibo de nómina"
 
 #: code:models/hr_payslip_input.py:35
 msgid "Payslip related to the input"
@@ -868,7 +868,7 @@ msgstr "Lotes de nóminas"
 
 #: model_terms:wizard/hr_payslips_employees_views.xml
 msgid "Payslips by Employees"
-msgstr "Payslips by Empleados"
+msgstr "Recibos de nómina por empleado"
 
 #: code:models/hr_salary_rule.py:122
 msgid "Percentage (%)"
@@ -902,12 +902,12 @@ msgstr "Cantidad"
 
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "Quantity/Rate"
-msgstr "Cantidad/Rate"
+msgstr "Cantidad/tasa"
 
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Quantity/rate"
-msgstr "Cantidad/rate"
+msgstr "Cantidad/tasa"
 
 #: code:models/hr_salary_rule.py:78
 msgid "Range Based on"
@@ -946,7 +946,7 @@ msgstr "Línea de registro"
 
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "Register Name:"
-msgstr "Register Nombre:"
+msgstr "Nombre del registro:"
 
 #: code:models/hr_payslip.py:67
 msgid "Rejected"
@@ -987,7 +987,7 @@ msgstr "Entrada de regla salarial"
 
 #: code:models/hr_salary_rule.py:35
 msgid "Salary Rule Name"
-msgstr "Salary Rule Nombre"
+msgstr "Nombre de la regla salarial"
 
 #: code:models/hr_payroll_structure.py:62
 #: model_terms:views/hr_payroll_structure_views.xml
@@ -1042,7 +1042,7 @@ msgstr "Secuencia para identificar el registro."
 
 #: code:models/hr_salary_rule.py:118
 msgid "Set a Fixed Amount"
-msgstr "Set a Fixed Importe"
+msgstr "Establecer un importe fijo"
 
 #: code:models/hr_payslip_line.py:49
 msgid "Set Amount for line"
@@ -1150,7 +1150,7 @@ msgstr ""
 
 #: code:models/hr_salary_rule.py:78
 msgid "This will be used to compute the % fields values; in general it is on basic, but you can also use categories code fields in lowercase as a variable names (hra, ma, lta, etc.) and the variable basic."
-msgstr "Esto se utilizará para calcular los valores de % fields; en general es básico, pero también puedes usar campos de código de categorías en minúsculas como nombres de variables (hra, ma, lta, etc.) y la variable básica."
+msgstr "Se utiliza para calcular los valores porcentuales. Generalmente se basa en basic, pero también pueden usarse como variables los códigos de categoría en minúsculas (hra, ma, lta, etc.) y la variable basic."
 
 #: code:models/hr_payslip_line.py:53
 #: model_terms:report/report_contribution_register_templates.xml

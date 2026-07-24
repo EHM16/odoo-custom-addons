@@ -26,7 +26,7 @@ msgstr "Elija el método de envío."
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Product Wise Shipping Method"
-msgstr "Producto Wise Shipping Method"
+msgstr "Método de envío por producto"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Product Wise Shipping Method for sale order."

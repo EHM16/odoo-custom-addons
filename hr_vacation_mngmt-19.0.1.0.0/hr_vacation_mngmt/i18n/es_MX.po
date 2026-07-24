@@ -23,11 +23,11 @@ msgstr "Asignado a"
 #: code:models/hr_leave.py:129
 #: model_terms:views/hr_leave_views.xml
 msgid "Book Flight Ticket"
-msgstr "Reservar billete de avión"
+msgstr "Reservar boleto de avión"
 
 #: model_terms:views/hr_flight_ticket_views.xml
 msgid "Book Ticket"
-msgstr "Reservar billete"
+msgstr "Reservar boleto"
 
 #: model_terms:views/hr_flight_ticket_views.xml
 #: model_terms:wizard/task_reassign_views.xml
@@ -126,15 +126,15 @@ msgstr "Detalles del vuelo del empleado."
 #: model_terms:views/hr_leave_views.xml
 #: model_terms:views/res_config_settings_views.xml
 msgid "Flight Ticket"
-msgstr "Billete de avión"
+msgstr "Boleto de avión"
 
 #: code:models/hr_leave.py:49
 msgid "Flight ticket Details"
-msgstr "Detalles del billete de avión"
+msgstr "Detalles del boleto de avión"
 
 #: code:models/hr_flight_ticket.py:174
 msgid "Flight Ticket Invoice"
-msgstr "Factura de billete de avión"
+msgstr "Factura del boleto de avión"
 
 #: code:models/hr_flight_ticket.py:93
 msgid "Flight travelling start date must be less than flight return date."
@@ -142,7 +142,7 @@ msgstr "La fecha de inicio del viaje del vuelo debe ser anterior a la fecha de r
 
 #: code:models/hr_flight_ticket.py:55
 msgid "Give the ticket fare"
-msgstr "Dar la tarifa del billete"
+msgstr "Indique la tarifa del boleto"
 
 #: code:models/hr_flight_ticket.py:68
 #: model_terms:views/hr_flight_ticket_views.xml
@@ -239,7 +239,7 @@ msgstr "Hojas superpuestas de empleados."
 #: code:wizard/task_reassign.py:32
 #: model_terms:views/pending_task_views.xml
 msgid "Pending Tasks"
-msgstr "Pending Tareas"
+msgstr "Tareas pendientes"
 
 #: model_terms:views/hr_leave_views.xml
 msgid "Pending Works"
@@ -267,7 +267,7 @@ msgstr "Proyecto del empleado"
 
 #: code:models/hr_leave.py:108
 msgid "Re-Assign Task"
-msgstr "Re-Assign Tarea"
+msgstr "Reasignar tarea"
 
 #: code:models/hr_leave.py:32
 msgid "Remaining Legal Leaves"
@@ -287,7 +287,7 @@ msgstr "Gestores de vacaciones responsables"
 
 #: code:models/hr_flight_ticket.py:48
 msgid "Return Date"
-msgstr "Return Fecha"
+msgstr "Fecha de regreso"
 
 #: code:models/hr_flight_ticket.py:48
 msgid "Return date"
@@ -299,11 +299,11 @@ msgstr "Detalles del vuelo de regreso"
 
 #: code:models/hr_flight_ticket.py:49
 msgid "Select the ticket class"
-msgstr "Selecciona la clase de billete"
+msgstr "Seleccione la clase del boleto"
 
 #: code:models/hr_flight_ticket.py:39
 msgid "Select the ticket type"
-msgstr "Seleccione el tipo de billete"
+msgstr "Seleccione el tipo de boleto"
 
 #: code:wizard/task_reassign.py:61
 msgid "Selected employee %s is not available"
@@ -319,7 +319,7 @@ msgstr "Número de secuencia"
 
 #: code:models/hr_flight_ticket.py:33
 msgid "Sequence number of Flight Ticket"
-msgstr "Número de secuencia del billete de avión"
+msgstr "Número de secuencia del boleto de avión"
 
 #: code:models/res_config_settings.py:34
 msgid "Set the day to send reminder ."
@@ -343,7 +343,7 @@ msgstr "Especifique el lugar de destino."
 
 #: code:models/hr_flight_ticket.py:46
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
 #: code:models/hr_flight_ticket.py:46
 msgid "Start date of the travel."
@@ -351,7 +351,7 @@ msgstr "Fecha de inicio del viaje."
 
 #: code:models/hr_flight_ticket.py:61
 msgid "States of the flight ticket."
-msgstr "Estados del billete de avión."
+msgstr "Estados del boleto de avión."
 
 #: code:models/hr_flight_ticket.py:61
 msgid "Status"
@@ -373,11 +373,11 @@ msgstr ""
 
 #: code:models/hr_flight_ticket.py:55
 msgid "Ticket Fare"
-msgstr "Tarifa del billete"
+msgstr "Tarifa del boleto"
 
 #: code:models/hr_flight_ticket.py:39
 msgid "Ticket Type"
-msgstr "Tipo de billete"
+msgstr "Tipo de boleto"
 
 #: code:models/res_config_settings.py:37
 msgid "Travel Expense Account"
@@ -385,7 +385,7 @@ msgstr "Cuenta de gastos de viaje"
 
 #: code:models/pending_task.py:48
 msgid "Unavailable Employees"
-msgstr "Unavailable Empleados"
+msgstr "Empleados no disponibles"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Vacation Management,manages employee vacation"

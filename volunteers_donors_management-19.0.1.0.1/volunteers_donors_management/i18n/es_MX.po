@@ -23,7 +23,7 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"                            Proyecto Nombre :\n"
+"                            Nombre del proyecto:\n"
 "                            "
 
 #: code:models/donor_type.py:36
@@ -48,7 +48,7 @@ msgstr "Asignado a"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Assigning Date"
-msgstr "Assigning Fecha"
+msgstr "Fecha de asignación"
 
 #: code:models/res_partner.py:34
 msgid "Check this box if the partner is a donor"
@@ -64,7 +64,7 @@ msgstr "Color"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Customer Name:"
-msgstr "Cliente Nombre:"
+msgstr "Nombre del cliente:"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Deadline"
@@ -116,7 +116,7 @@ msgstr "Teléfono"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Planned Date"
-msgstr "Planned Fecha"
+msgstr "Fecha planificada"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Planned Hours"
@@ -124,7 +124,7 @@ msgstr "Horas planificadas"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Project Manger:"
-msgstr "Proyecto Manger:"
+msgstr "Gerente del proyecto:"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Project Report"
@@ -132,7 +132,7 @@ msgstr "Reporte del proyecto"
 
 #: code:models/project_task.py:40
 msgid "Project Volunteers"
-msgstr "Proyecto Volunteers"
+msgstr "Voluntarios del proyecto"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Remaining Hours"
@@ -144,11 +144,11 @@ msgstr "Horas gastadas"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Stage"
-msgstr "etapa"
+msgstr "Etapa"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Task Name"
-msgstr "Tarea Nombre"
+msgstr "Nombre de la tarea"
 
 #: model_terms:report/project_report_templates.xml
 msgid "Tasks:"

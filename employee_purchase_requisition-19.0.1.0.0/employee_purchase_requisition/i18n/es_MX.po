@@ -69,7 +69,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                    Approved Fecha:\n"
+"                                    Fecha de aprobación:\n"
 "                                "
 
 #: model_terms:report/employee_purchase_requisition_templates.xml
@@ -88,7 +88,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                    Confirmed Fecha:\n"
+"                                    Fecha de confirmación:\n"
 "                                "
 
 #: model_terms:report/employee_purchase_requisition_templates.xml
@@ -145,7 +145,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                    Received Fecha:\n"
+"                                    Fecha de recepción:\n"
 "                                "
 
 #: model_terms:report/employee_purchase_requisition_templates.xml
@@ -164,7 +164,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                    Rejected Fecha:\n"
+"                                    Fecha de rechazo:\n"
 "                                "
 
 #: model_terms:report/employee_purchase_requisition_templates.xml
@@ -174,7 +174,7 @@ msgid ""
 "                                "
 msgstr ""
 "\n"
-"                                    Requisition Fecha:\n"
+"                                    Fecha de solicitud:\n"
 "                                "
 
 #: model_terms:report/employee_purchase_requisition_templates.xml
@@ -275,7 +275,7 @@ msgstr "Aprobado por"
 
 #: code:models/employee_purchase_requisition.py:75
 msgid "Approved Date"
-msgstr "Approved Fecha"
+msgstr "Fecha de aprobación"
 
 #: code:models/employee_purchase_requisition.py:50
 msgid "Company"
@@ -291,7 +291,7 @@ msgstr "Confirmado por"
 
 #: code:models/employee_purchase_requisition.py:70
 msgid "Confirmed Date"
-msgstr "Confirmed Fecha"
+msgstr "Fecha de confirmación"
 
 #: model_terms:views/employee_purchase_requisition_views.xml
 msgid "Create Picking and PO"
@@ -366,7 +366,7 @@ msgstr "Solicitud de compra del empleado"
 
 #: model_terms:report/employee_purchase_requisition_templates.xml
 msgid "Employee Signature:"
-msgstr "Empleado Signature:"
+msgstr "Firma del empleado:"
 
 #: code:models/employee_purchase_requisition.py:48
 msgid "End date of purchase requisition"
@@ -422,7 +422,7 @@ msgstr "Descripción del producto"
 
 #: code:models/requisition_order.py:45
 msgid "Product quantity"
-msgstr "Producto quantity"
+msgstr "Cantidad del producto"
 
 #: code:models/requisition_order.py:46
 msgid "Product unit of measure"
@@ -460,7 +460,7 @@ msgstr "Recibido"
 
 #: code:models/employee_purchase_requisition.py:46
 msgid "Received Date"
-msgstr "Received Fecha"
+msgstr "Fecha de recepción"
 
 #: code:models/employee_purchase_requisition.py:46
 msgid "Received date"
@@ -484,7 +484,7 @@ msgstr "Rechazado por"
 
 #: code:models/employee_purchase_requisition.py:77
 msgid "Rejection Date"
-msgstr "Rejection Fecha"
+msgstr "Fecha de rechazo"
 
 #: model_terms:report/employee_purchase_requisition_templates.xml
 msgid ""
@@ -501,7 +501,7 @@ msgstr "Fecha de aprobación de la solicitud"
 
 #: code:models/employee_purchase_requisition.py:43
 msgid "Requisition Date"
-msgstr "Requisition Fecha"
+msgstr "Fecha de solicitud"
 
 #: code:models/employee_purchase_requisition.py:48
 msgid "Requisition Deadline"

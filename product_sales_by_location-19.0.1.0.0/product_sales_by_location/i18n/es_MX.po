@@ -28,7 +28,7 @@ msgstr "Ubicación"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Product Sales By Location"
-msgstr "Producto Sales By Location"
+msgstr "Ventas de productos por ubicación"
 
 #: model:ir.module.module,description:__manifest__.py
 msgid "This app allows our user to set a location on sale order line. Whatever location is selected on sale order lines, the product will be delivered from the selected location.Delivery orders will be created based on selected locationin odoo19"

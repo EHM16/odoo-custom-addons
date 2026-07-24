@@ -166,7 +166,7 @@ msgstr "Departamentos"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Due Date"
-msgstr "Due Fecha"
+msgstr "Fecha de vencimiento"
 
 #: model_terms:report/broadfactor.xml
 msgid "Employee"
@@ -174,7 +174,7 @@ msgstr "Empleado"
 
 #: code:static/src/js/dashboard.js
 msgid "Employee Payslips"
-msgstr "Empleado Payslips"
+msgstr "Recibos de nómina del empleado"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Error : Could not find employee linked to user"
@@ -308,7 +308,7 @@ msgstr "Proyecto"
 
 #: code:static/src/js/dashboard.js
 msgid "Project Task"
-msgstr "Proyecto Tarea"
+msgstr "Tarea del proyecto"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "PROJECTS"
@@ -328,7 +328,7 @@ msgstr "Cerrar sesión"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Stage"
-msgstr "etapa"
+msgstr "Etapa"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Status"

@@ -1341,7 +1341,7 @@ msgstr "Borrador"
 #: code:models/account_move.py:33
 #: code:models/sale_order.py:34
 msgid "Due Amount"
-msgstr "Importe adeudado"
+msgstr "Importe pendiente"
 
 #: model_terms:report/followup_report_templates.xml
 #: model_terms:report/res_partner_templates.xml
@@ -1391,7 +1391,7 @@ msgstr "Habilitar límite de crédito para clientes"
 #: code:wizard/account_cash_book_report.py:39
 #: code:wizard/account_day_book_report.py:50
 msgid "End Date"
-msgstr "Fecha final"
+msgstr "Fecha de finalización"
 
 #: code:models/account_asset_asset.py:79
 msgid "Ending Date"
@@ -1983,7 +1983,7 @@ msgstr "Sin estado de cuenta"
 
 #: code:wizard/account_lock_date.py:34
 msgid "No users, including Advisers, can edit accounts prior to and inclusive of this date. Use it for fiscal year locking for example."
-msgstr "Ningún usuario, incluidos los Asesores, puede editar cuentas antes e inclusive de esta fecha. Úselo para bloquear el año fiscal, por ejemplo."
+msgstr "Ningún usuario, incluidos los asesores, puede editar cuentas hasta esta fecha inclusive. Puede usarse, por ejemplo, para bloquear el ejercicio fiscal."
 
 #: code:wizard/import_bank_statement.py:382
 msgid "No valid transactions found in the OFX file."
@@ -2100,7 +2100,7 @@ msgstr "Informe principal"
 #: model_terms:views/account_bank_statement_line_views.xml
 #: model_terms:views/account_recurring_invoice_views.xml
 msgid "Partner"
-msgstr "Socio"
+msgstr "Contacto"
 
 #: code:wizard/import_bank_statement.py:236
 msgid "Partner '%s' does not exist"
@@ -2136,7 +2136,7 @@ msgstr "Contactos:"
 
 #: model_terms:report/report_aged_partner_template.xml
 msgid "Partners"
-msgstr "Socios"
+msgstr "Contactos"
 
 #: model_terms:views/account_asset_asset_views.xml
 msgid "Pause"
@@ -2941,7 +2941,7 @@ msgstr "Aumento de valor"
 
 #: model_terms:views/account_asset_asset_views.xml
 msgid "Vendor"
-msgstr "Vendedor"
+msgstr "Proveedor"
 
 #: model_terms:report/multiple_invoice_report_template.xml
 msgid "Vendor Bill"

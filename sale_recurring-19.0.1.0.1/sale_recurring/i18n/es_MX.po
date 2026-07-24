@@ -69,7 +69,7 @@ msgstr "Descripción"
 #: code:models/sale_recurring.py:43
 #: model_terms:views/sale_recurring_views.xml
 msgid "End Date"
-msgstr "Fecha final"
+msgstr "Fecha de finalización"
 
 #: code:models/sale_recurring.py:46
 #: model_terms:views/sale_recurring_views.xml
@@ -169,7 +169,7 @@ msgstr "Secuencia de orden recurrente"
 #: code:models/sale_recurring.py:37
 #: model_terms:views/sale_recurring_views.xml
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
 #: code:models/sale_recurring.py:37
 msgid "Start the sale order creation based on the start date"

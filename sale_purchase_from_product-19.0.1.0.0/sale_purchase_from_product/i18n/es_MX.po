@@ -113,7 +113,7 @@ msgstr "Producto Cantidad"
 
 #: code:wizard/quick_purchase_line.py:35
 msgid "Product quantity"
-msgstr "Producto quantity"
+msgstr "Cantidad del producto"
 
 #: code:wizard/quick_create_sale_line.py:35
 #: code:wizard/quick_purchase_line.py:36
@@ -148,7 +148,7 @@ msgstr "Creación rápida"
 
 #: model_terms:views/product_product_views.xml
 msgid "Quick Purchase Order"
-msgstr "Quick Orden de compra"
+msgstr "Orden de compra rápida"
 
 #: model_terms:views/product_product_views.xml
 msgid "Quick Sale Order"

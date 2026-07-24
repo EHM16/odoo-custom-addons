@@ -22,7 +22,7 @@ msgstr "Todos los detalles de pago de la factura se pueden agregar en el informe
 
 #: model_terms:reports/report_invoice.xml
 msgid "Amount Paid"
-msgstr "Importe Paid"
+msgstr "Importe pagado"
 
 #: model_terms:reports/report_invoice.xml
 msgid "Date"

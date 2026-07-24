@@ -104,7 +104,7 @@ msgstr "Producto"
 #: code:wizard/product_invoice_history.py:30
 #: model_terms:wizard/invoice_product_details_views.xml
 msgid "Product Details"
-msgstr "Producto Details"
+msgstr "Detalles del producto"
 
 #: code:wizard/invoice_product_details.py:35
 #: code:wizard/product_invoice_history.py:47
@@ -188,7 +188,7 @@ msgstr "Precio unitario"
 
 #: model_terms:views/product_product_views.xml
 msgid "Update Quantity"
-msgstr "Update Cantidad"
+msgstr "Actualizar cantidad"
 
 #: code:models/product_product.py:40
 msgid "Whether to show the \"Add to Invoice\" button in the tree view."

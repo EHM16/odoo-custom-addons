@@ -30,7 +30,7 @@ msgstr "Cancelar"
 
 #: code:models/hr_resignation.py:80
 msgid "Change Employee"
-msgstr "Change Empleado"
+msgstr "Cambiar empleado"
 
 #: code:models/hr_resignation.py:80
 msgid "Checks , if the user has permission to change the employee"
@@ -42,7 +42,7 @@ msgstr "Confirmar"
 
 #: code:models/hr_resignation.py:51
 msgid "Confirmed Date"
-msgstr "Confirmed Fecha"
+msgstr "Fecha de confirmación"
 
 #: code:models/hr_resignation.py:84
 msgid "Contract Template"
@@ -82,7 +82,7 @@ msgstr "Empleado"
 
 #: model_terms:views/hr_resignation_views.xml
 msgid "Employee Details"
-msgstr "Empleado Details"
+msgstr "Detalles del empleado"
 
 #: code:models/hr_resignation.py:62
 msgid "Employee requested date on which employee is revealing from the company."
@@ -90,7 +90,7 @@ msgstr "Fecha solicitada por el empleado para retirarse de la empresa."
 
 #: model_terms:views/hr_resignation_views.xml
 msgid "Employee Resignation"
-msgstr "Empleado Resignation"
+msgstr "Renuncia del empleado"
 
 #: code:models/hr_employee.py:37
 msgid "Fired"
@@ -98,7 +98,7 @@ msgstr "Despedido"
 
 #: model_terms:views/hr_employee_views.xml
 msgid "Fired Employees"
-msgstr "Fired Empleados"
+msgstr "Empleados despedidos"
 
 #: code:models/hr_employee.py:37
 msgid "If checked then employee has fired"
@@ -110,7 +110,7 @@ msgstr "Si se marca entonces el empleado ha renunciado"
 
 #: code:models/hr_resignation.py:59
 msgid "Join Date"
-msgstr "Join Fecha"
+msgstr "Fecha de ingreso"
 
 #: code:models/hr_resignation.py:59
 msgid "Joining date of the employee.i.e Start date of the first contract"
@@ -174,7 +174,7 @@ msgstr "Rechazar"
 
 #: code:models/hr_employee.py:33
 msgid "Resign Date"
-msgstr "Resign Fecha"
+msgstr "Fecha de renuncia"
 
 #: model_terms:views/hr_resignation_views.xml
 msgid "Resignation Details"
@@ -186,7 +186,7 @@ msgstr "dimitido"
 
 #: model_terms:views/hr_employee_views.xml
 msgid "Resigned Employees"
-msgstr "Resigned Empleados"
+msgstr "Empleados que renunciaron"
 
 #: code:models/hr_resignation.py:76
 msgid "Select the type of resignation: normal resignation or fired by the company"

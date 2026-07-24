@@ -18,7 +18,7 @@ msgstr ""
 
 #: code:models/res_users.py:29
 msgid "Assigned Task"
-msgstr "Assigned Tarea"
+msgstr "Tarea asignada"
 
 #: model_terms:wizards/free_resource_view.xml
 msgid "Cancel"
@@ -26,7 +26,7 @@ msgstr "Cancelar"
 
 #: code:wizards/free_resource.py:34
 msgid "End Date"
-msgstr "Fecha final"
+msgstr "Fecha de finalización"
 
 #: code:wizards/free_resource.py:34
 msgid "End date of period for receiving the Free Resource"
@@ -46,7 +46,7 @@ msgstr "Obtenga todos los recursos gratuitos para el proyecto"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Project Free Resource"
-msgstr "Proyecto Free Resource"
+msgstr "Recurso disponible del proyecto"
 
 #: code:models/project_task.py:37
 msgid "Project Manager"
@@ -59,7 +59,7 @@ msgstr "Gerente del proyecto de la tarea"
 #: code:models/project_task.py:31
 #: code:wizards/free_resource.py:31
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
 #: code:wizards/free_resource.py:31
 msgid "Start date of period for receiving the Free Resource"

@@ -39,7 +39,7 @@ msgstr "Empresa"
 
 #: code:models/hr_reminder.py:54
 msgid "End Date"
-msgstr "Fecha final"
+msgstr "Fecha de finalización"
 
 #: code:models/hr_reminder.py:54
 msgid "End date to not show the reminder"
@@ -75,7 +75,7 @@ msgstr "Número de días antes de que se muestre el recordatorio"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Reminders Todo"
-msgstr "Abrir recordatorios de HRMS Todo"
+msgstr "Open HRMS: recordatorios de tareas pendientes"
 
 #: model_terms:views/hr_reminder_views.xml
 msgid "Pop-Up Reminder"
@@ -87,7 +87,7 @@ msgstr "Recordatorio antes"
 
 #: code:models/hr_reminder.py:56
 msgid "Reminder Expiry Date"
-msgstr "Reminder Expiry Fecha"
+msgstr "Fecha de vencimiento del recordatorio"
 
 #: model_terms:views/hr_reminder_views.xml
 msgid "Reminder Title..."
@@ -119,7 +119,7 @@ msgstr "Seleccione la fecha establecida para el recordatorio"
 
 #: code:models/hr_reminder.py:52
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
 #: code:models/hr_reminder.py:52
 msgid "Start date to show the reminder"

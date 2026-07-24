@@ -23,11 +23,11 @@ msgstr "Empresa"
 
 #: code:models/hr_payslip_run.py:30
 msgid "Company od the payslip."
-msgstr "Empresa de la nómina."
+msgstr "Empresa de nómina."
 
 #: code:models/hr_attendance.py:30
 msgid "Company of the attendance."
-msgstr "Empresa de la asistencia."
+msgstr "Empresa de asistencia."
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Enables Multi-Company"
@@ -35,7 +35,7 @@ msgstr "Habilita el entorno multiempresa"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Multi-Company"
-msgstr "Open HRMS: multiempresa"
+msgstr "Open HRMS: Multiempresa"
 
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module enables multi company features"

@@ -18,7 +18,7 @@ msgstr ""
 
 #: code:models/module_activity.py:52
 msgid "History of installation of the module"
-msgstr "Historia de instalación del módulo."
+msgstr "Historial de instalación del módulo."
 
 #: code:models/module_activity.py:47
 msgid "History of uninstallation of the module"
@@ -39,7 +39,7 @@ msgstr "Fecha de instalación"
 #: code:models/module_activity.py:52
 #: model_terms:views/module_activity_views.xml
 msgid "Installed History"
-msgstr "Historial instalado"
+msgstr "Historial de instación"
 
 #: code:models/module_activity.py:66
 msgid "Installed Module Identifier"

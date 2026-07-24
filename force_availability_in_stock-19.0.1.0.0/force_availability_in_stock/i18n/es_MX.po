@@ -16,27 +16,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model_terms:views/stock_picking_views.xml
 msgid "Force Availability"
 msgstr "Disponibilidad de fuerza"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Force Availability Button in Delivery"
 msgstr "Botón Forzar disponibilidad en entrega"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Make goods available forcefully in the time of delivery when there is an availability problem occurs."
 msgstr "Hacer que los bienes estén disponibles con fuerza en el momento de la entrega cuando se produzca un problema de disponibilidad."
 
-#, fuzzy
 #: code:models/stock_picking.py:34
 msgid "The Force Availability button will show based on this field."
 msgstr "El botón Forzar disponibilidad se mostrará según este campo."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module will help you to make goods available \n"
@@ -45,8 +40,8 @@ msgid ""
 "    Force availability button in delivery/stock picking.Can change done \n"
 "    quantities just by a button click."
 msgstr ""
-"Este módulo le ayudará a poner los productos a disposición \n"
-"    con fuerza en el momento de la entrega y entregar la mercancía al cliente \n"
-"    sin interrupciones cuando ocurre un problema de disponibilidad.\n"
-"    Forzar botón de disponibilidad en entrega/recogida de stock. Se puede realizar el cambio \n"
-"    cantidades con solo hacer clic en un botón."
+"Este módulo permite forzar la disponibilidad de productos \n"
+"    al momento de la entrega y entregarlos al cliente \n"
+"    sin interrupciones cuando exista un problema de disponibilidad.\n"
+"    El botón Forzar disponibilidad en la transferencia permite cambiar las \n"
+"    cantidades hechas con un solo clic."

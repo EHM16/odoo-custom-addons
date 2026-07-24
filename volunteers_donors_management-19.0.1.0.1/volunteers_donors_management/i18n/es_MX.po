@@ -16,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid ""
 "\n"
@@ -24,60 +23,49 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"                            Proyecto Nombre :\n"
+"                            Nombre del proyecto:\n"
 "                            "
 
-#, fuzzy
 #: code:models/donor_type.py:36
 msgid "A description of the donor type"
 msgstr "Una descripción del tipo de donante."
 
-#, fuzzy
 #: code:models/volunteer_skill.py:48
 msgid "A description of the volunteer skill"
 msgstr "Una descripción de la habilidad del voluntario."
 
-#, fuzzy
 #: code:models/volunteer_type.py:37
 msgid "A description of the volunteer type"
 msgstr "Una descripción del tipo de voluntario."
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Allocated Hours"
 msgstr "Horas asignadas"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Assigned To"
 msgstr "Asignado a"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Assigning Date"
-msgstr "Assigning Fecha"
+msgstr "Fecha de asignación"
 
-#, fuzzy
 #: code:models/res_partner.py:34
 msgid "Check this box if the partner is a donor"
 msgstr "Marque esta casilla si la pareja es donante"
 
-#, fuzzy
 #: code:models/res_partner.py:31
 msgid "Check this box if the partner is a volunteer"
 msgstr "Marque esta casilla si el socio es voluntario"
 
-#, fuzzy
 #: code:models/volunteer_skill.py:45
 msgid "Color"
 msgstr "Color"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Customer Name:"
-msgstr "Cliente Nombre:"
+msgstr "Nombre del cliente:"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Deadline"
 msgstr "Fecha límite"
@@ -87,203 +75,164 @@ msgstr "Fecha límite"
 msgid "Description"
 msgstr "Descripción"
 
-#, fuzzy
 #: model_terms:views/res_partner_views.xml
 msgid "Donor"
 msgstr "Donante"
 
-#, fuzzy
 #: code:models/donor_type.py:34
 msgid "Donor Code"
 msgstr "Código de donante"
 
-#, fuzzy
 #: model_terms:views/crm_lead_views.xml
 #: model_terms:views/res_partner_views.xml
 msgid "Donor Details"
 msgstr "Detalles del donante"
 
-#, fuzzy
 #: code:models/crm_lead.py:30
 msgid "Donor Type"
 msgstr "Tipo de donante"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Email"
 msgstr "Correo electrónico"
 
-#, fuzzy
 #: model_terms:views/donor_type_views.xml
 #: model_terms:views/volunteer_skill_views.xml
 #: model_terms:views/volunteer_type_views.xml
 msgid "Internal Notes"
 msgstr "Notas internas"
 
-#, fuzzy
 #: code:models/res_partner.py:34
 msgid "Is Donor"
 msgstr "es donante"
 
-#, fuzzy
 #: code:models/res_partner.py:31
 msgid "Is Volunteer"
 msgstr "es voluntario"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Phone"
 msgstr "Teléfono"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Planned Date"
-msgstr "Planned Fecha"
+msgstr "Fecha planificada"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Planned Hours"
 msgstr "Horas planificadas"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Project Manger:"
-msgstr "Proyecto Manger:"
+msgstr "Gerente del proyecto:"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Project Report"
-msgstr "Proyecto Report"
+msgstr "Reporte del proyecto"
 
-#, fuzzy
 #: code:models/project_task.py:40
 msgid "Project Volunteers"
-msgstr "Proyecto Volunteers"
+msgstr "Voluntarios del proyecto"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Remaining Hours"
 msgstr "Horas restantes"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Spent Hours"
 msgstr "Horas gastadas"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Stage"
-msgstr "etapa"
+msgstr "Etapa"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Task Name"
-msgstr "Tarea Nombre"
+msgstr "Nombre de la tarea"
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 msgid "Tasks:"
 msgstr "Tareas:"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "The app helps manage volunteers and donors in Odoo, allowing assign volunteers and donors in Project and CRM"
-msgstr "The app helps manage volunteers and donors in Odoo, allowing assign volunteers and donors in Proyecto and CRM"
+msgstr "La aplicación ayuda a gestionar voluntarios y donantes en Odoo, y permite asignarlos a proyectos y al CRM."
 
-#, fuzzy
 #: code:models/donor_type.py:34
 msgid "The code of the donor code"
 msgstr "El código del código del donante."
 
-#, fuzzy
 #: code:models/volunteer_skill.py:42
 msgid "The code of the volunteer skill"
 msgstr "El código de la habilidad voluntaria."
 
-#, fuzzy
 #: code:models/volunteer_type.py:34
 msgid "The code of the volunteer type"
 msgstr "El código del tipo voluntario."
 
-#, fuzzy
 #: code:models/volunteer_skill.py:45
 msgid "The color code of the volunteer skill"
 msgstr "El código de color de la habilidad voluntaria."
 
-#, fuzzy
 #: code:models/donor_type.py:32
 msgid "The name of the donor type"
 msgstr "El nombre del tipo de donante."
 
-#, fuzzy
 #: code:models/volunteer_skill.py:39
 msgid "The name of the volunteer skill"
 msgstr "El nombre de la habilidad voluntaria."
 
-#, fuzzy
 #: code:models/volunteer_type.py:31
 msgid "The name of the volunteer type"
 msgstr "El nombre del tipo de voluntario."
 
-#, fuzzy
 #: code:models/res_partner.py:40
 msgid "The skills of the volunteer associated with this partner"
 msgstr "Las habilidades del voluntario asociado a este socio."
 
-#, fuzzy
 #: code:models/crm_lead.py:41
 msgid "The skills possessed by the volunteer associated with this lead"
 msgstr "Las habilidades que posee el voluntario asociado con este líder."
 
-#, fuzzy
 #: code:models/crm_lead.py:30
 msgid "The type of donor associated with this lead"
 msgstr "El tipo de donante asociado con este cliente potencial."
 
-#, fuzzy
 #: code:models/res_partner.py:44
 msgid "The type of donor associated with this partner"
 msgstr "El tipo de donante asociado con este socio."
 
-#, fuzzy
 #: code:models/crm_lead.py:35
 msgid "The type of volunteer associated with this lead"
 msgstr "El tipo de voluntario asociado con este cliente potencial."
 
-#, fuzzy
 #: code:models/res_partner.py:36
 msgid "The type of volunteer associated with this partner"
 msgstr "El tipo de voluntario asociado con este socio."
 
-#, fuzzy
 #: code:models/project_project.py:30
 msgid "The volunteers associated with this project"
 msgstr "Los voluntarios asociados a este proyecto."
 
-#, fuzzy
 #: code:models/project_task.py:35
 msgid "The volunteers associated with this task"
 msgstr "Los voluntarios asociados a esta tarea."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This app allows you to manage your volunteers and donors in Odoo and allows you to create projects and tasks with volunteers and activities volunteers . It also allows youto select volunteer and donor details on CRM of lead / pipelines."
 msgstr "Esta aplicación te permite administrar tus voluntarios y donantes en Odoo y te permite crear proyectos y tareas con voluntarios y actividades de voluntarios. También le permite seleccionar detalles de voluntarios y donantes en CRM de clientes potenciales/canales."
 
-#, fuzzy
 #: model_terms:views/donor_type_views.xml
 #: model_terms:views/volunteer_skill_views.xml
 #: model_terms:views/volunteer_type_views.xml
 msgid "This note is only for internal purposes."
-msgstr "Esta nota es sólo para fines internos."
+msgstr "Esta nota es solo para fines internos."
 
-#, fuzzy
 #: model_terms:report/project_report_templates.xml
 #: model_terms:views/res_partner_views.xml
 msgid "Volunteer"
 msgstr "Voluntario"
 
-#, fuzzy
 #: code:models/project_project.py:30
 #: code:models/project_task.py:35
 #: model_terms:report/project_report_templates.xml
@@ -294,19 +243,16 @@ msgstr "Voluntario"
 msgid "Volunteer Details"
 msgstr "Detalles del voluntario"
 
-#, fuzzy
 #: code:models/crm_lead.py:41
 #: model_terms:report/project_report_templates.xml
 msgid "Volunteer Skill"
 msgstr "Habilidad voluntaria"
 
-#, fuzzy
 #: code:models/crm_lead.py:35
 #: model_terms:report/project_report_templates.xml
 msgid "Volunteer Type"
 msgstr "Tipo de voluntario"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Volunteers and Donors Management"
 msgstr "Gestión de Voluntarios y Donantes"

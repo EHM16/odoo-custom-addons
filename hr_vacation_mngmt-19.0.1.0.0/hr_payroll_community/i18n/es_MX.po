@@ -16,12 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:78
 msgid "%s (copy)"
 msgstr "%s (copiar)"
 
-#, fuzzy
 #: code:models/hr_payslip.py:67
 msgid ""
 "* When the payslip is created the status is 'Draft'\n"
@@ -42,34 +40,29 @@ msgstr ""
 "                \n"
 "* Cuando el usuario cancela el recibo de nómina, el estado es \\\"Rechazado\\\"."
 
-#, fuzzy
 #: code:models/res_config_settings.py:30
 msgid "Account Accountant"
 msgstr "Cuenta Cuentaant"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Accounting"
-msgstr "Cuentaing"
+msgstr "Contabilidad"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Accounting Information"
-msgstr "Cuentaing Information"
+msgstr "Información contable"
 
 #: code:models/hr_salary_rule.py:55
 msgid "Active"
 msgstr "Activo"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Add an internal note..."
 msgstr "Añade una nota interna..."
 
-#, fuzzy
 #: model_terms:views/hr_contract_advantage_template_views.xml
 msgid "Advantage Name"
-msgstr "Advantage Nombre"
+msgstr "Nombre de la prestación"
 
 #: code:models/hr_payslip_input.py:51
 #: code:models/hr_payslip_line.py:49
@@ -79,40 +72,33 @@ msgstr "Advantage Nombre"
 msgid "Amount"
 msgstr "Importe"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:111
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Amount Type"
-msgstr "Importe Type"
+msgstr "Tipo de importe"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:59
 msgid "Appears on Payslip"
 msgstr "Aparece en el recibo de sueldo"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:86
 msgid "Applied this rule for calculation if condition is true. You can specify condition like basic > 1000."
 msgstr "Se aplicó esta regla para el cálculo si la condición es verdadera. Puede especificar una condición como básica> 1000."
 
-#, fuzzy
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Authorized signature"
 msgstr "Firma autorizada"
 
-#, fuzzy
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Bank Account"
-msgstr "Bank Cuenta"
+msgstr "Cuenta bancaria"
 
-#, fuzzy
 #: code:models/res_config_settings.py:34
 msgid "Belgium Payroll"
 msgstr "Nómina de Bélgica"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Calculations"
 msgstr "Cálculos"
@@ -121,163 +107,132 @@ msgstr "Cálculos"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Cancel Payslip"
 msgstr "Cancelar nómina"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:51
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Category"
-msgstr "Category"
+msgstr "Categoría"
 
-#, fuzzy
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Child Rules"
 msgstr "Reglas infantiles"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:145
 msgid "Child rules of the Salary rule"
 msgstr "Reglas secundarias de la regla de salario"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:145
 msgid "Child Salary Rule"
 msgstr "Regla de salario infantil"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:58
 #: code:models/hr_salary_rule_category.py:40
 msgid "Children"
 msgstr "niños"
 
-#, fuzzy
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Children Definition"
 msgstr "Definición de niños"
 
-#, fuzzy
 #: model_terms:views/res_config_settings_views.xml
 msgid "Choose a Payroll Localization"
 msgstr "Elija una localización de nómina"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:72
 msgid "Choose Condition for Salary Rule"
 msgstr "Elija la condición para la regla salarial"
 
-#, fuzzy
 #: code:models/hr_payslip_line.py:44
 msgid "Choose Contract for line"
 msgstr "Elija Contrato para línea"
 
-#, fuzzy
 #: code:models/hr_payslip.py:101
 msgid "Choose Contract for Payslip"
 msgstr "Elija contrato para recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip_line.py:41
 msgid "Choose Employee for line"
-msgstr "Choose Empleado for line"
+msgstr "Elegir empleado para la línea"
 
-#, fuzzy
 #: code:models/hr_payslip.py:53
 msgid "Choose Employee for Payslip"
-msgstr "Choose Empleado for Payslip"
+msgstr "Elegir empleado para el recibo de nómina"
 
-#, fuzzy
 #: code:wizard/hr_payslips_employees.py:32
 msgid "Choose employee for Payslip"
 msgstr "Elija empleado para recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:153
 msgid "Choose Hr Rule Input"
 msgstr "Elija entrada de regla de recursos humanos"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:63
 msgid "Choose Hr Salary Rule"
 msgstr "Elija la regla de salario de recursos humanos"
 
-#, fuzzy
 #: code:models/hr_salary_rule_category.py:40
 msgid "Choose Hr Salary Rule Category"
 msgstr "Elija la categoría de regla salarial de recursos humanos"
 
-#, fuzzy
 #: code:models/hr_contribution_register.py:33
 msgid "Choose Partner for Register"
 msgstr "Elija socio para registrarse"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:54
 #: code:models/hr_payroll_structure.py:58
 #: code:models/hr_version.py:33
 msgid "Choose Payroll Structure"
 msgstr "Elija la estructura de nómina"
 
-#, fuzzy
 #: code:models/hr_employee.py:30
 msgid "Choose Payslip for Employee"
-msgstr "Choose Payslip for Empleado"
+msgstr "Elegir recibo de nómina para el empleado"
 
-#, fuzzy
 #: code:models/hr_payslip.py:78
 #: code:models/hr_payslip_line.py:34
 msgid "Choose Payslip for line"
 msgstr "Elija Nómina para línea"
 
-#, fuzzy
 #: code:models/hr_payslip_worked_days.py:34
 msgid "Choose Payslip for worked days"
 msgstr "Elija Nómina para días trabajados"
 
-#, fuzzy
 #: code:models/hr_payslip.py:94
 msgid "Choose Payslip Input"
 msgstr "Elija entrada de recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_contribution_register.py:37
 msgid "Choose Payslip line"
 msgstr "Elija línea de recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip.py:111
 msgid "Choose Payslip Run"
 msgstr "Elija Ejecución de recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip_run.py:35
 msgid "Choose Payslips for Batches"
 msgstr "Elija recibos de nómina para lotes"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:62
 #: code:models/hr_rule_input.py:35
 msgid "Choose Salary Rule"
 msgstr "Elija la regla salarial"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:51
 msgid "Choose Salary Rule Category"
 msgstr "Elija la categoría de regla salarial"
 
-#, fuzzy
 #: code:models/hr_payslip_line.py:38
 msgid "Choose Salary Rule for line"
 msgstr "Elija Regla de salario para la línea"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Close"
 msgstr "Cerrar"
 
-#, fuzzy
 #: code:models/hr_contract_advantage_template.py:33
 #: code:models/hr_leave_type.py:30
 #: code:models/hr_payslip_input.py:40
@@ -288,24 +243,20 @@ msgstr "Cerrar"
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Code"
-msgstr "Code"
+msgstr "Código"
 
-#, fuzzy
 #: code:models/hr_contract_advantage_template.py:33
 msgid "Code for Employee's Advantage on Contract"
-msgstr "Code for Empleado's Advantage on Contract"
+msgstr "Código para la ventaja del empleado en el contrato"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:44
 msgid "Code for Payroll Structure"
 msgstr "Código para estructura de nómina"
 
-#, fuzzy
 #: code:models/hr_leave_type.py:30
 msgid "Code for Time Off Type"
 msgstr "Código para tipo de tiempo libre"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_views.xml
 msgid "Companies"
 msgstr "Empresas"
@@ -318,27 +269,22 @@ msgstr "Empresas"
 msgid "Company"
 msgstr "Empresa"
 
-#, fuzzy
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Company Contribution"
-msgstr "Empresa Contribution"
+msgstr "Aportación de la empresa"
 
-#, fuzzy
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Computation"
 msgstr "Computación"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Compute Sheet"
 msgstr "Hoja de cálculo"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:72
 msgid "Condition Based on"
 msgstr "Condición basada en"
 
-#, fuzzy
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Conditions"
 msgstr "Condiciones"
@@ -347,7 +293,6 @@ msgstr "Condiciones"
 msgid "Confirm"
 msgstr "Confirmar"
 
-#, fuzzy
 #: code:models/hr_payslip.py:101
 #: code:models/hr_payslip_input.py:58
 #: code:models/hr_payslip_line.py:44
@@ -355,44 +300,36 @@ msgstr "Confirmar"
 msgid "Contract"
 msgstr "Contrato"
 
-#, fuzzy
 #: model_terms:views/hr_contribution_register_views.xml
 msgid "Contribution"
 msgstr "Contribución"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:149
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Contribution Register"
 msgstr "Registro de contribuciones"
 
-#, fuzzy
 #: code:models/hr_contribution_register.py:35
 msgid "Contribution Register Name"
-msgstr "Contribution Register Nombre"
+msgstr "Nombre del registro de aportaciones"
 
-#, fuzzy
 #: model_terms:wizard/payslip_lines_contribution_register_views.xml
 msgid "Contribution Register's Payslip Lines"
 msgstr "Líneas de Nómina del Registro de Aportaciones"
 
-#, fuzzy
 #: model_terms:views/hr_contribution_register_views.xml
 msgid "Contribution Registers"
 msgstr "Registros de aportaciones"
 
-#, fuzzy
 #: code:models/hr_payslip.py:108
 #: code:models/hr_payslip_run.py:54
 msgid "Credit Note"
 msgstr "Nota de crédito"
 
-#, fuzzy
 #: code:models/hr_version.py:50
 msgid "DA"
 msgstr "DA"
 
-#, fuzzy
 #: code:models/hr_payslip.py:56
 #: code:models/hr_payslip_input.py:42
 #: code:models/hr_payslip_run.py:44
@@ -400,14 +337,12 @@ msgstr "DA"
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Date From"
-msgstr "Fecha From"
+msgstr "Fecha desde"
 
-#, fuzzy
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "Date From:"
-msgstr "Fecha From:"
+msgstr "Fecha de:"
 
-#, fuzzy
 #: code:models/hr_payslip.py:60
 #: code:models/hr_payslip_input.py:46
 #: code:models/hr_payslip_run.py:48
@@ -415,34 +350,28 @@ msgstr "Fecha From:"
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Date To"
-msgstr "Fecha To"
+msgstr "Fecha hasta"
 
-#, fuzzy
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "Date To:"
-msgstr "Fecha To:"
+msgstr "Fecha hasta:"
 
-#, fuzzy
 #: code:models/hr_version.py:50
 msgid "Dearness allowance"
 msgstr "Asignación por carestía"
 
-#, fuzzy
 #: code:models/hr_contract_advantage_template.py:41
 msgid "Default Value"
 msgstr "Valor predeterminado"
 
-#, fuzzy
 #: code:models/hr_contract_advantage_template.py:41
 msgid "Default value for this advantage"
 msgstr "Valor predeterminado para esta ventaja"
 
-#, fuzzy
 #: code:models/hr_version.py:36
 msgid "Defines the frequency of the wage payment."
 msgstr "Define la frecuencia del pago del salario."
 
-#, fuzzy
 #: code:models/hr_payslip.py:40
 msgid "Defines the rules that have to be applied to this payslip, accordingly to the contract chosen. If you let empty the field contract, this field isn't mandatory anymore and thus the rules applied will be all the rules set on the structure of all contracts of the employee valid for the chosen period"
 msgstr "Define las reglas que se deben aplicar a esta nómina, según el contrato elegido. Si deja vacío el campo contrato, este campo ya no es obligatorio y por lo tanto las reglas aplicadas serán todas las reglas establecidas en la estructura de todos los contratos del empleado válidos para el período elegido."
@@ -459,54 +388,44 @@ msgstr "Define las reglas que se deben aplicar a esta nómina, según el contrat
 msgid "Description"
 msgstr "Descripción"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:52
 msgid "Description for Payroll Structure"
-msgstr "Descripción for Payroll Structure"
+msgstr "Descripción de la estructura de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip.py:100
 msgid "Description for Payslip"
-msgstr "Descripción for Payslip"
+msgstr "Descripción de recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_salary_rule_category.py:44
 msgid "Description for Salary Category"
-msgstr "Descripción for Salary Category"
+msgstr "Descripción de la categoría salarial"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:156
 msgid "Description for Salary Rule"
-msgstr "Descripción for Salary Rule"
+msgstr "Descripción de la regla salarial"
 
-#, fuzzy
 #: code:models/hr_rule_input.py:31
 msgid "Description for Salary Rule Input"
-msgstr "Descripción for Salary Rule Input"
+msgstr "Descripción de la entrada de regla salarial"
 
-#, fuzzy
 #: code:models/hr_payslip_worked_days.py:32
 msgid "Description for Worked Days"
-msgstr "Descripción for Worked Days"
+msgstr "Descripción de días trabajados"
 
-#, fuzzy
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Designation"
 msgstr "Designación"
 
-#, fuzzy
 #: code:models/hr_payslip.py:103
 #: model_terms:report/report_payslip_details_templates.xml
 msgid "Details by Salary Rule Category"
 msgstr "Detalles por categoría de regla salarial"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Details By Salary Rule Category"
 msgstr "Detalles por categoría de regla salarial"
 
-#, fuzzy
 #: code:models/hr_payslip.py:103
 msgid "Details from the salary rule category"
 msgstr "Detalles de la categoría de regla salarial"
@@ -517,15 +436,13 @@ msgstr "Detalles de la categoría de regla salarial"
 msgid "Done"
 msgstr "Hecho"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Done Payslip Batches"
 msgstr "Lotes de recibos de nómina hechos"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_views.xml
 msgid "Done Slip"
-msgstr "Resbalón hecho"
+msgstr "Recibo de nómina finalizado"
 
 #: code:models/hr_payslip.py:67
 #: model_terms:views/hr_payslip_run_views.xml
@@ -533,17 +450,14 @@ msgstr "Resbalón hecho"
 msgid "Draft"
 msgstr "Borrador"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Draft Payslip Batches"
 msgstr "Borradores de lotes de nóminas"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_views.xml
 msgid "Draft Slip"
 msgstr "Borrador de borrador"
 
-#, fuzzy
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Email"
@@ -555,258 +469,208 @@ msgstr "Correo electrónico"
 msgid "Employee"
 msgstr "Empleado"
 
-#, fuzzy
 #: model_terms:views/hr_payroll_structure_views.xml
 msgid "Employee Function"
-msgstr "Empleado Function"
+msgstr "Puesto del empleado"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 #: model_terms:views/hr_payslip_views.xml
 #: model_terms:wizard/hr_payslips_employees_views.xml
 msgid "Employees"
 msgstr "Empleados"
 
-#, fuzzy
 #: code:models/hr_payslip_run.py:48
 msgid "End date for batch"
 msgstr "Fecha de finalización del lote"
 
-#, fuzzy
 #: code:models/hr_payslip.py:60
 msgid "End date for Payslip"
 msgstr "Fecha de finalización del recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip_input.py:46
 #: code:wizard/payslip_lines_contribution_register.py:38
 msgid "Ending Date for Payslip Lines"
-msgstr "Ending Fecha for Payslip Lines"
+msgstr "Fecha de finalización de las líneas de recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip.py:50
 msgid "Enter Payslip Name"
-msgstr "Enter Payslip Nombre"
+msgstr "Ingrese el nombre del recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:35
 msgid "Enter Salary Rule Name"
-msgstr "Enter Salary Rule Nombre"
+msgstr "Ingrese el nombre de la regla salarial"
 
-#, fuzzy
 #: code:models/hr_salary_rule_category.py:59
 msgid "Error! You cannot create recursive hierarchy of Salary Rule Category."
 msgstr "¡Error! No se puede crear una jerarquía recursiva de categoría de regla salarial."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:163
 msgid "Error! You cannot create recursive hierarchy of Salary Rules."
 msgstr "¡Error! No se puede crear una jerarquía recursiva de reglas salariales."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:149
 msgid "Eventual third party involved in the salary payment of the employees."
-msgstr "Eventual tercero involucrado en el pago de salarios de los empleados."
+msgstr "Posible tercero que interviene en el pago de salarios de los empleados."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:118
 msgid "Fixed Amount"
-msgstr "Fixed Importe"
+msgstr "Importe fijo"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:122
 msgid "For example, enter 50.0 to apply a percentage of 50%"
 msgstr "Por ejemplo, ingrese 50.0 para aplicar un porcentaje del 50%."
 
-#, fuzzy
 #: code:report/report_hr_payroll_community_report_contribution_register.py:56
 msgid "Form content is missing, this report cannot be printed."
 msgstr "Falta el contenido del formulario, este informe no se puede imprimir."
 
-#, fuzzy
 #: code:models/res_config_settings.py:32
 msgid "French Payroll"
 msgstr "Nómina francesa"
 
-#, fuzzy
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "General"
 msgstr "generales"
 
-#, fuzzy
 #: model_terms:wizard/hr_payslips_employees_views.xml
 msgid "Generate"
 msgstr "generar"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Generate Payslips"
 msgstr "Generar nóminas"
 
-#, fuzzy
 #: code:models/hr_payslip.py:264
 msgid "Global Leaves"
 msgstr "Hojas globales"
 
-#, fuzzy
 #: code:models/hr_version.py:46
 msgid "House rent allowance."
 msgstr "Subsidio de alquiler de vivienda."
 
-#, fuzzy
 #: code:models/hr_salary_rule_category.py:34
 msgid "Hr Salary Rule Category Code"
 msgstr "Código de categoría de regla salarial de recursos humanos"
 
-#, fuzzy
 #: code:models/hr_salary_rule_category.py:32
 msgid "Hr Salary Rule Category Name"
-msgstr "Hr Salary Rule Category Nombre"
+msgstr "Nombre de la categoría de regla salarial de RR. HH."
 
-#, fuzzy
 #: code:models/hr_version.py:46
 msgid "HRA"
 msgstr "HRA"
 
-#, fuzzy
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Identification No"
 msgstr "Número de identificación"
 
-#, fuzzy
 #: code:models/hr_payslip_run.py:54
 msgid "If its checked, indicates that allpayslips generated from here are refundpayslips."
 msgstr "Si está marcado, indica que todos los recibos de nómina generados desde aquí son recibos de reembolso."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:55
 msgid "If the active field is set to false, it will allow you to hide the salaryrule without removing it."
 msgstr "Si el campo activo se establece en falso, le permitirá ocultar la regla salarial sin eliminarla."
 
-#, fuzzy
 #: code:models/res_config_settings.py:36
 msgid "Indian Payroll"
 msgstr "Nómina india"
 
-#, fuzzy
 #: code:models/hr_payslip.py:108
 msgid "Indicates this payslip has a refund of another"
 msgstr "Indica que esta nómina tiene reembolso de otra"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Input Data"
 msgstr "Datos de entrada"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:153
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Inputs"
 msgstr "Entradas"
 
-#, fuzzy
 #: code:models/hr_payslip.py:100
 msgid "Internal Note"
 msgstr "Nota interna"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Is a Blocking Reason?"
 msgstr "¿Es un motivo de bloqueo?"
 
-#, fuzzy
 #: code:models/res_config_settings.py:30
 msgid "Is Account Accountant"
-msgstr "Is Cuenta Cuentaant"
+msgstr "Es contador"
 
-#, fuzzy
 #: code:models/res_config_settings.py:34
 msgid "Is Belgium Payroll"
 msgstr "¿Es la nómina de Bélgica?"
 
-#, fuzzy
 #: code:models/res_config_settings.py:32
 msgid "Is French Payroll"
 msgstr "¿Es la nómina francesa?"
 
-#, fuzzy
 #: code:models/res_config_settings.py:36
 msgid "Is Indian Payroll"
 msgstr "¿Es la nómina india?"
 
-#, fuzzy
 #: code:models/hr_payslip.py:98
 msgid "Is Payment Order"
 msgstr "Es orden de pago"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:44
 msgid "It is used in computation for percentageand fixed amount. For e.g. A rule for MealVoucher having fixed amount of 1€ per worked day can have its quantitydefined in expression like worked_days.WORK100.number_of_days."
-msgstr "Se utiliza para calcular porcentajes y cantidades fijas. Por ej. Una regla para MealVoucher que tiene una cantidad fija de 1 € por día trabajado puede tener su cantidad definida en una expresión como días_trabajados.TRABAJO100.número_de_días."
+msgstr "Se utiliza para calcular porcentajes e importes fijos. Por ejemplo, una regla de vales de comida con un importe fijo de 1 € por día trabajado puede definir su cantidad mediante la expresión worked_days.WORK100.number_of_days."
 
-#, fuzzy
 #: code:models/hr_payslip_input.py:51
 msgid "It is used in computation.For e.g. A rule for sales having 1% commission of basic salary forper product can defined in expression like result = inputs.SALEURO.amount * contract.wage*0.01."
-msgstr "Se utiliza en computación. Por ej. Una regla para ventas que tienen 1% c comisión de salario básico por producto se puede definir en una expresión como resultado = entradas.SALEURO.monto * contrato.salario*0.01."
+msgstr "Se utiliza en los cálculos. Por ejemplo, una regla de ventas con una comisión del 1 % del salario base por producto puede definirse con la expresión result = inputs.SALEURO.amount * contract.wage * 0.01."
 
-#, fuzzy
 #: code:models/hr_salary_rule_category.py:36
 msgid "Linking a salary category to its parentis used only for the reporting purpose."
 msgstr "Vincular una categoría salarial a su categoría principal se utiliza únicamente con fines de generación de informes."
 
-#, fuzzy
 #: code:models/hr_contract_advantage_template.py:35
 msgid "Lower Bound"
 msgstr "Límite inferior"
 
-#, fuzzy
 #: code:models/hr_contract_advantage_template.py:35
 msgid "Lower bound authorized by the employerfor this advantage"
 msgstr "Límite inferior autorizado por el empleador para esta ventaja"
 
-#, fuzzy
 #: code:models/hr_payslip.py:98
 msgid "Made Payment Order ?"
 msgstr "¿Orden de pago realizada?"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:108
 msgid "Maximum Range"
 msgstr "Rango máximo"
 
-#, fuzzy
 #: code:models/hr_version.py:51
 msgid "Meal Allowance"
 msgstr "Subsidio de comida"
 
-#, fuzzy
 #: code:models/hr_version.py:51
 msgid "Meal allowance"
 msgstr "Subsidio de comida"
 
-#, fuzzy
 #: code:models/hr_version.py:53
 msgid "Medical Allowance"
 msgstr "Asignación médica"
 
-#, fuzzy
 #: code:models/hr_version.py:53
 msgid "Medical allowance"
 msgstr "subsidio medico"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:105
 msgid "Minimum Range"
 msgstr "Rango mínimo"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Miscellaneous"
 msgstr "Varios"
 
-#, fuzzy
 #: model_terms:views/hr_version_views.xml
 msgid "Monthly Advantages in Cash"
 msgstr "Ventajas Mensuales en Efectivo"
@@ -822,27 +686,22 @@ msgstr "Ventajas Mensuales en Efectivo"
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:models/hr_contract_advantage_template.py:31
 msgid "Name for Employee's Advantage on Contract"
-msgstr "Nombre for Empleado's Advantage on Contract"
+msgstr "Nombre de la ventaja del empleado en el contrato"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:42
 msgid "Name for Payroll Structure"
-msgstr "Nombre for Payroll Structure"
+msgstr "Nombre de la estructura de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip_run.py:33
 msgid "Name for Payslip Batches"
-msgstr "Nombre for Payslip Batches"
+msgstr "Nombre de los lotes de recibos de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip_input.py:34
 msgid "Name of the input"
-msgstr "Nombre of the input"
+msgstr "Nombre de la entrada"
 
-#, fuzzy
 #: code:models/hr_payslip.py:280
 msgid "Normal Working Days paid at 100%"
 msgstr "Días Laborables Normales pagados al 100%"
@@ -851,32 +710,26 @@ msgstr "Días Laborables Normales pagados al 100%"
 msgid "Notes"
 msgstr "Notas"
 
-#, fuzzy
 #: code:models/hr_payslip_worked_days.py:43
 msgid "Number of Days"
 msgstr "Número de días"
 
-#, fuzzy
 #: code:models/hr_payslip_worked_days.py:43
 msgid "Number of days worked"
 msgstr "Número de días trabajados"
 
-#, fuzzy
 #: code:models/hr_payslip_worked_days.py:45
 msgid "Number of Hours"
 msgstr "Número de horas"
 
-#, fuzzy
 #: code:models/hr_payslip_worked_days.py:45
 msgid "Number of hours worked"
 msgstr "Número de horas trabajadas"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Odoo 19 HR Payroll"
 msgstr "Odoo 19 Nómina de Recursos Humanos"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid ""
 "Odoo 19 HR Payroll, Odoo19 Payroll, Payroll, Odoo Payroll,\n"
@@ -885,28 +738,23 @@ msgstr ""
 "Odoo 19 Nómina de Recursos Humanos, Odoo19 Nómina, Nómina, Odoo Nómina,\n"
 "    Nómina V19, Odoo19, Gestión de Nómina, Nómina Odoo19"
 
-#, fuzzy
 #: code:models/hr_version.py:55
 msgid "Other Allowance"
 msgstr "Otra asignación"
 
-#, fuzzy
 #: code:models/hr_version.py:55
 msgid "Other allowances"
 msgstr "Otras asignaciones"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Other Inputs"
 msgstr "Otras entradas"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:54
 #: code:models/hr_salary_rule_category.py:36
 msgid "Parent"
 msgstr "Padre"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:63
 msgid "Parent Salary Rule"
 msgstr "Regla de salario de los padres"
@@ -915,7 +763,6 @@ msgstr "Regla de salario de los padres"
 msgid "Partner"
 msgstr "Contacto"
 
-#, fuzzy
 #: code:models/hr_payslip_input.py:35
 #: code:models/hr_payslip_line.py:34
 #: code:models/hr_payslip_worked_days.py:34
@@ -924,110 +771,89 @@ msgstr "Contacto"
 msgid "Pay Slip"
 msgstr "Recibo de pago"
 
-#, fuzzy
 #: model_terms:views/res_config_settings_views.xml
 msgid "Payroll"
 msgstr "Nómina"
 
-#, fuzzy
 #: model_terms:views/hr_leave_type_views.xml
 msgid "Payroll Code"
 msgstr "Código de nómina"
 
-#, fuzzy
 #: model_terms:views/res_config_settings_views.xml
 msgid "Payroll Entries"
 msgstr "Entradas de nómina"
 
-#, fuzzy
 #: model_terms:views/hr_payroll_structure_views.xml
 msgid "Payroll Structures"
 msgstr "Estructuras de nómina"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Payslip"
 msgstr "Recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip.py:137
 msgid "Payslip 'Date From' must be earlier 'Date To'."
-msgstr "Payslip 'Fecha From' must be earlier 'Fecha To'."
+msgstr "La 'Fecha desde' del recibo de nómina debe ser anterior a la 'Fecha hasta'."
 
-#, fuzzy
 #: model_terms:views/hr_payslip_views.xml
 msgid "PaySlip Batch"
 msgstr "Lote de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip.py:111
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Payslip Batches"
 msgstr "Lotes de nóminas"
 
-#, fuzzy
 #: code:models/hr_payslip.py:114
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Payslip Computation Details"
 msgstr "Detalles del cálculo del recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_employee.py:34
 msgid "Payslip Count"
 msgstr "Conteo de nóminas"
 
-#, fuzzy
 #: code:models/hr_payslip.py:94
 msgid "Payslip Inputs"
 msgstr "Entradas de nómina"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Payslip Line"
 msgstr "Línea de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip.py:78
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Payslip Lines"
 msgstr "Líneas de nómina"
 
-#, fuzzy
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "PaySlip Lines by Contribution Register"
 msgstr "Líneas de Nómina por Registro de Contribuciones"
 
-#, fuzzy
 #: model_terms:report/report_payslip_details_templates.xml
 msgid "Payslip Lines by Contribution Register"
 msgstr "Líneas de nómina por registro de aportaciones"
 
-#, fuzzy
 #: code:models/hr_payslip.py:50
 msgid "Payslip Name"
-msgstr "Payslip Nombre"
+msgstr "Nombre del recibo de nómina"
 
-#, fuzzy
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "PaySlip Name"
-msgstr "PaySlip Nombre"
+msgstr "Nombre del recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip_input.py:35
 msgid "Payslip related to the input"
 msgstr "Recibo de nómina relacionado con la entrada"
 
-#, fuzzy
 #: code:models/hr_payslip.py:89
 msgid "Payslip Worked Days"
 msgstr "Nómina Días Laborados"
 
-#, fuzzy
 #: code:models/hr_payslip.py:89
 msgid "Payslip worked days for line"
 msgstr "Nómina de días trabajados para línea"
 
-#, fuzzy
 #: code:models/hr_employee.py:30
 #: code:models/hr_payslip_run.py:35
 #: model_terms:views/hr_employee_views.xml
@@ -1036,43 +862,35 @@ msgstr "Nómina de días trabajados para línea"
 msgid "Payslips"
 msgstr "Recibos de nómina"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Payslips Batches"
 msgstr "Lotes de nóminas"
 
-#, fuzzy
 #: model_terms:wizard/hr_payslips_employees_views.xml
 msgid "Payslips by Employees"
-msgstr "Payslips by Empleados"
+msgstr "Recibos de nómina por empleado"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:122
 msgid "Percentage (%)"
 msgstr "Porcentaje (%)"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:142
 msgid "Percentage based on"
 msgstr "Porcentaje basado en"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Period"
 msgstr "Periodo"
 
-#, fuzzy
 #: model_terms:wizard/payslip_lines_contribution_register_views.xml
 msgid "Print"
-msgstr "Print"
+msgstr "Imprimir"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:126
 msgid "Python Code"
 msgstr "Código Python"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:86
 msgid "Python Condition"
 msgstr "Condición de Python"
@@ -1082,23 +900,19 @@ msgstr "Condición de Python"
 msgid "Quantity"
 msgstr "Cantidad"
 
-#, fuzzy
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "Quantity/Rate"
-msgstr "Cantidad/Rate"
+msgstr "Cantidad/tasa"
 
-#, fuzzy
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Quantity/rate"
-msgstr "Cantidad/rate"
+msgstr "Cantidad/tasa"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:78
 msgid "Range Based on"
 msgstr "Rango basado en"
 
-#, fuzzy
 #: code:models/hr_payslip_line.py:47
 msgid "Rate (%)"
 msgstr "Tasa (%)"
@@ -1110,128 +924,104 @@ msgstr "Tasa (%)"
 msgid "Reference"
 msgstr "Referencia"
 
-#, fuzzy
 #: code:models/hr_payslip.py:51
 msgid "References for Payslip"
 msgstr "Referencias para recibo de sueldo"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Refund"
 msgstr "Reembolso"
 
-#, fuzzy
 #: code:models/hr_payslip.py:164
 msgid "Refund Payslip"
 msgstr "Recibo de nómina de reembolso"
 
-#, fuzzy
 #: code:models/hr_payslip.py:156
 msgid "Refund:"
 msgstr "Reembolso:"
 
-#, fuzzy
 #: code:models/hr_contribution_register.py:37
 msgid "Register Line"
 msgstr "Línea de registro"
 
-#, fuzzy
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "Register Name:"
-msgstr "Register Nombre:"
+msgstr "Nombre del registro:"
 
-#, fuzzy
 #: code:models/hr_payslip.py:67
 msgid "Rejected"
 msgstr "Rechazado"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:142
 msgid "result will be affected to a variable"
 msgstr "El resultado se verá afectado por una variable."
 
-#, fuzzy
 #: code:models/hr_payslip_line.py:38
 msgid "Rule"
 msgstr "regla"
 
-#, fuzzy
 #: model_terms:views/hr_salary_rule_category_views.xml
 msgid "Salary Categories"
 msgstr "Categorías salariales"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Salary Computation"
 msgstr "Cálculo del salario"
 
-#, fuzzy
 #: model_terms:views/hr_salary_rule_category_views.xml
 msgid "Salary Rule Categories"
 msgstr "Categorías de reglas salariales"
 
-#, fuzzy
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Salary Rule Category"
 msgstr "Categoría de regla salarial"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:37
 msgid "Salary Rule Code"
 msgstr "Código de regla salarial"
 
-#, fuzzy
 #: code:models/hr_rule_input.py:35
 msgid "Salary Rule Input"
 msgstr "Entrada de regla salarial"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:35
 msgid "Salary Rule Name"
-msgstr "Salary Rule Nombre"
+msgstr "Nombre de la regla salarial"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:62
 #: model_terms:views/hr_payroll_structure_views.xml
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Salary Rules"
 msgstr "Reglas salariales"
 
-#, fuzzy
 #: code:models/hr_payslip.py:557
 #: code:models/hr_payslip.py:608
 msgid "Salary Slip of %s for %s"
 msgstr "Recibo de sueldo de %s para %s"
 
-#, fuzzy
 #: code:models/hr_version.py:33
 #: model_terms:views/hr_payroll_structure_views.xml
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Salary Structure"
 msgstr "Estructura salarial"
 
-#, fuzzy
 #: code:models/hr_version.py:36
 msgid "Scheduled Pay"
 msgstr "Pago programado"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Search Payslip Batches"
 msgstr "Buscar lotes de recibos de nómina"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Search Payslip Lines"
 msgstr "Buscar líneas de nómina"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_views.xml
 msgid "Search Payslips"
 msgstr "Buscar nóminas"
 
-#, fuzzy
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Search Salary Rule"
 msgstr "Buscar regla salarial"
@@ -1242,70 +1032,57 @@ msgstr "Buscar regla salarial"
 msgid "Sequence"
 msgstr "Secuencia"
 
-#, fuzzy
 #: code:models/hr_payslip_worked_days.py:38
 msgid "Sequence for worked days"
 msgstr "Secuencia de días trabajados"
 
-#, fuzzy
 #: code:models/hr_payslip_input.py:38
 msgid "Sequence to identify the record"
 msgstr "Secuencia para identificar el registro."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:118
 msgid "Set a Fixed Amount"
-msgstr "Set a Fixed Importe"
+msgstr "Establecer un importe fijo"
 
-#, fuzzy
 #: code:models/hr_payslip_line.py:49
 msgid "Set Amount for line"
-msgstr "Set Importe for line"
+msgstr "Establecer monto para la línea"
 
-#, fuzzy
 #: code:models/hr_contribution_register.py:42
 msgid "Set Description for Register"
-msgstr "Set Descripción for Register"
+msgstr "Establecer descripción para registro"
 
-#, fuzzy
 #: code:models/hr_employee.py:34
 #: code:models/hr_payslip.py:114
 msgid "Set Payslip Count"
 msgstr "Establecer recuento de recibos de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip_line.py:51
 msgid "Set Qty for line"
 msgstr "Establecer cantidad para la línea"
 
-#, fuzzy
 #: code:models/hr_payslip_line.py:47
 msgid "Set Rate for payslip"
 msgstr "Establecer tarifa para recibo de nómina"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Set to Draft"
-msgstr "Set to Draft"
+msgstr "Restablecer a borrador"
 
-#, fuzzy
 #: code:models/hr_payslip_run.py:44
 msgid "start date for batch"
 msgstr "fecha de inicio del lote"
 
-#, fuzzy
 #: code:models/hr_payslip.py:56
 msgid "Start date for Payslip"
 msgstr "Fecha de inicio del recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip_input.py:42
 #: code:wizard/payslip_lines_contribution_register.py:34
 msgid "Starting Date for Payslip Lines"
-msgstr "Starting Fecha for Payslip Lines"
+msgstr "Fecha de inicio de las líneas de recibo de nómina"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_views.xml
 msgid "States"
 msgstr "Estados"
@@ -1315,54 +1092,44 @@ msgstr "Estados"
 msgid "Status"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/hr_payslip_run.py:39
 msgid "Status for Payslip Batches"
-msgstr "Estado for Payslip Batches"
+msgstr "Estado de los lotes de recibos de nómina"
 
-#, fuzzy
 #: code:models/hr_payslip.py:40
 msgid "Structure"
 msgstr "Estructura"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:37
 msgid "The code of salary rules can be used as referencein computation of other rules. In that case, it is case sensitive."
 msgstr "El código de reglas salariales se puede utilizar como referencia en el cálculo de otras reglas. En ese caso, distingue entre mayúsculas y minúsculas."
 
-#, fuzzy
 #: code:models/hr_payslip_input.py:40
 #: code:models/hr_payslip_worked_days.py:41
 #: code:models/hr_rule_input.py:33
 msgid "The code that can be used in the salary rules"
 msgstr "El código que se puede utilizar en las reglas salariales."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:111
 msgid "The computation method for the rule amount."
 msgstr "El método de cálculo del importe de la regla."
 
-#, fuzzy
 #: code:models/hr_payslip_input.py:58
 msgid "The contract for which applied this input"
 msgstr "El contrato para el cual se aplicó este insumo."
 
-#, fuzzy
 #: code:models/hr_payslip_worked_days.py:47
 msgid "The contract for which appliedthis input"
 msgstr "El contrato para el cual se aplicó esta entrada."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:108
 msgid "The maximum amount, applied for this rule."
 msgstr "El monto máximo, aplicado para esta regla."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:105
 msgid "The minimum amount, applied for this rule."
 msgstr "El monto mínimo, aplicado para esta regla."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "The system automates payroll management by streamlining\n"
@@ -1381,10 +1148,9 @@ msgstr ""
 "     minimiza los errores y garantiza el cumplimiento de las leyes fiscales y laborales, al tiempo que\n"
 "     Proporcionar a los empleados información de pago oportuna y precisa."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:78
 msgid "This will be used to compute the % fields values; in general it is on basic, but you can also use categories code fields in lowercase as a variable names (hra, ma, lta, etc.) and the variable basic."
-msgstr "Esto se utilizará para calcular los valores de % fields; en general es básico, pero también puedes usar campos de código de categorías en minúsculas como nombres de variables (hra, ma, lta, etc.) y la variable básica."
+msgstr "Se utiliza para calcular los valores porcentuales. Generalmente se basa en basic, pero también pueden usarse como variables los códigos de categoría en minúsculas (hra, ma, lta, etc.) y la variable basic."
 
 #: code:models/hr_payslip_line.py:53
 #: model_terms:report/report_contribution_register_templates.xml
@@ -1393,102 +1159,82 @@ msgstr "Esto se utilizará para calcular los valores de % fields; en general es 
 msgid "Total"
 msgstr "Total"
 
-#, fuzzy
 #: code:models/hr_payslip_line.py:53
 msgid "Total amount for Payslip"
 msgstr "Importe total del recibo de nómina"
 
-#, fuzzy
 #: code:models/hr_version.py:48
 msgid "Travel Allowance"
 msgstr "Subsidio de viaje"
 
-#, fuzzy
 #: code:models/hr_version.py:48
 msgid "Travel allowance"
 msgstr "Subsidio de viaje"
 
-#, fuzzy
 #: code:models/hr_contract_advantage_template.py:38
 msgid "Upper Bound"
 msgstr "Límite superior"
 
-#, fuzzy
 #: code:models/hr_contract_advantage_template.py:38
 msgid "Upper bound authorized by the employerfor this advantage"
 msgstr "Límite superior autorizado por el empleador para esta ventaja"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:41
 msgid "Use to arrange calculation sequence"
 msgstr "Usar para organizar la secuencia de cálculo"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:59
 msgid "Used to display the salaryrule on payslip."
 msgstr "Se utiliza para mostrar la regla salarial en el recibo de nómina."
 
-#, fuzzy
 #: code:models/hr_payslip.py:67
 msgid "Waiting"
 msgstr "esperando"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Worked Day"
 msgstr "Día trabajado"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Worked Days"
 msgstr "Días trabajados"
 
-#, fuzzy
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Worked Days & Inputs"
 msgstr "Días trabajados y entradas"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:211
 msgid "Wrong percentage base or quantity defined for salary rule %s (%s)."
 msgstr "Base porcentual o cantidad incorrecta definida para la regla salarial %s (%s)."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:224
 msgid "Wrong python code defined for salary rule %s (%s)."
 msgstr "Código Python incorrecto definido para la regla salarial %s (%s)."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:254
 msgid "Wrong python condition defined for salary rule %s (%s)."
 msgstr "Condición de Python incorrecta definida para la regla salarial %s (%s)."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:201
 msgid "Wrong quantity defined for salary rule %s (%s)."
 msgstr "Cantidad incorrecta definida para la regla salarial %s (%s)."
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:244
 msgid "Wrong range condition defined for salary rule %s (%s)."
 msgstr "Condición de rango incorrecta definida para la regla salarial %s (%s)."
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:73
 msgid "You cannot create a recursive salary structure."
 msgstr "No se puede crear una estructura salarial recursiva."
 
-#, fuzzy
 #: code:models/hr_payslip.py:181
 msgid "You cannot delete a payslip which is not draft or cancelled!"
 msgstr "¡No se puede eliminar una nómina que no esté girada o cancelada!"
 
-#, fuzzy
 #: code:wizard/hr_payslips_employees.py:50
 msgid "You must select employee(s) to generate payslip(s)."
 msgstr "Debe seleccionar empleado(s) para generar recibo(s) de pago."
 
-#, fuzzy
 #: code:models/hr_payslip_line.py:76
 msgid "You must set a contract to create a payslip line."
 msgstr "Debe establecer un contrato para crear una línea de recibo de nómina."

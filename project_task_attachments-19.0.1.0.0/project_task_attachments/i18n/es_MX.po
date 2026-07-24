@@ -16,31 +16,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/ir_attachment.py:30
 msgid "Attach To"
 msgstr "Adjuntar a"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Helps to view all documents attached to Projects/Tasks"
-msgstr "Helps to view all documents attached to Proyectos/Tareas"
+msgstr "Permite consultar todos los documentos adjuntos a proyectos y tareas"
 
-#, fuzzy
 #: code:models/ir_attachment.py:30
 msgid "if Project, file attached to Project. Otherwise to task."
-msgstr "if Proyecto, file attached to Proyecto. Otherwise to task."
+msgstr "Si corresponde a un proyecto, el archivo se adjunta al proyecto; de lo contrario, a la tarea."
 
 #: code:models/ir_attachment.py:35
 msgid "Project"
 msgstr "Proyecto"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Project And Task Attachments"
-msgstr "Proyecto And Tarea Attachments"
+msgstr "Adjuntos de proyectos y tareas"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "Project and Task Attachments module allows user to view \n"
@@ -48,21 +43,19 @@ msgid ""
 "    menu for viewing project documents and task documents. It is also \n"
 "    possible to attach new documents to project/task from the Documents menu."
 msgstr ""
-"Proyecto and Tarea Attachments module allows user to view \n"
-"    all the documents attached to projects and tasks. There is a separate\n"
-"    menu for viewing project documents and task documents. It is also \n"
-"    possible to attach new documents to project/task from the Documents menu."
+"El módulo de archivos adjuntos de proyectos y tareas permite consultar \n"
+"    todos los documentos adjuntos a proyectos y tareas. Incluye un menú\n"
+"    independiente para los documentos de proyectos y de tareas. También \n"
+"    permite adjuntar nuevos documentos desde el menú Documentos."
 
 #: code:models/ir_attachment.py:39
 msgid "Task"
 msgstr "Tarea"
 
-#, fuzzy
 #: code:models/ir_attachment.py:35
 msgid "This indicates the Project"
-msgstr "This indicates the Proyecto"
+msgstr "Indica el proyecto"
 
-#, fuzzy
 #: code:models/ir_attachment.py:39
 msgid "This indicates the Task"
-msgstr "This indicates the Tarea"
+msgstr "Indica la tarea"

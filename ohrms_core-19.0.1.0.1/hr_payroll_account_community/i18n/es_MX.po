@@ -25,10 +25,9 @@ msgstr "Contabilidad"
 msgid "Accounting Entry"
 msgstr "Asiento contable"
 
-#, fuzzy
 #: code:models/hr_payslip.py:43
 msgid "Accounting entry associated with this record"
-msgstr "Cuentaing entry associated with this record"
+msgstr "Asiento contable asociado a este registro"
 
 #: code:models/hr_payslip.py:145
 #: code:models/hr_payslip.py:164
@@ -40,17 +39,14 @@ msgstr "Asiento de ajuste"
 msgid "Analytic Account"
 msgstr "Cuenta analítica"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:31
 msgid "Analytic account associated with the record"
 msgstr "Cuenta analítica asociada al registro"
 
-#, fuzzy
 #: code:models/hr_payslip.py:179
 msgid "As you installed the payroll accounting module you have to choose Debit and Credit account for at least one salary rule in the chosen Salary Structure."
 msgstr "Al instalar el módulo de contabilidad de nómina, debe elegir una cuenta de Débito y Crédito para al menos una regla salarial en la Estructura Salarial elegida."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "Comprehensive solution for managing payroll and accounting processes in Odoo 19."
 msgstr "Solución integral para la gestión de procesos de nómina y contabilidad en Odoo 19."
@@ -59,7 +55,6 @@ msgstr "Solución integral para la gestión de procesos de nómina y contabilida
 msgid "Credit Account"
 msgstr "Cuenta acreedora"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:42
 msgid "Credit account associated with the record"
 msgstr "Cuenta de crédito asociada al registro"
@@ -72,12 +67,10 @@ msgstr "Fecha de la Cuenta"
 msgid "Debit Account"
 msgstr "Cuenta deudora"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:38
 msgid "Debit account associated with the record"
 msgstr "Cuenta de débito asociada al registro"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid ""
 "Helps you to manage payroll and \n"
@@ -86,7 +79,6 @@ msgstr ""
 "Le ayuda a gestionar la nómina y \n"
 "     contabilidad"
 
-#, fuzzy
 #: code:models/hr_payslip_run.py:33
 #: code:models/hr_version.py:32
 msgid "Journal associated with the record"
@@ -96,10 +88,9 @@ msgstr "Diario asociado al registro"
 msgid "Keep empty to use the period of the validation(Payslip) date."
 msgstr "Deje en blanco para usar el período de la fecha de validación de la nómina"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Odoo19 Payroll Accounting"
-msgstr "Odoo19 Payroll Cuentaing"
+msgstr "Odoo19 Contabilidad de Nómina"
 
 #: code:models/hr_payslip.py:93
 msgid "Payslip of %s"
@@ -111,12 +102,10 @@ msgstr "Nómina de %s"
 msgid "Salary Journal"
 msgstr "Diario de salarios"
 
-#, fuzzy
 #: code:models/hr_version.py:29
 msgid "Select Analytic account"
 msgstr "Seleccione cuenta analítica"
 
-#, fuzzy
 #: code:models/hr_payslip.py:35
 msgid "Select Salary Journal"
 msgstr "Seleccionar Diario de Salarios"
@@ -125,7 +114,6 @@ msgstr "Seleccionar Diario de Salarios"
 msgid "Tax"
 msgstr "Impuesto"
 
-#, fuzzy
 #: code:models/hr_salary_rule.py:35
 msgid "Tax account associated with the record"
 msgstr "Cuenta fiscal asociada al registro"

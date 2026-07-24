@@ -16,49 +16,41 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 " In Odoo,currently delivery will be created to the customer\n"
 "     of sale order. Using Delivery Split,we can split the delivery to\n"
 "     different recipients added in each sale order line."
 msgstr ""
-"En Odoo, actualmente se creará la entrega al cliente.\n"
-"     de orden de venta. Usando Delivery Split, podemos dividir la entrega en\n"
-"     Se agregan diferentes destinatarios en cada línea de orden de venta."
+"En Odoo, la entrega se crea para el cliente de la orden de venta.\n"
+"     Con la división de entregas, es posible separar la entrega entre los\n"
+"     distintos destinatarios indicados en cada línea de la orden de venta."
 
-#, fuzzy
 #: code:models/sale_order_line.py:29
 msgid "Choose a recipient for splitting delivery"
 msgstr "Elija un destinatario para dividir la entrega"
 
-#, fuzzy
 #: code:models/sale_order.py:34
 msgid "Consolidate Orders"
 msgstr "Consolidar pedidos"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Delivery can be split to different recipients"
 msgstr "La entrega se puede dividir entre diferentes destinatarios."
 
-#, fuzzy
 #: code:models/sale_order.py:30
 #: model:ir.module.module,name:__manifest__.py
 msgid "Delivery Split"
 msgstr "Entrega dividida"
 
-#, fuzzy
 #: code:models/sale_order.py:30
 msgid "Enable the option to add recipients to each sale order line to split delivery"
 msgstr "Habilite la opción para agregar destinatarios a cada línea de orden de venta para dividir la entrega"
 
-#, fuzzy
 #: code:models/sale_order.py:34
 msgid "Enable the option to consolidate orders if choose same recipients in split delivery"
 msgstr "Habilite la opción para consolidar pedidos si elige los mismos destinatarios en entrega dividida"
 
-#, fuzzy
 #: code:models/sale_order_line.py:29
 msgid "Recipient"
 msgstr "Destinatario"

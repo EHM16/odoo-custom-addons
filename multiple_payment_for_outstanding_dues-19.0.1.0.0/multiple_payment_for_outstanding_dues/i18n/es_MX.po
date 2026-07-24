@@ -16,53 +16,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/res_partner.py:30
 msgid "Due Amount"
-msgstr "Due Importe"
+msgstr "Importe pendiente"
 
-#, fuzzy
 #: model_terms:views/res_partner_views.xml
 msgid "Due Statement"
 msgstr "Declaración de vencimiento"
 
-#, fuzzy
 #: model_terms:views/res_partner_views.xml
 msgid "Due Statements"
 msgstr "Declaraciones vencidas"
 
-#, fuzzy
 #: model_terms:views/account_move_line_views.xml
 msgid "Invoices"
 msgstr "Facturas"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Multiple Payment For Outstanding Dues"
 msgstr "Pago múltiple de cuotas pendientes"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Pay all the due payment of the customer"
 msgstr "Pagar todo el pago adeudado del cliente."
 
-#, fuzzy
 #: model_terms:views/account_move_line_views.xml
 msgid "Pay Now"
 msgstr "Paga ahora"
 
-#, fuzzy
 #: code:models/account_move.py:35
 #: code:models/account_move_line.py:36
 msgid "Register Payment"
 msgstr "Registrarse Pago"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module helps you to register the payment for the customer who has one or more payments due. Also, we can see the total due amount for the particular customer in their form view."
 msgstr "Este módulo le ayuda a registrar el pago del cliente que tiene uno o más pagos adeudados. Además, podemos ver el monto total adeudado para el cliente en particular en su vista de formulario."
 
-#, fuzzy
 #: code:models/res_partner.py:30
 msgid "Total due amount"
 msgstr "Monto total adeudado"

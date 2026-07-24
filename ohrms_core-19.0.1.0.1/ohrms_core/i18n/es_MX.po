@@ -16,42 +16,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:113
 msgid "%d attachment"
 msgstr "Accesorio %d"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:114
 msgid "%d attachments"
 msgstr "Accesorios %d"
 
-#, fuzzy
 #: model_terms:views/hr_config_view.xml
 msgid "Advanced Features"
 msgstr "Funciones avanzadas"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:62
 msgid "Attach files related to your problem."
 msgstr "Adjunte archivos relacionados con su problema."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:62
 msgid "Attachments"
 msgstr "Adjuntos"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:82
 msgid "Attendance"
 msgstr "Asistencia"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:82
 msgid "Attendance module installed or not"
 msgstr "Módulo de asistencia instalado o no"
 
-#, fuzzy
 #: model_terms:views/hr_config_view.xml
 msgid "Biometric Device Integration"
 msgstr "Integración de dispositivos biométricos"
@@ -60,77 +52,63 @@ msgstr "Integración de dispositivos biométricos"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:70
 msgid "Category"
-msgstr "Category"
+msgstr "Categoría"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:51
 msgid "Contact number for follow-up (optional)."
 msgstr "Número de contacto para seguimiento (opcional)."
 
-#, fuzzy
 #: model_terms:static/src/xml/ohrms_core_systray.xml
 msgid "Contact Open HRMS Core Support (Alt+Shift+H)"
 msgstr "Póngase en contacto con el soporte principal de Open HRMS (Alt+Shift+H)"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:185
 msgid "Could not reach the support service. Please check your network and try again."
 msgstr "No se pudo comunicar con el servicio de soporte. Por favor verifique su red e inténtelo nuevamente."
 
-#, fuzzy
 #: model_terms:views/hr_config_view.xml
 msgid "Custody Management"
 msgstr "Gestión de Custodia"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:44
 msgid "Customer Name"
-msgstr "Cliente Nombre"
+msgstr "Nombre del cliente"
 
 #: code:wizard/ohrms_core_support.py:59
 msgid "Description"
 msgstr "Descripción"
 
-#, fuzzy
 #: model_terms:static/src/xml/link_view.xml
 msgid "Documentation"
 msgstr "Documentación"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:48
 msgid "Email"
 msgstr "Correo electrónico"
 
-#, fuzzy
 #: model_terms:views/hr_config_view.xml
 msgid "Employee Insurance"
-msgstr "Empleado Insurance"
+msgstr "Seguro del empleado"
 
-#, fuzzy
 #: model_terms:views/hr_config_view.xml
 msgid "Employee Shift"
-msgstr "Empleado Shift"
+msgstr "Turno del empleado"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:44
 msgid "Enter name"
 msgstr "Introduce el nombre"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:48
 msgid "Enter your Email"
 msgstr "Ingrese su correo electrónico"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:48
 #: model_terms:views/hr_config_view.xml
 msgid "Handle the resignation process of the employee"
 msgstr "Gestionar el proceso de renuncia del empleado."
 
-#, fuzzy
 #: code:models/hr_general_settings.py:56
 msgid ""
 "Helps you to manage Biometric Device Integration.\n"
@@ -139,7 +117,6 @@ msgstr ""
 "Le ayuda a gestionar la integración de dispositivos biométricos.\n"
 "- Esto instala el módulo Integración de dispositivos biométricos."
 
-#, fuzzy
 #: code:models/hr_general_settings.py:31
 msgid ""
 "Helps you to manage Custody Requests.\n"
@@ -148,25 +125,22 @@ msgstr ""
 "Le ayuda a gestionar las solicitudes de custodia.\n"
 "- Esto instala el módulo Gestión de Custodia."
 
-#, fuzzy
 #: code:models/hr_general_settings.py:40
 msgid ""
 "Helps you to manage Employee Insurance.\n"
 "- This installs the module Employee Insurance."
 msgstr ""
-"Helps you to manage Empleado Insurance.\n"
-"- This installs the module Empleado Insurance."
+"Le ayuda a gestionar el seguro de los empleados.\n"
+"- Esto instala el módulo Seguro de Empleado."
 
-#, fuzzy
 #: code:models/hr_general_settings.py:36
 msgid ""
 "Helps you to manage Employee Shift.\n"
 "- This installs the module Employee Shift."
 msgstr ""
-"Helps you to manage Empleado Shift.\n"
-"- This installs the module Empleado Shift."
+"Le ayuda a gestionar el turno de empleados.\n"
+"- Esto instala el módulo Turno de Empleado."
 
-#, fuzzy
 #: code:models/hr_general_settings.py:44
 msgid ""
 "Helps you to manage Lawsuit Management.\n"
@@ -175,7 +149,6 @@ msgstr ""
 "Le ayuda a gestionar la gestión de demandas.\n"
 "- Esto instala el módulo Gestión de Demandas."
 
-#, fuzzy
 #: code:models/hr_general_settings.py:48
 msgid ""
 "Helps you to manage Resignation Process.\n"
@@ -184,7 +157,6 @@ msgstr ""
 "Le ayuda a gestionar el proceso de renuncia.\n"
 "- Esto instala el módulo Proceso de Renuncia."
 
-#, fuzzy
 #: code:models/hr_general_settings.py:52
 msgid ""
 "Helps you to manage Vacation Management.\n"
@@ -193,148 +165,121 @@ msgstr ""
 "Le ayuda a gestionar la gestión de vacaciones.\n"
 "- Esto instala el módulo Gestión de Vacaciones."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:78
 msgid "How urgent is this issue?"
 msgstr "¿Qué tan urgente es este problema?"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:61
 msgid "HR Custody Module"
 msgstr "Módulo de Custodia de RRHH"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:61
 msgid "HR Custody module installed or not"
 msgstr "Módulo de Custodia de Recursos Humanos instalado o no"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:64
 msgid "HR Employee Shift"
-msgstr "HR Empleado Shift"
+msgstr "Turno del empleado de RR. HH."
 
-#, fuzzy
 #: code:models/hr_general_settings.py:64
 msgid "HR Employee Shift module installed or not"
-msgstr "HR Empleado Shift module installed or not"
+msgstr "Módulo de turno de empleados de RR.HH. instalado o no"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:68
 msgid "HR Insurance"
 msgstr "Seguros de Recursos Humanos"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:68
 msgid "HR Insurance module installed or not"
 msgstr "Módulo Seguros HR instalado o no"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:71
 msgid "HR Lawsuit Management"
 msgstr "Gestión de demandas de recursos humanos"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:71
 msgid "HR Lawsuit Management module installed or not"
 msgstr "Módulo de gestión de demandas de recursos humanos instalado o no"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:75
 msgid "HR Resignation"
 msgstr "Renuncia de RR.HH."
 
-#, fuzzy
 #: code:models/hr_general_settings.py:75
 msgid "HR Resignation module installed or not"
 msgstr "Módulo de Renuncia de Recursos Humanos instalado o no"
 
-#, fuzzy
 #: model_terms:views/hr_config_view.xml
 msgid "Lawsuit Management"
 msgstr "Gestión de demandas"
 
-#, fuzzy
 #: model_terms:static/src/xml/link_view.xml
 msgid "Log out"
 msgstr "Cerrar sesión"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:56
 #: model_terms:views/hr_config_view.xml
 msgid "Manage biometric device (Model: ZKteco uFace 202) integration with HR attendance (Face + Thumb)"
 msgstr "Gestionar la integración del dispositivo biométrico (Modelo: ZKteco uFace 202) con la asistencia de RRHH (Cara + Pulgar)"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:36
 #: model_terms:views/hr_config_view.xml
 msgid "Manage different type of shifts"
 msgstr "Gestionar diferentes tipos de turnos."
 
-#, fuzzy
 #: code:models/hr_general_settings.py:52
 #: model_terms:views/hr_config_view.xml
 msgid "Manage employee vacation"
 msgstr "Gestionar las vacaciones de los empleados"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:40
 #: model_terms:views/hr_config_view.xml
 msgid "Manage Insurance for employees"
 msgstr "Gestionar seguros para empleados"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:44
 msgid "Manage legal actions"
 msgstr "Gestionar acciones legales"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:31
 #: model_terms:views/hr_config_view.xml
 msgid "Manage the company properties when it is in the custody of an employee"
 msgstr "Administrar las propiedades de la empresa cuando está bajo la custodia de un empleado."
 
-#, fuzzy
 #: model_terms:views/hr_config_view.xml
 msgid "Manages legal actions"
 msgstr "Gestiona acciones legales."
 
-#, fuzzy
 #: model_terms:views/hr_config_view.xml
 msgid "Menu Management"
 msgstr "Gestión de menú"
 
-#, fuzzy
 #: model_terms:static/src/xml/link_view.xml
 msgid "My Odoo.com account"
 msgstr "Mi cuenta de Odoo.com"
 
-#, fuzzy
 #: model_terms:static/src/xml/link_view.xml
 msgid "Open HRMS"
 msgstr "Abrir HRMS"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Core"
 msgstr "Abrir núcleo HRMS"
 
-#, fuzzy
 #: model_terms:wizard/ohrms_core_support_views.xml
 msgid "Open HRMS Core Support"
 msgstr "Soporte central abierto de HRMS"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid ""
 "Open HRMS Odoo19, HRMS odoo19, Odoo HR, HR Dashboard, \n"
 "     Odoo19 Payroll, HR Management, Odoo Branch, Odoo Loan, Salary Advance, \n"
 "     Odoo19,Payroll,Dashboard,Accounting,HR Kit,HR,Odoo Apps, Odoo19"
 msgstr ""
-"Open HRMS Odoo19, HRMS odoo19, Odoo HR, HR Dashboard, \n"
-"     Odoo19 Payroll, HR Management, Odoo Branch, Odoo Loan, Salary Advance, \n"
-"     Odoo19,Payroll,Dashboard,Cuentaing,HR Kit,HR,Odoo Apps, Odoo19"
+"Open HRMS Odoo 19, HRMS Odoo 19, Odoo RR. HH., tablero de RR. HH., \n"
+"     nómina de Odoo 19, gestión de RR. HH., sucursales, préstamos y anticipos de salario, \n"
+"     Odoo 19, nómina, tablero, contabilidad, kit de RR. HH. y aplicaciones de Odoo 19"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "Openhrms, Main module of Open HRMS,Payroll, Payroll \n"
@@ -348,169 +293,137 @@ msgid ""
 "     Visa Expiry, Law Suit Management, Employee, Employee Training, payroll, \n"
 "     odoo19 payroll"
 msgstr ""
-"Openhrms, Main module of Open HRMS,Payroll, Payroll \n"
-"     Cuentaing, Expense, Dashboard,Empleados, Empleado Document, Resignation, \n"
-"     Salary Advance, Loan Management, Gratuity, Service Request, Gosi, \n"
-"     WPS Report, Reminder, Multi Empresa, Shift Management, Empleado History, \n"
-"     Branch Transfer, Empleado Appraisal,Biometric Device, Announcements, \n"
-"     Insurance Management, Vacation Management,Empleado Appreciations, \n"
-"     Asset Custody, Empleado Checklist, Entry and Exit Checklist, Disciplinary \n"
-"     Actions, openhrms, Open HRMS, hrms, Attrition Rate, Document Expiry, \n"
-"     Visa Expiry, Law Suit Management, Empleado, Empleado Training, payroll, \n"
-"     odoo19 payroll"
+"OpenHRMS, módulo principal de Open HRMS, nómina, contabilidad de \n"
+"     nómina, gastos, tablero, empleados, documentos del empleado, renuncias, \n"
+"     anticipos de salario, gestión de préstamos, gratificaciones, solicitudes de servicio, GOSI, \n"
+"     reporte WPS, recordatorios, multiempresa, gestión de turnos, historial del empleado, \n"
+"     transferencias entre sucursales, evaluaciones, dispositivos biométricos, anuncios, \n"
+"     seguros, vacaciones, reconocimientos, \n"
+"     custodia de activos, listas de verificación, procesos de ingreso y salida, medidas \n"
+"     disciplinarias, rotación de personal, vencimiento de documentos y visas, \n"
+"     litigios y capacitación de empleados para Odoo 19."
 
-#, fuzzy
 #: code:models/menu_order_sequence.py:33
 msgid "Order Change"
 msgstr "Cambio de orden"
 
-#, fuzzy
 #: code:models/menu_management_setting.py:30
 msgid "Order Menu Alphabets"
 msgstr "Alfabetos del menú de pedidos"
 
-#, fuzzy
 #: code:models/menu_management_setting.py:30
 msgid "Order the menus in alphabetic order"
 msgstr "Ordenar los menús en orden alfabético"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:87
 msgid "Payload preview"
 msgstr "Vista previa de carga útil"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:51
 msgid "Phone"
 msgstr "Teléfono"
 
-#, fuzzy
 #: model_terms:static/src/xml/link_view.xml
 msgid "Preferences"
 msgstr "Preferencias"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:84
 msgid "Preview the exact data sent to Cybrosys before submitting."
 msgstr "Obtenga una vista previa de los datos exactos enviados a Cybrosys antes de enviarlos."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:78
 msgid "Priority"
 msgstr "Prioridad"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:87
 msgid "Read-only JSON of what will be sent on Submit. Attachment bytes are redacted to keep the preview readable."
 msgstr "JSON de solo lectura de lo que se enviará en Enviar. Los bytes de los archivos adjuntos se eliminan para que la vista previa sea legible."
 
-#, fuzzy
 #: code:models/menu_order_sequence.py:30
 msgid "Recent Menu Sequence"
 msgstr "Secuencia de menú reciente"
 
-#, fuzzy
 #: model_terms:views/hr_config_view.xml
 msgid "Resignation Process"
 msgstr "Proceso de renuncia"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:203
 msgid "Save this reference to follow up with Cybrosys."
 msgstr "Guarde esta referencia para realizar un seguimiento con Cybrosys."
 
-#, fuzzy
 #: model_terms:static/templates/side_bar.xml
 msgid "Search menus..."
 msgstr "Buscar menús..."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:66
 msgid "Select support type"
 msgstr "Seleccione el tipo de soporte"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:55
 msgid "Short summary of the issue."
 msgstr "Breve resumen del tema."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:84
 msgid "Show what will be sent"
 msgstr "Mostrar lo que se enviará"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:59
 msgid "Specify your problem in detail."
 msgstr "Especifique su problema en detalle."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:55
 msgid "Subject"
 msgstr "Asunto"
 
-#, fuzzy
 #: model_terms:wizard/ohrms_core_support_views.xml
 msgid "Submit"
-msgstr "Submit"
+msgstr "Enviar"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:66
 msgid "Support Type"
 msgstr "Tipo de soporte"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:174
 msgid "The support service is having issues. Please try again in a few minutes."
 msgstr "El servicio de soporte tiene problemas. Inténtelo de nuevo en unos minutos."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:192
 msgid "The support service returned an unexpected response. Please try again later."
 msgstr "El servicio de soporte arrojó una respuesta inesperada. Inténtelo de nuevo más tarde."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:218
 msgid "The ticket submission did not go through. Please try again."
 msgstr "El envío del ticket no se realizó. Por favor inténtalo de nuevo."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:178
 msgid "The ticket submission was rejected. Please check your inputs and try again."
 msgstr "El envío del ticket fue rechazado. Por favor verifique sus entradas e inténtelo nuevamente."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:202
 msgid "Ticket Reference : %s"
-msgstr "Referencia del billete: %s"
+msgstr "Referencia del ticket: %s"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:78
 #: model_terms:views/hr_config_view.xml
 msgid "Vacation Management"
 msgstr "Gestión de vacaciones"
 
-#, fuzzy
 #: code:models/hr_general_settings.py:78
 msgid "Vacation Management module installed or not"
 msgstr "Módulo de Gestión de Vacaciones instalado o no"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:70
 msgid "What kind of issue is this?"
 msgstr "¿Qué clase de problema es este?"
 
-#, fuzzy
 #: model_terms:wizard/ohrms_core_support_views.xml
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:169
 msgid "Your attachments are too large. Please reduce their size and try again."
 msgstr "Tus archivos adjuntos son demasiado grandes. Reduzca su tamaño e inténtelo de nuevo."
 
-#, fuzzy
 #: code:wizard/ohrms_core_support.py:200
 msgid "Your Ticket Created Successfully"
-msgstr "Su boleto creado exitosamente"
+msgstr "Su ticket se creó correctamente"

@@ -104,10 +104,9 @@ msgstr "La tasa porcentual de interés aplicada."
 msgid "The type of interest applied."
 msgstr "El tipo de interés aplicado."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module helps to calculate daily, weekly or monthlyInterest for Overdue Invoices based on payment termconfiguration."
-msgstr "Este módulo ayuda a calcular el interés diario, semanal o mensual de facturas vencidas según la configuración del plazo de pago."
+msgstr "Este módulo permite calcular intereses diarios, semanales o mensuales sobre facturas vencidas según la configuración de las condiciones de pago."
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "This module helps to manage Interest on Overdue Invoices."
@@ -119,12 +118,12 @@ msgstr "Semanal"
 
 #: code:models/account_move.py:95
 msgid "Your payment term is daily, and you can update it only once in a day."
-msgstr "El plazo de pago es diario y sólo puede actualizarlo una vez al día."
+msgstr "El plazo de pago es diario y solo puede actualizarlo una vez al día."
 
 #: code:models/account_move.py:79
 msgid "Your payment term is monthly, and you can update it only once in a month."
-msgstr "El plazo de pago es mensual y sólo puede actualizarlo una vez al mes."
+msgstr "El plazo de pago es mensual y solo puede actualizarlo una vez al mes."
 
 #: code:models/account_move.py:87
 msgid "Your payment term is weekly, and you can update it only once in a week."
-msgstr "El plazo de pago es semanal y sólo puede actualizarlo una vez a la semana."
+msgstr "El plazo de pago es semanal y solo puede actualizarlo una vez a la semana."

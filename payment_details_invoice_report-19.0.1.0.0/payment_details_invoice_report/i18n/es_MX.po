@@ -16,62 +16,51 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "All the payment details for the invoice can be added in thereport"
 msgstr "Todos los detalles de pago de la factura se pueden agregar en el informe."
 
-#, fuzzy
 #: model_terms:reports/report_invoice.xml
 msgid "Amount Paid"
-msgstr "Importe Paid"
+msgstr "Importe pagado"
 
 #: model_terms:reports/report_invoice.xml
 msgid "Date"
 msgstr "Fecha"
 
-#, fuzzy
 #: code:models/account_move.py:30
 msgid "Enables the payment details in invoice report"
 msgstr "Habilita los detalles de pago en el informe de factura."
 
-#, fuzzy
 #: model_terms:reports/report_invoice.xml
 msgid "Invoice Status:"
-msgstr "Invoice Estado:"
+msgstr "Estado de la factura:"
 
-#, fuzzy
 #: model_terms:reports/report_invoice.xml
 msgid "Payment Details"
 msgstr "Detalles de pago"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Payment Details In Invoice Report"
 msgstr "Detalles de pago en el informe de factura"
 
-#, fuzzy
 #: code:models/account_move.py:30
 #: model_terms:views/account_move_views.xml
 msgid "Payment Details in Report"
 msgstr "Detalles de pago en el informe"
 
-#, fuzzy
 #: model_terms:reports/report_invoice.xml
 msgid "Payment Method"
 msgstr "Método de pago"
 
-#, fuzzy
 #: model_terms:reports/report_invoice.xml
 msgid "Payment Ref"
 msgstr "Referencia de pago"
 
-#, fuzzy
 #: model_terms:reports/report_invoice.xml
 msgid "SL No"
-msgstr "SL No"
+msgstr "Núm."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "We can see the current payment state of the invoice in the report. We can add all the payment details of a particular invoice while print the invoice.Here we have the detailssuch as Payment reference, Date of payment, Payment methodand Amount."
-msgstr "We can see the current payment state of the invoice in the report. We can add all the payment details of a particular invoice while print the invoice.Here we have the detailssuch as Payment reference, Fecha of payment, Payment methodand Importe."
+msgstr "El reporte muestra el estado de pago actual de la factura y todos sus detalles al imprimirla, como la referencia, la fecha, el método y el importe del pago."

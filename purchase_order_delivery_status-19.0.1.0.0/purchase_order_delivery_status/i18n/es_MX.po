@@ -16,42 +16,34 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/purchase_order.py:29
 msgid "Delivery Status"
-msgstr "Delivery Estado"
+msgstr "Estado de entrega"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Delivery Status on Purchase Order"
-msgstr "Delivery Estado on Orden de compra"
+msgstr "Estado de entrega en la orden de compra"
 
-#, fuzzy
 #: code:models/purchase_order.py:29
 msgid "Nothing to Receive"
 msgstr "Nada que recibir"
 
-#, fuzzy
 #: code:models/purchase_order.py:29
 msgid "Partially Received"
 msgstr "Recibido parcialmente"
 
-#, fuzzy
 #: code:models/purchase_order.py:29
 msgid "Received"
 msgstr "Recibido"
 
-#, fuzzy
 #: code:models/purchase_order.py:29
 msgid "Status of delivery of purchase order."
-msgstr "Estado of delivery of purchase order."
+msgstr "Estado de entrega de la orden de compra."
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Status of delivery on purchase order."
-msgstr "Estado of delivery on purchase order."
+msgstr "Estado de entrega de la orden de compra."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module adds delivery status on purchase order form \n"
@@ -60,7 +52,6 @@ msgstr ""
 "Este módulo agrega el estado de entrega en el formulario de orden de compra. \n"
 "     y vista de árbol."
 
-#, fuzzy
 #: code:models/purchase_order.py:29
 msgid "To Receive"
 msgstr "Para recibir"

@@ -16,32 +16,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/hr_employee.py:31
 msgid "# Announcements"
 msgstr "# Anuncios"
 
-#, fuzzy
 #: code:models/hr_announcement.py:81
 msgid "Announcement message"
 msgstr "Mensaje de anuncio"
 
-#, fuzzy
 #: model_terms:views/hr_announcement_views.xml
 msgid "Announcement Reason"
 msgstr "Motivo del anuncio"
 
-#, fuzzy
 #: code:models/hr_announcement.py:35
 msgid "Announcement subject"
 msgstr "Asunto del anuncio"
 
-#, fuzzy
 #: code:models/hr_announcement.py:56
 msgid "Announcement Type"
 msgstr "Tipo de anuncio"
 
-#, fuzzy
 #: code:models/hr_employee.py:101
 #: code:models/hr_employee.py:93
 #: model_terms:views/hr_announcement_views.xml
@@ -57,33 +51,28 @@ msgstr "Aprobar"
 msgid "Approved"
 msgstr "Aprobado"
 
-#, fuzzy
 #: model_terms:views/hr_announcement_views.xml
 msgid "Approved Letters"
 msgstr "Cartas aprobadas"
 
-#, fuzzy
 #: code:models/hr_announcement.py:47
 msgid "Attach copy of your document"
 msgstr "Adjunte copia de su documento"
 
-#, fuzzy
 #: code:models/hr_announcement.py:47
 msgid "Attachment"
 msgstr "Adjunto"
 
-#, fuzzy
 #: code:models/hr_announcement.py:56
 msgid ""
 "By Employee: Announcement intended for specific Employees.\n"
 "By Department: Announcement intended for Employees in specific Departments.\n"
 "By Job Position: Announcement intended for Employees who are having specific Job Positions"
 msgstr ""
-"By Empleado: Announcement intended for specific Empleados.\n"
-"By Department: Announcement intended for Empleados in specific Departments.\n"
-"By Job Position: Announcement intended for Empleados who are having specific Job Positions"
+"Por empleado: Anuncio destinado a empleados específicos.\n"
+"Por Departamento: Anuncio destinado a Empleados de Departamentos específicos.\n"
+"Por puesto de trabajo: Anuncio destinado a empleados que ocupan puestos de trabajo específicos"
 
-#, fuzzy
 #: code:models/hr_announcement.py:33
 msgid "Code No:"
 msgstr "Número de código:"
@@ -92,22 +81,18 @@ msgstr "Número de código:"
 msgid "Company"
 msgstr "Empresa"
 
-#, fuzzy
 #: code:models/hr_employee.py:31
 msgid "Count of Announcements"
 msgstr "Conteo de anuncios"
 
-#, fuzzy
 #: code:models/hr_announcement.py:43
 msgid "Create date of record"
 msgstr "Crear fecha de registro"
 
-#, fuzzy
 #: code:models/hr_announcement.py:69
 msgid "Department which can see this announcement"
 msgstr "Departamento que puede ver este anuncio"
 
-#, fuzzy
 #: code:models/hr_announcement.py:69
 msgid "Departments"
 msgstr "Departamentos"
@@ -116,72 +101,59 @@ msgstr "Departamentos"
 msgid "Draft"
 msgstr "Borrador"
 
-#, fuzzy
 #: code:models/hr_announcement.py:64
 msgid "Employees"
 msgstr "Empleados"
 
-#, fuzzy
 #: code:models/hr_announcement.py:64
 msgid "Employees who want to see this announcement"
-msgstr "Empleados who want to see this announcement"
+msgstr "Empleados que quieran ver este anuncio"
 
-#, fuzzy
 #: code:models/hr_announcement.py:53
 msgid "Enable, if this is a General Announcement"
 msgstr "Habilitar, si se trata de un anuncio general"
 
 #: code:models/hr_announcement.py:84
 msgid "End Date"
-msgstr "Fecha final"
+msgstr "Fecha de finalización"
 
-#, fuzzy
 #: code:models/hr_announcement.py:84
 msgid "End date of announcement"
 msgstr "Fecha de finalización del anuncio"
 
-#, fuzzy
 #: code:models/hr_announcement.py:37
 msgid "Expired"
 msgstr "Caducado"
 
-#, fuzzy
 #: model_terms:views/hr_announcement_views.xml
 msgid "General Announcement"
 msgstr "Anuncio General"
 
-#, fuzzy
 #: model_terms:views/hr_announcement_views.xml
 msgid "General Announcements"
 msgstr "Anuncios generales"
 
-#, fuzzy
 #: model_terms:views/hr_announcement_views.xml
 msgid "Is a General Announcement"
 msgstr "Es un anuncio general"
 
-#, fuzzy
 #: code:models/hr_announcement.py:53
 msgid "Is general Announcement?"
 msgstr "¿Es anuncio general?"
 
-#, fuzzy
 #: code:models/hr_announcement.py:75
 msgid "Job Positions"
 msgstr "Puestos de Trabajo"
 
-#, fuzzy
 #: code:models/hr_announcement.py:81
 #: model_terms:views/hr_announcement_views.xml
 msgid "Letter"
 msgstr "carta"
 
-#, fuzzy
 #: code:models/hr_announcement.py:50
 msgid "Login user Company"
-msgstr "Login user Empresa"
+msgstr "Empresa del usuario conectado"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Manages Official Announcements"
 msgstr "Gestiona anuncios oficiales"
@@ -190,46 +162,38 @@ msgstr "Gestiona anuncios oficiales"
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Official Announcements"
 msgstr "Anuncios oficiales abiertos de HRMS"
 
-#, fuzzy
 #: code:models/hr_announcement.py:75
 msgid "Position of the employee who is authorized to view this announcements."
 msgstr "Cargo del empleado que está autorizado a ver estos anuncios."
 
-#, fuzzy
 #: model_terms:views/hr_announcement_views.xml
 msgid "Refuse"
 msgstr "Rechazar"
 
-#, fuzzy
 #: code:models/hr_announcement.py:37
 msgid "Refused"
 msgstr "Rechazado"
 
-#, fuzzy
 #: code:models/hr_announcement.py:43
 msgid "Requested Date"
-msgstr "Requested Fecha"
+msgstr "Fecha solicitada"
 
-#, fuzzy
 #: model_terms:views/hr_announcement_views.xml
 msgid "Send For Approval"
 msgstr "Enviar para aprobación"
 
-#, fuzzy
 #: code:models/hr_announcement.py:33
 msgid "Sequence of Announcement"
 msgstr "Secuencia de anuncio"
 
 #: code:models/hr_announcement.py:82
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
-#, fuzzy
 #: code:models/hr_announcement.py:82
 msgid "Start date of announcement"
 msgstr "Fecha de inicio del anuncio"
@@ -238,7 +202,6 @@ msgstr "Fecha de inicio del anuncio"
 msgid "State"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/hr_announcement.py:37
 msgid "State of announcement."
 msgstr "Estado de anuncio."
@@ -248,22 +211,18 @@ msgstr "Estado de anuncio."
 msgid "Status"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/hr_announcement.py:91
 msgid "The Start Date must be earlier than the End Date"
-msgstr "The Fecha inicial must be earlier than the Fecha final"
+msgstr "La fecha de inicio debe ser anterior a la fecha de finalización."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module helps you to manage HR official announcements"
 msgstr "Este módulo le ayuda a gestionar los anuncios oficiales de RR.HH."
 
-#, fuzzy
 #: code:models/hr_announcement.py:35
 msgid "Title"
 msgstr "Título"
 
-#, fuzzy
 #: code:models/hr_announcement.py:37
 msgid "Waiting For Approval"
 msgstr "Esperando aprobación"

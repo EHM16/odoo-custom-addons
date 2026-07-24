@@ -16,22 +16,18 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/purchase_requisition.py:29
 msgid "It helps to get the project from project module"
 msgstr "Ayuda a obtener el proyecto del módulo del proyecto."
 
-#, fuzzy
 #: code:models/project_task.py:30
 msgid "It shows the count of the purchase requisitions that we made for the project in smart tab"
 msgstr "Muestra el recuento de las solicitudes de compra que realizamos para el proyecto en pestaña inteligente."
 
-#, fuzzy
 #: code:models/project_project.py:29
 msgid "It shows the count of the purchase requisitions that we made for the task in smart tab"
 msgstr "Muestra el conteo de las solicitudes de compra que realizamos para la tarea en pestaña inteligente"
 
-#, fuzzy
 #: code:models/project_task.py:42
 msgid "No Purchase Requisition"
 msgstr "Sin solicitud de compra"
@@ -40,34 +36,29 @@ msgstr "Sin solicitud de compra"
 msgid "Project"
 msgstr "Proyecto"
 
-#, fuzzy
 #: code:models/project_project.py:29
 #: code:models/project_task.py:30
 #: model_terms:views/project_project_views.xml
 #: model_terms:views/project_task_views.xml
 msgid "Purchase"
-msgstr "Purchase"
+msgstr "Compra"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Purchase Requisition & Project Task Integration"
-msgstr "Purchase Requisition & Proyecto Tarea Integration"
+msgstr "Integración de solicitudes de compra con tareas de proyecto"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "Purchase Requisition and Project task module helps to select the project and task from purchase agreements. And the selected project and task will show the created agreement in their form view.Also this module helps to group the purchase requisitions based on the selected project and task."
-msgstr "Purchase Requisition and Proyecto task module helps to select the project and task from purchase agreements. And the selected project and task will show the created agreement in their form view.Also this module helps to group the purchase requisitions based on the selected project and task."
+msgstr "El módulo de tareas de proyecto y solicitud de compra ayuda a seleccionar el proyecto y la tarea de los acuerdos de compra. Y el proyecto y la tarea seleccionados mostrarán el acuerdo creado en su vista de formulario. Además, este módulo ayuda a agrupar las solicitudes de compra según el proyecto y la tarea seleccionados."
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid ""
 "Purchase Requisition and Project Task module relate project,\n"
 "                  task and purchase requisition"
 msgstr ""
-"Purchase Requisition and Proyecto Tarea module relate project,\n"
-"                  task and purchase requisition"
+"El módulo relaciona la solicitud de compra con el proyecto\n"
+"                  y la tarea."
 
-#, fuzzy
 #: code:models/purchase_requisition.py:32
 msgid "this filed show all the tasks of the selected project."
 msgstr "Este archivo muestra todas las tareas del proyecto seleccionado."

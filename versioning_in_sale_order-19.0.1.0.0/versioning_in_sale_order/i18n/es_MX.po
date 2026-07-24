@@ -16,62 +16,51 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/sale_order.py:34
 msgid "Count of version created"
 msgstr "Recuento de versiones creadas"
 
-#, fuzzy
 #: model_terms:views/sale_order_views.xml
 msgid "Create Version"
 msgstr "Crear versión"
 
-#, fuzzy
 #: code:models/sale_order.py:31
 msgid "For checking version or not"
 msgstr "Para comprobar la versión o no"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "For creating multiple sale order versions"
 msgstr "Para crear múltiples versiones de órdenes de venta"
 
-#, fuzzy
 #: code:models/sale_order.py:37
 msgid "For creating versions"
 msgstr "Para crear versiones"
 
-#, fuzzy
 #: code:models/sale_order.py:31
 msgid "Is Version"
 msgstr "es la versión"
 
-#, fuzzy
 #: code:models/sale_order.py:76
 #: model:ir.module.module,name:__manifest__.py
 msgid "Sale Order Versions"
 msgstr "Versiones de órdenes de venta"
 
-#, fuzzy
 #: code:models/sale_order.py:34
 msgid "Sale Version Count"
 msgstr "Recuento de versiones de venta"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module will help to creating multiple sale order \n"
 "        versions and confirming the version as needed."
 msgstr ""
-"Este módulo ayudará a crear múltiples pedidos de venta. \n"
-"        versiones y confirmar la versión según sea necesario."
+"Este módulo permite crear varias versiones de una orden de venta \n"
+"        y confirmar la versión necesaria."
 
-#, fuzzy
 #: model_terms:views/sale_order_views.xml
 msgid "Versions"
 msgstr "Versiones"
 
-#, fuzzy
 #: code:models/sale_order.py:39
 msgid "Versions created"
 msgstr "Versiones creadas"

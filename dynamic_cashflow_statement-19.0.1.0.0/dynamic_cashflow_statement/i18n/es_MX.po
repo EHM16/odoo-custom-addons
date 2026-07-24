@@ -16,35 +16,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model_terms:static/src/xml/cashflow.xml
 msgid ""
 "\n"
 "                                                                    Show Journal Entry\n"
 "                                                                "
-msgstr "Mostrar entrada de diario"
+msgstr ""
+"\n"
+"                                                                    Mostrar asiento contable\n"
+"                                                                "
 
-#, fuzzy
 #: model_terms:static/src/xml/cashflow.xml
 msgid "Balance"
-msgstr "Balance"
+msgstr "Saldo"
 
-#, fuzzy
 #: model_terms:static/src/xml/cashflow.xml
 msgid "Cash In"
 msgstr "Cobrar"
 
-#, fuzzy
 #: model_terms:static/src/xml/cashflow.xml
 msgid "Cash Out"
 msgstr "Retiro de efectivo"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Dynamic Cash Flow Statements"
 msgstr "Estados de flujo de efectivo dinámicos"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid ""
 "Generates a Dynamic Statement that Highlights Cash Inflows \n"
@@ -57,7 +54,6 @@ msgstr ""
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "Provides a drill-down view of cashflow statements, \n"

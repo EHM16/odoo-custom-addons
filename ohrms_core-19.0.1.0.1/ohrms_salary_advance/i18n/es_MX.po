@@ -16,23 +16,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/salary_advance.py:56
 msgid "Advance"
 msgstr "avance"
 
-#, fuzzy
 #: code:models/salary_advance.py:140
 msgid "Advance amount is greater than allotted"
 msgstr "El monto del anticipo es mayor que el asignado"
 
-#, fuzzy
 #: code:models/salary_advance.py:135
 #: code:models/salary_advance.py:179
 msgid "Advance can be requested once in a month"
 msgstr "El anticipo se puede solicitar una vez al mes."
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Advance Salary In Open HRMS."
 msgstr "Salario anticipado en Open HRMS."
@@ -45,7 +41,6 @@ msgstr "Aprobar"
 msgid "Approved"
 msgstr "Aprobado"
 
-#, fuzzy
 #: model_terms:views/salary_advance_views.xml
 msgid "Approved Requests"
 msgstr "Solicitudes aprobadas"
@@ -58,22 +53,18 @@ msgstr "Cancelar"
 msgid "Company"
 msgstr "Empresa"
 
-#, fuzzy
 #: code:models/salary_advance.py:52
 msgid "Company of the employee,"
-msgstr "Empresa of the employee,"
+msgstr "Empresa del empleado,"
 
-#, fuzzy
 #: code:models/salary_advance.py:83
 msgid "Contract"
 msgstr "Contrato"
 
-#, fuzzy
 #: code:models/salary_advance.py:79
 msgid "Credit Account"
-msgstr "Credit Cuenta"
+msgstr "Cuenta acreedora"
 
-#, fuzzy
 #: code:models/salary_advance.py:79
 msgid "Credit account of the salary advance."
 msgstr "Cuenta de crédito del anticipo de sueldo."
@@ -82,42 +73,35 @@ msgstr "Cuenta de crédito del anticipo de sueldo."
 msgid "Currency"
 msgstr "Moneda"
 
-#, fuzzy
 #: code:models/salary_advance.py:47
 msgid "Currency of the company."
-msgstr "Moneda of the company."
+msgstr "Moneda de la empresa."
 
 #: code:models/salary_advance.py:42
 #: model_terms:views/salary_advance_views.xml
 msgid "Date"
 msgstr "Fecha"
 
-#, fuzzy
 #: code:models/salary_advance.py:77
 msgid "Debit Account"
-msgstr "Debit Cuenta"
+msgstr "Cuenta deudora"
 
-#, fuzzy
 #: code:models/salary_advance.py:77
 msgid "Debit account of the salary advance."
 msgstr "Cuenta deudora del anticipo de sueldo."
 
-#, fuzzy
 #: code:models/salary_advance.py:137
 msgid "Define a contract for the employee"
 msgstr "Definir un contrato para el empleado."
 
-#, fuzzy
 #: code:models/salary_advance.py:124
 msgid "Define home address for the employee. i.e address under private information of the employee."
 msgstr "Defina la dirección particular del empleado. es decir, dirección bajo información privada del empleado."
 
-#, fuzzy
 #: code:models/salary_advance.py:66
 msgid "Department"
 msgstr "Departamento"
 
-#, fuzzy
 #: code:models/salary_advance.py:66
 msgid "Department of the employee."
 msgstr "Departamento del empleado."
@@ -127,7 +111,6 @@ msgstr "Departamento del empleado."
 msgid "Employee"
 msgstr "Empleado"
 
-#, fuzzy
 #: code:models/salary_advance.py:62
 msgid "Exceed than Maximum"
 msgstr "Exceder el máximo"
@@ -136,22 +119,18 @@ msgstr "Exceder el máximo"
 msgid "Journal"
 msgstr "Diario"
 
-#, fuzzy
 #: code:models/salary_advance.py:81
 msgid "Journal of the salary advance."
 msgstr "Diario del anticipo de sueldo."
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:31
 msgid "Max.Salary Advance Percentage"
 msgstr "Porcentaje máximo de anticipo de salario"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:31
 msgid "Maximum percentage of the salary advance."
 msgstr "Porcentaje máximo del anticipo de sueldo."
 
-#, fuzzy
 #: model_terms:views/salary_advance_views.xml
 msgid "My Requests"
 msgstr "Mis solicitudes"
@@ -160,77 +139,62 @@ msgstr "Mis solicitudes"
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:models/salary_advance.py:40
 msgid "Name of the Employee"
-msgstr "Nombre of the Empleado"
+msgstr "Nombre del empleado"
 
-#, fuzzy
 #: code:models/salary_advance.py:37
 msgid "Name of the the advanced salary."
-msgstr "Nombre of the the advanced salary."
+msgstr "Nombre del salario adelantado."
 
-#, fuzzy
 #: model_terms:views/salary_advance_views.xml
 msgid "New Requests"
 msgstr "Nuevas solicitudes"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Advance Salary"
 msgstr "Salario anticipado abierto de HRMS"
 
-#, fuzzy
 #: code:models/salary_advance.py:58
 msgid "Payment Method"
 msgstr "Método de pago"
 
-#, fuzzy
 #: code:models/salary_advance.py:58
 msgid "Pyment method of the salary advance."
 msgstr "Método de pago del anticipo de sueldo."
 
-#, fuzzy
 #: code:models/salary_advance.py:45
 msgid "Reason"
-msgstr "Reason"
+msgstr "Motivo"
 
-#, fuzzy
 #: code:models/salary_advance.py:45
 msgid "Reason for the advance salary request."
 msgstr "Motivo de la solicitud de anticipo de sueldo."
 
-#, fuzzy
 #: model_terms:views/salary_advance_views.xml
 msgid "Reject"
 msgstr "Rechazar"
 
-#, fuzzy
 #: code:models/salary_advance.py:162
 msgid "Request can be done after \"%s\" Days From prevoius month salary"
 msgstr "La solicitud se puede realizar después de \"%s\" Días Desde el salario del mes anterior"
 
-#, fuzzy
 #: code:models/salary_advance.py:83
 msgid "Running contract of the employee."
 msgstr "Contrato vigente del empleado."
 
-#, fuzzy
 #: model_terms:views/salary_advance_views.xml
 msgid "Salary Advance"
 msgstr "Anticipo de Salario"
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:34
 msgid "Salary advance after days."
 msgstr "Anticipo de sueldo después de días."
 
-#, fuzzy
 #: code:models/hr_payroll_structure.py:34
 msgid "Salary Advance-After days"
 msgstr "Avance de salario-Después de días"
 
-#, fuzzy
 #: model_terms:views/salary_advance_views.xml
 msgid "Search"
 msgstr "Buscar"
@@ -239,7 +203,6 @@ msgstr "Buscar"
 msgid "State"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/salary_advance.py:69
 msgid "State of the salary advance."
 msgstr "Estado del anticipo de sueldo."
@@ -248,32 +211,26 @@ msgstr "Estado del anticipo de sueldo."
 msgid "Status"
 msgstr "Estado"
 
-#, fuzzy
 #: model_terms:views/salary_advance_views.xml
 msgid "Submit"
-msgstr "Submit"
+msgstr "Enviar"
 
-#, fuzzy
 #: code:models/salary_advance.py:42
 msgid "Submit date of the advanced salary."
 msgstr "Fecha de presentación del salario adelantado."
 
-#, fuzzy
 #: model_terms:views/salary_advance_views.xml
 msgid "Submitted Requests"
 msgstr "Solicitudes enviadas"
 
-#, fuzzy
 #: code:models/salary_advance.py:62
 msgid "The Advance is greater than the maximum percentage in salary structure"
 msgstr "El Anticipo es mayor al porcentaje máximo en la estructura salarial"
 
-#, fuzzy
 #: code:models/salary_advance.py:56
 msgid "The requested money."
 msgstr "El dinero solicitado."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "THis module is a component of Open HRMS suit. It module \n"
@@ -286,27 +243,22 @@ msgstr ""
 "     configurar reglas de salario anticipado, establecer límite de salario anticipado, número mínimo \n"
 "     de días y proporcionar salario adelantado a los empleados."
 
-#, fuzzy
 #: code:models/salary_advance.py:149
 msgid "This month salary already calculated"
 msgstr "Salario de este mes ya calculado."
 
-#, fuzzy
 #: model_terms:views/salary_advance_views.xml
 msgid "To Approve"
 msgstr "Para aprobar"
 
-#, fuzzy
 #: model_terms:views/salary_advance_views.xml
 msgid "To Submit"
 msgstr "Para enviar"
 
-#, fuzzy
 #: code:models/salary_advance.py:181
 msgid "You must enter Debit & Credit account and journal to approve"
 msgstr "Debe ingresar la cuenta y el diario de Débito y Crédito para aprobar"
 
-#, fuzzy
 #: code:models/salary_advance.py:143
 #: code:models/salary_advance.py:184
 msgid "You must Enter the Salary Advance amount"

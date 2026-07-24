@@ -16,61 +16,50 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/manager_approval.py:37
 msgid "Allocated Hours"
 msgstr "Horas asignadas"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Allocation Time Approval"
-msgstr "Aprobación del tiempo de asignación"
+msgstr "Aprobación del tiempo asignado"
 
-#, fuzzy
 #: code:models/manager_approval.py:37
 msgid "Allocation time for assignees"
-msgstr "Asignación de tiempo para los cesionarios"
+msgstr "Tiempo asignado a las personas responsables"
 
 #: model_terms:views/manager_approval_views.xml
 msgid "Approve"
 msgstr "Aprobar"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Approve allocated time for project tasks and timesheets."
-msgstr "Aprobar el tiempo asignado para las tareas del proyecto y las hojas de tiempo."
+msgstr "Aprobar el tiempo asignado a las tareas del proyecto y las hojas de horas."
 
-#, fuzzy
 #: code:models/manager_approval.py:34
 msgid "Assignees"
-msgstr "Cesionarios"
+msgstr "Personas asignadas"
 
-#, fuzzy
 #: code:models/project_task.py:34
 msgid "Boolean to change to approve"
-msgstr "Booleano para cambiar para aprobar"
+msgstr "Indica si la tarea está en la etapa Por aprobar"
 
-#, fuzzy
 #: code:models/project_task.py:37
 msgid "Boolean to progress stage"
-msgstr "Booleano a etapa de progreso"
+msgstr "Indica si la tarea está en la etapa En progreso"
 
-#, fuzzy
 #: code:models/project_task.py:31
 msgid "Boolean to visible manager approve"
-msgstr "Booleano a administrador visible aprobado"
+msgstr "Indica si la tarea está en una etapa nueva"
 
-#, fuzzy
 #: code:models/manager_approval.py:39
 msgid "Button for approve button"
 msgstr "Botón para aprobar"
 
-#, fuzzy
 #: code:models/manager_approval.py:41
 msgid "Button for cancel"
 msgstr "Botón para cancelar"
 
-#, fuzzy
 #: code:models/manager_approval.py:39
 msgid "Button view"
 msgstr "Vista de botones"
@@ -79,38 +68,31 @@ msgstr "Vista de botones"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#, fuzzy
 #: code:models/manager_approval.py:41
 msgid "Cancel Button"
 msgstr "Botón Cancelar"
 
-#, fuzzy
 #: code:models/manager_approval.py:34
 msgid "Corresponding assignees name"
-msgstr "Nombre de los cesionarios correspondientes"
+msgstr "Nombre de las personas asignadas"
 
-#, fuzzy
 #: code:models/manager_approval.py:32
 msgid "Corresponding project name"
 msgstr "Nombre del proyecto correspondiente"
 
-#, fuzzy
 #: code:models/manager_approval.py:43
 msgid "Getting corresponding task"
-msgstr "Obteniendo la tarea correspondiente"
+msgstr "Tarea relacionada"
 
-#, fuzzy
 #: code:models/project_task.py:40
 #: model_terms:views/manager_approval_views.xml
 msgid "Manager Approval"
 msgstr "Aprobación del gerente"
 
-#, fuzzy
 #: code:models/project_task.py:31
 msgid "New"
-msgstr "New"
+msgstr "Nuevo"
 
-#, fuzzy
 #: code:models/project_task.py:205
 #: code:models/project_task.py:213
 #: code:models/project_task.py:223
@@ -124,54 +106,46 @@ msgstr "¡Solo los gerentes pueden realizar este movimiento!"
 msgid "Project"
 msgstr "Proyecto"
 
-#, fuzzy
 #: code:models/manager_approval.py:43
 msgid "Project Task"
-msgstr "Proyecto Tarea"
+msgstr "Tarea del proyecto"
 
 #: code:models/manager_approval.py:31
 msgid "Task"
 msgstr "Tarea"
 
-#, fuzzy
 #: code:models/project_task.py:43
 msgid "Task Create Boolean"
-msgstr "Tarea Create Boolean"
+msgstr "Control de creación de solicitud de aprobación"
 
-#, fuzzy
 #: code:models/project_task.py:37
 msgid "Task Done"
-msgstr "Tarea Done"
+msgstr "Tarea en progreso"
 
-#, fuzzy
 #: code:models/manager_approval.py:31
 msgid "Task name for project"
-msgstr "Tarea name for project"
+msgstr "Nombre de la tarea para el proyecto"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module enables managers to review and approve \n"
 "    allocated hours on project tasks and timesheets."
 msgstr ""
-"Este módulo permite a los gerentes revisar y aprobar \n"
-"    horas asignadas en tareas del proyecto y hojas de tiempo."
+"Este módulo permite a los gerentes revisar y aprobar las \n"
+"    horas asignadas a tareas del proyecto y hojas de horas."
 
-#, fuzzy
 #: code:models/project_task.py:34
 msgid "To approve"
-msgstr "aprobar"
+msgstr "Aprobar"
 
-#, fuzzy
 #: code:models/project_task.py:266
 msgid "You can't move this..!"
 msgstr "¡No puedes mover esto...!"
 
-#, fuzzy
 #: code:models/project_task.py:118
 msgid ""
 "You have exceeded the allocated hours.\n"
 "Only a Project Manager can mark this task as Done."
 msgstr ""
-"You have exceeded the allocated hours.\n"
-"Only a Proyecto Manager can mark this task as Done."
+"Excediste las horas asignadas.\n"
+"Solo un gerente de proyecto puede marcar esta tarea como hecha."

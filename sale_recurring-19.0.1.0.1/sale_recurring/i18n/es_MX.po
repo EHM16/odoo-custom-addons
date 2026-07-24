@@ -20,12 +20,10 @@ msgstr ""
 msgid "Active"
 msgstr "Activo"
 
-#, fuzzy
 #: model_terms:views/sale_recurring_views.xml
 msgid "Archive"
 msgstr "Archivo"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Automatic sale order creation based on recurring orders"
 msgstr "Creación automática de órdenes de venta basadas en órdenes recurrentes"
@@ -39,22 +37,18 @@ msgstr "Cancelar"
 msgid "Cancelled"
 msgstr "Cancelado"
 
-#, fuzzy
 #: model_terms:views/sale_recurring_views.xml
 msgid "Channel"
 msgstr "canal"
 
-#, fuzzy
 #: code:models/sale_recurring.py:54
 msgid "Count of total quotations"
 msgstr "Recuento de cotizaciones totales"
 
-#, fuzzy
 #: code:models/sale_recurring.py:51
 msgid "Count of total sale orders"
-msgstr "Recuento de pedidos de venta totales"
+msgstr "Número total de órdenes de venta"
 
-#, fuzzy
 #: model_terms:views/sale_recurring_views.xml
 msgid "Create Sale Order"
 msgstr "Crear orden de venta"
@@ -64,10 +58,9 @@ msgstr "Crear orden de venta"
 msgid "Customer"
 msgstr "Cliente"
 
-#, fuzzy
 #: code:models/sale_recurring.py:35
 msgid "Customer name"
-msgstr "Cliente name"
+msgstr "Nombre del cliente"
 
 #: code:models/sale_recurring_line.py:35
 msgid "Description"
@@ -76,20 +69,17 @@ msgstr "Descripción"
 #: code:models/sale_recurring.py:43
 #: model_terms:views/sale_recurring_views.xml
 msgid "End Date"
-msgstr "Fecha final"
+msgstr "Fecha de finalización"
 
-#, fuzzy
 #: code:models/sale_recurring.py:46
 #: model_terms:views/sale_recurring_views.xml
 msgid "Expired"
 msgstr "Caducado"
 
-#, fuzzy
 #: code:models/sale_recurring.py:57
 msgid "If unchecked, it will allow you to hide the recurring order without removing it."
 msgstr "Si no está marcado, le permitirá ocultar el pedido recurrente sin eliminarlo."
 
-#, fuzzy
 #: model_terms:views/sale_recurring_views.xml
 msgid "Inactive"
 msgstr "Inactivo"
@@ -98,37 +88,30 @@ msgstr "Inactivo"
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:models/sale_recurring.py:34
 msgid "Name of the order"
-msgstr "Nombre of the order"
+msgstr "Nombre de la orden"
 
-#, fuzzy
 #: code:models/sale_recurring_line.py:35
 msgid "Name of the product"
-msgstr "Nombre of the product"
+msgstr "Nombre del producto"
 
-#, fuzzy
 #: code:models/sale_recurring_line.py:42
 msgid "Order"
 msgstr "Orden"
 
-#, fuzzy
 #: code:models/sale_recurring_line.py:42
 msgid "Order details"
 msgstr "Detalles del pedido"
 
-#, fuzzy
 #: model_terms:views/sale_recurring_views.xml
 msgid "Order Line"
 msgstr "Línea de pedido"
 
-#, fuzzy
 #: code:models/sale_recurring.py:60
 msgid "Order lines"
 msgstr "Líneas de pedido"
 
-#, fuzzy
 #: code:models/sale_recurring_line.py:37
 msgid "Price"
 msgstr "Precio"
@@ -137,58 +120,48 @@ msgstr "Precio"
 msgid "Product"
 msgstr "Producto"
 
-#, fuzzy
 #: code:models/sale_recurring_line.py:37
 msgid "Product price"
-msgstr "Producto price"
+msgstr "Precio del producto"
 
 #: code:models/sale_recurring_line.py:40
 msgid "Quantity"
 msgstr "Cantidad"
 
-#, fuzzy
 #: model_terms:views/sale_recurring_views.xml
 msgid "Quotations"
 msgstr "Cotizaciones"
 
-#, fuzzy
 #: code:models/sale_order.py:29
 msgid "Recurring Order"
 msgstr "Orden recurrente"
 
-#, fuzzy
 #: model_terms:views/sale_recurring_views.xml
 msgid "Renew"
 msgstr "Renovar"
 
-#, fuzzy
 #: code:models/sale_recurring.py:46
 #: model_terms:views/sale_recurring_views.xml
 msgid "Running"
-msgstr "Running"
+msgstr "En curso"
 
-#, fuzzy
 #: model_terms:views/sale_recurring_views.xml
 msgid "Sale Orders"
 msgstr "Órdenes de venta"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 #: model_terms:views/sale_recurring_views.xml
 msgid "Sale Recurring"
 msgstr "Venta recurrente"
 
-#, fuzzy
 #: code:models/sale_order.py:29
 msgid "Sale recurring order details"
 msgstr "Detalles del pedido recurrente de venta"
 
-#, fuzzy
 #: code:models/sale_recurring_line.py:31
 msgid "Select a product for which the sale recurring will be used"
 msgstr "Seleccione un producto para el cual se utilizará la venta recurrente"
 
-#, fuzzy
 #: code:models/sale_recurring.py:32
 msgid "Sequence of recurring order"
 msgstr "Secuencia de orden recurrente"
@@ -196,14 +169,12 @@ msgstr "Secuencia de orden recurrente"
 #: code:models/sale_recurring.py:37
 #: model_terms:views/sale_recurring_views.xml
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
-#, fuzzy
 #: code:models/sale_recurring.py:37
 msgid "Start the sale order creation based on the start date"
 msgstr "Iniciar la creación de la orden de venta en función de la fecha de inicio."
 
-#, fuzzy
 #: code:models/sale_recurring.py:46
 msgid "State of recurring order"
 msgstr "Estado de orden recurrente"
@@ -213,52 +184,42 @@ msgstr "Estado de orden recurrente"
 msgid "Status"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/sale_recurring.py:40
 msgid "Stop After"
 msgstr "Detener después"
 
-#, fuzzy
 #: code:models/sale_recurring.py:43
 msgid "Stop the sale order creation based on the end date"
 msgstr "Detener la creación de la orden de venta según la fecha de finalización"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module is helps to create sale orders automatically based on the recurring orders."
-msgstr "Este módulo ayuda a crear pedidos de venta automáticamente en función de los pedidos recurrentes."
+msgstr "Este módulo permite crear automáticamente órdenes de venta con base en órdenes recurrentes."
 
-#, fuzzy
 #: code:models/sale_recurring.py:34
 msgid "Title"
 msgstr "Título"
 
-#, fuzzy
 #: code:models/sale_recurring.py:60
 msgid "To store recurring order datas"
 msgstr "Para almacenar datos de pedidos recurrentes"
 
-#, fuzzy
 #: code:models/sale_recurring.py:40
 msgid "Total days to end the sale ordercreation"
 msgstr "Días totales para finalizar la creación de la orden de venta."
 
-#, fuzzy
 #: code:models/sale_recurring_line.py:40
 msgid "Total number of quantity"
 msgstr "Número total de cantidad"
 
-#, fuzzy
 #: code:models/sale_recurring.py:54
 msgid "Total RFQ"
 msgstr "Solicitud de cotización total"
 
-#, fuzzy
 #: code:models/sale_recurring.py:51
 msgid "Total SO"
 msgstr "Total de SO"
 
-#, fuzzy
 #: model_terms:views/sale_recurring_views.xml
 msgid "Unarchive"
 msgstr "Desarchivar"

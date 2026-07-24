@@ -16,29 +16,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/sale_order_line.py:29
 msgid "Choose the location from where the product taken from"
 msgstr "Elija la ubicación de donde se extrajo el producto."
 
-#, fuzzy
 #: code:models/sale_order_line.py:29
 #: model_terms:report/sale_order_templates.xml
 #: model_terms:views/sale_portal_templates.xml
 msgid "Location"
 msgstr "Ubicación"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Product Sales By Location"
-msgstr "Producto Sales By Location"
+msgstr "Ventas de productos por ubicación"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This app allows our user to set a location on sale order line. Whatever location is selected on sale order lines, the product will be delivered from the selected location.Delivery orders will be created based on selected locationin odoo19"
-msgstr "Esta aplicación permite a nuestro usuario establecer una ubicación en la línea de pedido de venta. Cualquiera que sea la ubicación seleccionada en las líneas de pedido de venta, el producto se entregará desde la ubicación seleccionada. Las órdenes de entrega se crearán según la ubicación seleccionada en odoo19."
+msgstr "Esta aplicación permite establecer una ubicación en la línea de la orden de venta. El producto se entregará desde la ubicación seleccionada y las órdenes de entrega se crearán con base en ella en Odoo 19."
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "We can set the location of products for delivery."
 msgstr "Podemos establecer la ubicación de los productos para la entrega."

@@ -21,12 +21,10 @@ msgstr ""
 msgid "Amount"
 msgstr "Importe"
 
-#, fuzzy
 #: code:models/event_catering_work.py:43
 msgid "Amount per quantity"
-msgstr "Importe per quantity"
+msgstr "Importe por cantidad"
 
-#, fuzzy
 #: model_terms:views/event_management_type_views.xml
 msgid "Avatar"
 msgstr "avatar"
@@ -36,91 +34,74 @@ msgstr "avatar"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#, fuzzy
 #: model_terms:views/event_management_catering_views.xml
 #: model_terms:views/event_management_views.xml
 msgid "Catering"
 msgstr "restauración"
 
-#, fuzzy
 #: model_terms:views/event_management_views.xml
 msgid "catering"
-msgstr "catering"
+msgstr "servicio de catering"
 
-#, fuzzy
 #: code:models/event_management.py:86
 msgid "Catering Active"
 msgstr "Catering Activo"
 
-#, fuzzy
 #: code:models/event_management.py:95
 msgid "Catering Done"
-msgstr "Catering hecho"
+msgstr "Servicio de catering finalizado"
 
-#, fuzzy
 #: code:models/event_service_line.py:74
 msgid "Catering end date cannot be greater than the event end date."
 msgstr "La fecha de finalización del catering no puede ser mayor que la fecha de finalización del evento."
 
-#, fuzzy
 #: code:models/event_catering_work.py:52
 #: code:models/event_management.py:88
 #: code:models/event_management_catering.py:62
 msgid "Catering Id"
 msgstr "Identificación del catering"
 
-#, fuzzy
 #: model_terms:views/event_management_catering_views.xml
 msgid "Catering Lines Form"
 msgstr "Formulario de líneas de catering"
 
-#, fuzzy
 #: model_terms:views/event_management_catering_views.xml
 msgid "Catering Lines List"
 msgstr "Lista de líneas de catering"
 
-#, fuzzy
 #: code:models/event_management.py:91
 msgid "Catering Pending"
 msgstr "Catering Pendiente"
 
-#, fuzzy
 #: code:models/event_management_catering.py:62
 msgid "Catering serial no"
 msgstr "Número de serie de catering"
 
-#, fuzzy
 #: code:models/event_service_line.py:72
 msgid "Catering start date cannot be older than the event start date."
 msgstr "La fecha de inicio del catering no puede ser anterior a la fecha de inicio del evento."
 
-#, fuzzy
 #: code:models/event_management_catering.py:46
 #: model_terms:views/event_management_catering_views.xml
 msgid "Catering Works"
 msgstr "Trabajos de restauración"
 
-#, fuzzy
 #: code:models/event_management_catering.py:88
 msgid "Catering works are pending"
 msgstr "Las obras de restauración están pendientes"
 
-#, fuzzy
 #: code:wizard/event_management_report.py:39
 msgid "Choose a partner whose associated events are to be displayed."
 msgstr "Elija un socio cuyos eventos asociados se mostrarán."
 
-#, fuzzy
 #: code:wizard/event_management_report.py:45
 msgid "Choose a state of the event"
 msgstr "Elija un estado del evento"
 
-#, fuzzy
 #: code:models/event_catering_work.py:38
 msgid "Choose the services"
 msgstr "Elige los servicios"
 
-#, fuzzy
 #: model_terms:views/event_management_views.xml
 msgid "Close"
 msgstr "Cerrar"
@@ -129,7 +110,6 @@ msgstr "Cerrar"
 msgid "Company"
 msgstr "Empresa"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid ""
 "Comprehensive event management with integrated catering \n"
@@ -142,32 +122,26 @@ msgstr ""
 msgid "Confirm"
 msgstr "Confirmar"
 
-#, fuzzy
 #: code:models/event_management.py:88
 msgid "Corresponding catering in event"
 msgstr "Catering correspondiente en evento."
 
-#, fuzzy
 #: code:models/event_management_type.py:35
 msgid "Count of Events"
 msgstr "Recuento de eventos"
 
-#, fuzzy
 #: code:models/event_management.py:76
 msgid "Count of Invoices"
 msgstr "Conteo de facturas"
 
-#, fuzzy
 #: code:models/event_management_type.py:35
 msgid "Count of total events"
 msgstr "Recuento de eventos totales"
 
-#, fuzzy
 #: code:models/event_management.py:76
 msgid "Count of total invoices for the event"
 msgstr "Conteo de facturas totales del evento"
 
-#, fuzzy
 #: model_terms:views/event_management_views.xml
 msgid "Create Invoice"
 msgstr "Crear factura"
@@ -179,12 +153,10 @@ msgstr "Crear factura"
 msgid "Currency"
 msgstr "Moneda"
 
-#, fuzzy
 #: code:models/event_catering_work.py:46
 msgid "Currency in which payments will be done"
-msgstr "Moneda in which payments will be done"
+msgstr "Moneda en la que se realizarán los pagos"
 
-#, fuzzy
 #: code:models/event_management_catering.py:50
 msgid "Current state of event"
 msgstr "Estado actual del evento"
@@ -195,7 +167,6 @@ msgstr "Estado actual del evento"
 msgid "Customer"
 msgstr "Cliente"
 
-#, fuzzy
 #: model_terms:reports/event_management_report_templates.xml
 msgid "Customer:"
 msgstr "Cliente:"
@@ -205,47 +176,38 @@ msgstr "Cliente:"
 msgid "Date"
 msgstr "Fecha"
 
-#, fuzzy
 #: code:models/event_management_catering.py:40
 msgid "date of catering created"
 msgstr "fecha de creación del catering"
 
-#, fuzzy
 #: code:models/event_management.py:47
 msgid "Date of event creating"
-msgstr "Fecha of event creating"
+msgstr "Fecha de creación del evento"
 
-#, fuzzy
 #: code:models/event_service_line.py:39
 msgid "Date to"
-msgstr "Fecha to"
+msgstr "Fecha hasta"
 
-#, fuzzy
 #: model_terms:reports/event_management_report_templates.xml
 msgid "Date:"
 msgstr "Fecha:"
 
-#, fuzzy
 #: code:models/event_management.py:71
 msgid "Default currency of company"
 msgstr "Moneda predeterminada de la empresa"
 
-#, fuzzy
 #: code:models/event_service_line.py:46
 msgid "Default currency of the company"
 msgstr "Moneda por defecto de la empresa"
 
-#, fuzzy
 #: code:models/event_management.py:35
 msgid "Different types of events"
 msgstr "Diferentes tipos de eventos"
 
-#, fuzzy
 #: code:models/event_management_catering.py:53
 msgid "Display terms and condition for this service"
 msgstr "Mostrar términos y condiciones para este servicio"
 
-#, fuzzy
 #: code:models/event_management.py:81
 msgid "Does any pending invoice."
 msgstr "¿Alguna factura pendiente?"
@@ -257,130 +219,106 @@ msgstr "Hecho"
 #: code:models/event_management.py:52
 #: model_terms:reports/event_management_report_templates.xml
 msgid "End Date"
-msgstr "Fecha final"
+msgstr "Fecha de finalización"
 
-#, fuzzy
 #: code:models/event_management_catering.py:44
 msgid "End date"
 msgstr "Fecha de finalización"
 
-#, fuzzy
 #: code:models/event_management_catering.py:44
 msgid "end date of catering service"
 msgstr "fecha de finalización del servicio de catering"
 
-#, fuzzy
 #: code:wizard/event_management_report.py:38
 msgid "End date of event"
 msgstr "Fecha de finalización del evento"
 
-#, fuzzy
 #: code:models/event_service_line.py:39
 msgid "End date of service"
 msgstr "Fecha de finalización del servicio"
 
-#, fuzzy
 #: code:models/event_management.py:52
 msgid "End date of the event"
 msgstr "Fecha de finalización del evento"
 
-#, fuzzy
 #: code:models/event_management_catering.py:59
 #: code:models/event_service_line.py:35
 msgid "Event"
 msgstr "Evento"
 
-#, fuzzy
 #: model_terms:views/event_management_views.xml
 msgid "Event Management"
 msgstr "Gestión de eventos"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Event Management and Catering"
 msgstr "Gestión de Eventos y Catering"
 
-#, fuzzy
 #: model_terms:views/event_management_views.xml
 msgid "Event Orders"
 msgstr "Órdenes de eventos"
 
-#, fuzzy
 #: model_terms:reports/event_management_report_templates.xml
 msgid "Event Report"
 msgstr "Informe de evento"
 
-#, fuzzy
 #: code:models/event_management.py:54
 msgid "Event services"
 msgstr "Servicios de eventos"
 
-#, fuzzy
 #: code:models/event_management_catering.py:69
 #: model_terms:views/event_management_catering_views.xml
 #: model_terms:views/event_management_views.xml
 msgid "Event Type"
 msgstr "Tipo de evento"
 
-#, fuzzy
 #: code:wizard/event_management_report.py:37
 msgid "From"
 msgstr "De"
 
-#, fuzzy
 #: code:reports/report_event_management.py:44
 #: code:wizard/event_management_report.py:66
 msgid "From Date must be less than To Date"
-msgstr "From Fecha must be less than To Fecha"
+msgstr "La fecha desde debe ser anterior a la fecha hasta"
 
-#, fuzzy
 #: model_terms:reports/event_management_report_templates.xml
 msgid "From:"
 msgstr "De:"
 
-#, fuzzy
 #: code:models/event_catering_work.py:41
 msgid "How many quantity consumed"
 msgstr "Cuanta cantidad consumió"
 
-#, fuzzy
 #: code:models/event_management.py:68
 #: code:models/event_management_type.py:32
 msgid "Image"
 msgstr "Imagen"
 
-#, fuzzy
 #: model_terms:views/event_management_catering_views.xml
 msgid "image"
 msgstr "imagen"
 
-#, fuzzy
 #: code:models/event_management.py:81
 msgid "In Voice Pending"
 msgstr "En Voz Pendiente"
 
-#, fuzzy
 #: code:models/event_service_line.py:51
 msgid "Invoiced"
 msgstr "Facturado"
 
-#, fuzzy
 #: code:models/event_management.py:78
 #: model_terms:views/event_management_views.xml
 msgid "Invoices"
 msgstr "Facturas"
 
-#, fuzzy
 #: code:models/event_management.py:78
 msgid "Invoices created for each event"
 msgstr "Facturas creadas para cada evento."
 
-#, fuzzy
 #: code:models/event_service_line.py:51
 msgid "Is this service invoiced"
 msgstr "¿Este servicio se factura?"
 
-#, fuzzy
 #: code:models/event_service_line.py:31
 msgid "List of the service that automatically adds to selection while install service modules"
 msgstr "Lista del servicio que se agrega automáticamente a la selección mientras se instalan los módulos de servicio"
@@ -392,46 +330,38 @@ msgstr "Lista del servicio que se agrega automáticamente a la selección mientr
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:models/event_management_catering.py:39
 msgid "Name of caterings"
-msgstr "Nombre of caterings"
+msgstr "Nombre de los servicios de catering"
 
-#, fuzzy
 #: code:models/event_service_line.py:35
 msgid "Name of the event"
-msgstr "Nombre of the event"
+msgstr "Nombre del evento"
 
-#, fuzzy
 #: code:models/event_management_type.py:31
 msgid "Name of the event type"
-msgstr "Nombre of the event type"
+msgstr "Nombre del tipo de evento"
 
 #: code:models/event_management.py:62
 msgid "Notes"
 msgstr "Notas"
 
-#, fuzzy
 #: model_terms:views/event_management_catering_views.xml
 msgid "Open"
 msgstr "Abierto"
 
-#, fuzzy
 #: code:models/event_management_catering.py:59
 msgid "Parent event"
 msgstr "Evento principal"
 
-#, fuzzy
 #: code:models/event_management.py:220
 msgid "Please define income account for this product: \"%s\" (id:%d)."
 msgstr "Defina la cuenta de ingresos para este producto: \"%s\" (id:%d)."
 
-#, fuzzy
 #: model_terms:wizard/event_management_report_view.xml
 msgid "Print Excel"
 msgstr "Imprimir Excel"
 
-#, fuzzy
 #: model_terms:wizard/event_management_report_view.xml
 msgid "Print PDF"
 msgstr "Imprimir PDF"
@@ -444,156 +374,127 @@ msgstr "Cantidad"
 msgid "Reference"
 msgstr "Referencia"
 
-#, fuzzy
 #: code:models/event_management.py:33
 msgid "Reference of the event"
 msgstr "Referencia del evento"
 
-#, fuzzy
 #: model_terms:reports/event_management_report_templates.xml
 msgid "Register Date"
-msgstr "Register Fecha"
+msgstr "Fecha de registro"
 
-#, fuzzy
 #: code:models/event_service_line.py:53
 msgid "Related Product"
-msgstr "Related Producto"
+msgstr "Producto relacionado"
 
-#, fuzzy
 #: code:models/event_management_catering.py:64
 msgid "Select currency"
 msgstr "Seleccionar moneda"
 
-#, fuzzy
 #: code:models/event_management.py:44
 msgid "Select customers for the event."
 msgstr "Seleccionar clientes para el evento."
 
-#, fuzzy
 #: code:models/event_catering_work.py:52
 msgid "Select the catering"
 msgstr "Selecciona el catering"
 
-#, fuzzy
 #: code:models/event_service_line.py:53
 msgid "Select the related service product"
 msgstr "Seleccione el producto de servicio relacionado"
 
-#, fuzzy
 #: code:models/event_management_catering.py:69
 msgid "Select the type of event"
 msgstr "Selecciona el tipo de evento"
 
-#, fuzzy
 #: code:models/event_management_catering.py:46
 msgid "selected catering works"
 msgstr "trabajos de restauración seleccionados"
 
-#, fuzzy
 #: model_terms:views/event_management_views.xml
 msgid "Service Lines"
 msgstr "Líneas de Servicio"
 
-#, fuzzy
 #: model_terms:views/event_management_views.xml
 msgid "Service Lines List"
 msgstr "Lista de líneas de servicio"
 
-#, fuzzy
 #: code:models/event_catering_work.py:38
 #: code:models/event_management.py:54
 #: code:models/event_service_line.py:31
 msgid "Services"
 msgstr "Servicios"
 
-#, fuzzy
 #: model_terms:views/event_management_type_views.xml
 msgid "setting"
 msgstr "configuración"
 
-#, fuzzy
 #: model_terms:views/event_management_type_views.xml
 msgid "Settings"
 msgstr "Configuración"
 
-#, fuzzy
 #: model_terms:views/event_management_catering_views.xml
 #: model_terms:views/event_management_views.xml
 msgid "Setup default terms and conditions in your company settings."
 msgstr "Configure los términos y condiciones predeterminados en la configuración de su empresa."
 
-#, fuzzy
 #: code:models/event_management.py:31
 msgid "Show combined name of the event"
 msgstr "Mostrar el nombre combinado del evento"
 
-#, fuzzy
 #: code:models/event_management.py:91
 msgid "Shows count of catering works are pending"
 msgstr "El recuento de obras de restauración del espectáculo está pendiente"
 
-#, fuzzy
 #: code:models/event_management.py:95
 msgid "Shows how many catering works are done"
 msgstr "Muestra cuántos trabajos de restauración se realizan."
 
-#, fuzzy
 #: code:models/event_catering_work.py:44
 msgid "Shows subtotal"
 msgstr "Muestra subtotal"
 
-#, fuzzy
 #: code:models/event_catering_work.py:55
 msgid "Shows the current status of catering"
 msgstr "Muestra el estado actual del catering."
 
-#, fuzzy
 #: code:models/event_management_catering.py:55
 msgid "Shows the total price"
 msgstr "Muestra el precio total"
 
-#, fuzzy
 #: code:models/event_management.py:86
 msgid "Shows thw catering is active or not"
 msgstr "Muestra si el catering está activo o no."
 
-#, fuzzy
 #: model_terms:reports/event_management_report_templates.xml
 msgid "Sl.no"
-msgstr "Sl.no"
+msgstr "Núm."
 
 #: code:models/event_management.py:49
 #: code:models/event_service_line.py:37
 #: model_terms:reports/event_management_report_templates.xml
 msgid "Start Date"
-msgstr "Fecha inicial"
+msgstr "Fecha de inicio"
 
-#, fuzzy
 #: code:models/event_management_catering.py:42
 msgid "Start date"
 msgstr "Fecha de inicio"
 
-#, fuzzy
 #: code:wizard/event_management_report.py:37
 msgid "Start date event"
 msgstr "Evento de fecha de inicio"
 
-#, fuzzy
 #: code:models/event_management.py:107
 msgid "Start date must be less than End date"
 msgstr "La fecha de inicio debe ser anterior a la fecha de finalización"
 
-#, fuzzy
 #: code:models/event_management.py:49
 msgid "Start date of event"
 msgstr "Fecha de inicio del evento"
 
-#, fuzzy
 #: code:models/event_service_line.py:37
 msgid "Start date of service"
 msgstr "Fecha de inicio del servicio"
 
-#, fuzzy
 #: code:models/event_management_catering.py:42
 msgid "starting date of catering service"
 msgstr "fecha de inicio del servicio de catering"
@@ -607,12 +508,10 @@ msgstr "fecha de inicio del servicio de catering"
 msgid "State"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/event_service_line.py:42
 msgid "States of the each service in service line"
 msgstr "Estados de cada servicio en línea de servicio."
 
-#, fuzzy
 #: code:models/event_management.py:57
 msgid "States of the Event management record"
 msgstr "Estados del registro de gestión de eventos"
@@ -621,28 +520,23 @@ msgstr "Estados del registro de gestión de eventos"
 msgid "Status"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/event_catering_work.py:44
 msgid "Sub Total"
 msgstr "Subtotal"
 
-#, fuzzy
 #: code:models/event_management.py:62
 msgid "Terms and Conditions"
 msgstr "Términos y condiciones"
 
-#, fuzzy
 #: code:models/event_management_catering.py:53
 msgid "Terms and conditions"
 msgstr "Términos y condiciones"
 
-#, fuzzy
 #: code:models/event_management.py:68
 #: code:models/event_management_type.py:32
 msgid "This field holds the image used as image for the event, limited to 1080x720px."
 msgstr "Este campo contiene la imagen utilizada como imagen del evento, limitada a 1080x720px."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module combines event management and catering \n"
@@ -653,12 +547,10 @@ msgstr ""
 "     servicios, lo que le permite gestionar tipos de eventos, órdenes de servicio y \n"
 "     Factura de manera eficiente, todo desde una única interfaz en Odoo."
 
-#, fuzzy
 #: code:wizard/event_management_report.py:38
 msgid "To"
 msgstr "a"
 
-#, fuzzy
 #: model_terms:reports/event_management_report_templates.xml
 msgid "To:"
 msgstr "Para:"
@@ -668,7 +560,6 @@ msgstr "Para:"
 msgid "Total"
 msgstr "Total"
 
-#, fuzzy
 #: code:models/event_management.py:63
 msgid "Total price of services in service lines"
 msgstr "Precio total de los servicios en líneas de servicio."
@@ -679,22 +570,18 @@ msgstr "Precio total de los servicios en líneas de servicio."
 msgid "Type"
 msgstr "Tipo"
 
-#, fuzzy
 #: code:wizard/event_management_report.py:42
 msgid "Type of event management"
 msgstr "Tipo de gestión de eventos"
 
-#, fuzzy
 #: model_terms:wizard/event_management_report_view.xml
 msgid "Wizard"
 msgstr "Asistente"
 
-#, fuzzy
 #: code:models/event_catering_work.py:55
 msgid "Work Status"
-msgstr "Work Estado"
+msgstr "Estado del trabajo"
 
-#, fuzzy
 #: code:models/event_management.py:195
 msgid "You can close an event only when all services is Done and Invoiced"
 msgstr "Puede cerrar un evento solo cuando todos los servicios estén listos y facturados."

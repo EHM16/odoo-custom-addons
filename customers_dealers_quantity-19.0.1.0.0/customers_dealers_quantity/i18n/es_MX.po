@@ -16,64 +16,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Customer's Dealers Special Price"
-msgstr "Cliente's Dealers Special Price"
+msgstr "Precio especial para distribuidores del cliente"
 
-#, fuzzy
 #: code:models/res_partner.py:29
 #: model_terms:views/res_partner_views.xml
 msgid "Dealer"
 msgstr "Distribuidor"
 
-#, fuzzy
 #: code:models/product_product.py:29
 msgid "Dealer Price"
 msgstr "Precio del distribuidor"
 
-#, fuzzy
 #: code:models/product_product.py:29
 msgid "Dealer price"
 msgstr "Precio de distribuidor"
 
-#, fuzzy
 #: code:models/product_product.py:30
 #: model_terms:views/product_product_views.xml
 msgid "Dealers Min Quantity"
-msgstr "Dealers Min Cantidad"
+msgstr "Cantidad mínima para distribuidores"
 
-#, fuzzy
 #: code:models/product_product.py:30
 msgid "Dealers minimum quantity"
 msgstr "Cantidad mínima de distribuidores"
 
-#, fuzzy
 #: model_terms:views/product_product_views.xml
 msgid "Dealers Price"
 msgstr "Precio de distribuidores"
 
-#, fuzzy
 #: code:models/res_partner.py:29
 msgid "It helps to know whether the customer is a Dealer or not"
 msgstr "Es útil saber si el cliente es distribuidor o no."
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid ""
 "The Dealer will get a Special Price if he Orders the Minimum\n"
 "     Amount of Products"
 msgstr ""
-"The Dealer will get a Special Price if he Orders the Minimum\n"
-"     Importe of Productos"
+"El distribuidor obtendrá un precio especial si solicita la cantidad mínima\n"
+"     de productos."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "When the Dealer Ordered a Specific Product\n"
 "     Quantity and if it's above the company's pre-defined criteria then the \n"
 "     company can allow some Special Price to the Dealer."
 msgstr ""
-"When the Dealer Ordered a Specific Producto\n"
-"     Cantidad and if it's above the company's pre-defined criteria then the \n"
-"     company can allow some Special Price to the Dealer."
+"Cuando el distribuidor solicita una cantidad específica de un producto\n"
+"     y esta supera los criterios predefinidos de la empresa, la \n"
+"     empresa puede otorgarle un precio especial."

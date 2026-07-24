@@ -16,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 " If the customer have multiple addresses, the user can \n"
@@ -27,29 +26,24 @@ msgstr ""
 "     Elija direcciones de entrega para cada línea de pedido. Luego separe las selecciones \n"
 "     y se creará la entrega para cada una de las direcciones."
 
-#, fuzzy
 #: code:models/sale_order_line.py:34
 msgid "Address Readonly"
 msgstr "Dirección de solo lectura"
 
-#, fuzzy
 #: code:models/sale_order_line.py:30
 #: model_terms:views/sale_order_templates.xml
 msgid "Delivery Address"
 msgstr "Dirección de entrega"
 
-#, fuzzy
 #: code:models/sale_order_line.py:34
 msgid "Helps find address is readonly or not"
 msgstr "Ayuda a encontrar que la dirección sea de solo lectura o no"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Multiple Delivery Addresses for Sale Order"
-msgstr "Varias direcciones de entrega para pedidos de venta"
+msgstr "Varias direcciones de entrega para la orden de venta"
 
-#, fuzzy
 #: code:models/sale_order_line.py:30
 msgid "You can select from the delivery addresses of the same customer"
 msgstr "Puedes seleccionar entre las direcciones de entrega de un mismo cliente"

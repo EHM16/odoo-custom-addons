@@ -20,21 +20,18 @@ msgstr ""
 msgid "Approve"
 msgstr "Aprobar"
 
-#, fuzzy
 #: code:models/hr_resignation.py:55
 msgid "Approved Last Day Of Employee"
-msgstr "Approved Last Day Of Empleado"
+msgstr "Último día aprobado del empleado"
 
 #: model_terms:views/hr_resignation_views.xml
 msgid "Cancel"
 msgstr "Cancelar"
 
-#, fuzzy
 #: code:models/hr_resignation.py:80
 msgid "Change Employee"
-msgstr "Change Empleado"
+msgstr "Cambiar empleado"
 
-#, fuzzy
 #: code:models/hr_resignation.py:80
 msgid "Checks , if the user has permission to change the employee"
 msgstr "Comprueba si el usuario tiene permiso para cambiar de empleado."
@@ -43,47 +40,38 @@ msgstr "Comprueba si el usuario tiene permiso para cambiar de empleado."
 msgid "Confirm"
 msgstr "Confirmar"
 
-#, fuzzy
 #: code:models/hr_resignation.py:51
 msgid "Confirmed Date"
-msgstr "Confirmed Fecha"
+msgstr "Fecha de confirmación"
 
-#, fuzzy
 #: code:models/hr_resignation.py:84
 msgid "Contract Template"
 msgstr "Plantilla de contrato"
 
-#, fuzzy
 #: code:models/hr_resignation.py:84
 msgid "Current Contract of the employee"
 msgstr "Contrato vigente del empleado"
 
-#, fuzzy
 #: code:models/hr_employee.py:33
 msgid "Date of the resignation"
-msgstr "Fecha of the resignation"
+msgstr "Fecha de la renuncia"
 
-#, fuzzy
 #: code:models/hr_resignation.py:51
 msgid "Date on which the request is confirmed by the employee."
-msgstr "Fecha on which the request is confirmed by the employee."
+msgstr "Fecha en que la solicitud es confirmada por el empleado."
 
-#, fuzzy
 #: code:models/hr_resignation.py:55
 msgid "Date on which the request is confirmed by the manager."
-msgstr "Fecha on which the request is confirmed by the manager."
+msgstr "Fecha en que el gerente confirma la solicitud."
 
-#, fuzzy
 #: model_terms:views/hr_resignation_views.xml
 msgid "Dates"
 msgstr "Fechas"
 
-#, fuzzy
 #: code:models/hr_resignation.py:48
 msgid "Department"
 msgstr "Departamento"
 
-#, fuzzy
 #: code:models/hr_resignation.py:48
 msgid "Department of the employee"
 msgstr "Departamento del empleado"
@@ -92,151 +80,122 @@ msgstr "Departamento del empleado"
 msgid "Employee"
 msgstr "Empleado"
 
-#, fuzzy
 #: model_terms:views/hr_resignation_views.xml
 msgid "Employee Details"
-msgstr "Empleado Details"
+msgstr "Detalles del empleado"
 
-#, fuzzy
 #: code:models/hr_resignation.py:62
 msgid "Employee requested date on which employee is revealing from the company."
-msgstr "Empleado requested date on which employee is revealing from the company."
+msgstr "Fecha solicitada por el empleado para retirarse de la empresa."
 
-#, fuzzy
 #: model_terms:views/hr_resignation_views.xml
 msgid "Employee Resignation"
-msgstr "Empleado Resignation"
+msgstr "Renuncia del empleado"
 
-#, fuzzy
 #: code:models/hr_employee.py:37
 msgid "Fired"
 msgstr "Despedido"
 
-#, fuzzy
 #: model_terms:views/hr_employee_views.xml
 msgid "Fired Employees"
-msgstr "Fired Empleados"
+msgstr "Empleados despedidos"
 
-#, fuzzy
 #: code:models/hr_employee.py:37
 msgid "If checked then employee has fired"
 msgstr "Si se marca entonces el empleado ha despedido"
 
-#, fuzzy
 #: code:models/hr_employee.py:35
 msgid "If checked then employee has resigned"
 msgstr "Si se marca entonces el empleado ha renunciado"
 
-#, fuzzy
 #: code:models/hr_resignation.py:59
 msgid "Join Date"
-msgstr "Join Fecha"
+msgstr "Fecha de ingreso"
 
-#, fuzzy
 #: code:models/hr_resignation.py:59
 msgid "Joining date of the employee.i.e Start date of the first contract"
 msgstr "Fecha de incorporación del empleado, es decir, fecha de inicio del primer contrato."
 
-#, fuzzy
 #: code:models/hr_resignation.py:173
 msgid "Last date of the Employee must be anterior to Joining date"
-msgstr "Last date of the Empleado must be anterior to Joining date"
+msgstr "La fecha de salida del empleado debe ser posterior a la fecha de ingreso."
 
-#, fuzzy
 #: code:models/hr_resignation.py:62
 msgid "Last Day of Employee"
-msgstr "Last Day of Empleado"
+msgstr "Último día de empleado"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Manages the resignation process of the employees"
 msgstr "Gestiona el proceso de renuncia de los empleados."
 
-#, fuzzy
 #: code:models/hr_resignation.py:43
 msgid "Name of the employee for whom the request is creating"
-msgstr "Nombre of the employee for whom the request is creating"
+msgstr "Nombre del empleado para quien se crea la solicitud"
 
-#, fuzzy
 #: code:models/hr_resignation.py:155
 #: code:models/hr_resignation.py:157
 #: code:models/hr_resignation.py:159
 #: code:models/hr_resignation.py:161
 #: code:models/hr_resignation.py:42
 msgid "New"
-msgstr "New"
+msgstr "Nuevo"
 
-#, fuzzy
 #: code:models/hr_resignation.py:69
 msgid "Notice Period"
 msgstr "Período de aviso"
 
-#, fuzzy
 #: code:models/hr_resignation.py:69
 msgid "Notice Period of the employee in days"
 msgstr "Periodo de aviso del empleado en días."
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Resignation"
 msgstr "Renuncia abierta de HRMS"
 
-#, fuzzy
 #: code:models/hr_resignation.py:40
 msgid "Order Reference"
 msgstr "Referencia de pedido"
 
-#, fuzzy
 #: code:models/hr_resignation.py:245
 msgid "Please Enter Valid Dates."
-msgstr "Please Enter Valid Fechas."
+msgstr "Por favor ingrese fechas válidas."
 
-#, fuzzy
 #: code:models/hr_resignation.py:177
 msgid "Please set a Joining Date for employee"
-msgstr "Please set a Joining Fecha for employee"
+msgstr "Por favor establezca una fecha de incorporación para el empleado"
 
-#, fuzzy
 #: code:models/hr_resignation.py:67
 msgid "Reason"
-msgstr "Reason"
+msgstr "Motivo"
 
-#, fuzzy
 #: model_terms:views/hr_resignation_views.xml
 msgid "Reject"
 msgstr "Rechazar"
 
-#, fuzzy
 #: code:models/hr_employee.py:33
 msgid "Resign Date"
-msgstr "Resign Fecha"
+msgstr "Fecha de renuncia"
 
-#, fuzzy
 #: model_terms:views/hr_resignation_views.xml
 msgid "Resignation Details"
 msgstr "Detalles de renuncia"
 
-#, fuzzy
 #: code:models/hr_employee.py:35
 msgid "Resigned"
 msgstr "dimitido"
 
-#, fuzzy
 #: model_terms:views/hr_employee_views.xml
 msgid "Resigned Employees"
-msgstr "Resigned Empleados"
+msgstr "Empleados que renunciaron"
 
-#, fuzzy
 #: code:models/hr_resignation.py:76
 msgid "Select the type of resignation: normal resignation or fired by the company"
 msgstr "Seleccione el tipo de renuncia: renuncia normal o despido de la empresa"
 
-#, fuzzy
 #: model_terms:views/hr_resignation_views.xml
 msgid "Set to Draft"
-msgstr "Set to Draft"
+msgstr "Restablecer a borrador"
 
-#, fuzzy
 #: code:models/hr_resignation.py:67
 msgid "Specify reason for leaving the company"
 msgstr "Especifique el motivo de su salida de la empresa."
@@ -245,17 +204,14 @@ msgstr "Especifique el motivo de su salida de la empresa."
 msgid "Status"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/hr_resignation.py:212
 msgid "There are no Contracts found for this employee"
 msgstr "No se encontraron contratos para este empleado"
 
-#, fuzzy
 #: code:models/hr_resignation.py:120
 msgid "There is a resignation request in confirmed or approved state for this employee"
 msgstr "Hay una solicitud de renuncia en estado confirmado o aprobado para este empleado"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module helps to create and approve/reject employee\n"
@@ -268,7 +224,6 @@ msgstr ""
 msgid "Type"
 msgstr "Tipo"
 
-#, fuzzy
 #: code:models/hr_resignation.py:107
 msgid "You cannot create a request for other employees"
 msgstr "No puede crear una solicitud para otros empleados"

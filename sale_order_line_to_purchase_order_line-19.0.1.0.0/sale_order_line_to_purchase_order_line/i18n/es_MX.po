@@ -16,32 +16,26 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/sale_order.py:97
 msgid "Check box added for select sale order lines."
 msgstr "Casilla de verificación agregada para líneas de orden de venta seleccionadas."
 
-#, fuzzy
 #: code:models/sale_order.py:34
 msgid "Choose a purchase order from the list to add the chosen orders to an existing PO."
 msgstr "Elija una orden de compra de la lista para agregar las órdenes elegidas a una orden de compra existente."
 
-#, fuzzy
 #: code:models/sale_order.py:31
 msgid "Choose vendor for create new purchase order"
 msgstr "Elija proveedor para crear una nueva orden de compra"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Convert Sale Order Line To Purchase Order Line"
-msgstr "Convert Sale Order Line To Orden de compra Line"
+msgstr "Convertir línea de orden de venta en línea de orden de compra"
 
-#, fuzzy
 #: model_terms:views/sale_order_views.xml
 msgid "Convert to PO"
 msgstr "Convertir a orden de compra"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid ""
 "Module to convert selected sale order lines to purchase \n"
@@ -50,36 +44,30 @@ msgstr ""
 "Módulo para convertir líneas de orden de venta seleccionadas a compra \n"
 "    ordenar líneas fácilmente."
 
-#, fuzzy
 #: code:models/sale_order.py:85
 msgid "New Purchase Order has been placed. %s"
-msgstr "New Orden de compra has been placed. %s"
+msgstr "Se ha realizado una nueva orden de compra. %s"
 
 #: code:models/sale_order.py:34
 msgid "Purchase Order"
 msgstr "Orden de compra"
 
-#, fuzzy
 #: code:models/sale_order.py:97
 msgid "Select"
 msgstr "Seleccionar"
 
-#, fuzzy
 #: code:models/sale_order.py:54
 msgid "Select Order Line"
 msgstr "Seleccionar línea de pedido"
 
-#, fuzzy
 #: code:models/sale_order.py:52
 msgid "Select Vendor or Purchase Order"
-msgstr "Select Proveedor or Orden de compra"
+msgstr "Seleccionar proveedor u orden de compra"
 
-#, fuzzy
 #: code:models/sale_order.py:72
 msgid "Selected Order Lines added to existing Purchase Order. %s"
-msgstr "Selected Order Lines added to existing Orden de compra. %s"
+msgstr "Las líneas de orden seleccionadas se agregaron a la orden de compra existente. %s"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module will help to create new purchase order from \n"

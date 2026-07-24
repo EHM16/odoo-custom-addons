@@ -1,0 +1,1016 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* manpower_supply_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                        From\n"
+"                                                    "
+msgstr "De"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                        Required\n"
+"                                                    "
+msgstr "Requerido"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                        Skill\n"
+"                                                    "
+msgstr "Habilidad"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                Cancelled\n"
+"                                            "
+msgstr "Cancelado"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                Confirmed\n"
+"                                            "
+msgstr "Confirmado"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                Draft\n"
+"                                            "
+msgstr "Borrador"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                End Date\n"
+"                                            "
+msgstr ""
+"\n"
+"                                                Fecha final\n"
+"                                            "
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                Expired\n"
+"                                            "
+msgstr "Caducado"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                Invoiced\n"
+"                                            "
+msgstr "Facturado"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                Ready\n"
+"                                            "
+msgstr "Listo"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                Start Date\n"
+"                                            "
+msgstr ""
+"\n"
+"                                                Fecha inicial\n"
+"                                            "
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                                Status\n"
+"                                            "
+msgstr ""
+"\n"
+"                                                Estado\n"
+"                                            "
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"\n"
+"                                            Customer\n"
+"                                        "
+msgstr ""
+"\n"
+"                                            Cliente\n"
+"                                        "
+
+#, fuzzy
+#: model_terms:views/labour_supply_website_template.xml
+msgid ""
+"\n"
+"                                        Invalid date\n"
+"                                    "
+msgstr "Fecha no válida"
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid ""
+"\n"
+"                                    + Add Requirement\n"
+"                                "
+msgstr "+ Agregar requisito"
+
+#, fuzzy
+#: model_terms:views/labour_supply_website_template.xml
+msgid ""
+"\n"
+"                                    Customer\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Cliente\n"
+"                                "
+
+#, fuzzy
+#: model_terms:views/labour_supply_website_template.xml
+msgid ""
+"\n"
+"                                    Expected From Date\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Expected From Fecha\n"
+"                                "
+
+#, fuzzy
+#: model_terms:views/labour_supply_website_template.xml
+msgid ""
+"\n"
+"                                    Expected To Date\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Expected To Fecha\n"
+"                                "
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid ""
+"\n"
+"                                    Submit Request\n"
+"                                "
+msgstr "Enviar solicitud"
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid ""
+"\n"
+"                                Go Back\n"
+"                            "
+msgstr "Volver"
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid ""
+"\n"
+"                                Labour Request Submitted\n"
+"                            "
+msgstr "Solicitud de mano de obra enviada"
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid ""
+"\n"
+"                                Our team will review it and get back to you\n"
+"                                shortly.\n"
+"                            "
+msgstr ""
+"Nuestro equipo lo revisará y se comunicará con usted.\n"
+"                                en breve."
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid ""
+"\n"
+"                                Your labour supply request has been generated\n"
+"                                successfully.\n"
+"                                "
+msgstr ""
+"Su solicitud de suministro de mano de obra ha sido generada\n"
+"                                con éxito."
+
+#, fuzzy
+#: model_terms:views/labour_supply_website_template.xml
+msgid ""
+"Add Skill\n"
+"                                Requirement\n"
+"                            "
+msgstr ""
+"Agregar habilidad\n"
+"                                Requisito"
+
+#, fuzzy
+#: code:models/labour_supply.py:103
+msgid "Assigned Workers"
+msgstr "Trabajadores asignados"
+
+#, fuzzy
+#: code:models/labour_supply.py:137
+msgid "Availability Alert"
+msgstr "Alerta de disponibilidad"
+
+#, fuzzy
+#: code:models/workers_details.py:100
+msgid "Availability Status"
+msgstr "Availability Estado"
+
+#, fuzzy
+#: model_terms:views/workers_details_views.xml
+msgid "Available"
+msgstr "Disponible"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Available Workers"
+msgstr "Trabajadores disponibles"
+
+#: model_terms:views/labour_supply_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#, fuzzy
+#: model_terms:report/labour_supply_templates.xml
+msgid "Canceled"
+msgstr "Cancelado"
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:37
+msgid "Choose customer"
+msgstr "Elige cliente"
+
+#: code:models/labour_supply.py:66
+#: code:models/skill_details.py:44
+#: code:models/workers_details.py:87
+msgid "Company"
+msgstr "Empresa"
+
+#, fuzzy
+#: code:models/skill_details.py:44
+msgid "Company to which this skill belongs. This ensures skills are managed separately for each company."
+msgstr "Empresa to which this skill belongs. This ensures skills are managed separately for each company."
+
+#, fuzzy
+#: code:models/workers_details.py:87
+msgid "Company to which this worker belongs."
+msgstr "Empresa to which this worker belongs."
+
+#, fuzzy
+#: code:models/labour_supply.py:66
+msgid "Company under which this labour supply contract is managed."
+msgstr "Empresa under which this labour supply contract is managed."
+
+#: model_terms:views/labour_supply_views.xml
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: model_terms:report/labour_supply_templates.xml
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#, fuzzy
+#: code:models/workers_details.py:70
+msgid "Contact phone number of the worker."
+msgstr "Número de teléfono de contacto del trabajador."
+
+#, fuzzy
+#: code:models/labour_supply.py:81
+msgid "Contract end date, automatically computed from skill requirements."
+msgstr "Fecha de finalización del contrato, calculada automáticamente a partir de los requisitos de habilidades."
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid "Contract From *"
+msgstr "Contrato desde *"
+
+#, fuzzy
+#: code:models/labour_supply.py:126
+msgid "Contract Period (Days)"
+msgstr "Período de Contrato (Días)"
+
+#, fuzzy
+#: code:models/labour_supply.py:74
+msgid "Contract start date, automatically computed from skill requirements."
+msgstr "Fecha de inicio del contrato, calculada automáticamente a partir de los requisitos de habilidades."
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid "Contract To *"
+msgstr "Contrato con *"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Contracts on the Basis of Customer"
+msgstr "Contracts on the Basis of Cliente"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Contracts on the Basis of State"
+msgstr "Contratos sobre la base del Estado"
+
+#, fuzzy
+#: code:models/labour_supply.py:143
+msgid "Controls the visibility of the workers assignment page."
+msgstr "Controla la visibilidad de la página de asignación de trabajadores."
+
+#, fuzzy
+#: model_terms:views/labour_supply_views.xml
+msgid "Create Invoice"
+msgstr "Crear factura"
+
+#: code:models/labour_supply.py:119
+#: code:models/workers_details.py:80
+msgid "Currency"
+msgstr "Moneda"
+
+#, fuzzy
+#: code:models/labour_supply.py:119
+msgid "Currency used for calculating the contract amount."
+msgstr "Moneda used for calculating the contract amount."
+
+#, fuzzy
+#: code:models/workers_details.py:80
+msgid "Currency used for wage and rate calculation."
+msgstr "Moneda used for wage and rate calculation."
+
+#, fuzzy
+#: code:models/labour_supply.py:88
+msgid "Current status of the labour supply contract."
+msgstr "Estado actual del contrato de suministro de mano de obra."
+
+#: code:models/labour_supply.py:50
+msgid "Customer"
+msgstr "Cliente"
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid "Customer *"
+msgstr "Cliente *"
+
+#, fuzzy
+#: code:models/labour_supply.py:50
+msgid "Customer for whom the labour supply contract is created."
+msgstr "Cliente for whom the labour supply contract is created."
+
+#, fuzzy
+#: code:models/labour_supply.py:131
+msgid "Customer invoice generated for this labour supply contract."
+msgstr "Cliente invoice generated for this labour supply contract."
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:32
+msgid "Customer wise"
+msgstr "Cliente wise"
+
+#, fuzzy
+#: model_terms:report/form_print_labour_supply_templates.xml
+#: model_terms:report/labour_supply_templates.xml
+msgid "customer:"
+msgstr "cliente:"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Customers"
+msgstr "Clientes"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid ""
+"Daily\n"
+"                                                "
+msgstr "Diariamente"
+
+#, fuzzy
+#: code:models/workers_details.py:65
+msgid "Daily billing rate charged for the worker."
+msgstr "Tarifa de facturación diaria cobrada por el trabajador."
+
+#, fuzzy
+#: code:models/workers_details.py:60
+msgid "Daily wage paid to the worker."
+msgstr "Salario diario pagado al trabajador."
+
+#: model_terms:report/labour_supply_templates.xml
+#: model_terms:views/labour_supply_views.xml
+msgid "Draft"
+msgstr "Borrador"
+
+#, fuzzy
+#: model_terms:views/workers_details_views.xml
+msgid "e.g. Peter Prathyu"
+msgstr "por ej. Peter Prathyu"
+
+#, fuzzy
+#: model_terms:views/labour_supply_views.xml
+msgid "Edit"
+msgstr "Editar"
+
+#, fuzzy
+#: code:models/workers_details.py:75
+#: model_terms:views/workers_details_views.xml
+msgid "Email"
+msgstr "Correo electrónico"
+
+#, fuzzy
+#: code:models/workers_details.py:75
+msgid "Email address of the worker."
+msgstr "Dirección de correo electrónico del trabajador."
+
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid "End Date"
+msgstr "Fecha final"
+
+#, fuzzy
+#: code:models/labour_supply.py:293
+msgid "End date cannot be earlier than start date."
+msgstr "La fecha de finalización no puede ser anterior a la fecha de inicio."
+
+#, fuzzy
+#: code:models/labour_on_skill.py:65
+msgid "End date until which the labour is required for the selected skill."
+msgstr "Fecha de finalización hasta la cual se requiere la mano de obra para la habilidad seleccionada."
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Expected amount"
+msgstr "Cantidad esperada"
+
+#, fuzzy
+#: model_terms:report/labour_supply_templates.xml
+#: model_terms:views/labour_supply_views.xml
+msgid "Expired"
+msgstr "Caducado"
+
+#, fuzzy
+#: model_terms:views/labour_supply_views.xml
+msgid "Fetch"
+msgstr "buscar"
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:37
+msgid "Field to choose customer for report"
+msgstr "Campo para elegir cliente para el informe"
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:32
+msgid "Field to choose filter of report"
+msgstr "Campo para elegir filtro de informe"
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:46
+msgid "Field to choose start date of report"
+msgstr "Campo para elegir fecha de inicio del informe"
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:48
+msgid "Field to end date filter of report"
+msgstr "Filtro de campo para finalizar la fecha del informe"
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:40
+msgid "Field to specify state of report"
+msgstr "Campo para especificar el estado del informe"
+
+#, fuzzy
+#: model_terms:views/labour_supply_website_template.xml
+msgid "Fill the details"
+msgstr "Llene los detalles"
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:32
+msgid "Filter"
+msgstr "Filtrar"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid "Follow, view your Contracts"
+msgstr "Seguir, ver tus Contratos"
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid "From"
+msgstr "De"
+
+#, fuzzy
+#: code:models/labour_on_skill.py:58
+#: code:models/labour_supply.py:74
+#: model_terms:report/form_print_labour_supply_templates.xml
+#: model_terms:report/labour_supply_templates.xml
+msgid "From Date"
+msgstr "From Fecha"
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:46
+msgid "From date"
+msgstr "Desde la fecha"
+
+#, fuzzy
+#: model_terms:report/form_print_labour_supply_templates.xml
+#: model_terms:report/labour_supply_templates.xml
+msgid "From Date:"
+msgstr "From Fecha:"
+
+#, fuzzy
+#: code:models/workers_details.py:40
+msgid "Full name of the worker."
+msgstr "Nombre completo del trabajador."
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid ""
+"General Details\n"
+"                                "
+msgstr "Detalles generales"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid "History"
+msgstr "Historia"
+
+#, fuzzy
+#: code:models/labour_supply.py:137
+msgid "Indicates whether the required number of workers is currently unavailable."
+msgstr "Indica si el número requerido de trabajadores no está disponible actualmente."
+
+#, fuzzy
+#: code:models/workers_details.py:100
+msgid "Indicates whether the worker is currently available for assignment."
+msgstr "Indica si el trabajador está actualmente disponible para su asignación."
+
+#, fuzzy
+#: code:models/labour_supply.py:131
+msgid "Invoice"
+msgstr "Invoice"
+
+#, fuzzy
+#: model_terms:report/labour_supply_templates.xml
+#: model_terms:views/labour_supply_views.xml
+msgid "Invoiced"
+msgstr "Facturado"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Invoiced amount"
+msgstr "Importe facturado"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid "Labour Contract"
+msgstr "Contrato Laboral"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Labour Contract and Amount"
+msgstr "Labour Contract and Importe"
+
+#, fuzzy
+#: model_terms:wizard/labour_supply_report_views.xml
+msgid "Labour Report"
+msgstr "Informe Laboral"
+
+#, fuzzy
+#: code:models/labour_on_skill.py:51
+#: model_terms:views/labour_supply_portal_templates.xml
+#: model_terms:views/labour_supply_website_template.xml
+msgid "Labour Supply"
+msgstr "Oferta laboral"
+
+#, fuzzy
+#: model_terms:report/form_print_labour_supply_templates.xml
+msgid "Labour Supply Form Print"
+msgstr "Imprimir formulario de oferta laboral"
+
+#, fuzzy
+#: model_terms:report/labour_supply_templates.xml
+msgid "Labour Supply Report"
+msgstr "Informe de oferta laboral"
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid "Labour Supply Request"
+msgstr "Solicitud de oferta laboral"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid "laboursupply"
+msgstr "oferta de mano de obra"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid "LabourSupply"
+msgstr "Oferta de mano de obra"
+
+#, fuzzy
+#: code:models/labour_supply.py:57
+msgid "List of skills required along with the number of labourers and the respective date ranges."
+msgstr "Lista de habilidades requeridas junto con la cantidad de trabajadores y los respectivos rangos de fechas."
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Mail Address"
+msgstr "Dirección de correo"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Manage man power supply"
+msgstr "Gestionar el suministro de energía humana."
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid ""
+"Manpower Supply\n"
+"                                    Management Dashboard\n"
+"                                "
+msgstr ""
+"Suministro de mano de obra\n"
+"                                    Panel de gestión"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Manpower Supply Management"
+msgstr "Gestión del suministro de mano de obra"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid ""
+"Monthly\n"
+"                                                "
+msgstr "Mensual"
+
+#, fuzzy
+#: code:models/skill_details.py:37
+msgid "Name of the skill or specialization, such as Electrician, Plumber, or Carpenter."
+msgstr "Nombre of the skill or specialization, such as Electrician, Plumber, or Carpenter."
+
+#, fuzzy
+#: model_terms:views/workers_details_views.xml
+msgid "Not Available"
+msgstr "No disponible"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid "Number"
+msgstr "Número"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Number of Contracts"
+msgstr "Número de contratos"
+
+#, fuzzy
+#: code:models/labour_on_skill.py:45
+msgid "Number of Labours Required"
+msgstr "Número de labores requeridas"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Ongoing contract"
+msgstr "Contrato en curso"
+
+#, fuzzy
+#: code:models/workers_details.py:52
+msgid "Partner record automatically created and linked to this worker."
+msgstr "Registro de socio creado automáticamente y vinculado a este trabajador."
+
+#, fuzzy
+#: model_terms:views/workers_details_views.xml
+msgid "Phone"
+msgstr "Teléfono"
+
+#, fuzzy
+#: code:models/workers_details.py:70
+msgid "Phone Number"
+msgstr "Número de teléfono"
+
+#, fuzzy
+#: code:models/labour_supply.py:282
+msgid "Please add at least one required skill."
+msgstr "Agregue al menos una habilidad requerida."
+
+#, fuzzy
+#: code:models/labour_supply.py:290
+msgid "Please enter valid future dates."
+msgstr "Por favor ingrese fechas futuras válidas."
+
+#, fuzzy
+#: model_terms:wizard/labour_supply_report_views.xml
+msgid "Print pdf"
+msgstr "imprimir pdf"
+
+#, fuzzy
+#: code:models/workers_details.py:95
+msgid "Profile image of the worker."
+msgstr "Imagen de perfil del trabajador."
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid "Qty"
+msgstr "Cantidad"
+
+#, fuzzy
+#: code:models/workers_details.py:65
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Rate Per Day"
+msgstr "Tarifa por día"
+
+#, fuzzy
+#: model_terms:report/labour_supply_templates.xml
+msgid "Ready"
+msgstr "Listo"
+
+#: code:models/labour_supply.py:41
+msgid "Reference"
+msgstr "Referencia"
+
+#, fuzzy
+#: code:models/labour_on_skill.py:51
+msgid "Reference to the labour supply request to which this skill requirement is linked."
+msgstr "Referencia a la solicitud de oferta laboral a la que se vincula este requisito de habilidad."
+
+#, fuzzy
+#: code:models/workers_details.py:52
+#: model_terms:views/workers_details_views.xml
+msgid "Related Partner"
+msgstr "Socio relacionado"
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid "Remove"
+msgstr "Quitar"
+
+#, fuzzy
+#: model_terms:report/form_print_labour_supply_templates.xml
+msgid "Required Number"
+msgstr "Número requerido"
+
+#, fuzzy
+#: code:models/labour_on_skill.py:38
+msgid "Required Skill"
+msgstr "Habilidad requerida"
+
+#, fuzzy
+#: model_terms:views/labour_supply_views.xml
+#: model_terms:views/workers_details_views.xml
+msgid "search"
+msgstr "buscar"
+
+#, fuzzy
+#: code:models/labour_on_skill.py:38
+msgid "Select the skill or specialization required for the labour."
+msgstr "Seleccione la habilidad o especialización requerida para el trabajo."
+
+#, fuzzy
+#: model_terms:report/labour_supply_templates.xml
+msgid "Sequence number"
+msgstr "Número de secuencia"
+
+#, fuzzy
+#: model_terms:views/labour_supply_views.xml
+msgid "Shortage in Labour"
+msgstr "Escasez de mano de obra"
+
+#, fuzzy
+#: code:models/labour_supply.py:143
+msgid "Show Workers Page"
+msgstr "Mostrar página de trabajadores"
+
+#, fuzzy
+#: model_terms:report/form_print_labour_supply_templates.xml
+msgid "skill"
+msgstr "habilidad"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid "Skill"
+msgstr "Habilidad"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"Skill\n"
+"                                        Requirements\n"
+"                                    "
+msgstr ""
+"Habilidad\n"
+"                                        Requisitos"
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid ""
+"Skill\n"
+"                                    Requirements\n"
+"                                "
+msgstr ""
+"Habilidad\n"
+"                                    Requisitos"
+
+#, fuzzy
+#: code:models/skill_details.py:37
+msgid "Skill Name"
+msgstr "Skill Nombre"
+
+#, fuzzy
+#: model_terms:views/labour_on_skill_views.xml
+msgid "Skill required"
+msgstr "Habilidad requerida"
+
+#, fuzzy
+#: code:models/workers_details.py:46
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Skills"
+msgstr "Habilidades"
+
+#, fuzzy
+#: code:models/workers_details.py:46
+msgid "Skills or specializations possessed by the worker."
+msgstr "Habilidades o especializaciones que posee el trabajador."
+
+#, fuzzy
+#: code:models/labour_supply.py:57
+msgid "Skills Required"
+msgstr "Habilidades requeridas"
+
+#, fuzzy
+#: code:models/labour_on_skill.py:45
+msgid "Specify the total number of labourers required for the selected skill."
+msgstr "Especifique el número total de trabajadores necesarios para la habilidad seleccionada."
+
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid "Start Date"
+msgstr "Fecha inicial"
+
+#, fuzzy
+#: code:models/labour_on_skill.py:58
+msgid "Start date from which the labour is required for the selected skill."
+msgstr "Fecha de inicio a partir de la cual se requiere la mano de obra para la habilidad seleccionada."
+
+#: code:wizard/labour_supply_report.py:40
+#: model_terms:report/labour_supply_templates.xml
+#: model_terms:views/labour_supply_portal_templates.xml
+#: model_terms:views/labour_supply_views.xml
+#: model_terms:views/workers_details_views.xml
+msgid "State"
+msgstr "Estado"
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:32
+msgid "State wise"
+msgstr "Estado sabio"
+
+#, fuzzy
+#: model_terms:report/labour_supply_templates.xml
+msgid "State:"
+msgstr "Estado:"
+
+#: code:models/labour_supply.py:88
+msgid "Status"
+msgstr "Estado"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "The Manpower Supply module in Odoo automates the process of matching client requirements with suitable resources and streamlines the allocation and management of manpower, ensuring efficient service delivery."
+msgstr "El módulo Manpower Supply en Odoo automatiza el proceso de hacer coincidir los requisitos del cliente con los recursos adecuados y agiliza la asignación y gestión de la mano de obra, asegurando una prestación eficiente del servicio."
+
+#, fuzzy
+#: model_terms:views/labour_on_supply_form_template.xml
+msgid "To"
+msgstr "a"
+
+#, fuzzy
+#: model_terms:views/labour_supply_portal_templates.xml
+msgid ""
+"To\n"
+"                                                    "
+msgstr "a"
+
+#, fuzzy
+#: code:models/labour_on_skill.py:65
+#: code:models/labour_supply.py:81
+#: model_terms:report/form_print_labour_supply_templates.xml
+#: model_terms:report/labour_supply_templates.xml
+msgid "To Date"
+msgstr "To Fecha"
+
+#, fuzzy
+#: code:wizard/labour_supply_report.py:48
+msgid "To date"
+msgstr "hasta la fecha"
+
+#, fuzzy
+#: model_terms:report/form_print_labour_supply_templates.xml
+#: model_terms:report/labour_supply_templates.xml
+msgid "To Date:"
+msgstr "To Fecha:"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Top 10 Customers"
+msgstr "Top 10 Clientes"
+
+#, fuzzy
+#: code:models/labour_supply.py:111
+#: model_terms:report/labour_supply_templates.xml
+msgid "Total Amount"
+msgstr "Total Importe"
+
+#, fuzzy
+#: code:models/labour_supply.py:111
+msgid "Total contract amount calculated based on worker rates and contract period."
+msgstr "Monto total del contrato calculado en función de las tarifas de los trabajadores y el período del contrato."
+
+#, fuzzy
+#: code:models/labour_supply.py:126
+msgid "Total duration of the contract in days."
+msgstr "Duración total del contrato en días."
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid ""
+"Totally\n"
+"                                                "
+msgstr "Totalmente"
+
+#, fuzzy
+#: code:models/labour_supply.py:41
+msgid "Unique reference generated automatically for the labour supply contract."
+msgstr "Referencia única generada automáticamente para el contrato de suministro de mano de obra."
+
+#, fuzzy
+#: code:models/workers_details.py:60
+msgid "Wage Per Day"
+msgstr "Salario por día"
+
+#, fuzzy
+#: code:models/workers_details.py:95
+msgid "Worker Image"
+msgstr "Imagen del trabajador"
+
+#, fuzzy
+#: code:models/workers_details.py:40
+msgid "Worker Name"
+msgstr "Worker Nombre"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Workers"
+msgstr "Trabajadores"
+
+#, fuzzy
+#: code:models/labour_supply.py:103
+msgid "Workers assigned to this labour supply contract based on required skills and availability."
+msgstr "Trabajadores asignados a este contrato de suministro de mano de obra en función de las habilidades requeridas y la disponibilidad."
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid "Workers Availability"
+msgstr "Disponibilidad de trabajadores"
+
+#, fuzzy
+#: model_terms:views/workers_details_views.xml
+msgid "workers details"
+msgstr "detalles de los trabajadores"
+
+#, fuzzy
+#: model_terms:static/src/xml/labour_supply_dashboard.xml
+msgid ""
+"Yearly\n"
+"                                                "
+msgstr "Anual"

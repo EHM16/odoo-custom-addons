@@ -1,0 +1,144 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* project_by_phases
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "A Module For Managing Different Phases of Project."
+msgstr "A Module For Managing Different Phases of Proyecto."
+
+#, fuzzy
+#: code:models/project_phase.py:48
+msgid "Add internal notes"
+msgstr "Agregar notas internas"
+
+#, fuzzy
+#: code:models/project_phase.py:43
+msgid "By default, current login company will selected here. You can choose other companies also."
+msgstr "De forma predeterminada, aquí se seleccionará la empresa de inicio de sesión actual. También puedes elegir otras empresas."
+
+#, fuzzy
+#: code:models/project_phase.py:32
+msgid "Choose projects from existing records."
+msgstr "Elija proyectos de registros existentes."
+
+#: code:models/project_phase.py:43
+msgid "Company"
+msgstr "Empresa"
+
+#, fuzzy
+#: code:models/project_phase.py:42
+msgid "End date"
+msgstr "Fecha de finalización"
+
+#, fuzzy
+#: code:models/project_phase.py:41
+msgid "Give a sequence number."
+msgstr "Da un número de secuencia."
+
+#, fuzzy
+#: code:models/project_phase.py:48
+#: model_terms:views/project_phase_views.xml
+msgid "Internal Note"
+msgstr "Nota interna"
+
+#, fuzzy
+#: code:models/project_phase.py:35
+msgid "It's a mandatory field, so please select any user from the list."
+msgstr "Es un campo obligatorio, así que seleccione cualquier usuario de la lista."
+
+#: code:models/project_phase.py:30
+msgid "Name"
+msgstr "Nombre"
+
+#, fuzzy
+#: model_terms:views/project_phase_views.xml
+msgid "phase"
+msgstr "fase"
+
+#, fuzzy
+#: model_terms:views/project_views.xml
+msgid "Phases"
+msgstr "Fases"
+
+#: code:models/project_phase.py:32
+msgid "Project"
+msgstr "Proyecto"
+
+#, fuzzy
+#: code:models/project_task.py:29
+msgid "Project Phase"
+msgstr "Proyecto Phase"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+#: model_terms:views/project_task_views.xml
+msgid "Project Phases"
+msgstr "Proyecto Phases"
+
+#, fuzzy
+#: model_terms:views/project_phase_views.xml
+msgid "project_phase"
+msgstr "fase_proyecto"
+
+#, fuzzy
+#: code:models/project_phase.py:30
+msgid "Provide name for record."
+msgstr "Proporcione el nombre para el registro."
+
+#, fuzzy
+#: code:models/project_phase.py:35
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#, fuzzy
+#: code:models/project_task.py:29
+msgid "Select any project phase from the list."
+msgstr "Seleccione cualquier fase del proyecto de la lista."
+
+#, fuzzy
+#: code:models/project_phase.py:42
+msgid "Select end date."
+msgstr "Seleccione la fecha de finalización."
+
+#, fuzzy
+#: code:models/project_phase.py:34
+msgid "Select start date"
+msgstr "Seleccione fecha de inicio"
+
+#: code:models/project_phase.py:41
+msgid "Sequence"
+msgstr "Secuencia"
+
+#, fuzzy
+#: code:models/project_phase.py:34
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#: model_terms:views/project_phase_views.xml
+msgid "Task"
+msgstr "Tarea"
+
+#, fuzzy
+#: model_terms:views/project_phase_views.xml
+msgid "Tasks"
+msgstr "Tareas"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "Using Project By Phases,you can manage different phases of project."
+msgstr "Using Proyecto By Phases,you can manage different phases of project."

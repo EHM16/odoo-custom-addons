@@ -1,0 +1,95 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_order_line_to_purchase_order_line
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: code:models/sale_order.py:97
+msgid "Check box added for select sale order lines."
+msgstr "Casilla de verificación agregada para líneas de orden de venta seleccionadas."
+
+#, fuzzy
+#: code:models/sale_order.py:34
+msgid "Choose a purchase order from the list to add the chosen orders to an existing PO."
+msgstr "Elija una orden de compra de la lista para agregar las órdenes elegidas a una orden de compra existente."
+
+#, fuzzy
+#: code:models/sale_order.py:31
+msgid "Choose vendor for create new purchase order"
+msgstr "Elija proveedor para crear una nueva orden de compra"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Convert Sale Order Line To Purchase Order Line"
+msgstr "Convert Sale Order Line To Orden de compra Line"
+
+#, fuzzy
+#: model_terms:views/sale_order_views.xml
+msgid "Convert to PO"
+msgstr "Convertir a orden de compra"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid ""
+"Module to convert selected sale order lines to purchase \n"
+"    order lines easily."
+msgstr ""
+"Módulo para convertir líneas de orden de venta seleccionadas a compra \n"
+"    ordenar líneas fácilmente."
+
+#, fuzzy
+#: code:models/sale_order.py:85
+msgid "New Purchase Order has been placed. %s"
+msgstr "New Orden de compra has been placed. %s"
+
+#: code:models/sale_order.py:34
+msgid "Purchase Order"
+msgstr "Orden de compra"
+
+#, fuzzy
+#: code:models/sale_order.py:97
+msgid "Select"
+msgstr "Seleccionar"
+
+#, fuzzy
+#: code:models/sale_order.py:54
+msgid "Select Order Line"
+msgstr "Seleccionar línea de pedido"
+
+#, fuzzy
+#: code:models/sale_order.py:52
+msgid "Select Vendor or Purchase Order"
+msgstr "Select Proveedor or Orden de compra"
+
+#, fuzzy
+#: code:models/sale_order.py:72
+msgid "Selected Order Lines added to existing Purchase Order. %s"
+msgstr "Selected Order Lines added to existing Orden de compra. %s"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This module will help to create new purchase order from \n"
+"    sale order by selecting sale order lines. And also we can add the selected \n"
+"    lines to existing purchase order.."
+msgstr ""
+"Este módulo ayudará a crear una nueva orden de compra desde \n"
+"    orden de venta seleccionando líneas de orden de venta. Y también podemos agregar los seleccionados. \n"
+"    líneas a la orden de compra existente."
+
+#: code:models/sale_order.py:31
+msgid "Vendor"
+msgstr "Proveedor"

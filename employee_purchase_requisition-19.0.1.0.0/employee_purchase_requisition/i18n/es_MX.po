@@ -1,0 +1,700 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* employee_purchase_requisition
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                                Internal Transfer\n"
+"                                            "
+msgstr "Transferencia interna"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                                Purchase Order\n"
+"                                            "
+msgstr ""
+"\n"
+"                                                Orden de compra\n"
+"                                            "
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                        Delivery To:\n"
+"                                    "
+msgstr "Entrega a:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                        Internal Transfer:\n"
+"                                    "
+msgstr "Transferencia Interna:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Approved By:\n"
+"                                "
+msgstr "Aprobado por:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Approved Date:\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Approved Fecha:\n"
+"                                "
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Confirmed By:\n"
+"                                "
+msgstr "Confirmado por:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Confirmed Date:\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Confirmed Fecha:\n"
+"                                "
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Department Approval Date:\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Department Approval Fecha:\n"
+"                                "
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Department Manager:\n"
+"                                "
+msgstr "Gerente de Departamento:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Department:\n"
+"                                "
+msgstr "Departamento:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Destination Location:\n"
+"                                "
+msgstr "Ubicación de destino:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Employee:\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Empleado:\n"
+"                                "
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Received Date:\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Received Fecha:\n"
+"                                "
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Rejected By:\n"
+"                                "
+msgstr "Rechazado por:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Rejected Date:\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Rejected Fecha:\n"
+"                                "
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Requisition Date:\n"
+"                                "
+msgstr ""
+"\n"
+"                                    Requisition Fecha:\n"
+"                                "
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Requisition Deadline:\n"
+"                                "
+msgstr "Fecha límite de solicitud:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Requisition Responsible:\n"
+"                                "
+msgstr "Responsable de Requisición:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                                    Source Location:\n"
+"                                "
+msgstr "Ubicación de origen:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                            Other Information\n"
+"                        "
+msgstr "Otra información"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                            Picking Details\n"
+"                        "
+msgstr "Detalles de selección"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                            Purchase Requisition:\n"
+"                            "
+msgstr "Solicitud de compra:"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"\n"
+"                            Requisition Lines\n"
+"                        "
+msgstr "Líneas de solicitud"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_menu.xml
+msgid ""
+"\n"
+"              action=\\\"employee_purchase_requisition_action\\\"/>\n"
+"    "
+msgstr "action=\"employee_purchase_requisition_action\"/>"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:150
+msgid "Add at least a requisition order before confirming."
+msgstr "Agregue al menos una orden de solicitud antes de confirmar."
+
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Approve"
+msgstr "Aprobar"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Approve Purchase requisition"
+msgstr "Aprobar solicitud de compra"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Approve purchase requisition,Submit for Approval for Requisition Head"
+msgstr "Aprobar la solicitud de compra, enviar para aprobación al jefe de solicitudes"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid "Approve Signature:"
+msgstr "Aprobar firma:"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:64
+msgid "Approved By"
+msgstr "Aprobado por"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:75
+msgid "Approved Date"
+msgstr "Approved Fecha"
+
+#: code:models/employee_purchase_requisition.py:50
+msgid "Company"
+msgstr "Empresa"
+
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Confirm"
+msgstr "Confirmar"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:56
+msgid "Confirmed By"
+msgstr "Confirmado por"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:70
+msgid "Confirmed Date"
+msgstr "Confirmed Fecha"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Create Picking and PO"
+msgstr "Crear selección y orden de compra"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Create Picking/Purchase order"
+msgstr "Crear orden de selección/compra"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"Create the material requisition request and there are \n"
+"    multi-level approvals for requests from the department head and requisition \n"
+"    manager. Department head has the option to choose vendors for each material. \n"
+"    Also we can generate the PDF report for each material requisition"
+msgstr ""
+"Cree la solicitud de solicitud de material y hay \n"
+"    aprobaciones de varios niveles para solicitudes del jefe de departamento y solicitudes \n"
+"    gerente. El jefe de departamento tiene la opción de elegir proveedores para cada material. \n"
+"    También podemos generar el informe en PDF para cada solicitud de material."
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:43
+msgid "Date of requisition"
+msgstr "Fecha of requisition"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:70
+msgid "Date of requisition confirmation"
+msgstr "Fecha of requisition confirmation"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:85
+msgid "Delivery To"
+msgstr "Entrega a"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:35
+msgid "Department"
+msgstr "Departamento"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:72
+msgid "Department Approval Date"
+msgstr "Department Approval Fecha"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:72
+msgid "Department approval date"
+msgstr "Fecha de aprobación del departamento"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:61
+msgid "Department Manager"
+msgstr "Gerente de Departamento"
+
+#: code:models/requisition_order.py:42
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid "Description"
+msgstr "Descripción"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:82
+#: code:models/hr_department.py:29
+#: code:models/hr_employee.py:29
+msgid "Destination Location"
+msgstr "Ubicación de destino"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:82
+msgid "Destination location of requisition."
+msgstr "Lugar de destino de la requisición."
+
+#: code:models/employee_purchase_requisition.py:33
+msgid "Employee"
+msgstr "Empleado"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Employee Purchase Requisition"
+msgstr "Empleado Purchase Requisition"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid "Employee Signature:"
+msgstr "Empleado Signature:"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:48
+msgid "End date of purchase requisition"
+msgstr "Fecha de finalización de la solicitud de compra"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:88
+msgid "Internal Picking"
+msgstr "Recogida interna"
+
+#, fuzzy
+#: code:models/requisition_order.py:35
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Internal Transfer"
+msgstr "Transferencia interna"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:94
+msgid "Internal Transfer count"
+msgstr "Recuento de transferencias internas"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:94
+msgid "Internal transfer count"
+msgstr "Recuento de transferencias internas"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Manage material requisition of employees and user"
+msgstr "Gestionar la solicitud de material de los empleados y usuarios."
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid "Manager Signature:"
+msgstr "Firma del gerente:"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:143
+#: code:models/employee_purchase_requisition.py:144
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "New"
+msgstr "New"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Other Info"
+msgstr "Other Info"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Picking Details"
+msgstr "Detalles de selección"
+
+#: code:models/requisition_order.py:40
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid "Product"
+msgstr "Producto"
+
+#, fuzzy
+#: code:models/requisition_order.py:42
+msgid "Product description"
+msgstr "Producto description"
+
+#, fuzzy
+#: code:models/requisition_order.py:45
+msgid "Product quantity"
+msgstr "Producto quantity"
+
+#, fuzzy
+#: code:models/requisition_order.py:46
+msgid "Product unit of measure"
+msgstr "Producto unit of measure"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:91
+msgid "Purchase Count"
+msgstr "Recuento de compras"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:91
+msgid "Purchase count"
+msgstr "Recuento de compras"
+
+#: code:models/requisition_order.py:35
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Purchase Order"
+msgstr "Orden de compra"
+
+#, fuzzy
+#: model_terms:views/hr_employee_views.xml
+msgid "Purchase Requisition Settings"
+msgstr "Configuración de solicitud de compra"
+
+#: code:models/requisition_order.py:45
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid "Quantity"
+msgstr "Cantidad"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:90
+msgid "Reason For Requisition"
+msgstr "Motivo de la solicitud"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Received"
+msgstr "Recibido"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:46
+msgid "Received Date"
+msgstr "Received Fecha"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:46
+msgid "Received date"
+msgstr "Fecha de recepción"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:32
+msgid "Reference No"
+msgstr "Número de referencia"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Reject"
+msgstr "Rechazar"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Reject Purchase Requisition"
+msgstr "Rechazar solicitud de compra"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:67
+msgid "Rejected By"
+msgstr "Rechazado por"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:77
+msgid "Rejection Date"
+msgstr "Rejection Fecha"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"Requisition\n"
+"                                        Action\n"
+"                                    "
+msgstr ""
+"Requisición\n"
+"                                        acción"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:75
+msgid "Requisition approval date"
+msgstr "Fecha de aprobación de la solicitud"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:43
+msgid "Requisition Date"
+msgstr "Requisition Fecha"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:48
+msgid "Requisition Deadline"
+msgstr "Fecha límite de solicitud"
+
+#, fuzzy
+#: code:models/purchase_order.py:29
+#: code:models/stock_picking.py:29
+msgid "Requisition Order"
+msgstr "Orden de Requisición"
+
+#, fuzzy
+#: code:models/stock_picking.py:29
+msgid "Requisition order sequence"
+msgstr "Secuencia de orden de solicitud"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Requisition Orders"
+msgstr "Órdenes de solicitud"
+
+#, fuzzy
+#: code:models/requisition_order.py:30
+msgid "Requisition product."
+msgstr "Producto de requisición."
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:77
+msgid "Requisition rejected date"
+msgstr "Fecha de rechazo de solicitud"
+
+#, fuzzy
+#: code:models/requisition_order.py:35
+msgid "Requisition Type"
+msgstr "Tipo de solicitud"
+
+#: code:models/employee_purchase_requisition.py:38
+msgid "Responsible"
+msgstr "Responsable"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:50
+msgid "Select a company"
+msgstr "Seleccione una empresa"
+
+#, fuzzy
+#: code:models/hr_department.py:29
+msgid "Select a department location from the list of locations."
+msgstr "Seleccione la ubicación de un departamento de la lista de ubicaciones."
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:61
+msgid "Select a department manager"
+msgstr "Seleccione un gerente de departamento"
+
+#, fuzzy
+#: code:models/hr_employee.py:29
+msgid "Select a employee location from the location list"
+msgstr "Seleccione la ubicación de un empleado de la lista de ubicaciones"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:38
+msgid "Select a user who is responsible for requisition"
+msgstr "Seleccione un usuario responsable de la solicitud"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:171
+msgid "Select a vendor"
+msgstr "Seleccione un proveedor"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:35
+msgid "Select an department"
+msgstr "Seleccione un departamento"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:33
+msgid "Select an employee"
+msgstr "Seleccione un empleado"
+
+#, fuzzy
+#: code:models/purchase_order.py:29
+msgid "Set a requisition Order"
+msgstr "Establecer una orden de solicitud"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:79
+msgid "Source Location"
+msgstr "Ubicación de origen"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:79
+msgid "Source location of requisition."
+msgstr "Ubicación de origen de la solicitud."
+
+#: code:models/requisition_order.py:33
+msgid "State"
+msgstr "Estado"
+
+#, fuzzy
+#: model_terms:views/employee_purchase_requisition_views.xml
+msgid "Submit to Department Approval"
+msgstr "Enviar a la aprobación del departamento"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:85
+msgid "Type of delivery."
+msgstr "Tipo de entrega."
+
+#, fuzzy
+#: code:models/requisition_order.py:35
+msgid "Type of requisition"
+msgstr "Tipo de requisición"
+
+#, fuzzy
+#: code:models/requisition_order.py:46
+msgid "Unit of Measure"
+msgstr "Unidad de medida"
+
+#, fuzzy
+#: model_terms:report/employee_purchase_requisition_templates.xml
+msgid ""
+"Unit Of Measure\n"
+"                                    "
+msgstr "Unidad de medida"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:64
+msgid "User who approved the requisition."
+msgstr "Usuario que aprobó la solicitud."
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:56
+msgid "User who confirmed the requisition."
+msgstr "Usuario que confirmó la solicitud."
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:67
+msgid "User who rejected the requisition"
+msgstr "Usuario que rechazó la solicitud"
+
+#: code:models/requisition_order.py:48
+msgid "Vendor"
+msgstr "Proveedor"
+
+#, fuzzy
+#: code:models/requisition_order.py:48
+msgid "Vendor for the requisition"
+msgstr "Proveedor for the requisition"
+
+#, fuzzy
+#: code:models/employee_purchase_requisition.py:132
+msgid "You cannot delete this record as the purchase order is confirmed"
+msgstr "No puede eliminar este registro ya que la orden de compra está confirmada."

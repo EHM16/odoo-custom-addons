@@ -1,0 +1,139 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payroll_account_community
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: model_terms:views/hr_contract_views.xml
+#: model_terms:views/hr_salary_rule_views.xml
+msgid "Accounting"
+msgstr "Contabilidad"
+
+#: code:models/hr_payslip.py:43
+msgid "Accounting Entry"
+msgstr "Asiento contable"
+
+#, fuzzy
+#: code:models/hr_payslip.py:43
+msgid "Accounting entry associated with this record"
+msgstr "Cuentaing entry associated with this record"
+
+#: code:models/hr_payslip.py:145
+#: code:models/hr_payslip.py:164
+msgid "Adjustment Entry"
+msgstr "Asiento de ajuste"
+
+#: code:models/hr_salary_rule.py:31
+#: code:models/hr_version.py:29
+msgid "Analytic Account"
+msgstr "Cuenta analítica"
+
+#, fuzzy
+#: code:models/hr_salary_rule.py:31
+msgid "Analytic account associated with the record"
+msgstr "Cuenta analítica asociada al registro"
+
+#, fuzzy
+#: code:models/hr_payslip.py:179
+msgid "As you installed the payroll accounting module you have to choose Debit and Credit account for at least one salary rule in the chosen Salary Structure."
+msgstr "Al instalar el módulo de contabilidad de nómina, debe elegir una cuenta de Débito y Crédito para al menos una regla salarial en la Estructura Salarial elegida."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "Comprehensive solution for managing payroll and accounting processes in Odoo 19."
+msgstr "Solución integral para la gestión de procesos de nómina y contabilidad en Odoo 19."
+
+#: code:models/hr_salary_rule.py:42
+msgid "Credit Account"
+msgstr "Cuenta acreedora"
+
+#, fuzzy
+#: code:models/hr_salary_rule.py:42
+msgid "Credit account associated with the record"
+msgstr "Cuenta de crédito asociada al registro"
+
+#: code:models/hr_payslip.py:32
+msgid "Date Account"
+msgstr "Fecha de la Cuenta"
+
+#: code:models/hr_salary_rule.py:38
+msgid "Debit Account"
+msgstr "Cuenta deudora"
+
+#, fuzzy
+#: code:models/hr_salary_rule.py:38
+msgid "Debit account associated with the record"
+msgstr "Cuenta de débito asociada al registro"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid ""
+"Helps you to manage payroll and \n"
+"     accounting"
+msgstr ""
+"Le ayuda a gestionar la nómina y \n"
+"     contabilidad"
+
+#, fuzzy
+#: code:models/hr_payslip_run.py:33
+#: code:models/hr_version.py:32
+msgid "Journal associated with the record"
+msgstr "Diario asociado al registro"
+
+#: code:models/hr_payslip.py:32
+msgid "Keep empty to use the period of the validation(Payslip) date."
+msgstr "Deje en blanco para usar el período de la fecha de validación de la nómina"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Odoo19 Payroll Accounting"
+msgstr "Odoo19 Payroll Cuentaing"
+
+#: code:models/hr_payslip.py:93
+msgid "Payslip of %s"
+msgstr "Nómina de %s"
+
+#: code:models/hr_payslip.py:35
+#: code:models/hr_payslip_run.py:33
+#: code:models/hr_version.py:32
+msgid "Salary Journal"
+msgstr "Diario de salarios"
+
+#, fuzzy
+#: code:models/hr_version.py:29
+msgid "Select Analytic account"
+msgstr "Seleccione cuenta analítica"
+
+#, fuzzy
+#: code:models/hr_payslip.py:35
+msgid "Select Salary Journal"
+msgstr "Seleccionar Diario de Salarios"
+
+#: code:models/hr_salary_rule.py:35
+msgid "Tax"
+msgstr "Impuesto"
+
+#, fuzzy
+#: code:models/hr_salary_rule.py:35
+msgid "Tax account associated with the record"
+msgstr "Cuenta fiscal asociada al registro"
+
+#: code:models/hr_payslip.py:141
+msgid "The Expense Journal \"%s\" has not properly configured the Credit Account!"
+msgstr "¡La cuenta acreedora del diario de gastos \"%s\" no se ha configurado correctamente!"
+
+#: code:models/hr_payslip.py:160
+msgid "The Expense Journal \"%s\" has not properly configured the Debit Account!"
+msgstr "¡La cuenta deudora del diario de gastos \"%s\" no se ha configurado correctamente!"

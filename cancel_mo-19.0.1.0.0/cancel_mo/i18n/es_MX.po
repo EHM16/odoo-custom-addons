@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cancel_mo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model_terms:views/mrp_production_views.xml
+msgid "Are you sure you want to cancel?"
+msgstr "¿Estás seguro de que quieres cancelar?"
+
+#: model_terms:views/mrp_production_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#, fuzzy
+#: code:models/mrp_production.py:46
+#: code:models/res_config_settings.py:28
+msgid "Cancel Inventory Moves"
+msgstr "Cancelar movimientos de inventario"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+#: model_terms:views/res_config_settings_views.xml
+msgid "Cancel Manufacturing Order"
+msgstr "Cancelar orden de fabricación"
+
+#, fuzzy
+#: code:models/mrp_production.py:50
+#: code:models/res_config_settings.py:33
+msgid "Cancel WorkOrder"
+msgstr "Cancelar orden de trabajo"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "This is used to cancel the manufcatring order and also cancel the inventory moves and work orders along with the mo cancellation."
+msgstr "Esto se utiliza para cancelar la orden de fabricación y también cancelar los movimientos de inventario y las órdenes de trabajo junto con la cancelación del mes."
+
+#, fuzzy
+#: code:models/mrp_production.py:46
+#: code:models/res_config_settings.py:28
+msgid "Whether to cancel the inventory moves"
+msgstr "Si cancelar los movimientos de inventario"
+
+#, fuzzy
+#: code:models/mrp_production.py:50
+#: code:models/res_config_settings.py:33
+msgid "Whether to cancel the work order"
+msgstr "Si cancelar la orden de trabajo"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "You can cancell the manufcturing order"
+msgstr "Puedes cancelar la orden de fabricación."

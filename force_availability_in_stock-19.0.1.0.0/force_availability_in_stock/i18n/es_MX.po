@@ -1,0 +1,52 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* force_availability_in_stock
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model_terms:views/stock_picking_views.xml
+msgid "Force Availability"
+msgstr "Disponibilidad de fuerza"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Force Availability Button in Delivery"
+msgstr "Botón Forzar disponibilidad en entrega"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Make goods available forcefully in the time of delivery when there is an availability problem occurs."
+msgstr "Hacer que los bienes estén disponibles con fuerza en el momento de la entrega cuando se produzca un problema de disponibilidad."
+
+#, fuzzy
+#: code:models/stock_picking.py:34
+msgid "The Force Availability button will show based on this field."
+msgstr "El botón Forzar disponibilidad se mostrará según este campo."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This module will help you to make goods available \n"
+"    forcefully in the time of delivery and deliver goods to the customer \n"
+"    without any interruptions when there is an availability problem occurs.\n"
+"    Force availability button in delivery/stock picking.Can change done \n"
+"    quantities just by a button click."
+msgstr ""
+"Este módulo le ayudará a poner los productos a disposición \n"
+"    con fuerza en el momento de la entrega y entregar la mercancía al cliente \n"
+"    sin interrupciones cuando ocurre un problema de disponibilidad.\n"
+"    Forzar botón de disponibilidad en entrega/recogida de stock. Se puede realizar el cambio \n"
+"    cantidades con solo hacer clic en un botón."

@@ -1,0 +1,260 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_purchase_from_product
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: code:wizard/quick_purchase_order.py:46
+#: code:wizard/quick_sale_order.py:48
+msgid "Add orderlines"
+msgstr "Agregar líneas de pedido"
+
+#, fuzzy
+#: code:wizard/quick_sale_order.py:45
+msgid "Assigned salesperson"
+msgstr "Vendedor asignado"
+
+#, fuzzy
+#: code:wizard/quick_purchase_order.py:42
+msgid "Buyer"
+msgstr "Comprador"
+
+#: model_terms:wizard/quick_purchase_order_views.xml
+#: model_terms:wizard/quick_sale_order_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#, fuzzy
+#: code:wizard/quick_purchase_order.py:35
+#: code:wizard/quick_sale_order.py:35
+msgid "Choose between new order and existing"
+msgstr "Elija entre pedido nuevo y existente"
+
+#, fuzzy
+#: code:wizard/quick_purchase_order.py:42
+#: code:wizard/quick_sale_order.py:42
+msgid "Choose payment term for the order"
+msgstr "Elija el plazo de pago para el pedido"
+
+#, fuzzy
+#: code:wizard/quick_purchase_order.py:49
+msgid "Choose purchase orders to update"
+msgstr "Elija órdenes de compra para actualizar"
+
+#, fuzzy
+#: code:wizard/quick_sale_order.py:51
+msgid "Choose sale orders to update"
+msgstr "Elija pedidos de venta para actualizar"
+
+#, fuzzy
+#: code:wizard/quick_create_sale_line.py:37
+msgid "Choose taxes for the products"
+msgstr "Elige impuestos para los productos."
+
+#, fuzzy
+#: code:wizard/quick_purchase_order.py:39
+#: code:wizard/quick_sale_order.py:39
+msgid "Choose the customer"
+msgstr "Elige el cliente"
+
+#: model_terms:wizard/quick_purchase_order_views.xml
+#: model_terms:wizard/quick_sale_order_views.xml
+msgid "Create"
+msgstr "Crear"
+
+#, fuzzy
+#: model_terms:wizard/quick_purchase_order_views.xml
+#: model_terms:wizard/quick_sale_order_views.xml
+msgid "Create and View"
+msgstr "Crear y ver"
+
+#, fuzzy
+#: code:wizard/quick_create_sale_line.py:39
+msgid "Created sale order"
+msgstr "Orden de venta creada"
+
+#: code:wizard/quick_sale_order.py:39
+msgid "Customer"
+msgstr "Cliente"
+
+#, fuzzy
+#: model_terms:wizard/quick_purchase_order_views.xml
+#: model_terms:wizard/quick_sale_order_views.xml
+msgid "Do you want to Discard?"
+msgstr "¿Quieres descartar?"
+
+#, fuzzy
+#: code:wizard/quick_create_sale_line.py:39
+msgid "Order"
+msgstr "Orden"
+
+#, fuzzy
+#: code:wizard/quick_purchase_order.py:41
+#: code:wizard/quick_sale_order.py:41
+msgid "Order Date"
+msgstr "Order Fecha"
+
+#, fuzzy
+#: model_terms:wizard/quick_purchase_order_views.xml
+#: model_terms:wizard/quick_sale_order_views.xml
+msgid "Order Line"
+msgstr "Línea de pedido"
+
+#, fuzzy
+#: code:wizard/quick_sale_order.py:42
+msgid "Payment Terms"
+msgstr "Condiciones de pago"
+
+#: code:wizard/quick_create_sale_line.py:31
+#: code:wizard/quick_purchase_line.py:32
+msgid "Product"
+msgstr "Producto"
+
+#, fuzzy
+#: code:wizard/quick_create_sale_line.py:34
+msgid "Product Quantity"
+msgstr "Producto Cantidad"
+
+#, fuzzy
+#: code:wizard/quick_purchase_line.py:35
+msgid "Product quantity"
+msgstr "Producto quantity"
+
+#, fuzzy
+#: code:wizard/quick_create_sale_line.py:35
+#: code:wizard/quick_purchase_line.py:36
+msgid "Product unit price"
+msgstr "Producto unit price"
+
+#, fuzzy
+#: code:wizard/quick_create_sale_line.py:31
+msgid "Products"
+msgstr "Productos"
+
+#, fuzzy
+#: model_terms:wizard/quick_purchase_order_views.xml
+msgid "Purchase order created successfully"
+msgstr "Orden de compra creada exitosamente"
+
+#, fuzzy
+#: code:wizard/quick_purchase_order.py:49
+msgid "Purchase Orders"
+msgstr "Orden de compras"
+
+#, fuzzy
+#: model_terms:wizard/quick_purchase_order_views.xml
+msgid "Purchase orders updated successfully"
+msgstr "Órdenes de compra actualizadas exitosamente"
+
+#: code:wizard/quick_create_sale_line.py:34
+#: code:wizard/quick_purchase_line.py:35
+msgid "Quantity"
+msgstr "Cantidad"
+
+#, fuzzy
+#: model_terms:wizard/quick_purchase_order_views.xml
+#: model_terms:wizard/quick_sale_order_views.xml
+msgid "Quick Create"
+msgstr "Creación rápida"
+
+#, fuzzy
+#: model_terms:views/product_product_views.xml
+msgid "Quick Purchase Order"
+msgstr "Quick Orden de compra"
+
+#, fuzzy
+#: model_terms:views/product_product_views.xml
+msgid "Quick Sale Order"
+msgstr "Orden de venta rápida"
+
+#, fuzzy
+#: code:wizard/quick_purchase_order.py:46
+#: code:wizard/quick_sale_order.py:48
+msgid "Sale Order Line"
+msgstr "Línea de orden de venta"
+
+#, fuzzy
+#: code:wizard/quick_sale_order.py:51
+msgid "Sale Orders"
+msgstr "Órdenes de venta"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Sale/Purchase Orders from Product Variant Tree View"
+msgstr "Sale/Orden de compras from Producto Variant Tree View"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Sale/Purchase Orders from Products"
+msgstr "Sale/Orden de compras from Productos"
+
+#, fuzzy
+#: model_terms:wizard/quick_sale_order_views.xml
+msgid "Sales order created successfully"
+msgstr "Orden de venta creada exitosamente"
+
+#, fuzzy
+#: model_terms:wizard/quick_sale_order_views.xml
+msgid "Sales orders updated successfully"
+msgstr "Órdenes de venta actualizadas correctamente"
+
+#, fuzzy
+#: code:wizard/quick_sale_order.py:45
+msgid "Salesperson"
+msgstr "vendedor"
+
+#, fuzzy
+#: code:wizard/quick_purchase_order.py:41
+#: code:wizard/quick_sale_order.py:41
+msgid "Set order date"
+msgstr "Establecer fecha de pedido"
+
+#, fuzzy
+#: code:wizard/quick_purchase_line.py:38
+msgid "Tax for the products"
+msgstr "Impuesto para los productos."
+
+#, fuzzy
+#: code:wizard/quick_create_sale_line.py:37
+#: code:wizard/quick_purchase_line.py:38
+msgid "Taxes"
+msgstr "Taxes"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This module will help to create new sale/purchase orders\n"
+"    using the selected products and it will add the selected products to draft\n"
+"    orders."
+msgstr ""
+"Este módulo ayudará a crear nuevas órdenes de compra/venta.\n"
+"    utilizando los productos seleccionados y agregará los productos seleccionados al borrador\n"
+"    pedidos."
+
+#: code:wizard/quick_create_sale_line.py:35
+#: code:wizard/quick_purchase_line.py:36
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#, fuzzy
+#: model_terms:wizard/quick_purchase_order_views.xml
+#: model_terms:wizard/quick_sale_order_views.xml
+msgid "Update Order"
+msgstr "Orden de actualización"
+
+#: code:wizard/quick_purchase_order.py:39
+msgid "Vendor"
+msgstr "Proveedor"

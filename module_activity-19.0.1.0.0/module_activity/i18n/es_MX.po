@@ -1,0 +1,235 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* module_activity
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: code:models/module_activity.py:52
+msgid "History of installation of the module"
+msgstr "Historia de instalación del módulo."
+
+#, fuzzy
+#: code:models/module_activity.py:47
+msgid "History of uninstallation of the module"
+msgstr "Historial de desinstalación del módulo."
+
+#, fuzzy
+#: code:models/module_activity.py:56
+msgid "History of upgrade of the module"
+msgstr "Historial de actualización del módulo."
+
+#, fuzzy
+#: code:models/module_activity.py:66
+msgid "Installed"
+msgstr "Instalado"
+
+#, fuzzy
+#: code:models/module_activity.py:74
+msgid "Installed date"
+msgstr "Fecha de instalación"
+
+#, fuzzy
+#: code:models/module_activity.py:52
+#: model_terms:views/module_activity_views.xml
+msgid "Installed History"
+msgstr "Historial instalado"
+
+#, fuzzy
+#: code:models/module_activity.py:66
+msgid "Installed Module Identifier"
+msgstr "Identificador del módulo instalado"
+
+#, fuzzy
+#: code:models/module_activity.py:74
+msgid "Installed On"
+msgstr "Instalado en"
+
+#, fuzzy
+#: code:models/module_activity.py:76
+msgid "Inverse Install"
+msgstr "Instalación inversa"
+
+#, fuzzy
+#: code:models/module_activity.py:90
+msgid "Last Uninstalled On"
+msgstr "Última desinstalación el"
+
+#, fuzzy
+#: code:models/module_activity.py:34
+msgid "Module"
+msgstr "Módulo"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Module Activation Details"
+msgstr "Detalles de activación del módulo"
+
+#, fuzzy
+#: model_terms:views/module_activity_views.xml
+msgid "Module Activity"
+msgstr "Actividad del módulo"
+
+#, fuzzy
+#: code:models/module_activity.py:34
+msgid "Module identifier"
+msgstr "Identificador del módulo"
+
+#, fuzzy
+#: code:models/module_activity.py:31
+msgid "Module Name"
+msgstr "Module Nombre"
+
+#, fuzzy
+#: code:models/module_activity.py:31
+msgid "Name of the module"
+msgstr "Nombre of the module"
+
+#: code:models/module_activity.py:72
+msgid "Responsible"
+msgstr "Responsable"
+
+#, fuzzy
+#: code:models/module_activity.py:72
+#: code:models/module_activity.py:88
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#, fuzzy
+#: code:models/module_activity.py:105
+msgid "Responsible user"
+msgstr "Usuario responsable"
+
+#, fuzzy
+#: code:models/module_activity.py:88
+msgid "Responsible user for the uninstallation"
+msgstr "Usuario responsable de la desinstalación."
+
+#, fuzzy
+#: code:models/module_activity.py:105
+msgid "Responsible user to upgrade"
+msgstr "Usuario responsable para actualizar"
+
+#: code:models/module_activity.py:39
+msgid "Status"
+msgstr "Estado"
+
+#, fuzzy
+#: code:models/module_activity.py:39
+msgid "Status of the module"
+msgstr "Estado of the module"
+
+#, fuzzy
+#: code:models/module_activity.py:103
+#: code:models/module_activity.py:36
+#: code:models/module_activity.py:70
+#: code:models/module_activity.py:86
+msgid "Technical Name"
+msgstr "Technical Nombre"
+
+#, fuzzy
+#: code:models/module_activity.py:103
+#: code:models/module_activity.py:36
+#: code:models/module_activity.py:70
+#: code:models/module_activity.py:86
+msgid "Technical name of the module"
+msgstr "Nombre técnico del módulo"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This imodule is used to record the module activity of each\n"
+"    users, the activities like upgrade install and uninstall.While installing a\n"
+"    module record will be created to record the activity."
+msgstr ""
+"Este imodule se utiliza para registrar la actividad del módulo de cada\n"
+"    usuarios, las actividades como la instalación y desinstalación de actualizaciones. Al instalar un\n"
+"    Se creará un registro de módulo para registrar la actividad."
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid ""
+"This module helps to understand the history of activities \n"
+"    like upgrade install and uninstall"
+msgstr ""
+"Este módulo ayuda a comprender el historial de actividades. \n"
+"    como actualizar instalar y desinstalar"
+
+#, fuzzy
+#: code:models/module_activity.py:92
+msgid "Uninstalled"
+msgstr "Desinstalado"
+
+#, fuzzy
+#: code:models/module_activity.py:90
+msgid "Uninstalled date"
+msgstr "Fecha de desinstalación"
+
+#, fuzzy
+#: code:models/module_activity.py:47
+#: model_terms:views/module_activity_views.xml
+msgid "Uninstalled History"
+msgstr "Historial desinstalado"
+
+#, fuzzy
+#: code:models/module_activity.py:92
+msgid "Uninstalled inverse of module.activity"
+msgstr "Desinstalado inverso de module.activity"
+
+#, fuzzy
+#: code:models/module_activity.py:83
+msgid "Uninstalled module"
+msgstr "Módulo desinstalado"
+
+#, fuzzy
+#: code:models/module_activity.py:83
+msgid "Uninstalled module name"
+msgstr "Nombre del módulo desinstalado"
+
+#, fuzzy
+#: code:models/module_activity.py:108
+msgid "Upgrade"
+msgstr "Actualizar"
+
+#, fuzzy
+#: code:models/module_activity.py:107
+msgid "Upgrade date"
+msgstr "Fecha de actualización"
+
+#, fuzzy
+#: code:models/module_activity.py:56
+#: model_terms:views/module_activity_views.xml
+msgid "Upgrade History"
+msgstr "Historial de actualizaciones"
+
+#, fuzzy
+#: code:models/module_activity.py:108
+msgid "Upgrade inverse of module.activity"
+msgstr "Actualización inversa de module.activity"
+
+#, fuzzy
+#: code:models/module_activity.py:100
+msgid "Upgrade module identifier using name"
+msgstr "Actualizar el identificador del módulo usando el nombre"
+
+#, fuzzy
+#: code:models/module_activity.py:100
+msgid "Upgrade module name"
+msgstr "Nombre del módulo de actualización"
+
+#, fuzzy
+#: code:models/module_activity.py:107
+msgid "Upgrade On"
+msgstr "Actualizar en"

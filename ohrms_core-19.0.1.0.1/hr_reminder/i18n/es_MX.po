@@ -1,0 +1,168 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_reminder
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model_terms:static/src/xml/reminder_topbar.xml
+msgid ""
+"\n"
+"                            View\n"
+"                        "
+msgstr "Ver"
+
+#, fuzzy
+#: code:models/hr_reminder.py:37
+msgid "Choose the field"
+msgstr "Elige el campo"
+
+#, fuzzy
+#: code:models/hr_reminder.py:33
+msgid "Choose the model name"
+msgstr "Elige el nombre del modelo"
+
+#: code:models/hr_reminder.py:58
+msgid "Company"
+msgstr "Empresa"
+
+#: code:models/hr_reminder.py:54
+msgid "End Date"
+msgstr "Fecha final"
+
+#, fuzzy
+#: code:models/hr_reminder.py:54
+msgid "End date to not show the reminder"
+msgstr "Fecha de finalización para no mostrar el recordatorio"
+
+#, fuzzy
+#: code:models/hr_reminder.py:56
+msgid "Expiry date to expires out the reminder"
+msgstr "Fecha de vencimiento para que expire el recordatorio."
+
+#, fuzzy
+#: code:models/hr_reminder.py:37
+msgid "Field"
+msgstr "campo"
+
+#, fuzzy
+#: code:models/hr_reminder.py:58
+msgid "he company to which this reminder belongs."
+msgstr "La empresa a la que pertenece este recordatorio."
+
+#, fuzzy
+#: model_terms:views/hr_reminder_views.xml
+msgid "HR Reminder"
+msgstr "Recordatorio de recursos humanos"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "HR Reminder For OHRMS"
+msgstr "Recordatorio de recursos humanos para OHRMS"
+
+#, fuzzy
+#: code:models/hr_reminder.py:33
+msgid "Model"
+msgstr "modelo"
+
+#, fuzzy
+#: code:models/hr_reminder.py:47
+msgid "Number of days before the reminder should show"
+msgstr "Número de días antes de que se muestre el recordatorio"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Open HRMS Reminders Todo"
+msgstr "Abrir recordatorios de HRMS Todo"
+
+#, fuzzy
+#: model_terms:views/hr_reminder_views.xml
+msgid "Pop-Up Reminder"
+msgstr "Recordatorio emergente"
+
+#, fuzzy
+#: code:models/hr_reminder.py:47
+msgid "Reminder before"
+msgstr "Recordatorio antes"
+
+#, fuzzy
+#: code:models/hr_reminder.py:56
+msgid "Reminder Expiry Date"
+msgstr "Reminder Expiry Fecha"
+
+#, fuzzy
+#: model_terms:views/hr_reminder_views.xml
+msgid "Reminder Title..."
+msgstr "Título del recordatorio..."
+
+#, fuzzy
+#: model_terms:static/src/xml/reminder_topbar.xml
+msgid "Reminders"
+msgstr "Recordatorios"
+
+#, fuzzy
+#: code:models/hr_reminder.py:42
+msgid "Search By"
+msgstr "Buscar por"
+
+#, fuzzy
+#: code:models/hr_reminder.py:42
+msgid "Search by the given field"
+msgstr "Buscar por el campo dado"
+
+#, fuzzy
+#: code:models/hr_reminder.py:50
+msgid "Select Date"
+msgstr "Select Fecha"
+
+#, fuzzy
+#: model_terms:static/src/xml/reminder_topbar.xml
+msgid "Select Reminder"
+msgstr "Seleccionar recordatorio"
+
+#, fuzzy
+#: code:models/hr_reminder.py:50
+msgid "Select the reminder set date"
+msgstr "Seleccione la fecha establecida para el recordatorio"
+
+#: code:models/hr_reminder.py:52
+msgid "Start Date"
+msgstr "Fecha inicial"
+
+#, fuzzy
+#: code:models/hr_reminder.py:52
+msgid "Start date to show the reminder"
+msgstr "Fecha de inicio para mostrar el recordatorio"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This module is a powerful and easy-to-use tool that can \n"
+"    help you improve your HR processes and ensure that important events are \n"
+"    never forgotten."
+msgstr ""
+"Este módulo es una herramienta poderosa y fácil de usar que puede \n"
+"    ayudarle a mejorar sus procesos de recursos humanos y garantizar que los eventos importantes sean \n"
+"    Nunca olvidado."
+
+#, fuzzy
+#: code:models/hr_reminder.py:31
+msgid "Title"
+msgstr "Título"
+
+#, fuzzy
+#: code:models/hr_reminder.py:31
+msgid "Title of the reminder"
+msgstr "Título del recordatorio"

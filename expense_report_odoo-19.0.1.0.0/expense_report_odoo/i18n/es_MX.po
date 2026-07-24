@@ -1,0 +1,184 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* expense_report_odoo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid ""
+"\n"
+"                                                Approved\n"
+"                                            "
+msgstr "Aprobado"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid ""
+"\n"
+"                                                Done\n"
+"                                            "
+msgstr "hecho"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid ""
+"\n"
+"                                                Refused\n"
+"                                            "
+msgstr "Rechazado"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid ""
+"\n"
+"                                                Submitted\n"
+"                                            "
+msgstr "Enviado"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid ""
+"\n"
+"                                                To Report\n"
+"                                            "
+msgstr "Para informar"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid ""
+"\n"
+"                                                To Submit\n"
+"                                            "
+msgstr "Para enviar"
+
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Date"
+msgstr "Fecha"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Date from :"
+msgstr "Fecha from :"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Date to :"
+msgstr "Fecha to :"
+
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Description"
+msgstr "Descripción"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Employee Expense Report"
+msgstr "Empleado Expense Report"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Employee name"
+msgstr "Empleado name"
+
+#, fuzzy
+#: code:wizard/expense_report_filter.py:34
+msgid "Employee Name"
+msgstr "Empleado Nombre"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Employee Name:"
+msgstr "Empleado Nombre:"
+
+#: code:wizard/expense_report_filter.py:32
+msgid "End Date"
+msgstr "Fecha final"
+
+#, fuzzy
+#: code:wizard/expense_report_filter.py:91
+msgid "End date cannot be before start date"
+msgstr "La fecha de finalización no puede ser anterior a la fecha de inicio."
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+#: model_terms:wizard/expense_report_filter_views.xml
+msgid "Expense Report"
+msgstr "Informe de gastos"
+
+#, fuzzy
+#: model_terms:wizard/expense_report_filter_views.xml
+msgid "Generate Report"
+msgstr "Generar informe"
+
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Quantity"
+msgstr "Cantidad"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "SR.No"
+msgstr "SR.No"
+
+#: code:wizard/expense_report_filter.py:30
+msgid "Start Date"
+msgstr "Fecha inicial"
+
+#: code:wizard/expense_report_filter.py:40
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Status"
+msgstr "Estado"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "The administrator has the ability to view the expense reports of any employee they choose, while regular users can only access and view their own expense reports."
+msgstr "El administrador tiene la capacidad de ver los informes de gastos de cualquier empleado que elija, mientras que los usuarios habituales sólo pueden acceder y ver sus propios informes de gastos."
+
+#, fuzzy
+#: code:wizard/expense_report_filter.py:40
+msgid "The current status of the expense report"
+msgstr "El estado actual del informe de gastos."
+
+#, fuzzy
+#: code:wizard/expense_report_filter.py:34
+msgid "The employees associated with the expenses"
+msgstr "Los empleados asociados a los gastos."
+
+#, fuzzy
+#: code:wizard/expense_report_filter.py:32
+msgid "The end date for the expense period"
+msgstr "La fecha de finalización del período de gastos."
+
+#, fuzzy
+#: code:wizard/expense_report_filter.py:30
+msgid "The start date for the expense period"
+msgstr "La fecha de inicio del período de gastos."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "This apps helps Admin to print multiples employee expense reports with custom dates and the printthe report of the current status like to submit, submitted, approved, paid, refused, all, etc."
+msgstr "Esta aplicación ayuda al administrador a imprimir múltiples informes de gastos de empleados con fechas personalizadas y a imprimir el informe del estado actual, como enviar, enviar, aprobar, pagar, rechazar, todo, etc."
+
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Total"
+msgstr "Total"
+
+#, fuzzy
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Total Expense:"
+msgstr "Gasto Total:"
+
+#: model_terms:report/expense_report_filter_templates.xml
+msgid "Unit Price"
+msgstr "Precio unitario"

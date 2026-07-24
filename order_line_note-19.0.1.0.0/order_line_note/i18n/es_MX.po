@@ -1,0 +1,55 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* order_line_note
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: code:models/account_move_line.py:29
+#: code:models/stock_move.py:29
+msgid "A field to store additional notes or comments."
+msgstr "Un campo para almacenar notas o comentarios adicionales."
+
+#, fuzzy
+#: code:models/purchase_order_line.py:29
+#: code:models/sale_order_line.py:29
+msgid "Add note for product"
+msgstr "Agregar nota para el producto"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Add notes to sale and purchase order lines and display them in related documents."
+msgstr "Agregue notas a líneas de órdenes de compra y venta y muéstrelas en documentos relacionados."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "Add notes to sale and purchase order lines and display them in reports, transfers, and invoices."
+msgstr "Agregue notas a líneas de órdenes de compra y venta y muéstrelas en informes, transferencias y facturas."
+
+#, fuzzy
+#: code:models/account_move_line.py:29
+#: code:models/purchase_order_line.py:29
+#: code:models/sale_order_line.py:29
+#: code:models/stock_move.py:29
+#: model_terms:report/ir_actions_report_templates.xml
+#: model_terms:report/purchase_order_templates.xml
+#: model_terms:report/purchase_quotation_templates.xml
+msgid "Note"
+msgstr "Nota"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Order Line Notes"
+msgstr "Notas de línea de pedido"

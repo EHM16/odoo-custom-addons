@@ -1,0 +1,72 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* customer_group_pricelist
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: code:models/customer_group.py:31
+msgid "Add contacts to the customer group"
+msgstr "Agregar contactos al grupo de clientes"
+
+#, fuzzy
+#: code:models/customer_group.py:33
+msgid "Add Pricelist for apply on the customer group"
+msgstr "Agregar lista de precios para aplicar en el grupo de clientes"
+
+#, fuzzy
+#: model_terms:views/customer_group_views.xml
+msgid "Contact group"
+msgstr "grupo de contacto"
+
+#, fuzzy
+#: code:models/customer_group.py:31
+msgid "Contacts"
+msgstr "Contactos"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Customer Group PriceList"
+msgstr "Cliente Group PriceList"
+
+#: code:models/customer_group.py:30
+msgid "Name"
+msgstr "Nombre"
+
+#, fuzzy
+#: code:models/customer_group.py:30
+msgid "Name of the Pricelist"
+msgstr "Nombre of the Pricelist"
+
+#, fuzzy
+#: code:models/customer_group.py:33
+msgid "PriceList"
+msgstr "Lista de precios"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Pricelist will be set automatically based on the customer group"
+msgstr "La lista de precios se establecerá automáticamente según el grupo de clientes."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This app allows to set the pricelist automatically based \n"
+"                    on the respective customer in the sale order. The pricelist \n"
+"                    is selecting based on the customer group."
+msgstr ""
+"Esta aplicación permite configurar la lista de precios automáticamente en función \n"
+"                    en el cliente respectivo en la orden de venta. la lista de precios \n"
+"                    está seleccionando en función del grupo de clientes."

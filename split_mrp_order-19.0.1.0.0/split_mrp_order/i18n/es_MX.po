@@ -1,0 +1,151 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* split_mrp_order
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: code:wizard/split_order.py:44
+msgid "Can split mrp manually"
+msgstr "Puede dividir mrp manualmente"
+
+#: model_terms:wizard/split_order_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#, fuzzy
+#: code:wizard/split_order.py:112
+#: code:wizard/split_order.py:215
+#: code:wizard/split_order.py:67
+msgid "Choose Valid Quantity"
+msgstr "Choose Valid Cantidad"
+
+#, fuzzy
+#: code:wizard/split_order.py:245
+msgid "Enter the correct value"
+msgstr "Introduzca el valor correcto"
+
+#, fuzzy
+#: code:wizard/split_order.py:49
+msgid "For visible work center on wizard"
+msgstr "Para centro de trabajo visible en el asistente"
+
+#, fuzzy
+#: code:models/mrp_production.py:32
+msgid "Here, splitting is not possible. Enter enough quantity."
+msgstr "Aquí la división no es posible. Introduzca cantidad suficiente."
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Manufacturing Orders Splitting"
+msgstr "División de órdenes de fabricación"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Manufacturing Orders Splitting by different methods"
+msgstr "Órdenes de fabricación divididas por diferentes métodos"
+
+#, fuzzy
+#: code:wizard/split_order.py:42
+msgid "Manufacturing production order"
+msgstr "orden de producción de fabricación"
+
+#, fuzzy
+#: code:wizard/split_order.py:38
+msgid "No of Quantity"
+msgstr "No of Cantidad"
+
+#, fuzzy
+#: code:wizard/split_order.py:40
+msgid "No of Split"
+msgstr "No de división"
+
+#, fuzzy
+#: code:wizard/split_order.py:38
+msgid "Number of quantity splitting"
+msgstr "Número de división de cantidad"
+
+#, fuzzy
+#: code:wizard/split_order.py:40
+msgid "Number of splits quantity"
+msgstr "Número de divisiones cantidad"
+
+#, fuzzy
+#: code:wizard/split_order.py:42
+msgid "Order"
+msgstr "Orden"
+
+#, fuzzy
+#: model_terms:wizard/split_order_views.xml
+msgid "split"
+msgstr "dividir"
+
+#, fuzzy
+#: model_terms:wizard/split_order_views.xml
+msgid "Split"
+msgstr "dividir"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"Split manufacturing order from one order to another manufacturing order\n"
+"    on Odoo system. This module also helps to split order with the number\n"
+"    of qty & number of split manufacturing orders and split manually\n"
+"    by numbers."
+msgstr ""
+"Dividir orden de fabricación de una orden a otra orden de fabricación\n"
+"    en el sistema Odoo. Este módulo también ayuda a dividir el pedido con el número.\n"
+"    de cantidad y número de órdenes de fabricación divididas y divididas manualmente\n"
+"    por números."
+
+#, fuzzy
+#: model_terms:views/mrp_production_views.xml
+msgid "Split MO"
+msgstr "MO dividido"
+
+#, fuzzy
+#: code:wizard/split_order.py:33
+msgid "Splitting Method"
+msgstr "Método de división"
+
+#, fuzzy
+#: code:wizard/split_order.py:44
+msgid "Splitting Quantities"
+msgstr "Dividir cantidades"
+
+#, fuzzy
+#: code:wizard/split_order.py:204
+msgid "The total of split must be equal to the order quantity"
+msgstr "El total de la división debe ser igual a la cantidad del pedido."
+
+#, fuzzy
+#: code:wizard/split_order.py:33
+msgid "To select splitting method"
+msgstr "Para seleccionar el método de división"
+
+#, fuzzy
+#: code:wizard/split_order.py:46
+msgid "Work Center"
+msgstr "Centro de Trabajo"
+
+#, fuzzy
+#: code:wizard/split_order.py:46
+msgid "work center"
+msgstr "centro de trabajo"
+
+#, fuzzy
+#: code:wizard/split_order.py:49
+msgid "Works"
+msgstr "obras"

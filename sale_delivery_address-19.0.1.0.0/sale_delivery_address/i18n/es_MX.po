@@ -1,0 +1,55 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_delivery_address
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+" If the customer have multiple addresses, the user can \n"
+"     choose delivery addresses for each order lines. Then separate pickings \n"
+"     and delivery will be created for each of the addresses. "
+msgstr ""
+"Si el cliente tiene varias direcciones, el usuario puede \n"
+"     Elija direcciones de entrega para cada línea de pedido. Luego separe las selecciones \n"
+"     y se creará la entrega para cada una de las direcciones."
+
+#, fuzzy
+#: code:models/sale_order_line.py:34
+msgid "Address Readonly"
+msgstr "Dirección de solo lectura"
+
+#, fuzzy
+#: code:models/sale_order_line.py:30
+#: model_terms:views/sale_order_templates.xml
+msgid "Delivery Address"
+msgstr "Dirección de entrega"
+
+#, fuzzy
+#: code:models/sale_order_line.py:34
+msgid "Helps find address is readonly or not"
+msgstr "Ayuda a encontrar que la dirección sea de solo lectura o no"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Multiple Delivery Addresses for Sale Order"
+msgstr "Varias direcciones de entrega para pedidos de venta"
+
+#, fuzzy
+#: code:models/sale_order_line.py:30
+msgid "You can select from the delivery addresses of the same customer"
+msgstr "Puedes seleccionar entre las direcciones de entrega de un mismo cliente"

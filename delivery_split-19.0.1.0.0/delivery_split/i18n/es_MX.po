@@ -1,0 +1,64 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* delivery_split
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+" In Odoo,currently delivery will be created to the customer\n"
+"     of sale order. Using Delivery Split,we can split the delivery to\n"
+"     different recipients added in each sale order line."
+msgstr ""
+"En Odoo, actualmente se creará la entrega al cliente.\n"
+"     de orden de venta. Usando Delivery Split, podemos dividir la entrega en\n"
+"     Se agregan diferentes destinatarios en cada línea de orden de venta."
+
+#, fuzzy
+#: code:models/sale_order_line.py:29
+msgid "Choose a recipient for splitting delivery"
+msgstr "Elija un destinatario para dividir la entrega"
+
+#, fuzzy
+#: code:models/sale_order.py:34
+msgid "Consolidate Orders"
+msgstr "Consolidar pedidos"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Delivery can be split to different recipients"
+msgstr "La entrega se puede dividir entre diferentes destinatarios."
+
+#, fuzzy
+#: code:models/sale_order.py:30
+#: model:ir.module.module,name:__manifest__.py
+msgid "Delivery Split"
+msgstr "Entrega dividida"
+
+#, fuzzy
+#: code:models/sale_order.py:30
+msgid "Enable the option to add recipients to each sale order line to split delivery"
+msgstr "Habilite la opción para agregar destinatarios a cada línea de orden de venta para dividir la entrega"
+
+#, fuzzy
+#: code:models/sale_order.py:34
+msgid "Enable the option to consolidate orders if choose same recipients in split delivery"
+msgstr "Habilite la opción para consolidar pedidos si elige los mismos destinatarios en entrega dividida"
+
+#, fuzzy
+#: code:models/sale_order_line.py:29
+msgid "Recipient"
+msgstr "Destinatario"

@@ -1,0 +1,229 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_to_invoice
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:37
+msgid "Account Move"
+msgstr "Cuenta Move"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Add Multiple Products To Invoice/Bill"
+msgstr "Add Multiple Productos To Invoice/Bill"
+
+#, fuzzy
+#: code:models/product_product.py:40
+#: model_terms:wizard/invoice_product_details_views.xml
+msgid "Add to Invoice"
+msgstr "Añadir a factura"
+
+#, fuzzy
+#: model_terms:views/product_product_views.xml
+msgid "Add to Invoice/Bill"
+msgstr "Agregar a factura/factura"
+
+#: model_terms:wizard/invoice_product_details_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#, fuzzy
+#: model_terms:wizard/invoice_product_details_views.xml
+msgid "Close"
+msgstr "Cerrar"
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:40
+msgid "Customer/Vendor"
+msgstr "Cliente/Proveedor"
+
+#: code:wizard/product_invoice_history.py:34
+msgid "Date"
+msgstr "Fecha"
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:48
+msgid "Default date from which a record is created."
+msgstr "Fecha predeterminada a partir de la cual se crea un registro."
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Easily add multiple products to a invoice/bill directly from the product views"
+msgstr "Agregue fácilmente varios productos a una factura/factura directamente desde las vistas de productos"
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:35
+msgid "Enter the quantity of the selected product."
+msgstr "Ingrese la cantidad del producto seleccionado."
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:41
+msgid "Enter the unit price of the product."
+msgstr "Introduzca el precio unitario del producto."
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:101
+msgid "Failed to create invoice line."
+msgstr "No se pudo crear la línea de factura."
+
+#, fuzzy
+#: model_terms:wizard/invoice_product_details_views.xml
+msgid "History"
+msgstr "Historia"
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:43
+msgid "History of invoices related to this product."
+msgstr "Historial de facturas relacionadas con este producto."
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:43
+msgid "Invoice History"
+msgstr "Historial de facturas"
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:35
+msgid "Invoice/Bill"
+msgstr "Factura/factura"
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:38
+msgid "Invoice/Bill No"
+msgstr "Número de factura/factura"
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:51
+msgid "Limit"
+msgstr "Límite"
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:37
+msgid "Link to the corresponding account move."
+msgstr "Enlace al movimiento de cuenta correspondiente."
+
+#: code:wizard/invoice_product_details.py:32
+msgid "Product"
+msgstr "Producto"
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:30
+#: model_terms:wizard/invoice_product_details_views.xml
+msgid "Product Details"
+msgstr "Producto Details"
+
+#: code:wizard/invoice_product_details.py:35
+#: code:wizard/product_invoice_history.py:47
+msgid "Quantity"
+msgstr "Cantidad"
+
+#, fuzzy
+#: model_terms:wizard/invoice_product_details_views.xml
+msgid "Recent Invoice/Bill History"
+msgstr "Historial reciente de facturas/facturas"
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:32
+msgid "Select the product for this record."
+msgstr "Seleccione el producto para este registro."
+
+#, fuzzy
+#: code:wizard/invoice_product_details.py:51
+msgid "Set the limit for product"
+msgstr "Establecer el límite para el producto"
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:35
+msgid "The associated account move for the invoice"
+msgstr "El movimiento de cuenta asociado para la factura."
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:30
+msgid "The associated product details for the invoice"
+msgstr "Los detalles del producto asociado para la factura."
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:40
+msgid "The customer or vendor associated with the invoice"
+msgstr "El cliente o proveedor asociado con la factura."
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:34
+msgid "The date of the invoice"
+msgstr "La fecha de la factura."
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:38
+msgid "The number of the invoice/bill"
+msgstr "El número de la factura/factura"
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:47
+msgid "The quantity of the product or service"
+msgstr "La cantidad del producto o servicio."
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:45
+msgid "The total amount for the invoice"
+msgstr "El importe total de la factura."
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:49
+msgid "The type of the invoice (customer invoice or vendor bill)"
+msgstr "El tipo de factura (factura de cliente o factura de proveedor)"
+
+#, fuzzy
+#: code:wizard/product_invoice_history.py:43
+msgid "The unit price of the product or service"
+msgstr "El precio unitario del producto o servicio."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This module allow you to add multiple products to the\n"
+"     corresponding invoice/bill. You can see all products in kanban, list and\n"
+"     form view.You can also view the recent invoice/bill  history of the\n"
+"     selected product along with the option to update the quantity,\n"
+"     Change price, Add Multiple Products"
+msgstr ""
+"This module allow you to add multiple products to the\n"
+"     corresponding invoice/bill. You can see all products in kanban, list and\n"
+"     form view.You can also view the recent invoice/bill  history of the\n"
+"     selected product along with the option to update the quantity,\n"
+"     Change price, Add Multiple Productos"
+
+#: code:wizard/product_invoice_history.py:45
+msgid "Total"
+msgstr "Total"
+
+#: code:wizard/product_invoice_history.py:49
+msgid "Type"
+msgstr "Tipo"
+
+#: code:wizard/invoice_product_details.py:41
+#: code:wizard/product_invoice_history.py:43
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#, fuzzy
+#: model_terms:views/product_product_views.xml
+msgid "Update Quantity"
+msgstr "Update Cantidad"
+
+#, fuzzy
+#: code:models/product_product.py:40
+msgid "Whether to show the \"Add to Invoice\" button in the tree view."
+msgstr "Si se debe mostrar el botón \"Agregar a factura\" en la vista de árbol."

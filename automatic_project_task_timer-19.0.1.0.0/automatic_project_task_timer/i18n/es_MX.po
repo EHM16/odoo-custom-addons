@@ -1,0 +1,155 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* automatic_project_task_timer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#, fuzzy
+#: code:models/project_task.py:30
+msgid "Activated when task configured stage"
+msgstr "Se activa cuando la tarea está configurada en la etapa"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Automatic Project Task Timer"
+msgstr "Automatic Proyecto Tarea Timer"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "Automatic Running Timer for Project Tasks"
+msgstr "Automatic Running Timer for Proyecto Tareas"
+
+#, fuzzy
+#: model_terms:views/timer_configuration_views.xml
+msgid "Configuration"
+msgstr "Configuración"
+
+#, fuzzy
+#: code:models/timer_configuration.py:32
+msgid "Configure the project to activate the timer"
+msgstr "Configurar el proyecto para activar el temporizador"
+
+#, fuzzy
+#: code:models/res_config_settings.py:30
+msgid "Enable to activate the timer"
+msgstr "Habilitar para activar el temporizador."
+
+#: code:models/account_analytic_line.py:32
+msgid "End Date"
+msgstr "Fecha final"
+
+#, fuzzy
+#: code:models/project_task.py:32
+msgid "Is Current User Working"
+msgstr "¿Está trabajando el usuario actual?"
+
+#: code:models/timer_configuration.py:32
+msgid "Project"
+msgstr "Proyecto"
+
+#, fuzzy
+#: code:models/project_task.py:36
+msgid "Real Duration"
+msgstr "Duración real"
+
+#, fuzzy
+#: code:models/timer_configuration.py:38
+msgid "Set the stage to activate the timer"
+msgstr "Prepara el escenario para activar el cronómetro"
+
+#, fuzzy
+#: code:models/project_task.py:36
+msgid "Shows the duration"
+msgstr "Muestra la duración"
+
+#, fuzzy
+#: code:models/account_analytic_line.py:32
+msgid "Shows the ending time of the timer"
+msgstr "Muestra la hora de finalización del temporizador."
+
+#, fuzzy
+#: code:models/account_analytic_line.py:36
+msgid "Shows the real time"
+msgstr "Muestra el tiempo real"
+
+#, fuzzy
+#: code:models/account_analytic_line.py:29
+msgid "Shows the starting time of the timer"
+msgstr "Muestra la hora de inicio del temporizador."
+
+#, fuzzy
+#: code:models/project_task.py:41
+#: code:models/timer_configuration.py:38
+msgid "Stage"
+msgstr "etapa"
+
+#, fuzzy
+#: code:models/project_task.py:38
+msgid "Stage Status"
+msgstr "Stage Estado"
+
+#, fuzzy
+#: code:models/timer_configuration.py:35
+msgid "Stages"
+msgstr "Etapas"
+
+#: code:models/account_analytic_line.py:29
+msgid "Start Date"
+msgstr "Fecha inicial"
+
+#, fuzzy
+#: code:models/res_config_settings.py:30
+msgid "Task Timer"
+msgstr "Tarea Timer"
+
+#, fuzzy
+#: code:models/project_task.py:32
+msgid "Technical field indicating whether the current user is working."
+msgstr "Campo técnico que indica si el usuario actual está trabajando."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "This module helps you to track time sheet in project using a real timer, it's starts when task is in configured stage and stops when its moves to any other stage and the timesheet will be recorded."
+msgstr "Este módulo le ayuda a realizar un seguimiento de la hoja de horas en el proyecto utilizando un temporizador real, comienza cuando la tarea está en la etapa configurada y se detiene cuando pasa a cualquier otra etapa y se registrará la hoja de horas."
+
+#, fuzzy
+#: code:models/account_analytic_line.py:36
+msgid "Time Duration(Minutes)"
+msgstr "Duración del tiempo (minutos)"
+
+#, fuzzy
+#: code:models/project_task.py:30
+msgid "Timer"
+msgstr "Temporizador"
+
+#, fuzzy
+#: model_terms:views/res_config_settings_views.xml
+msgid "Timer will automatically activate for tasks in progress stage"
+msgstr "El temporizador se activará automáticamente para las tareas en etapa de progreso."
+
+#, fuzzy
+#: code:models/project_task.py:41
+msgid "To check the stage whether it is configured or not"
+msgstr "Para comprobar si el escenario está configurado o no"
+
+#, fuzzy
+#: code:models/timer_configuration.py:35
+msgid "To set the domain for stages"
+msgstr "Para configurar el dominio para las etapas"
+
+#, fuzzy
+#: code:models/project_task.py:38
+msgid "To set the status of task at the initial time."
+msgstr "Para establecer el estado de la tarea en el momento inicial."

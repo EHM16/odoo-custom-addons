@@ -1,0 +1,96 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* create_expense_from_task_odoo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: model_terms:wizards/expense_amount_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#, fuzzy
+#: model_terms:views/project_task_views.xml
+msgid "Create Expense"
+msgstr "Crear gasto"
+
+#, fuzzy
+#: model:ir.module.module,name:__manifest__.py
+msgid "Create Expense From Task"
+msgstr "Create Expense From Tarea"
+
+#, fuzzy
+#: code:wizards/expense_amount.py:36
+msgid "Employee Name"
+msgstr "Empleado Nombre"
+
+#, fuzzy
+#: model_terms:views/project_task_views.xml
+msgid "Expense"
+msgstr "Gasto"
+
+#, fuzzy
+#: model_terms:wizards/expense_amount_views.xml
+msgid "Expense Report"
+msgstr "Informe de gastos"
+
+#, fuzzy
+#: model_terms:wizards/expense_amount_views.xml
+msgid "Generate Expense"
+msgstr "Generar Gasto"
+
+#, fuzzy
+#: code:wizards/expense_amount.py:33
+msgid "Service Name"
+msgstr "Service Nombre"
+
+#, fuzzy
+#: code:wizards/expense_amount.py:36
+msgid "The employees associated with this record."
+msgstr "Los empleados asociados con este registro."
+
+#, fuzzy
+#: code:wizards/expense_amount.py:33
+msgid "The product associated with the record"
+msgstr "El producto asociado al registro."
+
+#, fuzzy
+#: code:models/hr_expense.py:33
+msgid "The project associated with this record."
+msgstr "El proyecto asociado a este registro."
+
+#, fuzzy
+#: code:models/hr_expense.py:35
+msgid "The task associated with this record."
+msgstr "La tarea asociada con este registro."
+
+#, fuzzy
+#: code:wizards/expense_amount.py:40
+msgid "The total amount for this record."
+msgstr "El importe total de este registro."
+
+#, fuzzy
+#: model:ir.module.module,description:__manifest__.py
+msgid "This apps helps User to create multiple expense from project task and split the amount between assigns"
+msgstr "Esta aplicación ayuda al usuario a crear múltiples gastos a partir de la tarea del proyecto y dividir el monto entre las asignaciones."
+
+#, fuzzy
+#: code:wizards/expense_amount.py:40
+msgid "Total Amount"
+msgstr "Total Importe"
+
+#, fuzzy
+#: model:ir.module.module,summary:__manifest__.py
+msgid "User can create Expense from Task"
+msgstr "User can create Expense from Tarea"

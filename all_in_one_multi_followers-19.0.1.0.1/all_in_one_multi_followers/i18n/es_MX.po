@@ -1,0 +1,208 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* all_in_one_multi_followers
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields.selection,name:all_in_one_multi_followers.selection__follower_adding_removing__type__add
+msgid "Add Followers"
+msgstr "Agregar seguidores"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__action_name
+msgid "Action Name"
+msgstr "Nombre de la acción"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__type
+msgid "Action Type"
+msgstr "Tipo de acción"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__applied_to_ids
+msgid "Applied To"
+msgstr "Aplicada a"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields.selection,name:all_in_one_multi_followers.selection__multi_follower__states__cancel
+#: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.follower_adding_removing_view_form
+msgid "Cancelled"
+msgstr "Cancelada"
+
+#. module: all_in_one_multi_followers
+#: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.follower_adding_removing_view_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: all_in_one_multi_followers
+#: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.multi_follower_action
+msgid "Click to add the followers dynamic action"
+msgstr "Haga clic para agregar la acción dinámica de seguidores"
+
+#. module: all_in_one_multi_followers
+#: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.res_config_settings_view_form
+msgid "Create a Dynamic Action"
+msgstr "Crear una acción dinámica"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__enabled_value
+#: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.multi_follower_view_form
+msgid "Create Action"
+msgstr "Crear acción"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__created_action_names
+msgid "Created Action Names"
+msgstr "Nombres de las acciones creadas"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields.selection,name:all_in_one_multi_followers.selection__multi_follower__states__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: all_in_one_multi_followers
+#: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.res_config_settings_view_form
+msgid "Dynamic Followers"
+msgstr "Seguidores dinámicos"
+
+#. module: all_in_one_multi_followers
+#. odoo-python
+#: code:addons/all_in_one_multi_followers/wizard/follower_adding_removing.py:0
+msgid "Hello,"
+msgstr "Hola:"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__message
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: all_in_one_multi_followers
+#: model:ir.actions.act_window,name:all_in_one_multi_followers.multi_follower_action
+#: model:ir.model,name:all_in_one_multi_followers.model_multi_follower
+msgid "Multi Follower"
+msgstr "Seguidores múltiples"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__partner_ids
+msgid "Partners"
+msgstr "Contactos"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__res_id
+msgid "Related Document ID"
+msgstr "ID del documento relacionado"
+
+#. module: all_in_one_multi_followers
+#: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.multi_follower_view_form
+msgid "Remove Action"
+msgstr "Eliminar acción"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields.selection,name:all_in_one_multi_followers.selection__follower_adding_removing__type__remove
+msgid "Remove Followers"
+msgstr "Eliminar seguidores"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields.selection,name:all_in_one_multi_followers.selection__multi_follower__states__running
+msgid "Running"
+msgstr "En ejecución"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__send_mail
+msgid "Send Email"
+msgstr "Enviar correo electrónico"
+
+#. module: all_in_one_multi_followers
+#: model:ir.actions.act_window,name:all_in_one_multi_followers.res_config_settings_action
+msgid "Settings"
+msgstr "Ajustes"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__states
+msgid "State"
+msgstr "Estado"
+
+#. module: all_in_one_multi_followers
+#: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.follower_adding_removing_view_form
+msgid "Submit"
+msgstr "Enviar"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model,name:all_in_one_multi_followers.model_follower_adding_removing
+msgid "Follower Adding Removing"
+msgstr "Agregar y eliminar seguidores"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,help:all_in_one_multi_followers.field_multi_follower__action_name
+msgid "This is the  action name. So this name is visible under the the appropriate model action."
+msgstr "Este es el nombre de la acción. Este nombre se muestra en la acción correspondiente del modelo."
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,help:all_in_one_multi_followers.field_multi_follower__applied_to_ids
+msgid "Select the model in which you want to apply this action."
+msgstr "Seleccione el modelo en el que desea aplicar esta acción."
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,help:all_in_one_multi_followers.field_multi_follower__enabled_value
+msgid "Enabling and hiding the create action button."
+msgstr "Habilita y oculta el botón para crear la acción."
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,help:all_in_one_multi_followers.field_multi_follower__created_action_names
+msgid "If the name is visible to the line its created the action. If its not its deleted the action."
+msgstr "Si el nombre aparece en la línea, la acción está creada; si no aparece, la acción está eliminada."
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,help:all_in_one_multi_followers.field_multi_follower__states
+msgid "State of the action"
+msgstr "Estado de la acción"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,help:all_in_one_multi_followers.field_follower_adding_removing__res_id
+msgid "Id of the followed resource"
+msgstr "ID del recurso seguido"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,help:all_in_one_multi_followers.field_follower_adding_removing__type
+msgid "Select the action type"
+msgstr "Seleccione el tipo de acción"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,help:all_in_one_multi_followers.field_follower_adding_removing__partner_ids
+msgid "Select the partners to add or remove to the followers"
+msgstr "Seleccione los contactos que desea agregar o eliminar de los seguidores"
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,help:all_in_one_multi_followers.field_follower_adding_removing__send_mail
+msgid "If checked, the partners will receive an email warning they have been added in the document's followers."
+msgstr "Si se selecciona, los contactos recibirán un correo electrónico que les informará que fueron agregados como seguidores del documento."
+
+#. module: all_in_one_multi_followers
+#: model:ir.model.fields,help:all_in_one_multi_followers.field_follower_adding_removing__message
+msgid "Invite/ Remove mailing message."
+msgstr "Mensaje de correo para invitar o eliminar."
+
+#. module: all_in_one_multi_followers
+#. odoo-python
+#: code:addons/all_in_one_multi_followers/wizard/follower_adding_removing.py:0
+#, python-format
+msgid "The Document follow %(document_model)s: %(document_name)s"
+msgstr "Seguimiento del documento %(document_model)s: %(document_name)s"
+
+#. module: all_in_one_multi_followers
+#: model:ir.module.module,name:all_in_one_multi_followers.module_all_in_one_multi_followers
+msgid "All in One Multi Followers"
+msgstr "Gestión integral de seguidores múltiples"

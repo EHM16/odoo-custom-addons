@@ -18,19 +18,19 @@ msgstr ""
 
 #: model_terms:views/stock_picking_views.xml
 msgid "Force Availability"
-msgstr "Disponibilidad de fuerza"
+msgstr "Forzar disponibilidad"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Force Availability Button in Delivery"
-msgstr "Botón Forzar disponibilidad en entrega"
+msgstr "Botón forzar disponibilidad en entrega"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Make goods available forcefully in the time of delivery when there is an availability problem occurs."
-msgstr "Hacer que los bienes estén disponibles con fuerza en el momento de la entrega cuando se produzca un problema de disponibilidad."
+msgstr "Hacer que los bienes estén disponibles a la fuerza en el momento de la entrega cuando se produzca un problema de disponibilidad."
 
 #: code:models/stock_picking.py:34
 msgid "The Force Availability button will show based on this field."
-msgstr "El botón Forzar disponibilidad se mostrará según este campo."
+msgstr "El botón forzar disponibilidad se mostrará según este campo."
 
 #: model:ir.module.module,description:__manifest__.py
 msgid ""

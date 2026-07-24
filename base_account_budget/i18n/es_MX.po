@@ -25,7 +25,10 @@ msgid ""
 "    each Budget in order to ensure the total planned is not greater/lower \n"
 "    than what he planned for this Budget. Each list of record can also be \n"
 "    switched to a graphical view of it, odoo17, accounting, odoo17 accounting, odoo17 budget, odoo17"
-msgstr "Este módulo permite a los contadores gestionar presupuestos analíticos. Una vez definidos los presupuestos (Contabilidad > Presupuestos), los responsables de proyecto pueden establecer el importe planificado para cada cuenta analítica. El contador puede consultar el importe total planificado de cada presupuesto para verificar que se mantenga dentro de lo previsto. Además, cada listado puede visualizarse en forma gráfica."
+msgstr "Este módulo permite a los contadores gestionar presupuestos analíticos. Una vez definidos los presupuestos (Contabilidad > Presupuestos), \n"
+"    los responsables de proyecto pueden establecer el importe planificado para cada cuenta analítica. \n"
+"    El contador puede consultar el importe total planificado de cada presupuesto para verificar que se mantenga dentro de lo previsto. \n"
+"    Además, cada listado puede visualizarse en forma gráfica."
 
 #: model_terms:views/account_budget_views.xml
 msgid "Accounts"

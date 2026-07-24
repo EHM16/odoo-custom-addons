@@ -252,7 +252,7 @@ msgstr "Gestión de eventos"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Event Management and Catering"
-msgstr "Gestión de Eventos y Catering"
+msgstr "Gestión de eventos y banquetes"
 
 #: model_terms:views/event_management_views.xml
 msgid "Event Orders"

@@ -150,7 +150,7 @@ msgstr "Periodo de aviso del empleado en días."
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Resignation"
-msgstr "Renuncia abierta de HRMS"
+msgstr "Renuncias de Open HRMS"
 
 #: code:models/hr_resignation.py:40
 msgid "Order Reference"

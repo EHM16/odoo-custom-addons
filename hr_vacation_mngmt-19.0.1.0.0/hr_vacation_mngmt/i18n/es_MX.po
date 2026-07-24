@@ -224,7 +224,7 @@ msgstr "Solo un responsable o gerente de recursos humanos puede reservar boletos
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Vacation Management"
-msgstr "Abrir Gestión de Vacaciones HRMS"
+msgstr "Gestión de vacaciones de Open HRMS"
 
 #: code:models/hr_leave.py:37
 #: model_terms:views/hr_leave_views.xml

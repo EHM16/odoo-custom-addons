@@ -95,7 +95,7 @@ msgstr "Empleado anterior"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Branch Transfer"
-msgstr "Transferencia de sucursal abierta de HRMS"
+msgstr "Transferencia entre sucursales de Open HRMS"
 
 #: code:models/employee_transfer.py:88
 msgid "Please select a company for the transfer."

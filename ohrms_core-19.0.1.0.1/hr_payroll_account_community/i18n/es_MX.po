@@ -90,7 +90,7 @@ msgstr "Deje en blanco para usar el período de la fecha de validación de la n�
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Odoo19 Payroll Accounting"
-msgstr "Odoo19 Contabilidad de Nómina"
+msgstr "Contabilidad de nómina para Odoo 19"
 
 #: code:models/hr_payslip.py:93
 msgid "Payslip of %s"

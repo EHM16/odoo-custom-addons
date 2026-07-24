@@ -30,7 +30,7 @@ msgstr "Puede seleccionar todas las líneas."
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Done Quantity Auto Fill"
-msgstr "Autocompletado de cantidad hecha"
+msgstr "Autocompletado de la cantidad realizada"
 
 #: model_terms:views/stock_picking_views.xml
 msgid "Fill Done Qty"

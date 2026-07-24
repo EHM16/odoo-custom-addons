@@ -34,7 +34,7 @@ msgstr "Facturas"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Multiple Payment For Outstanding Dues"
-msgstr "Pago múltiple de cuotas pendientes"
+msgstr "Pagos múltiples de saldos pendientes"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Pay all the due payment of the customer"

@@ -1,0 +1,613 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* manufacture_process_costing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-24 00:00+0000\n"
+"PO-Revision-Date: 2026-07-24 00:00+0000\n"
+"Last-Translator: Codex\n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: model_terms:views/mrp_workcenter_views.xml
+msgid "Actual Costing"
+msgstr "Costeo real"
+
+#: code:models/direct_labour_cost.py:48 code:models/direct_overhead_cost.py:49
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Actual Minute"
+msgstr "Minutos reales"
+
+#: code:models/direct_labour_cost.py:49 code:models/direct_overhead_cost.py:50
+msgid "Actual minutes taken for the work"
+msgstr "Minutos reales empleados en el trabajo"
+
+#: code:models/direct_material_cost.py:49
+msgid "Actual Quantity"
+msgstr "Cantidad real"
+
+#: code:models/direct_material_cost.py:50
+msgid "Actual quantity taken for the work"
+msgstr "Cantidad real empleada en el trabajo"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Actual Qunatity"
+msgstr "Cantidad real"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Bill Of Material :"
+msgstr "Lista de materiales:"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Bill Of Materials"
+msgstr "Lista de materiales"
+
+#: model_terms:report/mrp_bom_cost_reports.xml
+msgid "Bom Cost Report"
+msgstr "Informe de costos de la LdM"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Bom Type :"
+msgstr "Tipo de LdM:"
+
+#: model_terms:views/mrp_cancel_reason_views.xml
+#: model_terms:views/mrp_production_views.xml
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: code:models/mrp_cancel_reason.py:40
+msgid "Cancel Date"
+msgstr "Fecha de cancelación"
+
+#: model_terms:views/mrp_cancel_reason_views.xml
+msgid "Cancel Reason"
+msgstr "Motivo de cancelación"
+
+#: model_terms:views/mrp_cancel_reason_views.xml
+msgid "Cancel Reasons"
+msgstr "Motivos de cancelación"
+
+#: code:models/mrp_cancel_reason.py:44
+#: model_terms:views/mrp_cancel_reason_views.xml
+msgid "Cancelled By"
+msgstr "Cancelado por"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Company :"
+msgstr "Empresa:"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Components"
+msgstr "Componentes"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Consumed"
+msgstr "Consumido"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Consumed In Operation"
+msgstr "Consumido en la operación"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Consumed Materials"
+msgstr "Materiales consumidos"
+
+#: code:models/direct_labour_cost.py:32 code:models/direct_material_cost.py:32
+#: code:models/direct_overhead_cost.py:32
+msgid "Corresponding bill of materials"
+msgstr "Lista de materiales correspondiente"
+
+#: code:models/direct_labour_cost.py:46 code:models/direct_overhead_cost.py:47
+msgid "corresponding manufacturing order"
+msgstr "Orden de fabricación correspondiente"
+
+#: code:models/direct_material_cost.py:47 code:models/mrp_cancel_reason.py:38
+msgid "Corresponding manufacturing order"
+msgstr "Orden de fabricación correspondiente"
+
+#: code:models/direct_labour_cost.py:37 code:models/direct_overhead_cost.py:37
+msgid "Corresponding work center"
+msgstr "Centro de trabajo correspondiente"
+
+#: code:models/direct_labour_cost.py:41 code:models/direct_overhead_cost.py:41
+msgid "Cost per minute for the work"
+msgstr "Costo por minuto del trabajo"
+
+#: code:models/direct_material_cost.py:42
+msgid "Cost per unit for the work"
+msgstr "Costo por unidad del trabajo"
+
+#: code:models/direct_labour_cost.py:40 code:models/direct_overhead_cost.py:40
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Cost/Minute"
+msgstr "Costo/minuto"
+
+#: code:models/direct_material_cost.py:41
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Cost/Unit"
+msgstr "Costo/unidad"
+
+#: model_terms:views/mrp_bom_views.xml
+#: model_terms:views/mrp_production_views.xml
+msgid "Costing"
+msgstr "Costeo"
+
+#: model_terms:views/mrp_cancel_reason_views.xml
+msgid "Date"
+msgstr "Fecha"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Deadline Start :"
+msgstr "Fecha límite de inicio:"
+
+#: code:models/direct_labour_cost.py:28
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Direct Labour Cost"
+msgstr "Costo directo de mano de obra"
+
+#: code:models/direct_material_cost.py:28
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Direct Material Cost"
+msgstr "Costo directo de materiales"
+
+#: code:models/direct_overhead_cost.py:28
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Direct Overhead Cost"
+msgstr "Costos indirectos"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Finished Products"
+msgstr "Productos terminados"
+
+#: code:models/res_config_settings.py:34
+msgid "How to compute process costing, whether manually or work center based"
+msgstr ""
+"Cómo calcular el costeo del proceso, ya sea manualmente o según el centro de "
+"trabajo"
+
+#: code:models/direct_labour_cost.py:31 code:models/mrp_bom.py:37
+#: model_terms:views/mrp_bom_views.xml
+#: model_terms:views/mrp_production_views.xml
+msgid "Labour Cost"
+msgstr "Costo de mano de obra"
+
+#: code:models/mrp_bom.py:37
+msgid "Labour cost"
+msgstr "Costo de mano de obra"
+
+#: code:models/mrp_production.py:35
+msgid "Labour Costs"
+msgstr "Costos de mano de obra"
+
+#: code:models/mrp_workcenter.py:32
+msgid "Labour Costs per minute"
+msgstr "Costo de mano de obra por minuto"
+
+#: code:models/res_config_settings.py:31
+msgid "Manually"
+msgstr "Manualmente"
+
+#: code:models/mrp_cancel_reason.py:37
+#: model_terms:views/mrp_cancel_reason_views.xml
+msgid "Manufacture Order"
+msgstr "Orden de fabricación"
+
+#: model:ir.module.module,summary:__manifest__.py
+msgid ""
+"Manufacture Process Costing By Material Cost, Labour Cost and\n"
+"     Overhead Cost"
+msgstr ""
+"Costeo del proceso de fabricación por costo de materiales, mano de obra y\n"
+"     costos indirectos"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Manufacturing Labour Cost"
+msgstr "Costo de mano de obra de fabricación"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Manufacturing Material Cost"
+msgstr "Costo de materiales de fabricación"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Manufacturing Orders -"
+msgstr "Órdenes de fabricación -"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Manufacturing Overhead Cost"
+msgstr "Costos indirectos de fabricación"
+
+#: code:models/direct_material_cost.py:31 code:models/mrp_bom.py:32
+#: model_terms:views/mrp_bom_views.xml
+#: model_terms:views/mrp_production_views.xml
+msgid "Material Cost"
+msgstr "Costo de materiales"
+
+#: code:models/mrp_bom.py:33
+msgid "Material cost"
+msgstr "Costo de materiales"
+
+#: code:models/mrp_production.py:32
+msgid "Material Costs"
+msgstr "Costos de materiales"
+
+#: model_terms:views/res_config_settings_views.xml
+msgid "MO Process Costing"
+msgstr "Costeo del proceso de la orden de fabricación"
+
+#: code:models/mrp_cancel_reason.py:28
+msgid "Mrp Cancel Reason"
+msgstr "Motivo de cancelación de la orden de fabricación"
+
+#: code:models/direct_labour_cost.py:33 code:models/direct_overhead_cost.py:33
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Operation"
+msgstr "Operación"
+
+#: code:models/direct_labour_cost.py:34 code:models/direct_overhead_cost.py:34
+msgid "Operation required for the work"
+msgstr "Operación necesaria para el trabajo"
+
+#: code:models/direct_overhead_cost.py:31 code:models/mrp_bom.py:41
+#: model_terms:views/mrp_bom_views.xml
+#: model_terms:views/mrp_production_views.xml
+msgid "Overhead Cost"
+msgstr "Costos indirectos"
+
+#: code:models/mrp_bom.py:41
+msgid "Overhead cost"
+msgstr "Costos indirectos"
+
+#: code:models/mrp_production.py:38
+msgid "Overhead Costs"
+msgstr "Costos indirectos"
+
+#: code:models/mrp_workcenter.py:30
+msgid "Overhead Costs per minute"
+msgstr "Costos indirectos por minuto"
+
+#: code:models/direct_labour_cost.py:38 code:models/direct_overhead_cost.py:38
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Planned Minute"
+msgstr "Minutos previstos"
+
+#: code:models/direct_labour_cost.py:39 code:models/direct_material_cost.py:37
+#: code:models/direct_overhead_cost.py:39
+msgid "Planned minutes for the work"
+msgstr "Minutos previstos para el trabajo"
+
+#: code:models/direct_material_cost.py:36
+msgid "Planned Qty"
+msgstr "Cantidad prevista"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Planned Quantity"
+msgstr "Cantidad prevista"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Planned Qunatity"
+msgstr "Cantidad prevista"
+
+#: model:ir.module.module,name:__manifest__.py
+msgid "Process Cost of Manufacturing Orders"
+msgstr "Costo del proceso de las órdenes de fabricación"
+
+#: code:models/res_config_settings.py:32
+msgid "Process Costing Method"
+msgstr "Método de costeo del proceso"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Produced"
+msgstr "Producido"
+
+#: code:models/direct_material_cost.py:34
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Product"
+msgstr "Producto"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Product :"
+msgstr "Producto:"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Product Quantity"
+msgstr "Cantidad del producto"
+
+#: code:models/direct_material_cost.py:35
+msgid "Product required for the work"
+msgstr "Producto necesario para el trabajo"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Product UOM"
+msgstr "UdM del producto"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Product Variant :"
+msgstr "Variante del producto:"
+
+#: model_terms:report/mrp_production_cost_reports.xml
+msgid "Production Cost Report"
+msgstr "Informe de costos de producción"
+
+#: code:models/direct_labour_cost.py:45
+msgid "Production Labour"
+msgstr "Mano de obra de producción"
+
+#: code:models/direct_material_cost.py:46
+msgid "Production Material"
+msgstr "Material de producción"
+
+#: code:models/direct_overhead_cost.py:46
+msgid "Production Overhead"
+msgstr "Costos indirectos de producción"
+
+#: code:models/mrp_cancel_reason.py:34
+msgid "Provide a reason for the cancellation of the manufacturing order"
+msgstr "Proporcione un motivo para cancelar la orden de fabricación"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Quantity :"
+msgstr "Cantidad:"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Quantity To Produce :"
+msgstr "Cantidad por producir:"
+
+#: code:models/mrp_cancel_reason.py:33
+msgid "Reason For Cancel"
+msgstr "Motivo de cancelación"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Reference :"
+msgstr "Referencia:"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Responsible :"
+msgstr "Responsable:"
+
+#: code:models/mrp_workcenter.py:33
+msgid "Set an labour cost cost per minute"
+msgstr "Establezca el costo de mano de obra por minuto"
+
+#: code:models/mrp_workcenter.py:31
+msgid "Set an overhead cost cost per minute"
+msgstr "Establezca los costos indirectos por minuto"
+
+#: model_terms:views/res_config_settings_views.xml
+msgid "Set your manufacturing process costing method"
+msgstr "Defina el método de costeo del proceso de fabricación"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Source :"
+msgstr "Origen:"
+
+#: code:models/mrp_cancel_reason.py:46
+msgid "The corresponding user who is cancelling the order"
+msgstr "Usuario que cancela la orden"
+
+#: code:models/mrp_cancel_reason.py:41
+msgid "The date and time of cancelling the manufacturing order"
+msgstr "Fecha y hora de cancelación de la orden de fabricación"
+
+#: model:ir.module.module,description:__manifest__.py
+msgid ""
+"This module helps to calculate process cost of \n"
+"     manufacturing order and workorder with material cost, labour cost and \n"
+"     overhead cost from components and work center. It calculates both \n"
+"     estimated costing and real costing. Estimated costing is done on Bill of \n"
+"     Material-BOM and real costing calculated on manufacturing order based on \n"
+"     real-time consumption and quantity consumption. You can also provide a \n"
+"     cancel reason for canceling the manufacture order.You can also see the \n"
+"     reports for BOM and Manufacture order. Also, you can add cancel \n"
+"     reasons."
+msgstr ""
+"Este módulo permite calcular el costo del proceso de una orden de fabricación\n"
+"     y sus órdenes de trabajo a partir del costo de materiales, mano de obra y\n"
+"     costos indirectos de los componentes y centros de trabajo. Calcula tanto\n"
+"     el costo previsto como el costo real. El costo previsto se calcula en la\n"
+"     lista de materiales (LdM) y el costo real en la orden de fabricación,\n"
+"     según el consumo real y las cantidades consumidas. También permite\n"
+"     registrar motivos de cancelación y consultar informes de costos de las\n"
+"     listas de materiales y\n"
+"     las órdenes de fabricación."
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "To Consume"
+msgstr "Por consumir"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid ""
+"Total Actual\n"
+"                            Labour Cost :"
+msgstr ""
+"Costo total real de\n"
+"                            mano de obra:"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid ""
+"Total Actual\n"
+"                            Material Cost :"
+msgstr ""
+"Costo total real de\n"
+"                            materiales:"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid ""
+"Total Actual\n"
+"                            Overhead Cost :"
+msgstr ""
+"Costos indirectos reales\n"
+"                            totales:"
+
+#: code:models/direct_labour_cost.py:51 code:models/direct_material_cost.py:52
+#: code:models/mrp_production.py:68
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Total Actual Cost"
+msgstr "Costo real total"
+
+#: code:models/mrp_production.py:69
+msgid "Total Actual Cost of production"
+msgstr "Costo real total de producción"
+
+#: code:models/direct_labour_cost.py:52
+msgid "Total Actual labour cost"
+msgstr "Costo real total de mano de obra"
+
+#: code:models/mrp_production.py:57
+msgid "Total Actual Labour Cost"
+msgstr "Costo real total de mano de obra"
+
+#: code:models/mrp_production.py:61
+msgid "Total Actual Labour Cost of production"
+msgstr "Costo real total de mano de obra de producción"
+
+#: code:models/direct_material_cost.py:53
+msgid "Total actual material cost"
+msgstr "Costo real total de materiales"
+
+#: code:models/mrp_production.py:54
+msgid "Total Actual Material Cost"
+msgstr "Costo real total de materiales"
+
+#: code:models/mrp_production.py:56
+msgid "Total Actual Material Cost of production"
+msgstr "Costo real total de materiales de producción"
+
+#: code:models/direct_overhead_cost.py:52
+msgid "Total Actual overhead cost"
+msgstr "Costos indirectos reales totales"
+
+#: code:models/mrp_production.py:64
+msgid "Total Actual Overhead Cost"
+msgstr "Costos indirectos reales totales"
+
+#: code:models/mrp_production.py:66
+msgid "Total Actual Overhead Cost of production"
+msgstr "Costos indirectos reales totales de producción"
+
+#: code:models/direct_labour_cost.py:43 code:models/direct_material_cost.py:44
+#: code:models/direct_overhead_cost.py:43 code:models/mrp_production.py:52
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Total Cost"
+msgstr "Costo total"
+
+#: code:models/mrp_production.py:51
+msgid "Total Cost of production"
+msgstr "Costo total de producción"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid ""
+"Total Labour\n"
+"                            Cost :"
+msgstr ""
+"Costo total de\n"
+"                            mano de obra:"
+
+#: code:models/direct_labour_cost.py:43
+msgid "Total labour cost"
+msgstr "Costo total de mano de obra"
+
+#: code:models/mrp_bom.py:47 code:models/mrp_bom.py:48
+#: code:models/mrp_production.py:44
+msgid "Total Labour Cost"
+msgstr "Costo total de mano de obra"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Total Labour Cost :"
+msgstr "Costo total de mano de obra:"
+
+#: code:models/mrp_production.py:45
+msgid "Total Labour Cost of production"
+msgstr "Costo total de mano de obra de producción"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid ""
+"Total Material\n"
+"                            Cost :"
+msgstr ""
+"Costo total de\n"
+"                            materiales:"
+
+#: code:models/direct_material_cost.py:44
+msgid "Total material cost"
+msgstr "Costo total de materiales"
+
+#: code:models/mrp_bom.py:44 code:models/mrp_bom.py:45
+#: code:models/mrp_production.py:41
+msgid "Total Material Cost"
+msgstr "Costo total de materiales"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Total Material Cost :"
+msgstr "Costo total de materiales:"
+
+#: code:models/mrp_production.py:42
+msgid "Total Material Cost of production"
+msgstr "Costo total de materiales de producción"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid ""
+"Total Overhead\n"
+"                            Cost :"
+msgstr ""
+"Costos indirectos\n"
+"                            totales:"
+
+#: code:models/direct_overhead_cost.py:44
+msgid "Total overhead cost"
+msgstr "Costos indirectos totales"
+
+#: code:models/mrp_bom.py:50 code:models/mrp_bom.py:51
+#: code:models/mrp_production.py:48
+msgid "Total Overhead Cost"
+msgstr "Costos indirectos totales"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Total Overhead Cost :"
+msgstr "Costos indirectos totales:"
+
+#: code:models/mrp_production.py:49
+msgid "Total Overhead Cost of production"
+msgstr "Costos indirectos totales de producción"
+
+#: code:models/direct_material_cost.py:40
+msgid "Unit of measure"
+msgstr "Unidad de medida"
+
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Unit Of Measure"
+msgstr "Unidad de medida"
+
+#: code:models/direct_material_cost.py:39
+msgid "UoM"
+msgstr "UdM"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "UOM"
+msgstr "UdM"
+
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+msgid "Variants"
+msgstr "Variantes"
+
+#: code:models/direct_labour_cost.py:36 code:models/direct_overhead_cost.py:36
+#: code:models/res_config_settings.py:31
+#: model_terms:report/mrp_bom_cost_report_templates.xml
+#: model_terms:report/mrp_production_cost_report_templates.xml
+msgid "Work Center"
+msgstr "Centro de trabajo"

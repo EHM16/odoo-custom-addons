@@ -62,7 +62,7 @@ msgstr "Número de contacto para seguimiento (opcional)."
 
 #: model_terms:static/src/xml/ohrms_core_systray.xml
 msgid "Contact Open HRMS Core Support (Alt+Shift+H)"
-msgstr "Póngase en contacto con el soporte principal de Open HRMS (Alt+Shift+H)"
+msgstr "Contactar al soporte de Open HRMS Core (Alt+Mayús+H)"
 
 #: code:wizard/ohrms_core_support.py:185
 msgid "Could not reach the support service. Please check your network and try again."
@@ -260,15 +260,15 @@ msgstr "Mi cuenta de Odoo.com"
 
 #: model_terms:static/src/xml/link_view.xml
 msgid "Open HRMS"
-msgstr "Abrir HRMS"
+msgstr "Open HRMS"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Core"
-msgstr "Abrir núcleo HRMS"
+msgstr "Open HRMS Core"
 
 #: model_terms:wizard/ohrms_core_support_views.xml
 msgid "Open HRMS Core Support"
-msgstr "Soporte central abierto de HRMS"
+msgstr "Soporte de Open HRMS Core"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid ""

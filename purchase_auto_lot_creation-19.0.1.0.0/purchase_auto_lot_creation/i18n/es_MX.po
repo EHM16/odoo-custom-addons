@@ -50,7 +50,7 @@ msgstr "Identificación del pedido"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Purchase Auto Lot Creation"
-msgstr "Compra de creación de lotes automáticos"
+msgstr "Creación automática de lotes en compras"
 
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module automates the creation of product lots during the purchase workflow. When a purchase order is confirmed, the system automatically generates lot numbers It helps streamline inventory tracking, ensures better traceability, and reduces manual effort in lot management during the goods receipt process."

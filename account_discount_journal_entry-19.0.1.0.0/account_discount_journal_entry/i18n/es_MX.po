@@ -1,0 +1,56 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_discount_journal_entry
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"PO-Revision-Date: 2026-07-23 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: account_discount_journal_entry
+#: model:ir.model.fields,field_description:account_discount_journal_entry.field_product_category__customer_account_discount_id
+msgid "Customer Discount Account"
+msgstr "Cuenta de descuentos de clientes"
+
+#. module: account_discount_journal_entry
+#: model:ir.model.fields,help:account_discount_journal_entry.field_product_category__customer_account_discount_id
+msgid "Account for setting up customer discounts"
+msgstr "Cuenta para configurar los descuentos de clientes"
+
+#. module: account_discount_journal_entry
+#: model:ir.model.fields,field_description:account_discount_journal_entry.field_product_category__vendor_account_discount_id
+msgid "Vendor Discount Account"
+msgstr "Cuenta de descuentos de proveedores"
+
+#. module: account_discount_journal_entry
+#: model:ir.model.fields,help:account_discount_journal_entry.field_product_category__vendor_account_discount_id
+msgid "Account for setting up vendor discounts"
+msgstr "Cuenta para configurar los descuentos de proveedores"
+
+#. module: account_discount_journal_entry
+#: model_terms:ir.ui.view,arch_db:account_discount_journal_entry.product_category_view_form
+msgid "Account Journal Properties"
+msgstr "Propiedades contables"
+
+#. module: account_discount_journal_entry
+#: model:ir.module.module,name:account_discount_journal_entry.module_account_discount_journal_entry
+msgid "Account Discount Journal Entry"
+msgstr "Asiento contable de descuentos"
+
+#. module: account_discount_journal_entry
+#: model:ir.module.module,summary:account_discount_journal_entry.module_account_discount_journal_entry
+msgid ""
+"Create discount journal items for discounts in invoices and \n"
+"    bills"
+msgstr ""
+"Cree apuntes contables para los descuentos en facturas de clientes y \n"
+"    proveedores"

@@ -242,7 +242,7 @@ msgstr "Costos de materiales"
 
 #: model_terms:views/res_config_settings_views.xml
 msgid "MO Process Costing"
-msgstr "Costeo del proceso de la orden de fabricación"
+msgstr "Costeo la orden de fabricación"
 
 #: code:models/mrp_cancel_reason.py:28
 msgid "Mrp Cancel Reason"
@@ -301,7 +301,7 @@ msgstr "Cantidad prevista"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Process Cost of Manufacturing Orders"
-msgstr "Costo del proceso de las órdenes de fabricación"
+msgstr "Costo de las órdenes de fabricación"
 
 #: code:models/res_config_settings.py:32
 msgid "Process Costing Method"

@@ -4,103 +4,167 @@ Este repositorio contiene módulos personalizados para Odoo 19 Community.
 
 ## Objetivo
 
-Mantener y generar archivos de traducción `es_MX.po` para los módulos de este repositorio preservando siempre el trabajo existente y minimizando cambios innecesarios.
+Mantener y revisar los archivos de traducción `es_MX.po` de todos los módulos del repositorio.
+
+El objetivo no es únicamente generar traducciones faltantes, sino asegurar que todas las traducciones existentes sean correctas, naturales, consistentes con Odoo y adecuadas para español de México.
+
+Una traducción existente nunca debe asumirse correcta únicamente porque:
+
+- el `msgstr` no esté vacío;
+- no tenga la marca `fuzzy`;
+- haya sido generada previamente.
+
+Todas las entradas deben revisarse en contexto.
 
 ---
 
 # Identificación de módulos
 
 - Todo directorio que contenga un archivo `__manifest__.py` se considera un módulo de Odoo.
-- Cada módulo debe procesarse de forma completamente independiente.
-- Cada módulo debe mantener su propio archivo:
+- Los módulos pueden encontrarse en cualquier nivel del repositorio.
+- Deben descubrirse de forma recursiva.
+- Cada módulo mantiene su propio archivo:
 
 ```
 <modulo>/i18n/es_MX.po
 ```
 
-- Nunca crear un archivo de traducciones global para todo el repositorio.
+Nunca crear un archivo global de traducciones.
 
 ---
 
-# Generación y actualización de traducciones
+# Actualización de traducciones
 
 Para cada módulo:
 
-- Si no existe el directorio `i18n`, crearlo.
-- Si no existe `i18n/es_MX.po`, generarlo.
-- Si ya existe `i18n/es_MX.po`, actualizarlo sin perder traducciones válidas.
-- Incorporar únicamente las cadenas nuevas.
-- Eliminar o marcar como obsoletas las cadenas que ya no existan en el código.
-- Mantener intactos todos los `msgid`.
-- Modificar únicamente los `msgstr`.
+- Si no existe `i18n`, crearlo.
+- Si no existe `es_MX.po`, generarlo.
+- Si existe, actualizarlo preservando las traducciones correctas.
 
-Nunca reconstruir completamente un archivo `.po` cuando ya exista uno válido.
+Nunca reconstruir completamente un archivo válido si puede actualizarse.
 
 ---
 
 # Uso de traducciones existentes
 
-Antes de generar o actualizar un archivo `es_MX.po`, utilizar todas las traducciones disponibles como referencia para preservar el trabajo existente.
+Antes de traducir utilizar como referencia:
 
-Seguir el siguiente orden de prioridad:
+1. `i18n/es_MX.po`
+2. `i18n/es.po`
+3. otros `.po` del módulo
+4. traducciones oficiales de Odoo
+5. contexto del código
+6. traducción nueva generada por Codex
 
-1. `i18n/es_MX.po` existente.
-2. `i18n/es.po`.
-3. Cualquier otro archivo `.po` presente en el módulo (`es_419.po`, `fr.po`, `de.po`, `it.po`, etc.).
-4. Traducciones oficiales de Odoo.
-5. Contexto del código fuente (Python, XML, CSV, reportes, asistentes, manifiesto y demás archivos).
-6. Traducción nueva generada por Codex únicamente cuando no exista suficiente contexto.
+Las traducciones existentes deben conservarse cuando sean correctas.
 
-Objetivos:
+No deben conservarse si contienen:
 
-- Preservar el trabajo ya realizado.
-- Mantener una terminología consistente.
-- Evitar reemplazar traducciones correctas por otras equivalentes.
-- Completar únicamente las traducciones faltantes.
-- Actualizar únicamente las entradas afectadas por cambios en el código.
-
-En caso de conflicto, el código fuente (`msgid`) siempre tiene prioridad.
+- Spanglish;
+- traducciones parciales;
+- inglés residual;
+- errores gramaticales;
+- terminología incorrecta;
+- traducciones literales poco naturales;
+- errores funcionales.
 
 ---
 
-# Herramientas oficiales de Odoo
+# Revisión obligatoria
 
-Siempre que sea posible:
+Cada entrada debe revisarse individualmente.
 
-1. Utilizar las herramientas oficiales de internacionalización de Odoo para exportar o actualizar las cadenas traducibles.
-2. Fusionar el resultado con el archivo `es_MX.po` existente.
-3. Preservar todas las traducciones válidas.
-4. Traducir únicamente las nuevas entradas o aquellas cuyo `msgid` haya cambiado.
-5. Validar el resultado antes de finalizar.
+Para cada `msgid`:
 
-Evitar editar manualmente un archivo `.po` cuando exista un procedimiento oficial de Odoo que permita mantener correctamente su estructura.
+- leer el contexto;
+- revisar el `msgstr`;
+- consultar Python, XML o manifiesto cuando sea necesario;
+- corregir cualquier traducción incorrecta.
+
+No revisar únicamente cadenas vacías o marcadas como `fuzzy`.
 
 ---
 
 # Reglas de traducción
 
-- Analizar siempre el contexto funcional antes de traducir.
-- Utilizar la terminología oficial de Odoo siempre que sea adecuada.
-- Priorizar la precisión funcional sobre la traducción literal.
-- Mantener la misma terminología en todos los módulos del repositorio.
-- No inventar traducciones cuando el contexto sea insuficiente.
-- Marcar como `fuzzy` cualquier traducción dudosa.
+Utilizar terminología habitual de Odoo 19.
+
+Priorizar siempre:
+
+- precisión funcional;
+- consistencia;
+- español natural de México.
+
+Evitar:
+
+- Spanglish;
+- traducciones literales;
+- anglicismos innecesarios.
+
+No modificar:
+
+- placeholders;
+- HTML;
+- XML;
+- expresiones QWeb;
+- variables;
+- identificadores técnicos.
 
 Conservar exactamente:
 
-- placeholders (`%s`, `%d`, `%(name)s`, `{}`, `{name}`, etc.);
-- etiquetas HTML;
-- etiquetas XML;
-- expresiones QWeb;
-- saltos de línea;
-- espacios significativos;
-- identificadores técnicos;
-- nombres de modelos;
-- nombres de campos;
-- variables;
-- expresiones de dominio.
+- `%s`
+- `%d`
+- `%(name)s`
+- `{name}`
+- `{}`
 
-No modificar manualmente las referencias técnicas generadas automáticamente dentro del archivo `.po`, salvo cuando el proceso normal de actualización las modifique.
+---
+
+# Terminología preferida
+
+| Inglés | Español |
+|---------|----------|
+| Sales Order | Orden de venta |
+| Purchase Order | Orden de compra |
+| Manufacturing Order | Orden de fabricación |
+| Delivery Order | Orden de entrega |
+| Stock Move | Movimiento de inventario |
+| Work Order | Orden de trabajo |
+| Project | Proyecto |
+| Task | Tarea |
+| Timesheet | Hoja de horas |
+| Employee | Empleado |
+| Customer | Cliente |
+| Vendor | Proveedor |
+| Warehouse | Almacén |
+| Bill of Materials | Lista de materiales |
+| Inventory Adjustment | Ajuste de inventario |
+| Journal Entry | Asiento contable |
+| Payment Terms | Condiciones de pago |
+| Pricelist | Lista de precios |
+| Asset | Activo |
+| Resource | Recurso |
+| Rental | Renta |
+| Quotation | Cotización |
+
+Cuando el contexto lo requiera, adaptar la traducción (por ejemplo, "Partner" puede significar Contacto, Cliente, Proveedor o Empresa).
+
+---
+
+# Validación
+
+Antes de finalizar:
+
+- ejecutar
+
+```bash
+msgfmt --check <modulo>/i18n/es_MX.po
+```
+
+- verificar placeholders;
+- revisar traducciones parciales;
+- revisar posibles palabras en inglés;
+- eliminar `fuzzy` únicamente cuando la traducción haya sido validada.
 
 ---
 
@@ -109,92 +173,52 @@ No modificar manualmente las referencias técnicas generadas automáticamente de
 Durante tareas de traducción NO modificar:
 
 - modelos;
-- campos;
 - vistas;
 - acciones;
 - menús;
-- reportes;
-- asistentes;
-- ACL;
-- reglas de seguridad;
 - lógica de negocio;
+- ACL;
+- reglas;
 - datos;
-- archivos XML;
-- archivos CSV;
-- dependencias;
+- XML;
+- CSV;
 - versiones del módulo.
 
-No crear, modificar ni eliminar archivos de traducción distintos de:
+No crear ni modificar archivos distintos de:
 
 ```
 i18n/es_MX.po
 ```
 
-salvo que la tarea lo solicite explícitamente.
-
----
-
-# Validación
-
-Validar todos los archivos generados o modificados utilizando:
-
-```bash
-msgfmt --check <modulo>/i18n/es_MX.po
-```
-
-Corregir cualquier error antes de finalizar.
+salvo que la tarea lo solicite expresamente.
 
 ---
 
 # Reporte final
 
-Al terminar, generar un resumen indicando:
+Al terminar indicar:
 
 - módulos analizados;
 - módulos omitidos;
-- archivos `es_MX.po` creados;
-- archivos `es_MX.po` actualizados;
-- traducciones agregadas;
-- traducciones reutilizadas desde archivos existentes;
-- traducciones marcadas como `fuzzy`;
-- entradas obsoletas;
+- archivos creados;
+- archivos actualizados;
+- traducciones modificadas;
+- traducciones reutilizadas;
+- `fuzzy` eliminados;
+- `fuzzy` restantes;
 - errores encontrados;
-- resultado de la validación.
-
----
-
-# Terminología preferida
-
-| Inglés | Español (es_MX) |
-|---------|------------------|
-| Asset | Activo |
-| Resource | Recurso |
-| Rental | Renta |
-| Quotation | Cotización |
-| Sales Order | Orden de venta |
-| Purchase Order | Orden de compra |
-| Manufacturing Order | Orden de fabricación |
-| Project | Proyecto |
-| Task | Tarea |
-| Timesheet | Hoja de horas |
-| Employee | Empleado |
-| Vendor | Proveedor |
-| Customer | Cliente |
-| Company | Empresa |
-| Warehouse | Almacén |
-| Stock Move | Movimiento de inventario |
-| Inventory Adjustment | Ajuste de inventario |
-| Bill of Materials | Lista de materiales |
-| Work Center | Centro de trabajo |
-| Quality Check | Control de calidad |
-| Repair Order | Orden de reparación |
+- resultado de `msgfmt --check`.
 
 ---
 
 # Principios generales
 
-- Realizar el menor número posible de cambios.
-- Conservar el estilo del proyecto.
-- Mantener consistencia entre todos los módulos.
-- Antes de finalizar, revisar que las nuevas traducciones sean coherentes con las existentes.
-- Nunca reemplazar una traducción correcta únicamente por una preferencia de redacción.
+- Revisar todas las traducciones existentes.
+- Preservar únicamente las traducciones correctas.
+- Corregir cualquier error detectado.
+- Mantener consistencia entre módulos.
+- Utilizar terminología de Odoo.
+- Evitar Spanglish.
+- Evitar traducciones mecánicas.
+- Mantener español natural de México.
+- No declarar un archivo como revisado si no se inspeccionaron todas sus entradas funcionales.

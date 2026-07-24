@@ -171,12 +171,12 @@ Al terminar, generar un resumen indicando:
 | Resource | Recurso |
 | Rental | Renta |
 | Quotation | Cotización |
-| Sales Order | Pedido de venta |
-| Purchase Order | Pedido de compra |
+| Sales Order | Orden de venta |
+| Purchase Order | Orden de compra |
 | Manufacturing Order | Orden de fabricación |
 | Project | Proyecto |
 | Task | Tarea |
-| Timesheet | Parte de horas |
+| Timesheet | Hoja de horas |
 | Employee | Empleado |
 | Vendor | Proveedor |
 | Customer | Cliente |

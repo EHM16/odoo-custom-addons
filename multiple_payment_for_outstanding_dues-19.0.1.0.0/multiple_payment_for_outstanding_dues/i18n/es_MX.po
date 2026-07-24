@@ -47,7 +47,7 @@ msgstr "Paga ahora"
 #: code:models/account_move.py:35
 #: code:models/account_move_line.py:36
 msgid "Register Payment"
-msgstr "Registrarse Pago"
+msgstr "Registrar pago"
 
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module helps you to register the payment for the customer who has one or more payments due. Also, we can see the total due amount for the particular customer in their form view."

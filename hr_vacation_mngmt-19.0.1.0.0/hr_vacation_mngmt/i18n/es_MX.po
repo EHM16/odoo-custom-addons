@@ -81,7 +81,7 @@ msgstr "Destino"
 
 #: code:models/hr_leave.py:57
 msgid "Details about leave salary of employee."
-msgstr "Detalles del salario por licencia del empleado"
+msgstr "Detalles del salario por permiso del empleado"
 
 #: code:models/hr_leave.py:42
 msgid "Details of pending tasks"
@@ -101,7 +101,7 @@ msgstr "Empleado que está asignado a"
 
 #: code:models/res_config_settings.py:30
 msgid "Enable this field send leave remainder emails to hr managers"
-msgstr "Habilite este campo para enviar correos electrónicos de licencia restante a los gerentes de recursos humanos"
+msgstr "Habilite este campo para enviar correos electrónicos de permisos restantes a los gerentes de recursos humanos"
 
 #: code:models/hr_leave.py:53
 #: model_terms:views/res_config_settings_views.xml
@@ -155,11 +155,11 @@ msgstr "Factura del empleado"
 
 #: code:models/hr_flight_ticket.py:70
 msgid "Leave"
-msgstr "Licencia"
+msgstr "Permiso"
 
 #: code:models/hr_flight_ticket.py:70
 msgid "Leave of the employee."
-msgstr "Licencia del empleado."
+msgstr "Permiso del empleado."
 
 #: code:models/res_config_settings.py:30
 msgid "Leave Reminder Email"
@@ -168,15 +168,15 @@ msgstr "Dejar correo electrónico de recordatorio"
 #: code:models/pending_task.py:33
 #: code:wizard/task_reassign.py:38
 msgid "Leave Request"
-msgstr "Solicitud de licencia"
+msgstr "Solicitud de permiso"
 
 #: code:models/hr_leave.py:99
 msgid "Leave request must be confirmed (\"To Approve\") in order to approve it."
-msgstr "La solicitud de licencia debe ser confirmada (\"Para Aprobar\") para poder aprobarla."
+msgstr "La solicitud de permiso debe ser confirmada (\"Para Aprobar\") para poder aprobarla."
 
 #: code:models/pending_task.py:33
 msgid "Leave request of the employee."
-msgstr "Solicitud de licencia del empleado."
+msgstr "Solicitud de permiso del empleado."
 
 #: code:wizard/task_reassign.py:38
 msgid "Leave request to which the pending tasks are related."
@@ -186,15 +186,15 @@ msgstr "Dejar solicitud con la que se relacionan las tareas pendientes."
 #: code:models/hr_payslip.py:30
 #: code:models/res_config_settings.py:41
 msgid "Leave Salary"
-msgstr "Licencia pagada"
+msgstr "Permiso pagado"
 
 #: model_terms:views/res_config_settings_views.xml
 msgid "Leave salary calculation"
-msgstr "Cálculo del salario por licencia"
+msgstr "Cálculo del salario por permiso"
 
 #: code:wizard/task_reassign.py:32
 msgid "List of pending tasks associated with the leave request."
-msgstr "Listado de tareas pendientes asociadas a la solicitud de licencia."
+msgstr "Listado de tareas pendientes asociadas a la solicitud de permiso."
 
 #: code:models/hr_flight_ticket.py:37
 msgid "Name of the employee"
@@ -216,7 +216,7 @@ msgstr "Nuevo"
 
 #: code:models/hr_leave.py:95
 msgid "Only an HR Officer or Manager can approve leave requests."
-msgstr "Solo un responsable o gerente de recursos humanos puede aprobar solicitudes de licencia."
+msgstr "Solo un responsable o gerente de recursos humanos puede aprobar solicitudes de permiso."
 
 #: code:models/hr_leave.py:123
 msgid "Only an HR Officer or Manager can book flight tickets."
@@ -229,11 +229,11 @@ msgstr "Gestión de vacaciones de Open HRMS"
 #: code:models/hr_leave.py:37
 #: model_terms:views/hr_leave_views.xml
 msgid "Overlapping Leaves"
-msgstr "Superposición de licencias"
+msgstr "Superposición de permisos"
 
 #: code:models/hr_leave.py:37
 msgid "Overlapping leaves of employees."
-msgstr "Superposición de licencias de empleados."
+msgstr "Superposición de permisos de empleados."
 
 #: code:models/hr_leave.py:42
 #: code:wizard/task_reassign.py:32
@@ -271,11 +271,11 @@ msgstr "Reasignar tarea"
 
 #: code:models/hr_leave.py:32
 msgid "Remaining Legal Leaves"
-msgstr "Licencias por ley restantes"
+msgstr "Permisos por ley restantes"
 
 #: code:models/hr_leave.py:32
 msgid "Remaining legal leaves"
-msgstr "Licencias por ley restantes"
+msgstr "Permisos por ley restantes"
 
 #: code:models/res_config_settings.py:34
 msgid "Reminder Day Before"
@@ -283,7 +283,7 @@ msgstr "Recordatorio un día antes"
 
 #: code:models/hr_leave.py:46
 msgid "Responsible holiday managers"
-msgstr "Aprobadores de licencias"
+msgstr "Aprobadores de Permisos"
 
 #: code:models/hr_flight_ticket.py:48
 msgid "Return Date"
@@ -331,7 +331,7 @@ msgstr "Establecer la cuenta de gastos predeterminada"
 
 #: code:models/res_config_settings.py:41
 msgid "Set the default leave salary of employee."
-msgstr "Establezca el salario de licencia predeterminado del empleado."
+msgstr "Establezca el salario de permiso predeterminado del empleado."
 
 #: code:models/hr_flight_ticket.py:42
 msgid "Specify the departure place."

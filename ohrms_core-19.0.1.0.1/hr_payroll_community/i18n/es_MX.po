@@ -42,7 +42,7 @@ msgstr ""
 
 #: code:models/res_config_settings.py:30
 msgid "Account Accountant"
-msgstr "Cuenta Cuentaant"
+msgstr "Contador"
 
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Accounting"
@@ -118,7 +118,7 @@ msgstr "Categoría"
 
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Child Rules"
-msgstr "Reglas infantiles"
+msgstr "Reglas secundarias"
 
 #: code:models/hr_salary_rule.py:145
 msgid "Child rules of the Salary rule"
@@ -126,16 +126,16 @@ msgstr "Reglas secundarias de la regla de salario"
 
 #: code:models/hr_salary_rule.py:145
 msgid "Child Salary Rule"
-msgstr "Regla de salario infantil"
+msgstr "Regla secundaria de salario"
 
 #: code:models/hr_payroll_structure.py:58
 #: code:models/hr_salary_rule_category.py:40
 msgid "Children"
-msgstr "niños"
+msgstr "Secundaria"
 
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Children Definition"
-msgstr "Definición de niños"
+msgstr "Definición de reglas secundarias"
 
 #: model_terms:views/res_config_settings_views.xml
 msgid "Choose a Payroll Localization"
@@ -247,7 +247,7 @@ msgstr "Código"
 
 #: code:models/hr_contract_advantage_template.py:33
 msgid "Code for Employee's Advantage on Contract"
-msgstr "Código para la ventaja del empleado en el contrato"
+msgstr "Código para la prestación del empleado en el contrato"
 
 #: code:models/hr_payroll_structure.py:44
 msgid "Code for Payroll Structure"
@@ -275,7 +275,7 @@ msgstr "Aportación de la empresa"
 
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "Computation"
-msgstr "Computación"
+msgstr "Cálculo"
 
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Compute Sheet"
@@ -328,7 +328,7 @@ msgstr "Nota de crédito"
 
 #: code:models/hr_version.py:50
 msgid "DA"
-msgstr "DA"
+msgstr "SC"
 
 #: code:models/hr_payslip.py:56
 #: code:models/hr_payslip_input.py:42
@@ -358,7 +358,7 @@ msgstr "Fecha hasta:"
 
 #: code:models/hr_version.py:50
 msgid "Dearness allowance"
-msgstr "Asignación por carestía"
+msgstr "Subsidio por carestía"
 
 #: code:models/hr_contract_advantage_template.py:41
 msgid "Default Value"
@@ -366,7 +366,7 @@ msgstr "Valor predeterminado"
 
 #: code:models/hr_contract_advantage_template.py:41
 msgid "Default value for this advantage"
-msgstr "Valor predeterminado para esta ventaja"
+msgstr "Valor predeterminado para esta prestación"
 
 #: code:models/hr_version.py:36
 msgid "Defines the frequency of the wage payment."
@@ -456,7 +456,7 @@ msgstr "Borradores de lotes de nóminas"
 
 #: model_terms:views/hr_payslip_views.xml
 msgid "Draft Slip"
-msgstr "Borrador de borrador"
+msgstr "Borrador de nómina"
 
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
@@ -530,11 +530,11 @@ msgstr "Nómina francesa"
 
 #: model_terms:views/hr_salary_rule_views.xml
 msgid "General"
-msgstr "generales"
+msgstr "Generales"
 
 #: model_terms:wizard/hr_payslips_employees_views.xml
 msgid "Generate"
-msgstr "generar"
+msgstr "Generar"
 
 #: model_terms:views/hr_payslip_run_views.xml
 msgid "Generate Payslips"
@@ -546,7 +546,7 @@ msgstr "Hojas globales"
 
 #: code:models/hr_version.py:46
 msgid "House rent allowance."
-msgstr "Subsidio de alquiler de vivienda."
+msgstr "Subsidio vivienda."
 
 #: code:models/hr_salary_rule_category.py:34
 msgid "Hr Salary Rule Category Code"
@@ -557,8 +557,8 @@ msgid "Hr Salary Rule Category Name"
 msgstr "Nombre de la categoría de regla salarial de RR. HH."
 
 #: code:models/hr_version.py:46
-msgid "HRA"
-msgstr "HRA"
+msgid "SV"
+msgstr "SV"
 
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml

@@ -26,7 +26,7 @@ msgstr "Agregar lista de precios para aplicar en el grupo de clientes"
 
 #: model_terms:views/customer_group_views.xml
 msgid "Contact group"
-msgstr "grupo de contacto"
+msgstr " Grupo de contacto"
 
 #: code:models/customer_group.py:31
 msgid "Contacts"

@@ -226,7 +226,7 @@ msgstr "Esta aplicación te permite administrar tus voluntarios y donantes en Od
 #: model_terms:views/volunteer_skill_views.xml
 #: model_terms:views/volunteer_type_views.xml
 msgid "This note is only for internal purposes."
-msgstr "Esta nota es sólo para fines internos."
+msgstr "Esta nota es solo para fines internos."
 
 #: model_terms:report/project_report_templates.xml
 #: model_terms:views/res_partner_views.xml

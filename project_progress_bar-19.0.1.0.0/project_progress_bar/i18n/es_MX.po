@@ -74,4 +74,4 @@ msgstr "El progreso debe ser menor o igual a 100."
 
 #: code:models/project_task_type.py:33
 msgid "You can only see the progress if you enable this"
-msgstr "Sólo puedes ver el progreso si habilitas esto."
+msgstr "Solo puedes ver el progreso si habilitas esto."

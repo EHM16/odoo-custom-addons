@@ -40,7 +40,7 @@ msgstr "Verifique la licencia si se debe pagar el salario del empleado si está 
 
 #: model_terms:views/res_config_settings_views.xml
 msgid "Choose the expense account to post the flight tickets accounting entries"
-msgstr "Elija la cuenta de gastos para contabilizar los asientos contables de los billetes de avión"
+msgstr "Elija la cuenta de gastos para contabilizar los asientos de los boletos de avión"
 
 #: code:models/hr_flight_ticket.py:49
 msgid "Class"
@@ -216,11 +216,11 @@ msgstr "Nuevo"
 
 #: code:models/hr_leave.py:95
 msgid "Only an HR Officer or Manager can approve leave requests."
-msgstr "Sólo un responsable o gerente de recursos humanos puede aprobar solicitudes de licencia."
+msgstr "Solo un responsable o gerente de recursos humanos puede aprobar solicitudes de licencia."
 
 #: code:models/hr_leave.py:123
 msgid "Only an HR Officer or Manager can book flight tickets."
-msgstr "Sólo un responsable o gerente de recursos humanos puede reservar billetes de avión."
+msgstr "Solo un responsable o gerente de recursos humanos puede reservar boletos de avión."
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Vacation Management"
@@ -255,7 +255,7 @@ msgstr "Asigne tareas pendientes a los empleados."
 
 #: code:models/hr_flight_ticket.py:107
 msgid "Please select expense account for the flight tickets."
-msgstr "Seleccione la cuenta de gastos para los billetes de avión."
+msgstr "Seleccione la cuenta de gastos para los boletos de avión."
 
 #: code:models/pending_task.py:38
 msgid "Project"

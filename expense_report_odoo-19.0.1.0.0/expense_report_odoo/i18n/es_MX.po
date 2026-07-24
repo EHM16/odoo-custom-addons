@@ -138,7 +138,7 @@ msgstr "Estado"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "The administrator has the ability to view the expense reports of any employee they choose, while regular users can only access and view their own expense reports."
-msgstr "El administrador tiene la capacidad de ver los informes de gastos de cualquier empleado que elija, mientras que los usuarios habituales sólo pueden acceder y ver sus propios informes de gastos."
+msgstr "El administrador tiene la capacidad de ver los informes de gastos de cualquier empleado que elija, mientras que los usuarios habituales solo pueden acceder y ver sus propios informes de gastos."
 
 #: code:wizard/expense_report_filter.py:40
 msgid "The current status of the expense report"

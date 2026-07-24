@@ -118,12 +118,12 @@ msgstr "Semanal"
 
 #: code:models/account_move.py:95
 msgid "Your payment term is daily, and you can update it only once in a day."
-msgstr "El plazo de pago es diario y sólo puede actualizarlo una vez al día."
+msgstr "El plazo de pago es diario y solo puede actualizarlo una vez al día."
 
 #: code:models/account_move.py:79
 msgid "Your payment term is monthly, and you can update it only once in a month."
-msgstr "El plazo de pago es mensual y sólo puede actualizarlo una vez al mes."
+msgstr "El plazo de pago es mensual y solo puede actualizarlo una vez al mes."
 
 #: code:models/account_move.py:87
 msgid "Your payment term is weekly, and you can update it only once in a week."
-msgstr "El plazo de pago es semanal y sólo puede actualizarlo una vez a la semana."
+msgstr "El plazo de pago es semanal y solo puede actualizarlo una vez a la semana."

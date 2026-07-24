@@ -116,11 +116,11 @@ msgstr "Tarea"
 
 #: code:models/project_task.py:43
 msgid "Task Create Boolean"
-msgstr "Crear solicitud de aprobación"
+msgstr "Control de creación de solicitud de aprobación"
 
 #: code:models/project_task.py:37
 msgid "Task Done"
-msgstr "Tarea realizada"
+msgstr "Tarea en progreso"
 
 #: code:models/manager_approval.py:31
 msgid "Task name for project"

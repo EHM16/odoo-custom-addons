@@ -2306,7 +2306,7 @@ msgstr "Prorrata temporis"
 
 #: code:models/account_asset_asset.py:591
 msgid "Prorata temporis can be applied only for time method \"number of depreciations\"."
-msgstr "La prorata temporis sólo se puede aplicar al método de tiempo \"número de depreciaciones\"."
+msgstr "La prorata temporis solo se puede aplicar al método de tiempo \"número de depreciaciones\"."
 
 #: model_terms:report/report_tax_template.xml
 #: model_terms:views/account_asset_category_views.xml

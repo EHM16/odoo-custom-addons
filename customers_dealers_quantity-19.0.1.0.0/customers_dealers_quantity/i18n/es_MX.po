@@ -40,7 +40,7 @@ msgstr "Cantidad mínima para distribuidores"
 
 #: code:models/product_product.py:30
 msgid "Dealers minimum quantity"
-msgstr "Cantidad mínima de distribuidores"
+msgstr "Cantidad mínima para distribuidores"
 
 #: model_terms:views/product_product_views.xml
 msgid "Dealers Price"

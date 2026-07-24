@@ -164,7 +164,7 @@ msgstr "Nombre"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Official Announcements"
-msgstr "Anuncios oficiales abiertos de HRMS"
+msgstr "Anuncios oficiales de Open HRMS"
 
 #: code:models/hr_announcement.py:75
 msgid "Position of the employee who is authorized to view this announcements."

@@ -18,7 +18,7 @@ msgstr ""
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Mass Register Expense Payment"
-msgstr "Pago de gastos de registro masivo"
+msgstr "Registro masivo de pagos de gastos"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Register the payments of multiple expenses together."

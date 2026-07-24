@@ -183,7 +183,7 @@ msgstr "Número de préstamos asociados al empleado"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Loan Management"
-msgstr "Gestión de préstamos abierta HRMS"
+msgstr "Gestión de préstamos de Open HRMS"
 
 #: code:models/hr_loan_line.py:36
 msgid "Paid"

@@ -2039,7 +2039,7 @@ msgstr "o_kanban_renderer o_custom_class"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Odoo 19 Accounting for Community : Financial Report, PDC, Assets, Bank Reconciliation, Lock Dates"
-msgstr "Contabilidad de Odoo 19 para la comunidad: Informe financiero, cheques posdatados, activos, conciliación bancaria, fechas de bloqueo."
+msgstr "Contabilidad para Odoo 19 Community: informe financiero, PDC, activos, conciliación bancaria y fechas de bloqueo"
 
 #: code:report/report_financial.py:79
 msgid "Off-Balance Sheet"

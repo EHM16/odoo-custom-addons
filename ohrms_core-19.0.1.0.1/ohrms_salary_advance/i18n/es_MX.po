@@ -153,7 +153,7 @@ msgstr "Nuevas solicitudes"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Advance Salary"
-msgstr "Salario anticipado abierto de HRMS"
+msgstr "Anticipos de salario de Open HRMS"
 
 #: code:models/salary_advance.py:58
 msgid "Payment Method"

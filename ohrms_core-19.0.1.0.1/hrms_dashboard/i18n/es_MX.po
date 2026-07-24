@@ -290,7 +290,7 @@ msgstr "No. de ocurrencia"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS HR Dashboard"
-msgstr "Abrir panel de control de recursos humanos HRMS"
+msgstr "Panel de recursos humanos de Open HRMS"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""

@@ -327,11 +327,11 @@ msgstr "Contrato con *"
 
 #: model_terms:static/src/xml/labour_supply_dashboard.xml
 msgid "Contracts on the Basis of Customer"
-msgstr "Contratos sobre la base del cliente"
+msgstr "Contratos según el cliente"
 
 #: model_terms:static/src/xml/labour_supply_dashboard.xml
 msgid "Contracts on the Basis of State"
-msgstr "Contratos sobre la base del Estado"
+msgstr "Contratos según el estado"
 
 #: code:models/labour_supply.py:143
 msgid "Controls the visibility of the workers assignment page."
@@ -446,7 +446,7 @@ msgstr "Caducado"
 
 #: model_terms:views/labour_supply_views.xml
 msgid "Fetch"
-msgstr "buscar"
+msgstr "Buscar"
 
 #: code:wizard/labour_supply_report.py:37
 msgid "Field to choose customer for report"
@@ -512,7 +512,7 @@ msgstr "Detalles generales"
 
 #: model_terms:views/labour_supply_portal_templates.xml
 msgid "History"
-msgstr "Historia"
+msgstr "Historial"
 
 #: code:models/labour_supply.py:137
 msgid "Indicates whether the required number of workers is currently unavailable."
@@ -583,7 +583,7 @@ msgstr "Dirección de correo"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Manage man power supply"
-msgstr "Gestionar el suministro de energía humana."
+msgstr "Gestionar el suministro de mano de obra."
 
 #: model_terms:static/src/xml/labour_supply_dashboard.xml
 msgid ""
@@ -622,7 +622,7 @@ msgstr "Número de contratos"
 
 #: code:models/labour_on_skill.py:45
 msgid "Number of Labours Required"
-msgstr "Número de labores requeridas"
+msgstr "Número de trabajadores requeridos"
 
 #: model_terms:static/src/xml/labour_supply_dashboard.xml
 msgid "Ongoing contract"
@@ -650,7 +650,7 @@ msgstr "Por favor ingrese fechas futuras válidas."
 
 #: model_terms:wizard/labour_supply_report_views.xml
 msgid "Print pdf"
-msgstr "imprimir pdf"
+msgstr "Imprimir pdf"
 
 #: code:models/workers_details.py:95
 msgid "Profile image of the worker."
@@ -730,8 +730,8 @@ msgid ""
 "                                        Requirements\n"
 "                                    "
 msgstr ""
-"Habilidad\n"
-"                                        Requisitos"
+"Requisitos de\n"
+"                                        habilidades"
 
 #: model_terms:views/labour_on_supply_form_template.xml
 msgid ""
@@ -739,8 +739,8 @@ msgid ""
 "                                    Requirements\n"
 "                                "
 msgstr ""
-"Habilidad\n"
-"                                    Requisitos"
+"Requisitos de\n"
+"                                    habilidades"
 
 #: code:models/skill_details.py:37
 msgid "Skill Name"
@@ -785,7 +785,7 @@ msgstr "Estado"
 
 #: code:wizard/labour_supply_report.py:32
 msgid "State wise"
-msgstr "Estado sabio"
+msgstr "Por estado"
 
 #: model_terms:report/labour_supply_templates.xml
 msgid "State:"
@@ -827,7 +827,7 @@ msgstr "Fecha hasta:"
 
 #: model_terms:static/src/xml/labour_supply_dashboard.xml
 msgid "Top 10 Customers"
-msgstr "10 clientes principales"
+msgstr "Top 10 de clientes"
 
 #: code:models/labour_supply.py:111
 #: model_terms:report/labour_supply_templates.xml

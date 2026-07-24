@@ -43,7 +43,7 @@ msgstr "hojas"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Leave Request Aliasing"
-msgstr "Alias para solicitudes de ausencia de Open HRMS"
+msgstr "Asignación de alias para solicitudes de ausencia de Open HRMS"
 
 #: code:models/res_config_settings.py:29
 #: model_terms:views/res_config_settings_views.xml

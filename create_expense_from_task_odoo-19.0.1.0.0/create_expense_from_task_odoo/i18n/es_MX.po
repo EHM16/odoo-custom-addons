@@ -20,77 +20,62 @@ msgstr ""
 msgid "Cancel"
 msgstr "Cancelar"
 
-#, fuzzy
 #: model_terms:views/project_task_views.xml
 msgid "Create Expense"
 msgstr "Crear gasto"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Create Expense From Task"
-msgstr "Create Expense From Tarea"
+msgstr "Crear gasto a partir de tarea"
 
-#, fuzzy
 #: code:wizards/expense_amount.py:36
 msgid "Employee Name"
 msgstr "Empleado Nombre"
 
-#, fuzzy
 #: model_terms:views/project_task_views.xml
 msgid "Expense"
 msgstr "Gasto"
 
-#, fuzzy
 #: model_terms:wizards/expense_amount_views.xml
 msgid "Expense Report"
 msgstr "Informe de gastos"
 
-#, fuzzy
 #: model_terms:wizards/expense_amount_views.xml
 msgid "Generate Expense"
 msgstr "Generar Gasto"
 
-#, fuzzy
 #: code:wizards/expense_amount.py:33
 msgid "Service Name"
 msgstr "Service Nombre"
 
-#, fuzzy
 #: code:wizards/expense_amount.py:36
 msgid "The employees associated with this record."
 msgstr "Los empleados asociados con este registro."
 
-#, fuzzy
 #: code:wizards/expense_amount.py:33
 msgid "The product associated with the record"
 msgstr "El producto asociado al registro."
 
-#, fuzzy
 #: code:models/hr_expense.py:33
 msgid "The project associated with this record."
 msgstr "El proyecto asociado a este registro."
 
-#, fuzzy
 #: code:models/hr_expense.py:35
 msgid "The task associated with this record."
 msgstr "La tarea asociada con este registro."
 
-#, fuzzy
 #: code:wizards/expense_amount.py:40
 msgid "The total amount for this record."
 msgstr "El importe total de este registro."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This apps helps User to create multiple expense from project task and split the amount between assigns"
-msgstr "Esta aplicación ayuda al usuario a crear múltiples gastos a partir de la tarea del proyecto y dividir el monto entre las asignaciones."
+msgstr "Esta aplicación permite crear múltiples gastos desde una tarea de proyecto y distribuir el importe entre los responsables asignados."
 
-#, fuzzy
 #: code:wizards/expense_amount.py:40
 msgid "Total Amount"
 msgstr "Total Importe"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "User can create Expense from Task"
-msgstr "User can create Expense from Tarea"
+msgstr "El usuario puede crear gastos a partir de la tarea"

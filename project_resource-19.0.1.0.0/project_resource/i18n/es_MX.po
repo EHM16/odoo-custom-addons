@@ -16,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/res_users.py:29
 msgid "Assigned Task"
 msgstr "Assigned Tarea"
@@ -29,78 +28,64 @@ msgstr "Cancelar"
 msgid "End Date"
 msgstr "Fecha final"
 
-#, fuzzy
 #: code:wizards/free_resource.py:34
 msgid "End date of period for receiving the Free Resource"
 msgstr "Fecha de finalización del plazo para recibir el Recurso Gratuito"
 
-#, fuzzy
 #: model_terms:wizards/free_resource_view.xml
 msgid "Free Resource"
 msgstr "Recurso gratuito"
 
-#, fuzzy
 #: model_terms:views/project_task_views.xml
 msgid "Free Resources"
 msgstr "Recursos gratuitos"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Get all free resources for the project"
 msgstr "Obtenga todos los recursos gratuitos para el proyecto"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Project Free Resource"
 msgstr "Proyecto Free Resource"
 
-#, fuzzy
 #: code:models/project_task.py:37
 msgid "Project Manager"
-msgstr "Proyecto Manager"
+msgstr "Gerente de proyecto"
 
-#, fuzzy
 #: code:models/project_task.py:37
 msgid "Project Manager of the task"
-msgstr "Proyecto Manager of the task"
+msgstr "Gerente del proyecto de la tarea"
 
 #: code:models/project_task.py:31
 #: code:wizards/free_resource.py:31
 msgid "Start Date"
 msgstr "Fecha inicial"
 
-#, fuzzy
 #: code:wizards/free_resource.py:31
 msgid "Start date of period for receiving the Free Resource"
 msgstr "Fecha de inicio del plazo para recibir el Recurso Gratuito"
 
-#, fuzzy
 #: code:models/project_task.py:31
 msgid "Start date of the task"
 msgstr "Fecha de inicio de la tarea"
 
-#, fuzzy
 #: code:models/project_task.py:50
 #: code:models/project_task.py:66
 msgid "The deadline date must be after or equal to the task start date."
 msgstr "La fecha límite debe ser posterior o igual a la fecha de inicio de la tarea."
 
-#, fuzzy
 #: code:wizards/free_resource.py:44
 msgid "The end date must be after the start date."
 msgstr "La fecha de finalización debe ser posterior a la fecha de inicio."
 
-#, fuzzy
 #: code:models/res_users.py:29
 msgid "The tasks which are assigned"
 msgstr "Las tareas que se asignan"
 
-#, fuzzy
 #: code:models/project_task.py:33
 msgid "This field is to store the users based on the calculation"
 msgstr "Este campo es para almacenar los usuarios según el cálculo."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module helps in getting all the free resource for a\n"

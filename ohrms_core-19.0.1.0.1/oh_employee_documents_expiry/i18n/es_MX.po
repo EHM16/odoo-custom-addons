@@ -16,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/hr_employee.py:53
 msgid ""
 "<p class=\\\"oe_view_nocontent_create\\\">\n"
@@ -27,7 +26,6 @@ msgstr ""
 "                           Haga clic para crear para nuevos documentos\n"
 "                        </p>"
 
-#, fuzzy
 #: code:models/hr_document.py:34
 #: code:models/hr_employee_document.py:43
 #: code:models/ir_attachment.py:32
@@ -35,53 +33,44 @@ msgstr ""
 msgid "Attachment"
 msgstr "Adjunto"
 
-#, fuzzy
 #: code:models/hr_employee.py:31
 msgid "Count of documents."
 msgstr "Recuento de documentos."
 
-#, fuzzy
 #: code:models/hr_employee_document.py:49
 msgid "Date of issued"
-msgstr "Fecha of issued"
+msgstr "Fecha de emisión"
 
-#, fuzzy
 #: code:models/hr_employee_document.py:54
 msgid "Days"
-msgstr "Days"
+msgstr "Días"
 
 #: code:models/hr_employee_document.py:36
 #: model_terms:views/hr_employee_document_views.xml
 msgid "Description"
 msgstr "Descripción"
 
-#, fuzzy
 #: code:models/hr_employee_document.py:36
 msgid "Description of the documents."
-msgstr "Descripción of the documents."
+msgstr "Descripción de los documentos."
 
-#, fuzzy
 #: code:models/hr_document.py:31
 #: model_terms:views/document_type_views.xml
 msgid "Document Name"
 msgstr "Document Nombre"
 
-#, fuzzy
 #: code:models/hr_employee_document.py:34
 msgid "Document Number"
 msgstr "Número de documento"
 
-#, fuzzy
 #: code:models/hr_employee_document.py:51
 msgid "Document Type"
 msgstr "Tipo de documento"
 
-#, fuzzy
 #: code:models/hr_employee_document.py:101
 msgid "Document-%s Expired On %s"
 msgstr "Documento-%s caducó el %s"
 
-#, fuzzy
 #: code:models/hr_employee.py:31
 #: code:models/hr_employee.py:47
 #: model_terms:views/hr_employee_document_views.xml
@@ -92,57 +81,47 @@ msgstr "Documentos"
 msgid "Employee"
 msgstr "Empleado"
 
-#, fuzzy
 #: code:models/hr_employee_document.py:38
 msgid "Expiry Date"
 msgstr "Expiry Fecha"
 
-#, fuzzy
 #: code:models/hr_employee_document.py:38
 msgid "Expiry date of the documents."
 msgstr "Fecha de caducidad de los documentos."
 
-#, fuzzy
 #: code:models/hr_employee_document.py:54
 msgid "How many number of days before to get the notification email."
 msgstr "Cuántos días antes para recibir el correo electrónico de notificación."
 
-#, fuzzy
 #: code:models/hr_employee_document.py:49
 msgid "Issue Date"
 msgstr "Issue Fecha"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Manages Employee Documents With Expiry Notifications."
-msgstr "Manages Empleado Documents With Expiry Notifications."
+msgstr "Gestiona documentos de empleados con notificaciones de vencimiento."
 
 #: code:models/document_type.py:32
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:models/document_type.py:32
 msgid "Name of the document type"
-msgstr "Nombre of the document type"
+msgstr "Nombre del tipo de documento"
 
-#, fuzzy
 #: code:models/hr_document.py:33
 #: model_terms:views/hr_document_views.xml
 msgid "Note"
 msgstr "Nota"
 
-#, fuzzy
 #: code:models/hr_document.py:33
 msgid "Note of the document."
 msgstr "Nota del documento."
 
-#, fuzzy
 #: code:models/hr_employee_document.py:57
 msgid "Notification Type"
 msgstr "Tipo de notificación"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "OH Addon: Manages Employee Related Documents with Expiry\n"
@@ -153,65 +132,54 @@ msgid ""
 "     regulatory, or operational complications that may arise from expired \n"
 "     documentation."
 msgstr ""
-"OH Addon: Manages Empleado Related Documents with Expiry\n"
-"     Notifications. As such dates approach, the system is programmed to send\n"
-"     automated alerts to relevant employees.These timely notifications are\n"
-"     essential for ensuring that necessary actions can be taken to update \n"
-"     or renew documents before they lapse, thereby avoiding potential legal,\n"
-"     regulatory, or operational complications that may arise from expired \n"
-"     documentation."
+"Complemento OH: gestiona los documentos de empleados con notificaciones de\n"
+"     vencimiento. Conforme se acercan estas fechas, el sistema envía\n"
+"     alertas automáticas a los empleados correspondientes. Estas notificaciones son\n"
+"     esenciales para tomar a tiempo las medidas necesarias para actualizar \n"
+"     o renovar los documentos antes de que venzan y evitar posibles complicaciones\n"
+"     legales, regulatorias u operativas derivadas de documentación \n"
+"     vencida."
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Employee Documents Expiry"
 msgstr "Open HRMS Empleado Documents Expiry"
 
-#, fuzzy
 #: code:models/hr_employee_document.py:57
 msgid "Select type of the documents expiry notification."
 msgstr "Seleccione el tipo de notificación de vencimiento de los documentos."
 
-#, fuzzy
 #: code:models/hr_employee_document.py:40
 msgid "Specify the employee name."
 msgstr "Especifique el nombre del empleado."
 
-#, fuzzy
 #: code:models/ir_attachment.py:32
 msgid "This field allows you to associateHR employee documents with the record."
 msgstr "Este campo le permite asociar documentos de empleados de RR.HH. con el registro."
 
-#, fuzzy
 #: code:models/ir_attachment.py:39
 msgid "This field allows you to attach HR documents to the record."
 msgstr "Este campo le permite adjuntar documentos de recursos humanos al registro."
 
-#, fuzzy
 #: code:models/hr_employee_document.py:51
 msgid "Type of the document."
 msgstr "Tipo de documento."
 
-#, fuzzy
 #: code:models/hr_employee_document.py:43
 msgid "You can attach the copy of your document"
 msgstr "Puedes adjuntar la copia de tu documento"
 
-#, fuzzy
 #: code:models/hr_document.py:34
 msgid "You can attach the copy of your document."
 msgstr "Puede adjuntar la copia de su documento."
 
-#, fuzzy
 #: code:models/hr_document.py:31
 msgid "You can give your Document name here."
 msgstr "Puede dar el nombre de su documento aquí."
 
-#, fuzzy
 #: code:models/hr_employee_document.py:34
 msgid "You can give your Document number."
 msgstr "Puede dar su número de documento."
 
-#, fuzzy
 #: code:models/hr_employee_document.py:119
 msgid "Your Document Is Expired."
 msgstr "Su documento ha caducado."

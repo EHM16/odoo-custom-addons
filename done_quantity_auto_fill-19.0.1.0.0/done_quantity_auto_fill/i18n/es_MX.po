@@ -16,57 +16,46 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Add Done quantity automatically for the transfer of the products"
 msgstr "Agregar cantidad Realizada automáticamente para la transferencia de los productos"
 
-#, fuzzy
 #: code:models/stock_picking.py:29
 msgid "All"
 msgstr "Todos"
 
-#, fuzzy
 #: code:models/stock_picking.py:29
 msgid "Can select all the lines"
 msgstr "Puede seleccionar todas las líneas."
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Done Quantity Auto Fill"
-msgstr "Done Cantidad Auto Fill"
+msgstr "Autocompletado de cantidad hecha"
 
-#, fuzzy
 #: model_terms:views/stock_picking_views.xml
 msgid "Fill Done Qty"
 msgstr "Llenar cantidad hecha"
 
-#, fuzzy
 #: code:models/stock_move.py:29
 msgid "Select"
 msgstr "Seleccionar"
 
-#, fuzzy
 #: model_terms:views/stock_picking_views.xml
 msgid "Select All"
 msgstr "Seleccionar todo"
 
-#, fuzzy
 #: code:models/stock_move.py:29
 msgid "Select products from order line"
 msgstr "Seleccionar productos de la línea de pedido"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module helps to add the done quantities of all the products while the transfer of products.This feature is available while the delivery of products, receiving the products and returning the products. Also we can unfill the done quantity of the selected products while the transfer."
 msgstr "Este módulo ayuda a agregar las cantidades realizadas de todos los productos durante la transferencia de productos. Esta función está disponible durante la entrega de productos, la recepción de productos y la devolución de productos. También podremos vaciar la cantidad realizada de los productos seleccionados durante la transferencia."
 
-#, fuzzy
 #: model_terms:views/stock_picking_views.xml
 msgid "Unfill Done Qty"
 msgstr "Desechar cantidad hecha"
 
-#, fuzzy
 #: model_terms:views/stock_picking_views.xml
 msgid "Unselect All"
 msgstr "Deseleccionar todo"

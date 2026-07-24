@@ -44,7 +44,6 @@ msgstr ""
 msgid "Customer Discount Account"
 msgstr "Cuenta de descuentos de clientes"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module enables users to generate journal entries \n"

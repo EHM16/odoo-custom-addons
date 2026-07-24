@@ -16,47 +16,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/project_sub_task.py:45
 msgid "Assignees"
 msgstr "Cesionarios"
 
-#, fuzzy
 #: model_terms:views/project_project_views.xml
 msgid "Create Project from Template"
-msgstr "Create Proyecto from Template"
+msgstr "Crear proyecto a partir de plantilla"
 
-#, fuzzy
 #: code:models/project_stage.py:40
 msgid "Defines the order of this stage."
 msgstr "Define el orden de esta etapa."
 
-#, fuzzy
 #: code:models/project_sub_task.py:43
 msgid "Enter a description for the task."
 msgstr "Introduzca una descripción para la tarea."
 
-#, fuzzy
 #: code:models/project_sub_task.py:38
 msgid "Enter the name of the task"
 msgstr "Ingrese el nombre de la tarea"
 
-#, fuzzy
 #: code:models/project_sub_task.py:55
 msgid "Indicates whether the Sub-Tasks page should be displayed."
-msgstr "Indicates whether the Sub-Tareas page should be displayed."
+msgstr "Indica si se debe mostrar la página Subtareas."
 
-#, fuzzy
 #: code:models/project_sub_task.py:52
 msgid "List of sub-tasks, if any."
 msgstr "Lista de subtareas, si las hubiera."
 
-#, fuzzy
 #: code:models/project_task_template.py:36
 msgid "List of the stages associated with this template."
 msgstr "Lista de las etapas asociadas a esta plantilla."
 
-#, fuzzy
 #: code:models/project_task_template.py:32
 msgid "List of the tasks associated with this template."
 msgstr "Lista de las tareas asociadas a esta plantilla."
@@ -65,79 +56,64 @@ msgstr "Lista de las tareas asociadas a esta plantilla."
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:models/project_task_template.py:30
 msgid "Name for the task template."
-msgstr "Nombre for the task template."
+msgstr "Nombre de la plantilla de tarea."
 
-#, fuzzy
 #: code:models/project_sub_task.py:49
 msgid "Parent Task"
 msgstr "Parent Tarea"
 
-#, fuzzy
 #: code:models/project_stage.py:34
 msgid "Project Stage"
-msgstr "Proyecto Stage"
+msgstr "Etapa del proyecto"
 
-#, fuzzy
 #: code:models/project_project.py:44
 #: code:models/project_stage.py:31
 #: code:models/project_sub_task.py:40
 msgid "Project Template"
 msgstr "Proyecto Template"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Project Templates"
 msgstr "Proyecto Templates"
 
-#, fuzzy
 #: code:models/project_sub_task.py:58
 msgid "Represents the current status of the sub-task."
 msgstr "Representa el estado actual de la subtarea."
 
-#, fuzzy
 #: code:models/project_project.py:44
 msgid "Select a project task template to use for this project."
 msgstr "Seleccione una plantilla de tarea de proyecto para usar en este proyecto."
 
-#, fuzzy
 #: code:models/project_stage.py:31
 msgid "Select a project task template to use for this stage."
 msgstr "Seleccione una plantilla de tarea de proyecto para usar en esta etapa."
 
-#, fuzzy
 #: code:models/project_sub_task.py:40
 msgid "Select a project task template to use for this task."
 msgstr "Seleccione una plantilla de tarea de proyecto para usar en esta tarea."
 
-#, fuzzy
 #: model_terms:views/project_project_views.xml
 msgid "Select a template"
 msgstr "Seleccione una plantilla"
 
-#, fuzzy
 #: code:models/project_sub_task.py:49
 msgid "Select the parent task, if any."
 msgstr "Seleccione la tarea principal, si corresponde."
 
-#, fuzzy
 #: code:models/project_stage.py:34
 msgid "Select the project stage."
 msgstr "Seleccione la etapa del proyecto."
 
-#, fuzzy
 #: code:models/project_sub_task.py:45
 msgid "Select the users who are assigned to this task."
 msgstr "Seleccione los usuarios que están asignados a esta tarea."
 
-#, fuzzy
 #: code:models/project_sub_task.py:55
 msgid "Show Tasks Page"
 msgstr "Show Tareas Page"
 
-#, fuzzy
 #: code:models/project_task_template.py:36
 #: model_terms:views/project_task_template_views.xml
 msgid "Stages"
@@ -147,54 +123,44 @@ msgstr "Etapas"
 msgid "State"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/project_sub_task.py:52
 msgid "Sub-Tasks"
 msgstr "Sub-Tareas"
 
-#, fuzzy
 #: code:models/project_stage.py:37
 msgid "Subtasks"
 msgstr "Subtareas"
 
-#, fuzzy
 #: code:models/project_stage.py:37
 msgid "Subtasks associated with this stage."
 msgstr "Subtareas asociadas a esta etapa."
 
-#, fuzzy
 #: code:models/project_sub_task.py:43
 msgid "Task Description"
 msgstr "Tarea Descripción"
 
-#, fuzzy
 #: code:models/project_task_template.py:32
 #: model_terms:views/project_sub_task_views.xml
 #: model_terms:views/project_task_template_views.xml
 msgid "Tasks"
 msgstr "Tareas"
 
-#, fuzzy
 #: code:models/project_task_template.py:30
 msgid "Template Name"
 msgstr "Template Nombre"
 
-#, fuzzy
 #: code:models/project_task_type.py:29
 msgid "The template associated with this task type."
 msgstr "La plantilla asociada con este tipo de tarea."
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "This app allows your project team to create projecttemplate and task template"
 msgstr "Esta aplicación le permite a su equipo de proyecto crear una plantilla de proyecto y una plantilla de tarea."
 
-#, fuzzy
 #: model_terms:views/project_task_template_views.xml
 msgid "View Task"
 msgstr "View Tarea"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "When faced with the need to create multiple projects that share similar tasks, manually inputting data such as task names, descriptions, and assigned individuals can be time-consuming. In such situations, this module offers assistance in creating and managing projects based on pre-defined templates."
 msgstr "Cuando nos enfrentamos a la necesidad de crear varios proyectos que comparten tareas similares, ingresar manualmente datos como nombres de tareas, descripciones e individuos asignados puede llevar mucho tiempo. En tales situaciones, este módulo ofrece asistencia para crear y gestionar proyectos basados ​​en plantillas predefinidas."

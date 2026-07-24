@@ -16,51 +16,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/customer_group.py:31
 msgid "Add contacts to the customer group"
 msgstr "Agregar contactos al grupo de clientes"
 
-#, fuzzy
 #: code:models/customer_group.py:33
 msgid "Add Pricelist for apply on the customer group"
 msgstr "Agregar lista de precios para aplicar en el grupo de clientes"
 
-#, fuzzy
 #: model_terms:views/customer_group_views.xml
 msgid "Contact group"
 msgstr "grupo de contacto"
 
-#, fuzzy
 #: code:models/customer_group.py:31
 msgid "Contacts"
 msgstr "Contactos"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Customer Group PriceList"
-msgstr "Cliente Group PriceList"
+msgstr "Lista de precios para grupos de clientes"
 
 #: code:models/customer_group.py:30
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:models/customer_group.py:30
 msgid "Name of the Pricelist"
-msgstr "Nombre of the Pricelist"
+msgstr "Nombre de la lista de precios"
 
-#, fuzzy
 #: code:models/customer_group.py:33
 msgid "PriceList"
 msgstr "Lista de precios"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Pricelist will be set automatically based on the customer group"
 msgstr "La lista de precios se establecerá automáticamente según el grupo de clientes."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This app allows to set the pricelist automatically based \n"

@@ -16,10 +16,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/res_config_settings.py:30
 msgid "Approval from Accounting Department"
-msgstr "Approval from Cuentaing Department"
+msgstr "Aprobación del departamento de contabilidad"
 
 #: model_terms:views/hr_loan_views.xml
 msgid "Approve"
@@ -29,62 +28,51 @@ msgstr "Aprobar"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#, fuzzy
 #: model_terms:views/hr_loan_views.xml
 msgid "Compute Installment"
 msgstr "Calcular cuota"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "Create accounting entries for loan requests."
 msgstr "Crear asientos contables para solicitudes de préstamos."
 
-#, fuzzy
 #: code:models/hr_loan.py:33
 msgid "Employee account"
-msgstr "Empleado account"
+msgstr "Cuenta del empleado"
 
 #: code:models/hr_loan.py:39
 msgid "Journal"
 msgstr "Diario"
 
-#, fuzzy
 #: code:models/hr_loan.py:39
 msgid "Journal for the loan"
 msgstr "Diario del préstamo"
 
-#, fuzzy
 #: code:models/hr_loan.py:33
 msgid "Loan Account"
 msgstr "Loan Cuenta"
 
-#, fuzzy
 #: code:models/res_config_settings.py:30
 msgid "Loan Approval from account manager"
 msgstr "Aprobación del préstamo por parte del administrador de cuentas"
 
-#, fuzzy
 #: code:models/account_move_line.py:30
 msgid "Loan Id"
 msgstr "Identificación del préstamo"
 
-#, fuzzy
 #: code:models/account_move_line.py:30
 msgid "Loan id on invoice line"
 msgstr "ID de préstamo en la línea de factura"
 
-#, fuzzy
 #: code:models/hr_loan.py:170
 msgid "Loan Request must be approved"
 msgstr "La solicitud de préstamo debe ser aprobada."
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Open HRMS Loan Accounting"
-msgstr "Open HRMS Loan Cuentaing"
+msgstr "Open HRMS: contabilidad de préstamos"
 
-#, fuzzy
 #: model_terms:views/hr_loan_views.xml
 msgid "Refuse"
 msgstr "Rechazar"
@@ -93,43 +81,35 @@ msgstr "Rechazar"
 msgid "State"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/hr_loan.py:41
 msgid "State of the loan request"
 msgstr "Estado de la solicitud de préstamo"
 
-#, fuzzy
 #: model_terms:views/hr_loan_views.xml
 msgid "Submit"
-msgstr "Submit"
+msgstr "Enviar"
 
-#, fuzzy
 #: code:models/hr_loan.py:36
 msgid "Treasury Account"
 msgstr "Treasury Cuenta"
 
-#, fuzzy
 #: code:models/hr_loan.py:36
 msgid "Treasury account for the loan"
 msgstr "Cuenta de tesorería para el préstamo"
 
-#, fuzzy
 #: code:models/hr_loan.py:60
 msgid "You must compute installment before Approved"
 msgstr "Debe calcular la cuota antes de ser aprobada."
 
-#, fuzzy
 #: code:models/hr_loan.py:119
 #: code:models/hr_loan.py:70
 msgid "You must compute Loan Request before Approved"
 msgstr "Debe calcular la Solicitud de préstamo antes de ser aprobada."
 
-#, fuzzy
 #: code:models/hr_loan.py:58
 msgid "You must Define a contract for employee"
 msgstr "Debe definir un contrato para el empleado"
 
-#, fuzzy
 #: code:models/hr_loan.py:115
 #: code:models/hr_loan.py:66
 msgid "You must enter employee account & Treasury account and journal to approve"

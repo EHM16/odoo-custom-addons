@@ -16,37 +16,40 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
 "\n"
 "                                                        Days Left"
-msgstr "Días restantes"
+msgstr ""
+"\n"
+"Días restantes"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
 "\n"
 "                                    Ago"
-msgstr "Hace"
+msgstr ""
+"\n"
+"Hace"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
 "\n"
 "                            Announcements\n"
 "                        "
-msgstr "Anuncios"
+msgstr ""
+"\n"
+"Anuncios"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
 "\n"
 "                            Upcoming Events\n"
 "                        "
-msgstr "Próximos eventos"
+msgstr ""
+"\n"
+"Próximos eventos"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
 "\n"
@@ -57,28 +60,28 @@ msgstr ""
 "                        Fecha:\n"
 "                        "
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
 "\n"
 "                        Upcoming Birthdays\n"
 "                    "
-msgstr "Próximos cumpleaños"
+msgstr ""
+"\n"
+"Próximos cumpleaños"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
 "\n"
 "                        Venue:\n"
 "                        "
-msgstr "Lugar:"
+msgstr ""
+"\n"
+"Lugar:"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Add job title"
 msgstr "Agregar título de trabajo"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
 "Address\n"
@@ -92,66 +95,54 @@ msgstr ""
 msgid "Amount"
 msgstr "Importe"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 msgid "Applications"
 msgstr "Aplicaciones"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
 "ATTENDANCE\n"
 "                            "
 msgstr "ASISTENCIA"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 msgid "Attendances"
 msgstr "Asistencias"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Attrition Rate"
 msgstr "Tasa de deserción"
 
-#, fuzzy
 #: code:models/hr_employee.py:40
 msgid "Birthday of employee"
 msgstr "cumpleaños del empleado"
 
-#, fuzzy
 #: code:report/broadfactor.py:36
 #: model_terms:report/broadfactor.xml
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Broad Factor"
 msgstr "Factor amplio"
 
-#, fuzzy
 #: code:report/broadfactor.py:36
 msgid "Broad factor"
 msgstr "factor amplio"
 
-#, fuzzy
 #: model_terms:report/broadfactor.xml
 msgid "Broad Factor Report"
 msgstr "Informe de factores amplios"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Check In"
 msgstr "Registrarse"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Check out"
 msgstr "echa un vistazo"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Comprehensive Dashboard for Managing HR Activities in Open HRMS"
 msgstr "Panel completo para gestionar las actividades de recursos humanos en Open HRMS"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Contracts"
@@ -161,22 +152,18 @@ msgstr "Contratos"
 msgid "Date"
 msgstr "Fecha"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Date :"
 msgstr "Fecha :"
 
-#, fuzzy
 #: code:models/hr_employee.py:40
 msgid "Date of Birth"
-msgstr "Fecha of Birth"
+msgstr "Fecha de nacimiento"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Departments"
 msgstr "Departamentos"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Due Date"
 msgstr "Due Fecha"
@@ -185,97 +172,78 @@ msgstr "Due Fecha"
 msgid "Employee"
 msgstr "Empleado"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 msgid "Employee Payslips"
 msgstr "Empleado Payslips"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Error : Could not find employee linked to user"
 msgstr "Error: no se pudo encontrar el empleado vinculado al usuario"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 msgid "Expense"
 msgstr "Gasto"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "EXPENSES"
 msgstr "GASTOS"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "From Date"
-msgstr "From Fecha"
+msgstr "Fecha desde"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Happy Birthday..!! 🎁"
 msgstr "Feliz Cumpleaños..!! 🎁"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Job Applications"
 msgstr "Solicitudes de empleo"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Joined"
 msgstr "Se unió"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 msgid "Leave Allocation Request"
 msgstr "Solicitud de asignación de licencia"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Leave Allocation Requests"
 msgstr "Dejar solicitudes de asignación"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 msgid "Leave Request"
 msgstr "Solicitud de licencia"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Leave Requests"
 msgstr "Solicitudes de licencia"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "LEAVES"
 msgstr "HOJAS"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 msgid "Leaves Today"
 msgstr "Se va hoy"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Monthly Join/Resign Analysis"
 msgstr "Análisis mensual de alta/renuncia"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Monthly Leave Analysis"
 msgstr "Análisis de vacaciones mensuales"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "My Leave Analysis"
 msgstr "Mi análisis de licencia"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "My Skill Analysis"
 msgstr "Mi análisis de habilidades"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 msgid "My Tasks"
 msgstr "My Tareas"
@@ -284,64 +252,52 @@ msgstr "My Tareas"
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:report/broadfactor.py:32
 msgid "Name for the record"
-msgstr "Nombre for the record"
+msgstr "Nombre para el registro"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "No Announcements"
 msgstr "Sin anuncios"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "No announcements available at this time."
 msgstr "No hay anuncios disponibles en este momento."
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "No events scheduled for the coming days."
 msgstr "No hay eventos programados para los próximos días."
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "No Upcoming Birthdays"
 msgstr "No hay cumpleaños próximos"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "No Upcoming Events"
 msgstr "No hay eventos próximos"
 
-#, fuzzy
 #: code:report/broadfactor.py:35
 msgid "No.of Days"
 msgstr "No. de días"
 
-#, fuzzy
 #: code:report/broadfactor.py:35
 msgid "No.of days"
 msgstr "No. de días"
 
-#, fuzzy
 #: code:report/broadfactor.py:33
 msgid "No.of Occurrence"
 msgstr "No. de ocurrencia"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS HR Dashboard"
 msgstr "Abrir panel de control de recursos humanos HRMS"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
 "Payslips\n"
 "                                "
 msgstr "Recibos de nómina"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Please contact system admin for the setup"
 msgstr "Comuníquese con el administrador del sistema para la configuración."
@@ -350,32 +306,26 @@ msgstr "Comuníquese con el administrador del sistema para la configuración."
 msgid "Project"
 msgstr "Proyecto"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 msgid "Project Task"
 msgstr "Proyecto Tarea"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "PROJECTS"
 msgstr "PROYECTOS"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "Provides a dashboard to view key HR information such as attendance, leaves, payroll, and more. Helps HR teams track activities in one place."
 msgstr "Proporciona un panel para ver información clave de recursos humanos, como asistencia, permisos, nómina y más. Ayuda a los equipos de recursos humanos a realizar un seguimiento de las actividades en un solo lugar."
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Sign In"
 msgstr "Iniciar sesión"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Sign Out"
 msgstr "Cerrar sesión"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Stage"
 msgstr "etapa"
@@ -384,7 +334,6 @@ msgstr "etapa"
 msgid "Status"
 msgstr "Estado"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Subject"
 msgstr "Asunto"
@@ -393,33 +342,27 @@ msgstr "Asunto"
 msgid "Task"
 msgstr "Tarea"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "There are no birthdays in the coming days."
 msgstr "No hay cumpleaños en los próximos días."
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "This Month"
 msgstr "este mes"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 msgid "This Month Leaves"
 msgstr "Este mes se va"
 
-#, fuzzy
 #: code:static/src/js/dashboard.js
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Timesheets"
-msgstr "Hojas de tiempo"
+msgstr "Hojas de horas"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "To Date"
-msgstr "To Fecha"
+msgstr "Fecha hasta"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Today"
 msgstr "hoy"
@@ -428,13 +371,11 @@ msgstr "hoy"
 msgid "Type"
 msgstr "Tipo"
 
-#, fuzzy
 #: code:models/hr_employee.py:55
 #: code:models/hr_employee.py:62
 msgid "Unknown"
 msgstr "Desconocido"
 
-#, fuzzy
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Worked Hours"
 msgstr "Horas trabajadas"

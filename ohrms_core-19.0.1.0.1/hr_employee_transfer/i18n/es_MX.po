@@ -41,27 +41,22 @@ msgstr "Borrador"
 msgid "Employee"
 msgstr "Empleado"
 
-#, fuzzy
 #: model_terms:views/employee_transfer_views.xml
 msgid "Employee Transfer"
 msgstr "Empleado Transfer"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Employee transfer between branches"
 msgstr "Empleado transfer between branches"
 
-#, fuzzy
 #: code:models/employee_transfer.py:112
 msgid "Employees"
 msgstr "Empleados"
 
-#, fuzzy
 #: code:models/employee_transfer.py:59
 msgid "Enter any relevant notes regarding the transfer process or reasons for transfer."
 msgstr "Ingrese cualquier nota relevante sobre el proceso de transferencia o los motivos de la transferencia."
 
-#, fuzzy
 #: code:models/employee_transfer.py:59
 #: model_terms:views/employee_transfer_views.xml
 msgid "Internal Notes"
@@ -72,17 +67,14 @@ msgstr "Notas internas"
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:models/employee_transfer.py:33
 msgid "Name of the Transfer"
-msgstr "Nombre of the Transfer"
+msgstr "Nombre de la Transferencia"
 
-#, fuzzy
 #: code:models/employee_transfer.py:35
 msgid "New"
-msgstr "New"
+msgstr "Nuevo"
 
-#, fuzzy
 #: code:models/employee_transfer.py:47
 msgid ""
 "New: Transfer is created and not confirmed.\n"
@@ -91,28 +83,24 @@ msgid ""
 "        Done: Employee is Joined/Received in the transferred Branch.\n"
 "        Cancelled: Transfer is cancelled."
 msgstr ""
-"New: Transfer is created and not confirmed.\n"
-"        Transferred: Transfer is confirmed. Transfer stays in this status till\n"
-"         the transferred Branch receive the employee.\n"
-"        Done: Empleado is Joined/Received in the transferred Branch.\n"
-"        Cancelled: Transfer is cancelled."
+"Nuevo: la transferencia se creó y no está confirmada.\n"
+"        Transferido: la transferencia está confirmada y permanece en este estado hasta que\n"
+"         la sucursal de destino reciba al empleado.\n"
+"        Hecho: el empleado se incorporó o fue recibido en la sucursal de destino.\n"
+"        Cancelado: la transferencia está cancelada."
 
-#, fuzzy
 #: code:models/employee_transfer.py:39
 msgid "Old Employee"
 msgstr "Old Empleado"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Branch Transfer"
 msgstr "Transferencia de sucursal abierta de HRMS"
 
-#, fuzzy
 #: code:models/employee_transfer.py:88
 msgid "Please select a company for the transfer."
 msgstr "Por favor seleccione una empresa para la transferencia."
 
-#, fuzzy
 #: model_terms:views/employee_transfer_views.xml
 msgid "Receive"
 msgstr "Recibir"
@@ -121,17 +109,14 @@ msgstr "Recibir"
 msgid "Responsible"
 msgstr "Responsable"
 
-#, fuzzy
 #: model_terms:views/employee_transfer_views.xml
 msgid "Responsible Person"
 msgstr "Persona Responsable"
 
-#, fuzzy
 #: code:models/employee_transfer.py:43
 msgid "Select the company to which the employee is being transferred"
 msgstr "Seleccione la empresa a la que se transfiere el empleado"
 
-#, fuzzy
 #: code:models/employee_transfer.py:36
 msgid "Select the employee who is being transferred."
 msgstr "Seleccione el empleado que está siendo transferido."
@@ -141,43 +126,35 @@ msgstr "Seleccione el empleado que está siendo transferido."
 msgid "Status"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/employee_transfer.py:56
 msgid "The current company of the employee before the transfer."
 msgstr "La empresa actual del empleado antes del traslado."
 
-#, fuzzy
 #: code:models/employee_transfer.py:65
 msgid "The person responsible for the transfer."
 msgstr "El responsable de la transferencia."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This modules allows the user to transfer an employee from one branch to another branch"
 msgstr "Este módulo permite al usuario transferir un empleado de una sucursal a otra sucursal."
 
-#, fuzzy
 #: model_terms:views/employee_transfer_views.xml
 msgid "Transfer"
 msgstr "Transferir"
 
-#, fuzzy
 #: code:models/employee_transfer.py:41
 msgid "Transfer date"
 msgstr "fecha de transferencia"
 
-#, fuzzy
 #: code:models/employee_transfer.py:43
 msgid "Transfer To"
 msgstr "Transferir a"
 
-#, fuzzy
 #: code:models/employee_transfer.py:62
 #: model_terms:views/employee_transfer_views.xml
 msgid "Transferred"
 msgstr "Transferido"
 
-#, fuzzy
 #: code:models/employee_transfer.py:90
 msgid "You cannot transfer the employee to the same company."
 msgstr "No se puede transferir al empleado a la misma empresa."

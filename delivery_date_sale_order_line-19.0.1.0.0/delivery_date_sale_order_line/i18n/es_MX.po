@@ -16,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "Adding delivery date in the sale order line and the \n"
@@ -25,31 +24,26 @@ msgstr ""
 "Agregar fecha de entrega en la línea de orden de venta y el \n"
 "     entrega creada en base a ella."
 
-#, fuzzy
 #: code:models/stock_move.py:67
 msgid "Date should be after the today date"
-msgstr "Fecha should be after the today date"
+msgstr "La fecha debe ser posterior a la fecha actual."
 
-#, fuzzy
 #: code:models/sale_order_line.py:29
 #: code:models/stock_move.py:31
 #: code:models/stock_picking.py:29
 msgid "Delivery Date"
-msgstr "Delivery Fecha"
+msgstr "Fecha de entrega"
 
-#, fuzzy
 #: code:models/sale_order_line.py:29
 #: code:models/stock_move.py:31
 #: code:models/stock_picking.py:29
 msgid "Delivery date for the product"
 msgstr "Fecha de entrega del producto."
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Delivery date in the sale order."
 msgstr "Fecha de entrega en la orden de venta."
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Sale Delivery By Date"
-msgstr "Sale Delivery By Fecha"
+msgstr "Entrega de órdenes de venta por fecha"

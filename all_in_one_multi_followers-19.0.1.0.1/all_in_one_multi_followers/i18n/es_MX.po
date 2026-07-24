@@ -26,11 +26,11 @@ msgstr "Tipo de acción"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "All in One Multi Followers"
-msgstr "Gestión integral de seguidores múltiples"
+msgstr "Gestión integral de seguidores"
 
 #: code:models/multi_follower.py:36
 msgid "Applied To"
-msgstr "Aplicada a"
+msgstr "Aplicado a"
 
 #: model_terms:wizard/follower_adding_removing_views.xml
 msgid "Cancel"
@@ -51,16 +51,15 @@ msgstr "Seguidores dinámicos"
 
 #: code:models/multi_follower.py:41
 msgid "Enabling and hiding the create action button."
-msgstr "Habilita y oculta el botón para crear la acción."
+msgstr "Habilita u oculta el botón para crear la acción."
 
-#, fuzzy
 #: model_terms:views/res_config_settings_views.xml
 msgid "Go to Model"
 msgstr "Ir al modelo"
 
 #: code:wizard/follower_adding_removing.py:140
 msgid "Hello,"
-msgstr "Hola:"
+msgstr "Hola,"
 
 #: code:wizard/follower_adding_removing.py:33
 msgid "Id of the followed resource"
@@ -72,11 +71,11 @@ msgstr "Si se selecciona, los contactos recibirán un correo electrónico que le
 
 #: code:models/multi_follower.py:46
 msgid "If the name is visible to the line its created the action. If its not its deleted the action."
-msgstr "Si el nombre aparece en la línea, la acción está creada; si no aparece, la acción está eliminada."
+msgstr "Si el nombre aparece en la línea, la acción está creada; de lo contrario, la acción se elimina."
 
 #: code:wizard/follower_adding_removing.py:46
 msgid "Invite/ Remove mailing message."
-msgstr "Mensaje de correo para invitar o eliminar."
+msgstr "Mensaje de correo para agregar o eliminar seguidores."
 
 #: code:wizard/follower_adding_removing.py:46
 msgid "Message"
@@ -122,22 +121,18 @@ msgstr "Enviar"
 msgid "The Document follow %(document_model)s: %(document_name)s"
 msgstr "Seguimiento del documento %(document_model)s: %(document_name)s"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "The module used to add or remove the multi followers in the whole odoo models by dynamic actions."
-msgstr "El módulo se utiliza para agregar o eliminar múltiples seguidores en todos los modelos de Odoo mediante acciones dinámicas."
+msgstr "Permite agregar o eliminar múltiples seguidores en cualquier modelo de Odoo mediante acciones dinámicas."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "The module used to add or remove the multi followers in the whole odoo models by dynamic actions.If you want to set a multi followers in your model this is helpful you to select the multi followers when clicking the action. After adding or removing the followers it will affect the model. So in this way you can add or remove multiple followers in the whole odoo quickly."
-msgstr "El módulo se utiliza para agregar o eliminar seguidores múltiples en todos los modelos de Odoo mediante acciones dinámicas. Si desea establecer seguidores múltiples en su modelo, esto le resultará útil para seleccionar los seguidores múltiples al hacer clic en la acción. Después de agregar o eliminar seguidores, afectará al modelo. De esta manera puedes agregar o eliminar múltiples seguidores en todo odoo rápidamente."
+msgstr "Este módulo permite agregar o eliminar múltiples seguidores en cualquier modelo de Odoo mediante acciones dinámicas. Puede seleccionar varios seguidores de forma simultánea al ejecutar la acción. Los cambios se aplican inmediatamente al registro correspondiente, lo que facilita administrar seguidores de forma masiva en todo Odoo."
 
-#, fuzzy
 #: code:models/multi_follower.py:31
 msgid "This is the action name. So this name is visible under the the appropriate model action."
-msgstr "Este es el nombre de la acción. Entonces este nombre es visible bajo la acción del modelo apropiado."
+msgstr "Este es el nombre de la acción. Se mostrará en el menú de acciones del modelo correspondiente."
 
-#, fuzzy
 #: code:models/multi_follower.py:55
 msgid "Window Actions"
 msgstr "Acciones de ventana"

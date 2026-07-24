@@ -20,7 +20,6 @@ msgstr ""
 msgid "Approve"
 msgstr "Aprobar"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "By this module, you can grant access to users to \n"
@@ -28,46 +27,39 @@ msgid ""
 "    approved partners on sales orders, purchase orders, invoices, bills or \n"
 "    delivery orders."
 msgstr ""
-"Mediante este módulo, puede otorgar acceso a los usuarios para \n"
-"    validar o aprobar socios. Entonces sólo podrás seleccionar \n"
-"    socios aprobados en órdenes de venta, órdenes de compra, facturas, facturas o \n"
+"Este módulo permite conceder acceso a los usuarios para \n"
+"    validar o aprobar contactos. De este modo, solo será posible seleccionar \n"
+"    contactos aprobados en órdenes de venta, órdenes de compra, facturas de cliente, facturas de proveedor u \n"
 "    órdenes de entrega."
 
 #: code:models/sale_order.py:28
 msgid "Customer"
 msgstr "Cliente"
 
-#, fuzzy
 #: code:models/res_partner.py:30
 msgid "Customer Supplier Id"
-msgstr "Cliente Supplier Id"
+msgstr "ID del cliente/proveedor"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Customer/Supplier Approval"
-msgstr "Cliente/Supplier Approval"
+msgstr "Aprobación del cliente/proveedor"
 
-#, fuzzy
 #: code:models/res_partner.py:33
 msgid "Hide Approve Button"
 msgstr "Ocultar botón Aprobar"
 
-#, fuzzy
 #: code:models/res_partner.py:37
 msgid "Hide Validate Button"
 msgstr "Ocultar botón Validar"
 
-#, fuzzy
 #: code:models/res_partner.py:71
 msgid "Only Manager can perform that move!"
-msgstr "¡Solo el Manager puede realizar ese movimiento!"
+msgstr "¡Solo un gerente puede realizar ese movimiento!"
 
-#, fuzzy
 #: code:models/res_partner.py:77
 msgid "Only Managers can perform that move!"
 msgstr "¡Solo los Managers pueden realizar ese movimiento!"
 
-#, fuzzy
 #: code:models/stock_picking.py:28
 msgid "Receive From"
 msgstr "Recibir de"
@@ -80,41 +72,34 @@ msgstr "Estado"
 msgid "Status"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/res_partner.py:33
 msgid "TChecking the box enables to hide the approve button"
 msgstr "Marcar la casilla permite ocultar el botón de aprobar"
 
-#, fuzzy
 #: code:models/res_partner.py:42
 msgid "The status of contacts"
 msgstr "El estado de los contactos."
 
-#, fuzzy
 #: code:models/res_partner.py:37
 msgid "This boolean field is used to hide the Validate button"
 msgstr "Este campo booleano se utiliza para ocultar el botón Validar."
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "This module allows users to validate or approve contacts"
 msgstr "Este módulo permite a los usuarios validar o aprobar contactos."
 
-#, fuzzy
 #: code:models/res_partner.py:30
 msgid "Unique id for partners"
 msgstr "Identificación única para socios"
 
-#, fuzzy
 #: model_terms:views/res_partner_views.xml
 msgid "Validate"
-msgstr "Validate"
+msgstr "Validar"
 
 #: code:models/purchase_order.py:28
 msgid "Vendor"
 msgstr "Proveedor"
 
-#, fuzzy
 #: code:models/purchase_order.py:28
 #: code:models/sale_order.py:28
 #: code:models/stock_picking.py:28

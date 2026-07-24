@@ -21,27 +21,22 @@ msgstr ""
 msgid "Company"
 msgstr "Empresa"
 
-#, fuzzy
 #: code:models/hr_payslip_run.py:30
 msgid "Company od the payslip."
-msgstr "Empresa od the payslip."
+msgstr "Empresa de la nómina."
 
-#, fuzzy
 #: code:models/hr_attendance.py:30
 msgid "Company of the attendance."
-msgstr "Empresa of the attendance."
+msgstr "Empresa de la asistencia."
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Enables Multi-Company"
 msgstr "Enables Multi-Empresa"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Multi-Company"
 msgstr "Open HRMS Multi-Empresa"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module enables multi company features"
 msgstr "Este módulo habilita funciones para múltiples empresas."

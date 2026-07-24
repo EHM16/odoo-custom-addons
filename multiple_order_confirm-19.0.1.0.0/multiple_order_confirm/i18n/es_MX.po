@@ -16,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "Adds \\\"Confirm\\\" and \\\"Cancel\\\" buttons to the tree view of\n"
@@ -29,24 +28,20 @@ msgstr ""
 "                      cancelar múltiples registros seleccionándolos directamente desde\n"
 "                      la vista del árbol."
 
-#, fuzzy
 #: model_terms:views/purchase_order_views.xml
 #: model_terms:views/sale_order_views.xml
 msgid "Cancel Orders"
 msgstr "Cancelar pedidos"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Confirm or Cancel Multiple Sale or Purchase Orders"
-msgstr "Confirm or Cancel Multiple Sale or Orden de compras"
+msgstr "Confirmar o cancelar varias órdenes de venta o de compra"
 
-#, fuzzy
 #: model_terms:views/purchase_order_views.xml
 #: model_terms:views/sale_order_views.xml
 msgid "Confirm Orders"
 msgstr "Confirmar pedidos"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Multiple Sale/Purchase Order Confirm And Cancel"
-msgstr "Multiple Sale/Orden de compra Confirm And Cancel"
+msgstr "Confirmación y cancelación de varias órdenes de venta o de compra"

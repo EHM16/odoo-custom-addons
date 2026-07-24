@@ -16,27 +16,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Automatically creates employee while creating user"
 msgstr "Crea automáticamente un empleado al crear un usuario"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Employees From User"
-msgstr "Open HRMS Empleados From User"
+msgstr "Open HRMS: empleados a partir de usuarios"
 
-#, fuzzy
 #: code:models/res_users.py:30
 msgid "Related Employee"
 msgstr "Related Empleado"
 
-#, fuzzy
 #: code:models/res_users.py:30
 msgid "Related employee based on the data of the user"
 msgstr "Empleado relacionado en base a los datos del usuario"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module facilitates the automatic creation of employee records when users are being created."
 msgstr "Este módulo facilita la creación automática de registros de empleados cuando se crean usuarios."

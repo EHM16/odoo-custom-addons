@@ -16,76 +16,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/project_project.py:29
 #: code:models/project_task.py:29
 msgid "Calculate the progress of the task based on the task stage"
 msgstr "Calcular el progreso de la tarea según la etapa de la tarea."
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "Dive into project progression with a sleek module offering a task-focused progress bar. Switch between Kanban and list views seamlessly, ensuring a comprehensive understanding of your projects evolving landscape. Streamline your workflow and meet deadlines with ease."
 msgstr "Sumérgete en la progresión del proyecto con un módulo elegante que ofrece una barra de progreso centrada en las tareas. Cambie entre vistas Kanban y de lista sin problemas, garantizando una comprensión integral del panorama cambiante de sus proyectos. Optimice su flujo de trabajo y cumpla los plazos con facilidad."
 
-#, fuzzy
 #: code:models/project_task_type.py:47
 msgid "Ensure that the progress is not duplicated."
 msgstr "Asegúrese de que el progreso no se duplique."
 
-#, fuzzy
 #: code:models/project_project.py:33
 #: code:models/project_task_type.py:33
 msgid "Is Progress Bar"
 msgstr "Es la barra de progreso"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Keep your finger on the projects pulse with this module. Featuring a dynamic progress bar, it provides a visual snapshot of project and task advancement. Toggle effortlessly between Kanban and list views for a personalized project tracking experience."
 msgstr "Mantenga su dedo en el pulso de los proyectos con este módulo. Con una barra de progreso dinámica, proporciona una instantánea visual del avance del proyecto y la tarea. Alterne sin esfuerzo entre vistas Kanban y de lista para disfrutar de una experiencia personalizada de seguimiento de proyectos."
 
-#, fuzzy
 #: code:models/project_task_type.py:31
 msgid "Progress (%)"
 msgstr "Progreso (%)"
 
-#, fuzzy
 #: code:models/project_project.py:29
 #: code:models/project_task.py:29
 msgid "Progress Bar"
 msgstr "Barra de progreso"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Project and Task Progress Status"
-msgstr "Proyecto and Tarea Progress Estado"
+msgstr "Estado de progreso del proyecto y la tarea"
 
-#, fuzzy
 #: code:models/project_task_type.py:31
 msgid "Set your progress of the stage"
 msgstr "Establece tu progreso de la etapa."
 
-#, fuzzy
 #: code:models/project_project.py:33
 #: code:models/project_task.py:33
 msgid "Status of the task based the stage"
-msgstr "Estado of the task based the stage"
+msgstr "Estado de la tarea según la etapa."
 
-#, fuzzy
 #: code:models/project_task_type.py:54
 msgid "The progress in this stage must greater than that of the other stages progress bars. Alternatively, reassess the priority assigned to this stage."
 msgstr "El progreso en esta etapa debe ser mayor que el de las barras de progreso de las otras etapas. Alternativamente, reevaluar la prioridad asignada a esta etapa."
 
-#, fuzzy
 #: code:models/project_task_type.py:62
 msgid "The progress in this stage must less than that of theother stages progress bars. Alternatively, reassess the priority assigned to this stage."
 msgstr "El progreso en esta etapa debe ser menor que el de las barras de progreso de las otras etapas. Alternativamente, reevaluar la prioridad asignada a esta etapa."
 
-#, fuzzy
 #: code:models/project_task_type.py:69
 msgid "The progress must be less than or equal to 100"
 msgstr "El progreso debe ser menor o igual a 100."
 
-#, fuzzy
 #: code:models/project_task_type.py:33
 msgid "You can only see the progress if you enable this"
 msgstr "Sólo puedes ver el progreso si habilitas esto."

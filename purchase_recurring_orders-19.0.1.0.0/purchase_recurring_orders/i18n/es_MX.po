@@ -16,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:214
 msgid "%s (Copy)"
 msgstr "%s (Copia)"
@@ -26,73 +25,60 @@ msgstr "%s (Copia)"
 msgid "Active"
 msgstr "Activo"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:48
 msgid "Additional description that will be added to the product description on orders."
 msgstr "Descripción adicional que se añadirá a la descripción del producto en los pedidos."
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:188
 msgid "Agreement End Date must be Greater than Start Date"
-msgstr "Agreement Fecha final must be Greater than Fecha inicial"
+msgstr "La fecha de finalización del acuerdo debe ser posterior a la fecha de inicio"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:121
 msgid "Agreement Lines"
 msgstr "Líneas de acuerdo"
 
-#, fuzzy
 #: model_terms:views/recurring_orders_views.xml
 msgid "Agreement lines"
 msgstr "Líneas de acuerdo"
 
-#, fuzzy
 #: model_terms:views/recurring_orders_views.xml
 msgid "Agreement Name"
 msgstr "Agreement Nombre"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:148
 msgid "Agreement not Renewed"
 msgstr "Acuerdo no renovado"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:81
 msgid "Agreement Number"
 msgstr "Número de acuerdo"
 
-#, fuzzy
 #: code:models/purchase_agreement_renewal.py:30
 #: code:models/purchase_order.py:81
 #: code:models/recurring_agreement_line.py:33
 msgid "Agreement Reference"
 msgstr "Referencia del acuerdo"
 
-#, fuzzy
 #: model_terms:views/recurring_orders_views.xml
 msgid "Agreement Renewals"
 msgstr "Renovaciones de acuerdos"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:148
 msgid "Agreement Renewed"
 msgstr "Acuerdo renovado"
 
-#, fuzzy
 #: model_terms:views/res_partner_views.xml
 msgid "Agreements"
 msgstr "Acuerdos"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:95
 msgid "Beginning of the Agreement. Keep Empty to Use the Current Date"
-msgstr "Beginning of the Agreement. Keep Empty to Use the Current Fecha"
+msgstr "Inicio del acuerdo. Déjelo vacío para usar la fecha actual"
 
 #: model_terms:wizard/renew_wizard_views.xml
 msgid "Cancel"
 msgstr "Cancelar"
 
-#, fuzzy
 #: code:models/purchase_agreement_renewal.py:35
 #: code:wizard/renew_wizard.py:41
 msgid "Comments"
@@ -102,205 +88,168 @@ msgstr "Comentarios"
 msgid "Company"
 msgstr "Empresa"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:92
 msgid "Company that Signs the Agreement"
-msgstr "Empresa that Signs the Agreement"
+msgstr "Empresa que firma el acuerdo"
 
 #: code:models/purchase_agreement_renewal.py:34
 msgid "Date"
 msgstr "Fecha"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:65
 msgid "Date of the last Purchase order generated"
-msgstr "Fecha of the last Purchase order generated"
+msgstr "Fecha de la última orden de compra generada"
 
-#, fuzzy
 #: code:models/purchase_agreement_renewal.py:34
 msgid "Date of the Renewal"
-msgstr "Fecha of the Renewal"
+msgstr "Fecha de la renovación"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:138
 msgid "Date when agreement will expired"
-msgstr "Fecha when agreement will expired"
+msgstr "Fecha en que expirará el acuerdo"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:114
 #: code:models/recurring_agreement_line.py:58
 msgid "Days"
-msgstr "Days"
+msgstr "Días"
 
 #: code:models/recurring_agreement_line.py:45
 #: code:models/recurring_agreement_line.py:48
 msgid "Description"
 msgstr "Descripción"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:45
 msgid "Description of the Product"
-msgstr "Descripción of the Producto"
+msgstr "Descripción del producto"
 
-#, fuzzy
 #: code:wizard/renew_wizard.py:36
 msgid "Effective date of the renewal. This date is the one taken into account in the next renewal"
 msgstr "Fecha de vigencia de la renovación. Esta fecha es la que se tendrá en cuenta en la próxima renovación."
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:107
 msgid "End date"
 msgstr "Fecha de finalización"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:107
 msgid "End Date of the Agreement"
-msgstr "Fecha final of the Agreement"
+msgstr "Fecha de finalización del acuerdo"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:142
 msgid "First Order Created"
 msgstr "Primer pedido creado"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:98
 msgid "Fixed Term"
 msgstr "Plazo fijo"
 
-#, fuzzy
 #: code:models/purchase_order.py:77
 msgid "From Agreement?"
 msgstr "¿De Acuerdo?"
 
-#, fuzzy
 #: model_terms:views/purchase_order_views.xml
 msgid "Generate agreement"
 msgstr "Generar acuerdo"
 
-#, fuzzy
 #: model_terms:views/recurring_orders_views.xml
 msgid "Generate Initial Order"
 msgstr "Generar orden inicial"
 
-#, fuzzy
 #: model_terms:views/recurring_orders_views.xml
 msgid "Generate Next Year Orders"
 msgstr "Generar pedidos del próximo año"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Helps to create Purchase Recurring orders"
 msgstr "Ayuda a crear órdenes de compra recurrentes."
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:155
 msgid "Indicates the No. of Orders Generated with this Agreement"
 msgstr "Indica el No. de Órdenes Generadas con este Acuerdo"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:142
 msgid "Indicates the state of recurring agreement"
 msgstr "Indica el estado del acuerdo recurrente."
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:109
 #: code:models/recurring_agreement_line.py:55
 msgid "Interval"
 msgstr "Intervalo"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:55
 msgid "Interval in time units for making an order of this product"
 msgstr "Intervalo en unidades de tiempo para realizar un pedido de este producto"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:109
 msgid "Interval in time units to prolong the agreement until new renewable (that is automatic for unlimited term, manual for renewable fixed term)."
 msgstr "Intervalo en unidades de tiempo para prorrogar el contrato hasta nueva renovación (es decir, automático por plazo ilimitado, manual por plazo fijo renovable)."
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:114
 #: code:models/recurring_agreement_line.py:58
 msgid "Interval Unit"
 msgstr "Unidad de intervalo"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:58
 msgid "It indicated the Recurring Time Unit"
 msgstr "Indicó la Unidad de Tiempo Recurrente"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:134
 msgid "Last date when agreement was renewed (same as start date if not renewed)"
 msgstr "Última fecha en la que se renovó el acuerdo (igual que la fecha de inicio si no se renueva)"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:65
 msgid "Last Order"
 msgstr "Último pedido"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:134
 msgid "Last Renovation Date"
 msgstr "Last Renovation Fecha"
 
-#, fuzzy
 #: model_terms:views/recurring_orders_views.xml
 msgid "Lines"
 msgstr "Líneas"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:129
 msgid "Lines for renewal"
 msgstr "Líneas para renovación"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:72
 msgid "List Price"
 msgstr "Precio de lista"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:114
 #: code:models/recurring_agreement_line.py:58
 msgid "Months"
-msgstr "Months"
+msgstr "Meses"
 
 #: code:models/purchase_recurring_agreement.py:78
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:78
 msgid "Name that Helps to Identify the Agreement"
-msgstr "Nombre that Helps to Identify the Agreement"
+msgstr "Nombre que ayuda a identificar el acuerdo"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:138
 msgid "Next Expiration Date"
 msgstr "Next Expiration Fecha"
 
-#, fuzzy
 #: model_terms:views/purchase_order_views.xml
 msgid "Not from agreements"
 msgstr "No de acuerdos"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:154
 msgid "Notes regarding Renewal agreement"
 msgstr "Notas sobre el acuerdo de renovación"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:81
 msgid "Number of Agreement. Keep Empty to Get the Number Assigned by a Sequence."
 msgstr "Número de Acuerdo. Mantener vacío para obtener el número asignado por una secuencia."
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:125
 #: model_terms:views/recurring_orders_views.xml
 msgid "Orders"
 msgstr "Órdenes"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:72
 msgid "Price of product in purchase order lines"
 msgstr "Precio del producto en líneas de orden de compra."
@@ -309,17 +258,14 @@ msgstr "Precio del producto en líneas de orden de compra."
 msgid "Product"
 msgstr "Producto"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:38
 msgid "Products"
 msgstr "Productos"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:98
 msgid "Prolongation"
 msgstr "Prolongación"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Purchase Recurring Orders"
 msgstr "Comprar pedidos recurrentes"
@@ -328,74 +274,60 @@ msgstr "Comprar pedidos recurrentes"
 msgid "Quantity"
 msgstr "Cantidad"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:52
 msgid "Quantity of the Product"
-msgstr "Cantidad of the Producto"
+msgstr "Cantidad del producto"
 
-#, fuzzy
 #: model_terms:views/recurring_orders_views.xml
 msgid "Recurring Orders Agreements"
 msgstr "Acuerdos de pedidos recurrentes"
 
-#, fuzzy
 #: code:models/purchase_agreement_renewal.py:30
 msgid "Reference of the agreement"
 msgstr "Referencia del acuerdo"
 
-#, fuzzy
 #: model_terms:views/recurring_orders_views.xml
 #: model_terms:wizard/renew_wizard_views.xml
 msgid "Renew Agreement"
 msgstr "Renovar Acuerdo"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:98
 msgid "Renewable Fixed Term"
 msgstr "Plazo Fijo Renovable"
 
-#, fuzzy
 #: code:models/purchase_agreement_renewal.py:35
 #: code:wizard/renew_wizard.py:41
 msgid "Renewal comments"
 msgstr "Comentarios de renovación"
 
-#, fuzzy
 #: code:wizard/renew_wizard.py:36
 msgid "Renewal Date"
 msgstr "Renewal Fecha"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:129
 msgid "Renewal Lines"
 msgstr "Líneas de renovación"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:148
 msgid "Renewal State"
 msgstr "Estado de renovación"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:148
 msgid "Renewal Status of the Recurring agreement"
-msgstr "Renewal Estado of the Recurring agreement"
+msgstr "Estado de renovación del acuerdo recurrente"
 
-#, fuzzy
 #: model_terms:views/recurring_orders_views.xml
 msgid "Renewals"
 msgstr "Renovaciones"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:98
 msgid "Sets the term of the agreement. 'Renewable fixed term': It sets a fixed term, but with possibility of manual renew; 'Unlimited term': Renew is made automatically; 'Fixed term': The term is fixed and there is no possibility to renew."
 msgstr "Establece el plazo del acuerdo. 'Término fijo renovable': Fija un plazo fijo, pero con posibilidad de renovación manual; 'Plazo ilimitado': La renovación se realiza automáticamente; 'Plazo fijo': El plazo es fijo y no hay posibilidad de renovación."
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:67
 msgid "Specific Price"
 msgstr "Precio Específico"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:67
 msgid "Specific price for this product. Keep empty to use the list price while generating order"
 msgstr "Precio específico para este producto. Manténgalo vacío para usar el precio de lista mientras genera el pedido."
@@ -408,32 +340,26 @@ msgstr "Fecha inicial"
 msgid "State"
 msgstr "Estado"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:88
 msgid "Supplier"
 msgstr "Proveedor"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:88
 msgid "Supplier You are Making the Agreement with"
 msgstr "Proveedor con el que está celebrando el acuerdo"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:33
 msgid "The Corresponding Purchase Order Agreement"
-msgstr "The Corresponding Orden de compra Agreement"
+msgstr "Acuerdo de orden de compra correspondiente"
 
-#, fuzzy
 #: code:models/purchase_order.py:77
 msgid "This field indicates if the purchase order comes from an agreement."
 msgstr "Este campo indica si la orden de compra proviene de un acuerdo."
 
-#, fuzzy
 #: code:models/purchase_order.py:81
 msgid "this indicates the Purchase Agreement"
 msgstr "esto indica el acuerdo de compra"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module Helps to create recurring orders for \n"
@@ -442,59 +368,48 @@ msgstr ""
 "Este módulo ayuda a crear pedidos recurrentes para \n"
 "     Compras basadas en la información proporcionada."
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:114
 msgid "Time unit for the prolongation interval"
 msgstr "Unidad de tiempo para el intervalo de prolongación"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:85
 msgid "Uncheck this Field, Quotas are not Generated"
 msgstr "Desmarque este campo, las cuotas no se generan"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:30
 msgid "Unchecking this field, this quota is not generated"
 msgstr "Desmarcando este campo no se genera esta cuota"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:98
 msgid "Unlimited Term"
 msgstr "Plazo ilimitado"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:42
 msgid "Uom"
-msgstr "Uom"
+msgstr "UdM"
 
-#, fuzzy
 #: code:models/recurring_agreement_line.py:42
 msgid "UOM of the product"
 msgstr "UM del producto"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:114
 #: code:models/recurring_agreement_line.py:58
 msgid "Weeks"
-msgstr "Weeks"
+msgstr "Semanas"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:142
 msgid "With Orders"
 msgstr "Con pedidos"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:142
 msgid "Without Orders"
 msgstr "Sin pedidos"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:114
 #: code:models/recurring_agreement_line.py:58
 msgid "Years"
-msgstr "Years"
+msgstr "Años"
 
-#, fuzzy
 #: code:models/purchase_recurring_agreement.py:223
 msgid "You Cannot Remove Agreements with Confirmed Orders!"
 msgstr "¡No puede eliminar acuerdos con pedidos confirmados!"

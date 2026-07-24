@@ -16,131 +16,105 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 " This module generates a detailed PDF report of \n"
 "     components/products used for manufacturing products."
-msgstr ""
-"Este módulo genera un informe PDF detallado de \n"
-"     componentes/productos utilizados para fabricar productos."
+msgstr "Este módulo genera un informe PDF detallado de los componentes utilizados para fabricar distintos productos terminados."
 
-#, fuzzy
 #: model_terms:report/stock_move_templates.xml
 msgid "BOM Product Usage"
-msgstr "BOM Producto Usage"
+msgstr "Uso de componentes en listas de materiales"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "BOM Product Wise Usage Report"
-msgstr "BOM Producto Wise Usage Report"
+msgstr "Informe de uso de componentes por producto terminado"
 
 #: model_terms:wizard/bom_usage_details_views.xml
 msgid "Cancel"
 msgstr "Cancelar"
 
-#, fuzzy
 #: model_terms:report/stock_move_templates.xml
 msgid "Component Products"
-msgstr "Component Productos"
+msgstr "Productos componentes"
 
-#, fuzzy
 #: model_terms:report/stock_move_templates.xml
 msgid "Date from :"
-msgstr "Fecha from :"
+msgstr "Fecha de:"
 
-#, fuzzy
 #: model_terms:report/stock_move_templates.xml
 msgid "Date to :"
-msgstr "Fecha to :"
+msgstr "Fecha hasta:"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:39
 msgid "Ending date of report"
-msgstr "Fecha de finalización del informe"
+msgstr "Fecha final del informe"
 
-#, fuzzy
 #: model_terms:report/stock_move_templates.xml
 msgid "Final Products"
-msgstr "Final Productos"
+msgstr "Productos terminados"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:38
 msgid "From Date"
-msgstr "From Fecha"
+msgstr "Fecha desde"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Generate PDF report of Products used in Bill of materials"
-msgstr "Generate PDF report of Productos used in Bill of materials"
+msgstr "Generar un informe PDF de los productos utilizados en las listas de materiales"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:186
 msgid "No data is available"
 msgstr "No hay datos disponibles"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:56
 msgid "Please check from date and to date"
-msgstr "Por favor verifique desde la fecha y hasta la fecha"
+msgstr "Verifique que las fechas inicial y final sean correctas"
 
-#, fuzzy
 #: model_terms:wizard/bom_usage_details_views.xml
 msgid "Print PDF Report"
-msgstr "Imprimir informe en PDF"
+msgstr "Imprimir informe PDF"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:33
 #: model_terms:wizard/bom_usage_details_views.xml
 msgid "Products"
 msgstr "Productos"
 
-#, fuzzy
 #: model_terms:report/stock_move_templates.xml
 msgid "Quantity Used"
-msgstr "Cantidad Used"
+msgstr "Cantidad utilizada"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:41
 msgid "Reduce un build orders"
-msgstr "Reducir los pedidos de construcción"
+msgstr "Descontar órdenes de desensamblaje"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:41
 msgid "Remove the un build orders in report"
-msgstr "Eliminar las órdenes de descompilación en el informe"
+msgstr "Descontar en el informe las cantidades de las órdenes de desensamblaje"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:33
 msgid "Select the products that used in BOM"
-msgstr "Seleccione los productos que se utilizaron en BOM"
+msgstr "Seleccione los componentes utilizados en las listas de materiales"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:44
 msgid "Show byproducts"
 msgstr "Mostrar subproductos"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:44
 msgid "Show the Byproducts of BOM in report"
-msgstr "Mostrar los subproductos de BOM en el informe"
+msgstr "Mostrar en el informe los subproductos de las listas de materiales"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:38
 msgid "Starting date of report"
-msgstr "Fecha de inicio del informe"
+msgstr "Fecha inicial del informe"
 
-#, fuzzy
 #: model_terms:wizard/bom_usage_details_views.xml
 msgid "Stock Report"
-msgstr "Informe de acciones"
+msgstr "Informe de inventario"
 
-#, fuzzy
 #: code:wizard/bom_usage_details.py:39
 msgid "To Date"
-msgstr "To Fecha"
+msgstr "Fecha hasta"
 
-#, fuzzy
 #: model_terms:report/stock_move_templates.xml
 msgid "Uom"
-msgstr "Uom"
+msgstr "UdM"

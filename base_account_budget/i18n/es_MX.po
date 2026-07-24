@@ -16,7 +16,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 " This module allows accountants to manage analytic and \n"
@@ -26,59 +25,44 @@ msgid ""
 "    each Budget in order to ensure the total planned is not greater/lower \n"
 "    than what he planned for this Budget. Each list of record can also be \n"
 "    switched to a graphical view of it, odoo17, accounting, odoo17 accounting, odoo17 budget, odoo17"
-msgstr ""
-" This module allows accountants to manage analytic and \n"
-"    budgets. Once the Budgets are defined (in Cuentaing/Cuentaing/Budgets),\n"
-"    the Proyecto Managers can set the planned amount on each Analytic Cuenta.\n"
-"    The accountant has the possibility to see the total of amount planned for\n"
-"    each Budget in order to ensure the total planned is not greater/lower \n"
-"    than what he planned for this Budget. Each list of record can also be \n"
-"    switched to a graphical view of it, odoo17, accounting, odoo17 accounting, odoo17 budget, odoo17"
+msgstr "Este módulo permite a los contadores gestionar presupuestos analíticos. Una vez definidos los presupuestos (Contabilidad > Presupuestos), los responsables de proyecto pueden establecer el importe planificado para cada cuenta analítica. El contador puede consultar el importe total planificado de cada presupuesto para verificar que se mantenga dentro de lo previsto. Además, cada listado puede visualizarse en forma gráfica."
 
 #: model_terms:views/account_budget_views.xml
 msgid "Accounts"
 msgstr "Cuentas"
 
-#, fuzzy
 #: code:models/account_budget.py:104
 msgid "Achievement"
-msgstr "Logro"
+msgstr "Cumplimiento"
 
 #: model_terms:views/account_budget_views.xml
 msgid "Approve"
 msgstr "Aprobar"
 
-#, fuzzy
 #: model_terms:views/account_budget_views.xml
 msgid "Budget"
 msgstr "Presupuesto"
 
-#, fuzzy
 #: model_terms:views/account_analytic_account_views.xml
 msgid "Budget Items"
-msgstr "Artículos presupuestarios"
+msgstr "Partidas presupuestarias"
 
-#, fuzzy
 #: model_terms:views/account_budget_views.xml
 msgid "Budget Lines"
 msgstr "Líneas presupuestarias"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Budget Management for Odoo 19 Community Edition."
-msgstr "Gestión de presupuesto para Odoo 19 Community Edition."
+msgstr "Gestión de presupuestos para Odoo 19 Community Edition."
 
-#, fuzzy
 #: model_terms:views/account_budget_views.xml
 msgid "Budget Name"
-msgstr "Budget Nombre"
+msgstr "Nombre del presupuesto"
 
-#, fuzzy
 #: model_terms:views/account_budget_views.xml
 msgid "Budgetary Position"
 msgstr "Posición presupuestaria"
 
-#, fuzzy
 #: model_terms:views/account_budget_views.xml
 msgid "Cancel Budget"
 msgstr "Cancelar presupuesto"
@@ -95,42 +79,34 @@ msgstr "Confirmar"
 msgid "Done"
 msgstr "Hecho"
 
-#, fuzzy
 #: model_terms:views/account_budget_views.xml
 msgid "From"
 msgstr "De"
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Odoo 19 Budget Management"
-msgstr "Odoo 19 Gestión Presupuestaria"
+msgstr "Gestión de presupuestos para Odoo 19"
 
-#, fuzzy
 #: model_terms:views/account_budget_views.xml
 msgid "Period"
 msgstr "Periodo"
 
-#, fuzzy
 #: code:models/account_budget.py:100
 msgid "Practical Amount"
-msgstr "Practical Importe"
+msgstr "Importe real"
 
-#, fuzzy
 #: model_terms:views/account_budget_views.xml
 msgid "Reset to Draft"
-msgstr "Restablecer al borrador"
+msgstr "Restablecer a borrador"
 
-#, fuzzy
 #: code:models/account_budget.py:44
 msgid "The budget must have at least one account!"
 msgstr "¡El presupuesto debe tener al menos una cuenta!"
 
-#, fuzzy
 #: code:models/account_budget.py:102
 msgid "Theoretical Amount"
-msgstr "Theoretical Importe"
+msgstr "Importe teórico"
 
-#, fuzzy
 #: model_terms:views/account_budget_views.xml
 msgid "To"
-msgstr "a"
+msgstr "Hasta"

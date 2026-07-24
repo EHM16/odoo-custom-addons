@@ -16,48 +16,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#, fuzzy
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Adding Advanced Fields In Employee Master"
 msgstr "Adding Advanced Fields In Empleado Master"
 
-#, fuzzy
 #: code:models/hr_employee.py:46
 msgid "Attach the copy of Identification document"
 msgstr "Adjuntar copia del documento de identificación"
 
-#, fuzzy
 #: code:models/hr_employee.py:50
 msgid "Attach the copy of Passport"
 msgstr "Adjuntar la copia del Pasaporte"
 
-#, fuzzy
 #: code:models/hr_employee.py:46
 #: code:models/hr_employee.py:50
 msgid "Attachment"
 msgstr "Adjunto"
 
-#, fuzzy
 #: code:models/hr_employee_family.py:40
 msgid "Birth date of the family member"
 msgstr "Fecha de nacimiento del familiar"
 
-#, fuzzy
 #: code:models/hr_employee_family.py:38
 msgid "Contact No"
 msgstr "Número de contacto"
 
-#, fuzzy
 #: code:models/hr_employee_family.py:38
 msgid "Contact No of the family member"
 msgstr "Número de contacto del familiar"
 
-#, fuzzy
 #: model_terms:views/hr_employee_views.xml
 msgid "Dependence Details"
 msgstr "Detalles de dependencia"
 
-#, fuzzy
 #: code:models/hr_employee_family.py:40
 msgid "DOB"
 msgstr "fecha de nacimiento"
@@ -66,58 +57,47 @@ msgstr "fecha de nacimiento"
 msgid "Employee"
 msgstr "Empleado"
 
-#, fuzzy
 #: code:models/hr_employee.py:38
 msgid "Employee joining date computed from the contract start date"
-msgstr "Empleado joining date computed from the contract start date"
+msgstr "Fecha de incorporación del empleado computada a partir de la fecha de inicio del contrato."
 
-#, fuzzy
 #: code:models/hr_employee.py:42
 #: code:models/hr_employee.py:44
 msgid "Expiry Date"
 msgstr "Expiry Fecha"
 
-#, fuzzy
 #: code:models/hr_employee.py:42
 msgid "Expiry date of Identification document"
 msgstr "Fecha de caducidad del documento de identificación."
 
-#, fuzzy
 #: code:models/hr_employee.py:44
 msgid "Expiry date of Passport ID"
 msgstr "Fecha de vencimiento del documento de identidad del pasaporte"
 
-#, fuzzy
 #: code:models/hr_employee.py:55
 msgid "Family"
 msgstr "familia"
 
-#, fuzzy
 #: code:models/hr_employee.py:55
 msgid "Family Information"
 msgstr "Información familiar"
 
-#, fuzzy
 #: model_terms:views/hr_employee_views.xml
 msgid "Grant a Badge"
 msgstr "Otorgar una insignia"
 
-#, fuzzy
 #: code:models/hr_employee.py:97
 msgid "ID-%s Expired On %s"
 msgstr "ID-%s caducó en %s"
 
-#, fuzzy
 #: model_terms:views/hr_employee_views.xml
 msgid "Identification ID"
 msgstr "Identificación de identificación"
 
-#, fuzzy
 #: code:models/hr_employee.py:38
 msgid "Joining Date"
 msgstr "Joining Fecha"
 
-#, fuzzy
 #: code:models/hr_employee.py:35
 msgid "Mobile"
 msgstr "Móvil"
@@ -126,68 +106,55 @@ msgstr "Móvil"
 msgid "Name"
 msgstr "Nombre"
 
-#, fuzzy
 #: code:models/hr_employee_family.py:37
 msgid "Name of the family member"
-msgstr "Nombre of the family member"
+msgstr "Nombre del familiar"
 
-#, fuzzy
 #: code:models/hr_version.py:32
 msgid "Notice Period"
 msgstr "Período de aviso"
 
-#, fuzzy
 #: code:models/hr_version.py:32
 msgid "Number of days required for notice before termination."
 msgstr "Número de días requeridos para el aviso antes de la terminación."
 
-#, fuzzy
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Employee Info"
 msgstr "Open HRMS Empleado Info"
 
-#, fuzzy
 #: model_terms:views/hr_employee_views.xml
 msgid "Passport ID"
 msgstr "Identificación del pasaporte"
 
-#, fuzzy
 #: code:models/hr_employee.py:115
 msgid "Passport-%s Expired On %s"
 msgstr "Pasaporte-%s expiró en %s"
 
-#, fuzzy
 #: code:models/hr_employee.py:35
 msgid "Personal mobile number of the employee"
 msgstr "Número de móvil personal del empleado."
 
-#, fuzzy
 #: model_terms:views/hr_employee_views.xml
 msgid "Received Badges"
 msgstr "Insignias recibidas"
 
-#, fuzzy
 #: code:models/hr_employee_family.py:35
 msgid "Relation"
 msgstr "Relación"
 
-#, fuzzy
 #: code:models/hr_employee_relation.py:31
 msgid "Relationship"
 msgstr "relación"
 
-#, fuzzy
 #: code:models/hr_employee_family.py:35
 #: code:models/hr_employee_relation.py:31
 msgid "Relationship with the employee"
 msgstr "Relación con el empleado"
 
-#, fuzzy
 #: code:models/hr_employee_family.py:32
 msgid "Select corresponding Employee"
-msgstr "Select corresponding Empleado"
+msgstr "Seleccione el empleado correspondiente"
 
-#, fuzzy
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module helps you to add more information in employee records."
 msgstr "Este módulo le ayuda a agregar más información en los registros de empleados."

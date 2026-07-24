@@ -60,7 +60,7 @@ msgstr "Cantidad"
 
 #: code:wizard/split_order.py:40
 msgid "No of Split"
-msgstr "No de división"
+msgstr "Divisiones"
 
 #: code:wizard/split_order.py:38
 msgid "Number of quantity splitting"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: model_terms:views/mrp_production_views.xml
 msgid "Split MO"
-msgstr "MO dividido"
+msgstr "Dividir orden de fabricación"
 
 #: code:wizard/split_order.py:33
 msgid "Splitting Method"
@@ -124,4 +124,4 @@ msgstr "centro de trabajo"
 
 #: code:wizard/split_order.py:49
 msgid "Works"
-msgstr "obras"
+msgstr "Trabajos"

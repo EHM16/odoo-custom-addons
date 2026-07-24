@@ -109,7 +109,7 @@ msgstr "Producto"
 
 #: code:wizard/quick_create_sale_line.py:34
 msgid "Product Quantity"
-msgstr "Producto Cantidad"
+msgstr "Cantidad del producto"
 
 #: code:wizard/quick_purchase_line.py:35
 msgid "Product quantity"
@@ -181,7 +181,7 @@ msgstr "Órdenes de venta actualizadas correctamente"
 
 #: code:wizard/quick_sale_order.py:45
 msgid "Salesperson"
-msgstr "vendedor"
+msgstr "Vendedor"
 
 #: code:wizard/quick_purchase_order.py:41
 #: code:wizard/quick_sale_order.py:41
@@ -215,7 +215,7 @@ msgstr "Precio unitario"
 #: model_terms:wizard/quick_purchase_order_views.xml
 #: model_terms:wizard/quick_sale_order_views.xml
 msgid "Update Order"
-msgstr "Orden de actualización"
+msgstr "Actualizar orden"
 
 #: code:wizard/quick_purchase_order.py:39
 msgid "Vendor"

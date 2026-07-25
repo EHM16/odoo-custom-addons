@@ -71,7 +71,7 @@ msgstr "La solicitud de préstamo debe ser aprobada."
 #: model:ir.module.module,name:__manifest__.py
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Open HRMS Loan Accounting"
-msgstr "Open HRMS: contabilidad de préstamos"
+msgstr "Open HRMS: Contabilidad de préstamos"
 
 #: model_terms:views/hr_loan_views.xml
 msgid "Refuse"

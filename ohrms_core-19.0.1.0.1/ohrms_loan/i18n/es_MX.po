@@ -26,7 +26,7 @@ msgstr "Aprobar"
 
 #: code:models/hr_loan.py:87
 msgid "Balance Amount"
-msgstr "Balance Importe"
+msgstr "Saldo"
 
 #: model_terms:views/hr_loan_views.xml
 msgid "Cancel"
@@ -110,7 +110,7 @@ msgstr "Préstamo"
 
 #: code:models/hr_loan.py:82
 msgid "Loan Amount"
-msgstr "Importe del préstamo"
+msgstr "Monto del préstamo"
 
 #: code:models/hr_loan.py:82
 msgid "Loan amount"
@@ -275,7 +275,7 @@ msgstr ""
 
 #: code:models/hr_loan.py:84
 msgid "Total Amount"
-msgstr "Importe total"
+msgstr "Monto total"
 
 #: code:models/hr_loan.py:92
 msgid "Total Paid Amount"

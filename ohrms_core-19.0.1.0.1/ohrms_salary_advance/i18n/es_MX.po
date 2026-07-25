@@ -18,7 +18,7 @@ msgstr ""
 
 #: code:models/salary_advance.py:56
 msgid "Advance"
-msgstr "avance"
+msgstr "Anticipo"
 
 #: code:models/salary_advance.py:140
 msgid "Advance amount is greater than allotted"
@@ -177,7 +177,7 @@ msgstr "Rechazar"
 
 #: code:models/salary_advance.py:162
 msgid "Request can be done after \"%s\" Days From prevoius month salary"
-msgstr "La solicitud se puede realizar después de \"%s\" Días Desde el salario del mes anterior"
+msgstr "La solicitud se puede realizar después de \"%s\" días desde el salario del mes anterior"
 
 #: code:models/salary_advance.py:83
 msgid "Running contract of the employee."

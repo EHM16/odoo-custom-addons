@@ -23,7 +23,8 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Ver"
+"                            Ver\n"
+"                        "
 
 #: code:models/hr_reminder.py:37
 msgid "Choose the field"
@@ -51,7 +52,7 @@ msgstr "Fecha de vencimiento para que expire el recordatorio."
 
 #: code:models/hr_reminder.py:37
 msgid "Field"
-msgstr "campo"
+msgstr "Campo"
 
 #: code:models/hr_reminder.py:58
 msgid "he company to which this reminder belongs."
@@ -67,7 +68,7 @@ msgstr "Recordatorio de recursos humanos para OHRMS"
 
 #: code:models/hr_reminder.py:33
 msgid "Model"
-msgstr "modelo"
+msgstr "Modelo"
 
 #: code:models/hr_reminder.py:47
 msgid "Number of days before the reminder should show"
@@ -132,8 +133,8 @@ msgid ""
 "    never forgotten."
 msgstr ""
 "Este módulo es una herramienta poderosa y fácil de usar que puede \n"
-"    ayudarle a mejorar sus procesos de recursos humanos y garantizar que los eventos importantes sean \n"
-"    Nunca olvidado."
+"    ayudarle a mejorar sus procesos de recursos humanos y garantizar que los eventos importantes nunca \n"
+"    sean olvidados."
 
 #: code:models/hr_reminder.py:31
 msgid "Title"

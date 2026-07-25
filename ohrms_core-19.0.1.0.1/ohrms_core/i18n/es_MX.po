@@ -18,11 +18,11 @@ msgstr ""
 
 #: code:wizard/ohrms_core_support.py:113
 msgid "%d attachment"
-msgstr "Accesorio %d"
+msgstr "Archivo adjunto %d"
 
 #: code:wizard/ohrms_core_support.py:114
 msgid "%d attachments"
-msgstr "Accesorios %d"
+msgstr "Archivos adjuntos %d"
 
 #: model_terms:views/hr_config_view.xml
 msgid "Advanced Features"
@@ -34,7 +34,7 @@ msgstr "Adjunte archivos relacionados con su problema."
 
 #: code:wizard/ohrms_core_support.py:62
 msgid "Attachments"
-msgstr "Adjuntos"
+msgstr "Archivos adjuntos"
 
 #: code:models/hr_general_settings.py:82
 msgid "Attendance"

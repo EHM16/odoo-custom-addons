@@ -154,7 +154,7 @@ msgstr "Renuncias de Open HRMS"
 
 #: code:models/hr_resignation.py:40
 msgid "Order Reference"
-msgstr "Referencia de pedido"
+msgstr "Referencia de solicitud"
 
 #: code:models/hr_resignation.py:245
 msgid "Please Enter Valid Dates."
@@ -182,7 +182,7 @@ msgstr "Detalles de renuncia"
 
 #: code:models/hr_employee.py:35
 msgid "Resigned"
-msgstr "dimitido"
+msgstr "Dimitido"
 
 #: model_terms:views/hr_employee_views.xml
 msgid "Resigned Employees"

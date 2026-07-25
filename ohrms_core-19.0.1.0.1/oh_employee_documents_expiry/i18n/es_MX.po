@@ -31,7 +31,7 @@ msgstr ""
 #: code:models/ir_attachment.py:32
 #: code:models/ir_attachment.py:39
 msgid "Attachment"
-msgstr "Adjunto"
+msgstr "Adjuntar"
 
 #: code:models/hr_employee.py:31
 msgid "Count of documents."

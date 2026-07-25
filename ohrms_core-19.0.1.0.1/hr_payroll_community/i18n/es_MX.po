@@ -546,7 +546,7 @@ msgstr "Hojas globales"
 
 #: code:models/hr_version.py:46
 msgid "House rent allowance."
-msgstr "Subsidio vivienda."
+msgstr "Subsidio a la vivienda."
 
 #: code:models/hr_salary_rule_category.py:34
 msgid "Hr Salary Rule Category Code"
@@ -637,7 +637,7 @@ msgstr "Límite inferior"
 
 #: code:models/hr_contract_advantage_template.py:35
 msgid "Lower bound authorized by the employerfor this advantage"
-msgstr "Límite inferior autorizado por el empleador para esta ventaja"
+msgstr "Límite inferior autorizado por el empleador para esta prestación"
 
 #: code:models/hr_payslip.py:98
 msgid "Made Payment Order ?"
@@ -657,11 +657,11 @@ msgstr "Subsidio de comida"
 
 #: code:models/hr_version.py:53
 msgid "Medical Allowance"
-msgstr "Asignación médica"
+msgstr "Subsidio médico"
 
 #: code:models/hr_version.py:53
 msgid "Medical allowance"
-msgstr "subsidio medico"
+msgstr "Subsidio médico"
 
 #: code:models/hr_salary_rule.py:105
 msgid "Minimum Range"
@@ -673,7 +673,7 @@ msgstr "Varios"
 
 #: model_terms:views/hr_version_views.xml
 msgid "Monthly Advantages in Cash"
-msgstr "Ventajas Mensuales en Efectivo"
+msgstr "Prestaciones mensuales en efectivo"
 
 #: code:models/hr_contract_advantage_template.py:31
 #: code:models/hr_contribution_register.py:35
@@ -688,7 +688,7 @@ msgstr "Nombre"
 
 #: code:models/hr_contract_advantage_template.py:31
 msgid "Name for Employee's Advantage on Contract"
-msgstr "Nombre de la ventaja del empleado en el contrato"
+msgstr "Nombre de la prestación del empleado en el contrato"
 
 #: code:models/hr_payroll_structure.py:42
 msgid "Name for Payroll Structure"
@@ -704,7 +704,7 @@ msgstr "Nombre de la entrada"
 
 #: code:models/hr_payslip.py:280
 msgid "Normal Working Days paid at 100%"
-msgstr "Días Laborables Normales pagados al 100%"
+msgstr "Días Laborables normales pagados al 100%"
 
 #: model_terms:views/hr_salary_rule_category_views.xml
 msgid "Notes"
@@ -740,11 +740,11 @@ msgstr ""
 
 #: code:models/hr_version.py:55
 msgid "Other Allowance"
-msgstr "Otra asignación"
+msgstr "Otros subsidios"
 
 #: code:models/hr_version.py:55
 msgid "Other allowances"
-msgstr "Otras asignaciones"
+msgstr "Otros subsidios"
 
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Other Inputs"
@@ -753,11 +753,11 @@ msgstr "Otras entradas"
 #: code:models/hr_payroll_structure.py:54
 #: code:models/hr_salary_rule_category.py:36
 msgid "Parent"
-msgstr "Padre"
+msgstr "Principal"
 
 #: code:models/hr_salary_rule.py:63
 msgid "Parent Salary Rule"
-msgstr "Regla de salario de los padres"
+msgstr "Regla de salario principal"
 
 #: code:models/hr_contribution_register.py:33
 msgid "Partner"
@@ -793,7 +793,7 @@ msgstr "Recibo de nómina"
 
 #: code:models/hr_payslip.py:137
 msgid "Payslip 'Date From' must be earlier 'Date To'."
-msgstr "La 'Fecha desde' del recibo de nómina debe ser anterior a la 'Fecha hasta'."
+msgstr "La 'Fecha Desde' del recibo de sueldo debe ser anterior a la 'Fecha Hasta'."
 
 #: model_terms:views/hr_payslip_views.xml
 msgid "PaySlip Batch"
@@ -828,7 +828,7 @@ msgstr "Líneas de nómina"
 
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "PaySlip Lines by Contribution Register"
-msgstr "Líneas de Nómina por Registro de Contribuciones"
+msgstr "Líneas de nómina por registro de contribuciones"
 
 #: model_terms:report/report_payslip_details_templates.xml
 msgid "Payslip Lines by Contribution Register"
@@ -848,7 +848,7 @@ msgstr "Recibo de nómina relacionado con la entrada"
 
 #: code:models/hr_payslip.py:89
 msgid "Payslip Worked Days"
-msgstr "Nómina Días Laborados"
+msgstr "Nómina días Laborados"
 
 #: code:models/hr_payslip.py:89
 msgid "Payslip worked days for line"
@@ -902,12 +902,12 @@ msgstr "Cantidad"
 
 #: model_terms:report/report_contribution_register_templates.xml
 msgid "Quantity/Rate"
-msgstr "Cantidad/tasa"
+msgstr "Cantidad/Tasa"
 
 #: model_terms:report/report_payslip_details_templates.xml
 #: model_terms:report/report_payslip_templates.xml
 msgid "Quantity/rate"
-msgstr "Cantidad/tasa"
+msgstr "Cantidad/Tasa"
 
 #: code:models/hr_salary_rule.py:78
 msgid "Range Based on"
@@ -926,7 +926,7 @@ msgstr "Referencia"
 
 #: code:models/hr_payslip.py:51
 msgid "References for Payslip"
-msgstr "Referencias para recibo de sueldo"
+msgstr "Referencias para recibo de nómina"
 
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Refund"
@@ -934,7 +934,7 @@ msgstr "Reembolso"
 
 #: code:models/hr_payslip.py:164
 msgid "Refund Payslip"
-msgstr "Recibo de nómina de reembolso"
+msgstr "Recibo de reembolso de nómina"
 
 #: code:models/hr_payslip.py:156
 msgid "Refund:"
@@ -958,7 +958,7 @@ msgstr "El resultado se verá afectado por una variable."
 
 #: code:models/hr_payslip_line.py:38
 msgid "Rule"
-msgstr "regla"
+msgstr "Regla"
 
 #: model_terms:views/hr_salary_rule_category_views.xml
 msgid "Salary Categories"
@@ -1177,7 +1177,7 @@ msgstr "Límite superior"
 
 #: code:models/hr_contract_advantage_template.py:38
 msgid "Upper bound authorized by the employerfor this advantage"
-msgstr "Límite superior autorizado por el empleador para esta ventaja"
+msgstr "Límite superior autorizado por el empleador para esta prestación"
 
 #: code:models/hr_salary_rule.py:41
 msgid "Use to arrange calculation sequence"
@@ -1189,7 +1189,7 @@ msgstr "Se utiliza para mostrar la regla salarial en el recibo de nómina."
 
 #: code:models/hr_payslip.py:67
 msgid "Waiting"
-msgstr "esperando"
+msgstr "Esperando"
 
 #: model_terms:views/hr_payslip_line_views.xml
 msgid "Worked Day"
@@ -1229,7 +1229,7 @@ msgstr "No se puede crear una estructura salarial recursiva."
 
 #: code:models/hr_payslip.py:181
 msgid "You cannot delete a payslip which is not draft or cancelled!"
-msgstr "¡No se puede eliminar una nómina que no esté girada o cancelada!"
+msgstr "¡No se puede eliminar una nómina que no esté en borrador o cancelada!"
 
 #: code:wizard/hr_payslips_employees.py:50
 msgid "You must select employee(s) to generate payslip(s)."

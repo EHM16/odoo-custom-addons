@@ -22,7 +22,7 @@ msgid ""
 "                                                        Days Left"
 msgstr ""
 "\n"
-"Días restantes"
+"                                                        Días restantes"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
@@ -30,7 +30,7 @@ msgid ""
 "                                    Ago"
 msgstr ""
 "\n"
-"Hace"
+"                                    Hace"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
@@ -39,7 +39,7 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Anuncios"
+"                            Anuncios\n"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
@@ -48,7 +48,8 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Próximos eventos"
+"                            Próximos eventos\n"
+"                        "
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
@@ -67,7 +68,8 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"Próximos cumpleaños"
+"                        Próximos cumpleaños"
+"\n"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid ""
@@ -76,7 +78,8 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"Lugar:"
+"                         Lugar:\n"
+"\n"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Add job title"
@@ -89,7 +92,8 @@ msgid ""
 "                                "
 msgstr ""
 "Dirección\n"
-"                                :"
+"                                :\n"
+"                                "
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Amount"
@@ -103,7 +107,8 @@ msgstr "Aplicaciones"
 msgid ""
 "ATTENDANCE\n"
 "                            "
-msgstr "ASISTENCIA"
+msgstr "ASISTENCIA\n"
+"                            "
 
 #: code:static/src/js/dashboard.js
 msgid "Attendances"
@@ -115,21 +120,21 @@ msgstr "Tasa de deserción"
 
 #: code:models/hr_employee.py:40
 msgid "Birthday of employee"
-msgstr "cumpleaños del empleado"
+msgstr "Cumpleaños del empleado"
 
 #: code:report/broadfactor.py:36
 #: model_terms:report/broadfactor.xml
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Broad Factor"
-msgstr "Factor amplio"
+msgstr "Factor de ausentismo"
 
 #: code:report/broadfactor.py:36
 msgid "Broad factor"
-msgstr "factor amplio"
+msgstr "Factor de ausentismo"
 
 #: model_terms:report/broadfactor.xml
 msgid "Broad Factor Report"
-msgstr "Informe de factores amplios"
+msgstr "Informe de factor de ausentismo"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Check In"
@@ -137,7 +142,7 @@ msgstr "Registrarse"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Check out"
-msgstr "echa un vistazo"
+msgstr "Salida"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Comprehensive Dashboard for Managing HR Activities in Open HRMS"
@@ -202,31 +207,31 @@ msgstr "Solicitudes de empleo"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Joined"
-msgstr "Se unió"
+msgstr "Ingresado"
 
 #: code:static/src/js/dashboard.js
 msgid "Leave Allocation Request"
-msgstr "Solicitud de asignación de licencia"
+msgstr "Asignacion de solicitud de permiso"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Leave Allocation Requests"
-msgstr "Dejar solicitudes de asignación"
+msgstr "Asignacion de solicitud de permiso"
 
 #: code:static/src/js/dashboard.js
 msgid "Leave Request"
-msgstr "Solicitud de licencia"
+msgstr "Solicitud de permiso"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Leave Requests"
-msgstr "Solicitudes de licencia"
+msgstr "Solicitudes de permiso"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "LEAVES"
-msgstr "HOJAS"
+msgstr "PERMISOS"
 
 #: code:static/src/js/dashboard.js
 msgid "Leaves Today"
-msgstr "Se va hoy"
+msgstr "Permisos hoy"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Monthly Join/Resign Analysis"
@@ -234,11 +239,11 @@ msgstr "Análisis mensual de alta/renuncia"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Monthly Leave Analysis"
-msgstr "Análisis de vacaciones mensuales"
+msgstr "Análisis de permisos mensuales"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "My Leave Analysis"
-msgstr "Mi análisis de licencia"
+msgstr "Mi análisis de permisos"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "My Skill Analysis"
@@ -296,7 +301,8 @@ msgstr "Panel de recursos humanos de Open HRMS"
 msgid ""
 "Payslips\n"
 "                                "
-msgstr "Recibos de nómina"
+msgstr "Recibos de nómina\n"
+"                                "
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Please contact system admin for the setup"
@@ -308,7 +314,7 @@ msgstr "Proyecto"
 
 #: code:static/src/js/dashboard.js
 msgid "Project Task"
-msgstr "Tarea del proyecto"
+msgstr "Tarea de proyecto"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "PROJECTS"
@@ -352,7 +358,7 @@ msgstr "este mes"
 
 #: code:static/src/js/dashboard.js
 msgid "This Month Leaves"
-msgstr "Este mes se va"
+msgstr "Permisos de este mes"
 
 #: code:static/src/js/dashboard.js
 #: model_terms:static/src/xml/dashboard.xml
@@ -365,7 +371,7 @@ msgstr "Fecha hasta"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Today"
-msgstr "hoy"
+msgstr "Hoy"
 
 #: model_terms:static/src/xml/dashboard.xml
 msgid "Type"

@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-23 00:00+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
-"Last-Translator: Codex\n"
+"Last-Translator: Open HRMS Translation Team\n"
 "Language-Team: Spanish (Mexico)\n"
 "Language: es_MX\n"
 "MIME-Version: 1.0\n"
@@ -18,15 +18,15 @@ msgstr ""
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Automated Leave Request generation from Incoming Emails."
-msgstr "Generación automatizada de solicitudes de licencia a partir de correos electrónicos entrantes."
+msgstr "Generación automática de solicitudes de ausencia a partir de correos electrónicos entrantes."
 
 #: code:models/res_config_settings.py:33
 msgid "Default alias domain for leave"
-msgstr "Dominio de alias predeterminado para licencia"
+msgstr "Dominio predeterminado del alias de correo para solicitudes de ausencia"
 
 #: code:models/res_config_settings.py:29
 msgid "Default alias name for leave"
-msgstr "Nombre de alias predeterminado para la licencia"
+msgstr "Nombre predeterminado del alias de correo para solicitudes de ausencia"
 
 #: code:models/res_config_settings.py:33
 #: model_terms:views/res_config_settings_views.xml
@@ -35,15 +35,15 @@ msgstr "Dominio"
 
 #: model_terms:views/res_config_settings_views.xml
 msgid "Leave Email Alias"
-msgstr "Alias de correo para ausencias"
+msgstr "Alias de correo para solicitudes de ausencia"
 
 #: model_terms:views/res_config_settings_views.xml
 msgid "Leaves"
-msgstr "hojas"
+msgstr "Ausencias"
 
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Leave Request Aliasing"
-msgstr "Asignación de alias para solicitudes de ausencia de Open HRMS"
+msgstr "Open HRMS — Solicitudes de ausencia por correo electrónico"
 
 #: code:models/res_config_settings.py:29
 #: model_terms:views/res_config_settings_views.xml
@@ -56,14 +56,14 @@ msgid ""
 "     seamlessly generating requests from incoming emails, making the process \n"
 "     efficient, saving time, and enhancing employee experience."
 msgstr ""
-"Este módulo simplifica la creación de solicitudes de licencia al \n"
-"     generar sin problemas solicitudes de correos electrónicos entrantes, haciendo que el proceso \n"
-"     eficiente, ahorrando tiempo y mejorando la experiencia de los empleados."
+"Este módulo simplifica la creación de solicitudes de ausencia al \n"
+"     generarlas automáticamente a partir de correos electrónicos entrantes, lo que agiliza el \n"
+"     proceso, ahorra tiempo y mejora la experiencia de los empleados."
 
 #: model_terms:views/res_config_settings_views.xml
 msgid "Time Off"
-msgstr "tiempo libre"
+msgstr "Ausencias"
 
 #: model_terms:views/res_config_settings_views.xml
 msgid "You can set up a generic email alias to easily create incoming leave requests. To submit a request, send an email with the subject line starting with prefix, and include ‘Date From:’ and ‘Date To:’ in the email body"
-msgstr "Puede configurar un alias de correo genérico para crear fácilmente solicitudes de ausencia. Para enviar una solicitud, mande un correo cuyo asunto comience con el prefijo e incluya «Fecha desde:» y «Fecha hasta:» en el cuerpo."
+msgstr "Puede configurar un alias de correo electrónico genérico para crear fácilmente solicitudes de ausencia a partir de mensajes entrantes. Para enviar una solicitud, envíe un correo cuyo asunto comience con el prefijo configurado e incluya las fechas de inicio y fin, con formato dd/mm/aaaa, en el cuerpo del mensaje."

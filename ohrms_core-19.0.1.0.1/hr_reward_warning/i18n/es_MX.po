@@ -148,11 +148,11 @@ msgstr "Puestos de Trabajo"
 #: code:models/hr_announcement.py:81
 #: model_terms:views/hr_announcement_views.xml
 msgid "Letter"
-msgstr "carta"
+msgstr "Comunicado"
 
 #: code:models/hr_announcement.py:50
 msgid "Login user Company"
-msgstr "Empresa del usuario conectado"
+msgstr "Empresa del usuario actual"
 
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Manages Official Announcements"

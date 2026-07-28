@@ -19,7 +19,7 @@ msgstr ""
 #. module: order_line_note
 #: model_terms:ir.ui.view,arch_db:order_line_note.report_purchaseorder_document_inherit_order_line_note
 msgid "<strong>Note</strong>"
-msgstr ""
+msgstr "<strong>Nota</strong>"
 
 #. module: order_line_note
 #: model:ir.model.fields,help:order_line_note.field_account_move_line__note
@@ -41,7 +41,7 @@ msgstr "Agregar nota para el producto"
 #: model:ir.model.fields,field_description:order_line_note.field_sale_order_line__display_name
 #: model:ir.model.fields,field_description:order_line_note.field_stock_move__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: order_line_note
 #: model:ir.model.fields,field_description:order_line_note.field_account_move_line__id
@@ -51,12 +51,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:order_line_note.field_sale_order_line__id
 #: model:ir.model.fields,field_description:order_line_note.field_stock_move__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: order_line_note
 #: model:ir.model,name:order_line_note.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Apunte contable"
 
 #. module: order_line_note
 #: model:ir.model.fields,field_description:order_line_note.field_account_move_line__note
@@ -71,27 +71,27 @@ msgstr "Nota"
 #. module: order_line_note
 #: model:ir.model,name:order_line_note.model_purchase_order
 msgid "Purchase Order"
-msgstr ""
+msgstr "Orden de compra"
 
 #. module: order_line_note
 #: model:ir.model,name:order_line_note.model_purchase_order_line
 msgid "Purchase Order Line"
-msgstr ""
+msgstr "Línea de orden de compra"
 
 #. module: order_line_note
 #: model:ir.model,name:order_line_note.model_sale_order
 msgid "Sale Order Delivery Split"
-msgstr ""
+msgstr "Orden de venta"
 
 #. module: order_line_note
 #: model:ir.model,name:order_line_note.model_sale_order_line
 msgid "Sale Order Line Delivery Split"
-msgstr ""
+msgstr "Línea de orden de venta"
 
 #. module: order_line_note
 #: model:ir.model,name:order_line_note.model_stock_move
 msgid "Stock Move Delivery Split"
-msgstr ""
+msgstr "Movimiento de inventario"
 
 #~ msgid "Add notes to sale and purchase order lines and display them in related documents."
 #~ msgstr "Agregue notas a líneas de órdenes de compra y venta y muéstrelas en documentos relacionados."

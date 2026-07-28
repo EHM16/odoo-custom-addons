@@ -18,51 +18,47 @@ msgstr ""
 
 #. module: payment_details_invoice_report
 #: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
-#, fuzzy
 #| msgid "Amount Paid"
 msgid "<span>Amount Paid</span>"
-msgstr "Importe pagado"
+msgstr "<span>Importe pagado</span>"
 
 #. module: payment_details_invoice_report
 #: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
 msgid "<span>Date</span>"
-msgstr ""
+msgstr "<span>Fecha</span>"
 
 #. module: payment_details_invoice_report
 #: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
-#, fuzzy
 #| msgid "Payment Method"
 msgid "<span>Payment Method</span>"
-msgstr "Método de pago"
+msgstr "<span>Método de pago</span>"
 
 #. module: payment_details_invoice_report
 #: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
-#, fuzzy
 #| msgid "Payment Ref"
 msgid "<span>Payment Ref</span>"
-msgstr "Referencia de pago"
+msgstr "<span>Referencia de pago</span>"
 
 #. module: payment_details_invoice_report
 #: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
 msgid "<span>SL No</span>"
-msgstr ""
+msgstr "<span>Núm. consecutivo</span>"
 
 #. module: payment_details_invoice_report
 #: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
 msgid "<strong style=\"font-size:20px;\">Payment Details</strong>"
-msgstr ""
+msgstr "<strong style=\"font-size:20px;\">Detalles del pago</strong>"
 
 #. module: payment_details_invoice_report
 #: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
-#, fuzzy
 #| msgid "Invoice Status:"
 msgid "<strong>Invoice Status:</strong>"
-msgstr "Estado de la factura:"
+msgstr "<strong>Estado de la factura:</strong>"
 
 #. module: payment_details_invoice_report
 #: model:ir.model.fields,field_description:payment_details_invoice_report.field_account_move__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: payment_details_invoice_report
 #: model:ir.model.fields,help:payment_details_invoice_report.field_account_bank_statement_line__is_payment_details
@@ -73,12 +69,12 @@ msgstr "Habilita los detalles de pago en el informe de factura."
 #. module: payment_details_invoice_report
 #: model:ir.model.fields,field_description:payment_details_invoice_report.field_account_move__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: payment_details_invoice_report
 #: model:ir.model,name:payment_details_invoice_report.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Asiento contable"
 
 #. module: payment_details_invoice_report
 #: model:ir.model.fields,field_description:payment_details_invoice_report.field_account_bank_statement_line__is_payment_details

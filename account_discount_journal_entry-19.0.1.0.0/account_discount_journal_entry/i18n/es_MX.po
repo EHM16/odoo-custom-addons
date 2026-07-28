@@ -40,25 +40,24 @@ msgstr "Cuenta de descuentos de clientes"
 #: model:ir.model.fields,field_description:account_discount_journal_entry.field_account_move__display_name
 #: model:ir.model.fields,field_description:account_discount_journal_entry.field_product_category__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: account_discount_journal_entry
 #: model:ir.model.fields,field_description:account_discount_journal_entry.field_account_move__id
 #: model:ir.model.fields,field_description:account_discount_journal_entry.field_product_category__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_discount_journal_entry
 #: model:ir.model,name:account_discount_journal_entry.model_account_move
-#, fuzzy
 #| msgid "Account Discount Journal Entry"
 msgid "Journal Entry"
-msgstr "Asiento contable de descuentos"
+msgstr "Asiento contable"
 
 #. module: account_discount_journal_entry
 #: model:ir.model,name:account_discount_journal_entry.model_product_category
 msgid "Product Category"
-msgstr ""
+msgstr "Categoría de producto"
 
 #. module: account_discount_journal_entry
 #: model:ir.model.fields,field_description:account_discount_journal_entry.field_product_category__vendor_account_discount_id

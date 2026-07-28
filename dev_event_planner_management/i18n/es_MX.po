@@ -274,7 +274,7 @@ msgid ""
 "                            Trusted for weddings, summits and galas"
 msgstr ""
 "<span class=\"o_planner_stars\" aria-hidden=\"true\">★★★★★</span>\n"
-"                            La confianza de bodas, cumbres y galas"
+"                            La confianza de quienes organizan bodas, cumbres y galas"
 
 #. module: dev_event_planner_management
 #: dev_event_planner_management/views/website_templates.xml:369
@@ -324,7 +324,7 @@ msgid ""
 "                                    <span>Your proposal is crafted</span>"
 msgstr ""
 "<span class=\"o_planner_thanks_node\"><i class=\"fa fa-magic\"/></span>\n"
-"                                    <span>Su propuesta está preparada</span>"
+"                                    <span>Preparamos su propuesta</span>"
 
 #. module: dev_event_planner_management
 #: dev_event_planner_management/views/website_templates.xml:578
@@ -369,12 +369,12 @@ msgid ""
 "                        <span>Private Parties</span><span class=\"o_planner_dot\">·</span>"
 msgstr ""
 "<span>Bodas</span><span class=\"o_planner_dot\">·</span>\n"
-"                        <span>Corporativos</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Eventos corporativos</span><span class=\"o_planner_dot\">·</span>\n"
 "                        <span>Conferencias</span><span class=\"o_planner_dot\">·</span>\n"
 "                        <span>Galas</span><span class=\"o_planner_dot\">·</span>\n"
 "                        <span>Fiestas privadas</span><span class=\"o_planner_dot\">·</span>\n"
 "                        <span>Bodas</span><span class=\"o_planner_dot\">·</span>\n"
-"                        <span>Corporativos</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Eventos corporativos</span><span class=\"o_planner_dot\">·</span>\n"
 "                        <span>Conferencias</span><span class=\"o_planner_dot\">·</span>\n"
 "                        <span>Galas</span><span class=\"o_planner_dot\">·</span>\n"
 "                        <span>Fiestas privadas</span><span class=\"o_planner_dot\">·</span>"
@@ -721,7 +721,7 @@ msgstr "Cancelar evento"
 #. module: dev_event_planner_management
 #: dev_event_planner_management/views/planner_event_views.xml:11
 msgid "Cancel booking (vendor drop-out)"
-msgstr "Cancelar contratación (incumplimiento del proveedor)"
+msgstr "Cancelar contratación (cancelación del proveedor)"
 
 #. module: dev_event_planner_management
 #: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:21
@@ -874,7 +874,7 @@ msgstr "Cierre"
 #. module: dev_event_planner_management
 #: dev_event_planner_management/models/planner_event_stage.py:32
 msgid "Closeout Stage"
-msgstr "etapa de cierre"
+msgstr "Etapa de cierre"
 
 #. module: dev_event_planner_management
 #: dev_event_planner_management/data/planner_event_type_data.xml:79
@@ -1973,7 +1973,7 @@ msgstr "Reuniones"
 #. module: dev_event_planner_management
 #: dev_event_planner_management/demo/planner_demo.xml:206
 msgid "Memories that last a lifetime"
-msgstr "Memories que último un lifetime"
+msgstr "Recuerdos para toda la vida"
 
 #. module: dev_event_planner_management
 #: dev_event_planner_management/data/planner_event_type_data.xml:176
@@ -2485,7 +2485,7 @@ msgstr "Confirmación de asistencia pendiente"
 #. module: dev_event_planner_management
 #: dev_event_planner_management/data/planner_event_stage_data.xml:31
 msgid "Ready (Locked)"
-msgstr "Listo (Bloqueado)"
+msgstr "Listo (bloqueado)"
 
 #. module: dev_event_planner_management
 #: dev_event_planner_management/models/planner_event.py:72
@@ -3197,12 +3197,12 @@ msgstr "Contratación de proveedor cancelada: %(vendor)s (%(service)s)."
 #. module: dev_event_planner_management
 #: dev_event_planner_management/models/planner_categories.py:50
 msgid "Vendor drop-out costs are reclassified to this category."
-msgstr "Los costos por incumplimiento del proveedor se reclasifican en esta categoría."
+msgstr "Los costos derivados de la cancelación del proveedor se reclasifican en esta categoría."
 
 #. module: dev_event_planner_management
 #: dev_event_planner_management/models/planner_event_vendor_line.py:120
 msgid "Vendor dropped out — settle this order"
-msgstr "El proveedor incumplió; liquide esta orden"
+msgstr "El proveedor canceló; liquide esta orden"
 
 #. module: dev_event_planner_management
 #: dev_event_planner_management/report/planner_report_templates.xml:81
@@ -3330,7 +3330,7 @@ msgid ""
 "Years of curated caterers, florists, AV crews\n"
 "                                   and artists — matched to your style and budget."
 msgstr ""
-"Años de seleccionar servicios de banquete, floristas, equipos audiovisuales\n"
+"Años creando una selección de servicios de banquete, floristas, equipos audiovisuales\n"
 "                                   y artistas que se adaptan a su estilo y presupuesto."
 
 #. module: dev_event_planner_management

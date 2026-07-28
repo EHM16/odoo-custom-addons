@@ -38,10 +38,8 @@ msgstr "Cuenta utilizada para crear asientos contables."
 
 #. module: account_interest_on_overdue_invoice
 #: model:ir.actions.server,name:account_interest_on_overdue_invoice.ir_cron_daily_interest_compute_ir_actions_server
-#, fuzzy
-#| msgid "Account for Interest"
 msgid "Account:Daily Invoice Interest check"
-msgstr "Cuenta para intereses"
+msgstr "Contabilidad: comprobación diaria de intereses de facturas"
 
 #. module: account_interest_on_overdue_invoice
 #: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_payment_term__interest_type
@@ -57,7 +55,7 @@ msgstr "Diario"
 #: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_move__display_name
 #: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_payment_term__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: account_interest_on_overdue_invoice
 #. odoo-python
@@ -75,7 +73,7 @@ msgstr "Indica si los intereses por vencimiento están activos."
 #: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_move__id
 #: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_payment_term__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_interest_on_overdue_invoice
 #: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_bank_statement_line__interest_amount
@@ -111,7 +109,7 @@ msgstr "Tipo de interés:"
 #: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_bank_statement_line__interest_calculated_period
 #: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_move__interest_calculated_period
 msgid "Interest calculated date"
-msgstr "Fecha de cálculo de intereses"
+msgstr "Periodo de intereses calculado"
 
 #. module: account_interest_on_overdue_invoice
 #: model:ir.model.fields,field_description:account_interest_on_overdue_invoice.field_account_bank_statement_line__interest_overdue_act
@@ -128,7 +126,7 @@ msgstr "Porcentaje de interés por cada periodo del tipo de interés seleccionad
 #. module: account_interest_on_overdue_invoice
 #: model:ir.model,name:account_interest_on_overdue_invoice.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Apunte contable"
 
 #. module: account_interest_on_overdue_invoice
 #: model:ir.model.fields.selection,name:account_interest_on_overdue_invoice.selection__account_payment_term__interest_type__monthly
@@ -138,7 +136,7 @@ msgstr "Mensual"
 #. module: account_interest_on_overdue_invoice
 #: model:ir.model,name:account_interest_on_overdue_invoice.model_account_payment_term
 msgid "Payment Terms"
-msgstr ""
+msgstr "Condiciones de pago"
 
 #. module: account_interest_on_overdue_invoice
 #: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_bank_statement_line__interest_amount
@@ -150,7 +148,7 @@ msgstr "El importe de los intereses acumulados."
 #: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_bank_statement_line__interest_calculated_period
 #: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_move__interest_calculated_period
 msgid "The date when interest was calculated."
-msgstr "La fecha en que se calcularon los intereses."
+msgstr "El periodo para el que se calcularon los intereses."
 
 #. module: account_interest_on_overdue_invoice
 #: model:ir.model.fields,help:account_interest_on_overdue_invoice.field_account_bank_statement_line__interest_percentage

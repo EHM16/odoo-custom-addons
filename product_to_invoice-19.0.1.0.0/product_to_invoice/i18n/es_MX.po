@@ -19,24 +19,22 @@ msgstr ""
 #. module: product_to_invoice
 #: model_terms:ir.ui.view,arch_db:product_to_invoice.product_kanban_view
 msgid "<i class=\"fa fa-list\"/>Change Quantity"
-msgstr ""
+msgstr "<i class=\"fa fa-list\"/>Cambiar cantidad"
 
 #. module: product_to_invoice
 #: model_terms:ir.ui.view,arch_db:product_to_invoice.product_kanban_view
-#, fuzzy
-#| msgid "Add to Invoice/Bill"
 msgid "<i class=\"fa fa-plus\"/>Add to Invoice/Bill"
-msgstr "Agregar a factura/recibo"
+msgstr "<i class=\"fa fa-plus\"/>Agregar a factura de cliente/proveedor"
 
 #. module: product_to_invoice
 #: model_terms:ir.ui.view,arch_db:product_to_invoice.view_move_form
 msgid "<span>Add Products</span>"
-msgstr ""
+msgstr "<span>Agregar productos</span>"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_invoice_product_details__account_move_id
 msgid "Account Move"
-msgstr "Asiento contable"
+msgstr "Movimiento contable"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_product__add_to_invoice
@@ -47,7 +45,7 @@ msgstr "Añadir a factura"
 #. module: product_to_invoice
 #: model_terms:ir.ui.view,arch_db:product_to_invoice.product_normal_form_view
 msgid "Add to Invoice/Bill"
-msgstr "Agregar a factura/recibo"
+msgstr "Agregar a factura de cliente/proveedor"
 
 #. module: product_to_invoice
 #: model_terms:ir.ui.view,arch_db:product_to_invoice.invoice_product_details_view_form
@@ -63,20 +61,18 @@ msgstr "Cerrar"
 #: model:ir.model.fields,field_description:product_to_invoice.field_invoice_product_details__create_uid
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_invoice_history__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_invoice_product_details__create_date
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_invoice_history__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: product_to_invoice
 #: model:ir.model.fields.selection,name:product_to_invoice.selection__product_invoice_history__type__out_invoice
-#, fuzzy
-#| msgid "Add to Invoice"
 msgid "Customer Invoice"
-msgstr "Añadir a factura"
+msgstr "Factura de cliente"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_invoice_history__partner_id
@@ -90,10 +86,8 @@ msgstr "Fecha"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_invoice_product_details__date_from
-#, fuzzy
-#| msgid "Date"
 msgid "Date From"
-msgstr "Fecha"
+msgstr "Fecha desde"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,help:product_to_invoice.field_invoice_product_details__date_from
@@ -106,7 +100,7 @@ msgstr "Fecha predeterminada a partir de la cual se crea un registro."
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_invoice_history__display_name
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_product__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,help:product_to_invoice.field_invoice_product_details__qty
@@ -140,7 +134,7 @@ msgstr "Historial de facturas relacionadas con este producto."
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_invoice_history__id
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_product__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_invoice_product_details__invoice_history_ids
@@ -149,37 +143,35 @@ msgstr "Historial de facturas"
 
 #. module: product_to_invoice
 #: model:ir.model,name:product_to_invoice.model_invoice_product_details
-#, fuzzy
-#| msgid "Product Details"
 msgid "Invoice Product Details"
-msgstr "Detalles del producto"
+msgstr "Detalles del producto de la factura"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_invoice_history__move_id
 msgid "Invoice/Bill"
-msgstr "Factura/Recibo"
+msgstr "Factura de cliente/proveedor"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_invoice_history__account_move_number
 msgid "Invoice/Bill No"
-msgstr "Número de factura/recibo"
+msgstr "Núm. de factura de cliente/proveedor"
 
 #. module: product_to_invoice
 #: model:ir.model,name:product_to_invoice.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Apunte contable"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_invoice_product_details__write_uid
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_invoice_history__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_invoice_product_details__write_date
 #: model:ir.model.fields,field_description:product_to_invoice.field_product_invoice_history__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_invoice_product_details__limit
@@ -189,7 +181,7 @@ msgstr "Límite"
 #. module: product_to_invoice
 #: model:ir.model.fields,help:product_to_invoice.field_invoice_product_details__account_move_id
 msgid "Link to the corresponding account move."
-msgstr "Enlace al movimiento de cuenta correspondiente."
+msgstr "Enlace al movimiento contable correspondiente."
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_invoice_product_details__product_id
@@ -204,17 +196,13 @@ msgstr "Detalles del producto"
 
 #. module: product_to_invoice
 #: model:ir.model,name:product_to_invoice.model_product_invoice_history
-#, fuzzy
-#| msgid "Invoice History"
 msgid "Product Invoice History"
-msgstr "Historial de facturas"
+msgstr "Historial de facturación del producto"
 
 #. module: product_to_invoice
 #: model:ir.model,name:product_to_invoice.model_product_product
-#, fuzzy
-#| msgid "Product Details"
 msgid "Product Variant"
-msgstr "Detalles del producto"
+msgstr "Variante de producto"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,field_description:product_to_invoice.field_invoice_product_details__qty
@@ -225,7 +213,7 @@ msgstr "Cantidad"
 #. module: product_to_invoice
 #: model_terms:ir.ui.view,arch_db:product_to_invoice.invoice_product_details_view_form
 msgid "Recent Invoice/Bill History"
-msgstr "Historial reciente de facturas/recibos"
+msgstr "Historial reciente de facturas de cliente/proveedor"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,help:product_to_invoice.field_invoice_product_details__product_id
@@ -240,12 +228,12 @@ msgstr "Establecer el límite para el producto"
 #. module: product_to_invoice
 #: model:ir.model.fields,help:product_to_invoice.field_product_invoice_history__move_id
 msgid "The associated account move for the invoice"
-msgstr "El movimiento de cuenta asociado para la factura."
+msgstr "El movimiento contable asociado a la factura."
 
 #. module: product_to_invoice
 #: model:ir.model.fields,help:product_to_invoice.field_product_invoice_history__product_details_id
 msgid "The associated product details for the invoice"
-msgstr "Los detalles del producto asociado para la factura."
+msgstr "Los detalles del producto asociado a la factura."
 
 #. module: product_to_invoice
 #: model:ir.model.fields,help:product_to_invoice.field_product_invoice_history__partner_id
@@ -260,7 +248,7 @@ msgstr "La fecha de la factura."
 #. module: product_to_invoice
 #: model:ir.model.fields,help:product_to_invoice.field_product_invoice_history__account_move_number
 msgid "The number of the invoice/bill"
-msgstr "El número de la factura/recibo"
+msgstr "El número de la factura de cliente o proveedor"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,help:product_to_invoice.field_product_invoice_history__qty
@@ -306,12 +294,12 @@ msgstr "Actualizar cantidad"
 #. module: product_to_invoice
 #: model:ir.model.fields.selection,name:product_to_invoice.selection__product_invoice_history__type__in_invoice
 msgid "Vendor Bill"
-msgstr ""
+msgstr "Factura de proveedor"
 
 #. module: product_to_invoice
 #: model:ir.model.fields,help:product_to_invoice.field_product_product__add_to_invoice
 msgid "Whether to show the \"Add to Invoice\" button in the tree view."
-msgstr "Si se debe mostrar el botón \"Agregar a factura\" en la vista de árbol."
+msgstr "Indica si se muestra el botón \"Agregar a factura\" en la vista de lista."
 
 #~ msgid "Add Multiple Products To Invoice/Bill"
 #~ msgstr "Agregar varios productos a una factura"

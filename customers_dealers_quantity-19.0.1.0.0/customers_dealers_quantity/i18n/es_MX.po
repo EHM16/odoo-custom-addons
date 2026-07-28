@@ -19,12 +19,12 @@ msgstr ""
 #. module: customers_dealers_quantity
 #: model:ir.model,name:customers_dealers_quantity.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #. module: customers_dealers_quantity
 #: model:ir.model,website_form_label:customers_dealers_quantity.model_res_partner
 msgid "Create a Customer"
-msgstr ""
+msgstr "Crear un cliente"
 
 #. module: customers_dealers_quantity
 #: model:ir.model.fields,field_description:customers_dealers_quantity.field_res_partner__dealer
@@ -45,10 +45,9 @@ msgstr "Precio de distribuidor"
 
 #. module: customers_dealers_quantity
 #: model_terms:ir.ui.view,arch_db:customers_dealers_quantity.product_normal_form_view
-#, fuzzy
 #| msgid "Dealer"
 msgid "Dealers"
-msgstr "Distribuidor"
+msgstr "Distribuidores"
 
 #. module: customers_dealers_quantity
 #: model:ir.model.fields,field_description:customers_dealers_quantity.field_product_product__minimum_quantity
@@ -74,7 +73,7 @@ msgstr "Cantidad mínima para distribuidores"
 #: model:ir.model.fields,field_description:customers_dealers_quantity.field_sale_order__display_name
 #: model:ir.model.fields,field_description:customers_dealers_quantity.field_sale_order_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: customers_dealers_quantity
 #: model:ir.model.fields,field_description:customers_dealers_quantity.field_account_move__id
@@ -84,7 +83,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:customers_dealers_quantity.field_sale_order__id
 #: model:ir.model.fields,field_description:customers_dealers_quantity.field_sale_order_line__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: customers_dealers_quantity
 #: model:ir.model.fields,help:customers_dealers_quantity.field_res_partner__dealer
@@ -95,27 +94,27 @@ msgstr "Es útil saber si el cliente es distribuidor o no."
 #. module: customers_dealers_quantity
 #: model:ir.model,name:customers_dealers_quantity.model_account_move
 msgid "Journal Entry"
-msgstr ""
+msgstr "Asiento contable"
 
 #. module: customers_dealers_quantity
 #: model:ir.model,name:customers_dealers_quantity.model_account_move_line
 msgid "Journal Item"
-msgstr ""
+msgstr "Apunte contable"
 
 #. module: customers_dealers_quantity
 #: model:ir.model,name:customers_dealers_quantity.model_product_product
 msgid "Product Variant"
-msgstr ""
+msgstr "Variante de producto"
 
 #. module: customers_dealers_quantity
 #: model:ir.model,name:customers_dealers_quantity.model_sale_order
 msgid "Sale Order Delivery Split"
-msgstr ""
+msgstr "Orden de venta"
 
 #. module: customers_dealers_quantity
 #: model:ir.model,name:customers_dealers_quantity.model_sale_order_line
 msgid "Sale Order Line Delivery Split"
-msgstr ""
+msgstr "Línea de orden de venta"
 
 #~ msgid "Customer's Dealers Special Price"
 #~ msgstr "Precio especial para distribuidores del cliente"

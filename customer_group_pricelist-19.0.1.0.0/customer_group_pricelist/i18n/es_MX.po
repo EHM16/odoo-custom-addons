@@ -38,50 +38,48 @@ msgstr "Contactos"
 
 #. module: customer_group_pricelist
 #: model:ir.model,name:customer_group_pricelist.model_customer_group
-#, fuzzy
 #| msgid "Customer Group PriceList"
 msgid "Create Customer Groups"
-msgstr "Lista de precios para grupos de clientes"
+msgstr "Crear grupos de clientes"
 
 #. module: customer_group_pricelist
 #: model:ir.model.fields,field_description:customer_group_pricelist.field_customer_group__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: customer_group_pricelist
 #: model:ir.model.fields,field_description:customer_group_pricelist.field_customer_group__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: customer_group_pricelist
 #: model:ir.actions.act_window,name:customer_group_pricelist.customer_group_action
 #: model:ir.ui.menu,name:customer_group_pricelist.customer_group_menu_root
-#, fuzzy
 #| msgid "Customer Group PriceList"
 msgid "Customer Group"
-msgstr "Lista de precios para grupos de clientes"
+msgstr "Grupo de clientes"
 
 #. module: customer_group_pricelist
 #: model:ir.model.fields,field_description:customer_group_pricelist.field_customer_group__display_name
 #: model:ir.model.fields,field_description:customer_group_pricelist.field_sale_order__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: customer_group_pricelist
 #: model:ir.model.fields,field_description:customer_group_pricelist.field_customer_group__id
 #: model:ir.model.fields,field_description:customer_group_pricelist.field_sale_order__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: customer_group_pricelist
 #: model:ir.model.fields,field_description:customer_group_pricelist.field_customer_group__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: customer_group_pricelist
 #: model:ir.model.fields,field_description:customer_group_pricelist.field_customer_group__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: customer_group_pricelist
 #: model:ir.model.fields,field_description:customer_group_pricelist.field_customer_group__name
@@ -101,7 +99,7 @@ msgstr "Lista de precios"
 #. module: customer_group_pricelist
 #: model:ir.model,name:customer_group_pricelist.model_sale_order
 msgid "Sale Order Delivery Split"
-msgstr ""
+msgstr "Orden de venta"
 
 #~ msgid "Pricelist will be set automatically based on the customer group"
 #~ msgstr "La lista de precios se establecerá automáticamente según el grupo de clientes."

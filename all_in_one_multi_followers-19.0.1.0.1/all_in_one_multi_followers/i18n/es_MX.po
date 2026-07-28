@@ -23,6 +23,9 @@ msgid ""
 "                                    Action\n"
 "                                </span>"
 msgstr ""
+"<span class=\"fw-bold\">Crear una acción\n"
+"                                    dinámica\n"
+"                                </span>"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__action_name
@@ -36,10 +39,9 @@ msgstr "Tipo de acción"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields.selection,name:all_in_one_multi_followers.selection__follower_adding_removing__type__add
-#, fuzzy
 #| msgid "Dynamic Followers"
 msgid "Add Followers"
-msgstr "Seguidores dinámicos"
+msgstr "Agregar seguidores"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__applied_to_ids
@@ -53,15 +55,14 @@ msgstr "Cancelar"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields.selection,name:all_in_one_multi_followers.selection__multi_follower__states__cancel
-#, fuzzy
 #| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Cancelar"
+msgstr "Cancelado"
 
 #. module: all_in_one_multi_followers
 #: model_terms:ir.actions.act_window,help:all_in_one_multi_followers.multi_follower_action
 msgid "Click to add the followers dynamic action"
-msgstr ""
+msgstr "Haga clic para agregar una acción dinámica de seguidores"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__enabled_value
@@ -77,29 +78,27 @@ msgstr "Nombres de las acciones creadas"
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__create_uid
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__create_uid
-#, fuzzy
 #| msgid "Create Action"
 msgid "Created by"
-msgstr "Crear acción"
+msgstr "Creado por"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__create_date
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__create_date
-#, fuzzy
 #| msgid "Create Action"
 msgid "Created on"
-msgstr "Crear acción"
+msgstr "Creado el"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__display_name
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields.selection,name:all_in_one_multi_followers.selection__multi_follower__states__draft
 msgid "Draft"
-msgstr ""
+msgstr "Borrador"
 
 #. module: all_in_one_multi_followers
 #: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.res_config_settings_view_form
@@ -114,7 +113,7 @@ msgstr "Habilita u oculta el botón para crear la acción."
 #. module: all_in_one_multi_followers
 #: model:ir.model,name:all_in_one_multi_followers.model_follower_adding_removing
 msgid "Follower Adding Removing"
-msgstr ""
+msgstr "Administración de seguidores"
 
 #. module: all_in_one_multi_followers
 #: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.res_config_settings_view_form
@@ -131,7 +130,7 @@ msgstr "Hola,"
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__id
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,help:all_in_one_multi_followers.field_follower_adding_removing__res_id
@@ -157,13 +156,13 @@ msgstr "Mensaje de correo para agregar o eliminar seguidores."
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__write_uid
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__write_date
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__message
@@ -173,10 +172,9 @@ msgstr "Mensaje"
 #. module: all_in_one_multi_followers
 #: model:ir.actions.act_window,name:all_in_one_multi_followers.multi_follower_action
 #: model:ir.model,name:all_in_one_multi_followers.model_multi_follower
-#, fuzzy
 #| msgid "All in One Multi Followers"
 msgid "Multi Follower"
-msgstr "Gestión integral de seguidores"
+msgstr "Seguidores múltiples"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__partner_ids
@@ -186,7 +184,7 @@ msgstr "Contactos"
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_follower_adding_removing__res_id
 msgid "Related Document ID"
-msgstr ""
+msgstr "ID del documento relacionado"
 
 #. module: all_in_one_multi_followers
 #: model_terms:ir.ui.view,arch_db:all_in_one_multi_followers.multi_follower_view_form
@@ -195,15 +193,14 @@ msgstr "Eliminar acción"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields.selection,name:all_in_one_multi_followers.selection__follower_adding_removing__type__remove
-#, fuzzy
 #| msgid "Dynamic Followers"
 msgid "Remove Followers"
-msgstr "Seguidores dinámicos"
+msgstr "Eliminar seguidores"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields.selection,name:all_in_one_multi_followers.selection__multi_follower__states__running
 msgid "Running"
-msgstr ""
+msgstr "En curso"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,help:all_in_one_multi_followers.field_follower_adding_removing__type
@@ -228,7 +225,7 @@ msgstr "Enviar correo electrónico"
 #. module: all_in_one_multi_followers
 #: model:ir.actions.act_window,name:all_in_one_multi_followers.res_config_settings_action
 msgid "Settings"
-msgstr ""
+msgstr "Ajustes"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__states
@@ -253,10 +250,10 @@ msgstr "Seguimiento del documento %(document_model)s: %(document_name)s"
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,help:all_in_one_multi_followers.field_multi_follower__action_name
-#, fuzzy
 #| msgid "This is the action name. So this name is visible under the the appropriate model action."
 msgid "This is the  action name. So this name is visible under the the appropriate model action."
-msgstr "Este es el nombre de la acción. Se mostrará en el menú de acciones del modelo correspondiente."
+msgstr ""
+"Este es el nombre de la acción, que se mostrará entre las acciones del modelo correspondiente."
 
 #. module: all_in_one_multi_followers
 #: model:ir.model.fields,field_description:all_in_one_multi_followers.field_multi_follower__window_action_ids

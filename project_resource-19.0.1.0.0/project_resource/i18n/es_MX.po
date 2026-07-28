@@ -29,24 +29,24 @@ msgstr "Cancelar"
 #. module: project_resource
 #: model:ir.model,website_form_label:project_resource.model_project_task
 msgid "Create a Task"
-msgstr ""
+msgstr "Crear una tarea"
 
 #. module: project_resource
 #: model:ir.model.fields,field_description:project_resource.field_free_resource__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: project_resource
 #: model:ir.model.fields,field_description:project_resource.field_free_resource__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: project_resource
 #: model:ir.model.fields,field_description:project_resource.field_free_resource__display_name
 #: model:ir.model.fields,field_description:project_resource.field_project_task__display_name
 #: model:ir.model.fields,field_description:project_resource.field_res_users__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: project_resource
 #: model:ir.model.fields,field_description:project_resource.field_free_resource__date_to
@@ -75,22 +75,23 @@ msgstr "Recursos gratuitos"
 #: model:ir.model.fields,field_description:project_resource.field_project_task__id
 #: model:ir.model.fields,field_description:project_resource.field_res_users__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: project_resource
 #: model:ir.model.fields,field_description:project_resource.field_free_resource__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: project_resource
 #: model:ir.model.fields,field_description:project_resource.field_free_resource__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: project_resource
 #: model_terms:ir.ui.view,arch_db:project_resource.view_task_form2
 msgid "Please set the Start Date and Deadline first so that only free resources are shown as Assignees."
 msgstr ""
+"Primero establezca la fecha inicial y la fecha límite para mostrar únicamente los recursos disponibles como asignados."
 
 #. module: project_resource
 #: model:ir.model.fields,field_description:project_resource.field_project_task__manager_id
@@ -104,10 +105,9 @@ msgstr "Gerente del proyecto de la tarea"
 
 #. module: project_resource
 #: model:ir.ui.menu,name:project_resource.free_resource_menu_wizard
-#, fuzzy
 #| msgid "Free Resources"
 msgid "Resources"
-msgstr "Recursos gratuitos"
+msgstr "Recursos"
 
 #. module: project_resource
 #: model:ir.model.fields,field_description:project_resource.field_free_resource__date_from
@@ -128,7 +128,7 @@ msgstr "Fecha de inicio de la tarea"
 #. module: project_resource
 #: model:ir.model,name:project_resource.model_project_task
 msgid "Task"
-msgstr ""
+msgstr "Tarea"
 
 #. module: project_resource
 #. odoo-python
@@ -160,16 +160,26 @@ msgid ""
 "\n"
 "        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
 msgstr ""
+"Use estas palabras clave en el título para configurar tareas nuevas:\n"
+"\n"
+"        30h Asigne 30 horas a la tarea\n"
+"        #etiquetas Establezca etiquetas en la tarea\n"
+"        @usuario Asigne la tarea a un usuario\n"
+"        ! Establezca una prioridad media para la tarea\n"
+"        !! Establezca una prioridad alta para la tarea\n"
+"        !!! Establezca una prioridad urgente para la tarea\n"
+"\n"
+"        Asegúrese de usar el formato y el orden correctos; por ejemplo: Mejorar la pantalla de configuración 5h #función #v16 @Mitchell !"
 
 #. module: project_resource
 #: model:ir.model,name:project_resource.model_res_users
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #. module: project_resource
 #: model:ir.model.fields,field_description:project_resource.field_project_task__users_ids
 msgid "Users"
-msgstr ""
+msgstr "Usuarios"
 
 #~ msgid "Get all free resources for the project"
 #~ msgstr "Obtenga todos los recursos gratuitos para el proyecto"

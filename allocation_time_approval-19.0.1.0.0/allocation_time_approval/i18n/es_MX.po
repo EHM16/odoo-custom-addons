@@ -18,10 +18,9 @@ msgstr ""
 
 #. module: allocation_time_approval
 #: model:ir.ui.menu,name:allocation_time_approval.allocated_hour_approval
-#, fuzzy
 #| msgid "Allocated Hours"
 msgid "Allocated Hour Approval"
-msgstr "Horas asignadas"
+msgstr "Aprobación de horas asignadas"
 
 #. module: allocation_time_approval
 #: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__planned_hours
@@ -101,35 +100,32 @@ msgstr "Nombre del proyecto correspondiente"
 
 #. module: allocation_time_approval
 #: model:ir.model,website_form_label:allocation_time_approval.model_project_task
-#, fuzzy
 #| msgid "Project Task"
 msgid "Create a Task"
-msgstr "Tarea del proyecto"
+msgstr "Crear una tarea"
 
 #. module: allocation_time_approval
 #: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: allocation_time_approval
 #: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__create_date
-#, fuzzy
 #| msgid "Task Create Boolean"
 msgid "Created on"
-msgstr "Control de creación de solicitud de aprobación"
+msgstr "Creado el"
 
 #. module: allocation_time_approval
 #: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__display_name
 #: model:ir.model.fields,field_description:allocation_time_approval.field_project_task__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: allocation_time_approval
 #: model_terms:ir.ui.view,arch_db:allocation_time_approval.view_task_form2
-#, fuzzy
 #| msgid "Task Done"
 msgid "Done"
-msgstr "Tarea en progreso"
+msgstr "Hecho"
 
 #. module: allocation_time_approval
 #: model:ir.model.fields,help:allocation_time_approval.field_manager_approval__task_id
@@ -140,17 +136,17 @@ msgstr "Tarea relacionada"
 #: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__id
 #: model:ir.model.fields,field_description:allocation_time_approval.field_project_task__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: allocation_time_approval
 #: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: allocation_time_approval
 #: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: allocation_time_approval
 #: model:ir.model,name:allocation_time_approval.model_manager_approval
@@ -206,10 +202,9 @@ msgstr "Nombre de la tarea para el proyecto"
 
 #. module: allocation_time_approval
 #: model:project.task.type,name:allocation_time_approval.task_type_to_approve
-#, fuzzy
 #| msgid "To approve"
 msgid "To Approve"
-msgstr "Aprobar"
+msgstr "Para aprobar"
 
 #. module: allocation_time_approval
 #: model:ir.model.fields,field_description:allocation_time_approval.field_project_task__is_approve_stage
@@ -230,6 +225,16 @@ msgid ""
 "\n"
 "        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
 msgstr ""
+"Use estas palabras clave en el título para configurar tareas nuevas:\n"
+"\n"
+"        30h Asigne 30 horas a la tarea\n"
+"        #etiquetas Establezca etiquetas en la tarea\n"
+"        @usuario Asigne la tarea a un usuario\n"
+"        ! Establezca una prioridad media para la tarea\n"
+"        !! Establezca una prioridad alta para la tarea\n"
+"        !!! Establezca una prioridad urgente para la tarea\n"
+"\n"
+"        Asegúrese de usar el formato y el orden correctos; por ejemplo: Mejorar la pantalla de configuración 5h #función #v16 @Mitchell !"
 
 #. module: allocation_time_approval
 #. odoo-python

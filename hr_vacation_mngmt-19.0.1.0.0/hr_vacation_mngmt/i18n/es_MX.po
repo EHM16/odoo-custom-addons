@@ -25,6 +25,11 @@ msgid ""
 "            <p>Thank you!</p>\n"
 "        "
 msgstr ""
+"<p>Hola:</p>\n"
+"            <p>El empleado <strong>${object.employee_id.name}</strong> ha tomado <strong>${object.no_of_days_temp}</strong> días de permiso, desde <strong>${object.date_from}</strong> hasta <strong>${object.date_to}</strong>.</p>\n"
+"            <p>Realice las acciones necesarias.</p>\n"
+"            <p>¡Gracias!</p>\n"
+"        "
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__assigned_person_id
@@ -35,7 +40,7 @@ msgstr "Asignado a"
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_leave__leave_salary__0
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__res_config_settings__default_leave_salary__0
 msgid "Basic"
-msgstr ""
+msgstr "Básico"
 
 #. module: hr_vacation_mngmt
 #. odoo-python
@@ -52,12 +57,12 @@ msgstr "Reservar boleto"
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__state__booked
 msgid "Booked"
-msgstr ""
+msgstr "Reservado"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_class__business
 msgid "Business"
-msgstr ""
+msgstr "Ejecutiva"
 
 #. module: hr_vacation_mngmt
 #: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_flight_ticket_view_form
@@ -68,10 +73,8 @@ msgstr "Cancelar"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__state__canceled
-#, fuzzy
-#| msgid "Cancel"
 msgid "Canceled"
-msgstr "Cancelar"
+msgstr "Cancelado"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_payslip__leave_salary
@@ -91,7 +94,7 @@ msgstr "Clase"
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__company_id
 msgid "Company"
-msgstr ""
+msgstr "Empresa"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__company_id
@@ -101,12 +104,12 @@ msgstr "Empresa del empleado."
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__state__completed
 msgid "Completed"
-msgstr ""
+msgstr "Completado"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model,name:hr_vacation_mngmt.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Ajustes de configuración"
 
 #. module: hr_vacation_mngmt
 #: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_flight_ticket_view_form
@@ -120,27 +123,27 @@ msgid ""
 "Confirm leave request and reassign pending works of the\n"
 "                    employee."
 msgstr ""
+"Confirme la solicitud de permiso y reasigne los trabajos pendientes del\n"
+"                    empleado."
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__state__confirmed
-#, fuzzy
-#| msgid "Confirm"
 msgid "Confirmed"
-msgstr "Confirmar"
+msgstr "Confirmado"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__create_uid
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__create_uid
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__create_date
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__create_date
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__dept_id
@@ -184,10 +187,8 @@ msgstr "Detalles de tareas pendientes"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__return_flight_details
-#, fuzzy
-#| msgid "Details of return flight"
 msgid "Details of return flight "
-msgstr "Detalles del vuelo de regreso"
+msgstr "Detalles del vuelo de regreso "
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__display_name
@@ -197,12 +198,12 @@ msgstr "Detalles del vuelo de regreso"
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__display_name
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_class__economy
 msgid "Economy"
-msgstr ""
+msgstr "Económica"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__employee_id
@@ -217,7 +218,7 @@ msgstr "Empleado que está asignado a"
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_res_config_settings__leave_reminder
 msgid "Enable this field send leave remainder emails to hr managers"
-msgstr "Habilite este campo para enviar correos electrónicos de permisos restantes a los gerentes de recursos humanos"
+msgstr "Active este campo para enviar recordatorios de permisos a los responsables de recursos humanos"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__expense_account_id
@@ -232,10 +233,8 @@ msgstr "Cuenta de gastos para contabilizar los gastos de vuelo."
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_class__first_class
-#, fuzzy
-#| msgid "Class"
 msgid "First Class"
-msgstr "Clase"
+msgstr "Primera clase"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__flight_details
@@ -263,10 +262,8 @@ msgstr "Factura del boleto de avión"
 #. module: hr_vacation_mngmt
 #: model:ir.actions.act_window,name:hr_vacation_mngmt.action_hr_flight_tickets
 #: model:ir.ui.menu,name:hr_vacation_mngmt.hr_flight_tickets_menu_root
-#, fuzzy
-#| msgid "Flight Ticket"
 msgid "Flight Tickets"
-msgstr "Boleto de avión"
+msgstr "Boletos de avión"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__flight_details
@@ -280,10 +277,8 @@ msgstr "Detalles del boleto de avión"
 
 #. module: hr_vacation_mngmt
 #: model:ir.actions.server,name:hr_vacation_mngmt.ir_cron_ticket_status_update_ir_actions_server
-#, fuzzy
-#| msgid "Flight ticket Details"
 msgid "Flight ticket status update"
-msgstr "Detalles del boleto de avión"
+msgstr "Actualización del estado de los boletos de avión"
 
 #. module: hr_vacation_mngmt
 #. odoo-python
@@ -300,28 +295,22 @@ msgstr "Indique la tarifa del boleto"
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_leave__leave_salary__1
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__res_config_settings__default_leave_salary__1
 msgid "Gross"
-msgstr ""
+msgstr "Bruto"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model,name:hr_vacation_mngmt.model_hr_flight_ticket
-#, fuzzy
-#| msgid "Flight Ticket"
 msgid "HR Flight Ticket"
-msgstr "Boleto de avión"
+msgstr "Boleto de avión de RR. HH."
 
 #. module: hr_vacation_mngmt
 #: model:ir.actions.server,name:hr_vacation_mngmt.hr_email_leave_reminder_ir_actions_server
-#, fuzzy
-#| msgid "Leave Reminder Email"
 msgid "HR Leave Reminder"
-msgstr "Dejar correo electrónico de recordatorio"
+msgstr "Recordatorio de permisos de RR. HH."
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__holiday_managers_ids
-#, fuzzy
-#| msgid "Responsible holiday managers"
 msgid "Holiday Managers"
-msgstr "Aprobadores de Permisos"
+msgstr "Responsables de permisos"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__id
@@ -331,7 +320,7 @@ msgstr "Aprobadores de Permisos"
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__id
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__invoice_id
@@ -349,14 +338,14 @@ msgstr "Factura del empleado"
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__write_uid
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__write_date
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__write_date
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__leave_id
@@ -365,15 +354,13 @@ msgstr "Permiso"
 
 #. module: hr_vacation_mngmt
 #: model:mail.template,name:hr_vacation_mngmt.email_template_hr_leave_reminder_mail
-#, fuzzy
-#| msgid "Leave Reminder Email"
 msgid "Leave : Reminder"
-msgstr "Dejar correo electrónico de recordatorio"
+msgstr "Permiso: recordatorio"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__leave_reminder
 msgid "Leave Reminder Email"
-msgstr "Dejar correo electrónico de recordatorio"
+msgstr "Correo de recordatorio de permisos"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__leave_id
@@ -390,17 +377,13 @@ msgstr "Permiso pagado"
 
 #. module: hr_vacation_mngmt
 #: model:hr.salary.rule,name:hr_vacation_mngmt.hr_salary_rule_leave_salary_basic
-#, fuzzy
-#| msgid "Leave Salary"
 msgid "Leave Salary Basic"
-msgstr "Permiso pagado"
+msgstr "Salario básico por permiso"
 
 #. module: hr_vacation_mngmt
 #: model:hr.salary.rule,name:hr_vacation_mngmt.hr_salary_rule_leave_salary_gross
-#, fuzzy
-#| msgid "Leave Salary"
 msgid "Leave Salary Gross"
-msgstr "Permiso pagado"
+msgstr "Salario bruto por permiso"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__leave_id
@@ -421,7 +404,7 @@ msgstr "Solicitud de permiso del empleado."
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_task_reassign__leave_req_id
 msgid "Leave request to which the pending tasks are related."
-msgstr "Dejar solicitud con la que se relacionan las tareas pendientes."
+msgstr "Solicitud de permiso con la que se relacionan las tareas pendientes."
 
 #. module: hr_vacation_mngmt
 #: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.res_config_settings_view_form_payroll
@@ -457,7 +440,7 @@ msgstr "Nuevo"
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_type__one
 msgid "One Way"
-msgstr ""
+msgstr "Solo ida"
 
 #. module: hr_vacation_mngmt
 #. odoo-python
@@ -485,14 +468,12 @@ msgstr "Superposición de permisos de empleados."
 #. module: hr_vacation_mngmt
 #: model:ir.model,name:hr_vacation_mngmt.model_hr_payslip
 msgid "Pay Slip"
-msgstr ""
+msgstr "Recibo de nómina"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model,name:hr_vacation_mngmt.model_pending_task
-#, fuzzy
-#| msgid "Pending Tasks"
 msgid "Pending Task"
-msgstr "Tareas pendientes"
+msgstr "Tarea pendiente"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__pending_task_ids
@@ -504,7 +485,7 @@ msgstr "Tareas pendientes"
 #. module: hr_vacation_mngmt
 #: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_leave_view_form
 msgid "Pending Works"
-msgstr "Trabajos Pendientes"
+msgstr "Trabajos pendientes"
 
 #. module: hr_vacation_mngmt
 #. odoo-python
@@ -527,7 +508,7 @@ msgstr "Seleccione la cuenta de gastos para los boletos de avión."
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_class__premium_economy
 msgid "Premium Economy"
-msgstr ""
+msgstr "Económica prémium"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__project_id
@@ -563,12 +544,12 @@ msgstr "Recordatorio un día antes"
 #. module: hr_vacation_mngmt
 #: model:mail.template,subject:hr_vacation_mngmt.email_template_hr_leave_reminder_mail
 msgid "Reminder: ${object.display_name}"
-msgstr ""
+msgstr "Recordatorio: ${object.display_name}"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__holiday_managers_ids
 msgid "Responsible holiday managers"
-msgstr "Aprobadores de Permisos"
+msgstr "Responsables de permisos"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__date_return
@@ -582,15 +563,13 @@ msgstr "Detalles del vuelo de regreso"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__date_return
-#, fuzzy
-#| msgid "Return date"
 msgid "Return date "
-msgstr "fecha de regreso"
+msgstr "Fecha de regreso "
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_type__round
 msgid "Round Trip"
-msgstr ""
+msgstr "Viaje redondo"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__ticket_class
@@ -626,10 +605,8 @@ msgstr "Número de secuencia del boleto de avión"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_res_config_settings__reminder_day_before
-#, fuzzy
-#| msgid "Set the day to send reminder ."
 msgid "Set the day to send  reminder ."
-msgstr "Configure el día para enviar el recordatorio."
+msgstr "Establezca con cuántos días de anticipación se enviará el recordatorio."
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_res_config_settings__expense_id
@@ -663,17 +640,13 @@ msgstr "Fecha de inicio del viaje."
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__state__started
-#, fuzzy
-#| msgid "Start Date"
 msgid "Started"
-msgstr "Fecha de inicio"
+msgstr "Iniciado"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__state
-#, fuzzy
-#| msgid "States of the flight ticket."
 msgid "States of the flight ticket. "
-msgstr "Estados del boleto de avión."
+msgstr "Estado del boleto de avión. "
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__state
@@ -688,7 +661,7 @@ msgstr "Tarea"
 #. module: hr_vacation_mngmt
 #: model:ir.model,name:hr_vacation_mngmt.model_task_reassign
 msgid "Task Reassign"
-msgstr ""
+msgstr "Reasignación de tareas"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__ticket_fare
@@ -703,7 +676,7 @@ msgstr "Tipo de boleto"
 #. module: hr_vacation_mngmt
 #: model:ir.model,name:hr_vacation_mngmt.model_hr_leave
 msgid "Time Off"
-msgstr ""
+msgstr "Permiso"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__expense_id

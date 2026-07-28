@@ -24,14 +24,12 @@ msgstr "Se activa cuando la tarea entra en la etapa configurada"
 #. module: automatic_project_task_timer
 #: model:ir.model,name:automatic_project_task_timer.model_account_analytic_line
 msgid "Analytic Line"
-msgstr ""
+msgstr "Apunte analítico"
 
 #. module: automatic_project_task_timer
 #: model:ir.model,name:automatic_project_task_timer.model_res_config_settings
-#, fuzzy
-#| msgid "Configuration"
 msgid "Config Settings"
-msgstr "Configuración"
+msgstr "Ajustes de configuración"
 
 #. module: automatic_project_task_timer
 #: model_terms:ir.ui.view,arch_db:automatic_project_task_timer.timer_configuration_view_tree
@@ -46,17 +44,17 @@ msgstr "Configure el proyecto para activar el temporizador"
 #. module: automatic_project_task_timer
 #: model:ir.model,website_form_label:automatic_project_task_timer.model_project_task
 msgid "Create a Task"
-msgstr ""
+msgstr "Crear una tarea"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_timer_configuration__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_timer_configuration__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_account_analytic_line__display_name
@@ -64,7 +62,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_res_config_settings__display_name
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_timer_configuration__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,help:automatic_project_task_timer.field_res_config_settings__timer_setting
@@ -82,7 +80,7 @@ msgstr "Fecha de finalización"
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_res_config_settings__id
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_timer_configuration__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_project_task__is_user_working
@@ -92,12 +90,12 @@ msgstr "El usuario actual está trabajando"
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_timer_configuration__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_timer_configuration__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_timer_configuration__project_id
@@ -126,10 +124,8 @@ msgstr "Muestra la hora de finalización del temporizador"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,help:automatic_project_task_timer.field_account_analytic_line__timer_duration
-#, fuzzy
-#| msgid "Shows the real time"
 msgid "Shows the real time "
-msgstr "Muestra el tiempo real"
+msgstr "Muestra el tiempo real "
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,help:automatic_project_task_timer.field_account_analytic_line__date_start
@@ -160,7 +156,7 @@ msgstr "Fecha de inicio"
 #. module: automatic_project_task_timer
 #: model:ir.model,name:automatic_project_task_timer.model_project_task
 msgid "Task"
-msgstr ""
+msgstr "Tarea"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_res_config_settings__timer_setting
@@ -169,10 +165,8 @@ msgstr "Temporizador de tareas"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,help:automatic_project_task_timer.field_project_task__is_user_working
-#, fuzzy
-#| msgid "Technical field indicating whether the current user is working."
 msgid "Technical field indicating whether the current user is working. "
-msgstr "Campo técnico que indica si el usuario actual está trabajando."
+msgstr "Campo técnico que indica si el usuario actual está trabajando. "
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,field_description:automatic_project_task_timer.field_account_analytic_line__timer_duration
@@ -188,15 +182,15 @@ msgstr "Temporizador"
 #: model:ir.actions.act_window,name:automatic_project_task_timer.timer_configuration_action
 #: model:ir.model,name:automatic_project_task_timer.model_timer_configuration
 #: model:ir.ui.menu,name:automatic_project_task_timer.timer_configuration_menu_root
-#, fuzzy
-#| msgid "Configuration"
 msgid "Timer Configuration"
-msgstr "Configuración"
+msgstr "Configuración del temporizador"
 
 #. module: automatic_project_task_timer
 #: model_terms:ir.ui.view,arch_db:automatic_project_task_timer.res_config_settings_view_form
 msgid "Timer will automatically activate for tasks in progress stage"
-msgstr "El temporizador se activará automáticamente cuando las tareas entren en la etapa En progreso"
+msgstr ""
+"El temporizador se activará automáticamente cuando las tareas entren en la "
+"etapa En progreso"
 
 #. module: automatic_project_task_timer
 #: model:ir.model.fields,help:automatic_project_task_timer.field_project_task__check_stage
@@ -227,13 +221,21 @@ msgid ""
 "\n"
 "        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
 msgstr ""
+"Use estas palabras clave en el título para configurar tareas nuevas:\n"
+"\n"
+"        30h Asigne 30 horas a la tarea\n"
+"        #etiquetas Establezca etiquetas en la tarea\n"
+"        @usuario Asigne la tarea a un usuario\n"
+"        ! Establezca una prioridad media para la tarea\n"
+"        !! Establezca una prioridad alta para la tarea\n"
+"        !!! Establezca una prioridad urgente para la tarea\n"
+"\n"
+"        Asegúrese de usar el formato y el orden correctos; por ejemplo: Mejorar la pantalla de configuración 5h #función #v16 @Mitchell !"
 
 #. module: automatic_project_task_timer
 #: model_terms:ir.ui.view,arch_db:automatic_project_task_timer.project_task_view_form
-#, fuzzy
-#| msgid "Real Duration"
 msgid "real duration"
-msgstr "Duración real"
+msgstr "duración real"
 
 #~ msgid "Automatic Project Task Timer"
 #~ msgstr "Temporizador automático de tareas de proyecto"
@@ -241,5 +243,12 @@ msgstr "Duración real"
 #~ msgid "Automatic Running Timer for Project Tasks"
 #~ msgstr "Temporizador automático para tareas de proyecto"
 
-#~ msgid "This module helps you to track time sheet in project using a real timer, it's starts when task is in configured stage and stops when its moves to any other stage and the timesheet will be recorded."
-#~ msgstr "Este módulo permite registrar el tiempo dedicado a las tareas de proyecto mediante un temporizador. El temporizador se inicia cuando una tarea entra en la etapa configurada, se detiene al moverla a cualquier otra etapa y registra el tiempo en la hoja de horas."
+#~ msgid ""
+#~ "This module helps you to track time sheet in project using a real timer, "
+#~ "it's starts when task is in configured stage and stops when its moves to any"
+#~ " other stage and the timesheet will be recorded."
+#~ msgstr ""
+#~ "Este módulo permite registrar el tiempo dedicado a las tareas de proyecto "
+#~ "mediante un temporizador. El temporizador se inicia cuando una tarea entra "
+#~ "en la etapa configurada, se detiene al moverla a cualquier otra etapa y "
+#~ "registra el tiempo en la hoja de horas."

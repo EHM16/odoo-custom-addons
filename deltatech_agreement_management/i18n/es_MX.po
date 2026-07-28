@@ -55,7 +55,7 @@ msgstr "Acuerdos"
 #. module: deltatech_agreement_management
 #: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_agreement_form
 msgid "Close Contract"
-msgstr "Terminar contrato"
+msgstr "Finalizar acuerdo"
 
 #. module: deltatech_agreement_management
 #: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__company_id
@@ -117,12 +117,12 @@ msgstr "En curso"
 #. module: deltatech_agreement_management
 #: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement_type__print_template_id
 msgid "Layout"
-msgstr "Plantilla de informe"
+msgstr "Plantilla"
 
 #. module: deltatech_agreement_management
 #: model:res.groups,name:deltatech_agreement_management.group_agreement_manager
 msgid "Manager"
-msgstr "Responsable"
+msgstr "Administrador"
 
 #. module: deltatech_agreement_management
 #: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__partner_id
@@ -162,7 +162,7 @@ msgstr "Estado"
 #. module: deltatech_agreement_management
 #: model:ir.model.fields.selection,name:deltatech_agreement_management.selection__general_agreement__state__closed
 msgid "Terminated"
-msgstr "Terminado"
+msgstr "Finalizado"
 
 #. module: deltatech_agreement_management
 #: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__type_id
@@ -178,7 +178,7 @@ msgstr "Usuario"
 #. module: deltatech_agreement_management
 #: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_partner_search_agreement
 msgid "With agreement"
-msgstr "Con acuerdo"
+msgstr "Con acuerdos"
 
 #. module: deltatech_agreement_management
 #: deltatech_agreement_management/models/general_agreement.py:63

@@ -35,7 +35,7 @@ msgstr "Elija un destinatario para dividir la entrega"
 #. module: delivery_split
 #: code:models/sale_order.py:34
 msgid "Consolidate Orders"
-msgstr "Consolidar pedidos"
+msgstr "Consolidar órdenes"
 
 #. module: delivery_split
 #: model:ir.module.module,summary:base.module_delivery_split
@@ -56,7 +56,8 @@ msgstr "Habilite la opción para agregar destinatarios a cada línea de orden de
 #. module: delivery_split
 #: code:models/sale_order.py:34
 msgid "Enable the option to consolidate orders if choose same recipients in split delivery"
-msgstr "Habilite la opción para consolidar pedidos si elige los mismos destinatarios en entrega dividida"
+msgstr ""
+"Habilita la consolidación de órdenes cuando se eligen los mismos destinatarios en una entrega dividida"
 
 #. module: delivery_split
 #: code:models/sale_order_line.py:29

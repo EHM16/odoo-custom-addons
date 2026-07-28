@@ -22,8 +22,8 @@ msgid ""
 "Adding delivery date in the sale order line and the \n"
 "     delivery created based on it."
 msgstr ""
-"Agregar fecha de entrega en la línea de orden de venta y el \n"
-"     entrega creada en base a ella."
+"Agrega una fecha de entrega a la línea de la orden de venta y a la \n"
+"     entrega creada a partir de ella."
 
 #. module: delivery_date_sale_order_line
 #: code:models/stock_move.py:67

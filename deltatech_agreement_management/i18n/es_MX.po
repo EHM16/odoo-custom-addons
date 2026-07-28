@@ -1,0 +1,212 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* deltatech_agreement_management
+#
+# Catalog reconstructed from source code; pending comparison with an authentic
+# Odoo 19 export.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-28 00:00+0000\n"
+"PO-Revision-Date: 2026-07-28 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: deltatech_agreement_management
+#: model:ir.module.module,shortdesc:base.module_deltatech_agreement_management
+msgid "Agreement Management"
+msgstr "Gestión de acuerdos"
+
+#. module: deltatech_agreement_management
+#: model:ir.module.module,summary:base.module_deltatech_agreement_management
+msgid "Manage agreements numbers, date, state"
+msgstr "Gestione la numeración, las fechas y el estado de los acuerdos"
+
+#. module: deltatech_agreement_management
+#: deltatech_agreement_management/models/res_partner.py:21
+#: model:ir.ui.menu,name:deltatech_agreement_management.menu_general_agr
+#: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_agreement_form
+msgid "Agreement"
+msgstr "Acuerdo"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__date_agreement
+msgid "Agreement Date"
+msgstr "Fecha del acuerdo"
+
+#. module: deltatech_agreement_management
+#: model:ir.ui.menu,name:deltatech_agreement_management.menu_general_agreement_config_type
+msgid "Agreement types"
+msgstr "Tipos de acuerdo"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_res_partner__agreement_count
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_res_users__agreement_count
+#: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_partner_form_agreement
+msgid "Agreements"
+msgstr "Acuerdos"
+
+#. module: deltatech_agreement_management
+#: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_agreement_form
+msgid "Close Contract"
+msgstr "Terminar contrato"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__company_id
+msgid "Company"
+msgstr "Empresa"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__company_currency_id
+msgid "Company Currency"
+msgstr "Moneda de la empresa"
+
+#. module: deltatech_agreement_management
+#: model:ir.ui.menu,name:deltatech_agreement_management.menu_general_agreement_config
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields.selection,name:deltatech_agreement_management.selection__general_agreement__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__final_date
+msgid "Final Date"
+msgstr "Fecha de terminación"
+
+#. module: deltatech_agreement_management
+#: deltatech_agreement_management/models/general_agreement.py:11
+#: model:ir.model,name:deltatech_agreement_management.model_general_agreement
+msgid "General Agreement"
+msgstr "Acuerdo general"
+
+#. module: deltatech_agreement_management
+#: deltatech_agreement_management/models/general_agreement.py:82
+#: model:ir.model,name:deltatech_agreement_management.model_general_agreement_type
+msgid "General Agreement Type"
+msgstr "Tipo de acuerdo general"
+
+#. module: deltatech_agreement_management
+#: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_agreement_form
+msgid "Get number"
+msgstr "Asignar número"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields.selection,name:deltatech_agreement_management.selection__general_agreement__state__open
+msgid "In Progress"
+msgstr "En curso"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement_type__print_template_id
+msgid "Layout"
+msgstr "Plantilla de informe"
+
+#. module: deltatech_agreement_management
+#: model:res.groups,name:deltatech_agreement_management.group_agreement_manager
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__partner_id
+msgid "Partner"
+msgstr "Contraparte"
+
+#. module: deltatech_agreement_management
+#: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_agreement_form
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__name
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement_type__sequence_id
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: deltatech_agreement_management
+#: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_agreement_form
+msgid "Set Draft"
+msgstr "Restablecer a borrador"
+
+#. module: deltatech_agreement_management
+#: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_agreement_form
+msgid "Set In Progress"
+msgstr "Iniciar"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields.selection,name:deltatech_agreement_management.selection__general_agreement__state__closed
+msgid "Terminated"
+msgstr "Terminado"
+
+#. module: deltatech_agreement_management
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement__type_id
+#: model:ir.model.fields,field_description:deltatech_agreement_management.field_general_agreement_type__name
+msgid "Type"
+msgstr "Tipo"
+
+#. module: deltatech_agreement_management
+#: model:res.groups,name:deltatech_agreement_management.group_agreement_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: deltatech_agreement_management
+#: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_partner_search_agreement
+msgid "With agreement"
+msgstr "Con acuerdo"
+
+#. module: deltatech_agreement_management
+#: deltatech_agreement_management/models/general_agreement.py:63
+msgid "You cannot delete a service agreement which is not draft."
+msgstr "No puede eliminar un acuerdo de servicio que no esté en borrador."
+
+#. module: deltatech_agreement_management
+#: deltatech_agreement_management/models/general_agreement.py:75
+msgid "You must provide a type and a type report template"
+msgstr "Debe indicar un tipo y su plantilla de informe"
+
+#. module: deltatech_agreement_management
+#: deltatech_agreement_management/models/general_agreement.py:69
+msgid "You must provide a type and a type sequence"
+msgstr "Debe indicar un tipo y su secuencia"
+
+#. module: deltatech_agreement_management
+#: model:ir.actions.act_window,name:deltatech_agreement_management.action_general_agreement_type
+msgid "generals Agreement Types"
+msgstr "Tipos de acuerdo general"
+
+#. module: deltatech_agreement_management
+#: model:ir.actions.act_window,name:deltatech_agreement_management.action_general_agreement
+#: model:ir.ui.menu,name:deltatech_agreement_management.menu_general_agreement
+msgid "generals Agreements"
+msgstr "Acuerdos generales"
+
+#. module: deltatech_agreement_management
+#: model_terms:ir.ui.view,arch_db:deltatech_agreement_management.view_agreement_form
+msgid "general Agreement"
+msgstr "Acuerdo general"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:16+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Open HRMS Translation Team\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,54 +16,87 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Automated Leave Request generation from Incoming Emails."
-msgstr "Generación automática de solicitudes de ausencia a partir de correos electrónicos entrantes."
+#. module: hr_leave_request_aliasing
+#: model:ir.model,name:hr_leave_request_aliasing.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
 
-#: code:models/res_config_settings.py:33
+#. module: hr_leave_request_aliasing
+#: model:ir.model.fields,help:hr_leave_request_aliasing.field_res_config_settings__alias_domain
 msgid "Default alias domain for leave"
 msgstr "Dominio predeterminado del alias de correo para solicitudes de ausencia"
 
-#: code:models/res_config_settings.py:29
+#. module: hr_leave_request_aliasing
+#: model:ir.model.fields,help:hr_leave_request_aliasing.field_res_config_settings__alias_prefix
 msgid "Default alias name for leave"
 msgstr "Nombre predeterminado del alias de correo para solicitudes de ausencia"
 
-#: code:models/res_config_settings.py:33
-#: model_terms:views/res_config_settings_views.xml
+#. module: hr_leave_request_aliasing
+#: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_hr_leave__display_name
+#: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: hr_leave_request_aliasing
+#: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_res_config_settings__alias_domain
+#: model_terms:ir.ui.view,arch_db:hr_leave_request_aliasing.res_config_settings_view_form
 msgid "Domain"
 msgstr "Dominio"
 
-#: model_terms:views/res_config_settings_views.xml
+#. module: hr_leave_request_aliasing
+#: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_hr_leave__id
+#: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_leave_request_aliasing
+#: model:ir.actions.act_window,name:hr_leave_request_aliasing.res_config_settings_action_email_alias
+msgid "Leave Configuration"
+msgstr ""
+
+#. module: hr_leave_request_aliasing
+#: model_terms:ir.ui.view,arch_db:hr_leave_request_aliasing.res_config_settings_view_form
 msgid "Leave Email Alias"
 msgstr "Alias de correo para solicitudes de ausencia"
 
-#: model_terms:views/res_config_settings_views.xml
+#. module: hr_leave_request_aliasing
+#: model_terms:ir.ui.view,arch_db:hr_leave_request_aliasing.res_config_settings_view_form
 msgid "Leaves"
 msgstr "Ausencias"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Open HRMS Leave Request Aliasing"
-msgstr "Open HRMS — Solicitudes de ausencia por correo electrónico"
-
-#: code:models/res_config_settings.py:29
-#: model_terms:views/res_config_settings_views.xml
+#. module: hr_leave_request_aliasing
+#: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_res_config_settings__alias_prefix
+#: model_terms:ir.ui.view,arch_db:hr_leave_request_aliasing.res_config_settings_view_form
 msgid "Prefix"
 msgstr "Prefijo"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"This module simplifies leave request creation by \n"
-"     seamlessly generating requests from incoming emails, making the process \n"
-"     efficient, saving time, and enhancing employee experience."
+#. module: hr_leave_request_aliasing
+#: model:ir.ui.menu,name:hr_leave_request_aliasing.res_config_settings_menu_email_alias
+msgid "Settings"
 msgstr ""
-"Este módulo simplifica la creación de solicitudes de ausencia al \n"
-"     generarlas automáticamente a partir de correos electrónicos entrantes, lo que agiliza el \n"
-"     proceso, ahorra tiempo y mejora la experiencia de los empleados."
 
-#: model_terms:views/res_config_settings_views.xml
+#. module: hr_leave_request_aliasing
+#: model:ir.model,name:hr_leave_request_aliasing.model_hr_leave
+#: model_terms:ir.ui.view,arch_db:hr_leave_request_aliasing.res_config_settings_view_form
 msgid "Time Off"
 msgstr "Ausencias"
 
-#: model_terms:views/res_config_settings_views.xml
+#. module: hr_leave_request_aliasing
+#: model_terms:ir.ui.view,arch_db:hr_leave_request_aliasing.res_config_settings_view_form
 msgid "You can set up a generic email alias to easily create incoming leave requests. To submit a request, send an email with the subject line starting with prefix, and include ‘Date From:’ and ‘Date To:’ in the email body"
 msgstr "Puede configurar un alias de correo electrónico genérico para crear fácilmente solicitudes de ausencia a partir de mensajes entrantes. Para enviar una solicitud, envíe un correo cuyo asunto comience con el prefijo configurado e incluya las fechas de inicio y fin, con formato dd/mm/aaaa, en el cuerpo del mensaje."
+
+#~ msgid "Automated Leave Request generation from Incoming Emails."
+#~ msgstr "Generación automática de solicitudes de ausencia a partir de correos electrónicos entrantes."
+
+#~ msgid "Open HRMS Leave Request Aliasing"
+#~ msgstr "Open HRMS — Solicitudes de ausencia por correo electrónico"
+
+#~ msgid ""
+#~ "This module simplifies leave request creation by \n"
+#~ "     seamlessly generating requests from incoming emails, making the process \n"
+#~ "     efficient, saving time, and enhancing employee experience."
+#~ msgstr ""
+#~ "Este módulo simplifica la creación de solicitudes de ausencia al \n"
+#~ "     generarlas automáticamente a partir de correos electrónicos entrantes, lo que agiliza el \n"
+#~ "     proceso, ahorra tiempo y mejora la experiencia de los empleados."

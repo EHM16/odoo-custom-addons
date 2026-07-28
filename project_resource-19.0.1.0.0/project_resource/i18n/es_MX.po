@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:18+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,82 +16,175 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: code:models/res_users.py:29
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_res_users__project_allocated_ids
 msgid "Assigned Task"
 msgstr "Tarea asignada"
 
-#: model_terms:wizards/free_resource_view.xml
+#. module: project_resource
+#: model_terms:ir.ui.view,arch_db:project_resource.free_resource_view_form
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: code:wizards/free_resource.py:34
+#. module: project_resource
+#: model:ir.model,website_form_label:project_resource.model_project_task
+msgid "Create a Task"
+msgstr ""
+
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_free_resource__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_free_resource__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_free_resource__display_name
+#: model:ir.model.fields,field_description:project_resource.field_project_task__display_name
+#: model:ir.model.fields,field_description:project_resource.field_res_users__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_free_resource__date_to
 msgid "End Date"
 msgstr "Fecha de finalización"
 
-#: code:wizards/free_resource.py:34
+#. module: project_resource
+#: model:ir.model.fields,help:project_resource.field_free_resource__date_to
 msgid "End date of period for receiving the Free Resource"
 msgstr "Fecha de finalización del plazo para recibir el Recurso Gratuito"
 
-#: model_terms:wizards/free_resource_view.xml
+#. module: project_resource
+#: model:ir.actions.act_window,name:project_resource.free_resource_action
+#: model:ir.model,name:project_resource.model_free_resource
+#: model_terms:ir.ui.view,arch_db:project_resource.free_resource_view_form
 msgid "Free Resource"
 msgstr "Recurso gratuito"
 
-#: model_terms:views/project_task_views.xml
+#. module: project_resource
+#: model_terms:ir.ui.view,arch_db:project_resource.view_task_tree2_inherit_project_resource
 msgid "Free Resources"
 msgstr "Recursos gratuitos"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Get all free resources for the project"
-msgstr "Obtenga todos los recursos gratuitos para el proyecto"
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_free_resource__id
+#: model:ir.model.fields,field_description:project_resource.field_project_task__id
+#: model:ir.model.fields,field_description:project_resource.field_res_users__id
+msgid "ID"
+msgstr ""
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Project Free Resource"
-msgstr "Recurso disponible del proyecto"
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_free_resource__write_uid
+msgid "Last Updated by"
+msgstr ""
 
-#: code:models/project_task.py:37
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_free_resource__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: project_resource
+#: model_terms:ir.ui.view,arch_db:project_resource.view_task_form2
+msgid "Please set the Start Date and Deadline first so that only free resources are shown as Assignees."
+msgstr ""
+
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_project_task__manager_id
 msgid "Project Manager"
 msgstr "Gerente de proyecto"
 
-#: code:models/project_task.py:37
+#. module: project_resource
+#: model:ir.model.fields,help:project_resource.field_project_task__manager_id
 msgid "Project Manager of the task"
 msgstr "Gerente del proyecto de la tarea"
 
-#: code:models/project_task.py:31
-#: code:wizards/free_resource.py:31
+#. module: project_resource
+#: model:ir.ui.menu,name:project_resource.free_resource_menu_wizard
+#, fuzzy
+#| msgid "Free Resources"
+msgid "Resources"
+msgstr "Recursos gratuitos"
+
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_free_resource__date_from
+#: model:ir.model.fields,field_description:project_resource.field_project_task__task_start_date
 msgid "Start Date"
 msgstr "Fecha de inicio"
 
-#: code:wizards/free_resource.py:31
+#. module: project_resource
+#: model:ir.model.fields,help:project_resource.field_free_resource__date_from
 msgid "Start date of period for receiving the Free Resource"
 msgstr "Fecha de inicio del plazo para recibir el Recurso Gratuito"
 
-#: code:models/project_task.py:31
+#. module: project_resource
+#: model:ir.model.fields,help:project_resource.field_project_task__task_start_date
 msgid "Start date of the task"
 msgstr "Fecha de inicio de la tarea"
 
-#: code:models/project_task.py:50
-#: code:models/project_task.py:66
-msgid "The deadline date must be after or equal to the task start date."
-msgstr "La fecha límite debe ser posterior o igual a la fecha de inicio de la tarea."
+#. module: project_resource
+#: model:ir.model,name:project_resource.model_project_task
+msgid "Task"
+msgstr ""
 
-#: code:wizards/free_resource.py:44
+#. module: project_resource
+#. odoo-python
+#: code:addons/project_resource/wizards/free_resource.py:0
 msgid "The end date must be after the start date."
 msgstr "La fecha de finalización debe ser posterior a la fecha de inicio."
 
-#: code:models/res_users.py:29
+#. module: project_resource
+#: model:ir.model.fields,help:project_resource.field_res_users__project_allocated_ids
 msgid "The tasks which are assigned"
 msgstr "Las tareas que se asignan"
 
-#: code:models/project_task.py:33
+#. module: project_resource
+#: model:ir.model.fields,help:project_resource.field_project_task__users_ids
 msgid "This field is to store the users based on the calculation"
 msgstr "Este campo es para almacenar los usuarios según el cálculo."
 
-#: model:ir.module.module,description:__manifest__.py
+#. module: project_resource
+#: model:ir.model.fields,help:project_resource.field_project_task__display_name
 msgid ""
-"This module helps in getting all the free resource for a\n"
-"     project task based on the project start date and end date, and can assign \n"
-"     to one among them."
+"Use these keywords in the title to set new tasks:\n"
+"\n"
+"        30h Allocate 30 hours to the task\n"
+"        #tags Set tags on the task\n"
+"        @user Assign the task to a user\n"
+"        ! Set the task a medium priority\n"
+"        !! Set the task a high priority\n"
+"        !!! Set the task a urgent priority\n"
+"\n"
+"        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
 msgstr ""
-"Este módulo ayuda a obtener todos los recursos gratuitos para un\n"
-"     tarea del proyecto basada en la fecha de inicio y finalización del proyecto, y puede asignar \n"
-"     a uno de ellos."
+
+#. module: project_resource
+#: model:ir.model,name:project_resource.model_res_users
+msgid "User"
+msgstr ""
+
+#. module: project_resource
+#: model:ir.model.fields,field_description:project_resource.field_project_task__users_ids
+msgid "Users"
+msgstr ""
+
+#~ msgid "Get all free resources for the project"
+#~ msgstr "Obtenga todos los recursos gratuitos para el proyecto"
+
+#~ msgid "Project Free Resource"
+#~ msgstr "Recurso disponible del proyecto"
+
+#~ msgid "The deadline date must be after or equal to the task start date."
+#~ msgstr "La fecha límite debe ser posterior o igual a la fecha de inicio de la tarea."
+
+#~ msgid ""
+#~ "This module helps in getting all the free resource for a\n"
+#~ "     project task based on the project start date and end date, and can assign \n"
+#~ "     to one among them."
+#~ msgstr ""
+#~ "Este módulo ayuda a obtener todos los recursos gratuitos para un\n"
+#~ "     tarea del proyecto basada en la fecha de inicio y finalización del proyecto, y puede asignar \n"
+#~ "     a uno de ellos."

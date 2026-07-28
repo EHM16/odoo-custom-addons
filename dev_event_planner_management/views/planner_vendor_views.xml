@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <!-- Vendor directory: res.partner filtered on event vendors -->
+    <record id="planner_vendor_action" model="ir.actions.act_window">
+        <field name="name">Vendor Directory</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="domain">[('is_event_vendor', '=', True)]</field>
+        <field name="context">{'default_is_event_vendor': True, 'default_supplier_rank': 1}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Add your first vendor</p>
+            <p>Build your black book: caterers, florists, AV crews, photographers...</p>
+        </field>
+    </record>
+
+    <record id="planner_venue_action" model="ir.actions.act_window">
+        <field name="name">Venues</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">kanban,list,form</field>
+        <field name="domain">[('is_event_venue', '=', True)]</field>
+        <field name="context">{'default_is_event_venue': True}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Add your first venue</p>
+        </field>
+    </record>
+
+    <record id="planner_vendor_category_view_list" model="ir.ui.view">
+        <field name="name">planner.vendor.category.list</field>
+        <field name="model">planner.vendor.category</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="planner_vendor_category_action" model="ir.actions.act_window">
+        <field name="name">Vendor Categories</field>
+        <field name="res_model">planner.vendor.category</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>

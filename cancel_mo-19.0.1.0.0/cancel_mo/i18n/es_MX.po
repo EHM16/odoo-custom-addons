@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:14+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,43 +16,71 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model_terms:views/mrp_production_views.xml
+#. module: cancel_mo
+#: model_terms:ir.ui.view,arch_db:cancel_mo.mrp_production_form_view
 msgid "Are you sure you want to cancel?"
 msgstr "¿Estás seguro de que quieres cancelar?"
 
-#: model_terms:views/mrp_production_views.xml
+#. module: cancel_mo
+#: model_terms:ir.ui.view,arch_db:cancel_mo.mrp_production_form_view
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: code:models/mrp_production.py:46
-#: code:models/res_config_settings.py:28
+#. module: cancel_mo
+#: model:ir.model.fields,field_description:cancel_mo.field_mrp_production__cancel_inventory_moves
+#: model:ir.model.fields,field_description:cancel_mo.field_res_config_settings__is_cancel_inventory_moves
 msgid "Cancel Inventory Moves"
 msgstr "Cancelar movimientos de inventario"
 
-#: model:ir.module.module,name:__manifest__.py
-#: model_terms:views/res_config_settings_views.xml
+#. module: cancel_mo
+#: model_terms:ir.ui.view,arch_db:cancel_mo.res_config_settings_view_form
 msgid "Cancel Manufacturing Order"
 msgstr "Cancelar orden de fabricación"
 
-#: code:models/mrp_production.py:50
-#: code:models/res_config_settings.py:33
+#. module: cancel_mo
+#: model:ir.model.fields,field_description:cancel_mo.field_mrp_production__cancel_workorder
+#: model:ir.model.fields,field_description:cancel_mo.field_res_config_settings__is_cancel_workorder
 msgid "Cancel WorkOrder"
 msgstr "Cancelar orden de trabajo"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid "This is used to cancel the manufcatring order and also cancel the inventory moves and work orders along with the mo cancellation."
-msgstr "Permite cancelar la orden de fabricación junto con sus movimientos de inventario y órdenes de trabajo."
+#. module: cancel_mo
+#: model:ir.model,name:cancel_mo.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
 
-#: code:models/mrp_production.py:46
-#: code:models/res_config_settings.py:28
+#. module: cancel_mo
+#: model:ir.model.fields,field_description:cancel_mo.field_mrp_production__display_name
+#: model:ir.model.fields,field_description:cancel_mo.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: cancel_mo
+#: model:ir.model.fields,field_description:cancel_mo.field_mrp_production__id
+#: model:ir.model.fields,field_description:cancel_mo.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: cancel_mo
+#: model:ir.model,name:cancel_mo.model_mrp_production
+#, fuzzy
+#| msgid "Cancel Manufacturing Order"
+msgid "Manufacturing Order"
+msgstr "Cancelar orden de fabricación"
+
+#. module: cancel_mo
+#: model:ir.model.fields,help:cancel_mo.field_mrp_production__cancel_inventory_moves
+#: model:ir.model.fields,help:cancel_mo.field_res_config_settings__is_cancel_inventory_moves
 msgid "Whether to cancel the inventory moves"
 msgstr "Si cancelar los movimientos de inventario"
 
-#: code:models/mrp_production.py:50
-#: code:models/res_config_settings.py:33
+#. module: cancel_mo
+#: model:ir.model.fields,help:cancel_mo.field_mrp_production__cancel_workorder
+#: model:ir.model.fields,help:cancel_mo.field_res_config_settings__is_cancel_workorder
 msgid "Whether to cancel the work order"
 msgstr "Si cancelar la orden de trabajo"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "You can cancell the manufcturing order"
-msgstr "Puedes cancelar la orden de fabricación."
+#~ msgid "This is used to cancel the manufcatring order and also cancel the inventory moves and work orders along with the mo cancellation."
+#~ msgstr "Permite cancelar la orden de fabricación junto con sus movimientos de inventario y órdenes de trabajo."
+
+#~ msgid "You can cancell the manufcturing order"
+#~ msgstr "Puedes cancelar la orden de fabricación."

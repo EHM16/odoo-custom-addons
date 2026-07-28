@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:15+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,158 +16,266 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model_terms:report/expense_report_filter_templates.xml
-msgid ""
-"\n"
-"                                                Approved\n"
-"                                            "
-msgstr ""
-"\n"
-"Aprobado"
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+#, fuzzy
+#| msgid "Date from :"
+msgid "<b>Date from :</b>"
+msgstr "Fecha de:"
 
-#: model_terms:report/expense_report_filter_templates.xml
-msgid ""
-"\n"
-"                                                Done\n"
-"                                            "
-msgstr ""
-"\n"
-"hecho"
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+#, fuzzy
+#| msgid "Date to :"
+msgid "<b>Date to :</b>"
+msgstr "Fecha hasta:"
 
-#: model_terms:report/expense_report_filter_templates.xml
-msgid ""
-"\n"
-"                                                Refused\n"
-"                                            "
-msgstr ""
-"\n"
-"Rechazado"
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+#, fuzzy
+#| msgid "Employee Name:"
+msgid "<b>Employee Name:</b>"
+msgstr "Nombre del empleado:"
 
-#: model_terms:report/expense_report_filter_templates.xml
-msgid ""
-"\n"
-"                                                Submitted\n"
-"                                            "
-msgstr ""
-"\n"
-"Enviado"
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+#, fuzzy
+#| msgid "Total Expense:"
+msgid "<strong>Total Expense:</strong>"
+msgstr "Gasto Total:"
 
-#: model_terms:report/expense_report_filter_templates.xml
-msgid ""
-"\n"
-"                                                To Report\n"
-"                                            "
-msgstr ""
-"\n"
-"Para informar"
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+#, fuzzy
+#| msgid "Expense Report"
+msgid "<u>Expense Report</u>"
+msgstr "Informe de gastos"
 
-#: model_terms:report/expense_report_filter_templates.xml
-msgid ""
-"\n"
-"                                                To Submit\n"
-"                                            "
+#. module: expense_report_odoo
+#: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__approved
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+msgid "Approved"
 msgstr ""
-"\n"
-"Para enviar"
 
-#: model_terms:report/expense_report_filter_templates.xml
+#. module: expense_report_odoo
+#: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: expense_report_odoo
+#: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "Date"
 msgstr "Fecha"
 
-#: model_terms:report/expense_report_filter_templates.xml
-msgid "Date from :"
-msgstr "Fecha de:"
-
-#: model_terms:report/expense_report_filter_templates.xml
-msgid "Date to :"
-msgstr "Fecha hasta:"
-
-#: model_terms:report/expense_report_filter_templates.xml
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "Description"
 msgstr "Descripción"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Employee Expense Report"
-msgstr "Reporte de gastos del empleado"
-
-#: model_terms:report/expense_report_filter_templates.xml
-msgid "Employee name"
+#. module: expense_report_odoo
+#: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__display_name
+#, fuzzy
+#| msgid "Employee Name"
+msgid "Display Name"
 msgstr "Nombre del empleado"
 
-#: code:wizard/expense_report_filter.py:34
+#. module: expense_report_odoo
+#: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__done
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+msgid "Done"
+msgstr ""
+
+#. module: expense_report_odoo
+#: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__employee_name_ids
 msgid "Employee Name"
 msgstr "Nombre del empleado"
 
-#: model_terms:report/expense_report_filter_templates.xml
-msgid "Employee Name:"
-msgstr "Nombre del empleado:"
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+msgid "Employee name"
+msgstr "Nombre del empleado"
 
-#: code:wizard/expense_report_filter.py:32
+#. module: expense_report_odoo
+#: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__to_date
 msgid "End Date"
 msgstr "Fecha de finalización"
 
-#: code:wizard/expense_report_filter.py:91
+#. module: expense_report_odoo
+#. odoo-python
+#: code:addons/expense_report_odoo/wizard/expense_report_filter.py:0
 msgid "End date cannot be before start date"
 msgstr "La fecha de finalización no puede ser anterior a la fecha de inicio."
 
-#: model_terms:report/expense_report_filter_templates.xml
-#: model_terms:wizard/expense_report_filter_views.xml
+#. module: expense_report_odoo
+#: model:ir.actions.act_window,name:expense_report_odoo.expense_report_filter_action
+#: model:ir.actions.report,name:expense_report_odoo.action_expense_request_report
+#: model:ir.ui.menu,name:expense_report_odoo.expense_report_filter_menu
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.expense_report_filter_view_form
 msgid "Expense Report"
 msgstr "Informe de gastos"
 
-#: model_terms:wizard/expense_report_filter_views.xml
+#. module: expense_report_odoo
+#: model:ir.model,name:expense_report_odoo.model_expense_report_filter
+#, fuzzy
+#| msgid "Expense Report"
+msgid "Expense Report Wizard"
+msgstr "Informe de gastos"
+
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.expense_report_filter_view_form
 msgid "Generate Report"
 msgstr "Generar informe"
 
-#: model_terms:report/expense_report_filter_templates.xml
+#. module: expense_report_odoo
+#: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__id
+msgid "ID"
+msgstr ""
+
+#. module: expense_report_odoo
+#: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: expense_report_odoo
+#: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "Quantity"
 msgstr "Cantidad"
 
-#: model_terms:report/expense_report_filter_templates.xml
+#. module: expense_report_odoo
+#: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__refused
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+msgid "Refused"
+msgstr ""
+
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "SR.No"
 msgstr "Núm."
 
-#: code:wizard/expense_report_filter.py:30
+#. module: expense_report_odoo
+#: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__from_date
 msgid "Start Date"
 msgstr "Fecha de inicio"
 
-#: code:wizard/expense_report_filter.py:40
-#: model_terms:report/expense_report_filter_templates.xml
+#. module: expense_report_odoo
+#: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__state
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "Status"
 msgstr "Estado"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "The administrator has the ability to view the expense reports of any employee they choose, while regular users can only access and view their own expense reports."
-msgstr "El administrador tiene la capacidad de ver los informes de gastos de cualquier empleado que elija, mientras que los usuarios habituales solo pueden acceder y ver sus propios informes de gastos."
+#. module: expense_report_odoo
+#: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__submitted
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+msgid "Submitted"
+msgstr ""
 
-#: code:wizard/expense_report_filter.py:40
+#. module: expense_report_odoo
+#: model:ir.model.fields,help:expense_report_odoo.field_expense_report_filter__state
 msgid "The current status of the expense report"
 msgstr "El estado actual del informe de gastos."
 
-#: code:wizard/expense_report_filter.py:34
+#. module: expense_report_odoo
+#: model:ir.model.fields,help:expense_report_odoo.field_expense_report_filter__employee_name_ids
 msgid "The employees associated with the expenses"
 msgstr "Los empleados asociados a los gastos."
 
-#: code:wizard/expense_report_filter.py:32
+#. module: expense_report_odoo
+#: model:ir.model.fields,help:expense_report_odoo.field_expense_report_filter__to_date
 msgid "The end date for the expense period"
 msgstr "La fecha de finalización del período de gastos."
 
-#: code:wizard/expense_report_filter.py:30
+#. module: expense_report_odoo
+#: model:ir.model.fields,help:expense_report_odoo.field_expense_report_filter__from_date
 msgid "The start date for the expense period"
 msgstr "La fecha de inicio del período de gastos."
 
-#: model:ir.module.module,description:__manifest__.py
-msgid "This apps helps Admin to print multiples employee expense reports with custom dates and the printthe report of the current status like to submit, submitted, approved, paid, refused, all, etc."
-msgstr "Esta aplicación permite al administrador imprimir varios reportes de gastos de empleados para fechas personalizadas y filtrar por el estado actual: por enviar, enviado, aprobado, pagado, rechazado o todos."
+#. module: expense_report_odoo
+#: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__draft
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+#, fuzzy
+#| msgid "Expense Report"
+msgid "To Report"
+msgstr "Informe de gastos"
 
-#: model_terms:report/expense_report_filter_templates.xml
+#. module: expense_report_odoo
+#: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__reported
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
+msgid "To Submit"
+msgstr ""
+
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "Total"
 msgstr "Total"
 
-#: model_terms:report/expense_report_filter_templates.xml
-msgid "Total Expense:"
-msgstr "Gasto Total:"
-
-#: model_terms:report/expense_report_filter_templates.xml
+#. module: expense_report_odoo
+#: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "Unit Price"
 msgstr "Precio unitario"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Approved\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Aprobado"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Done\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "hecho"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Refused\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Rechazado"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Submitted\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Enviado"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                To Report\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Para informar"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                To Submit\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Para enviar"
+
+#~ msgid "Employee Expense Report"
+#~ msgstr "Reporte de gastos del empleado"
+
+#~ msgid "The administrator has the ability to view the expense reports of any employee they choose, while regular users can only access and view their own expense reports."
+#~ msgstr "El administrador tiene la capacidad de ver los informes de gastos de cualquier empleado que elija, mientras que los usuarios habituales solo pueden acceder y ver sus propios informes de gastos."
+
+#~ msgid "This apps helps Admin to print multiples employee expense reports with custom dates and the printthe report of the current status like to submit, submitted, approved, paid, refused, all, etc."
+#~ msgstr "Esta aplicación permite al administrador imprimir varios reportes de gastos de empleados para fechas personalizadas y filtrar por el estado actual: por enviar, enviado, aprobado, pagado, rechazado o todos."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:17+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,100 +16,233 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: code:wizard/ohrms_core_support.py:113
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
 msgid "%d attachment"
 msgstr "Archivo adjunto %d"
 
-#: code:wizard/ohrms_core_support.py:114
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
 msgid "%d attachments"
 msgstr "Archivos adjuntos %d"
 
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
 msgid "Advanced Features"
 msgstr "Funciones avanzadas"
 
-#: code:wizard/ohrms_core_support.py:62
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__attachment_ids
 msgid "Attach files related to your problem."
 msgstr "Adjunte archivos relacionados con su problema."
 
-#: code:wizard/ohrms_core_support.py:62
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__attachment_ids
 msgid "Attachments"
 msgstr "Archivos adjuntos"
 
-#: code:models/hr_general_settings.py:82
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_oh_hr_zk_attendance
 msgid "Attendance"
 msgstr "Asistencia"
 
-#: code:models/hr_general_settings.py:82
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__test_module_oh_hr_zk_attendance
 msgid "Attendance module installed or not"
 msgstr "Módulo de asistencia instalado o no"
 
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
 msgid "Biometric Device Integration"
 msgstr "Integración de dispositivos biométricos"
 
-#: model_terms:wizard/ohrms_core_support_views.xml
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__priority__3
+msgid "Blocker"
+msgstr ""
+
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__bug
+msgid "Bug"
+msgstr ""
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.ohrms_core_support_view_form
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: code:wizard/ohrms_core_support.py:70
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__category
 msgid "Category"
 msgstr "Categoría"
 
-#: code:wizard/ohrms_core_support.py:51
-msgid "Contact number for follow-up (optional)."
-msgstr "Número de contacto para seguimiento (opcional)."
+#. module: ohrms_core
+#: model:ir.model,name:ohrms_core.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
 
-#: model_terms:static/src/xml/ohrms_core_systray.xml
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: ohrms_core
+#. odoo-javascript
+#: code:addons/ohrms_core/static/src/xml/ohrms_core_systray.xml:0
 msgid "Contact Open HRMS Core Support (Alt+Shift+H)"
 msgstr "Contactar al soporte de Open HRMS Core (Alt+Mayús+H)"
 
-#: code:wizard/ohrms_core_support.py:185
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__phone
+msgid "Contact number for follow-up (optional)."
+msgstr "Número de contacto para seguimiento (opcional)."
+
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
 msgid "Could not reach the support service. Please check your network and try again."
 msgstr "No se pudo comunicar con el servicio de soporte. Por favor verifique su red e inténtelo nuevamente."
 
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
 msgid "Custody Management"
 msgstr "Gestión de Custodia"
 
-#: code:wizard/ohrms_core_support.py:44
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__name
 msgid "Customer Name"
 msgstr "Nombre del cliente"
 
-#: code:wizard/ohrms_core_support.py:59
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__description
 msgid "Description"
 msgstr "Descripción"
 
-#: model_terms:static/src/xml/link_view.xml
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ir_ui_menu__display_name
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__display_name
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: ohrms_core
+#. odoo-javascript
+#: code:addons/ohrms_core/static/src/xml/link_view.xml:0
 msgid "Documentation"
 msgstr "Documentación"
 
-#: code:wizard/ohrms_core_support.py:48
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__email
 msgid "Email"
 msgstr "Correo electrónico"
 
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
 msgid "Employee Insurance"
 msgstr "Seguro del empleado"
 
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
 msgid "Employee Shift"
 msgstr "Turno del empleado"
 
-#: code:wizard/ohrms_core_support.py:44
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__name
 msgid "Enter name"
 msgstr "Introduce el nombre"
 
-#: code:wizard/ohrms_core_support.py:48
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__email
 msgid "Enter your Email"
 msgstr "Ingrese su correo electrónico"
 
-#: code:models/hr_general_settings.py:48
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__feature_request
+msgid "Feature Request"
+msgstr ""
+
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__support_type__functional
+msgid "Functional Support"
+msgstr ""
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
+msgid "Get This App"
+msgstr ""
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_custody
+msgid "HR Custody Module"
+msgstr "Módulo de Custodia de RRHH"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__test_module_hr_custody
+msgid "HR Custody module installed or not"
+msgstr "Módulo de Custodia de Recursos Humanos instalado o no"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_employee_shift
+msgid "HR Employee Shift"
+msgstr "Turno del empleado de RR. HH."
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__test_module_hr_employee_shift
+msgid "HR Employee Shift module installed or not"
+msgstr "Módulo de turno de empleados de RR.HH. instalado o no"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_insurance
+msgid "HR Insurance"
+msgstr "Seguros de Recursos Humanos"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__test_module_hr_insurance
+msgid "HR Insurance module installed or not"
+msgstr "Módulo Seguros HR instalado o no"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_oh_hr_lawsuit_management
+msgid "HR Lawsuit Management"
+msgstr "Gestión de demandas de recursos humanos"
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__test_module_oh_hr_lawsuit_management
+msgid "HR Lawsuit Management module installed or not"
+msgstr "Módulo de gestión de demandas de recursos humanos instalado o no"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_resignation
+msgid "HR Resignation"
+msgstr "Renuncia de RR.HH."
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__test_module_hr_resignation
+msgid "HR Resignation module installed or not"
+msgstr "Módulo de Renuncia de Recursos Humanos instalado o no"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_resignation
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
 msgid "Handle the resignation process of the employee"
 msgstr "Gestionar el proceso de renuncia del empleado."
 
-#: code:models/hr_general_settings.py:56
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_oh_hr_zk_attendance
 msgid ""
 "Helps you to manage Biometric Device Integration.\n"
 "- This installs the module Biometric Device Integration."
@@ -117,7 +250,8 @@ msgstr ""
 "Le ayuda a gestionar la integración de dispositivos biométricos.\n"
 "- Esto instala el módulo Integración de dispositivos biométricos."
 
-#: code:models/hr_general_settings.py:31
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_hr_custody
 msgid ""
 "Helps you to manage Custody Requests.\n"
 "- This installs the module Custody Management."
@@ -125,7 +259,8 @@ msgstr ""
 "Le ayuda a gestionar las solicitudes de custodia.\n"
 "- Esto instala el módulo Gestión de Custodia."
 
-#: code:models/hr_general_settings.py:40
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_hr_insurance
 msgid ""
 "Helps you to manage Employee Insurance.\n"
 "- This installs the module Employee Insurance."
@@ -133,7 +268,8 @@ msgstr ""
 "Le ayuda a gestionar el seguro de los empleados.\n"
 "- Esto instala el módulo Seguro de Empleado."
 
-#: code:models/hr_general_settings.py:36
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_hr_employee_shift
 msgid ""
 "Helps you to manage Employee Shift.\n"
 "- This installs the module Employee Shift."
@@ -141,7 +277,8 @@ msgstr ""
 "Le ayuda a gestionar el turno de empleados.\n"
 "- Esto instala el módulo Turno de Empleado."
 
-#: code:models/hr_general_settings.py:44
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_oh_hr_lawsuit_management
 msgid ""
 "Helps you to manage Lawsuit Management.\n"
 "- This installs the module Lawsuit Management."
@@ -149,7 +286,8 @@ msgstr ""
 "Le ayuda a gestionar la gestión de demandas.\n"
 "- Esto instala el módulo Gestión de Demandas."
 
-#: code:models/hr_general_settings.py:48
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_hr_resignation
 msgid ""
 "Helps you to manage Resignation Process.\n"
 "- This installs the module Resignation Process."
@@ -157,7 +295,8 @@ msgstr ""
 "Le ayuda a gestionar el proceso de renuncia.\n"
 "- Esto instala el módulo Proceso de Renuncia."
 
-#: code:models/hr_general_settings.py:52
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__module_hr_vacation_mngmt
 msgid ""
 "Helps you to manage Vacation Management.\n"
 "- This installs the module Vacation Management."
@@ -165,265 +304,352 @@ msgstr ""
 "Le ayuda a gestionar la gestión de vacaciones.\n"
 "- Esto instala el módulo Gestión de Vacaciones."
 
-#: code:wizard/ohrms_core_support.py:78
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__priority__2
+msgid "High"
+msgstr ""
+
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__priority
 msgid "How urgent is this issue?"
 msgstr "¿Qué tan urgente es este problema?"
 
-#: code:models/hr_general_settings.py:61
-msgid "HR Custody Module"
-msgstr "Módulo de Custodia de RRHH"
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ir_ui_menu__id
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__id
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__id
+msgid "ID"
+msgstr ""
 
-#: code:models/hr_general_settings.py:61
-msgid "HR Custody module installed or not"
-msgstr "Módulo de Custodia de Recursos Humanos instalado o no"
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__installation
+msgid "Installation"
+msgstr ""
 
-#: code:models/hr_general_settings.py:64
-msgid "HR Employee Shift"
-msgstr "Turno del empleado de RR. HH."
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__write_uid
+msgid "Last Updated by"
+msgstr ""
 
-#: code:models/hr_general_settings.py:64
-msgid "HR Employee Shift module installed or not"
-msgstr "Módulo de turno de empleados de RR.HH. instalado o no"
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__write_date
+msgid "Last Updated on"
+msgstr ""
 
-#: code:models/hr_general_settings.py:68
-msgid "HR Insurance"
-msgstr "Seguros de Recursos Humanos"
-
-#: code:models/hr_general_settings.py:68
-msgid "HR Insurance module installed or not"
-msgstr "Módulo Seguros HR instalado o no"
-
-#: code:models/hr_general_settings.py:71
-msgid "HR Lawsuit Management"
-msgstr "Gestión de demandas de recursos humanos"
-
-#: code:models/hr_general_settings.py:71
-msgid "HR Lawsuit Management module installed or not"
-msgstr "Módulo de gestión de demandas de recursos humanos instalado o no"
-
-#: code:models/hr_general_settings.py:75
-msgid "HR Resignation"
-msgstr "Renuncia de RR.HH."
-
-#: code:models/hr_general_settings.py:75
-msgid "HR Resignation module installed or not"
-msgstr "Módulo de Renuncia de Recursos Humanos instalado o no"
-
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
 msgid "Lawsuit Management"
 msgstr "Gestión de demandas"
 
-#: model_terms:static/src/xml/link_view.xml
+#. module: ohrms_core
+#. odoo-javascript
+#: code:addons/ohrms_core/static/src/xml/link_view.xml:0
 msgid "Log out"
 msgstr "Cerrar sesión"
 
-#: code:models/hr_general_settings.py:56
-#: model_terms:views/hr_config_view.xml
-msgid "Manage biometric device (Model: ZKteco uFace 202) integration with HR attendance (Face + Thumb)"
-msgstr "Gestionar la integración del dispositivo biométrico (Modelo: ZKteco uFace 202) con la asistencia de RRHH (Cara + Pulgar)"
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__priority__0
+msgid "Low"
+msgstr ""
 
-#: code:models/hr_general_settings.py:36
-#: model_terms:views/hr_config_view.xml
-msgid "Manage different type of shifts"
-msgstr "Gestionar diferentes tipos de turnos."
-
-#: code:models/hr_general_settings.py:52
-#: model_terms:views/hr_config_view.xml
-msgid "Manage employee vacation"
-msgstr "Gestionar las vacaciones de los empleados"
-
-#: code:models/hr_general_settings.py:40
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_insurance
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
 msgid "Manage Insurance for employees"
 msgstr "Gestionar seguros para empleados"
 
-#: code:models/hr_general_settings.py:44
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_oh_hr_zk_attendance
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+msgid "Manage biometric device (Model: ZKteco uFace 202) integration with HR attendance (Face + Thumb)"
+msgstr "Gestionar la integración del dispositivo biométrico (Modelo: ZKteco uFace 202) con la asistencia de RRHH (Cara + Pulgar)"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_employee_shift
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
+msgid "Manage different type of shifts"
+msgstr "Gestionar diferentes tipos de turnos."
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_vacation_mngmt
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
+msgid "Manage employee vacation"
+msgstr "Gestionar las vacaciones de los empleados"
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_oh_hr_lawsuit_management
 msgid "Manage legal actions"
 msgstr "Gestionar acciones legales"
 
-#: code:models/hr_general_settings.py:31
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_custody
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
 msgid "Manage the company properties when it is in the custody of an employee"
 msgstr "Administrar las propiedades de la empresa cuando está bajo la custodia de un empleado."
 
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
 msgid "Manages legal actions"
 msgstr "Gestiona acciones legales."
 
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model:ir.model,name:ohrms_core.model_ir_ui_menu
+msgid "Menu"
+msgstr ""
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.res_config_settings_view_form
 msgid "Menu Management"
 msgstr "Gestión de menú"
 
-#: model_terms:static/src/xml/link_view.xml
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.res_config_settings_view_form
+#, fuzzy
+#| msgid "Order the menus in alphabetic order"
+msgid "Menu With Alphabetic Order"
+msgstr "Ordenar los menús en orden alfabético"
+
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
+msgid ""
+"Module is not Present in Your Repository.\n"
+"                            <br/>"
+msgstr ""
+
+#. module: ohrms_core
+#. odoo-javascript
+#: code:addons/ohrms_core/static/src/xml/link_view.xml:0
 msgid "My Odoo.com account"
 msgstr "Mi cuenta de Odoo.com"
 
-#: model_terms:static/src/xml/link_view.xml
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__priority__1
+msgid "Normal"
+msgstr ""
+
+#. module: ohrms_core
+#. odoo-javascript
+#: code:addons/ohrms_core/static/src/xml/link_view.xml:0
 msgid "Open HRMS"
 msgstr "Open HRMS"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Open HRMS Core"
-msgstr "Open HRMS Core"
-
-#: model_terms:wizard/ohrms_core_support_views.xml
+#. module: ohrms_core
+#: model:ir.model,name:ohrms_core.model_ohrms_core_support
+#: model_terms:ir.ui.view,arch_db:ohrms_core.ohrms_core_support_view_form
 msgid "Open HRMS Core Support"
 msgstr "Soporte de Open HRMS Core"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid ""
-"Open HRMS Odoo19, HRMS odoo19, Odoo HR, HR Dashboard, \n"
-"     Odoo19 Payroll, HR Management, Odoo Branch, Odoo Loan, Salary Advance, \n"
-"     Odoo19,Payroll,Dashboard,Accounting,HR Kit,HR,Odoo Apps, Odoo19"
-msgstr ""
-"Open HRMS Odoo 19, HRMS Odoo 19, Odoo RR. HH., tablero de RR. HH., \n"
-"     nómina de Odoo 19, gestión de RR. HH., sucursales, préstamos y anticipos de salario, \n"
-"     Odoo 19, nómina, tablero, contabilidad, kit de RR. HH. y aplicaciones de Odoo 19"
-
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"Openhrms, Main module of Open HRMS,Payroll, Payroll \n"
-"     Accounting, Expense, Dashboard,Employees, Employee Document, Resignation, \n"
-"     Salary Advance, Loan Management, Gratuity, Service Request, Gosi, \n"
-"     WPS Report, Reminder, Multi Company, Shift Management, Employee History, \n"
-"     Branch Transfer, Employee Appraisal,Biometric Device, Announcements, \n"
-"     Insurance Management, Vacation Management,Employee Appreciations, \n"
-"     Asset Custody, Employee Checklist, Entry and Exit Checklist, Disciplinary \n"
-"     Actions, openhrms, Open HRMS, hrms, Attrition Rate, Document Expiry, \n"
-"     Visa Expiry, Law Suit Management, Employee, Employee Training, payroll, \n"
-"     odoo19 payroll"
-msgstr ""
-"OpenHRMS, módulo principal de Open HRMS, nómina, contabilidad de \n"
-"     nómina, gastos, tablero, empleados, documentos del empleado, renuncias, \n"
-"     anticipos de salario, gestión de préstamos, gratificaciones, solicitudes de servicio, GOSI, \n"
-"     reporte WPS, recordatorios, multiempresa, gestión de turnos, historial del empleado, \n"
-"     transferencias entre sucursales, evaluaciones, dispositivos biométricos, anuncios, \n"
-"     seguros, vacaciones, reconocimientos, \n"
-"     custodia de activos, listas de verificación, procesos de ingreso y salida, medidas \n"
-"     disciplinarias, rotación de personal, vencimiento de documentos y visas, \n"
-"     litigios y capacitación de empleados para Odoo 19."
-
-#: code:models/menu_order_sequence.py:33
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ir_ui_menu__order_changed
+#: model:ir.model.fields,help:ohrms_core.field_ir_ui_menu__order_changed
 msgid "Order Change"
 msgstr "Cambio de orden"
 
-#: code:models/menu_management_setting.py:30
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__order_menu
 msgid "Order Menu Alphabets"
 msgstr "Alfabetos del menú de pedidos"
 
-#: code:models/menu_management_setting.py:30
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__order_menu
 msgid "Order the menus in alphabetic order"
 msgstr "Ordenar los menús en orden alfabético"
 
-#: code:wizard/ohrms_core_support.py:87
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__other
+msgid "Other"
+msgstr ""
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__payload_preview
 msgid "Payload preview"
 msgstr "Vista previa de carga útil"
 
-#: code:wizard/ohrms_core_support.py:51
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__performance
+msgid "Performance"
+msgstr ""
+
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__phone
 msgid "Phone"
 msgstr "Teléfono"
 
-#: model_terms:static/src/xml/link_view.xml
+#. module: ohrms_core
+#. odoo-javascript
+#: code:addons/ohrms_core/static/src/xml/link_view.xml:0
 msgid "Preferences"
 msgstr "Preferencias"
 
-#: code:wizard/ohrms_core_support.py:84
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__show_payload
 msgid "Preview the exact data sent to Cybrosys before submitting."
 msgstr "Obtenga una vista previa de los datos exactos enviados a Cybrosys antes de enviarlos."
 
-#: code:wizard/ohrms_core_support.py:78
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__priority
 msgid "Priority"
 msgstr "Prioridad"
 
-#: code:wizard/ohrms_core_support.py:87
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__payload_preview
 msgid "Read-only JSON of what will be sent on Submit. Attachment bytes are redacted to keep the preview readable."
 msgstr "JSON de solo lectura de lo que se enviará en Enviar. Los bytes de los archivos adjuntos se eliminan para que la vista previa sea legible."
 
-#: code:models/menu_order_sequence.py:30
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ir_ui_menu__recent_menu_sequence
+#: model:ir.model.fields,help:ohrms_core.field_ir_ui_menu__recent_menu_sequence
 msgid "Recent Menu Sequence"
 msgstr "Secuencia de menú reciente"
 
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
 msgid "Resignation Process"
 msgstr "Proceso de renuncia"
 
-#: code:wizard/ohrms_core_support.py:203
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
 msgid "Save this reference to follow up with Cybrosys."
 msgstr "Guarde esta referencia para realizar un seguimiento con Cybrosys."
 
-#: model_terms:static/templates/side_bar.xml
-msgid "Search menus..."
-msgstr "Buscar menús..."
-
-#: code:wizard/ohrms_core_support.py:66
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__support_type
 msgid "Select support type"
 msgstr "Seleccione el tipo de soporte"
 
-#: code:wizard/ohrms_core_support.py:55
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__subject
 msgid "Short summary of the issue."
 msgstr "Breve resumen del tema."
 
-#: code:wizard/ohrms_core_support.py:84
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__show_payload
 msgid "Show what will be sent"
 msgstr "Mostrar lo que se enviará"
 
-#: code:wizard/ohrms_core_support.py:59
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__description
 msgid "Specify your problem in detail."
 msgstr "Especifique su problema en detalle."
 
-#: code:wizard/ohrms_core_support.py:55
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__subject
 msgid "Subject"
 msgstr "Asunto"
 
-#: model_terms:wizard/ohrms_core_support_views.xml
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.ohrms_core_support_view_form
 msgid "Submit"
 msgstr "Enviar"
 
-#: code:wizard/ohrms_core_support.py:66
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__support_type
 msgid "Support Type"
 msgstr "Tipo de soporte"
 
-#: code:wizard/ohrms_core_support.py:174
+#. module: ohrms_core
+#: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__support_type__technical
+msgid "Technical Support"
+msgstr ""
+
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
 msgid "The support service is having issues. Please try again in a few minutes."
 msgstr "El servicio de soporte tiene problemas. Inténtelo de nuevo en unos minutos."
 
-#: code:wizard/ohrms_core_support.py:192
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
 msgid "The support service returned an unexpected response. Please try again later."
 msgstr "El servicio de soporte arrojó una respuesta inesperada. Inténtelo de nuevo más tarde."
 
-#: code:wizard/ohrms_core_support.py:218
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
 msgid "The ticket submission did not go through. Please try again."
 msgstr "El envío del ticket no se realizó. Por favor inténtalo de nuevo."
 
-#: code:wizard/ohrms_core_support.py:178
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
 msgid "The ticket submission was rejected. Please check your inputs and try again."
 msgstr "El envío del ticket fue rechazado. Por favor verifique sus entradas e inténtelo nuevamente."
 
-#: code:wizard/ohrms_core_support.py:202
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
 msgid "Ticket Reference : %s"
 msgstr "Referencia del ticket: %s"
 
-#: code:models/hr_general_settings.py:78
-#: model_terms:views/hr_config_view.xml
+#. module: ohrms_core
+#: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_vacation_mngmt
+#: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
 msgid "Vacation Management"
 msgstr "Gestión de vacaciones"
 
-#: code:models/hr_general_settings.py:78
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_res_config_settings__test_module_hr_vacation_mngmt
 msgid "Vacation Management module installed or not"
 msgstr "Módulo de Gestión de Vacaciones instalado o no"
 
-#: code:wizard/ohrms_core_support.py:70
+#. module: ohrms_core
+#: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__category
 msgid "What kind of issue is this?"
 msgstr "¿Qué clase de problema es este?"
 
-#: model_terms:wizard/ohrms_core_support_views.xml
+#. module: ohrms_core
+#: model_terms:ir.ui.view,arch_db:ohrms_core.ohrms_core_support_view_form
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
-#: code:wizard/ohrms_core_support.py:169
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
+msgid "Your Ticket Created Successfully"
+msgstr "Su ticket se creó correctamente"
+
+#. module: ohrms_core
+#. odoo-python
+#: code:addons/ohrms_core/wizard/ohrms_core_support.py:0
 msgid "Your attachments are too large. Please reduce their size and try again."
 msgstr "Tus archivos adjuntos son demasiado grandes. Reduzca su tamaño e inténtelo de nuevo."
 
-#: code:wizard/ohrms_core_support.py:200
-msgid "Your Ticket Created Successfully"
-msgstr "Su ticket se creó correctamente"
+#~ msgid "Open HRMS Core"
+#~ msgstr "Open HRMS Core"
+
+#~ msgid ""
+#~ "Open HRMS Odoo19, HRMS odoo19, Odoo HR, HR Dashboard, \n"
+#~ "     Odoo19 Payroll, HR Management, Odoo Branch, Odoo Loan, Salary Advance, \n"
+#~ "     Odoo19,Payroll,Dashboard,Accounting,HR Kit,HR,Odoo Apps, Odoo19"
+#~ msgstr ""
+#~ "Open HRMS Odoo 19, HRMS Odoo 19, Odoo RR. HH., tablero de RR. HH., \n"
+#~ "     nómina de Odoo 19, gestión de RR. HH., sucursales, préstamos y anticipos de salario, \n"
+#~ "     Odoo 19, nómina, tablero, contabilidad, kit de RR. HH. y aplicaciones de Odoo 19"
+
+#~ msgid ""
+#~ "Openhrms, Main module of Open HRMS,Payroll, Payroll \n"
+#~ "     Accounting, Expense, Dashboard,Employees, Employee Document, Resignation, \n"
+#~ "     Salary Advance, Loan Management, Gratuity, Service Request, Gosi, \n"
+#~ "     WPS Report, Reminder, Multi Company, Shift Management, Employee History, \n"
+#~ "     Branch Transfer, Employee Appraisal,Biometric Device, Announcements, \n"
+#~ "     Insurance Management, Vacation Management,Employee Appreciations, \n"
+#~ "     Asset Custody, Employee Checklist, Entry and Exit Checklist, Disciplinary \n"
+#~ "     Actions, openhrms, Open HRMS, hrms, Attrition Rate, Document Expiry, \n"
+#~ "     Visa Expiry, Law Suit Management, Employee, Employee Training, payroll, \n"
+#~ "     odoo19 payroll"
+#~ msgstr ""
+#~ "OpenHRMS, módulo principal de Open HRMS, nómina, contabilidad de \n"
+#~ "     nómina, gastos, tablero, empleados, documentos del empleado, renuncias, \n"
+#~ "     anticipos de salario, gestión de préstamos, gratificaciones, solicitudes de servicio, GOSI, \n"
+#~ "     reporte WPS, recordatorios, multiempresa, gestión de turnos, historial del empleado, \n"
+#~ "     transferencias entre sucursales, evaluaciones, dispositivos biométricos, anuncios, \n"
+#~ "     seguros, vacaciones, reconocimientos, \n"
+#~ "     custodia de activos, listas de verificación, procesos de ingreso y salida, medidas \n"
+#~ "     disciplinarias, rotación de personal, vencimiento de documentos y visas, \n"
+#~ "     litigios y capacitación de empleados para Odoo 19."
+
+#~ msgid "Search menus..."
+#~ msgstr "Buscar menús..."

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo noupdate="1">
+    <record id="mail_template_booking_confirmation" model="mail.template">
+        <field name="name">Event: Booking Confirmation</field>
+        <field name="model_id" ref="model_planner_event"/>
+        <field name="subject">Your event is booked — {{ object.name }}</field>
+        <field name="partner_to">{{ object.partner_id.id }}</field>
+        <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px; font-size: 13px;">
+    <p>Dear <t t-out="object.partner_id.name or ''"/>,</p>
+    <p>Wonderful news — your event <strong t-out="object.name or ''"/> is confirmed
+       for <strong t-out="format_datetime(object.date_start, tz=object.date_tz) or ''"/>
+       <t t-if="object.venue_id"> at <strong t-out="object.venue_id.name or ''"/></t>.</p>
+    <p>Your planner <t t-out="object.user_id.name or ''"/> will guide you through
+       every next step. You can follow your event, quotes and invoices from your
+       customer portal at any time.</p>
+    <p>Warm regards,<br/><t t-out="object.company_id.name or ''"/></p>
+</div>
+        </field>
+        <field name="auto_delete" eval="True"/>
+    </record>
+
+    <record id="mail_template_payment_reminder" model="mail.template">
+        <field name="name">Event: Installment Reminder</field>
+        <field name="model_id" ref="model_planner_event_payment_line"/>
+        <field name="subject">Payment reminder — {{ object.name }} for {{ object.event_id.name }}</field>
+        <field name="partner_to">{{ object.event_id.partner_id.id }}</field>
+        <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px; font-size: 13px;">
+    <p>Dear <t t-out="object.event_id.partner_id.name or ''"/>,</p>
+    <p>A friendly reminder that the installment <strong t-out="object.name or ''"/>
+       of <strong t-out="format_amount(object.amount, object.currency_id) or ''"/>
+       for your event <strong t-out="object.event_id.name or ''"/> is due on
+       <strong t-out="format_date(object.due_date) or ''"/>.</p>
+    <t t-if="object.invoice_id">
+        <p>The invoice <t t-out="object.invoice_id.name or ''"/> is available in your portal.</p>
+    </t>
+    <p>Thank you,<br/><t t-out="object.event_id.company_id.name or ''"/></p>
+</div>
+        </field>
+        <field name="auto_delete" eval="True"/>
+    </record>
+
+    <record id="mail_template_staff_request" model="mail.template">
+        <field name="name">Event: Staff Shift Request</field>
+        <field name="model_id" ref="model_planner_event_staff_line"/>
+        <field name="subject">Shift confirmation needed — {{ object.event_id.name }}</field>
+        <field name="email_to">{{ object.employee_id.work_email }}</field>
+        <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px; font-size: 13px;">
+    <p>Hi <t t-out="object.employee_id.name or ''"/>,</p>
+    <p>You are requested for the event <strong t-out="object.event_id.name or ''"/>:</p>
+    <ul>
+        <li>Role: <t t-out="object.role or ''"/> <t t-out="object.role_note or ''"/></li>
+        <li>From: <t t-out="format_datetime(object.date_from, tz=object.event_id.date_tz) or ''"/></li>
+        <li>To: <t t-out="format_datetime(object.date_to, tz=object.event_id.date_tz) or ''"/></li>
+        <li t-if="object.event_id.venue_id">Venue: <t t-out="object.event_id.venue_id.name or ''"/></li>
+    </ul>
+    <p>Please confirm or decline:</p>
+    <p>
+        <a t-attf-href="{{ object.get_base_url() }}/planner/shift/{{ object.id }}/accept/{{ object.access_token }}"
+           style="padding: 8px 16px; background-color: #28a745; color: #fff; text-decoration: none; border-radius: 4px;">Accept</a>
+        &amp;nbsp;
+        <a t-attf-href="{{ object.get_base_url() }}/planner/shift/{{ object.id }}/decline/{{ object.access_token }}"
+           style="padding: 8px 16px; background-color: #dc3545; color: #fff; text-decoration: none; border-radius: 4px;">Decline</a>
+    </p>
+</div>
+        </field>
+        <field name="auto_delete" eval="True"/>
+    </record>
+
+    <record id="mail_template_inquiry_autoresponse" model="mail.template">
+        <field name="name">Event: Inquiry Auto-Response</field>
+        <field name="model_id" ref="crm.model_crm_lead"/>
+        <field name="subject">We received your inquiry — {{ object.name }}</field>
+        <field name="email_to">{{ object.email_from }}</field>
+        <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px; font-size: 13px;">
+    <p>Dear <t t-out="object.contact_name or ''"/>,</p>
+    <p>Thank you for reaching out about your event — we're excited already!</p>
+    <p>One of our planners will get back to you within one business day to
+       schedule a consultation and start shaping your celebration.</p>
+    <p>Warm regards,<br/><t t-out="object.company_id.name or object.user_id.company_id.name or ''"/></p>
+</div>
+        </field>
+        <field name="auto_delete" eval="True"/>
+    </record>
+
+    <record id="mail_template_survey_invite" model="mail.template">
+        <field name="name">Event: Feedback Survey Invitation</field>
+        <field name="model_id" ref="model_planner_event"/>
+        <field name="subject">How was your event? — {{ object.name }}</field>
+        <field name="partner_to">{{ object.partner_id.id }}</field>
+        <field name="body_html" type="html">
+<div style="margin: 0px; padding: 0px; font-size: 13px;">
+    <p>Dear <t t-out="object.partner_id.name or ''"/>,</p>
+    <p>Thank you for trusting us with <strong t-out="object.name or ''"/>.
+       We would love to hear how it went — it takes two minutes:</p>
+    <p><a t-attf-href="{{ object.get_base_url() }}{{ object.event_type_id.default_survey_id.get_start_url() }}"
+          style="padding: 8px 16px; background-color: #714B67; color: #fff; text-decoration: none; border-radius: 4px;">
+        Share your feedback</a></p>
+    <p>Warm regards,<br/><t t-out="object.company_id.name or ''"/></p>
+</div>
+        </field>
+        <field name="auto_delete" eval="True"/>
+    </record>
+</odoo>

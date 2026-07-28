@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:15+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,46 +16,73 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Add Done quantity automatically for the transfer of the products"
-msgstr "Agregar cantidad Realizada automáticamente para la transferencia de los productos"
-
-#: code:models/stock_picking.py:29
+#. module: done_quantity_auto_fill
+#: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_picking__select_all_toggle
 msgid "All"
 msgstr "Todos"
 
-#: code:models/stock_picking.py:29
+#. module: done_quantity_auto_fill
+#: model:ir.model.fields,help:done_quantity_auto_fill.field_stock_picking__select_all_toggle
 msgid "Can select all the lines"
 msgstr "Puede seleccionar todas las líneas."
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Done Quantity Auto Fill"
-msgstr "Autocompletado de la cantidad realizada"
+#. module: done_quantity_auto_fill
+#: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_move__display_name
+#: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_picking__display_name
+msgid "Display Name"
+msgstr ""
 
-#: model_terms:views/stock_picking_views.xml
+#. module: done_quantity_auto_fill
+#: model_terms:ir.ui.view,arch_db:done_quantity_auto_fill.view_picking_form
 msgid "Fill Done Qty"
 msgstr "Llenar cantidad hecha"
 
-#: code:models/stock_move.py:29
+#. module: done_quantity_auto_fill
+#: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_move__id
+#: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_picking__id
+msgid "ID"
+msgstr ""
+
+#. module: done_quantity_auto_fill
+#: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_move__product_select
 msgid "Select"
 msgstr "Seleccionar"
 
-#: model_terms:views/stock_picking_views.xml
+#. module: done_quantity_auto_fill
+#: model_terms:ir.ui.view,arch_db:done_quantity_auto_fill.view_picking_form
 msgid "Select All"
 msgstr "Seleccionar todo"
 
-#: code:models/stock_move.py:29
+#. module: done_quantity_auto_fill
+#: model:ir.model.fields,help:done_quantity_auto_fill.field_stock_move__product_select
 msgid "Select products from order line"
 msgstr "Seleccionar productos de la línea de pedido"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid "This module helps to add the done quantities of all the products while the transfer of products.This feature is available while the delivery of products, receiving the products and returning the products. Also we can unfill the done quantity of the selected products while the transfer."
-msgstr "Este módulo ayuda a agregar las cantidades realizadas de todos los productos durante la transferencia de productos. Esta función está disponible durante la entrega de productos, la recepción de productos y la devolución de productos. También podremos vaciar la cantidad realizada de los productos seleccionados durante la transferencia."
+#. module: done_quantity_auto_fill
+#: model:ir.model,name:done_quantity_auto_fill.model_stock_move
+msgid "Stock Move Delivery Split"
+msgstr ""
 
-#: model_terms:views/stock_picking_views.xml
+#. module: done_quantity_auto_fill
+#: model:ir.model,name:done_quantity_auto_fill.model_stock_picking
+msgid "Transfer"
+msgstr ""
+
+#. module: done_quantity_auto_fill
+#: model_terms:ir.ui.view,arch_db:done_quantity_auto_fill.view_picking_form
 msgid "Unfill Done Qty"
 msgstr "Desechar cantidad hecha"
 
-#: model_terms:views/stock_picking_views.xml
+#. module: done_quantity_auto_fill
+#: model_terms:ir.ui.view,arch_db:done_quantity_auto_fill.view_picking_form
 msgid "Unselect All"
 msgstr "Deseleccionar todo"
+
+#~ msgid "Add Done quantity automatically for the transfer of the products"
+#~ msgstr "Agregar cantidad Realizada automáticamente para la transferencia de los productos"
+
+#~ msgid "Done Quantity Auto Fill"
+#~ msgstr "Autocompletado de la cantidad realizada"
+
+#~ msgid "This module helps to add the done quantities of all the products while the transfer of products.This feature is available while the delivery of products, receiving the products and returning the products. Also we can unfill the done quantity of the selected products while the transfer."
+#~ msgstr "Este módulo ayuda a agregar las cantidades realizadas de todos los productos durante la transferencia de productos. Esta función está disponible durante la entrega de productos, la recepción de productos y la devolución de productos. También podremos vaciar la cantidad realizada de los productos seleccionados durante la transferencia."

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="project_project_view_form_inherit_planner" model="ir.ui.view">
+        <field name="name">project.project.form.inherit.planner</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button name="action_view_planner_event" type="object"
+                        class="oe_stat_button" icon="fa-glass"
+                        invisible="not planner_event_id">
+                    <div class="o_stat_info">
+                        <span class="o_stat_text">Planned</span>
+                        <span class="o_stat_text">Event</span>
+                    </div>
+                </button>
+            </div>
+            <field name="partner_id" position="after">
+                <field name="planner_event_id" invisible="not planner_event_id" readonly="1"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="project_task_view_form_inherit_planner" model="ir.ui.view">
+        <field name="name">project.task.form.inherit.planner</field>
+        <field name="model">project.task</field>
+        <field name="inherit_id" ref="project.view_task_form2"/>
+        <field name="arch" type="xml">
+            <field name="project_id" position="after">
+                <field name="planner_event_id" invisible="not planner_event_id" readonly="1"/>
+            </field>
+        </field>
+    </record>
+</odoo>

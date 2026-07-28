@@ -1,0 +1,292 @@
+// Event Planner dashboard — design tokens
+$o-planner-accent: #714B67;
+$o-planner-radius: 12px;
+$o-planner-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 4px 14px rgba(0, 0, 0, 0.06);
+$o-planner-shadow-hover: 0 4px 10px rgba(0, 0, 0, 0.12), 0 10px 24px rgba(0, 0, 0, 0.10);
+
+.o_planner_dashboard {
+    padding: 20px 28px 40px;
+    overflow-y: auto;
+    height: 100%;
+    background:
+        radial-gradient(1100px 380px at 85% -10%, rgba(113, 75, 103, 0.07), transparent 65%),
+        radial-gradient(800px 300px at -5% 15%, rgba(201, 162, 39, 0.06), transparent 60%),
+        var(--o-webclient-background-color, #f8f9fa);
+
+    .o_planner_filterbar {
+        margin-bottom: 20px;
+
+        .o_planner_filter_select {
+            width: auto;
+            min-width: 140px;
+            border-radius: 8px;
+        }
+
+        .o_planner_dash_title {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-weight: 600;
+            font-size: 1.55rem;
+        }
+
+        .o_planner_dash_subtitle {
+            color: #8a8494;
+            font-size: 0.82rem;
+        }
+
+        .o_planner_refresh {
+            border-radius: 8px;
+        }
+    }
+
+    .o_planner_section_label {
+        text-transform: uppercase;
+        letter-spacing: 2.2px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: #9a8f63;
+        margin: 6px 2px 10px;
+    }
+
+    .o_planner_clickable {
+        cursor: pointer;
+    }
+
+    // --- KPI cards -------------------------------------------------------
+    .o_planner_kpi_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .o_planner_kpi_card {
+        position: relative;
+        background: var(--o-view-background-color, #fff);
+        border: 1px solid rgba(113, 75, 103, 0.08);
+        border-radius: $o-planner-radius;
+        box-shadow: $o-planner-shadow;
+        padding: 16px 18px;
+        overflow: hidden;
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0 0 auto 0;
+            height: 3px;
+            background: linear-gradient(90deg, $o-planner-accent, #C9A227);
+            opacity: 0;
+            transition: opacity 0.18s ease;
+        }
+
+        &.o_planner_clickable:hover {
+            transform: translateY(-3px);
+            box-shadow: $o-planner-shadow-hover;
+
+            &::after { opacity: 1; }
+        }
+
+        .o_planner_kpi_top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #8a8494;
+            font-size: 0.74rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+
+        .o_planner_kpi_icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 9px;
+            background: rgba(113, 75, 103, 0.1);
+            color: $o-planner-accent;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85rem;
+        }
+
+        .o_planner_kpi_value_row {
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            margin-top: 6px;
+        }
+
+        .o_planner_kpi_value {
+            font-size: 1.55rem;
+            font-weight: 700;
+            font-variant-numeric: tabular-nums;
+            letter-spacing: -0.3px;
+        }
+
+        .o_planner_kpi_trend {
+            font-size: 0.74rem;
+            font-weight: 700;
+            border-radius: 999px;
+            padding: 2px 8px;
+
+            &.up { background: rgba(62, 125, 91, 0.14); color: #2e6b4c; }
+            &.down { background: rgba(217, 83, 79, 0.12); color: #b8433f; }
+        }
+
+        .o_planner_kpi_subtitle {
+            font-size: 0.78rem;
+            color: #8a8494;
+        }
+
+        &.o_planner_tone_primary {
+            background: linear-gradient(135deg, $o-planner-accent, #4f3448);
+            border-color: transparent;
+
+            .o_planner_kpi_top, .o_planner_kpi_value, .o_planner_kpi_subtitle {
+                color: #fff;
+            }
+
+            .o_planner_kpi_icon {
+                background: rgba(255, 255, 255, 0.16);
+                color: #fff;
+            }
+
+            .o_planner_kpi_trend.up { background: rgba(255, 255, 255, 0.2); color: #d9f2e4; }
+            .o_planner_kpi_trend.down { background: rgba(0, 0, 0, 0.25); color: #ffd7d5; }
+        }
+
+        &.o_planner_tone_danger .o_planner_kpi_value { color: #d9534f; }
+        &.o_planner_tone_warning .o_planner_kpi_value { color: #b8860b; }
+    }
+
+    // --- Chart cards -------------------------------------------------------
+    .o_planner_chart_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .o_planner_chart_card {
+        background: var(--o-view-background-color, #fff);
+        border: 1px solid rgba(113, 75, 103, 0.08);
+        border-radius: $o-planner-radius;
+        box-shadow: $o-planner-shadow;
+        padding: 18px;
+        margin-bottom: 16px;
+        transition: box-shadow 0.18s ease;
+
+        &:hover { box-shadow: $o-planner-shadow-hover; }
+
+        h5 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+
+        .o_planner_chart_body {
+            position: relative;
+            height: 240px;
+        }
+    }
+
+    .o_planner_chart_grid .o_planner_chart_card {
+        margin-bottom: 0;
+    }
+
+    // --- Workload heat strip ------------------------------------------------
+    .o_planner_heat_strip {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 6px;
+
+        .o_planner_heat_cell {
+            border-radius: 10px;
+            background: #f0eef2;
+            text-align: center;
+            padding: 10px 2px;
+            transition: transform 0.15s ease;
+
+            &:hover { transform: translateY(-2px); }
+
+            .o_planner_heat_count {
+                font-weight: 700;
+                font-variant-numeric: tabular-nums;
+            }
+            .o_planner_heat_label { font-size: 0.7rem; color: #6c757d; }
+
+            &.o_planner_heat_low { background: #e9e0e7; }
+            &.o_planner_heat_mid {
+                background: linear-gradient(160deg, #c5a8bf, #b393ab);
+                .o_planner_heat_label { color: #4b3245; }
+            }
+            &.o_planner_heat_high {
+                background: linear-gradient(160deg, #8a5f7d, $o-planner-accent);
+                box-shadow: 0 4px 12px rgba(113, 75, 103, 0.35);
+                .o_planner_heat_count, .o_planner_heat_label { color: #fff; }
+            }
+        }
+    }
+
+    // --- Bottom operational row ----------------------------------------------
+    .o_planner_bottom_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 12px;
+
+        .o_planner_chart_card { margin-bottom: 0; }
+    }
+
+    .o_planner_attention li {
+        padding: 6px 8px;
+        border-radius: 6px;
+
+        i { color: #b8860b; }
+
+        &:hover { background: rgba(113, 75, 103, 0.08); }
+    }
+
+    .o_planner_upcoming_row {
+        padding: 8px;
+        border-radius: 8px;
+
+        &:hover { background: rgba(113, 75, 103, 0.08); }
+
+        .o_planner_progress_row {
+            display: flex;
+            gap: 12px;
+            margin-top: 6px;
+
+            .o_planner_progress {
+                flex: 1;
+
+                .o_planner_progress_label {
+                    font-size: 0.7rem;
+                    color: #6c757d;
+                }
+
+                .progress-bar { background-color: $o-planner-accent; }
+            }
+        }
+    }
+
+    // --- Skeleton loaders -------------------------------------------------
+    .o_planner_skeleton_grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 12px;
+    }
+
+    .o_planner_skeleton {
+        height: 92px;
+        border-radius: $o-planner-radius;
+        background: linear-gradient(90deg, #ececec 25%, #f5f5f5 37%, #ececec 63%);
+        background-size: 400% 100%;
+        animation: o-planner-shimmer 1.2s ease infinite;
+    }
+
+    @keyframes o-planner-shimmer {
+        0% { background-position: 100% 50%; }
+        100% { background-position: 0 50%; }
+    }
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <menuitem id="menu_planner_root" name="Event Planner"
+              web_icon="dev_event_planner_management,static/description/icon.png"
+              groups="dev_event_planner_management.group_event_planner_user"
+              sequence="55"/>
+
+    <menuitem id="menu_planner_events" name="Events" parent="menu_planner_root"
+              action="planner_event_action" sequence="10"/>
+
+    <menuitem id="menu_planner_inquiries" name="Inquiries" parent="menu_planner_root"
+              action="planner_crm_lead_action" sequence="8"/>
+
+    <menuitem id="menu_planner_calendar" name="Calendar" parent="menu_planner_root"
+              action="planner_event_action_calendar" sequence="20"/>
+
+    <menuitem id="menu_planner_guests" name="Guests" parent="menu_planner_root"
+              action="planner_event_guest_action" sequence="30"/>
+
+    <menuitem id="menu_planner_staff" name="Staff Schedule" parent="menu_planner_root"
+              action="planner_event_staff_line_action" sequence="40"/>
+
+    <menuitem id="menu_planner_vendors_root" name="Vendors" parent="menu_planner_root"
+              sequence="50"/>
+    <menuitem id="menu_planner_vendors" name="Vendor Directory"
+              parent="menu_planner_vendors_root" action="planner_vendor_action" sequence="10"/>
+    <menuitem id="menu_planner_venues" name="Venues"
+              parent="menu_planner_vendors_root" action="planner_venue_action" sequence="20"/>
+
+    <menuitem id="menu_planner_reporting" name="Reporting" parent="menu_planner_root"
+              sequence="60" groups="dev_event_planner_management.group_event_planner_manager"/>
+    <menuitem id="menu_planner_reporting_events" name="Event Analysis"
+              parent="menu_planner_reporting" sequence="10"
+              action="planner_event_action_analysis"/>
+
+    <menuitem id="menu_planner_config" name="Configuration" parent="menu_planner_root"
+              sequence="90" groups="dev_event_planner_management.group_event_planner_manager"/>
+    <menuitem id="menu_planner_config_settings" name="Settings"
+              parent="menu_planner_config" sequence="5"
+              action="planner_config_settings_action"
+              groups="base.group_system"/>
+    <menuitem id="menu_planner_config_stages" name="Stages"
+              parent="menu_planner_config" action="planner_event_stage_action" sequence="10"/>
+    <menuitem id="menu_planner_config_types" name="Event Types"
+              parent="menu_planner_config" action="planner_event_type_action" sequence="20"/>
+    <menuitem id="menu_planner_config_tags" name="Tags"
+              parent="menu_planner_config" action="planner_event_tag_action" sequence="30"/>
+    <menuitem id="menu_planner_config_vendor_categ" name="Vendor Categories"
+              parent="menu_planner_config" action="planner_vendor_category_action" sequence="40"/>
+    <menuitem id="menu_planner_config_budget_categ" name="Budget Categories"
+              parent="menu_planner_config" action="planner_budget_category_action" sequence="50"/>
+    <menuitem id="menu_planner_config_schemes" name="Payment Schemes"
+              parent="menu_planner_config" action="planner_payment_scheme_action" sequence="60"/>
+</odoo>

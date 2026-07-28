@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:14+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,92 +16,206 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model_terms:views/res_partner_views.xml
+#. module: customer_supplier_approval
+#: model:res.groups,name:customer_supplier_approval.customer_supplier_approval_group_admin
+#: model:res.groups.privilege,name:customer_supplier_approval.res_groups_privilege_administrator
+msgid "Administrator"
+msgstr ""
+
+#. module: customer_supplier_approval
+#: model:res.groups,name:customer_supplier_approval.customer_supplier_approval_group_approval
+#: model:res.groups.privilege,name:customer_supplier_approval.res_groups_privilege_approve_partner
+msgid "Allow Approve Partner"
+msgstr ""
+
+#. module: customer_supplier_approval
+#: model:res.groups,name:customer_supplier_approval.customer_supplier_approval_group_validation
+#: model:res.groups.privilege,name:customer_supplier_approval.res_groups_privilege_validate_partner
+msgid "Allow Validate Partner"
+msgstr ""
+
+#. module: customer_supplier_approval
+#: model_terms:ir.ui.view,arch_db:customer_supplier_approval.view_partner_form
+#: model_terms:ir.ui.view,arch_db:customer_supplier_approval.view_res_partner_filter
 msgid "Approve"
 msgstr "Aprobar"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"By this module, you can grant access to users to \n"
-"    validate or approve partners. Then you will be able to select only \n"
-"    approved partners on sales orders, purchase orders, invoices, bills or \n"
-"    delivery orders."
-msgstr ""
-"Este módulo permite conceder acceso a los usuarios para \n"
-"    validar o aprobar contactos. De este modo, solo será posible seleccionar \n"
-"    contactos aprobados en órdenes de venta, órdenes de compra, facturas de cliente, facturas de proveedor u \n"
-"    órdenes de entrega."
+#. module: customer_supplier_approval
+#: model:ir.model.fields.selection,name:customer_supplier_approval.selection__res_partner__state__approved
+#, fuzzy
+#| msgid "Approve"
+msgid "Approved"
+msgstr "Aprobar"
 
-#: code:models/sale_order.py:28
+#. module: customer_supplier_approval
+#: model:ir.model,name:customer_supplier_approval.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: customer_supplier_approval
+#: model:ir.model,website_form_label:customer_supplier_approval.model_res_partner
+#, fuzzy
+#| msgid "Customer"
+msgid "Create a Customer"
+msgstr "Cliente"
+
+#. module: customer_supplier_approval
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_sale_order__partner_id
 msgid "Customer"
 msgstr "Cliente"
 
-#: code:models/res_partner.py:30
+#. module: customer_supplier_approval
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_res_partner__customer_supplier
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_res_users__customer_supplier
 msgid "Customer Supplier Id"
 msgstr "ID del cliente/proveedor"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Customer/Supplier Approval"
-msgstr "Aprobación del cliente/proveedor"
+#. module: customer_supplier_approval
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_res_partner__display_name
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_sale_order__display_name
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_stock_picking__display_name
+msgid "Display Name"
+msgstr ""
 
-#: code:models/res_partner.py:33
+#. module: customer_supplier_approval
+#: model:ir.model.fields.selection,name:customer_supplier_approval.selection__res_partner__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: customer_supplier_approval
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_res_partner__is_hide_button
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_res_users__is_hide_button
 msgid "Hide Approve Button"
 msgstr "Ocultar botón Aprobar"
 
-#: code:models/res_partner.py:37
+#. module: customer_supplier_approval
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_res_partner__is_hide_button_validate
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_res_users__is_hide_button_validate
 msgid "Hide Validate Button"
 msgstr "Ocultar botón Validar"
 
-#: code:models/res_partner.py:71
+#. module: customer_supplier_approval
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_purchase_order__id
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_res_partner__id
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_sale_order__id
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_stock_picking__id
+msgid "ID"
+msgstr ""
+
+#. module: customer_supplier_approval
+#. odoo-python
+#: code:addons/customer_supplier_approval/models/res_partner.py:0
 msgid "Only Manager can perform that move!"
 msgstr "¡Solo un gerente puede realizar ese movimiento!"
 
-#: code:models/res_partner.py:77
+#. module: customer_supplier_approval
+#. odoo-python
+#: code:addons/customer_supplier_approval/models/res_partner.py:0
 msgid "Only Managers can perform that move!"
 msgstr "¡Solo los gerentes pueden realizar ese movimiento!"
 
-#: code:models/stock_picking.py:28
+#. module: customer_supplier_approval
+#: model:ir.module.category,name:customer_supplier_approval.module_approval_validate
+msgid "Partner Approval and Validation"
+msgstr ""
+
+#. module: customer_supplier_approval
+#: model:ir.model,name:customer_supplier_approval.model_purchase_order
+msgid "Purchase Order"
+msgstr ""
+
+#. module: customer_supplier_approval
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_stock_picking__partner_id
 msgid "Receive From"
 msgstr "Recibir de"
 
-#: model_terms:views/res_partner_views.xml
+#. module: customer_supplier_approval
+#: model:ir.model,name:customer_supplier_approval.model_sale_order
+msgid "Sale Order Delivery Split"
+msgstr ""
+
+#. module: customer_supplier_approval
+#: model_terms:ir.ui.view,arch_db:customer_supplier_approval.view_res_partner_filter
 msgid "State"
 msgstr "Estado"
 
-#: code:models/res_partner.py:42
+#. module: customer_supplier_approval
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_res_partner__state
 msgid "Status"
 msgstr "Estado"
 
-#: code:models/res_partner.py:33
+#. module: customer_supplier_approval
+#: model:ir.model.fields,help:customer_supplier_approval.field_res_partner__is_hide_button
+#: model:ir.model.fields,help:customer_supplier_approval.field_res_users__is_hide_button
 msgid "TChecking the box enables to hide the approve button"
 msgstr "Marcar la casilla permite ocultar el botón de aprobar"
 
-#: code:models/res_partner.py:42
+#. module: customer_supplier_approval
+#: model:ir.model.fields,help:customer_supplier_approval.field_res_partner__state
 msgid "The status of contacts"
 msgstr "El estado de los contactos."
 
-#: code:models/res_partner.py:37
+#. module: customer_supplier_approval
+#: model:ir.model.fields,help:customer_supplier_approval.field_res_partner__is_hide_button_validate
+#: model:ir.model.fields,help:customer_supplier_approval.field_res_users__is_hide_button_validate
 msgid "This boolean field is used to hide the Validate button"
 msgstr "Indica si debe ocultarse el botón Validar"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "This module allows users to validate or approve contacts"
-msgstr "Este módulo permite a los usuarios validar o aprobar contactos."
+#. module: customer_supplier_approval
+#: model:ir.model,name:customer_supplier_approval.model_stock_picking
+msgid "Transfer"
+msgstr ""
 
-#: code:models/res_partner.py:30
+#. module: customer_supplier_approval
+#: model:ir.model.fields,help:customer_supplier_approval.field_res_partner__customer_supplier
+#: model:ir.model.fields,help:customer_supplier_approval.field_res_users__customer_supplier
 msgid "Unique id for partners"
 msgstr "Identificación única para socios"
 
-#: model_terms:views/res_partner_views.xml
+#. module: customer_supplier_approval
+#: model:ir.module.category,description:customer_supplier_approval.module_approval_validate
+msgid "User access level for validating and approving"
+msgstr ""
+
+#. module: customer_supplier_approval
+#: model_terms:ir.ui.view,arch_db:customer_supplier_approval.view_partner_form
+#: model_terms:ir.ui.view,arch_db:customer_supplier_approval.view_res_partner_filter
 msgid "Validate"
 msgstr "Validar"
 
-#: code:models/purchase_order.py:28
+#. module: customer_supplier_approval
+#: model:ir.model.fields.selection,name:customer_supplier_approval.selection__res_partner__state__validated
+#, fuzzy
+#| msgid "Validate"
+msgid "Validated"
+msgstr "Validar"
+
+#. module: customer_supplier_approval
+#: model:ir.model.fields,field_description:customer_supplier_approval.field_purchase_order__partner_id
 msgid "Vendor"
 msgstr "Proveedor"
 
-#: code:models/purchase_order.py:28
-#: code:models/sale_order.py:28
-#: code:models/stock_picking.py:28
+#. module: customer_supplier_approval
+#: model:ir.model.fields,help:customer_supplier_approval.field_purchase_order__partner_id
+#: model:ir.model.fields,help:customer_supplier_approval.field_sale_order__partner_id
+#: model:ir.model.fields,help:customer_supplier_approval.field_stock_picking__partner_id
 msgid "We can see the approved partner here"
 msgstr "Muestra el contacto aprobado"
+
+#~ msgid ""
+#~ "By this module, you can grant access to users to \n"
+#~ "    validate or approve partners. Then you will be able to select only \n"
+#~ "    approved partners on sales orders, purchase orders, invoices, bills or \n"
+#~ "    delivery orders."
+#~ msgstr ""
+#~ "Este módulo permite conceder acceso a los usuarios para \n"
+#~ "    validar o aprobar contactos. De este modo, solo será posible seleccionar \n"
+#~ "    contactos aprobados en órdenes de venta, órdenes de compra, facturas de cliente, facturas de proveedor u \n"
+#~ "    órdenes de entrega."
+
+#~ msgid "Customer/Supplier Approval"
+#~ msgstr "Aprobación del cliente/proveedor"
+
+#~ msgid "This module allows users to validate or approve contacts"
+#~ msgstr "Este módulo permite a los usuarios validar o aprobar contactos."

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:16+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,872 +16,1629 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model_terms:views/labour_supply_portal_templates.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
+msgid "+ Add Requirement"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.online_labour_supply_form
+#, fuzzy
+#| msgid "Labour Supply"
+msgid "<b>Labour Supply</b>"
+msgstr "Oferta laboral"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_form
+msgid "<i class=\"fa fa-fw me-1 fa-envelope text-primary\" title=\"Email\"/>"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_form
+msgid "<i class=\"fa fa-fw me-1 fa-phone text-primary\" title=\"Phone\"/>"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.online_labour_supply_form
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                                                        From\n"
+#| "                                                    "
 msgid ""
-"\n"
-"                                                        From\n"
-"                                                    "
+"<span class=\"s_website_form_label_content\">\n"
+"                                    Customer\n"
+"                                </span>\n"
+"                                <span class=\"s_website_form_mark\">*</span>"
 msgstr ""
 "\n"
 "De"
 
-#: model_terms:views/labour_supply_portal_templates.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.online_labour_supply_form
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                                                        From\n"
+#| "                                                    "
 msgid ""
-"\n"
-"                                                        Required\n"
-"                                                    "
-msgstr ""
-"\n"
-"Requerido"
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                                        Skill\n"
-"                                                    "
-msgstr ""
-"\n"
-"Habilidad"
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                                Cancelled\n"
-"                                            "
-msgstr ""
-"\n"
-"Cancelado"
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                                Confirmed\n"
-"                                            "
-msgstr ""
-"\n"
-"Confirmado"
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                                Draft\n"
-"                                            "
-msgstr ""
-"\n"
-"Borrador"
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                                End Date\n"
-"                                            "
-msgstr ""
-"\n"
-"                                                Fecha final\n"
-"                                            "
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                                Expired\n"
-"                                            "
-msgstr ""
-"\n"
-"Caducado"
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                                Invoiced\n"
-"                                            "
-msgstr ""
-"\n"
-"Facturado"
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                                Ready\n"
-"                                            "
-msgstr ""
-"\n"
-"Listo"
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                                Start Date\n"
-"                                            "
-msgstr ""
-"\n"
-"                                                Fecha inicial\n"
-"                                            "
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                                Status\n"
-"                                            "
-msgstr ""
-"\n"
-"                                                Estado\n"
-"                                            "
-
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"\n"
-"                                            Customer\n"
-"                                        "
-msgstr ""
-"\n"
-"                                            Cliente\n"
-"                                        "
-
-#: model_terms:views/labour_supply_website_template.xml
-msgid ""
-"\n"
-"                                        Invalid date\n"
-"                                    "
-msgstr ""
-"\n"
-"Fecha no válida"
-
-#: model_terms:views/labour_on_supply_form_template.xml
-msgid ""
-"\n"
-"                                    + Add Requirement\n"
-"                                "
-msgstr ""
-"\n"
-"+ Agregar requisito"
-
-#: model_terms:views/labour_supply_website_template.xml
-msgid ""
-"\n"
-"                                    Customer\n"
-"                                "
-msgstr ""
-"\n"
-"                                    Cliente\n"
-"                                "
-
-#: model_terms:views/labour_supply_website_template.xml
-msgid ""
-"\n"
+"<span class=\"s_website_form_label_content\">\n"
 "                                    Expected From Date\n"
-"                                "
+"                                </span>\n"
+"                                <span class=\"s_website_form_mark\">*</span>"
 msgstr ""
 "\n"
-"                                    Fecha prevista desde\n"
-"                                "
+"De"
 
-#: model_terms:views/labour_supply_website_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.online_labour_supply_form
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                                                        From\n"
+#| "                                                    "
 msgid ""
-"\n"
+"<span class=\"s_website_form_label_content\">\n"
 "                                    Expected To Date\n"
-"                                "
+"                                </span>\n"
+"                                <span class=\"s_website_form_mark\">*</span>"
 msgstr ""
 "\n"
-"                                    Fecha prevista hasta\n"
-"                                "
+"De"
 
-#: model_terms:views/labour_on_supply_form_template.xml
-msgid ""
-"\n"
-"                                    Submit Request\n"
-"                                "
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
+msgid "<span>Canceled</span>"
 msgstr ""
-"\n"
-"Enviar solicitud"
 
-#: model_terms:views/labour_on_supply_form_template.xml
-msgid ""
-"\n"
-"                                Go Back\n"
-"                            "
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
+msgid "<span>Confirmed</span>"
 msgstr ""
-"\n"
-"Volver"
 
-#: model_terms:views/labour_on_supply_form_template.xml
-msgid ""
-"\n"
-"                                Labour Request Submitted\n"
-"                            "
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
+msgid "<span>Draft</span>"
 msgstr ""
-"\n"
-"Solicitud de mano de obra enviada"
 
-#: model_terms:views/labour_on_supply_form_template.xml
-msgid ""
-"\n"
-"                                Our team will review it and get back to you\n"
-"                                shortly.\n"
-"                            "
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
+msgid "<span>Expired</span>"
 msgstr ""
-"\n"
-"Nuestro equipo lo revisará y se comunicará con usted.\n"
-"                                en breve."
 
-#: model_terms:views/labour_on_supply_form_template.xml
-msgid ""
-"\n"
-"                                Your labour supply request has been generated\n"
-"                                successfully.\n"
-"                                "
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_form
+msgid "<span>Invoice</span>"
 msgstr ""
-"\n"
-"Su solicitud de suministro de mano de obra ha sido generada\n"
-"                                con éxito."
 
-#: model_terms:views/labour_supply_website_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
+msgid "<span>Invoiced</span>"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_my_home_menu_labour_supply
+#, fuzzy
+#| msgid "LabourSupply"
+msgid "<span>LabourSupply</span>"
+msgstr "Oferta de mano de obra"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
+msgid "<span>Ready</span>"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_form
+#, fuzzy
+#| msgid "Total Amount"
+msgid "<span>Total Amount</span>"
+msgstr "Importe total"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.form_print_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
+msgid "<strong>From Date:</strong>"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
+msgid "<strong>State:</strong>"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.form_print_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
+msgid "<strong>To Date:</strong>"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.form_print_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+msgid "<strong>customer:</strong>"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__message_needaction
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__activity_ids
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__activity_exception_decoration
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__activity_state
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__activity_state
+#, fuzzy
+#| msgid "Availability Status"
+msgid "Activity State"
+msgstr "Estado de disponibilidad"
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__activity_type_icon
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.online_labour_supply_form
+#, fuzzy
+#| msgid ""
+#| "Add Skill\n"
+#| "                                Requirement\n"
+#| "                            "
 msgid ""
 "Add Skill\n"
-"                                Requirement\n"
-"                            "
+"                                Requirement"
 msgstr ""
 "Agregar habilidad\n"
 "                                Requisito"
 
-#: code:models/labour_supply.py:103
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__workers_ids
 msgid "Assigned Workers"
 msgstr "Trabajadores asignados"
 
-#: code:models/labour_supply.py:137
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__message_attachment_count
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__is_alert
 msgid "Availability Alert"
 msgstr "Alerta de disponibilidad"
 
-#: code:models/workers_details.py:100
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__state
 msgid "Availability Status"
 msgstr "Estado de disponibilidad"
 
-#: model_terms:views/workers_details_views.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__workers_details__state__available
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_search
 msgid "Available"
 msgstr "Disponible"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Available Workers"
 msgstr "Trabajadores disponibles"
 
-#: model_terms:views/labour_supply_views.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_form
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: model_terms:report/labour_supply_templates.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply__state__canceled
 msgid "Canceled"
 msgstr "Cancelado"
 
-#: code:wizard/labour_supply_report.py:37
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
+#, fuzzy
+#| msgid "Canceled"
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__customer_id
 msgid "Choose customer"
 msgstr "Elige cliente"
 
-#: code:models/labour_supply.py:66
-#: code:models/skill_details.py:44
-#: code:models/workers_details.py:87
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__company_id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_skill_details__company_id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__company_id
 msgid "Company"
 msgstr "Empresa"
 
-#: code:models/skill_details.py:44
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_skill_details__company_id
 msgid "Company to which this skill belongs. This ensures skills are managed separately for each company."
 msgstr "Empresa a la que pertenece esta habilidad. Esto garantiza que las habilidades se gestionen por separado para cada empresa."
 
-#: code:models/workers_details.py:87
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__company_id
 msgid "Company to which this worker belongs."
 msgstr "Empresa a la que pertenece este trabajador."
 
-#: code:models/labour_supply.py:66
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__company_id
 msgid "Company under which this labour supply contract is managed."
 msgstr "Empresa bajo la cual se gestiona el presente contrato de suministro de mano de obra."
 
-#: model_terms:views/labour_supply_views.xml
+#. module: manpower_supply_management
+#: model:ir.ui.menu,name:manpower_supply_management.workers_details_menu_root
+#, fuzzy
+#| msgid "Confirm"
+msgid "Configuration"
+msgstr "Confirmar"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_form
 msgid "Confirm"
 msgstr "Confirmar"
 
-#: model_terms:report/labour_supply_templates.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply__state__confirmed
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply_report__state_id__confirmed
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "Confirmed"
 msgstr "Confirmado"
 
-#: code:models/workers_details.py:70
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__phone_number
 msgid "Contact phone number of the worker."
 msgstr "Número de teléfono de contacto del trabajador."
 
-#: code:models/labour_supply.py:81
-msgid "Contract end date, automatically computed from skill requirements."
-msgstr "Fecha de finalización del contrato, calculada automáticamente a partir de los requisitos de habilidades."
-
-#: model_terms:views/labour_on_supply_form_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
 msgid "Contract From *"
 msgstr "Contrato desde *"
 
-#: code:models/labour_supply.py:126
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__period
 msgid "Contract Period (Days)"
 msgstr "Período de Contrato (Días)"
 
-#: code:models/labour_supply.py:74
-msgid "Contract start date, automatically computed from skill requirements."
-msgstr "Fecha de inicio del contrato, calculada automáticamente a partir de los requisitos de habilidades."
-
-#: model_terms:views/labour_on_supply_form_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
 msgid "Contract To *"
 msgstr "Contrato con *"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__to_date
+msgid "Contract end date, automatically computed from skill requirements."
+msgstr "Fecha de finalización del contrato, calculada automáticamente a partir de los requisitos de habilidades."
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__from_date
+msgid "Contract start date, automatically computed from skill requirements."
+msgstr "Fecha de inicio del contrato, calculada automáticamente a partir de los requisitos de habilidades."
+
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Contracts on the Basis of Customer"
 msgstr "Contratos según el cliente"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Contracts on the Basis of State"
 msgstr "Contratos según el estado"
 
-#: code:models/labour_supply.py:143
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__view_workers_page
 msgid "Controls the visibility of the workers assignment page."
 msgstr "Controla la visibilidad de la página de asignación de trabajadores."
 
-#: model_terms:views/labour_supply_views.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_form
 msgid "Create Invoice"
 msgstr "Crear factura"
 
-#: code:models/labour_supply.py:119
-#: code:models/workers_details.py:80
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__create_uid
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__create_uid
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__create_uid
+#: model:ir.model.fields,field_description:manpower_supply_management.field_skill_details__create_uid
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__create_date
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__create_date
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__create_date
+#: model:ir.model.fields,field_description:manpower_supply_management.field_skill_details__create_date
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__create_date
+#, fuzzy
+#| msgid "Create Invoice"
+msgid "Created on"
+msgstr "Crear factura"
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__currency_id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__currency_id
 msgid "Currency"
 msgstr "Moneda"
 
-#: code:models/labour_supply.py:119
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__currency_id
 msgid "Currency used for calculating the contract amount."
 msgstr "Moneda utilizada para calcular el importe del contrato."
 
-#: code:models/workers_details.py:80
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__currency_id
 msgid "Currency used for wage and rate calculation."
 msgstr "Moneda utilizada para el cálculo de salarios y tarifas."
 
-#: code:models/labour_supply.py:88
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__state
 msgid "Current status of the labour supply contract."
 msgstr "Estado actual del contrato de suministro de mano de obra."
 
-#: code:models/labour_supply.py:50
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__customer_id
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "Customer"
 msgstr "Cliente"
 
-#: model_terms:views/labour_on_supply_form_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
 msgid "Customer *"
 msgstr "Cliente *"
 
-#: code:models/labour_supply.py:50
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__customer_id
 msgid "Customer for whom the labour supply contract is created."
 msgstr "Cliente para quien se crea el contrato de suministro de mano de obra."
 
-#: code:models/labour_supply.py:131
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__invoice_id
 msgid "Customer invoice generated for this labour supply contract."
 msgstr "Factura de cliente generada para este contrato de suministro de mano de obra."
 
-#: code:wizard/labour_supply_report.py:32
+#. module: manpower_supply_management
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply_report__filter__customer_wise
 msgid "Customer wise"
 msgstr "Por cliente"
 
-#: model_terms:report/form_print_labour_supply_templates.xml
-#: model_terms:report/labour_supply_templates.xml
-msgid "customer:"
-msgstr "cliente:"
-
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Customers"
 msgstr "Clientes"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
-msgid ""
-"Daily\n"
-"                                                "
-msgstr "Diariamente"
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
+msgid "Daily"
+msgstr ""
 
-#: code:models/workers_details.py:65
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__rate
 msgid "Daily billing rate charged for the worker."
 msgstr "Tarifa de facturación diaria cobrada por el trabajador."
 
-#: code:models/workers_details.py:60
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__wage
 msgid "Daily wage paid to the worker."
 msgstr "Salario diario pagado al trabajador."
 
-#: model_terms:report/labour_supply_templates.xml
-#: model_terms:views/labour_supply_views.xml
+#. module: manpower_supply_management
+#: model:ir.ui.menu,name:manpower_supply_management.labour_supply_dashboard_menu_action
+msgid "Dashboard"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__display_name
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__display_name
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__display_name
+#: model:ir.model.fields,field_description:manpower_supply_management.field_report_manpower_supply_management_form_print_labour_supply__display_name
+#: model:ir.model.fields,field_description:manpower_supply_management.field_skill_details__display_name
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__display_name
+#, fuzzy
+#| msgid "Skill Name"
+msgid "Display Name"
+msgstr "Nombre de la habilidad"
+
+#. module: manpower_supply_management
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply__state__draft
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply_report__state_id__draft
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_search
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "Draft"
 msgstr "Borrador"
 
-#: model_terms:views/workers_details_views.xml
-msgid "e.g. Peter Prathyu"
-msgstr "por ej. Peter Prathyu"
-
-#: model_terms:views/labour_supply_views.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_form
 msgid "Edit"
 msgstr "Editar"
 
-#: code:models/workers_details.py:75
-#: model_terms:views/workers_details_views.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__email
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_form
 msgid "Email"
 msgstr "Correo electrónico"
 
-#: code:models/workers_details.py:75
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__email
 msgid "Email address of the worker."
 msgstr "Dirección de correo electrónico del trabajador."
 
-#: model_terms:views/labour_supply_portal_templates.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "End Date"
 msgstr "Fecha de finalización"
 
-#: code:models/labour_supply.py:293
-msgid "End date cannot be earlier than start date."
-msgstr "La fecha de finalización no puede ser anterior a la fecha de inicio."
-
-#: code:models/labour_on_skill.py:65
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_on_skill__to_date
 msgid "End date until which the labour is required for the selected skill."
 msgstr "Fecha de finalización hasta la cual se requiere la mano de obra para la habilidad seleccionada."
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Expected amount"
 msgstr "Cantidad esperada"
 
-#: model_terms:report/labour_supply_templates.xml
-#: model_terms:views/labour_supply_views.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply__state__expired
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply_report__state_id__expired
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_search
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "Expired"
 msgstr "Caducado"
 
-#: model_terms:views/labour_supply_views.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_form
 msgid "Fetch"
 msgstr "Buscar"
 
-#: code:wizard/labour_supply_report.py:37
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply_report__customer_id
 msgid "Field to choose customer for report"
 msgstr "Campo para elegir cliente para el informe"
 
-#: code:wizard/labour_supply_report.py:32
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply_report__filter
 msgid "Field to choose filter of report"
 msgstr "Campo para elegir filtro de informe"
 
-#: code:wizard/labour_supply_report.py:46
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply_report__from_date
 msgid "Field to choose start date of report"
 msgstr "Campo para elegir fecha de inicio del informe"
 
-#: code:wizard/labour_supply_report.py:48
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply_report__to_date
 msgid "Field to end date filter of report"
 msgstr "Filtro de campo para finalizar la fecha del informe"
 
-#: code:wizard/labour_supply_report.py:40
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply_report__state_id
 msgid "Field to specify state of report"
 msgstr "Campo para especificar el estado del informe"
 
-#: model_terms:views/labour_supply_website_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.online_labour_supply_form
 msgid "Fill the details"
 msgstr "Llene los detalles"
 
-#: code:wizard/labour_supply_report.py:32
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__filter
 msgid "Filter"
 msgstr "Filtrar"
 
-#: model_terms:views/labour_supply_portal_templates.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_my_home_labour_supply
 msgid "Follow, view your Contracts"
 msgstr "Seguir, ver tus Contratos"
 
-#: model_terms:views/labour_on_supply_form_template.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__message_follower_ids
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__message_partner_ids
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__activity_type_icon
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "From"
 msgstr "De"
 
-#: code:models/labour_on_skill.py:58
-#: code:models/labour_supply.py:74
-#: model_terms:report/form_print_labour_supply_templates.xml
-#: model_terms:report/labour_supply_templates.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__from_date
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__from_date
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.form_print_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
 msgid "From Date"
 msgstr "Fecha desde"
 
-#: code:wizard/labour_supply_report.py:46
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__from_date
 msgid "From date"
 msgstr "Desde la fecha"
 
-#: model_terms:report/form_print_labour_supply_templates.xml
-#: model_terms:report/labour_supply_templates.xml
-msgid "From Date:"
-msgstr "Fecha desde:"
-
-#: code:models/workers_details.py:40
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__name
 msgid "Full name of the worker."
 msgstr "Nombre completo del trabajador."
 
-#: model_terms:views/labour_on_supply_form_template.xml
-msgid ""
-"General Details\n"
-"                                "
-msgstr "Detalles generales"
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
+#, fuzzy
+#| msgid "workers details"
+msgid "General Details"
+msgstr "detalles de los trabajadores"
 
-#: model_terms:views/labour_supply_portal_templates.xml
+#. module: manpower_supply_management
+#: model:ir.model,name:manpower_supply_management.model_labour_supply_report
+msgid "Get Pdf Report"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.tmp_form_success
+msgid "Go Back"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__has_message
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "History"
 msgstr "Historial"
 
-#: code:models/labour_supply.py:137
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_my_home_menu_labour_supply
+msgid "Home"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_report_manpower_supply_management_form_print_labour_supply__id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_skill_details__id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__id
+msgid "ID"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__activity_exception_icon
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__activity_exception_icon
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__message_needaction
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__message_has_error
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__message_has_sms_error
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__message_has_error
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__is_alert
 msgid "Indicates whether the required number of workers is currently unavailable."
 msgstr "Indica si el número requerido de trabajadores no está disponible actualmente."
 
-#: code:models/workers_details.py:100
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__state
 msgid "Indicates whether the worker is currently available for assignment."
 msgstr "Indica si el trabajador está actualmente disponible para su asignación."
 
-#: code:models/labour_supply.py:131
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.online_labour_supply_form
+msgid "Invalid date"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__invoice_id
 msgid "Invoice"
 msgstr "Factura"
 
-#: model_terms:report/labour_supply_templates.xml
-#: model_terms:views/labour_supply_views.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply__state__invoiced
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply_report__state_id__invoiced
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_search
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "Invoiced"
 msgstr "Facturado"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Invoiced amount"
 msgstr "Importe facturado"
 
-#: model_terms:views/labour_supply_portal_templates.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__message_is_follower
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply
 msgid "Labour Contract"
 msgstr "Contrato Laboral"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Labour Contract and Amount"
 msgstr "Contrato de mano de obra e importe"
 
-#: model_terms:wizard/labour_supply_report_views.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_report_view_form
 msgid "Labour Report"
 msgstr "Informe Laboral"
 
-#: code:models/labour_on_skill.py:51
-#: model_terms:views/labour_supply_portal_templates.xml
-#: model_terms:views/labour_supply_website_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.tmp_form_success
+#, fuzzy
+#| msgid "Labour Supply Request"
+msgid "Labour Request Submitted"
+msgstr "Solicitud de oferta laboral"
+
+#. module: manpower_supply_management
+#: model:ir.model,name:manpower_supply_management.model_labour_on_skill
+msgid "Labour Requirement Based on Skill"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.actions.act_window,name:manpower_supply_management.labour_supply_action
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__labour_supply_id
+#: model:ir.ui.menu,name:manpower_supply_management.labour_supply_menu_action
+#: model:website.menu,name:manpower_supply_management.menu_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_my_home_labour_supply
 msgid "Labour Supply"
 msgstr "Oferta laboral"
 
-#: model_terms:report/form_print_labour_supply_templates.xml
+#. module: manpower_supply_management
+#: model:ir.model,name:manpower_supply_management.model_labour_supply
+#, fuzzy
+#| msgid "Labour Contract"
+msgid "Labour Supply Contract"
+msgstr "Contrato Laboral"
+
+#. module: manpower_supply_management
+#: model:ir.actions.client,name:manpower_supply_management.labour_supply_dashboard_action
+#, fuzzy
+#| msgid "Labour Supply Report"
+msgid "Labour Supply Dashboard"
+msgstr "Informe de oferta laboral"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.form_print_labour_supply
 msgid "Labour Supply Form Print"
 msgstr "Imprimir formulario de oferta laboral"
 
-#: model_terms:report/labour_supply_templates.xml
+#. module: manpower_supply_management
+#: model:ir.actions.act_window,name:manpower_supply_management.labour_supply_report_action
+#: model:ir.actions.report,name:manpower_supply_management.action_labour_supply_report
+#: model:ir.actions.report,name:manpower_supply_management.action_labour_supply_report_second
+#: model:ir.ui.menu,name:manpower_supply_management.labour_supply_report_menu
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
 msgid "Labour Supply Report"
 msgstr "Informe de oferta laboral"
 
-#: model_terms:views/labour_on_supply_form_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
 msgid "Labour Supply Request"
 msgstr "Solicitud de oferta laboral"
 
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid "laboursupply"
-msgstr "oferta de mano de obra"
+#. module: manpower_supply_management
+#: model:ir.actions.act_window,name:manpower_supply_management.labour_on_skill_action
+#, fuzzy
+#| msgid "Labour Contract"
+msgid "Labour on skill"
+msgstr "Contrato Laboral"
 
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid "LabourSupply"
-msgstr "Oferta de mano de obra"
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__write_uid
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__write_uid
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__write_uid
+#: model:ir.model.fields,field_description:manpower_supply_management.field_skill_details__write_uid
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__write_uid
+msgid "Last Updated by"
+msgstr ""
 
-#: code:models/labour_supply.py:57
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__write_date
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__write_date
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__write_date
+#: model:ir.model.fields,field_description:manpower_supply_management.field_skill_details__write_date
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__skill_ids
 msgid "List of skills required along with the number of labourers and the respective date ranges."
 msgstr "Lista de habilidades requeridas junto con la cantidad de trabajadores y los respectivos rangos de fechas."
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Mail Address"
 msgstr "Dirección de correo"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Manage man power supply"
-msgstr "Gestionar el suministro de mano de obra."
+#. module: manpower_supply_management
+#: model:res.groups,name:manpower_supply_management.manpower_supply_management_manager
+#, fuzzy
+#| msgid "Manpower Supply Management"
+msgid "Manage Manpower Supply Management"
+msgstr "Gestión del suministro de mano de obra"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
+#, fuzzy
+#| msgid ""
+#| "Manpower Supply\n"
+#| "                                    Management Dashboard\n"
+#| "                                "
 msgid ""
 "Manpower Supply\n"
-"                                    Management Dashboard\n"
-"                                "
+"                                    Management Dashboard"
 msgstr ""
 "Suministro de mano de obra\n"
 "                                    Panel de gestión"
 
-#: model:ir.module.module,name:__manifest__.py
+#. module: manpower_supply_management
+#: model:ir.ui.menu,name:manpower_supply_management.labour_supply_main_menu_root
 msgid "Manpower Supply Management"
 msgstr "Gestión del suministro de mano de obra"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
-msgid ""
-"Monthly\n"
-"                                                "
-msgstr "Mensual"
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__message_has_error
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__message_has_error
+msgid "Message Delivery error"
+msgstr ""
 
-#: code:models/skill_details.py:37
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__message_ids
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
+msgid "Monthly"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__my_activity_date_deadline
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_skill_details__name
 msgid "Name of the skill or specialization, such as Electrician, Plumber, or Carpenter."
 msgstr "Nombre de la habilidad o especialización, como electricista, plomero o carpintero."
 
-#: model_terms:views/workers_details_views.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__activity_calendar_event_id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__activity_date_deadline
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__activity_summary
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__activity_type_id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__workers_details__state__not_available
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_search
 msgid "Not Available"
 msgstr "No disponible"
 
-#: model_terms:views/labour_supply_portal_templates.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply
 msgid "Number"
 msgstr "Número"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__message_needaction_counter
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__message_needaction_counter
+#, fuzzy
+#| msgid "Number of Contracts"
+msgid "Number of Actions"
+msgstr "Número de contratos"
+
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Number of Contracts"
 msgstr "Número de contratos"
 
-#: code:models/labour_on_skill.py:45
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__number_of_labour_required
 msgid "Number of Labours Required"
 msgstr "Número de trabajadores requeridos"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__message_has_error_counter
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__message_has_error_counter
+#, fuzzy
+#| msgid "Number of Contracts"
+msgid "Number of errors"
+msgstr "Número de contratos"
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__message_needaction_counter
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__message_has_error_counter
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Ongoing contract"
 msgstr "Contrato en curso"
 
-#: code:models/workers_details.py:52
+#. module: manpower_supply_management
+#: model:ir.ui.menu,name:manpower_supply_management.labour_supply_menu_root
+msgid "Operation"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__related_partner_id
 msgid "Partner record automatically created and linked to this worker."
 msgstr "Contacto creado automáticamente y vinculado con este trabajador."
 
-#: model_terms:views/workers_details_views.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_form
 msgid "Phone"
 msgstr "Teléfono"
 
-#: code:models/workers_details.py:70
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__phone_number
 msgid "Phone Number"
 msgstr "Número de teléfono"
 
-#: code:models/labour_supply.py:282
-msgid "Please add at least one required skill."
-msgstr "Agregue al menos una habilidad requerida."
+#. module: manpower_supply_management
+#: model:ir.actions.report,name:manpower_supply_management.action_labour_supply_form_print
+#, fuzzy
+#| msgid "Print pdf"
+msgid "Print"
+msgstr "Imprimir pdf"
 
-#: code:models/labour_supply.py:290
-msgid "Please enter valid future dates."
-msgstr "Por favor ingrese fechas futuras válidas."
-
-#: model_terms:wizard/labour_supply_report_views.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_report_view_form
 msgid "Print pdf"
 msgstr "Imprimir pdf"
 
-#: code:models/workers_details.py:95
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__image_worker
 msgid "Profile image of the worker."
 msgstr "Imagen de perfil del trabajador."
 
-#: model_terms:views/labour_on_supply_form_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
 msgid "Qty"
 msgstr "Cantidad"
 
-#: code:models/workers_details.py:65
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__rate
 msgid "Rate Per Day"
 msgstr "Tarifa por día"
 
-#: model_terms:report/labour_supply_templates.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__rating_ids
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply__state__ready
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply_report__state_id__ready
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "Ready"
 msgstr "Listo"
 
-#: code:models/labour_supply.py:41
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__sequence_number
 msgid "Reference"
 msgstr "Referencia"
 
-#: code:models/labour_on_skill.py:51
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_on_skill__labour_supply_id
 msgid "Reference to the labour supply request to which this skill requirement is linked."
 msgstr "Referencia a la solicitud de oferta laboral a la que se vincula este requisito de habilidad."
 
-#: code:models/workers_details.py:52
-#: model_terms:views/workers_details_views.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__related_partner_id
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_form
 msgid "Related Partner"
 msgstr "Socio relacionado"
 
-#: model_terms:views/labour_on_supply_form_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
 msgid "Remove"
 msgstr "Quitar"
 
-#: model_terms:report/form_print_labour_supply_templates.xml
+#. module: manpower_supply_management
+#: model:ir.model,name:manpower_supply_management.model_report_manpower_supply_management_form_print_labour_supply
+#, fuzzy
+#| msgid "laboursupply"
+msgid "Report for labour supply"
+msgstr "oferta de mano de obra"
+
+#. module: manpower_supply_management
+#: model:ir.ui.menu,name:manpower_supply_management.labour_supply_report_menu_root
+msgid "Reporting"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
+#, fuzzy
+#| msgid "Required Skill"
+msgid "Required"
+msgstr "Habilidad requerida"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.form_print_labour_supply
 msgid "Required Number"
 msgstr "Número requerido"
 
-#: code:models/labour_on_skill.py:38
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__skill_id
 msgid "Required Skill"
 msgstr "Habilidad requerida"
 
-#: model_terms:views/labour_supply_views.xml
-#: model_terms:views/workers_details_views.xml
-msgid "search"
-msgstr "buscar"
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__activity_user_id
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__activity_user_id
+msgid "Responsible User"
+msgstr ""
 
-#: code:models/labour_on_skill.py:38
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__message_has_sms_error
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_on_skill__skill_id
 msgid "Select the skill or specialization required for the labour."
 msgstr "Seleccione la habilidad o especialización requerida para el trabajo."
 
-#: model_terms:report/labour_supply_templates.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
 msgid "Sequence number"
 msgstr "Número de secuencia"
 
-#: model_terms:views/labour_supply_views.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_form
 msgid "Shortage in Labour"
 msgstr "Escasez de mano de obra"
 
-#: code:models/labour_supply.py:143
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__view_workers_page
 msgid "Show Workers Page"
 msgstr "Mostrar página de trabajadores"
 
-#: model_terms:report/form_print_labour_supply_templates.xml
-msgid "skill"
-msgstr "habilidad"
-
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
-#: model_terms:views/labour_on_supply_form_template.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "Skill"
 msgstr "Habilidad"
 
-#: model_terms:views/labour_supply_portal_templates.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
+#, fuzzy
+#| msgid ""
+#| "Daily\n"
+#| "                                                "
 msgid ""
 "Skill\n"
-"                                        Requirements\n"
-"                                    "
-msgstr ""
-"Requisitos de\n"
-"                                        habilidades"
+"                                        Requirements"
+msgstr "Diariamente"
 
-#: model_terms:views/labour_on_supply_form_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
+#, fuzzy
+#| msgid ""
+#| "Skill\n"
+#| "                                    Requirements\n"
+#| "                                "
 msgid ""
 "Skill\n"
-"                                    Requirements\n"
-"                                "
+"                                    Requirements"
 msgstr ""
 "Requisitos de\n"
 "                                    habilidades"
 
-#: code:models/skill_details.py:37
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_skill_details__name
 msgid "Skill Name"
 msgstr "Nombre de la habilidad"
 
-#: model_terms:views/labour_on_skill_views.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_on_skill_view_tree
 msgid "Skill required"
 msgstr "Habilidad requerida"
 
-#: code:models/workers_details.py:46
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
+#: model:ir.actions.act_window,name:manpower_supply_management.skill_details_action
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__skill_ids
+#: model:ir.ui.menu,name:manpower_supply_management.skill_details_menu
 msgid "Skills"
 msgstr "Habilidades"
 
-#: code:models/workers_details.py:46
-msgid "Skills or specializations possessed by the worker."
-msgstr "Habilidades o especializaciones que posee el trabajador."
-
-#: code:models/labour_supply.py:57
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__skill_ids
 msgid "Skills Required"
 msgstr "Habilidades requeridas"
 
-#: code:models/labour_on_skill.py:45
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__skill_ids
+msgid "Skills or specializations possessed by the worker."
+msgstr "Habilidades o especializaciones que posee el trabajador."
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_on_skill__number_of_labour_required
 msgid "Specify the total number of labourers required for the selected skill."
 msgstr "Especifique el número total de trabajadores necesarios para la habilidad seleccionada."
 
-#: model_terms:views/labour_supply_portal_templates.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "Start Date"
 msgstr "Fecha de inicio"
 
-#: code:models/labour_on_skill.py:58
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_on_skill__from_date
 msgid "Start date from which the labour is required for the selected skill."
 msgstr "Fecha de inicio a partir de la cual se requiere la mano de obra para la habilidad seleccionada."
 
-#: code:wizard/labour_supply_report.py:40
-#: model_terms:report/labour_supply_templates.xml
-#: model_terms:views/labour_supply_portal_templates.xml
-#: model_terms:views/labour_supply_views.xml
-#: model_terms:views/workers_details_views.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__state_id
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_search
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_search
 msgid "State"
 msgstr "Estado"
 
-#: code:wizard/labour_supply_report.py:32
+#. module: manpower_supply_management
+#: model:ir.model.fields.selection,name:manpower_supply_management.selection__labour_supply_report__filter__state_wise
 msgid "State wise"
 msgstr "Por estado"
 
-#: model_terms:report/labour_supply_templates.xml
-msgid "State:"
-msgstr "Estado:"
-
-#: code:models/labour_supply.py:88
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__state
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "Status"
 msgstr "Estado"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid "The Manpower Supply module in Odoo automates the process of matching client requirements with suitable resources and streamlines the allocation and management of manpower, ensuring efficient service delivery."
-msgstr "El módulo de suministro de personal de Odoo automatiza la asignación de recursos adecuados a los requisitos del cliente y simplifica la gestión del personal para prestar el servicio de forma eficiente."
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__activity_state
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
 
-#: model_terms:views/labour_on_supply_form_template.xml
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
+msgid "Submit Request"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:res.groups.privilege,name:manpower_supply_management.res_groups_privilege_manpower_supply_management
+#, fuzzy
+#| msgid "Manpower Supply Management"
+msgid "Supply Manager"
+msgstr "Gestión del suministro de mano de obra"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_single_form
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_labour_supply_details
 msgid "To"
 msgstr "a"
 
-#: model_terms:views/labour_supply_portal_templates.xml
-msgid ""
-"To\n"
-"                                                    "
-msgstr "a"
-
-#: code:models/labour_on_skill.py:65
-#: code:models/labour_supply.py:81
-#: model_terms:report/form_print_labour_supply_templates.xml
-#: model_terms:report/labour_supply_templates.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_on_skill__to_date
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__to_date
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.form_print_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
 msgid "To Date"
 msgstr "Fecha hasta"
 
-#: code:wizard/labour_supply_report.py:48
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply_report__to_date
 msgid "To date"
 msgstr "hasta la fecha"
 
-#: model_terms:report/form_print_labour_supply_templates.xml
-#: model_terms:report/labour_supply_templates.xml
-msgid "To Date:"
-msgstr "Fecha hasta:"
-
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Top 10 Customers"
 msgstr "Top 10 de clientes"
 
-#: code:models/labour_supply.py:111
-#: model_terms:report/labour_supply_templates.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__total_amount
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.report_labour_supply_state_wise
 msgid "Total Amount"
 msgstr "Importe total"
 
-#: code:models/labour_supply.py:111
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__total_amount
 msgid "Total contract amount calculated based on worker rates and contract period."
 msgstr "Monto total del contrato calculado en función de las tarifas de los trabajadores y el período del contrato."
 
-#: code:models/labour_supply.py:126
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__period
 msgid "Total duration of the contract in days."
 msgstr "Duración total del contrato en días."
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
-msgid ""
-"Totally\n"
-"                                                "
-msgstr "Totalmente"
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
+msgid "Totally"
+msgstr ""
 
-#: code:models/labour_supply.py:41
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__activity_exception_decoration
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__sequence_number
 msgid "Unique reference generated automatically for the labour supply contract."
 msgstr "Referencia única generada automáticamente para el contrato de suministro de mano de obra."
 
-#: code:models/workers_details.py:60
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__wage
 msgid "Wage Per Day"
 msgstr "Salario por día"
 
-#: code:models/workers_details.py:95
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_labour_supply__website_message_ids
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__website_message_ids
+#: model:ir.model.fields,help:manpower_supply_management.field_workers_details__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__image_worker
 msgid "Worker Image"
 msgstr "Imagen del trabajador"
 
-#: code:models/workers_details.py:40
+#. module: manpower_supply_management
+#: model:ir.model.fields,field_description:manpower_supply_management.field_workers_details__name
 msgid "Worker Name"
 msgstr "Nombre del trabajador"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#: model:ir.model,name:manpower_supply_management.model_skill_details
+#, fuzzy
+#| msgid "Workers"
+msgid "Worker Skill"
+msgstr "Trabajadores"
+
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
+#: model:ir.actions.act_window,name:manpower_supply_management.workers_details_action
+#: model:ir.model,name:manpower_supply_management.model_workers_details
+#: model:ir.ui.menu,name:manpower_supply_management.workers_details_menu
 msgid "Workers"
 msgstr "Trabajadores"
 
-#: code:models/labour_supply.py:103
-msgid "Workers assigned to this labour supply contract based on required skills and availability."
-msgstr "Trabajadores asignados a este contrato de suministro de mano de obra en función de las habilidades requeridas y la disponibilidad."
-
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
 msgid "Workers Availability"
 msgstr "Disponibilidad de trabajadores"
 
-#: model_terms:views/workers_details_views.xml
+#. module: manpower_supply_management
+#: model:ir.model.fields,help:manpower_supply_management.field_labour_supply__workers_ids
+msgid "Workers assigned to this labour supply contract based on required skills and availability."
+msgstr "Trabajadores asignados a este contrato de suministro de mano de obra en función de las habilidades requeridas y la disponibilidad."
+
+#. module: manpower_supply_management
+#. odoo-javascript
+#: code:addons/manpower_supply_management/static/src/xml/labour_supply_dashboard.xml:0
+msgid "Yearly"
+msgstr ""
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.tmp_form_success
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "                                                        From\n"
+#| "                                                    "
+msgid ""
+"Your labour supply request has been generated\n"
+"                                successfully.\n"
+"                                <br/>\n"
+"                                Our team will review it and get back to you\n"
+"                                shortly."
+msgstr ""
+"\n"
+"De"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_form
+msgid "e.g. Peter Prathyu"
+msgstr "por ej. Peter Prathyu"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_form
+msgid "labour allocated is less than requested."
+msgstr ""
+
+#. module: manpower_supply_management
+#: model:ir.actions.server,name:manpower_supply_management.ir_cron_labour_contract_expiration_ir_actions_server
+#, fuzzy
+#| msgid "Labour Contract"
+msgid "labour contract expiry"
+msgstr "Contrato Laboral"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.portal_my_home_menu_labour_supply
+msgid "laboursupply"
+msgstr "oferta de mano de obra"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.labour_supply_view_search
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_search
+msgid "search"
+msgstr "buscar"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.form_print_labour_supply
+msgid "skill"
+msgstr "habilidad"
+
+#. module: manpower_supply_management
+#: model_terms:ir.ui.view,arch_db:manpower_supply_management.workers_details_view_tree
 msgid "workers details"
 msgstr "detalles de los trabajadores"
 
-#: model_terms:static/src/xml/labour_supply_dashboard.xml
-msgid ""
-"Yearly\n"
-"                                                "
-msgstr "Anual"
+#~ msgid ""
+#~ "\n"
+#~ "                                                        Required\n"
+#~ "                                                    "
+#~ msgstr ""
+#~ "\n"
+#~ "Requerido"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                        Skill\n"
+#~ "                                                    "
+#~ msgstr ""
+#~ "\n"
+#~ "Habilidad"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Cancelled\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Cancelado"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Confirmed\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Confirmado"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Draft\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Borrador"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                End Date\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "                                                Fecha final\n"
+#~ "                                            "
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Expired\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Caducado"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Invoiced\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Facturado"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Ready\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Listo"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Start Date\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "                                                Fecha inicial\n"
+#~ "                                            "
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                Status\n"
+#~ "                                            "
+#~ msgstr ""
+#~ "\n"
+#~ "                                                Estado\n"
+#~ "                                            "
+
+#~ msgid ""
+#~ "\n"
+#~ "                                            Customer\n"
+#~ "                                        "
+#~ msgstr ""
+#~ "\n"
+#~ "                                            Cliente\n"
+#~ "                                        "
+
+#~ msgid ""
+#~ "\n"
+#~ "                                        Invalid date\n"
+#~ "                                    "
+#~ msgstr ""
+#~ "\n"
+#~ "Fecha no válida"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                    + Add Requirement\n"
+#~ "                                "
+#~ msgstr ""
+#~ "\n"
+#~ "+ Agregar requisito"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                    Customer\n"
+#~ "                                "
+#~ msgstr ""
+#~ "\n"
+#~ "                                    Cliente\n"
+#~ "                                "
+
+#~ msgid ""
+#~ "\n"
+#~ "                                    Expected From Date\n"
+#~ "                                "
+#~ msgstr ""
+#~ "\n"
+#~ "                                    Fecha prevista desde\n"
+#~ "                                "
+
+#~ msgid ""
+#~ "\n"
+#~ "                                    Expected To Date\n"
+#~ "                                "
+#~ msgstr ""
+#~ "\n"
+#~ "                                    Fecha prevista hasta\n"
+#~ "                                "
+
+#~ msgid ""
+#~ "\n"
+#~ "                                    Submit Request\n"
+#~ "                                "
+#~ msgstr ""
+#~ "\n"
+#~ "Enviar solicitud"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                Go Back\n"
+#~ "                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Volver"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                Labour Request Submitted\n"
+#~ "                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Solicitud de mano de obra enviada"
+
+#~ msgid ""
+#~ "\n"
+#~ "                                Our team will review it and get back to you\n"
+#~ "                                shortly.\n"
+#~ "                            "
+#~ msgstr ""
+#~ "\n"
+#~ "Nuestro equipo lo revisará y se comunicará con usted.\n"
+#~ "                                en breve."
+
+#~ msgid ""
+#~ "\n"
+#~ "                                Your labour supply request has been generated\n"
+#~ "                                successfully.\n"
+#~ "                                "
+#~ msgstr ""
+#~ "\n"
+#~ "Su solicitud de suministro de mano de obra ha sido generada\n"
+#~ "                                con éxito."
+
+#~ msgid "customer:"
+#~ msgstr "cliente:"
+
+#~ msgid "End date cannot be earlier than start date."
+#~ msgstr "La fecha de finalización no puede ser anterior a la fecha de inicio."
+
+#~ msgid "From Date:"
+#~ msgstr "Fecha desde:"
+
+#~ msgid ""
+#~ "General Details\n"
+#~ "                                "
+#~ msgstr "Detalles generales"
+
+#~ msgid "Manage man power supply"
+#~ msgstr "Gestionar el suministro de mano de obra."
+
+#~ msgid ""
+#~ "Monthly\n"
+#~ "                                                "
+#~ msgstr "Mensual"
+
+#~ msgid "Please add at least one required skill."
+#~ msgstr "Agregue al menos una habilidad requerida."
+
+#~ msgid "Please enter valid future dates."
+#~ msgstr "Por favor ingrese fechas futuras válidas."
+
+#~ msgid ""
+#~ "Skill\n"
+#~ "                                        Requirements\n"
+#~ "                                    "
+#~ msgstr ""
+#~ "Requisitos de\n"
+#~ "                                        habilidades"
+
+#~ msgid "State:"
+#~ msgstr "Estado:"
+
+#~ msgid "The Manpower Supply module in Odoo automates the process of matching client requirements with suitable resources and streamlines the allocation and management of manpower, ensuring efficient service delivery."
+#~ msgstr "El módulo de suministro de personal de Odoo automatiza la asignación de recursos adecuados a los requisitos del cliente y simplifica la gestión del personal para prestar el servicio de forma eficiente."
+
+#~ msgid ""
+#~ "To\n"
+#~ "                                                    "
+#~ msgstr "a"
+
+#~ msgid "To Date:"
+#~ msgstr "Fecha hasta:"
+
+#~ msgid ""
+#~ "Totally\n"
+#~ "                                                "
+#~ msgstr "Totalmente"
+
+#~ msgid ""
+#~ "Yearly\n"
+#~ "                                                "
+#~ msgstr "Anual"

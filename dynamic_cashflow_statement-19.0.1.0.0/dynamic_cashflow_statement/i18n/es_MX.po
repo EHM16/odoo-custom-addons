@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:15+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,52 +16,109 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model_terms:static/src/xml/cashflow.xml
-msgid ""
-"\n"
-"                                                                    Show Journal Entry\n"
-"                                                                "
-msgstr ""
-"\n"
-"                                                                    Mostrar asiento contable\n"
-"                                                                "
-
-#: model_terms:static/src/xml/cashflow.xml
+#. module: dynamic_cashflow_statement
+#. odoo-javascript
+#: code:addons/dynamic_cashflow_statement/static/src/xml/cashflow.xml:0
 msgid "Balance"
 msgstr "Saldo"
 
-#: model_terms:static/src/xml/cashflow.xml
+#. module: dynamic_cashflow_statement
+#. odoo-javascript
+#: code:addons/dynamic_cashflow_statement/static/src/xml/cashflow.xml:0
 msgid "Cash In"
 msgstr "Cobrar"
 
-#: model_terms:static/src/xml/cashflow.xml
+#. module: dynamic_cashflow_statement
+#. odoo-javascript
+#: code:addons/dynamic_cashflow_statement/static/src/xml/cashflow.xml:0
 msgid "Cash Out"
 msgstr "Retiro de efectivo"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Dynamic Cash Flow Statements"
+#. module: dynamic_cashflow_statement
+#: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: dynamic_cashflow_statement
+#: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: dynamic_cashflow_statement
+#: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: dynamic_cashflow_statement
+#: model:ir.ui.menu,name:dynamic_cashflow_statement.cashflow_menu
+#: model:ir.ui.menu,name:dynamic_cashflow_statement.cashflow_menu_root
+#, fuzzy
+#| msgid "Dynamic Cash Flow Statements"
+msgid "Dynamic Cash Flow Statement"
 msgstr "Estados de flujo de efectivo dinámicos"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid ""
-"Generates a Dynamic Statement that Highlights Cash Inflows \n"
-"    and Outflows."
+#. module: dynamic_cashflow_statement
+#: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__id
+msgid "ID"
 msgstr ""
-"Genera un estado de cuenta dinámico que destaca las entradas de efectivo \n"
-"    y Salidas."
 
-#: model_terms:static/src/xml/cashflow.xml
+#. module: dynamic_cashflow_statement
+#: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: dynamic_cashflow_statement
+#: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: dynamic_cashflow_statement
+#. odoo-javascript
+#: code:addons/dynamic_cashflow_statement/static/src/xml/cashflow.xml:0
 msgid "Name"
 msgstr "Nombre"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"Provides a drill-down view of cashflow statements, \n"
-"    allowing users to easily navigate and analyze journal entries."
+#. module: dynamic_cashflow_statement
+#: model:ir.model,name:dynamic_cashflow_statement.model_cashflow
+msgid "Report advanced cash flows"
 msgstr ""
-"Proporciona una vista detallada de los estados de flujo de efectivo, \n"
-"    permitiendo a los usuarios navegar y analizar fácilmente las entradas del diario."
 
-#: model_terms:static/src/xml/cashflow.xml
+#. module: dynamic_cashflow_statement
+#. odoo-javascript
+#: code:addons/dynamic_cashflow_statement/static/src/xml/cashflow.xml:0
+msgid "Show Journal Entry"
+msgstr ""
+
+#. module: dynamic_cashflow_statement
+#. odoo-javascript
+#: code:addons/dynamic_cashflow_statement/static/src/xml/cashflow.xml:0
 msgid "Total"
 msgstr "Total"
+
+#. module: dynamic_cashflow_statement
+#: model:ir.actions.client,name:dynamic_cashflow_statement.cash_flow_action
+msgid "cashflow"
+msgstr ""
+
+#~ msgid ""
+#~ "\n"
+#~ "                                                                    Show Journal Entry\n"
+#~ "                                                                "
+#~ msgstr ""
+#~ "\n"
+#~ "                                                                    Mostrar asiento contable\n"
+#~ "                                                                "
+
+#~ msgid ""
+#~ "Generates a Dynamic Statement that Highlights Cash Inflows \n"
+#~ "    and Outflows."
+#~ msgstr ""
+#~ "Genera un estado de cuenta dinámico que destaca las entradas de efectivo \n"
+#~ "    y Salidas."
+
+#~ msgid ""
+#~ "Provides a drill-down view of cashflow statements, \n"
+#~ "    allowing users to easily navigate and analyze journal entries."
+#~ msgstr ""
+#~ "Proporciona una vista detallada de los estados de flujo de efectivo, \n"
+#~ "    permitiendo a los usuarios navegar y analizar fácilmente las entradas del diario."

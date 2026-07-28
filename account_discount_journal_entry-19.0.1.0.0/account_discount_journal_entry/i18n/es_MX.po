@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:13+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,44 +16,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Account Discount Journal Entry"
-msgstr "Asiento contable de descuentos"
-
-#: code:models/product_category.py:43
-msgid "Account for setting up customer discounts"
-msgstr "Cuenta para configurar los descuentos de clientes"
-
-#: code:models/product_category.py:35
-msgid "Account for setting up vendor discounts"
-msgstr "Cuenta para configurar los descuentos de proveedores"
-
-#: model_terms:views/product_category_views.xml
+#. module: account_discount_journal_entry
+#: model_terms:ir.ui.view,arch_db:account_discount_journal_entry.product_category_view_form
 msgid "Account Journal Properties"
 msgstr "Propiedades contables"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid ""
-"Create discount journal items for discounts in invoices and \n"
-"    bills"
-msgstr ""
-"Cree apuntes contables para los descuentos en facturas de clientes y \n"
-"    proveedores"
+#. module: account_discount_journal_entry
+#: model:ir.model.fields,help:account_discount_journal_entry.field_product_category__customer_account_discount_id
+msgid "Account for setting up customer discounts"
+msgstr "Cuenta para configurar los descuentos de clientes"
 
-#: code:models/product_category.py:43
+#. module: account_discount_journal_entry
+#: model:ir.model.fields,help:account_discount_journal_entry.field_product_category__vendor_account_discount_id
+msgid "Account for setting up vendor discounts"
+msgstr "Cuenta para configurar los descuentos de proveedores"
+
+#. module: account_discount_journal_entry
+#: model:ir.model.fields,field_description:account_discount_journal_entry.field_product_category__customer_account_discount_id
 msgid "Customer Discount Account"
 msgstr "Cuenta de descuentos de clientes"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"This module enables users to generate journal entries \n"
-"    for discounts that are offered on invoices or bills, and these discounts \n"
-"    are accounted for after the invoices or bills have been posted."
+#. module: account_discount_journal_entry
+#: model:ir.model.fields,field_description:account_discount_journal_entry.field_account_move__display_name
+#: model:ir.model.fields,field_description:account_discount_journal_entry.field_product_category__display_name
+msgid "Display Name"
 msgstr ""
-"Este módulo permite a los usuarios generar asientos de diario. \n"
-"    para los descuentos que se ofrecen en facturas o recibos, y estos descuentos \n"
-"    se contabilizan después de que se hayan contabilizado las facturas o efectos."
 
-#: code:models/product_category.py:35
+#. module: account_discount_journal_entry
+#: model:ir.model.fields,field_description:account_discount_journal_entry.field_account_move__id
+#: model:ir.model.fields,field_description:account_discount_journal_entry.field_product_category__id
+msgid "ID"
+msgstr ""
+
+#. module: account_discount_journal_entry
+#: model:ir.model,name:account_discount_journal_entry.model_account_move
+#, fuzzy
+#| msgid "Account Discount Journal Entry"
+msgid "Journal Entry"
+msgstr "Asiento contable de descuentos"
+
+#. module: account_discount_journal_entry
+#: model:ir.model,name:account_discount_journal_entry.model_product_category
+msgid "Product Category"
+msgstr ""
+
+#. module: account_discount_journal_entry
+#: model:ir.model.fields,field_description:account_discount_journal_entry.field_product_category__vendor_account_discount_id
 msgid "Vendor Discount Account"
 msgstr "Cuenta de descuentos de proveedores"
+
+#~ msgid ""
+#~ "Create discount journal items for discounts in invoices and \n"
+#~ "    bills"
+#~ msgstr ""
+#~ "Cree apuntes contables para los descuentos en facturas de clientes y \n"
+#~ "    proveedores"
+
+#~ msgid ""
+#~ "This module enables users to generate journal entries \n"
+#~ "    for discounts that are offered on invoices or bills, and these discounts \n"
+#~ "    are accounted for after the invoices or bills have been posted."
+#~ msgstr ""
+#~ "Este módulo permite a los usuarios generar asientos de diario. \n"
+#~ "    para los descuentos que se ofrecen en facturas o recibos, y estos descuentos \n"
+#~ "    se contabilizan después de que se hayan contabilizado las facturas o efectos."

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <!-- ======================= Venues ======================= -->
+    <record id="demo_venue_pavilion" model="res.partner">
+        <field name="name">The Grand Pavilion</field>
+        <field name="is_event_venue" eval="True"/>
+        <field name="venue_capacity">300</field>
+        <field name="venue_amenities">Garden terrace, bridal suite, in-house bar, parking for 120 cars</field>
+        <field name="city">Riverside</field>
+        <field name="phone">+1 555 0100</field>
+    </record>
+    <record id="demo_venue_loft" model="res.partner">
+        <field name="name">Riverside Loft</field>
+        <field name="is_event_venue" eval="True"/>
+        <field name="venue_capacity">120</field>
+        <field name="venue_amenities">Rooftop, skyline view, built-in AV, freight elevator</field>
+        <field name="city">Downtown</field>
+        <field name="phone">+1 555 0101</field>
+    </record>
+
+    <!-- ======================= Vendors ======================= -->
+    <record id="demo_vendor_blooms" model="res.partner">
+        <field name="name">Bella Blooms Florals</field>
+        <field name="is_event_vendor" eval="True"/>
+        <field name="vendor_category_ids" eval="[(6, 0, [ref('vendor_category_florist'), ref('vendor_category_decor')])]"/>
+        <field name="vendor_rating">5</field>
+        <field name="email">hello@bellablooms.example.com</field>
+        <field name="phone">+1 555 0201</field>
+    </record>
+    <record id="demo_vendor_catering" model="res.partner">
+        <field name="name">Silver Spoon Catering</field>
+        <field name="is_event_vendor" eval="True"/>
+        <field name="vendor_category_ids" eval="[(6, 0, [ref('vendor_category_catering')])]"/>
+        <field name="vendor_rating">4</field>
+        <field name="email">events@silverspoon.example.com</field>
+        <field name="phone">+1 555 0202</field>
+    </record>
+    <record id="demo_vendor_av" model="res.partner">
+        <field name="name">PulseWave AV Productions</field>
+        <field name="is_event_vendor" eval="True"/>
+        <field name="vendor_category_ids" eval="[(6, 0, [ref('vendor_category_av')])]"/>
+        <field name="vendor_rating">4</field>
+        <field name="email">crew@pulsewave.example.com</field>
+        <field name="phone">+1 555 0203</field>
+    </record>
+    <record id="demo_vendor_photo" model="res.partner">
+        <field name="name">Lumière Photography</field>
+        <field name="is_event_vendor" eval="True"/>
+        <field name="vendor_category_ids" eval="[(6, 0, [ref('vendor_category_photography')])]"/>
+        <field name="vendor_rating">5</field>
+        <field name="email">studio@lumiere.example.com</field>
+        <field name="phone">+1 555 0204</field>
+    </record>
+    <record id="demo_vendor_sounds" model="res.partner">
+        <field name="name">Velvet Sounds Entertainment</field>
+        <field name="is_event_vendor" eval="True"/>
+        <field name="vendor_category_ids" eval="[(6, 0, [ref('vendor_category_entertainment')])]"/>
+        <field name="vendor_rating">4</field>
+        <field name="email">book@velvetsounds.example.com</field>
+        <field name="phone">+1 555 0205</field>
+    </record>
+    <record id="demo_vendor_shuttle" model="res.partner">
+        <field name="name">Swift Shuttles</field>
+        <field name="is_event_vendor" eval="True"/>
+        <field name="vendor_category_ids" eval="[(6, 0, [ref('vendor_category_transport')])]"/>
+        <field name="vendor_rating">3</field>
+        <field name="email">dispatch@swiftshuttles.example.com</field>
+        <field name="phone">+1 555 0206</field>
+    </record>
+
+    <!-- ======================= Clients ======================= -->
+    <record id="demo_client_emma" model="res.partner">
+        <field name="name">Emma Dawson</field>
+        <field name="email">emma.dawson@example.com</field>
+        <field name="phone">+1 555 0301</field>
+    </record>
+    <record id="demo_client_northwind" model="res.partner">
+        <field name="name">Northwind Technologies</field>
+        <field name="is_company" eval="True"/>
+        <field name="email">events@northwind.example.com</field>
+        <field name="phone">+1 555 0302</field>
+    </record>
+    <record id="demo_client_harper" model="res.partner">
+        <field name="name">Harper Foundation</field>
+        <field name="is_company" eval="True"/>
+        <field name="email">office@harperfoundation.example.com</field>
+        <field name="phone">+1 555 0303</field>
+    </record>
+    <record id="demo_client_sofia" model="res.partner">
+        <field name="name">Sofia Marchetti</field>
+        <field name="email">sofia.marchetti@example.com</field>
+        <field name="phone">+1 555 0304</field>
+    </record>
+
+    <!-- ======================= Team ======================= -->
+    <record id="demo_employee_ava" model="hr.employee">
+        <field name="name">Ava Sterling</field>
+        <field name="work_email">ava@agency.example.com</field>
+        <field name="job_title">Senior Event Planner</field>
+        <field name="show_on_planner_website" eval="True"/>
+        <field name="planner_website_role">Senior Event Planner</field>
+    </record>
+    <record id="demo_employee_liam" model="hr.employee">
+        <field name="name">Liam Cortez</field>
+        <field name="work_email">liam@agency.example.com</field>
+        <field name="job_title">Day-of Coordinator</field>
+        <field name="show_on_planner_website" eval="True"/>
+        <field name="planner_website_role">Day-of Coordinator</field>
+    </record>
+    <record id="demo_employee_mia" model="hr.employee">
+        <field name="name">Mia Okafor</field>
+        <field name="work_email">mia@agency.example.com</field>
+        <field name="job_title">Production Lead</field>
+        <field name="show_on_planner_website" eval="True"/>
+        <field name="planner_website_role">Production Lead</field>
+    </record>
+
+    <!-- ======================= Packages ======================= -->
+    <record id="demo_product_wedding_pkg" model="product.template">
+        <field name="name">Wedding Coordination Package</field>
+        <field name="type">service</field>
+        <field name="invoice_policy">order</field>
+        <field name="list_price">12000</field>
+        <field name="description_sale">Full planning and day-of coordination: vendor management, timeline, on-site team.</field>
+    </record>
+    <record id="demo_product_corporate_pkg" model="product.template">
+        <field name="name">Corporate Event Package</field>
+        <field name="type">service</field>
+        <field name="invoice_policy">order</field>
+        <field name="list_price">8500</field>
+        <field name="description_sale">End-to-end corporate event production: venue, AV, catering coordination and staffing.</field>
+    </record>
+    <record id="demo_product_conference_pkg" model="product.template">
+        <field name="name">Conference Planning Package</field>
+        <field name="type">service</field>
+        <field name="invoice_policy">order</field>
+        <field name="list_price">15000</field>
+        <field name="description_sale">Comprehensive conference planning including venue, speakers, registration, and logistics.</field>
+    </record>
+    <record id="demo_product_party_pkg" model="product.template">
+        <field name="name">Private Party Package</field>
+        <field name="type">service</field>
+        <field name="invoice_policy">order</field>
+        <field name="list_price">5000</field>
+        <field name="description_sale">Custom party planning including theme decor, catering, and entertainment booking.</field>
+    </record>
+    <record id="demo_product_gala_pkg" model="product.template">
+        <field name="name">Gala &amp; Fundraiser Package</field>
+        <field name="type">service</field>
+        <field name="invoice_policy">order</field>
+        <field name="list_price">20000</field>
+        <field name="description_sale">Full gala production: elegant staging, ticketing, VIP management, and run of show.</field>
+    </record>
+
+    <!-- ======================= Tags ======================= -->
+    <record id="demo_tag_outdoor" model="planner.event.tag">
+        <field name="name">Outdoor</field>
+        <field name="color">10</field>
+    </record>
+    <record id="demo_tag_blacktie" model="planner.event.tag">
+        <field name="name">Black Tie</field>
+        <field name="color">1</field>
+    </record>
+
+    <!-- ======================= Publish event types on the website ======================= -->
+    <record id="event_type_wedding" model="planner.event.type">
+        <field name="website_published" eval="True"/>
+        <field name="website_tagline">Your love story, staged to perfection</field>
+        <field name="cover_image" type="base64" file="dev_event_planner_management/static/img/covers/wedding.png"/>
+        <field name="default_package_product_ids" eval="[(4, ref('demo_product_wedding_pkg'))]"/>
+        <field name="website_description" type="html">
+            <p>From the first venue visit to the last dance, we plan every detail of your
+            wedding day: venue, florals, catering, photography, music and a
+            minute-by-minute timeline — so you can simply be present.</p>
+        </field>
+    </record>
+    <record id="event_type_corporate" model="planner.event.type">
+        <field name="website_published" eval="True"/>
+        <field name="website_tagline">Events that mean business</field>
+        <field name="cover_image" type="base64" file="dev_event_planner_management/static/img/covers/corporate.png"/>
+        <field name="default_package_product_ids" eval="[(4, ref('demo_product_corporate_pkg'))]"/>
+        <field name="website_description" type="html">
+            <p>Product launches, summits and team celebrations, produced end-to-end:
+            venue sourcing, AV and staging, catering, registration and on-site
+            coordination — on brand and on budget.</p>
+        </field>
+    </record>
+    <record id="event_type_conference" model="planner.event.type">
+        <field name="website_published" eval="True"/>
+        <field name="website_tagline">Inspire, educate, and connect</field>
+        <field name="cover_image" type="base64" file="dev_event_planner_management/static/img/covers/conference.png"/>
+        <field name="default_package_product_ids" eval="[(4, ref('demo_product_conference_pkg'))]"/>
+        <field name="website_description" type="html">
+            <p>From large-scale conventions to intimate industry gatherings, we manage
+            registration, speaker logistics, exhibition spaces, and technical production
+            flawlessly.</p>
+        </field>
+    </record>
+    <record id="event_type_party" model="planner.event.type">
+        <field name="website_published" eval="True"/>
+        <field name="website_tagline">Memories that last a lifetime</field>
+        <field name="cover_image" type="base64" file="dev_event_planner_management/static/img/covers/party.png"/>
+        <field name="default_package_product_ids" eval="[(4, ref('demo_product_party_pkg'))]"/>
+        <field name="website_description" type="html">
+            <p>Birthdays, anniversaries, and milestones celebrated in style.
+            Custom themes, lively entertainment, and delectable catering to give you
+            the perfect celebration.</p>
+        </field>
+    </record>
+    <record id="event_type_gala" model="planner.event.type">
+        <field name="website_published" eval="True"/>
+        <field name="website_tagline">Fundraisers your guests remember</field>
+        <field name="cover_image" type="base64" file="dev_event_planner_management/static/img/covers/gala.png"/>
+        <field name="default_package_product_ids" eval="[(4, ref('demo_product_gala_pkg'))]"/>
+        <field name="website_description" type="html">
+            <p>Galas and fundraisers with impact: elegant staging, seamless guest flow,
+            auction logistics and a run of show timed to the minute.</p>
+        </field>
+    </record>
+
+    <!-- ======================= Event 1: wedding in planning ======================= -->
+    <record id="demo_event_wedding" model="planner.event">
+        <field name="name">Emma &amp; Noah — Garden Wedding</field>
+        <field name="partner_id" ref="demo_client_emma"/>
+        <field name="event_type_id" ref="event_type_wedding"/>
+        <field name="stage_id" ref="stage_planning"/>
+        <field name="date_start" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 14:00:00')"/>
+        <field name="date_end" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 23:00:00')"/>
+        <field name="venue_id" ref="demo_venue_pavilion"/>
+        <field name="guest_count_expected">140</field>
+        <field name="tag_ids" eval="[(6, 0, [ref('demo_tag_outdoor')])]"/>
+        <field name="on_site_contact">Pavilion duty manager — +1 555 0100</field>
+    </record>
+
+    <record id="demo_meal_chicken" model="planner.meal.choice">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">Roast Chicken</field>
+    </record>
+    <record id="demo_meal_fish" model="planner.meal.choice">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">Grilled Salmon</field>
+    </record>
+    <record id="demo_meal_veg" model="planner.meal.choice">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">Vegetarian</field>
+        <field name="notes">Vegan on request</field>
+    </record>
+
+    <record id="demo_guest_1" model="planner.event.guest">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">Dawson Family Table</field>
+        <field name="seats">8</field>
+        <field name="rsvp_state">accepted</field>
+        <field name="meal_choice_id" ref="demo_meal_chicken"/>
+        <field name="table_ref">T1</field>
+        <field name="is_vip" eval="True"/>
+    </record>
+    <record id="demo_guest_2" model="planner.event.guest">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">College Friends</field>
+        <field name="seats">10</field>
+        <field name="rsvp_state">accepted</field>
+        <field name="meal_choice_id" ref="demo_meal_fish"/>
+        <field name="table_ref">T4</field>
+    </record>
+    <record id="demo_guest_3" model="planner.event.guest">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">Marchetti Cousins</field>
+        <field name="seats">6</field>
+        <field name="rsvp_state">pending</field>
+        <field name="meal_choice_id" ref="demo_meal_veg"/>
+        <field name="table_ref">T6</field>
+    </record>
+
+    <record id="demo_vline_florist" model="planner.event.vendor.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="category_id" ref="vendor_category_florist"/>
+        <field name="vendor_id" ref="demo_vendor_blooms"/>
+        <field name="description">Ceremony arch, centerpieces, bridal bouquet</field>
+        <field name="state">booked</field>
+        <field name="estimated_cost">3500</field>
+        <field name="contracted_cost">3800</field>
+        <field name="arrival_time" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 09:00:00')"/>
+    </record>
+    <record id="demo_vline_catering" model="planner.event.vendor.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="category_id" ref="vendor_category_catering"/>
+        <field name="vendor_id" ref="demo_vendor_catering"/>
+        <field name="description">Plated dinner for 140, canapés, open bar</field>
+        <field name="state">quoted</field>
+        <field name="estimated_cost">11000</field>
+        <field name="arrival_time" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 11:00:00')"/>
+    </record>
+    <record id="demo_vline_photo" model="planner.event.vendor.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="category_id" ref="vendor_category_photography"/>
+        <field name="vendor_id" ref="demo_vendor_photo"/>
+        <field name="description">Full-day photo + video, sneak peek within 48h</field>
+        <field name="state">booked</field>
+        <field name="estimated_cost">2800</field>
+        <field name="contracted_cost">2650</field>
+        <field name="arrival_time" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 12:00:00')"/>
+    </record>
+    <record id="demo_vline_dj" model="planner.event.vendor.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="category_id" ref="vendor_category_entertainment"/>
+        <field name="description">DJ + live saxophone for cocktail hour</field>
+        <field name="state">to_source</field>
+        <field name="estimated_cost">1500</field>
+    </record>
+
+    <record id="demo_budget_florals" model="planner.event.budget.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="category_id" ref="budget_category_decor"/>
+        <field name="description">Florals &amp; décor</field>
+        <field name="vendor_line_id" ref="demo_vline_florist"/>
+        <field name="amount_estimated">3500</field>
+    </record>
+    <record id="demo_budget_fnb" model="planner.event.budget.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="category_id" ref="budget_category_fnb"/>
+        <field name="description">Catering &amp; bar</field>
+        <field name="vendor_line_id" ref="demo_vline_catering"/>
+        <field name="amount_estimated">11000</field>
+    </record>
+    <record id="demo_budget_photo" model="planner.event.budget.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="category_id" ref="budget_category_misc"/>
+        <field name="description">Photography &amp; video</field>
+        <field name="vendor_line_id" ref="demo_vline_photo"/>
+        <field name="amount_estimated">2800</field>
+    </record>
+    <record id="demo_budget_venue" model="planner.event.budget.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="category_id" ref="budget_category_venue"/>
+        <field name="description">Grand Pavilion hire</field>
+        <field name="amount_estimated">6000</field>
+        <field name="amount_contracted">6000</field>
+    </record>
+
+    <record id="demo_sched_w1" model="planner.event.schedule.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">Vendor load-in &amp; floral setup</field>
+        <field name="time_start" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 09:00:00')"/>
+        <field name="time_end" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 12:00:00')"/>
+        <field name="location">Garden terrace</field>
+        <field name="responsible_type">vendor</field>
+        <field name="vendor_line_id" ref="demo_vline_florist"/>
+    </record>
+    <record id="demo_sched_w2" model="planner.event.schedule.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">Ceremony</field>
+        <field name="time_start" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 15:00:00')"/>
+        <field name="time_end" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 15:45:00')"/>
+        <field name="location">Garden terrace</field>
+        <field name="responsible_type">staff</field>
+        <field name="employee_id" ref="demo_employee_liam"/>
+    </record>
+    <record id="demo_sched_w3" model="planner.event.schedule.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">Cocktail hour — live saxophone</field>
+        <field name="time_start" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 16:00:00')"/>
+        <field name="time_end" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 17:00:00')"/>
+        <field name="location">Lobby bar</field>
+        <field name="responsible_type">staff</field>
+        <field name="employee_id" ref="demo_employee_mia"/>
+    </record>
+    <record id="demo_sched_w4" model="planner.event.schedule.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">Dinner service &amp; speeches</field>
+        <field name="time_start" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 18:00:00')"/>
+        <field name="time_end" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 21:00:00')"/>
+        <field name="location">Main hall</field>
+        <field name="responsible_type">vendor</field>
+        <field name="vendor_line_id" ref="demo_vline_catering"/>
+    </record>
+    <record id="demo_sched_w5" model="planner.event.schedule.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="name">First dance &amp; party</field>
+        <field name="time_start" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 21:00:00')"/>
+        <field name="time_end" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 23:00:00')"/>
+        <field name="location">Main hall</field>
+    </record>
+
+    <record id="demo_staff_w1" model="planner.event.staff.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="employee_id" ref="demo_employee_liam"/>
+        <field name="role">coordinator</field>
+        <field name="date_from" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 08:00:00')"/>
+        <field name="date_to" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 23:30:00')"/>
+        <field name="state">confirmed</field>
+    </record>
+    <record id="demo_staff_w2" model="planner.event.staff.line">
+        <field name="event_id" ref="demo_event_wedding"/>
+        <field name="employee_id" ref="demo_employee_mia"/>
+        <field name="role">setup</field>
+        <field name="date_from" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 08:00:00')"/>
+        <field name="date_to" eval="(DateTime.now() + timedelta(days=75)).strftime('%Y-%m-%d 17:00:00')"/>
+        <field name="state">requested</field>
+    </record>
+
+    <!-- ======================= Event 2: corporate summit, booked ======================= -->
+    <record id="demo_event_corporate" model="planner.event">
+        <field name="name">Northwind Annual Summit</field>
+        <field name="partner_id" ref="demo_client_northwind"/>
+        <field name="event_type_id" ref="event_type_corporate"/>
+        <field name="stage_id" ref="stage_booked"/>
+        <field name="date_start" eval="(DateTime.now() + timedelta(days=25)).strftime('%Y-%m-%d 08:30:00')"/>
+        <field name="date_end" eval="(DateTime.now() + timedelta(days=25)).strftime('%Y-%m-%d 18:00:00')"/>
+        <field name="venue_id" ref="demo_venue_loft"/>
+        <field name="guest_count_expected">90</field>
+    </record>
+    <record id="demo_vline_corp_av" model="planner.event.vendor.line">
+        <field name="event_id" ref="demo_event_corporate"/>
+        <field name="category_id" ref="vendor_category_av"/>
+        <field name="vendor_id" ref="demo_vendor_av"/>
+        <field name="description">Stage, LED wall, two wireless mic sets</field>
+        <field name="state">booked</field>
+        <field name="estimated_cost">4200</field>
+        <field name="contracted_cost">4400</field>
+        <field name="arrival_time" eval="(DateTime.now() + timedelta(days=25)).strftime('%Y-%m-%d 06:30:00')"/>
+    </record>
+    <record id="demo_vline_corp_shuttle" model="planner.event.vendor.line">
+        <field name="event_id" ref="demo_event_corporate"/>
+        <field name="category_id" ref="vendor_category_transport"/>
+        <field name="vendor_id" ref="demo_vendor_shuttle"/>
+        <field name="description">Two shuttles, hotel loop every 20 min</field>
+        <field name="state">requested</field>
+        <field name="estimated_cost">900</field>
+    </record>
+    <record id="demo_budget_corp_av" model="planner.event.budget.line">
+        <field name="event_id" ref="demo_event_corporate"/>
+        <field name="category_id" ref="budget_category_av"/>
+        <field name="description">Staging &amp; AV production</field>
+        <field name="vendor_line_id" ref="demo_vline_corp_av"/>
+        <field name="amount_estimated">4200</field>
+    </record>
+    <record id="demo_staff_corp" model="planner.event.staff.line">
+        <field name="event_id" ref="demo_event_corporate"/>
+        <field name="employee_id" ref="demo_employee_ava"/>
+        <field name="role">coordinator</field>
+        <field name="date_from" eval="(DateTime.now() + timedelta(days=25)).strftime('%Y-%m-%d 06:00:00')"/>
+        <field name="date_to" eval="(DateTime.now() + timedelta(days=25)).strftime('%Y-%m-%d 19:00:00')"/>
+        <field name="state">confirmed</field>
+    </record>
+
+    <!-- ======================= Event 3: past gala (portfolio + stats) ======================= -->
+    <record id="demo_event_gala" model="planner.event">
+        <field name="name">Harper Foundation Gala</field>
+        <field name="partner_id" ref="demo_client_harper"/>
+        <field name="event_type_id" ref="event_type_gala"/>
+        <field name="stage_id" ref="stage_done"/>
+        <field name="date_start" eval="(DateTime.now() - timedelta(days=60)).strftime('%Y-%m-%d 18:00:00')"/>
+        <field name="date_end" eval="(DateTime.now() - timedelta(days=60)).strftime('%Y-%m-%d 23:30:00')"/>
+        <field name="venue_id" ref="demo_venue_pavilion"/>
+        <field name="guest_count_expected">380</field>
+        <field name="guest_count_final">400</field>
+        <field name="headcount_locked" eval="True"/>
+        <field name="tag_ids" eval="[(6, 0, [ref('demo_tag_blacktie')])]"/>
+        <field name="is_website_published" eval="True"/>
+        <field name="website_title">Black-Tie Charity Gala for 400</field>
+        <field name="website_description">A seated fundraising dinner with live auction, string quartet and a record-breaking result for the foundation.</field>
+        <field name="survey_sent" eval="True"/>
+    </record>
+
+    <!-- ======================= Event 4: tentative inquiry ======================= -->
+    <record id="demo_event_party" model="planner.event">
+        <field name="name">Sofia's 30th — Rooftop Party</field>
+        <field name="partner_id" ref="demo_client_sofia"/>
+        <field name="event_type_id" ref="event_type_party"/>
+        <field name="stage_id" ref="stage_consultation"/>
+        <field name="date_start" eval="(DateTime.now() + timedelta(days=48)).strftime('%Y-%m-%d 19:00:00')"/>
+        <field name="date_end" eval="(DateTime.now() + timedelta(days=48)).strftime('%Y-%m-%d 23:59:00')"/>
+        <field name="venue_id" ref="demo_venue_loft"/>
+        <field name="guest_count_expected">60</field>
+    </record>
+</odoo>

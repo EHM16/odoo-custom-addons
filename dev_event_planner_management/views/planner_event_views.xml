@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="planner_event_view_form" model="ir.ui.view">
+        <field name="name">planner.event.form</field>
+        <field name="model">planner.event</field>
+        <field name="arch" type="xml">
+            <form string="Event">
+                <header>
+                    <button name="action_create_quotation" type="object" string="New Quotation" class="btn-primary" invisible="is_cancelled"/>
+                    <button name="action_book" type="object" string="Mark as Booked" invisible="is_booked or is_cancelled" confirm="Mark this event as booked? This creates the project, checklist and payment schedule."/>
+                    <button name="action_generate_checklist" type="object" string="Generate Checklist" invisible="not is_booked or is_cancelled"/>
+                    <button name="action_send_beo" type="object" string="Send BEO" invisible="not is_booked or is_cancelled" confirm="Send the current BEO PDF to all vendors, confirmed staff and the coordinator?"/>
+                    <button name="action_reschedule" type="object" string="Reschedule" invisible="is_cancelled"/>
+                    <button name="action_cancel_event" type="object" string="Cancel Event" invisible="is_cancelled"/>
+                    <button name="action_duplicate_event" type="object" string="Duplicate"/>
+                    <field name="stage_id" widget="statusbar" options="{'clickable': '1'}"/>
+                </header>
+                <sheet>
+                    <div class="alert alert-warning" role="alert" invisible="not conflict_message">
+                        <field name="conflict_message"/>
+                    </div>
+                    <div class="alert alert-danger" role="alert" invisible="not payment_schedule_warning">
+                        <field name="payment_schedule_warning"/>
+                    </div>
+                    <widget name="web_ribbon" title="Cancelled" bg_color="text-bg-danger" invisible="not is_cancelled"/>
+                    <widget name="web_ribbon" title="Locked" bg_color="text-bg-warning" invisible="not headcount_locked or is_cancelled"/>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_quotations" type="object" class="oe_stat_button" icon="fa-file-text-o">
+                            <field name="sale_order_count" widget="statinfo" string="Quotes"/>
+                        </button>
+                        <button name="action_view_tasks" type="object" class="oe_stat_button" icon="fa-check-square-o" invisible="not project_id">
+                            <div class="o_stat_info">
+                                <span class="o_stat_value">
+                                    <field name="task_progress" digits="[16,0]"/>
+%
+                                </span>
+                                <span class="o_stat_text">Checklist</span>
+                            </div>
+                        </button>
+                        <button name="action_view_purchase_orders" type="object" class="oe_stat_button" icon="fa-truck">
+                            <field name="purchase_order_count" widget="statinfo" string="Vendor POs"/>
+                        </button>
+                        <button name="action_view_invoices" type="object" class="oe_stat_button" icon="fa-pencil-square-o">
+                            <field name="invoice_count" widget="statinfo" string="Invoices"/>
+                        </button>
+                        <button name="action_view_meetings" type="object" class="oe_stat_button" icon="fa-calendar">
+                            <field name="meeting_count" widget="statinfo" string="Meetings"/>
+                        </button>
+                        <button name="action_view_guests" type="object" class="oe_stat_button" icon="fa-users">
+                            <field name="guest_count" widget="statinfo" string="Guests"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h3>
+                            <field name="reference" readonly="1"/>
+                        </h3>
+                        <h1>
+                            <field name="name" placeholder="e.g. Smith &amp; Jones Wedding"/>
+                        </h1>
+                        <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                    </div>
+                    <group>
+                        <group string="Client">
+                            <field name="partner_id"/>
+                            <field name="contact_person"/>
+                            <field name="client_phone"/>
+                            <field name="client_email"/>
+                            <field name="lead_id" invisible="not lead_id"/>
+                        </group>
+                        <group string="Event">
+                            <field name="event_type_id"/>
+                            <field name="date_start"/>
+                            <field name="date_end"/>
+                            <field name="date_tz"/>
+                            <field name="venue_id"/>
+                            <field name="venue_capacity" invisible="not venue_id"/>
+                            <field name="on_site_contact"/>
+                        </group>
+                        <group string="Team">
+                            <field name="user_id" widget="many2one_avatar_user"/>
+                            <field name="coordinator_id" widget="many2one_avatar_user"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                            <field name="date_booked" invisible="not date_booked"/>
+                        </group>
+                        <group string="Guests &amp; Money">
+                            <field name="guest_count_expected"/>
+                            <field name="guest_count_final" invisible="not headcount_locked"/>
+                            <field name="currency_id" invisible="1"/>
+                            <field name="total_revenue"/>
+                            <field name="budget_total_contracted"/>
+                            <field name="margin"/>
+                            <label for="margin_pct"/>
+                            <div>
+                                <field name="margin_pct" class="oe_inline" digits="[16,1]"/>
+%
+                            </div>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Overview" name="overview">
+                            <group>
+                                <field name="properties" nolabel="1" columns="4"/>
+                            </group>
+                            <field name="note" placeholder="Client-visible notes..."/>
+                        </page>
+                        <page string="Vendors" name="vendors">
+                            <field name="vendor_line_ids">
+                                <list editable="bottom" decoration-muted="state == 'cancelled'" decoration-success="state in ('booked', 'confirmed')">
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="category_id"/>
+                                    <field name="vendor_id"/>
+                                    <field name="description"/>
+                                    <field name="estimated_cost" sum="Total"/>
+                                    <field name="contracted_cost" sum="Total"/>
+                                    <field name="amount_billed" sum="Total"/>
+                                    <field name="arrival_time" optional="hide"/>
+                                    <field name="contact_phone" optional="hide"/>
+                                    <field name="needs_reconfirmation" widget="boolean_toggle" optional="show"/>
+                                    <field name="state" widget="badge" decoration-success="state in ('booked', 'confirmed')" decoration-info="state in ('requested', 'quoted')"/>
+                                    <field name="purchase_order_id" readonly="1" optional="show"/>
+                                    <button name="action_create_rfq" type="object" icon="fa-truck" title="Create RFQ" invisible="purchase_order_id or not vendor_id"/>
+                                    <button name="action_cancel_line" type="object" icon="fa-times" title="Cancel booking (vendor drop-out)" invisible="state == 'cancelled'" confirm="Cancel this vendor booking? Linked orders are cancelled or flagged, billed amounts become cancellation fees."/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Budget" name="budget">
+                            <field name="budget_line_ids">
+                                <list editable="bottom">
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="category_id"/>
+                                    <field name="description"/>
+                                    <field name="vendor_line_id" domain="[('event_id', '=', parent.id)]"/>
+                                    <field name="amount_estimated" sum="Estimated"/>
+                                    <field name="amount_contracted" sum="Contracted"/>
+                                    <field name="amount_actual" sum="Actual"/>
+                                    <field name="variance" sum="Variance"/>
+                                </list>
+                            </field>
+                            <group class="oe_subtotal_footer">
+                                <field name="budget_total_estimated"/>
+                                <field name="budget_total_contracted"/>
+                                <field name="budget_total_actual"/>
+                            </group>
+                        </page>
+                        <page string="Run of Show" name="schedule">
+                            <field name="schedule_line_ids">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="time_start"/>
+                                    <field name="time_end"/>
+                                    <field name="name"/>
+                                    <field name="location"/>
+                                    <field name="responsible_type"/>
+                                    <field name="employee_id" invisible="responsible_type != 'staff'"/>
+                                    <field name="vendor_line_id" invisible="responsible_type != 'vendor'"/>
+                                    <field name="notes" optional="hide"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Staff" name="staff">
+                            <field name="staff_line_ids">
+                                <list editable="bottom" decoration-muted="state in ('declined', 'cancelled')" decoration-success="state == 'confirmed'">
+                                    <field name="employee_id" widget="many2one_avatar_employee"/>
+                                    <field name="role"/>
+                                    <field name="role_note" optional="hide"/>
+                                    <field name="date_from"/>
+                                    <field name="date_to"/>
+                                    <field name="state" widget="badge" decoration-success="state == 'confirmed'" decoration-info="state == 'requested'"/>
+                                    <button name="action_request" type="object" icon="fa-paper-plane" title="Request confirmation" invisible="state != 'draft'"/>
+                                    <button name="action_confirm" type="object" icon="fa-check" title="Confirm" invisible="state not in ('draft', 'requested')"/>
+                                    <button name="action_decline" type="object" icon="fa-times" title="Decline" invisible="state not in ('draft', 'requested')"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Guests" name="guests">
+                            <group>
+                                <group>
+                                    <field name="guest_count"/>
+                                    <field name="guest_seats"/>
+                                </group>
+                            </group>
+                            <separator string="Meal Choices"/>
+                            <field name="meal_choice_ids">
+                                <list editable="bottom">
+                                    <field name="name"/>
+                                    <field name="notes"/>
+                                    <field name="guest_count"/>
+                                </list>
+                            </field>
+                            <separator string="Guest List"/>
+                            <field name="guest_ids">
+                                <list editable="bottom">
+                                    <field name="name"/>
+                                    <field name="email" optional="show"/>
+                                    <field name="phone" optional="hide"/>
+                                    <field name="seats"/>
+                                    <field name="rsvp_state" decoration-success="rsvp_state == 'accepted'" decoration-danger="rsvp_state == 'declined'"/>
+                                    <field name="meal_choice_id"/>
+                                    <field name="table_ref" optional="show"/>
+                                    <field name="is_vip" optional="show"/>
+                                    <field name="notes" optional="hide"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Payments" name="payments">
+                            <field name="payment_line_ids">
+                                <list editable="bottom" decoration-danger="state == 'overdue'" decoration-success="state == 'paid'">
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="percentage"/>
+                                    <field name="fixed_amount" optional="hide"/>
+                                    <field name="amount"/>
+                                    <field name="trigger" optional="show"/>
+                                    <field name="days_offset" optional="show"/>
+                                    <field name="due_date"/>
+                                    <field name="state" widget="badge" decoration-success="state == 'paid'" decoration-danger="state == 'overdue'"/>
+                                    <button name="action_create_invoice" type="object" icon="fa-pencil-square-o" title="Create invoice" invisible="invoice_id"/>
+                                    <button name="action_view_invoice" type="object" icon="fa-external-link" title="Open invoice" invisible="not invoice_id"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Internal Notes" name="internal" groups="dev_event_planner_management.group_event_planner_user">
+                            <field name="internal_brief" placeholder="Internal brief — never shown to the client..."/>
+                        </page>
+                        <page string="Portfolio" name="portfolio" groups="dev_event_planner_management.group_event_planner_manager">
+                            <group>
+                                <group>
+                                    <field name="is_website_published"/>
+                                    <field name="website_title" placeholder="e.g. Garden Wedding for 150" invisible="not is_website_published"/>
+                                    <field name="website_description" invisible="not is_website_published"/>
+                                </group>
+                                <group>
+                                    <field name="cover_image" widget="image" class="oe_avatar" invisible="not is_website_published"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="planner_event_view_kanban" model="ir.ui.view">
+        <field name="name">planner.event.kanban</field>
+        <field name="model">planner.event</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="stage_id" class="o_kanban_small_column" quick_create="false" sample="1">
+                <field name="color"/>
+                <field name="is_cancelled"/>
+                <field name="event_type_id"/>
+                <templates>
+                    <t t-name="card">
+                        <div t-attf-class="oe_kanban_card d-flex flex-column">
+                            <div class="d-flex justify-content-between">
+                                <strong>
+                                    <field name="name"/>
+                                </strong>
+                                <field name="kanban_state" widget="state_selection"/>
+                            </div>
+                            <div class="text-muted">
+                                <field name="partner_id"/>
+                            </div>
+                            <div>
+                                <i class="fa fa-calendar me-1" title="Date"/>
+                                <field name="date_start" widget="datetime"/>
+                            </div>
+                            <div t-if="record.venue_id.raw_value">
+                                <i class="fa fa-map-marker me-1" title="Venue"/>
+                                <field name="venue_id"/>
+                            </div>
+                            <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                            <field name="properties" widget="properties"/>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span>
+                                    <i class="fa fa-users me-1" title="Guests"/>
+                                    <field name="guest_count_expected"/>
+                                </span>
+                                <span t-if="record.margin_pct.raw_value" t-attf-class="badge #{record.margin_pct.raw_value >= 20 ? 'text-bg-success' : 'text-bg-warning'}">
+                                    <field name="margin_pct" digits="[16,0]"/>
+%
+                                </span>
+                                <field name="user_id" widget="many2one_avatar_user"/>
+                            </div>
+                            <div class="mt-1">
+                                <field name="activity_ids" widget="kanban_activity"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="planner_event_view_list" model="ir.ui.view">
+        <field name="name">planner.event.list</field>
+        <field name="model">planner.event</field>
+        <field name="arch" type="xml">
+            <list decoration-muted="is_cancelled">
+                <field name="reference"/>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="event_type_id" optional="show"/>
+                <field name="date_start"/>
+                <field name="venue_id" optional="show"/>
+                <field name="guest_count_expected" optional="show"/>
+                <field name="user_id" widget="many2one_avatar_user"/>
+                <field name="stage_id"/>
+                <field name="is_cancelled" column_invisible="1"/>
+                <field name="total_revenue" optional="show" sum="Total"/>
+                <field name="margin" optional="hide" sum="Total"/>
+                <field name="activity_ids" widget="list_activity" optional="show"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="planner_event_view_calendar" model="ir.ui.view">
+        <field name="name">planner.event.calendar</field>
+        <field name="model">planner.event</field>
+        <field name="arch" type="xml">
+            <calendar date_start="date_start" date_stop="date_end" color="user_id" mode="month" quick_create="0" event_open_popup="1">
+                <field name="partner_id"/>
+                <field name="venue_id"/>
+                <field name="stage_id"/>
+                <field name="user_id" filters="1"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="planner_event_view_activity" model="ir.ui.view">
+        <field name="name">planner.event.activity</field>
+        <field name="model">planner.event</field>
+        <field name="arch" type="xml">
+            <activity string="Events">
+                <templates>
+                    <div t-name="activity-box">
+                        <div>
+                            <field name="name" display="full"/>
+                            <field name="partner_id" muted="1" display="full"/>
+                        </div>
+                    </div>
+                </templates>
+            </activity>
+        </field>
+    </record>
+
+    <record id="planner_event_view_pivot" model="ir.ui.view">
+        <field name="name">planner.event.pivot</field>
+        <field name="model">planner.event</field>
+        <field name="arch" type="xml">
+            <pivot string="Event Analysis" sample="1">
+                <field name="event_type_id" type="row"/>
+                <field name="date_start" interval="month" type="col"/>
+                <field name="total_revenue" type="measure"/>
+                <field name="margin" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="planner_event_view_graph" model="ir.ui.view">
+        <field name="name">planner.event.graph</field>
+        <field name="model">planner.event</field>
+        <field name="arch" type="xml">
+            <graph string="Event Analysis" type="bar" sample="1">
+                <field name="date_start" interval="month"/>
+                <field name="total_revenue" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="planner_event_view_search" model="ir.ui.view">
+        <field name="name">planner.event.search</field>
+        <field name="model">planner.event</field>
+        <field name="arch" type="xml">
+            <search string="Events">
+                <field name="name" filter_domain="['|', ('name', 'ilike', self), ('reference', 'ilike', self)]"/>
+                <field name="partner_id"/>
+                <field name="venue_id"/>
+                <field name="user_id"/>
+                <field name="tag_ids"/>
+                <filter string="My Events" name="my_events" domain="[('user_id', '=', uid)]"/>
+                <filter string="I Coordinate" name="coordinating" domain="[('coordinator_id', '=', uid)]"/>
+                <separator/>
+                <filter string="Upcoming" name="upcoming" domain="[('date_start', '&gt;=', context_today())]"/>
+                <filter string="This Month" name="this_month" domain="[('date_start', '&gt;=', context_today().replace(day=1)),
+                                 ('date_start', '&lt;', context_today().replace(day=1) + relativedelta(months=1))]"/>
+                <filter string="Booked" name="booked" domain="[('stage_id.is_booked_stage', '=', True)]"/>
+                <separator/>
+                <filter string="Late Activities" name="activities_overdue" domain="[('my_activity_date_deadline', '&lt;', context_today().strftime('%Y-%m-%d'))]"/>
+                <separator/>
+                <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                <!-- <group expand="0" string="Group By"> -->
+                <filter string="Stage" name="group_stage" context="{'group_by': 'stage_id'}"/>
+                <filter string="Event Type" name="group_type" context="{'group_by': 'event_type_id'}"/>
+                <filter string="Planner" name="group_planner" context="{'group_by': 'user_id'}"/>
+                <filter string="Venue" name="group_venue" context="{'group_by': 'venue_id'}"/>
+                <filter string="Month" name="group_month" context="{'group_by': 'date_start:month'}"/>
+                <!-- </group> -->
+            </search>
+        </field>
+    </record>
+
+    <record id="planner_event_action" model="ir.actions.act_window">
+        <field name="name">Events</field>
+        <field name="res_model">planner.event</field>
+        <field name="view_mode">kanban,list,form,calendar,activity,pivot,graph</field>
+        <field name="search_view_id" ref="planner_event_view_search"/>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Plan your first event</p>
+            <p>Track every event from inquiry to closeout: quotes, checklist,
+               vendors, budget, staffing, guests and payments — in one place.</p>
+        </field>
+    </record>
+
+    <record id="planner_event_action_calendar" model="ir.actions.act_window">
+        <field name="name">Event Calendar</field>
+        <field name="res_model">planner.event</field>
+        <field name="view_mode">calendar,kanban,list,form</field>
+        <field name="search_view_id" ref="planner_event_view_search"/>
+    </record>
+
+    <record id="planner_event_action_analysis" model="ir.actions.act_window">
+        <field name="name">Event Analysis</field>
+        <field name="res_model">planner.event</field>
+        <field name="view_mode">pivot,graph</field>
+        <field name="search_view_id" ref="planner_event_view_search"/>
+        <field name="context">{'search_default_group_type': 1}</field>
+    </record>
+</odoo>

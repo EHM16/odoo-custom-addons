@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:19+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,210 +16,510 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: code:models/sale_recurring.py:57
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__start_date
+#, fuzzy
+#| msgid "Start the sale order creation based on the start date"
+msgid " Start the sale order creation based on the start date"
+msgstr "Iniciar la creación de la orden de venta en función de la fecha de inicio."
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__active
 msgid "Active"
 msgstr "Activo"
 
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__activity_ids
+#, fuzzy
+#| msgid "Active"
+msgid "Activities"
+msgstr "Activo"
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__activity_state
+#, fuzzy
+#| msgid "Active"
+msgid "Activity State"
+msgstr "Activo"
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_form
 msgid "Archive"
 msgstr "Archivo"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Automatic sale order creation based on recurring orders"
-msgstr "Creación automática de órdenes de venta basadas en órdenes recurrentes"
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
 
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_form
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: code:models/sale_recurring.py:46
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.model.fields.selection,name:sale_recurring.selection__sale_recurring__state__cancelled
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_search
 msgid "Cancelled"
 msgstr "Cancelado"
 
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_list
 msgid "Channel"
 msgstr "Canal"
 
-#: code:models/sale_recurring.py:54
+#. module: sale_recurring
+#: model_terms:ir.actions.act_window,help:sale_recurring.sale_recurring_action
+msgid "Click to Create a New Record."
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__total_sale_quotation
 msgid "Count of total quotations"
 msgstr "Recuento de cotizaciones totales"
 
-#: code:models/sale_recurring.py:51
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__total_sale_order
 msgid "Count of total sale orders"
 msgstr "Número total de órdenes de venta"
 
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_form
 msgid "Create Sale Order"
 msgstr "Crear orden de venta"
 
-#: code:models/sale_recurring.py:35
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__create_uid
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__create_date
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__partner_id
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_search
 msgid "Customer"
 msgstr "Cliente"
 
-#: code:models/sale_recurring.py:35
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__partner_id
 msgid "Customer name"
 msgstr "Nombre del cliente"
 
-#: code:models/sale_recurring_line.py:35
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__name
 msgid "Description"
 msgstr "Descripción"
 
-#: code:models/sale_recurring.py:43
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_order__display_name
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__display_name
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__end_date
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_search
 msgid "End Date"
 msgstr "Fecha de finalización"
 
-#: code:models/sale_recurring.py:46
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.model.fields.selection,name:sale_recurring.selection__sale_recurring__state__expired
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_search
 msgid "Expired"
 msgstr "Caducado"
 
-#: code:models/sale_recurring.py:57
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_order__id
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__id
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__id
+msgid "ID"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__message_has_error
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__active
 msgid "If unchecked, it will allow you to hide the recurring order without removing it."
 msgstr "Si no está marcado, le permitirá ocultar el pedido recurrente sin eliminarlo."
 
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_search
 msgid "Inactive"
 msgstr "Inactivo"
 
-#: code:models/sale_recurring.py:32
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__write_uid
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__write_date
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__name
 msgid "Name"
 msgstr "Nombre"
 
-#: code:models/sale_recurring.py:34
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__title
 msgid "Name of the order"
 msgstr "Nombre de la orden"
 
-#: code:models/sale_recurring_line.py:35
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring_line__name
 msgid "Name of the product"
 msgstr "Nombre del producto"
 
-#: code:models/sale_recurring_line.py:42
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__message_has_error_counter
+#, fuzzy
+#| msgid "Name of the order"
+msgid "Number of errors"
+msgstr "Nombre de la orden"
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__order_id
 msgid "Order"
 msgstr "Orden"
 
-#: code:models/sale_recurring_line.py:42
-msgid "Order details"
-msgstr "Detalles del pedido"
-
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_form
 msgid "Order Line"
 msgstr "Línea de pedido"
 
-#: code:models/sale_recurring.py:60
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring_line__order_id
+msgid "Order details"
+msgstr "Detalles del pedido"
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__order_line_ids
 msgid "Order lines"
 msgstr "Líneas de pedido"
 
-#: code:models/sale_recurring_line.py:37
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__price_unit
 msgid "Price"
 msgstr "Precio"
 
-#: code:models/sale_recurring_line.py:31
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__product_id
 msgid "Product"
 msgstr "Producto"
 
-#: code:models/sale_recurring_line.py:37
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring_line__price_unit
 msgid "Product price"
 msgstr "Precio del producto"
 
-#: code:models/sale_recurring_line.py:40
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring_line__product_uom_qty
 msgid "Quantity"
 msgstr "Cantidad"
 
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_form
 msgid "Quotations"
 msgstr "Cotizaciones"
 
-#: code:models/sale_order.py:29
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model,name:sale_recurring.model_sale_recurring_line
+#, fuzzy
+#| msgid "Recurring Order"
+msgid "Recurring Line"
+msgstr "Orden recurrente"
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_order__recurring_order_id
 msgid "Recurring Order"
 msgstr "Orden recurrente"
 
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.actions.act_window,name:sale_recurring.sale_recurring_action
+#: model:ir.ui.menu,name:sale_recurring.sale_recurring_menu
+#, fuzzy
+#| msgid "Recurring Order"
+msgid "Recurring Orders"
+msgstr "Orden recurrente"
+
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_form
 msgid "Renew"
 msgstr "Renovar"
 
-#: code:models/sale_recurring.py:46
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields.selection,name:sale_recurring.selection__sale_recurring__state__running
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_search
 msgid "Running"
 msgstr "En curso"
 
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model,name:sale_recurring.model_sale_order
+msgid "Sale Order Delivery Split"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model,name:sale_recurring.model_sale_recurring
+#, fuzzy
+#| msgid "Sale Recurring"
+msgid "Sale Order Recurring"
+msgstr "Venta recurrente"
+
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_form
 msgid "Sale Orders"
 msgstr "Órdenes de venta"
 
-#: model:ir.module.module,name:__manifest__.py
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.actions.server,name:sale_recurring.ir_cron_create_sale_order_scheduler_action_ir_actions_server
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_form
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_search
 msgid "Sale Recurring"
 msgstr "Venta recurrente"
 
-#: code:models/sale_order.py:29
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_order__recurring_order_id
 msgid "Sale recurring order details"
 msgstr "Detalles del pedido recurrente de venta"
 
-#: code:models/sale_recurring_line.py:31
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring_line__product_id
 msgid "Select a product for which the sale recurring will be used"
 msgstr "Seleccione un producto para el cual se utilizará la venta recurrente"
 
-#: code:models/sale_recurring.py:32
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__name
 msgid "Sequence of recurring order"
 msgstr "Secuencia de orden recurrente"
 
-#: code:models/sale_recurring.py:37
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__start_date
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_search
 msgid "Start Date"
 msgstr "Fecha de inicio"
 
-#: code:models/sale_recurring.py:37
-msgid "Start the sale order creation based on the start date"
-msgstr "Iniciar la creación de la orden de venta en función de la fecha de inicio."
-
-#: code:models/sale_recurring.py:46
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__state
 msgid "State of recurring order"
 msgstr "Estado de orden recurrente"
 
-#: code:models/sale_recurring.py:46
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__state
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_search
 msgid "Status"
 msgstr "Estado"
 
-#: code:models/sale_recurring.py:40
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__stop_after
 msgid "Stop After"
 msgstr "Detener después"
 
-#: code:models/sale_recurring.py:43
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__end_date
 msgid "Stop the sale order creation based on the end date"
 msgstr "Detener la creación de la orden de venta según la fecha de finalización"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid "This module is helps to create sale orders automatically based on the recurring orders."
-msgstr "Este módulo permite crear automáticamente órdenes de venta con base en órdenes recurrentes."
-
-#: code:models/sale_recurring.py:34
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__title
 msgid "Title"
 msgstr "Título"
 
-#: code:models/sale_recurring.py:60
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__order_line_ids
 msgid "To store recurring order datas"
 msgstr "Para almacenar datos de pedidos recurrentes"
 
-#: code:models/sale_recurring.py:40
-msgid "Total days to end the sale ordercreation"
-msgstr "Días totales para finalizar la creación de la orden de venta."
-
-#: code:models/sale_recurring_line.py:40
-msgid "Total number of quantity"
-msgstr "Número total de cantidad"
-
-#: code:models/sale_recurring.py:54
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__total_sale_quotation
 msgid "Total RFQ"
 msgstr "Solicitud de cotización total"
 
-#: code:models/sale_recurring.py:51
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__total_sale_order
 msgid "Total SO"
 msgstr "Total de ordenes de venta"
 
-#: model_terms:views/sale_recurring_views.xml
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__stop_after
+msgid "Total days to end the sale ordercreation"
+msgstr "Días totales para finalizar la creación de la orden de venta."
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring_line__product_uom_qty
+msgid "Total number of quantity"
+msgstr "Número total de cantidad"
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_form
 msgid "Unarchive"
 msgstr "Desarchivar"
+
+#. module: sale_recurring
+#: model:ir.model.fields,field_description:sale_recurring.field_sale_recurring__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: sale_recurring
+#: model:ir.model.fields,help:sale_recurring.field_sale_recurring__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: sale_recurring
+#: model_terms:ir.ui.view,arch_db:sale_recurring.sale_recurring_view_form
+msgid "days"
+msgstr ""
+
+#~ msgid "Automatic sale order creation based on recurring orders"
+#~ msgstr "Creación automática de órdenes de venta basadas en órdenes recurrentes"
+
+#~ msgid "This module is helps to create sale orders automatically based on the recurring orders."
+#~ msgstr "Este módulo permite crear automáticamente órdenes de venta con base en órdenes recurrentes."

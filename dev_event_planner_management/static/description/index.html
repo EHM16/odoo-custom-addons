@@ -1,0 +1,2923 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Event Planner Management | Odoo Apps</title>
+    <meta
+      content="All-in-one workspace for event planning agencies on Odoo. Features include CRM event pipeline, quotes with portal e-signature & deposit payment, date-relative checklists, live budget tracking, BEO & run of show, vendor bookings, staffing conflict checks, guest list, and OWL dashboard analytics."
+      name="description"
+    />
+    <meta
+      content="Event Planner Management, Event Management, Catering, Banquet Event Order, BEO, Run of Show, Event Budget, Checklist Template, Vendor Sourcing, Staffing, Guest List, Odoo"
+      name="keywords"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <!-- heading & description -->
+      <section class="mt-2" id="dev_intro">
+        <div class="product-card shadow-lg p-3" style="border-radius: 14px">
+          <div class="card-body text-center mt-3">
+            <h2 class="card-title" style="color: #015d65">
+              Event Planner Management in Odoo
+            </h2>
+            <img alt="seprator" src="images/seprator.png" width="250" />
+            <p
+              class="card-text description mt-2"
+              style="
+                color: #5a5a5a;
+                font-size: 17px;
+                letter-spacing: 0.6px;
+                text-align: justify;
+              "
+            >
+              <b>Event Planner Management Odoo App</b> turns Odoo into one
+              central workspace to plan, coordinate, and deliver events. It is
+              built for event planning agencies, wedding planners, corporate
+              event teams, catering firms, and venue managers who run every
+              event from the first inquiry through to the day itself and final
+              billing. <br /><br />
+              Clients send inquiries from your website, receive an online
+              quotation, e-sign it, and pay a booking deposit online. Once that
+              quote is signed and paid, the event books itself: it opens a
+              project with a checklist whose deadlines count back from the event
+              date, such as 30 and 7 days before. From the event you source
+              vendors and raise purchase orders, build a live budget of
+              estimated, contracted, and actual cost, assign staff with
+              double-booking checks, keep a guest list, and lay out a
+              minute-by-minute run of show.
+              <br /><br />
+              A live dashboard shows pipeline value, booked revenue, margins,
+              and what needs attention, while daily reminders chase payments,
+              staff confirmations, and post-event surveys. It brings inquiry,
+              planning, procurement, and profitability into one connected
+              system.
+            </p>
+            <div class="row my-3 text-center">
+              <div class="col">
+                <span
+                  class="btn btn-primary"
+                  style="
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px solid transparent;
+                    padding: 0.375rem 0.75rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    border-radius: 0.25rem;
+                    background-color: #015d65;
+                    border-color: #015d65;
+                  "
+                >
+                  <i class="fa fa-check"></i>
+                  <span>Community</span>
+                </span>
+                <span
+                  class="btn btn-primary"
+                  style="
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px solid transparent;
+                    padding: 0.375rem 0.75rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    border-radius: 0.25rem;
+                    background-color: #015d65;
+                    border-color: #015d65;
+                  "
+                >
+                  <i class="fa fa-check"></i>
+                  <span>Enterprise</span>
+                </span>
+                <span
+                  class="btn btn-primary"
+                  style="
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px solid transparent;
+                    padding: 0.375rem 0.75rem;
+                    font-size: 1rem;
+                    line-height: 1.5;
+                    border-radius: 0.25rem;
+                    background-color: #015d65;
+                    border-color: #015d65;
+                  "
+                >
+                  <i class="fa fa-check"></i>
+                  <span>Odoo.sh</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- module features -->
+      <section class="mt-5" id="dev_features">
+        <div class="text-center">
+          <p class="mb-0" style="color: #015d65; font-weight: 600; font-size: 25px">
+            MODULE FEATURES
+          </p>
+          <img alt="seprator" src="images/seprator.png" width="150" />
+        </div>
+        <div style="background-color:#f5f6f7; padding:40px 24px; border-radius:14px; margin-top:20px;">
+          <div style="max-width:1200px; margin-left:auto; margin-right:auto;">
+            <div class="row">
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-random" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Inquiry to Event</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Turn a sales opportunity into a fully planned event in one click, carrying over the client, date, and event type.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-pencil-square-o" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Online Quote, Sign and Deposit</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Send clients a quotation they can e-sign and pay a deposit on online, and the event books itself once it is signed and paid.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-check-square-o" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Date-Relative Checklists</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Each booked event builds its own task checklist with deadlines counted back from the event date, such as 30 and 7 days before.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-truck" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Vendor Sourcing and Bookings</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Raise real purchase orders to vendors from the event, and if a vendor pulls out, log the cost and reopen the slot to re-source.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-money" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Live Budget and Margin</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Track estimated, contracted, and actual cost side by side, drawn from purchase orders and bills, and see each event's margin.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-clock-o" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Run-of-Show Timeline</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Lay out a minute-by-minute day-of timeline, pre-filled from an event-type template, and print it for the whole team.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-users" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Staff Scheduling</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Assign staff shifts with automatic double-booking prevention, and let staff accept or decline their shifts from an email link.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-address-book-o" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Guest List and RSVP</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Manage the guest list with RSVP, seat counts, table numbers, meal choices, and VIP flags.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-credit-card" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Installment Payment Plans</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Generate installment plans from reusable schemes and invoice each one; amounts adjust automatically when the order changes.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-globe" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Client Portal</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Clients follow their event online: schedule, guests, payments, vendors, budget, quotes, and invoices in one place.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-file-text-o" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Event Documents and BEO</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Print Banquet Event Orders, run-of-show, vendor contact sheets, and budget sheets, and send the BEO to everyone in one action.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-bar-chart" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Live Agency Dashboard</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Watch pipeline value, booked revenue, margins, overdue payments, unconfirmed shifts, and overdue tasks on one screen.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-bell" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Automatic Reminders</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Payment reminders, staff confirmation chasing, post-event feedback surveys, and event closeout all run on a daily schedule.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-desktop" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Marketing Website</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Publish service pages, a portfolio, and an inquiry form that feeds new leads straight into your pipeline.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6" style="margin-bottom:24px;">
+                <div style="background-color:#ffffff; border-radius:10px; padding:24px; min-height:120px; border:1px solid #e2e8e8;">
+                  <div style="background-color:#015d65; width:64px; height:64px; border-radius:10px; text-align:center; line-height:64px; float:left; margin-right:20px;">
+                    <i class="fa fa-calendar" style="color:#ffffff; font-size:28px; line-height:64px;"></i>
+                  </div>
+                  <div style="overflow:hidden;">
+                    <h3 style="color:#015d65; margin:0 0 8px 0; font-size:22px; font-weight:700; line-height:1.2;">Reschedule, Cancel, Duplicate</h3>
+                    <p style="color:#555555; margin:0; font-size:15px; line-height:1.55;">Reschedule, cancel, or duplicate an event, and the downstream dates, bookings, and finances are handled for you.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tabs -->
+      <section class="mt-5" id="tabs">
+        <ul class="nav nav-tabs justify-content-center pb-2" role="tablist">
+          <li
+            class="nav-item rounded mx-1"
+            style="
+              cursor: pointer;
+              text-decoration: none;
+              background-color: #d4f2f5;
+              font-weight: 600;
+              font-size: 14px;
+            "
+          >
+            <a
+              class="nav-link active rounded"
+              data-bs-toggle="tab"
+              href="#Configurations"
+              style="
+                color: #015d65;
+                cursor: pointer;
+                border: 1px solid #015d65 !important;
+                padding: 10px 20px;
+                display: block;
+                text-decoration: none;
+              "
+              type="button"
+            >
+              Setup &amp; Guides
+            </a>
+          </li>
+          <li
+            class="nav-item rounded mx-1"
+            style="
+              cursor: pointer;
+              text-decoration: none;
+              background-color: #d4f2f5;
+              font-weight: 600;
+              font-size: 14px;
+            "
+          >
+            <a
+              class="nav-link rounded"
+              data-bs-toggle="tab"
+              href="#Release"
+              style="
+                color: #015d65;
+                cursor: pointer;
+                border: 1px solid #015d65 !important;
+                padding: 10px 20px;
+                display: block;
+                text-decoration: none;
+              "
+              type="button"
+            >
+              Releases
+            </a>
+          </li>
+          <li
+            class="nav-item rounded mx-1"
+            style="
+              cursor: pointer;
+              text-decoration: none;
+              background-color: #d4f2f5;
+              font-weight: 600;
+              font-size: 14px;
+            "
+          >
+            <a
+              class="nav-link rounded"
+              data-bs-toggle="tab"
+              href="#faqs"
+              style="
+                color: #015d65;
+                cursor: pointer;
+                border: 1px solid #015d65 !important;
+                padding: 10px 20px;
+                display: block;
+                text-decoration: none;
+              "
+              type="button"
+            >
+              FAQs
+            </a>
+          </li>
+          <li
+            class="nav-item rounded mx-1"
+            style="
+              cursor: pointer;
+              text-decoration: none;
+              background-color: #d4f2f5;
+              font-weight: 600;
+              font-size: 14px;
+            "
+          >
+            <a
+              class="nav-link rounded"
+              data-bs-toggle="tab"
+              href="#support"
+              style="
+                color: #015d65;
+                cursor: pointer;
+                border: 1px solid #015d65 !important;
+                padding: 10px 20px;
+                display: block;
+                text-decoration: none;
+              "
+              type="button"
+            >
+              Support
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <!-- Setup & Guides Tab Pane -->
+          <div
+            class="tab-pane fade show active"
+            id="Configurations"
+            role="tabpanel"
+          >
+            <section id="dev_configuration" style="margin-top: 20px">
+              <div class="row">
+                <!-- Left Sidebar Column (col-md-3) -->
+                <div class="col-md-3">
+                  <ul
+                    class="nav nav-tabs text-center"
+                    role="tablist"
+                    style="
+                      justify-content: center;
+                      padding-bottom: 10px;
+                      background-color: transparent;
+                      display: block;
+                      border: none;
+                    "
+                  >
+                    <!-- Dashboard -->
+                    <li
+                      class="nav-item rounded my-1"
+                      style="
+                        background-color: #d4f2f5;
+                        font-weight: 600;
+                        font-size: 14px;
+                      "
+                    >
+                      <span
+                        class="nav-link active rounded"
+                        data-bs-toggle="tab"
+                        href="#subtab_analytics"
+                        style="
+                          color: #015d65;
+                          border: 1px solid #015d65;
+                          padding: 10px 20px;
+                          display: block;
+                          cursor: pointer;
+                          text-align: left;
+                        "
+                        >Dashboard</span
+                      >
+                    </li>
+
+                    <!-- Website Booking Flow & Portal -->
+                    <li
+                      class="nav-item rounded my-1"
+                      style="
+                        background-color: #d4f2f5;
+                        font-weight: 600;
+                        font-size: 14px;
+                      "
+                    >
+                      <span
+                        class="nav-link rounded"
+                        data-bs-toggle="tab"
+                        href="#subtab_portal_website"
+                        style="
+                          color: #015d65;
+                          border: 1px solid #015d65;
+                          padding: 10px 20px;
+                          display: block;
+                          cursor: pointer;
+                          text-align: left;
+                        "
+                        >Website Booking Flow &amp; Portal</span
+                      >
+                    </li>
+
+                    <!-- Backend Process Flow -->
+                    <li
+                      class="nav-item rounded my-1"
+                      style="
+                        background-color: #d4f2f5;
+                        font-weight: 600;
+                        font-size: 14px;
+                      "
+                    >
+                      <span
+                        class="nav-link rounded"
+                        data-bs-toggle="tab"
+                        href="#subtab_backend_process"
+                        style="
+                          color: #015d65;
+                          border: 1px solid #015d65;
+                          padding: 10px 20px;
+                          display: block;
+                          cursor: pointer;
+                          text-align: left;
+                        "
+                        >Backend Process Flow</span
+                      >
+                    </li>
+
+                    <!-- Staff Schedule -->
+                    <li
+                      class="nav-item rounded my-1"
+                      style="
+                        background-color: #d4f2f5;
+                        font-weight: 600;
+                        font-size: 14px;
+                      "
+                    >
+                      <span
+                        class="nav-link rounded"
+                        data-bs-toggle="tab"
+                        href="#subtab_staffing_guests"
+                        style="
+                          color: #015d65;
+                          border: 1px solid #015d65;
+                          padding: 10px 20px;
+                          display: block;
+                          cursor: pointer;
+                          text-align: left;
+                        "
+                        >Staff Schedule &amp; Guest Roster</span
+                      >
+                    </li>
+
+                    <!-- Reports -->
+                    <li
+                      class="nav-item rounded my-1"
+                      style="
+                        background-color: #d4f2f5;
+                        font-weight: 600;
+                        font-size: 14px;
+                      "
+                    >
+                      <span
+                        class="nav-link rounded"
+                        data-bs-toggle="tab"
+                        href="#subtab_reporting"
+                        style="
+                          color: #015d65;
+                          border: 1px solid #015d65;
+                          padding: 10px 20px;
+                          display: block;
+                          cursor: pointer;
+                          text-align: left;
+                        "
+                        >Reports</span
+                      >
+                    </li>
+
+                    <!-- Setup & Config -->
+                    <li
+                      class="nav-item rounded my-1"
+                      style="
+                        background-color: #d4f2f5;
+                        font-weight: 600;
+                        font-size: 14px;
+                      "
+                    >
+                      <span
+                        class="nav-link rounded"
+                        data-bs-toggle="tab"
+                        href="#subtab_config"
+                        style="
+                          color: #015d65;
+                          border: 1px solid #015d65;
+                          padding: 10px 20px;
+                          display: block;
+                          cursor: pointer;
+                          text-align: left;
+                        "
+                        >Setup &amp; Config</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Right Content Column (col-md-9) -->
+                <div class="col-md-9">
+                  <div
+                    class="tab-content"
+                    style="background-color: transparent; padding-bottom: 30px"
+                  >
+                    <!-- Subtab 1: Dashboard -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="subtab_analytics"
+                    >
+                      <div
+                        class="product-card shadow-lg p-4"
+                        style="border-radius: 14px; background-color: #fff"
+                      >
+                        <div class="card-body text-center">
+                          <p
+                            class="card-title"
+                            style="
+                              color: #015d65;
+                              font-size: 25px;
+                              font-weight: 500;
+                            "
+                          >
+                            OWL Dashboard &amp; Operational Analytics
+                          </p>
+                          <p
+                            class="card-text description mt-2"
+                            style="
+                              color: #5a5a5a;
+                              font-size: 18px;
+                              letter-spacing: 0.6px;
+                              text-align: justify;
+                            "
+                          >
+                            Gain real-time operational visibility and financial
+                            control over all agency events from a single
+                            centralized dashboard.
+                            <br /><br />
+                            <b>Dashboard Features &amp; Highlights:</b>
+                          </p>
+                          <ul
+                            style="
+                              text-align: start !important;
+                              color: #5a5a5a;
+                              letter-spacing: 0.6px;
+                              padding-left: 15px;
+                            "
+                          >
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Real-Time KPIs:</b> Instant tracking of
+                                active event counts, total pipeline revenue,
+                                average per-event gross profit.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>12-Week Workload Strip:</b> Visual timeline
+                                strip showing upcoming event densities and
+                                resource bottlenecks across the next
+                                quarter.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Needs Attention Feed:</b> Automated alert
+                                feed flagging overdue D-minus checklists,
+                                unconfirmed vendor bids, and uncollected deposit
+                                invoices.</span
+                              >
+                            </li>
+                          </ul>
+
+                          <!-- Dashboard Image -->
+                          <div class="mt-4 text-center">
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              Real-Time Operational &amp; Financial Dashboard
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              The interactive OWL dashboard provides leadership
+                              and planners with an overview of event workload,
+                              key performance indicators, upcoming milestone
+                              deadlines, and active event revenue metrics.
+                            </p>
+                            <img
+                              src="screens/event_planner_dashboard.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Planner Dashboard"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Subtab 2: Website Booking Flow & Portal -->
+                    <div class="tab-pane fade" id="subtab_portal_website">
+                      <div
+                        class="product-card shadow-lg p-4"
+                        style="border-radius: 14px; background-color: #fff"
+                      >
+                        <div class="card-body text-center">
+                          <p
+                            class="card-title"
+                            style="
+                              color: #015d65;
+                              font-size: 25px;
+                              font-weight: 500;
+                            "
+                          >
+                            Website Booking Flow &amp; Portal
+                          </p>
+                          <p
+                            class="card-text description mt-2"
+                            style="
+                              color: #5a5a5a;
+                              font-size: 18px;
+                              letter-spacing: 0.6px;
+                              text-align: justify;
+                            "
+                          >
+                            A smooth online client experience, from website inquiry through digital contract e-signing to the online booking deposit payment.
+                            <br /><br />
+                            <b>Website &amp; Customer Portal Features:</b>
+                          </p>
+                          <ul
+                            style="
+                              text-align: start !important;
+                              color: #5a5a5a;
+                              letter-spacing: 0.6px;
+                              padding-left: 15px;
+                            "
+                          >
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Public Agency Website:</b> Landing page
+                                featuring services, portfolio gallery, and
+                                interactive inquiry builder.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Online Portal E-Sign &amp; Deposit:</b>
+                                Clients log into the portal to review quotation
+                                proposals, e-sign contracts digitally, and pay
+                                initial booking deposits.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Self-Service Event Tracking:</b> Portal
+                                workspace allowing clients to view event
+                                execution timelines, checklist milestones, BEO
+                                documents, and payment schedules.</span
+                              >
+                            </li>
+                          </ul>
+
+                          <!-- Media items -->
+                          <div class="mt-4 text-center">
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              1. Public Agency Event Website Page
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              A fully integrated frontend website displaying
+                              event packages, venue portfolio galleries, and an
+                              online inquiry form that captures prospective
+                              client requirements directly into Odoo CRM.
+                            </p>
+                            <img
+                              src="screens/event_planner_website.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Public Website"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              2. Interactive Website Booking &amp; Inquiry
+                              Builder
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Website visitors select preferred event dates,
+                              guest counts, and venue specifications to submit
+                              booking inquiries directly into Odoo CRM.
+                            </p>
+                            <video
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              controls
+                              autoplay
+                              loop
+                              muted
+                            >
+                              <source
+                                src="screens/event_planner_website_booking_flow.mp4"
+                                type="video/mp4"
+                              />
+                            </video>
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              3. Customer Portal Digital E-Signing &amp; Online
+                              Deposit Payment
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Clients log into their dedicated portal workspace
+                              to review event proposals, sign contracts
+                              digitally, and pay booking deposits online.
+                            </p>
+                            <video
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              controls
+                              autoplay
+                              loop
+                              muted
+                            >
+                              <source
+                                src="screens/event_planner_website_pay_sign.mp4"
+                                type="video/mp4"
+                              />
+                            </video>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Subtab 3: Backend Process Flow -->
+                    <div class="tab-pane fade" id="subtab_backend_process">
+                      <div
+                        class="product-card shadow-lg p-4"
+                        style="border-radius: 14px; background-color: #fff"
+                      >
+                        <div class="card-body text-center">
+                          <p
+                            class="card-title"
+                            style="
+                              color: #015d65;
+                              font-size: 25px;
+                              font-weight: 500;
+                            "
+                          >
+                            Backend Process Flow &amp; Operations
+                          </p>
+                          <p
+                            class="card-text description mt-2"
+                            style="
+                              color: #5a5a5a;
+                              font-size: 18px;
+                              letter-spacing: 0.6px;
+                              text-align: justify;
+                            "
+                          >
+                            End-to-end event execution workspace uniting sales
+                            CRM pipeline, date-relative checklists, vendor
+                            procurement, live budget tracking, BEO generation,
+                            and payment schedules.
+                            <br /><br />
+                            <b>Process Capabilities &amp; Workflows:</b>
+                          </p>
+                          <ul
+                            style="
+                              text-align: start !important;
+                              color: #5a5a5a;
+                              letter-spacing: 0.6px;
+                              padding-left: 15px;
+                            "
+                          >
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>360-Degree Event Workspace:</b> Convert CRM
+                                lead inquiries into full Event records with
+                                linked quotation proposals and stage
+                                pipelines.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Date-Relative Checklists:</b> Automated
+                                D-minus execution task templates (D-60, D-30,
+                                D-7) that automatically recalculate deadlines
+                                when events are rescheduled.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Live Budget &amp; Vendor RFQ/PO:</b> Compare
+                                Estimated vs Contracted vs Actual expenses by
+                                category, request supplier quotes, and generate
+                                purchase orders.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>BEO &amp; Run-of-Show Generation:</b>
+                                Version-stamped Banquet Event Orders (BEO) and
+                                minute-by-minute day-of activity schedules with
+                                one-click PDF distribution.</span
+                              >
+                            </li>
+                          </ul>
+
+                          <!-- Process Images -->
+                          <div class="mt-4 text-center">
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              1. CRM Inquiry &amp; Convert to Event
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              View inquiry lead details and click "Convert to
+                              Event" to instantly provision a new Event record
+                              in the pipeline.
+                            </p>
+                            <img
+                              src="screens/event_planner_Inquiries_form.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="CRM Inquiry Form"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              2. Event Form - Overview, Start/End Dates &amp;
+                              Venue
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Set event schedule dates, select the venue, track
+                              client details, and click "New Quotation" or "Mark
+                              as Booked".
+                            </p>
+                            <img
+                              src="screens/event_planner_Events_form_1.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Form Overview"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              3. New Quotation Proposal Wizard
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Generate formal event quotations with package
+                              templates, online signature requirements, and
+                              deposit percentage rules.
+                            </p>
+                            <img
+                              src="screens/event_planner_Events_form_2.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="New Quotation Wizard"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              4. Event Form - Vendors Tab &amp; Smart Buttons
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Assign vendors across service categories (AV,
+                              Catering, Lighting) and access smart buttons for
+                              quotes, checklists, POs, and invoices.
+                            </p>
+                            <img
+                              src="screens/event_planner_Events_form_3.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Form Vendors Tab"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              5. Reschedule Event Wizard
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Reschedule event dates with automatic updating of
+                              checklist deadlines, run-of-show schedules, staff
+                              shifts, and vendor arrival times.
+                            </p>
+                            <img
+                              src="screens/event_planner_Events_form_4.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Reschedule Event Wizard"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              6. Event Checklist Kanban View
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Kanban board tracking D-minus execution tasks (To
+                              Do, In Progress, Done) with automated date-based
+                              countdowns.
+                            </p>
+                            <img
+                              src="screens/event_planner_Checklist.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Checklist Kanban"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              7. Event Form - Payments Tab
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Track installment payment schedules (Deposit,
+                              Final Balance) with due dates, amounts, payment
+                              triggers, and paid status indicators.
+                            </p>
+                            <img
+                              src="screens/event_planner_payment.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Payments Tab"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              8. Event Form - Budget Tab
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Detailed budget lines tracking estimated vs
+                              contracted costs per category with real-time
+                              margin and gross profit calculations.
+                            </p>
+                            <img
+                              src="screens/event_planner_budget.png"
+                              class="img-fluid shadow-lg my-2"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Form Budget Tab"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              9. Event Form - Staffing Tab
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Assign event coordinators and operational staff
+                              with automated shift requests, confirmation
+                              tracking, and double-booking protection.
+                            </p>
+                            <img
+                              src="screens/event_planner_staff.png"
+                              class="img-fluid shadow-lg my-2"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Form Staffing Tab"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              10. Event Form - Guest List &amp; Meals Tab
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Manage guest rosters, seat assignments, RSVP
+                              status, dietary requirements, and meal choice
+                              selections.
+                            </p>
+                            <img
+                              src="screens/event_planner_guest.png"
+                              class="img-fluid shadow-lg my-2"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Form Guest List Tab"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              11. CRM Inquiries Kanban Pipeline
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Manage incoming event lead inquiries across sales
+                              stages with direct website inquiry lead
+                              integration.
+                            </p>
+                            <img
+                              src="screens/event_planner_Inquiries.png"
+                              class="img-fluid shadow-lg my-2"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Inquiries Pipeline"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              12. Events Master Kanban
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Central hub displaying all active and upcoming
+                              events grouped by stage with venue, date, guest
+                              count, and margin badges.
+                            </p>
+                            <img
+                              src="screens/event_planner_Events.png"
+                              class="img-fluid shadow-lg my-2"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Events View"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              13. Event Calendar View
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Monthly event schedule overview color-coded by
+                              Lead Planner and Event Coordinator.
+                            </p>
+                            <img
+                              src="screens/event_planner_Event_Calendar.png"
+                              class="img-fluid shadow-lg my-2"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Calendar"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              14. Vendor Directory
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Master directory storing preferred event vendor
+                              partners categorized by service line (Catering,
+                              Florals, AV, Entertainment).
+                            </p>
+                            <img
+                              src="screens/event_planner_Vendor_Directory.png"
+                              class="img-fluid shadow-lg my-2"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Vendor Directory"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              15. Vendor Profile (e.g. Lumière Photography)
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Detailed vendor partner form displaying service
+                              categories, ratings, contact details, and purchase
+                              order history.
+                            </p>
+                            <img
+                              src="screens/event_planner_Lumière_Photography.png"
+                              class="img-fluid shadow-lg my-2"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Vendor Profile"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              16. Venue Profile (e.g. Birthday Party Hall)
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-1 text-center"
+                            >
+                              Comprehensive venue specification form recording
+                              guest capacity thresholds, amenities, and contact
+                              information.
+                            </p>
+                            <img
+                              src="screens/event_planner_Birthday_party_hall.png"
+                              class="img-fluid shadow-lg my-2"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Venue Profile"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Subtab 4: Staff Schedule -->
+                    <div class="tab-pane fade" id="subtab_staffing_guests">
+                      <div
+                        class="product-card shadow-lg p-4"
+                        style="border-radius: 14px; background-color: #fff"
+                      >
+                        <div class="card-body text-center">
+                          <p
+                            class="card-title"
+                            style="
+                              color: #015d65;
+                              font-size: 25px;
+                              font-weight: 500;
+                            "
+                          >
+                            Staff Schedule &amp; Guest Roster
+                          </p>
+                          <p
+                            class="card-text description mt-2"
+                            style="
+                              color: #5a5a5a;
+                              font-size: 18px;
+                              letter-spacing: 0.6px;
+                              text-align: justify;
+                            "
+                          >
+                            Efficient crew planning, double-booking collision
+                            prevention, and comprehensive guest headcount
+                            tracking.
+                            <br /><br />
+                            <b>Staffing &amp; Guest Capabilities:</b>
+                          </p>
+                          <ul
+                            style="
+                              text-align: start !important;
+                              color: #5a5a5a;
+                              letter-spacing: 0.6px;
+                              padding-left: 15px;
+                            "
+                          >
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Conflict Detection:</b> Prevent staff
+                                double-booking across concurrent events with
+                                built-in time collision checks.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Role Allocation:</b> Assign roles such as
+                                Lead Coordinator, Floor Manager, Hospitality
+                                Staff, and AV Specialist with hourly cost
+                                tracking.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Guest Roster &amp; Dietary Notes:</b> Track
+                                guest RSVPs, meal choices, seating numbers, VIP
+                                tags, and allergy notes.</span
+                              >
+                            </li>
+                          </ul>
+
+                          <!-- Staff & Guest Screenshots -->
+                          <div class="mt-4 text-center">
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              1. Staff Schedule &amp; Crew Assignments
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Assign event coordinators, hospitality teams, and
+                              technical crews to event shifts. Automated
+                              conflict detection highlights overlapping
+                              assignments across simultaneous events.
+                            </p>
+                            <img
+                              src="screens/event_planner_Staff_Schedule.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Staff Schedule"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              2. Guest Roster, Seating &amp; Dietary Preferences
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Manage guest attendee lists, table numbers, VIP
+                              badges, meal preferences, and critical food
+                              allergy notes so hospitality runs smoothly on the day.
+                            </p>
+                            <img
+                              src="screens/event_planner_Guests.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Guest Roster"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Subtab 5: Reports -->
+                    <div class="tab-pane fade" id="subtab_reporting">
+                      <div
+                        class="product-card shadow-lg p-4"
+                        style="border-radius: 14px; background-color: #fff"
+                      >
+                        <div class="card-body text-center">
+                          <p
+                            class="card-title"
+                            style="
+                              color: #015d65;
+                              font-size: 25px;
+                              font-weight: 500;
+                            "
+                          >
+                            Reports &amp; Financial Analytics
+                          </p>
+                          <p
+                            class="card-text description mt-2"
+                            style="
+                              color: #5a5a5a;
+                              font-size: 18px;
+                              letter-spacing: 0.6px;
+                              text-align: justify;
+                            "
+                          >
+                            In-depth financial reporting, gross margin analysis,
+                            and operational PDF document generation.
+                            <br /><br />
+                            <b>Reporting Capabilities:</b>
+                          </p>
+                          <ul
+                            style="
+                              text-align: start !important;
+                              color: #5a5a5a;
+                              letter-spacing: 0.6px;
+                              padding-left: 15px;
+                            "
+                          >
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Profitability Analysis:</b> Pivot and graph
+                                reports evaluating gross margins per event type,
+                                client, or planner representative.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>PDF Reports &amp; Exports:</b> Generate
+                                Banquet Event Orders (BEO), Event Budgets, Run
+                                of Show timelines, and Vendor Summary
+                                sheets.</span
+                              >
+                            </li>
+                          </ul>
+
+                          <!-- Report Screenshots -->
+                          <div class="mt-4 text-center">
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              1. Event Analysis &amp; Gross Margin Pivot Report
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Analyze financial performance with
+                              multi-dimensional pivot tables and bar graphs
+                              comparing revenue, vendor expenses, and net profit
+                              margins across event categories.
+                            </p>
+                            <img
+                              src="screens/event_planner_Event_Analysis.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Analysis"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              2. Banquet Event Order (BEO) PDF Report
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Print-ready Banquet Event Order (BEO) PDF
+                              outlining venue layout instructions, catering
+                              breakdown, beverage service specs, and staffing
+                              requirements.
+                            </p>
+                            <img
+                              src="screens/beo_report.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="BEO Report"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              3. Event Budget PDF Report
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Detailed financial budget report breaking down
+                              estimated costs versus contracted supplier quotes
+                              and actual invoices by category.
+                            </p>
+                            <img
+                              src="screens/Budget_report.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Budget Report"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              4. Run of Show Timeline PDF Report
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Minute-by-minute day-of timeline document used by
+                              event directors, stage managers, caterers, and AV
+                              operators to keep the event running to the minute.
+                            </p>
+                            <img
+                              src="screens/Run_of_Show_report.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Run of Show Report"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              5. Vendor Summary Sheet PDF Report
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Consolidated vendor contact and procurement
+                              summary listing all hired suppliers, arrival
+                              times, delivery instructions, and purchase order
+                              balances.
+                            </p>
+                            <img
+                              src="screens/Vendor_Sheet_report.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Vendor Sheet Report"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Subtab 6: Setup & Config -->
+                    <div class="tab-pane fade" id="subtab_config">
+                      <div
+                        class="product-card shadow-lg p-4"
+                        style="border-radius: 14px; background-color: #fff"
+                      >
+                        <div class="card-body text-center">
+                          <p
+                            class="card-title"
+                            style="
+                              color: #015d65;
+                              font-size: 25px;
+                              font-weight: 500;
+                            "
+                          >
+                            Event Configuration &amp; Master Data Setup
+                          </p>
+                          <p
+                            class="card-text description mt-2"
+                            style="
+                              color: #5a5a5a;
+                              font-size: 18px;
+                              letter-spacing: 0.6px;
+                              text-align: justify;
+                            "
+                          >
+                            Tailor event types, stages, payment rules, tags,
+                            vendor categories, and module settings to match your
+                            agency operations.
+                            <br /><br />
+                            <b>Configuration &amp; Setup Capabilities:</b>
+                          </p>
+                          <ul
+                            style="
+                              text-align: start !important;
+                              color: #5a5a5a;
+                              letter-spacing: 0.6px;
+                              padding-left: 15px;
+                            "
+                          >
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Event Types &amp; Stages:</b> Define custom
+                                event categories (Weddings, Corporate, Private
+                                Parties) and kanban pipeline stages.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Payment Schemes &amp; Rules:</b> Set up
+                                deposit percentages, installment milestone
+                                rules, and payment terms.</span
+                              >
+                            </li>
+                            <li
+                              style="
+                                display: block;
+                                border-radius: 0.25rem;
+                                padding: 3px;
+                              "
+                            >
+                              <span
+                                class="fa fa-hand-o-right"
+                                style="
+                                  color: #015d65;
+                                  font-weight: 600;
+                                  font-size: 14px;
+                                  padding-right: 10px;
+                                "
+                              ></span>
+                              <span
+                                ><b>Vendor &amp; Budget Categories:</b> Organize
+                                suppliers and cost centers with master budget
+                                categories.</span
+                              >
+                            </li>
+                          </ul>
+
+                          <!-- Setup & Config Screenshots -->
+                          <div class="mt-4 text-center">
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              1. Module Settings
+                            </p>
+                            <img
+                              src="screens/event_planner_settings.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Settings"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              2. Payment Schemes &amp; Deposit Rules
+                              Configuration
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Define reusable payment milestone structures
+                              (e.g., 25% Deposit, 50% Midterm, 25% Final) with
+                              automated customer invoice scheduling.
+                            </p>
+                            <img
+                              src="screens/event_planner_Payment_Schemes.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Payment Schemes"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              3. Event Types Configuration
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Classify event categories (Weddings, Corporate
+                              Conventions, Private Galas, Product Launches) with
+                              default checklist templates.
+                            </p>
+                            <img
+                              src="screens/event_planner_Event_Types.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Types"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              4. Event Stages Configuration
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Configure stage sequence numbers, fold rules, and
+                              progress completion percentages for Kanban event
+                              pipeline management.
+                            </p>
+                            <img
+                              src="screens/event_planner_Event_Stages.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Stages"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              5. Event Tags Master
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Create color-coded tag labels (e.g., Destination,
+                              Premium VIP, High Budget, Outdoor) for quick
+                              filtering and record tagging.
+                            </p>
+                            <img
+                              src="screens/event_planner_Event_Tags.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Event Tags"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              6. Vendor Categories Configuration
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Group vendor partners into functional categories
+                              (Catering, Audio &amp; Visual, Floral Decor,
+                              Photography, Logistics) for streamlined RFQs.
+                            </p>
+                            <img
+                              src="screens/event_planner_Vendor_Categories.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Vendor Categories"
+                            />
+
+                            <p
+                              class="card-title mt-4"
+                              style="
+                                color: #015d65;
+                                font-size: 20px;
+                                font-weight: 500;
+                                text-align: center;
+                              "
+                            >
+                              7. Budget Categories Configuration
+                            </p>
+                            <p
+                              style="color: #015d65; font-size: 18px"
+                              class="mt-2 text-center"
+                            >
+                              Establish master budget categories to track
+                              revenue allocation, estimated costs, contracted
+                              bids, and actual expenses accurately.
+                            </p>
+                            <img
+                              src="screens/event_planner_Budget_Categories.png"
+                              class="img-fluid shadow-lg my-3"
+                              style="
+                                border-radius: 10px;
+                                border: 1px solid #d4f2f5;
+                                width: 100%;
+                              "
+                              alt="Budget Categories"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- Releases Tab Pane -->
+          <div class="tab-pane fade" id="Release" role="tabpanel">
+            <section id="release" class="mt-2">
+              <div
+                class="shadow-lg rounded bg-white"
+                style="padding: 20px; margin-bottom: 15px"
+              >
+                <h4
+                  style="
+                    font-size: 16px;
+                    margin: 0;
+                    color: #212121;
+                    text-decoration: none;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    display: block;
+                  "
+                >
+                  <span
+                    class="fa fa-hand-o-right"
+                    style="
+                      color: #015d65;
+                      font-weight: 600;
+                      font-size: 18px;
+                      padding-right: 10px;
+                    "
+                  ></span>
+                  <span>Version 18.0.1.0</span> |
+                  <span style="color: #015d65"
+                    >Released on : 20<sup>th</sup> July 2026</span
+                  >
+                </h4>
+                <div
+                  style="
+                    font-size: 16px;
+                    padding-left: 32px;
+                    color: #555;
+                    margin: 0;
+                    padding-top: 15px;
+                  "
+                >
+                  <div
+                    style="font-weight: normal"
+                    class="d-flex align-items-center"
+                  >
+                    <span
+                      class="fa fa-arrow-right"
+                      style="
+                        color: #015d65;
+                        font-weight: 600;
+                        font-size: 18px;
+                        padding-right: 10px;
+                      "
+                    ></span>
+                    <span
+                      style="
+                        vertical-align: middle;
+                        font-size: 17px;
+                        font-weight: 600;
+                      "
+                      >Initial Release of Event Planner Management module.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- FAQs Tab Pane -->
+          <div class="tab-pane fade" id="faqs" role="tabpanel">
+            <section id="faq">
+              <ul class="list-unstyled">
+                <li
+                  class="shadow-lg rounded"
+                  style="
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                    color: #015d65;
+                    display: block;
+                    border-radius: 0.25rem;
+                  "
+                >
+                  <span
+                    class="fa fa-hand-o-right"
+                    style="
+                      color: #015d65;
+                      font-weight: 600;
+                      font-size: 18px;
+                      padding-right: 10px;
+                    "
+                  ></span>
+                  <span
+                    ><b>Is this app compatible with Odoo Enterprise?</b></span
+                  >
+                  <br />
+                  <ul style="color: black; font-size: 16px">
+                    <li>
+                      <span class="pl-4"
+                        >Yes, our app is fully compatible with both Odoo
+                        Enterprise and Odoo Community editions.</span
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  class="shadow-lg rounded"
+                  style="
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                    color: #015d65;
+                    display: block;
+                    border-radius: 0.25rem;
+                  "
+                >
+                  <span
+                    class="fa fa-hand-o-right"
+                    style="
+                      color: #015d65;
+                      font-weight: 600;
+                      font-size: 18px;
+                      padding-right: 10px;
+                    "
+                  ></span>
+                  <span><b>How do date-relative checklists work?</b></span>
+                  <br />
+                  <ul style="color: black; font-size: 16px">
+                    <li>
+                      <span class="pl-4"
+                        >Checklist deadlines are automatically computed relative
+                        to the event date (e.g. D-30, D-7). If the event date is
+                        rescheduled, all incomplete checklist deadlines
+                        automatically adjust accordingly.</span
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li
+                  class="shadow-lg rounded"
+                  style="
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    font-size: 20px;
+                    color: #015d65;
+                    display: block;
+                    border-radius: 0.25rem;
+                  "
+                >
+                  <span
+                    class="fa fa-hand-o-right"
+                    style="
+                      color: #015d65;
+                      font-weight: 600;
+                      font-size: 18px;
+                      padding-right: 10px;
+                    "
+                  ></span>
+                  <span
+                    ><b
+                      >Can clients e-sign quotes and pay deposits online?</b
+                    ></span
+                  >
+                  <br />
+                  <ul style="color: black; font-size: 16px">
+                    <li>
+                      <span class="pl-4"
+                        >Yes, clients can log into the integrated customer
+                        portal, sign event quotations digitally, and pay booking
+                        deposits online via standard Odoo payment
+                        gateways.</span
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <!-- Support Tab Pane -->
+          <div class="tab-pane fade" id="support" role="tabpanel">
+            <section id="support" class="mt-4">
+              <div class="text-center">
+                <h3 class="mb-0" style="color: #015d65">Support</h3>
+                <img src="images/seprator.png" alt="seprator" width="150" />
+              </div>
+              <div
+                class="product-card shadow-lg p-2"
+                style="border-radius: 14px"
+              >
+                <div class="row">
+                  <div class="col-lg-2 col-sm-12 text-center">
+                    <img src="images/tube.png" alt="support" height="100" />
+                  </div>
+                  <div
+                    class="col-lg-10 col-sm-12 pt-3"
+                    style="font-size: 20px; font-weight: 400"
+                  >
+                    DevIntelle will provide FREE 90 days support for any doubts,
+                    queries, and bug fixing (excluding data recovery) or any
+                    issues related to this app. This is applicable from the date
+                    of purchase.
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- whyus  -->
+      <section id="whyus" class="mt-5">
+        <div class="text-center">
+          <h3 class="mb-0" style="color: #015d65">Why Us?</h3>
+          <img src="images/seprator.png" alt="seprator" width="120" />
+        </div>
+        <div
+          class="shadow-lg p-3"
+          style="border-radius: 14px; background-color: #fff"
+        >
+          <div class="row mt-3">
+            <div class="col-lg-4 col-md-12 col-sm-12 text-center my-auto">
+              <img src="images/logo.png" alt="logo" style="width: 250px" />
+            </div>
+            <div
+              class="col-lg-8 col-md-12 col-sm-12 mt-1"
+              style="
+                font-size: 20px;
+                font-weight: 400;
+                color: #364546;
+                text-align: justify !important;
+              "
+            >
+              DevIntelle Consulting Services Pvt Ltd is an Odoo service provider
+              India/USA based consulting company with
+              <b>12+ years of experience</b>. We provide a wide range of
+              services, including implementation, customization, migration,
+              support, and training. Devintellecs experienced team of Odoo can
+              help you get the most out of your Odoo ERP system and achieve your
+              business goals.
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div
+              class="col-lg-6 col-12 d-flex justify-content-lg-end justify-content-center"
+            >
+              <a
+                href="https://apps.odoo.com/apps/modules/browse?author=DevIntelle%20Consulting%20Service%20Pvt.Ltd"
+                style="text-decoration: none"
+              >
+                <span
+                  class="btn btn-primary px-5 py-3 ml-auto"
+                  style="
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px solid transparent;
+                    font-size: 1.3rem;
+                    line-height: 1.5;
+                    border-radius: 0.25rem;
+                    background-color: #015d65;
+                    border-color: #015d65;
+                  "
+                  ><i class="fa fa-cube" style="padding-right: 9px"></i>More
+                  Apps</span
+                >
+              </a>
+            </div>
+            <div
+              class="col-lg-6 col-12 d-flex justify-content-lg-start justify-content-center mt-lg-0 mt-3"
+            >
+              <a
+                href="mailto:odoo@devintellecs.com"
+                style="text-decoration: none"
+              >
+                <span
+                  class="btn btn-primary py-3 px-5"
+                  style="
+                    position: relative;
+                    overflow: hidden;
+                    border: 1px solid transparent;
+                    font-size: 1.3rem;
+                    line-height: 1.5;
+                    border-radius: 0.25rem;
+                    background-color: #015d65;
+                    border-color: #015d65;
+                  "
+                  ><i class="fa fa-desktop" style="padding-right: 9px"></i>Ask
+                  for Demo</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!-- services  -->
+      <section id="services" class="mt-5">
+        <div class="text-center mt-4">
+          <h3 class="mb-0" style="color: #015d65">Devintelle Odoo Services</h3>
+          <img src="images/seprator.png" alt="seprator" width="170" />
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-4 col-sm-12 text-center">
+            <a href="#" style="text-decoration: none">
+              <div
+                class="shadow-lg rounded btn-lg btn-block p-4 mb-2"
+                style="
+                  font-size: 25px;
+                  font-weight: bold;
+                  color: #0090e9;
+                  background-color: #d1edff;
+                  width: 90%;
+                  margin: auto;
+                "
+              >
+                <span
+                  class="fa fa-cloud-upload"
+                  style="font-size: 40px; color: #0090e9"
+                ></span>
+                <br />
+                <span> Odoo Implementation </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-12 text-center">
+            <a href="#" style="text-decoration: none">
+              <div
+                class="shadow-lg rounded btn-lg btn-block p-4 mb-2"
+                style="
+                  font-size: 25px;
+                  font-weight: bold;
+                  color: #6bcf00;
+                  background-color: #ecfcda;
+                  width: 90%;
+                  margin: auto;
+                "
+              >
+                <span
+                  class="fa fa-gear"
+                  style="font-size: 40px; color: #6bcf00"
+                ></span>
+                <br />
+                <span> Odoo Customization </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-12 text-center">
+            <a href="#" style="text-decoration: none">
+              <div
+                class="shadow-lg rounded btn-lg btn-block p-4 mb-2"
+                style="
+                  font-size: 25px;
+                  font-weight: bold;
+                  color: #e90065;
+                  background-color: #ffcde3;
+                  width: 90%;
+                  margin: auto;
+                "
+              >
+                <span
+                  class="fa fa-link"
+                  style="font-size: 40px; color: #e90065"
+                ></span>
+                <br />
+                <span> Odoo Integration </span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-4 col-sm-12 text-center">
+            <a href="#" style="text-decoration: none">
+              <div
+                class="shadow-lg rounded btn-lg btn-block p-4 mb-2"
+                style="
+                  font-size: 25px;
+                  font-weight: bold;
+                  color: #c3c903;
+                  background-color: #feffdd;
+                  width: 90%;
+                  margin: auto;
+                "
+              >
+                <span
+                  class="fa fa-rocket"
+                  style="font-size: 40px; color: #c3c903"
+                ></span>
+                <br />
+                <span> Odoo Migration </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-12 text-center">
+            <a href="#" style="text-decoration: none">
+              <div
+                class="shadow-lg rounded btn-lg btn-block p-4 mb-2"
+                style="
+                  font-size: 25px;
+                  font-weight: bold;
+                  color: #e96100;
+                  background-color: #f9ddc9;
+                  width: 90%;
+                  margin: auto;
+                "
+              >
+                <span
+                  class="fa fa-desktop"
+                  style="font-size: 40px; color: #e96100"
+                ></span>
+                <br />
+                <span> Odoo Training </span>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-12 text-center">
+            <a href="#" style="text-decoration: none">
+              <div
+                class="shadow-lg rounded btn-lg btn-block p-4 mb-2"
+                style="
+                  font-size: 25px;
+                  font-weight: bold;
+                  color: #03b19f;
+                  background-color: #cafffa;
+                  width: 90%;
+                  margin: auto;
+                "
+              >
+                <span
+                  class="fa fa-comments"
+                  style="font-size: 40px; color: #03b19f"
+                ></span>
+                <br />
+                <span> Odoo Support </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer  -->
+      <section id="footer" class="mt-5">
+        <div class="text-center mt-4">
+          <h3 class="mb-0" style="color: #015d65">Connect Us</h3>
+          <img src="images/seprator.png" alt="seprator" width="170" />
+        </div>
+        <div class="text-center row">
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+            <a
+              class="shadow-lg rounded py-3 px-4 d-flex justify-content-center align-items-center mb-2"
+              style="
+                border-width: 1px;
+                border-style: solid;
+                border-color: #4fce5d;
+                color: #fff;
+                position: relative;
+                overflow: hidden;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                width: 100%;
+                background-color: #4fce5d;
+                border-radius: 0.25rem !important;
+              "
+              href="https://web.whatsapp.com/send?phone=+918780543446&text=Hi"
+              target="_blank"
+              ><span
+                class="fa fa-whatsapp mr-3"
+                style="font-size: 30px; color: #fff"
+              ></span
+              ><span class="align-middle px-2">+91 87805 43446</span></a
+            >
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+            <a
+              class="shadow-lg rounded py-3 px-4 d-flex justify-content-center align-items-center mb-2"
+              style="
+                border-width: 1px;
+                border-style: solid;
+                border-color: #4ca9e3;
+                color: #fff;
+                position: relative;
+                overflow: hidden;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                width: 100%;
+                background-color: #4ca9e3;
+                border-radius: 0.25rem !important;
+              "
+              href="skype:devintelle?chat"
+              target="_blank"
+              ><span
+                class="fa fa-skype mr-3"
+                style="font-size: 30px; color: #fff"
+              ></span
+              ><span class="align-middle px-2">@devintelle</span></a
+            >
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+            <a
+              class="shadow-lg rounded py-3 px-4 d-flex justify-content-center align-items-center mb-2"
+              style="
+                border-width: 1px;
+                border-style: solid;
+                border-color: #ce493b;
+                color: #fff;
+                position: relative;
+                overflow: hidden;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: bold;
+                width: 100%;
+                background-color: #ce493b;
+                border-radius: 0.25rem !important;
+              "
+              href="mailto:odoo@devintellecs.com"
+              target="_blank"
+              ><span
+                class="fa fa-envelope mr-3"
+                style="font-size: 30px; color: #fff"
+              ></span
+              ><span class="align-middle px-2">odoo@devintellecs.com</span></a
+            >
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <img src="images/seprator.png" alt="seprator" width="170" />
+        </div>
+        <div class="row mt-4 mb-4">
+          <div class="col-12 text-center">
+            <img
+              src="images/logo.png"
+              alt="Devintelle Consulting Services"
+              height="100"
+            />
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col text-center mt-3">
+            <a
+              class="mx-2"
+              href="https://www.instagram.com/devintelle_odoo/"
+              target="_blank"
+              ><img src="images/instagram.png" alt="instagram" height="45"
+            /></a>
+            <a
+              class="mx-2"
+              href="https://www.facebook.com/Odoodevintellecs/"
+              target="_blank"
+              ><img src="images/fb.png" alt="facebook" height="45"
+            /></a>
+            <a
+              class="mx-2"
+              href="https://www.youtube.com/channel/UCrmu-T0c8rhMXGuB44bH7gA"
+              target="_blank"
+              ><img src="images/youtube.png" alt="youtube" height="45"
+            /></a>
+            <a
+              class="mx-2"
+              href="https://twitter.com/devintelle"
+              target="_blank"
+              ><img
+                src="images/twitter.png"
+                alt="twitter"
+                height="45"
+                style="border-radius: 5px"
+            /></a>
+            <a
+              class="mx-2"
+              href="https://www.linkedin.com/in/devintelle-odoo-service-provide-34785b144/"
+              target="_blank"
+              ><img src="images/in.png" alt="linkedin" height="45"
+            /></a>
+            <a
+              class="mx-2"
+              href="https://in.pinterest.com/devintellecs_odoo_expert/"
+              target="_blank"
+              ><img src="images/pinterest.png" alt="pinterest" height="45"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="planner_dashboard_action" model="ir.actions.client">
+        <field name="name">Dashboard</field>
+        <field name="tag">dev_event_planner_management.dashboard</field>
+    </record>
+
+    <menuitem id="menu_planner_dashboard" name="Dashboard"
+              parent="menu_planner_root" action="planner_dashboard_action"
+              sequence="5"/>
+</odoo>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="account_move_view_form_inherit_planner" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.planner</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <field name="ref" position="after">
+                <field name="planner_event_id" invisible="not planner_event_id" readonly="1"/>
+            </field>
+        </field>
+    </record>
+</odoo>

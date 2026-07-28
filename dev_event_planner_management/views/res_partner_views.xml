@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="res_partner_view_form_inherit_planner" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.planner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Event Planning" name="event_planning"
+                      groups="dev_event_planner_management.group_event_planner_user">
+                    <group>
+                        <group string="Vendor">
+                            <field name="is_event_vendor"/>
+                            <field name="vendor_category_ids" widget="many2many_tags"
+                                   invisible="not is_event_vendor"/>
+                            <field name="vendor_rating" widget="priority"
+                                   invisible="not is_event_vendor"/>
+                            <field name="vendor_notes" invisible="not is_event_vendor"/>
+                        </group>
+                        <group string="Venue">
+                            <field name="is_event_venue"/>
+                            <field name="venue_capacity" invisible="not is_event_venue"/>
+                            <field name="venue_amenities" invisible="not is_event_venue"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

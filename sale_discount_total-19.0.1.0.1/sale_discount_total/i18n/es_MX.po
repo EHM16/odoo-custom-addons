@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:19+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,164 +16,329 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model_terms:views/sale_order_views.xml
+#. module: sale_discount_total
+#: model_terms:ir.ui.view,arch_db:sale_discount_total.view_order_form
 msgid "(update)"
 msgstr "(actualización)"
 
-#: code:models/res_config_settings.py:30
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_res_config_settings__so_order_approval
 msgid "Activate/disable sale order approval."
 msgstr "Activar/desactivar la aprobación de órdenes de venta."
 
-#: model_terms:views/sale_order_views.xml
+#. module: sale_discount_total
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__account_move__discount_type__amount
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__sale_order__discount_type__amount
+#, fuzzy
+#| msgid "Untaxed Amount"
+msgid "Amount"
+msgstr "Importe sin impuestos"
+
+#. module: sale_discount_total
+#: model_terms:ir.ui.view,arch_db:sale_discount_total.view_order_form
 msgid "Approve"
 msgstr "Aprobar"
 
-#: code:models/account_move.py:37
-#: code:models/sale_order.py:62
-#: model_terms:views/account_move_templates.xml
+#. module: sale_discount_total
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__sale_order__state__cancel
+msgid "Cancelled"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__res_company__so_double_validation__one_step
+msgid "Confirm sale orders in one step"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_bank_statement_line__amount_discount
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_invoice_report__discount
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_move__amount_discount
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order__amount_discount
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_report__discount
+#: model_terms:ir.ui.view,arch_db:sale_discount_total.report_invoice_customized_subtotal
 msgid "Discount"
 msgstr "Descuento"
 
-#: code:models/account_move.py:188
-#: code:models/sale_order_line.py:30
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_move_line__discount
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order_line__discount
 msgid "Discount (%)"
 msgstr "Descuento (%)"
 
-#: code:models/res_config_settings.py:39
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_bank_statement_line__discount_rate
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_move__discount_rate
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order__discount_rate
+#, fuzzy
+#| msgid "Discount type"
+msgid "Discount Rate"
+msgstr "Tipo de descuento"
+
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_res_config_settings__so_double_validation_limit
 msgid "Discount limit requires approval in %"
 msgstr "El límite de descuento requiere aprobación en %"
 
-#: code:models/sale_order_line.py:30
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_sale_order_line__discount
 msgid "Discount needed."
 msgstr "Se necesita descuento."
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Discount on Total in Sale and Invoice With Discount Limit and Approval"
-msgstr "Descuento sobre Total en Venta y Factura con Límite de Descuento y Aprobación"
-
-#: code:models/account_move.py:31
-#: code:models/sale_order.py:56
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_bank_statement_line__discount_type
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_move__discount_type
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order__discount_type
 msgid "Discount type"
 msgstr "Tipo de descuento"
 
-#: code:models/account_move.py:37
-#: code:models/sale_order.py:62
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_invoice_report__display_name
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_move__display_name
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:sale_discount_total.field_res_company__display_name
+#: model:ir.model.fields,field_description:sale_discount_total.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order__display_name
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_report__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__res_company__so_double_validation__two_step
+msgid "Get 2 levels of approvals to confirm a sale order"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_account_bank_statement_line__amount_discount
+#: model:ir.model.fields,help:sale_discount_total.field_account_move__amount_discount
+#: model:ir.model.fields,help:sale_discount_total.field_sale_order__amount_discount
 msgid "Give the amount to be discounted."
 msgstr "Indique el importe a descontar."
 
-#: code:models/account_move.py:188
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_account_move_line__discount
 msgid "Give the discount needed"
 msgstr "Dar el descuento necesario"
 
-#: code:models/account_move.py:35
-#: code:models/sale_order.py:60
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_account_bank_statement_line__discount_rate
+#: model:ir.model.fields,help:sale_discount_total.field_account_move__discount_rate
+#: model:ir.model.fields,help:sale_discount_total.field_sale_order__discount_rate
 msgid "Give the discount rate."
 msgstr "Dé la tasa de descuento."
 
-#: code:models/res_company.py:30
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_invoice_report__id
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_move__id
+#: model:ir.model.fields,field_description:sale_discount_total.field_account_move_line__id
+#: model:ir.model.fields,field_description:sale_discount_total.field_res_company__id
+#: model:ir.model.fields,field_description:sale_discount_total.field_res_config_settings__id
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order__id
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order_line__id
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_report__id
+msgid "ID"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_account_invoice_report
+msgid "Invoices Statistics"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_res_company__so_double_validation
 msgid "Levels of Approvals"
 msgstr "Niveles de aprobaciones"
 
-#: code:models/res_config_settings.py:35
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_res_config_settings__so_double_validation
 msgid "Levels of Approvals *"
 msgstr "Niveles de aprobaciones *"
 
-#: model_terms:views/res_config_settings_views.xml
+#. module: sale_discount_total
+#: model_terms:ir.ui.view,arch_db:sale_discount_total.res_config_settings_view_form
 msgid "Managers must approve document"
 msgstr "Los gerentes deben aprobar el documento."
 
-#: code:models/sale_order.py:74
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order__margin_test
 msgid "Margin"
 msgstr "Margen"
 
-#: code:models/res_company.py:35
-#: code:models/res_config_settings.py:39
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_res_company__so_double_validation_limit
+#: model:ir.model.fields,help:sale_discount_total.field_res_config_settings__so_double_validation_limit
 msgid "Minimum discount percentage for which a double validation is required."
 msgstr "Porcentaje mínimo de descuento para el que se requiere doble validación."
 
-#: code:models/res_company.py:35
+#. module: sale_discount_total
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__account_move__discount_type__percent
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__sale_order__discount_type__percent
+msgid "Percentage"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_res_company__so_double_validation_limit
 msgid "Percentage of Discount that requires double validation'"
 msgstr "Porcentaje de Descuento que requiere doble validación'"
 
-#: code:models/res_company.py:30
-#: code:models/res_config_settings.py:35
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_res_company__so_double_validation
+#: model:ir.model.fields,help:sale_discount_total.field_res_config_settings__so_double_validation
 msgid "Provide a double validation mechanism for sales discount."
 msgstr "Proporcionar un mecanismo de doble validación para el descuento de ventas."
 
-#: code:models/res_config_settings.py:30
-#: model_terms:views/res_config_settings_views.xml
+#. module: sale_discount_total
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__sale_order__state__draft
+msgid "Quotation"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__sale_order__state__sent
+msgid "Quotation Sent"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_res_config_settings__so_order_approval
+#: model_terms:ir.ui.view,arch_db:sale_discount_total.res_config_settings_view_form
 msgid "Sale Discount Approval"
 msgstr "Aprobación de descuento de venta"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Sale Discount on Total Amount"
-msgstr "Descuento sobre el importe total de la venta"
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_sale_order
+msgid "Sale Order Delivery Split"
+msgstr ""
 
-#: code:models/sale_order.py:120
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_sale_order_line
+msgid "Sale Order Line Delivery Split"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model,name:sale_discount_total.model_sale_report
+msgid "Sales Analysis Report"
+msgstr ""
+
+#. module: sale_discount_total
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__sale_order__state__sale
+msgid "Sales Order"
+msgstr ""
+
+#. module: sale_discount_total
+#. odoo-python
+#: code:addons/sale_discount_total/models/sale_order.py:0
 msgid "Some order lines are missing a product, you need to correct them before going further."
 msgstr "A algunas líneas de pedido les falta un producto; debe corregirlas antes de continuar."
 
-#: code:models/sale_order.py:113
+#. module: sale_discount_total
+#. odoo-python
+#: code:addons/sale_discount_total/models/sale_order.py:0
 msgid "Some orders are not in a state requiring confirmation."
 msgstr "Algunos pedidos no se encuentran en un estado que requiera confirmación."
 
-#: code:reports/sale_report.py:30
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_sale_report__discount
 msgid "Specify the discount amount."
 msgstr "Especifique el monto del descuento."
 
-#: code:reports/account_invoice_report.py:30
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_account_invoice_report__discount
 msgid "Specify the discount."
 msgstr "Especifique el descuento."
 
-#: code:models/sale_order.py:54
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order__state
 msgid "Status"
 msgstr "Estado"
 
-#: code:models/sale_order.py:54
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_sale_order__state
 msgid "Status of quotation."
 msgstr "Estado de la cotización."
 
-#: code:models/sale_order.py:68
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order__amount_tax
 msgid "Taxes"
 msgstr "Impuestos"
 
-#: code:models/sale_order.py:68
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_sale_order__amount_tax
 msgid "Taxes of product."
 msgstr "Impuestos del producto."
 
-#: model_terms:views/sale_order_views.xml
+#. module: sale_discount_total
+#: model_terms:ir.ui.view,arch_db:sale_discount_total.view_order_form
 msgid "Terms and conditions..."
 msgstr "Términos y condiciones..."
 
-#: model:ir.module.module,description:__manifest__.py
-msgid "This module is designed to manage discounts on the total amount in sales. It will include features to apply discounts either as a specific amount or a percentage. This module will enhance the functionality of Odoo's sales module, allowing users to easily manage and apply discounts to sales orders based on their requirements."
-msgstr "Este módulo gestiona descuentos sobre el importe total de las ventas, ya sea como un importe fijo o como un porcentaje. Amplía el módulo de ventas de Odoo para administrar y aplicar fácilmente descuentos a las órdenes de venta."
-
-#: code:models/sale_order.py:71
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order__amount_total
 msgid "Total"
 msgstr "Total"
 
-#: code:models/sale_order.py:71
-msgid "Total amount provided."
-msgstr "Importe total aportado."
-
-#: code:models/sale_order_line.py:32
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order_line__total_discount
 msgid "Total Discount"
 msgstr "Descuento Total"
 
-#: code:models/sale_order_line.py:32
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_sale_order__amount_total
+msgid "Total amount provided."
+msgstr "Importe total aportado."
+
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_sale_order_line__total_discount
 msgid "Total discount can bespecified here."
 msgstr "El descuento total se puede especificar aquí."
 
-#: code:models/account_move.py:31
-#: code:models/sale_order.py:56
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_account_bank_statement_line__discount_type
+#: model:ir.model.fields,help:sale_discount_total.field_account_move__discount_type
+#: model:ir.model.fields,help:sale_discount_total.field_sale_order__discount_type
 msgid "Type of discount."
 msgstr "Tipo de descuento."
 
-#: code:models/sale_order.py:65
+#. module: sale_discount_total
+#: model:ir.model.fields,field_description:sale_discount_total.field_sale_order__amount_untaxed
 msgid "Untaxed Amount"
 msgstr "Importe sin impuestos"
 
-#: code:models/sale_order.py:65
+#. module: sale_discount_total
+#: model:ir.model.fields,help:sale_discount_total.field_sale_order__amount_untaxed
 msgid "Untaxed amount displayed."
 msgstr "Monto libre de impuestos mostrado."
+
+#. module: sale_discount_total
+#: model:ir.model.fields.selection,name:sale_discount_total.selection__sale_order__state__waiting
+#, fuzzy
+#| msgid "Sale Discount Approval"
+msgid "Waiting Approval"
+msgstr "Aprobación de descuento de venta"
+
+#~ msgid "Discount on Total in Sale and Invoice With Discount Limit and Approval"
+#~ msgstr "Descuento sobre Total en Venta y Factura con Límite de Descuento y Aprobación"
+
+#~ msgid "Sale Discount on Total Amount"
+#~ msgstr "Descuento sobre el importe total de la venta"
+
+#~ msgid "This module is designed to manage discounts on the total amount in sales. It will include features to apply discounts either as a specific amount or a percentage. This module will enhance the functionality of Odoo's sales module, allowing users to easily manage and apply discounts to sales orders based on their requirements."
+#~ msgstr "Este módulo gestiona descuentos sobre el importe total de las ventas, ya sea como un importe fijo o como un porcentaje. Amplía el módulo de ventas de Odoo para administrar y aplicar fácilmente descuentos a las órdenes de venta."

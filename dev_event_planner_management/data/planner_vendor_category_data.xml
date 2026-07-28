@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo noupdate="1">
+    <record id="vendor_category_venue" model="planner.vendor.category">
+        <field name="name">Venue</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="vendor_category_catering" model="planner.vendor.category">
+        <field name="name">Catering</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="vendor_category_photography" model="planner.vendor.category">
+        <field name="name">Photography &amp; Video</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="vendor_category_florist" model="planner.vendor.category">
+        <field name="name">Florist</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="vendor_category_av" model="planner.vendor.category">
+        <field name="name">AV / Sound &amp; Lighting</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="vendor_category_decor" model="planner.vendor.category">
+        <field name="name">Décor</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="vendor_category_entertainment" model="planner.vendor.category">
+        <field name="name">Entertainment</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="vendor_category_transport" model="planner.vendor.category">
+        <field name="name">Transport</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="vendor_category_security" model="planner.vendor.category">
+        <field name="name">Security</field>
+        <field name="sequence">90</field>
+    </record>
+    <record id="vendor_category_rentals" model="planner.vendor.category">
+        <field name="name">Rentals</field>
+        <field name="sequence">100</field>
+    </record>
+</odoo>

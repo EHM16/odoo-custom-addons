@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:17+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,43 +16,94 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: code:models/res_partner.py:30
-msgid "Due Amount"
-msgstr "Importe pendiente"
+#. module: multiple_payment_for_outstanding_dues
+#: model:ir.model,name:multiple_payment_for_outstanding_dues.model_res_partner
+msgid "Contact"
+msgstr ""
 
-#: model_terms:views/res_partner_views.xml
+#. module: multiple_payment_for_outstanding_dues
+#: model:ir.model,website_form_label:multiple_payment_for_outstanding_dues.model_res_partner
+msgid "Create a Customer"
+msgstr ""
+
+#. module: multiple_payment_for_outstanding_dues
+#: model:ir.model.fields,field_description:multiple_payment_for_outstanding_dues.field_account_move__display_name
+#: model:ir.model.fields,field_description:multiple_payment_for_outstanding_dues.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:multiple_payment_for_outstanding_dues.field_res_partner__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: multiple_payment_for_outstanding_dues
+#: model_terms:ir.ui.view,arch_db:multiple_payment_for_outstanding_dues.view_partner_form
 msgid "Due Statement"
 msgstr "Declaración de vencimiento"
 
-#: model_terms:views/res_partner_views.xml
+#. module: multiple_payment_for_outstanding_dues
+#: model_terms:ir.ui.view,arch_db:multiple_payment_for_outstanding_dues.view_partner_form
 msgid "Due Statements"
 msgstr "Declaraciones vencidas"
 
-#: model_terms:views/account_move_line_views.xml
+#. module: multiple_payment_for_outstanding_dues
+#: model:ir.model.fields,field_description:multiple_payment_for_outstanding_dues.field_account_move__id
+#: model:ir.model.fields,field_description:multiple_payment_for_outstanding_dues.field_account_move_line__id
+#: model:ir.model.fields,field_description:multiple_payment_for_outstanding_dues.field_res_partner__id
+msgid "ID"
+msgstr ""
+
+#. module: multiple_payment_for_outstanding_dues
+#: model_terms:ir.ui.view,arch_db:multiple_payment_for_outstanding_dues.view_account_move_line_filter
 msgid "Invoices"
 msgstr "Facturas"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Multiple Payment For Outstanding Dues"
-msgstr "Pagos múltiples de saldos pendientes"
+#. module: multiple_payment_for_outstanding_dues
+#: model:ir.model,name:multiple_payment_for_outstanding_dues.model_account_move
+msgid "Journal Entry"
+msgstr ""
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Pay all the due payment of the customer"
-msgstr "Pagar todo el pago adeudado del cliente."
+#. module: multiple_payment_for_outstanding_dues
+#: model:ir.model,name:multiple_payment_for_outstanding_dues.model_account_move_line
+msgid "Journal Item"
+msgstr ""
 
-#: model_terms:views/account_move_line_views.xml
+#. module: multiple_payment_for_outstanding_dues
+#: model:ir.actions.server,name:multiple_payment_for_outstanding_dues.action_account_invoice_from_list
+#, fuzzy
+#| msgid "Due Statements"
+msgid "Pay Due Payment(s)"
+msgstr "Declaraciones vencidas"
+
+#. module: multiple_payment_for_outstanding_dues
+#: model_terms:ir.ui.view,arch_db:multiple_payment_for_outstanding_dues.account_move_line_view_tree
 msgid "Pay Now"
 msgstr "Paga ahora"
 
-#: code:models/account_move.py:35
-#: code:models/account_move_line.py:36
+#. module: multiple_payment_for_outstanding_dues
+#. odoo-python
+#: code:addons/multiple_payment_for_outstanding_dues/models/account_move.py:0
+#: code:addons/multiple_payment_for_outstanding_dues/models/account_move_line.py:0
 msgid "Register Payment"
 msgstr "Registrar pago"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid "This module helps you to register the payment for the customer who has one or more payments due. Also, we can see the total due amount for the particular customer in their form view."
-msgstr "Este módulo le ayuda a registrar el pago del cliente que tiene uno o más pagos adeudados. Además, podemos ver el monto total adeudado para el cliente en particular en su vista de formulario."
+#. module: multiple_payment_for_outstanding_dues
+#: model:ir.model.fields,field_description:multiple_payment_for_outstanding_dues.field_res_partner__due_amount
+#: model:ir.model.fields,field_description:multiple_payment_for_outstanding_dues.field_res_users__due_amount
+msgid "Total Sale"
+msgstr ""
 
-#: code:models/res_partner.py:30
+#. module: multiple_payment_for_outstanding_dues
+#: model:ir.model.fields,help:multiple_payment_for_outstanding_dues.field_res_partner__due_amount
+#: model:ir.model.fields,help:multiple_payment_for_outstanding_dues.field_res_users__due_amount
 msgid "Total due amount"
 msgstr "Monto total adeudado"
+
+#~ msgid "Due Amount"
+#~ msgstr "Importe pendiente"
+
+#~ msgid "Multiple Payment For Outstanding Dues"
+#~ msgstr "Pagos múltiples de saldos pendientes"
+
+#~ msgid "Pay all the due payment of the customer"
+#~ msgstr "Pagar todo el pago adeudado del cliente."
+
+#~ msgid "This module helps you to register the payment for the customer who has one or more payments due. Also, we can see the total due amount for the particular customer in their form view."
+#~ msgstr "Este módulo le ayuda a registrar el pago del cliente que tiene uno o más pagos adeudados. Además, podemos ver el monto total adeudado para el cliente en particular en su vista de formulario."

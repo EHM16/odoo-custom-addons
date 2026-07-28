@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="planner_budget_category_view_list" model="ir.ui.view">
+        <field name="name">planner.budget.category.list</field>
+        <field name="model">planner.budget.category</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="is_cancellation_fee"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="planner_budget_category_action" model="ir.actions.act_window">
+        <field name="name">Budget Categories</field>
+        <field name="res_model">planner.budget.category</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="planner_event_tag_view_list" model="ir.ui.view">
+        <field name="name">planner.event.tag.list</field>
+        <field name="model">planner.event.tag</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="name"/>
+                <field name="color" widget="color_picker"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="planner_event_tag_action" model="ir.actions.act_window">
+        <field name="name">Event Tags</field>
+        <field name="res_model">planner.event.tag</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="planner_payment_scheme_view_form" model="ir.ui.view">
+        <field name="name">planner.payment.scheme.form</field>
+        <field name="model">planner.payment.scheme</field>
+        <field name="arch" type="xml">
+            <form string="Payment Scheme">
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="e.g. 50 / 40 / 10"/></h1>
+                    </div>
+                    <group>
+                        <label for="deposit_percentage"/>
+                        <div>
+                            <field name="deposit_percentage" class="oe_inline" digits="[16,1]"/>%
+                        </div>
+                    </group>
+                    <field name="line_ids">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="name"/>
+                            <field name="percentage"/>
+                            <field name="trigger"/>
+                            <field name="days_offset" invisible="trigger == 'booking'"/>
+                        </list>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="planner_payment_scheme_view_list" model="ir.ui.view">
+        <field name="name">planner.payment.scheme.list</field>
+        <field name="model">planner.payment.scheme</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="deposit_percentage" string="Deposit %"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="planner_payment_scheme_action" model="ir.actions.act_window">
+        <field name="name">Payment Schemes</field>
+        <field name="res_model">planner.payment.scheme</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

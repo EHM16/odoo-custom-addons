@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:18+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,51 +16,91 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "All the payment details for the invoice can be added in thereport"
-msgstr "Todos los detalles de pago de la factura se pueden agregar en el informe."
-
-#: model_terms:reports/report_invoice.xml
-msgid "Amount Paid"
+#. module: payment_details_invoice_report
+#: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
+#, fuzzy
+#| msgid "Amount Paid"
+msgid "<span>Amount Paid</span>"
 msgstr "Importe pagado"
 
-#: model_terms:reports/report_invoice.xml
-msgid "Date"
-msgstr "Fecha"
+#. module: payment_details_invoice_report
+#: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
+msgid "<span>Date</span>"
+msgstr ""
 
-#: code:models/account_move.py:30
+#. module: payment_details_invoice_report
+#: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
+#, fuzzy
+#| msgid "Payment Method"
+msgid "<span>Payment Method</span>"
+msgstr "Método de pago"
+
+#. module: payment_details_invoice_report
+#: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
+#, fuzzy
+#| msgid "Payment Ref"
+msgid "<span>Payment Ref</span>"
+msgstr "Referencia de pago"
+
+#. module: payment_details_invoice_report
+#: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
+msgid "<span>SL No</span>"
+msgstr ""
+
+#. module: payment_details_invoice_report
+#: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
+msgid "<strong style=\"font-size:20px;\">Payment Details</strong>"
+msgstr ""
+
+#. module: payment_details_invoice_report
+#: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.report_invoice_inherits
+#, fuzzy
+#| msgid "Invoice Status:"
+msgid "<strong>Invoice Status:</strong>"
+msgstr "Estado de la factura:"
+
+#. module: payment_details_invoice_report
+#: model:ir.model.fields,field_description:payment_details_invoice_report.field_account_move__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: payment_details_invoice_report
+#: model:ir.model.fields,help:payment_details_invoice_report.field_account_bank_statement_line__is_payment_details
+#: model:ir.model.fields,help:payment_details_invoice_report.field_account_move__is_payment_details
 msgid "Enables the payment details in invoice report"
 msgstr "Habilita los detalles de pago en el informe de factura."
 
-#: model_terms:reports/report_invoice.xml
-msgid "Invoice Status:"
-msgstr "Estado de la factura:"
+#. module: payment_details_invoice_report
+#: model:ir.model.fields,field_description:payment_details_invoice_report.field_account_move__id
+msgid "ID"
+msgstr ""
 
-#: model_terms:reports/report_invoice.xml
-msgid "Payment Details"
-msgstr "Detalles de pago"
+#. module: payment_details_invoice_report
+#: model:ir.model,name:payment_details_invoice_report.model_account_move
+msgid "Journal Entry"
+msgstr ""
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Payment Details In Invoice Report"
-msgstr "Detalles de pago en el informe de factura"
-
-#: code:models/account_move.py:30
-#: model_terms:views/account_move_views.xml
+#. module: payment_details_invoice_report
+#: model:ir.model.fields,field_description:payment_details_invoice_report.field_account_bank_statement_line__is_payment_details
+#: model:ir.model.fields,field_description:payment_details_invoice_report.field_account_move__is_payment_details
+#: model_terms:ir.ui.view,arch_db:payment_details_invoice_report.view_move_form
 msgid "Payment Details in Report"
 msgstr "Detalles de pago en el informe"
 
-#: model_terms:reports/report_invoice.xml
-msgid "Payment Method"
-msgstr "Método de pago"
+#~ msgid "All the payment details for the invoice can be added in thereport"
+#~ msgstr "Todos los detalles de pago de la factura se pueden agregar en el informe."
 
-#: model_terms:reports/report_invoice.xml
-msgid "Payment Ref"
-msgstr "Referencia de pago"
+#~ msgid "Date"
+#~ msgstr "Fecha"
 
-#: model_terms:reports/report_invoice.xml
-msgid "SL No"
-msgstr "Núm."
+#~ msgid "Payment Details"
+#~ msgstr "Detalles de pago"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid "We can see the current payment state of the invoice in the report. We can add all the payment details of a particular invoice while print the invoice.Here we have the detailssuch as Payment reference, Date of payment, Payment methodand Amount."
-msgstr "El reporte muestra el estado de pago actual de la factura y todos sus detalles al imprimirla, como la referencia, la fecha, el método y el importe del pago."
+#~ msgid "Payment Details In Invoice Report"
+#~ msgstr "Detalles de pago en el informe de factura"
+
+#~ msgid "SL No"
+#~ msgstr "Núm."
+
+#~ msgid "We can see the current payment state of the invoice in the report. We can add all the payment details of a particular invoice while print the invoice.Here we have the detailssuch as Payment reference, Date of payment, Payment methodand Amount."
+#~ msgstr "El reporte muestra el estado de pago actual de la factura y todos sus detalles al imprimirla, como la referencia, la fecha, el método y el importe del pago."

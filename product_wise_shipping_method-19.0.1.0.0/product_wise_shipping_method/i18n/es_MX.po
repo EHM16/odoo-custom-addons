@@ -16,30 +16,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#. module: product_wise_shipping_method
 #: code:models/sale_order.py:110
 msgid "Add a shipping method"
 msgstr "Agregar un método de envío"
 
+#. module: product_wise_shipping_method
 #: code:models/product_template.py:30
 msgid "Choose shipping method."
 msgstr "Elija el método de envío."
 
+#. module: product_wise_shipping_method
 #: model:ir.module.module,name:__manifest__.py
 msgid "Product Wise Shipping Method"
 msgstr "Método de envío por producto"
 
+#. module: product_wise_shipping_method
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Product Wise Shipping Method for sale order."
 msgstr "Método de envío por producto para la orden de venta."
 
+#. module: product_wise_shipping_method
 #: code:models/product_template.py:30
 msgid "Shipping Method"
 msgstr "Método de envío"
 
+#. module: product_wise_shipping_method
 #: code:models/sale_order.py:106
 msgid "Shipping method is already applied...!!"
 msgstr "¡¡Ya está aplicado el método de envío...!!"
 
+#. module: product_wise_shipping_method
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "This module helps to provide shipping methods easily via\n"

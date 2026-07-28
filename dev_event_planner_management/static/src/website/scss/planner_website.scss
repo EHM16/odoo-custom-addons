@@ -1,0 +1,1147 @@
+// Event Planner website — premium design system
+$o-planner-web-accent: #C9A227;      // warm gold
+$o-planner-web-dark: #1E1B24;        // near-black plum
+$o-planner-web-soft: #F6F3EE;        // warm paper
+$o-planner-web-radius: 14px;
+
+.o_planner_site {
+    // --- Typography -------------------------------------------------------
+    .o_planner_eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 0.78rem;
+        color: $o-planner-web-accent;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .o_planner_display {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: clamp(2.4rem, 6vw, 4.4rem);
+        line-height: 1.08;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+
+    .o_planner_display_sm {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .o_planner_heading {
+        font-family: Georgia, 'Times New Roman', serif;
+        font-size: clamp(1.6rem, 3vw, 2.4rem);
+
+        &.text-center::after {
+            content: "";
+            display: block;
+            width: 56px;
+            height: 2px;
+            background: $o-planner-web-accent;
+            margin: 16px auto 0;
+        }
+    }
+
+    .o_planner_lead {
+        font-size: 1.15rem;
+        color: rgba(255, 255, 255, 0.85);
+        max-width: 560px;
+        margin-bottom: 28px;
+    }
+
+    .o_planner_section .o_planner_lead { color: inherit; }
+
+    // --- Sections -----------------------------------------------------------
+    .o_planner_section { padding: 88px 0; }
+
+    .o_planner_dark {
+        background: $o-planner-web-dark;
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .o_planner_soft { background: $o-planner-web-soft; }
+
+    .o_planner_pagehead {
+        background-color: $o-planner-web-dark;
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        padding: 110px 0 70px;
+        color: #fff;
+    }
+
+    // --- Hero ----------------------------------------------------------------
+    .o_planner_hero {
+        position: relative;
+        min-height: 92vh;
+        background: $o-planner-web-dark;
+        overflow: hidden;
+
+        .o_planner_hero_bg {
+            position: absolute;
+            inset: -12% 0;
+            background:
+                radial-gradient(ellipse at 70% 20%, rgba(201, 162, 39, 0.28), transparent 55%),
+                radial-gradient(ellipse at 20% 85%, rgba(113, 75, 103, 0.5), transparent 60%),
+                linear-gradient(160deg, #26202e 0%, $o-planner-web-dark 70%);
+            background-size: 160% 160%;
+            will-change: transform, background-position;
+            animation: o-planner-drift 18s ease-in-out infinite alternate;
+        }
+
+        .o_planner_trust_pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(201, 162, 39, 0.4);
+            border-radius: 999px;
+            padding: 7px 18px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.86rem;
+            margin-bottom: 22px;
+
+            .o_planner_stars {
+                color: $o-planner-web-accent;
+                letter-spacing: 2px;
+                font-size: 0.8rem;
+            }
+        }
+
+        .o_planner_hero_ring {
+            position: absolute;
+            right: -60px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 420px;
+            height: 420px;
+            border: 3px solid rgba(201, 162, 39, 0.85);
+            border-radius: 50%;
+            pointer-events: none;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 32px;
+                border: 2px solid rgba(201, 162, 39, 0.55);
+                border-radius: 50%;
+            }
+        }
+
+        .o_planner_display em {
+            font-style: italic;
+            color: $o-planner-web-accent;
+        }
+
+        .o_planner_hero_cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 44px;
+        }
+
+        .o_planner_hero_card {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            backdrop-filter: blur(6px);
+            border-radius: 999px;
+            padding: 9px 18px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.9rem;
+
+            .fa { color: $o-planner-web-accent; margin-right: 8px; }
+        }
+
+        .o_planner_scroll_cue {
+            position: absolute;
+            bottom: 26px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 26px;
+            height: 42px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            border-radius: 14px;
+            pointer-events: none;
+
+            span {
+                position: absolute;
+                top: 8px;
+                left: 50%;
+                width: 4px;
+                height: 8px;
+                margin-left: -2px;
+                border-radius: 2px;
+                background: $o-planner-web-accent;
+                animation: o-planner-cue 1.8s ease-in-out infinite;
+            }
+        }
+    }
+
+    @keyframes o-planner-cue {
+        0%, 100% { transform: translateY(0); opacity: 1; }
+        60% { transform: translateY(12px); opacity: 0.2; }
+    }
+
+    @keyframes o-planner-drift {
+        from { background-position: 0% 0%; }
+        to { background-position: 100% 100%; }
+    }
+
+    // Staggered scroll reveals: children of an .o_planner_stagger grid
+    // animate in sequence instead of all at once.
+    .o_planner_stagger {
+        > *:nth-child(2) .o_animate, > .o_animate:nth-child(2) { animation-delay: 0.12s; }
+        > *:nth-child(3) .o_animate, > .o_animate:nth-child(3) { animation-delay: 0.24s; }
+        > *:nth-child(4) .o_animate, > .o_animate:nth-child(4) { animation-delay: 0.36s; }
+        > *:nth-child(5) .o_animate, > .o_animate:nth-child(5) { animation-delay: 0.48s; }
+        > *:nth-child(6) .o_animate, > .o_animate:nth-child(6) { animation-delay: 0.6s; }
+    }
+
+    // --- Why us ------------------------------------------------------------------
+    .o_planner_why {
+        background: #fff;
+        border: 1px solid rgba(30, 27, 36, 0.07);
+        border-radius: $o-planner-web-radius;
+        padding: 30px 26px;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 36px rgba(30, 27, 36, 0.12);
+
+            .o_planner_why_icon {
+                background: $o-planner-web-accent;
+                color: #1c1607;
+                transform: rotate(-6deg) scale(1.06);
+            }
+        }
+
+        .o_planner_why_icon {
+            width: 58px;
+            height: 58px;
+            margin: 0 auto 18px;
+            border-radius: 18px;
+            background: rgba(201, 162, 39, 0.14);
+            color: darken($o-planner-web-accent, 8%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            transition: all 0.25s ease;
+        }
+    }
+
+    // --- Process timeline ------------------------------------------------------------
+    .o_planner_process {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 26px;
+        position: relative;
+        padding-top: 8px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 32px;
+            left: 6%;
+            right: 6%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent,
+                rgba(201, 162, 39, 0.6) 12%, rgba(201, 162, 39, 0.6) 88%, transparent);
+        }
+
+        .o_planner_process_step {
+            text-align: center;
+            position: relative;
+
+            .o_planner_process_node {
+                width: 48px;
+                height: 48px;
+                margin: 0 auto 18px;
+                border-radius: 50%;
+                background: $o-planner-web-dark;
+                color: $o-planner-web-accent;
+                font-family: Georgia, serif;
+                font-size: 1.15rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid $o-planner-web-accent;
+                box-shadow: 0 0 0 6px rgba(201, 162, 39, 0.12);
+                position: relative;
+                z-index: 1;
+                transition: transform 0.2s ease;
+            }
+
+            &:hover .o_planner_process_node { transform: scale(1.12); }
+        }
+
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(2, 1fr);
+
+            &::before { display: none; }
+        }
+    }
+
+    // --- CTA band ---------------------------------------------------------------------
+    .o_planner_cta_band {
+        position: relative;
+        overflow: hidden;
+        padding: 110px 0;
+        background:
+            radial-gradient(ellipse at 15% 0%, rgba(201, 162, 39, 0.22), transparent 50%),
+            radial-gradient(ellipse at 85% 100%, rgba(113, 75, 103, 0.55), transparent 55%),
+            $o-planner-web-dark;
+
+        .o_planner_display_sm {
+            color: #fff;
+
+            em {
+                font-style: italic;
+                color: $o-planner-web-accent;
+            }
+        }
+
+        .o_planner_lead { color: rgba(255, 255, 255, 0.8); }
+    }
+
+    // --- Ribbon (scrolling strip) ------------------------------------------------
+    .o_planner_ribbon {
+        background: $o-planner-web-accent;
+        color: #221B07;
+        overflow: hidden;
+        padding: 10px 0;
+
+        .o_planner_ribbon_track {
+            display: flex;
+            gap: 28px;
+            width: max-content;
+            font-family: Georgia, serif;
+            font-size: 1.02rem;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            animation: o-planner-marquee 26s linear infinite;
+
+            .o_planner_dot { opacity: 0.55; }
+        }
+    }
+
+    @keyframes o-planner-marquee {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+
+    // --- Testimonials --------------------------------------------------------------
+    .o_planner_quote {
+        text-align: center;
+        margin: 0;
+        padding: 12px 40px 44px;
+
+        &::before {
+            content: "\201C";
+            display: block;
+            font-family: Georgia, serif;
+            font-size: 4.4rem;
+            line-height: 0.6;
+            color: $o-planner-web-accent;
+            margin-bottom: 18px;
+        }
+
+        p {
+            font-family: Georgia, serif;
+            font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+            line-height: 1.5;
+            max-width: 40ch;
+            margin: 0 auto 18px;
+        }
+
+        footer {
+            font-weight: 700;
+
+            span {
+                font-weight: 400;
+                color: rgba(30, 27, 36, 0.55);
+            }
+        }
+    }
+
+    .o_planner_indicators button {
+        background-color: $o-planner-web-accent !important;
+        width: 8px !important;
+        height: 8px !important;
+        border-radius: 50%;
+        border: 0 !important;
+    }
+
+    .o_planner_btn_accent {
+        position: relative;
+        overflow: hidden;
+        background: $o-planner-web-accent;
+        border-color: $o-planner-web-accent;
+        color: #1c1607;
+        font-weight: 600;
+        transition: transform 0.15s ease, box-shadow 0.15s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -80%;
+            width: 45%;
+            height: 100%;
+            background: linear-gradient(105deg, transparent,
+                rgba(255, 255, 255, 0.45), transparent);
+            transform: skewX(-20deg);
+            transition: left 0.5s ease;
+        }
+
+        &:hover {
+            background: lighten($o-planner-web-accent, 6%);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 22px rgba(201, 162, 39, 0.35);
+            color: #1c1607;
+
+            &::after { left: 130%; }
+        }
+    }
+
+    // --- Cards ------------------------------------------------------------------
+    .o_planner_card {
+        background: #fff;
+        border-radius: $o-planner-web-radius;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(30, 27, 36, 0.07);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        color: inherit;
+        height: 100%;
+
+        &:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 36px rgba(30, 27, 36, 0.14);
+
+            .o_planner_card_media { transform: scale(1.04); }
+            .o_planner_card_link { letter-spacing: 0.5px; }
+        }
+
+        .o_planner_card_media {
+            height: 210px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.4s ease;
+        }
+
+        .o_planner_card_body { padding: 22px; }
+
+        .o_planner_card_link {
+            color: $o-planner-web-accent;
+            font-weight: 600;
+            transition: letter-spacing 0.2s ease;
+        }
+    }
+
+    .o_planner_card_placeholder {
+        width: 100%;
+        height: 100%;
+        background:
+            radial-gradient(ellipse at 30% 30%, rgba(201, 162, 39, 0.35), transparent 60%),
+            linear-gradient(135deg, #4d3d54, #241e2b);
+    }
+
+    .o_planner_card_cta {
+        position: sticky;
+        top: 90px;
+    }
+
+    // --- Portfolio tiles ----------------------------------------------------------
+    .o_planner_tile {
+        position: relative;
+        border-radius: $o-planner-web-radius;
+        overflow: hidden;
+        min-height: 260px;
+        display: flex;
+        align-items: flex-end;
+
+        .o_planner_tile_media {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.45s ease;
+        }
+
+        .o_planner_tile_caption {
+            position: relative;
+            width: 100%;
+            padding: 40px 18px 16px;
+            color: #fff;
+            background: linear-gradient(transparent, rgba(20, 16, 24, 0.88));
+            transform: translateY(6px);
+            transition: transform 0.35s ease;
+
+            strong {
+                display: block;
+                font-family: Georgia, serif;
+                font-size: 1.05rem;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                width: 34px;
+                height: 2px;
+                background: $o-planner-web-accent;
+                margin-bottom: 10px;
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.35s ease 0.05s;
+            }
+        }
+
+        &:hover {
+            .o_planner_tile_media { transform: scale(1.06); }
+            .o_planner_tile_caption { transform: translateY(0); }
+            .o_planner_tile_caption::before { transform: scaleX(1); }
+        }
+    }
+
+    .o_planner_masonry {
+        columns: 3 300px;
+        column-gap: 16px;
+
+        .o_planner_masonry_item {
+            break-inside: avoid;
+            margin-bottom: 16px;
+
+            &:nth-child(3n+1) .o_planner_tile { min-height: 320px; }
+            &:nth-child(3n+2) .o_planner_tile { min-height: 240px; }
+        }
+    }
+
+    .o_planner_chip {
+        display: inline-block;
+        padding: 6px 18px;
+        border: 1px solid rgba(30, 27, 36, 0.25);
+        border-radius: 999px;
+        color: inherit;
+        text-decoration: none;
+        transition: all 0.2s ease;
+
+        &:hover { border-color: $o-planner-web-accent; color: darken($o-planner-web-accent, 12%); }
+
+        &.active {
+            background: $o-planner-web-dark;
+            border-color: $o-planner-web-dark;
+            color: #fff;
+        }
+    }
+
+    // --- Stats -------------------------------------------------------------------
+    .o_planner_stat {
+        font-family: Georgia, serif;
+        font-size: clamp(2rem, 5vw, 3.4rem);
+        color: $o-planner-web-accent;
+        font-weight: 700;
+    }
+
+    .o_planner_stat_label {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.65);
+    }
+
+    // Hairline separators between the stat columns
+    .o_planner_dark .row > .col-4:not(:first-child) {
+        border-left: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    // Featured (first) service card gets a taller, editorial media area
+    .o_planner_stagger > .col-lg-6 .o_planner_card_media {
+        height: 300px;
+    }
+
+    // --- Steps ("how we work" + form wizard) -----------------------------------------
+    .o_planner_step {
+        background: #fff;
+        border-radius: $o-planner-web-radius;
+        padding: 26px 22px;
+        height: 100%;
+        box-shadow: 0 2px 8px rgba(30, 27, 36, 0.06);
+
+        .o_planner_step_number {
+            font-family: Georgia, serif;
+            font-size: 2rem;
+            color: $o-planner-web-accent;
+        }
+    }
+
+    .o_planner_avatar {
+        width: 128px;
+        height: 128px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 6px 18px rgba(30, 27, 36, 0.18);
+    }
+
+    .o_planner_steps_bar {
+        gap: 8px;
+
+        .o_planner_steps_step {
+            flex: 1;
+            text-align: center;
+            padding: 10px 6px;
+            border-bottom: 3px solid rgba(30, 27, 36, 0.12);
+            color: #8a8a8a;
+            font-weight: 600;
+
+            &.active {
+                border-color: $o-planner-web-accent;
+                color: inherit;
+            }
+        }
+    }
+
+
+
+    .o_planner_thanks_icon {
+        font-size: 3.4rem;
+        color: $o-planner-web-accent;
+    }
+
+    // =========================================================================
+    // Plan My Event — inquiry form
+    // =========================================================================
+    .o_planner_pagehead_inquiry {
+        position: relative;
+        overflow: hidden;
+        padding: 130px 0 90px;
+
+        .o_planner_pagehead_bg {
+            position: absolute;
+            inset: -20% -10%;
+            background:
+                radial-gradient(ellipse at 80% 10%, rgba(201, 162, 39, 0.24), transparent 55%),
+                radial-gradient(ellipse at 10% 90%, rgba(113, 75, 103, 0.45), transparent 60%);
+            background-size: 150% 150%;
+            animation: o-planner-drift 20s ease-in-out infinite alternate;
+        }
+
+        .o_planner_pagehead_ring {
+            position: absolute;
+            right: -90px;
+            bottom: -90px;
+            width: 280px;
+            height: 280px;
+            border: 2px solid rgba(201, 162, 39, 0.35);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .o_planner_hero_cards { margin-top: 30px; }
+    }
+
+    .o_planner_form_card {
+        position: relative;
+        background: #fff;
+        border-radius: $o-planner-web-radius;
+        box-shadow: 0 18px 48px rgba(30, 27, 36, 0.1);
+        padding: 34px 30px 30px;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, $o-planner-web-accent, lighten($o-planner-web-accent, 18%), $o-planner-web-accent);
+            background-size: 200% 100%;
+            animation: o-planner-sheen 6s linear infinite;
+        }
+
+        @media (max-width: 767px) { padding: 26px 18px 22px; }
+    }
+
+    @keyframes o-planner-sheen {
+        from { background-position: 0% 0; }
+        to { background-position: -200% 0; }
+    }
+
+    .o_planner_step_kicker {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        color: $o-planner-web-accent;
+        margin-bottom: 6px;
+    }
+
+    .o_planner_step_title {
+        font-family: Georgia, 'Times New Roman', serif;
+        margin-bottom: 4px;
+    }
+
+    // Animate step transitions
+    .o_planner_form_step {
+        animation: o-planner-step-in 0.35s ease both;
+    }
+
+    @keyframes o-planner-step-in {
+        from { opacity: 0; transform: translateX(14px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+
+    // Progress stepper with connecting fill line
+    .o_planner_steps_bar {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 34px;
+        padding: 0 4px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 12%;
+            right: 12%;
+            height: 2px;
+            background: rgba(30, 27, 36, 0.12);
+            z-index: 0;
+        }
+
+        .o_planner_steps_fill {
+            position: absolute;
+            top: 20px;
+            left: 12%;
+            width: 0%;
+            height: 2px;
+            background: $o-planner-web-accent;
+            z-index: 0;
+            transition: width 0.4s ease;
+        }
+
+        .o_planner_steps_step {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.86rem;
+            color: #b3aab8;
+            transition: color 0.25s ease;
+
+            .o_planner_steps_dot {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                margin: 0 auto 8px;
+                border-radius: 50%;
+                background: #fff;
+                border: 2px solid rgba(30, 27, 36, 0.15);
+                color: #b3aab8;
+                transition: all 0.3s ease;
+            }
+
+            .o_planner_steps_text { display: block; }
+            @media (max-width: 575px) { .o_planner_steps_text { display: none; } }
+
+            &.active {
+                color: $o-planner-web-dark;
+
+                .o_planner_steps_dot {
+                    border-color: $o-planner-web-accent;
+                    background: $o-planner-web-accent;
+                    color: #1c1607;
+                    box-shadow: 0 0 0 6px rgba(201, 162, 39, 0.15);
+                    transform: scale(1.06);
+                }
+            }
+
+            &.done .o_planner_steps_dot {
+                border-color: $o-planner-web-accent;
+                background: #fff;
+                color: $o-planner-web-accent;
+            }
+        }
+    }
+
+    // Event-type selection cards
+    .o_planner_type_option {
+        display: block;
+        cursor: pointer;
+        margin: 0;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+
+    .o_planner_type_card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        text-align: center;
+        border: 1px solid rgba(30, 27, 36, 0.14);
+        border-radius: 12px;
+        padding: 20px 10px 16px;
+        transition: all 0.2s ease;
+
+        .o_planner_type_icon {
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(201, 162, 39, 0.12);
+            color: darken($o-planner-web-accent, 8%);
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+        }
+
+        .o_planner_type_name {
+            font-weight: 600;
+            font-size: 0.92rem;
+        }
+
+        .o_planner_type_check {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: $o-planner-web-accent;
+            color: #1c1607;
+            font-size: 0.65rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: scale(0.4);
+            transition: all 0.2s ease;
+        }
+    }
+
+    .o_planner_type_option:hover .o_planner_type_card {
+        border-color: rgba(201, 162, 39, 0.55);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 22px rgba(30, 27, 36, 0.08);
+    }
+
+    .o_planner_type_option input:checked ~ .o_planner_type_card,
+    .o_planner_type_option.o_selected .o_planner_type_card {
+        border-color: $o-planner-web-accent;
+        background: rgba(201, 162, 39, 0.08);
+        box-shadow: 0 10px 24px rgba(201, 162, 39, 0.18);
+
+        .o_planner_type_icon {
+            background: $o-planner-web-accent;
+            color: #1c1607;
+            transform: scale(1.08);
+        }
+
+        .o_planner_type_check {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    // Icon-adorned input groups
+    .o_planner_field_group {
+        display: flex;
+        align-items: stretch;
+        border: 1px solid rgba(30, 27, 36, 0.16);
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+        &:focus-within {
+            border-color: $o-planner-web-accent;
+            box-shadow: 0 0 0 3px rgba(201, 162, 39, 0.15);
+        }
+
+        .o_planner_field_icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            flex: 0 0 44px;
+            background: $o-planner-web-soft;
+            color: $o-planner-web-accent;
+        }
+
+        .form-control, .form-select {
+            box-shadow: none !important;
+
+            &:focus { box-shadow: none; }
+        }
+    }
+
+    .o_planner_field_group_textarea .o_planner_field_icon {
+        align-items: flex-start;
+        padding-top: 12px;
+    }
+
+    .o_planner_privacy_note {
+        margin-top: 18px;
+        font-size: 0.85rem;
+        color: rgba(30, 27, 36, 0.55);
+
+        .fa { color: $o-planner-web-accent; margin-right: 6px; }
+    }
+
+    .o_planner_submit {
+        &.o_planner_submitting {
+            pointer-events: none;
+            opacity: 0.85;
+
+            .o_planner_submit_label::after {
+                content: "";
+                display: inline-block;
+                width: 14px;
+                height: 14px;
+                margin-left: 8px;
+                border: 2px solid rgba(28, 22, 7, 0.35);
+                border-top-color: #1c1607;
+                border-radius: 50%;
+                vertical-align: -2px;
+                animation: o-planner-spin 0.7s linear infinite;
+            }
+        }
+    }
+
+    @keyframes o-planner-spin {
+        to { transform: rotate(360deg); }
+    }
+
+    // Sidebar
+    .o_planner_form_side {
+        background: $o-planner-web-soft;
+        border-radius: $o-planner-web-radius;
+        padding: 30px 26px;
+        position: sticky;
+        top: 90px;
+    }
+
+    .o_planner_side_item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 20px;
+
+        .o_planner_side_icon {
+            flex: 0 0 40px;
+            width: 40px;
+            height: 40px;
+            border-radius: 12px;
+            background: #fff;
+            color: $o-planner-web-accent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(30, 27, 36, 0.08);
+        }
+    }
+
+    .o_planner_side_quote {
+        margin-top: 26px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(30, 27, 36, 0.12);
+        font-family: Georgia, serif;
+        font-style: italic;
+
+        p { margin-bottom: 6px; }
+
+        footer {
+            font-style: normal;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: rgba(30, 27, 36, 0.6);
+        }
+    }
+
+    // =========================================================================
+    // Thank You page
+    // =========================================================================
+    .o_planner_thanks_wrap {
+        position: relative;
+        overflow: hidden;
+        min-height: 84vh;
+        display: flex;
+        align-items: center;
+        padding: 90px 0;
+        background: $o-planner-web-soft;
+
+        .o_planner_thanks_bg {
+            position: absolute;
+            inset: -20%;
+            background:
+                radial-gradient(ellipse at 18% 15%, rgba(201, 162, 39, 0.16), transparent 55%),
+                radial-gradient(ellipse at 85% 85%, rgba(113, 75, 103, 0.22), transparent 55%);
+            background-size: 150% 150%;
+            animation: o-planner-drift 20s ease-in-out infinite alternate;
+        }
+    }
+
+    .o_planner_thanks_card {
+        position: relative;
+        max-width: 620px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 24px 60px rgba(30, 27, 36, 0.16);
+        padding: 54px 40px 44px;
+        text-align: center;
+        animation: o-planner-card-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+
+        @media (max-width: 575px) { padding: 40px 22px 32px; }
+    }
+
+    @keyframes o-planner-card-in {
+        from { opacity: 0; transform: translateY(24px) scale(0.98); }
+        to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    // Animated checkmark
+    .o_checkmark_wrap {
+        width: 88px;
+        height: 88px;
+        margin: 0 auto 22px;
+    }
+
+    .o_checkmark {
+        width: 100%;
+        height: 100%;
+    }
+
+    .o_checkmark_circle {
+        stroke: $o-planner-web-accent;
+        stroke-width: 3;
+        stroke-linecap: round;
+        stroke-dasharray: 226;
+        stroke-dashoffset: 226;
+        animation: o-planner-draw-circle 0.6s ease forwards 0.1s;
+    }
+
+    .o_checkmark_check {
+        stroke: $o-planner-web-accent;
+        stroke-width: 4;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 48;
+        stroke-dashoffset: 48;
+        animation: o-planner-draw-check 0.4s ease forwards 0.65s;
+    }
+
+    @keyframes o-planner-draw-circle {
+        to { stroke-dashoffset: 0; }
+    }
+
+    @keyframes o-planner-draw-check {
+        to { stroke-dashoffset: 0; }
+    }
+
+    .o_planner_thanks_timeline {
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+        margin: 32px 0 8px;
+        flex-wrap: wrap;
+
+        .o_planner_thanks_step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: rgba(30, 27, 36, 0.6);
+            max-width: 130px;
+        }
+
+        .o_planner_thanks_node {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: $o-planner-web-soft;
+            color: $o-planner-web-accent;
+            border: 1px solid rgba(201, 162, 39, 0.3);
+        }
+    }
+
+    .o_planner_thanks_actions {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-top: 26px;
+    }
+
+    .o_planner_thanks_link {
+        display: inline-block;
+        margin-top: 16px;
+        color: rgba(30, 27, 36, 0.6);
+        font-weight: 600;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s ease;
+
+        &:hover { color: $o-planner-web-dark; border-color: $o-planner-web-accent; }
+    }
+
+    .o_planner_thanks_footnote {
+        margin-top: 26px;
+        padding-top: 18px;
+        border-top: 1px solid rgba(30, 27, 36, 0.1);
+        font-size: 0.82rem;
+        color: rgba(30, 27, 36, 0.5);
+
+        .fa { color: $o-planner-web-accent; margin-right: 6px; }
+    }
+
+    // Confetti
+    .o_planner_confetti_field {
+        position: absolute;
+        inset: 0;
+        overflow: hidden;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .o_planner_confetti_piece {
+        position: absolute;
+        top: -12px;
+        width: 9px;
+        height: 14px;
+        opacity: 0.9;
+        animation: o-planner-confetti-fall linear forwards;
+    }
+
+    @keyframes o-planner-confetti-fall {
+        to {
+            transform: translateY(105vh) translateX(var(--o-confetti-drift, 0)) rotate(var(--o-confetti-spin, 360deg));
+            opacity: 0;
+        }
+    }
+}
+
+// Respect reduced-motion preferences: no transforms, no parallax drift
+@media (prefers-reduced-motion: reduce) {
+    .o_planner_site * {
+        transition: none !important;
+        animation-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <!-- ============================== Landing ============================== -->
+    <template id="website_landing" name="Event Planning">
+        <t t-call="website.layout">
+            <t t-set="pageName" t-value="'planner_landing'"/>
+            <div id="wrap" class="o_planner_site">
+
+                <!-- Hero -->
+                <section class="o_planner_hero d-flex align-items-center">
+                    <div class="o_planner_hero_bg" data-planner-parallax="0.3"/>
+                    <div class="o_planner_hero_ring" aria-hidden="true"/>
+                    <div class="container position-relative">
+                        <div class="o_planner_trust_pill o_animate o_anim_fade_in_up">
+                            <span class="o_planner_stars" aria-hidden="true">★★★★★</span>
+                            Trusted for weddings, summits and galas
+                        </div>
+                        <h1 class="o_planner_display o_animate o_anim_fade_in_up" style="animation-delay: 0.15s;">
+                            Unforgettable events,<br/><em>flawlessly</em> delivered.
+                        </h1>
+                        <p class="o_planner_lead o_animate o_anim_fade_in_up" style="animation-delay: 0.3s;">
+                            Weddings, galas and corporate experiences — imagined together,
+                            executed to the minute.
+                        </p>
+                        <div class="o_animate o_anim_fade_in_up" style="animation-delay: 0.45s;">
+                            <a href="/plan-my-event" class="btn o_planner_btn_accent btn-lg me-2">Plan my event</a>
+                            <a href="/event-portfolio" class="btn btn-outline-light btn-lg">See our work</a>
+                        </div>
+                        <div class="o_planner_hero_cards o_animate o_anim_fade_in_up" style="animation-delay: 0.6s;">
+                            <div class="o_planner_hero_card">
+                                <i class="fa fa-check-circle"/> Booked in one online step
+                            </div>
+                            <div class="o_planner_hero_card">
+                                <i class="fa fa-clock-o"/> Run of show, to the minute
+                            </div>
+                            <div class="o_planner_hero_card">
+                                <i class="fa fa-diamond"/> A curated vendor black book
+                            </div>
+                        </div>
+                    </div>
+                    <div class="o_planner_scroll_cue" aria-hidden="true"><span></span></div>
+                </section>
+
+                <!-- Ribbon -->
+                <div class="o_planner_ribbon" aria-hidden="true">
+                    <div class="o_planner_ribbon_track">
+                        <span>Weddings</span><span class="o_planner_dot">·</span>
+                        <span>Corporate</span><span class="o_planner_dot">·</span>
+                        <span>Conferences</span><span class="o_planner_dot">·</span>
+                        <span>Galas</span><span class="o_planner_dot">·</span>
+                        <span>Private Parties</span><span class="o_planner_dot">·</span>
+                        <span>Weddings</span><span class="o_planner_dot">·</span>
+                        <span>Corporate</span><span class="o_planner_dot">·</span>
+                        <span>Conferences</span><span class="o_planner_dot">·</span>
+                        <span>Galas</span><span class="o_planner_dot">·</span>
+                        <span>Private Parties</span><span class="o_planner_dot">·</span>
+                    </div>
+                </div>
+
+                <!-- Why us -->
+                <section class="o_planner_section container">
+                    <p class="o_planner_eyebrow text-center">Why couples and companies choose us</p>
+                    <h2 class="o_planner_heading text-center mb-5">Planning without the chaos</h2>
+                    <div class="row g-4 o_planner_stagger">
+                        <div class="col-12 col-md-4">
+                            <div class="o_planner_why o_animate o_anim_fade_in_up">
+                                <div class="o_planner_why_icon"><i class="fa fa-user" title="One contact"/></div>
+                                <h5>One point of contact</h5>
+                                <p class="text-muted mb-0">One planner owns your event end to end.
+                                   No chasing five vendors — we do that for you.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="o_planner_why o_animate o_anim_fade_in_up">
+                                <div class="o_planner_why_icon"><i class="fa fa-eye" title="Transparency"/></div>
+                                <h5>Transparent budgets</h5>
+                                <p class="text-muted mb-0">Planned, agreed and actual costs — visible at
+                                   every step. No surprises on the final invoice.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="o_planner_why o_animate o_anim_fade_in_up">
+                                <div class="o_planner_why_icon"><i class="fa fa-diamond" title="Vendors"/></div>
+                                <h5>A vetted black book</h5>
+                                <p class="text-muted mb-0">Years of curated caterers, florists, AV crews
+                                   and artists — matched to your style and budget.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Services -->
+                <section class="o_planner_section o_planner_soft" t-if="event_types">
+                    <div class="container">
+                    <p class="o_planner_eyebrow text-center">What we create</p>
+                    <h2 class="o_planner_heading text-center mb-5">Signature services</h2>
+                    <div class="row g-4 o_planner_stagger">
+                        <div t-foreach="event_types" t-as="etype"
+                             t-attf-class="col-12 col-md-6 #{etype_index == 0 and 'col-lg-6' or 'col-lg-3'}">
+                            <a t-attf-href="/event-services/#{etype.id}"
+                               class="o_planner_card o_animate o_anim_fade_in_up d-block text-decoration-none">
+                                <div class="o_planner_card_media"
+                                     t-attf-style="background-image: url(#{etype.cover_image and image_data_uri(etype.cover_image) or ''});">
+                                    <div t-if="not etype.cover_image" class="o_planner_card_placeholder"/>
+                                </div>
+                                <div class="o_planner_card_body">
+                                    <h4 t-esc="etype.name"/>
+                                    <p class="text-muted" t-esc="etype.website_tagline or etype.description or ''"/>
+                                    <span class="o_planner_card_link">Discover <i class="fa fa-long-arrow-right ms-1"/></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+                <!-- Stats -->
+                <section class="o_planner_section o_planner_dark">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="o_planner_stat" t-att-data-planner-counter="stats['events_delivered']">0</div>
+                                <div class="o_planner_stat_label">Events delivered</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="o_planner_stat" t-att-data-planner-counter="stats['guests_hosted']">0</div>
+                                <div class="o_planner_stat_label">Guests hosted</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="o_planner_stat" t-att-data-planner-counter="stats['vendor_partners']">0</div>
+                                <div class="o_planner_stat_label">Trusted vendors</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Portfolio strip -->
+                <section class="o_planner_section container" t-if="portfolio_events">
+                    <p class="o_planner_eyebrow text-center">Our work</p>
+                    <h2 class="o_planner_heading text-center mb-5">Recent celebrations</h2>
+                    <div class="row g-3 o_planner_stagger">
+                        <div t-foreach="portfolio_events" t-as="pevent" class="col-6 col-lg-4">
+                            <div class="o_planner_tile o_animate o_anim_zoom_in">
+                                <div class="o_planner_tile_media"
+                                     t-attf-style="background-image: url(#{pevent.cover_image and image_data_uri(pevent.cover_image) or ''});">
+                                    <div t-if="not pevent.cover_image" class="o_planner_card_placeholder"/>
+                                </div>
+                                <div class="o_planner_tile_caption">
+                                    <strong t-esc="pevent.website_title or pevent.event_type_id.name or 'Celebration'"/>
+                                    <span t-if="pevent.event_type_id" class="text-white-50"
+                                          t-esc="pevent.event_type_id.name"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <a href="/event-portfolio" class="btn btn-outline-dark">Full portfolio</a>
+                    </div>
+                </section>
+
+                <!-- How we work -->
+                <section class="o_planner_section">
+                    <div class="container">
+                        <p class="o_planner_eyebrow text-center">How we work</p>
+                        <h2 class="o_planner_heading text-center mb-5">From idea to encore</h2>
+                        <div class="o_planner_process o_planner_stagger">
+                            <t t-foreach="[
+                                ('1', 'Consultation', 'We listen: vision, guests, budget, ambiance.'),
+                                ('2', 'Proposal', 'A tailored package — sign and reserve online in minutes.'),
+                                ('3', 'Planning', 'Vendors, timelines and details, all handled for you.'),
+                                ('4', 'The big day', 'Our team runs the show minute by minute. You celebrate.')]"
+                               t-as="step" t-key="step[0]">
+                                <div class="o_planner_process_step o_animate o_anim_fade_in_up">
+                                    <div class="o_planner_process_node" t-esc="step[0]"/>
+                                    <h5 t-esc="step[1]"/>
+                                    <p class="text-muted mb-0" t-esc="step[2]"/>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Team -->
+                <section class="o_planner_section container" t-if="team">
+                    <p class="o_planner_eyebrow text-center">The studio</p>
+                    <h2 class="o_planner_heading text-center mb-5">People behind the magic</h2>
+                    <div class="row g-4 justify-content-center o_planner_stagger">
+                        <div t-foreach="team" t-as="member" class="col-6 col-md-3">
+                            <div class="text-center o_animate o_anim_fade_in_up">
+                                <img t-att-src="image_data_uri(member.sudo().avatar_512)"
+                                     class="o_planner_avatar mb-3" t-att-alt="member.name"/>
+                                <h6 class="mb-0" t-esc="member.name"/>
+                                <small class="text-muted" t-esc="member.sudo().planner_website_role or member.sudo().job_title or ''"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testimonials -->
+                <section class="o_planner_section o_planner_soft">
+                    <div class="container" style="max-width: 820px;">
+                        <p class="o_planner_eyebrow text-center">Kind words</p>
+                        <h2 class="o_planner_heading text-center mb-4">What clients say</h2>
+                        <div id="plannerTestimonials" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <blockquote class="o_planner_quote">
+                                        <p>“Our wedding ran to the minute — we never saw the work,
+                                        only the magic. Every vendor knew exactly where to be.”</p>
+                                        <footer>Emma &amp; Noah <span>· Garden Wedding</span></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="carousel-item">
+                                    <blockquote class="o_planner_quote">
+                                        <p>“The one agency that made budget conversations easy.
+                                        We always knew what was planned, agreed and spent.”</p>
+                                        <footer>Marketing Director <span>· Annual Summit</span></footer>
+                                    </blockquote>
+                                </div>
+                                <div class="carousel-item">
+                                    <blockquote class="o_planner_quote">
+                                        <p>“Four hundred guests, a live auction, zero hiccups.
+                                        Our most successful gala yet.”</p>
+                                        <footer>Foundation Chair <span>· Charity Gala</span></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators o_planner_indicators">
+                                <button type="button" data-bs-target="#plannerTestimonials" data-bs-slide-to="0" class="active" aria-label="Quote 1"/>
+                                <button type="button" data-bs-target="#plannerTestimonials" data-bs-slide-to="1" aria-label="Quote 2"/>
+                                <button type="button" data-bs-target="#plannerTestimonials" data-bs-slide-to="2" aria-label="Quote 3"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Editable extra content -->
+                <div class="oe_structure" id="oe_planner_landing_extra"/>
+
+                <!-- Final CTA -->
+                <section class="o_planner_cta_band text-center">
+                    <div class="container position-relative">
+                        <p class="o_planner_eyebrow o_animate o_anim_fade_in_up">Your date is waiting</p>
+                        <h2 class="o_planner_display_sm text-white o_animate o_anim_fade_in_up"
+                            style="animation-delay: 0.1s;">Let's plan something<br/><em>remarkable</em>.</h2>
+                        <p class="o_planner_lead mx-auto o_animate o_anim_fade_in_up"
+                           style="animation-delay: 0.2s;">Tell us about your event — a real planner replies
+                           within one business day.</p>
+                        <div class="o_animate o_anim_fade_in_up" style="animation-delay: 0.3s;">
+                            <a href="/plan-my-event" class="btn o_planner_btn_accent btn-lg">Start planning</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <!-- ============================== Services ============================== -->
+    <template id="website_services" name="Event Services">
+        <t t-call="website.layout">
+            <div id="wrap" class="o_planner_site">
+                <section class="o_planner_pagehead">
+                    <div class="container">
+                        <p class="o_planner_eyebrow">Services</p>
+                        <h1 class="o_planner_display_sm">What we plan</h1>
+                    </div>
+                </section>
+                <section class="o_planner_section container">
+                    <div class="row g-4">
+                        <div t-foreach="event_types" t-as="etype" class="col-12 col-md-6 col-lg-4">
+                            <a t-attf-href="/event-services/#{etype.id}"
+                               class="o_planner_card o_animate o_anim_fade_in_up d-block text-decoration-none">
+                                <div class="o_planner_card_media"
+                                     t-attf-style="background-image: url(#{etype.cover_image and image_data_uri(etype.cover_image) or ''});">
+                                    <div t-if="not etype.cover_image" class="o_planner_card_placeholder"/>
+                                </div>
+                                <div class="o_planner_card_body">
+                                    <h4 t-esc="etype.name"/>
+                                    <p class="text-muted" t-esc="etype.website_tagline or ''"/>
+                                    <span class="o_planner_card_link">Discover <i class="fa fa-long-arrow-right ms-1"/></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="website_service_detail" name="Service Detail">
+        <t t-call="website.layout">
+            <div id="wrap" class="o_planner_site">
+                <section class="o_planner_pagehead"
+                         t-attf-style="background-image: url(#{event_type.cover_image and image_data_uri(event_type.cover_image) or ''});">
+                    <div class="container">
+                        <p class="o_planner_eyebrow" t-esc="event_type.website_tagline or 'Service'"/>
+                        <h1 class="o_planner_display_sm" t-esc="event_type.name"/>
+                    </div>
+                </section>
+                <section class="o_planner_section container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div t-if="event_type.website_description" t-field="event_type.website_description"/>
+                            <p t-elif="event_type.description" t-esc="event_type.description"/>
+                            <div class="oe_structure" t-attf-id="oe_planner_service_#{event_type.id}"/>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="o_planner_card o_planner_card_cta p-4">
+                                <h5>Interested?</h5>
+                                <p class="text-muted">Share your date and vision — we'll craft a proposal.</p>
+                                <a t-attf-href="/plan-my-event?type=#{event_type.id}"
+                                   class="btn o_planner_btn_accent w-100">Request a proposal</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <!-- ============================== Portfolio ============================== -->
+    <template id="website_portfolio" name="Portfolio">
+        <t t-call="website.layout">
+            <div id="wrap" class="o_planner_site">
+                <section class="o_planner_pagehead">
+                    <div class="container">
+                        <p class="o_planner_eyebrow">Portfolio</p>
+                        <h1 class="o_planner_display_sm">Celebrations we're proud of</h1>
+                    </div>
+                </section>
+                <section class="o_planner_section container">
+                    <div class="mb-4 d-flex flex-wrap gap-2">
+                        <a href="/event-portfolio"
+                           t-attf-class="o_planner_chip #{not active_type and 'active' or ''}">All</a>
+                        <t t-foreach="event_types" t-as="etype">
+                            <a t-attf-href="/event-portfolio?event_type=#{etype.id}"
+                               t-attf-class="o_planner_chip #{active_type == etype.id and 'active' or ''}"
+                               t-esc="etype.name"/>
+                        </t>
+                    </div>
+                    <p t-if="not events" class="text-muted">Portfolio coming soon.</p>
+                    <div class="o_planner_masonry">
+                        <div t-foreach="events" t-as="pevent" class="o_planner_masonry_item">
+                            <div class="o_planner_tile o_animate o_anim_fade_in_up">
+                                <div class="o_planner_tile_media"
+                                     t-attf-style="background-image: url(#{pevent.cover_image and image_data_uri(pevent.cover_image) or ''});">
+                                    <div t-if="not pevent.cover_image" class="o_planner_card_placeholder"/>
+                                </div>
+                                <div class="o_planner_tile_caption">
+                                    <strong t-esc="pevent.website_title or pevent.event_type_id.name or 'Celebration'"/>
+                                    <span class="text-white-50" t-esc="pevent.event_type_id.name or ''"/>
+                                    <p t-if="pevent.website_description" class="mb-0 small text-white-50"
+                                       t-esc="pevent.website_description"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <!-- ============================== Inquiry form ============================== -->
+    <template id="website_inquiry_form" name="Plan My Event">
+        <t t-call="website.layout">
+            <div id="wrap" class="o_planner_site">
+                <section class="o_planner_pagehead o_planner_pagehead_inquiry">
+                    <div class="o_planner_pagehead_bg" aria-hidden="true"/>
+                    <div class="o_planner_pagehead_ring" aria-hidden="true"/>
+                    <div class="container position-relative">
+                        <p class="o_planner_eyebrow o_animate o_anim_fade_in_up">Start here</p>
+                        <h1 class="o_planner_display_sm o_animate o_anim_fade_in_up" style="animation-delay: 0.1s;">
+                            Let's plan something <em>remarkable</em>.
+                        </h1>
+                        <p class="o_planner_lead o_animate o_anim_fade_in_up" style="animation-delay: 0.2s;">
+                            Three quick steps — a real planner replies within one business day.
+                        </p>
+                        <div class="o_planner_hero_cards o_animate o_anim_fade_in_up" style="animation-delay: 0.3s;">
+                            <div class="o_planner_hero_card"><i class="fa fa-clock-o"/> Reply within 24h</div>
+                            <div class="o_planner_hero_card"><i class="fa fa-lock"/> No spam, ever</div>
+                            <div class="o_planner_hero_card"><i class="fa fa-user"/> A dedicated planner</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="o_planner_section">
+                    <div class="container">
+                        <div class="row g-4 g-lg-5">
+                            <div class="col-lg-8">
+                                <div class="o_planner_form_card o_animate o_anim_fade_in_up">
+                                    <div class="o_planner_steps_bar">
+                                        <div class="o_planner_steps_fill"/>
+                                        <div class="o_planner_steps_step active" data-step-label="1">
+                                            <span class="o_planner_steps_dot"><i class="fa fa-magic"/></span>
+                                            <span class="o_planner_steps_text">Your event</span>
+                                        </div>
+                                        <div class="o_planner_steps_step" data-step-label="2">
+                                            <span class="o_planner_steps_dot"><i class="fa fa-sliders"/></span>
+                                            <span class="o_planner_steps_text">The details</span>
+                                        </div>
+                                        <div class="o_planner_steps_step" data-step-label="3">
+                                            <span class="o_planner_steps_dot"><i class="fa fa-user"/></span>
+                                            <span class="o_planner_steps_text">About you</span>
+                                        </div>
+                                    </div>
+
+                                    <form action="/plan-my-event/submit" method="post" class="o_planner_inquiry_form">
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <!-- Honeypot: hidden from humans, bots fill it in -->
+                                        <input type="text" name="website_extra" tabindex="-1" autocomplete="off"
+                                               style="position: absolute; left: -9999px;" aria-hidden="true"/>
+
+                                        <fieldset class="o_planner_form_step" data-step="1">
+                                            <p class="o_planner_step_kicker">Step 1 of 3</p>
+                                            <h4 class="o_planner_step_title">What are we celebrating?</h4>
+                                            <p class="text-muted mb-4">Pick the occasion closest to your vision.</p>
+                                            <t t-set="icon_map"
+                                               t-value="{'Wedding': 'fa-glass', 'Corporate Event': 'fa-briefcase', 'Conference': 'fa-users', 'Birthday / Private Party': 'fa-birthday-cake', 'Gala / Fundraiser': 'fa-heart-o'}"/>
+                                            <div class="row g-3">
+                                                <div t-foreach="event_types" t-as="etype" class="col-6 col-md-4">
+                                                    <t t-set="type_icon" t-value="icon_map.get(etype.name, 'fa-star-o')"/>
+                                                    <label class="o_planner_type_option">
+                                                        <input type="radio" name="event_type_id" t-att-value="etype.id"
+                                                               class="form-check-input"
+                                                               t-att-checked="request.params.get('type') == str(etype.id) or None"/>
+                                                        <span class="o_planner_type_card">
+                                                            <span class="o_planner_type_check"><i class="fa fa-check"/></span>
+                                                            <span class="o_planner_type_icon"><i t-attf-class="fa #{type_icon}"/></span>
+                                                            <span class="o_planner_type_name" t-esc="etype.name"/>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="mt-4 text-end">
+                                                <button type="button" class="btn o_planner_btn_accent o_planner_next">
+                                                    Next <i class="fa fa-long-arrow-right ms-1"/>
+                                                </button>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="o_planner_form_step d-none" data-step="2">
+                                            <p class="o_planner_step_kicker">Step 2 of 3</p>
+                                            <h4 class="o_planner_step_title">Tell us the details</h4>
+                                            <p class="text-muted mb-4">The more we know, the sharper your proposal.</p>
+                                            <div class="row g-3">
+                                                <div class="col-md-4">
+                                                    <label class="form-label">Preferred date</label>
+                                                    <div class="o_planner_field_group">
+                                                        <span class="o_planner_field_icon"><i class="fa fa-calendar"/></span>
+                                                        <input type="date" name="event_date" class="form-control border-0"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="form-label">Guest count</label>
+                                                    <div class="o_planner_field_group">
+                                                        <span class="o_planner_field_icon"><i class="fa fa-users"/></span>
+                                                        <input type="number" name="guest_count" min="1" class="form-control border-0"
+                                                               placeholder="e.g. 120"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="form-label">Budget range</label>
+                                                    <div class="o_planner_field_group">
+                                                        <span class="o_planner_field_icon"><i class="fa fa-money"/></span>
+                                                        <select name="budget_range" class="form-select border-0">
+                                                            <option value="">Prefer not to say</option>
+                                                            <option>Under 10,000</option>
+                                                            <option>10,000 – 25,000</option>
+                                                            <option>25,000 – 50,000</option>
+                                                            <option>50,000+</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <label class="form-label">Tell us about your vision</label>
+                                                    <div class="o_planner_field_group o_planner_field_group_textarea">
+                                                        <span class="o_planner_field_icon"><i class="fa fa-pencil"/></span>
+                                                        <textarea name="message" rows="4" class="form-control border-0"
+                                                                  placeholder="Theme, venue ideas, must-haves..."/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mt-4 d-flex justify-content-between">
+                                                <button type="button" class="btn btn-outline-secondary o_planner_prev">
+                                                    <i class="fa fa-long-arrow-left me-1"/> Back
+                                                </button>
+                                                <button type="button" class="btn o_planner_btn_accent o_planner_next">
+                                                    Next <i class="fa fa-long-arrow-right ms-1"/>
+                                                </button>
+                                            </div>
+                                        </fieldset>
+
+                                        <fieldset class="o_planner_form_step d-none" data-step="3">
+                                            <p class="o_planner_step_kicker">Step 3 of 3</p>
+                                            <h4 class="o_planner_step_title">Almost there</h4>
+                                            <p class="text-muted mb-4">So a planner can reach out personally.</p>
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Your name *</label>
+                                                    <div class="o_planner_field_group">
+                                                        <span class="o_planner_field_icon"><i class="fa fa-user-o"/></span>
+                                                        <input type="text" name="name" class="form-control border-0" required="required"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Email *</label>
+                                                    <div class="o_planner_field_group">
+                                                        <span class="o_planner_field_icon"><i class="fa fa-envelope-o"/></span>
+                                                        <input type="email" name="email" class="form-control border-0" required="required"/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label">Phone</label>
+                                                    <div class="o_planner_field_group">
+                                                        <span class="o_planner_field_icon"><i class="fa fa-phone"/></span>
+                                                        <input type="tel" name="phone" class="form-control border-0"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="o_planner_privacy_note">
+                                                <i class="fa fa-lock"/> Your information stays private — used only to prepare your proposal.
+                                            </p>
+                                            <div class="mt-4 d-flex justify-content-between">
+                                                <button type="button" class="btn btn-outline-secondary o_planner_prev">
+                                                    <i class="fa fa-long-arrow-left me-1"/> Back
+                                                </button>
+                                                <button type="submit" class="btn o_planner_btn_accent btn-lg o_planner_submit">
+                                                    <span class="o_planner_submit_label">Send my inquiry <i class="fa fa-paper-plane ms-1"/></span>
+                                                </button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="o_planner_form_side o_animate o_anim_fade_in_up" style="animation-delay: 0.15s;">
+                                    <h5 class="mb-3">Why plan with us</h5>
+                                    <div class="o_planner_side_item">
+                                        <span class="o_planner_side_icon"><i class="fa fa-user"/></span>
+                                        <div>
+                                            <strong>One point of contact</strong>
+                                            <p class="text-muted mb-0 small">One planner, start to finish.</p>
+                                        </div>
+                                    </div>
+                                    <div class="o_planner_side_item">
+                                        <span class="o_planner_side_icon"><i class="fa fa-eye"/></span>
+                                        <div>
+                                            <strong>Transparent budgets</strong>
+                                            <p class="text-muted mb-0 small">No surprises on the invoice.</p>
+                                        </div>
+                                    </div>
+                                    <div class="o_planner_side_item">
+                                        <span class="o_planner_side_icon"><i class="fa fa-diamond"/></span>
+                                        <div>
+                                            <strong>A vetted black book</strong>
+                                            <p class="text-muted mb-0 small">Caterers, florists, AV and more.</p>
+                                        </div>
+                                    </div>
+                                    <div class="o_planner_side_quote">
+                                        <p>"We never saw the work, only the magic."</p>
+                                        <footer>Emma &amp; Noah, Garden Wedding</footer>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <template id="website_inquiry_thanks" name="Inquiry Received">
+        <t t-call="website.layout">
+            <div id="wrap" class="o_planner_site">
+                <section class="o_planner_thanks_wrap">
+                    <div class="o_planner_thanks_bg" aria-hidden="true"/>
+                    <div class="o_planner_confetti_field" aria-hidden="true"/>
+                    <div class="container position-relative">
+                        <div class="o_planner_thanks_card mx-auto">
+                            <div class="o_checkmark_wrap">
+                                <svg class="o_checkmark" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="o_checkmark_circle" cx="40" cy="40" r="36" fill="none"/>
+                                    <path class="o_checkmark_check" fill="none" d="M23 41l11 11 23-23"/>
+                                </svg>
+                            </div>
+                            <p class="o_planner_eyebrow">Inquiry received</p>
+                            <h1 class="o_planner_heading">Thank you<t t-if="contact_name">, <t t-esc="contact_name"/></t>!</h1>
+                            <p class="o_planner_lead text-muted mx-auto">
+                                Your inquiry is with our planners — expect a personal reply
+                                within one business day.
+                            </p>
+
+                            <div class="o_planner_thanks_timeline">
+                                <div class="o_planner_thanks_step">
+                                    <span class="o_planner_thanks_node"><i class="fa fa-inbox"/></span>
+                                    <span>We review your inquiry</span>
+                                </div>
+                                <div class="o_planner_thanks_step">
+                                    <span class="o_planner_thanks_node"><i class="fa fa-phone"/></span>
+                                    <span>A planner reaches out</span>
+                                </div>
+                                <div class="o_planner_thanks_step">
+                                    <span class="o_planner_thanks_node"><i class="fa fa-magic"/></span>
+                                    <span>Your proposal is crafted</span>
+                                </div>
+                            </div>
+
+                            <div class="o_planner_thanks_actions">
+                                <a href="/" class="btn o_planner_btn_accent btn-lg">
+                                    <i class="fa fa-home me-1"/> Back to Home
+                                </a>
+                                <a href="/event-services" class="btn btn-outline-dark btn-lg">
+                                    Explore Services <i class="fa fa-long-arrow-right ms-1"/>
+                                </a>
+                            </div>
+                            <a href="/event-portfolio" class="o_planner_thanks_link">
+                                Browse our work meanwhile <i class="fa fa-long-arrow-right ms-1"/>
+                            </a>
+
+                            <p class="o_planner_thanks_footnote">
+                                <i class="fa fa-envelope-o"/> We've also sent a confirmation to your inbox.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+
+    <!-- ============================== Website menu ============================== -->
+    <record id="website_menu_landing" model="website.menu">
+        <field name="name">Event Planning</field>
+        <field name="url">/event-planning</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence">15</field>
+    </record>
+    <record id="website_menu_services" model="website.menu">
+        <field name="name">Services</field>
+        <field name="url">/event-services</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence">16</field>
+    </record>
+    <record id="website_menu_portfolio" model="website.menu">
+        <field name="name">Portfolio</field>
+        <field name="url">/event-portfolio</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence">17</field>
+    </record>
+    <record id="website_menu_inquiry" model="website.menu">
+        <field name="name">Plan My Event</field>
+        <field name="url">/plan-my-event</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence">18</field>
+    </record>
+</odoo>

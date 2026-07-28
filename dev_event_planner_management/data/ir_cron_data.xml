@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo noupdate="1">
+    <record id="cron_payment_reminders" model="ir.cron">
+        <field name="name">Event Planner: payment reminders</field>
+        <field name="model_id" ref="model_planner_event_payment_line"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_send_payment_reminders()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="cron_staff_confirmation_reminders" model="ir.cron">
+        <field name="name">Event Planner: staff confirmation reminders</field>
+        <field name="model_id" ref="model_planner_event_staff_line"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_send_confirmation_reminders()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="cron_move_to_closeout" model="ir.cron">
+        <field name="name">Event Planner: move past events to closeout</field>
+        <field name="model_id" ref="model_planner_event"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_move_to_closeout()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+
+    <record id="cron_send_surveys" model="ir.cron">
+        <field name="name">Event Planner: post-event feedback surveys</field>
+        <field name="model_id" ref="model_planner_event"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_send_surveys()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>

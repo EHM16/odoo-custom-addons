@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:18+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,151 +16,298 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: code:models/project_sub_task.py:45
+#. module: project_tasks_from_templates
+#: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__03_approved
+msgid "Approved"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__user_ids
 msgid "Assignees"
 msgstr "Personas asignadas"
 
-#: model_terms:views/project_project_views.xml
+#. module: project_tasks_from_templates
+#: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__1_canceled
+msgid "Canceled"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__02_changes_requested
+msgid "Changes Requested"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model_terms:ir.ui.view,arch_db:project_tasks_from_templates.project_project_view_form_simplified_footer
 msgid "Create Project from Template"
 msgstr "Crear proyecto a partir de plantilla"
 
-#: code:models/project_stage.py:40
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__create_uid
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__create_uid
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__create_date
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__create_date
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_stage__sequence
 msgid "Defines the order of this stage."
 msgstr "Define el orden de esta etapa."
 
-#: code:models/project_sub_task.py:43
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_project__display_name
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__display_name
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__display_name
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__display_name
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_type__display_name
+#, fuzzy
+#| msgid "Template Name"
+msgid "Display Name"
+msgstr "Nombre de la plantilla"
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__1_done
+msgid "Done"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__description
 msgid "Enter a description for the task."
 msgstr "Introduzca una descripción para la tarea."
 
-#: code:models/project_sub_task.py:38
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__name
 msgid "Enter the name of the task"
 msgstr "Ingrese el nombre de la tarea"
 
-#: code:models/project_sub_task.py:55
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_project__id
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__id
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__id
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__id
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_type__id
+msgid "ID"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__01_in_progress
+msgid "In Progress"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__show_tasks_page
 msgid "Indicates whether the Sub-Tasks page should be displayed."
 msgstr "Indica si se debe mostrar la página Subtareas."
 
-#: code:models/project_sub_task.py:52
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__write_uid
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__write_uid
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__write_date
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__write_date
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__child_ids
 msgid "List of sub-tasks, if any."
 msgstr "Lista de subtareas, si las hubiera."
 
-#: code:models/project_task_template.py:36
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_task_template__stage_ids
 msgid "List of the stages associated with this template."
 msgstr "Lista de las etapas asociadas a esta plantilla."
 
-#: code:models/project_task_template.py:32
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_task_template__task_ids
 msgid "List of the tasks associated with this template."
 msgstr "Lista de las tareas asociadas a esta plantilla."
 
-#: code:models/project_sub_task.py:38
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__name
 msgid "Name"
 msgstr "Nombre"
 
-#: code:models/project_task_template.py:30
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_task_template__name
 msgid "Name for the task template."
 msgstr "Nombre de la plantilla de tarea."
 
-#: code:models/project_sub_task.py:49
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__parent_id
 msgid "Parent Task"
 msgstr "Tarea principal"
 
-#: code:models/project_stage.py:34
+#. module: project_tasks_from_templates
+#: model:ir.model,name:project_tasks_from_templates.model_project_project
+#, fuzzy
+#| msgid "Project Stage"
+msgid "Project"
+msgstr "Etapa del proyecto"
+
+#. module: project_tasks_from_templates
+#: model:ir.model,name:project_tasks_from_templates.model_project_stage
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__project_stage_id
 msgid "Project Stage"
 msgstr "Etapa del proyecto"
 
-#: code:models/project_project.py:44
-#: code:models/project_stage.py:31
-#: code:models/project_sub_task.py:40
+#. module: project_tasks_from_templates
+#: model:ir.model,name:project_tasks_from_templates.model_project_sub_task
+#, fuzzy
+#| msgid "Project Stage"
+msgid "Project Sub Task"
+msgstr "Etapa del proyecto"
+
+#. module: project_tasks_from_templates
+#: model:ir.model,name:project_tasks_from_templates.model_project_task_template
+#, fuzzy
+#| msgid "Project Template"
+msgid "Project Task Template"
+msgstr "Plantilla de proyecto"
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_project__project_template_id
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__project_template_id
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__project_template_id
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_type__project_template_id
+#: model_terms:ir.ui.view,arch_db:project_tasks_from_templates.project_project_view_form_simplified
 msgid "Project Template"
 msgstr "Plantilla de proyecto"
 
-#: model:ir.module.module,name:__manifest__.py
+#. module: project_tasks_from_templates
+#: model:ir.actions.act_window,name:project_tasks_from_templates.project_task_template_action
+#: model:ir.ui.menu,name:project_tasks_from_templates.project_task_template_menu_action
 msgid "Project Templates"
 msgstr "Plantillas de proyecto"
 
-#: code:models/project_sub_task.py:58
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__state
 msgid "Represents the current status of the sub-task."
 msgstr "Representa el estado actual de la subtarea."
 
-#: code:models/project_project.py:44
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_project__project_template_id
 msgid "Select a project task template to use for this project."
 msgstr "Seleccione una plantilla de tarea de proyecto para usar en este proyecto."
 
-#: code:models/project_stage.py:31
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_stage__project_template_id
 msgid "Select a project task template to use for this stage."
 msgstr "Seleccione una plantilla de tarea de proyecto para usar en esta etapa."
 
-#: code:models/project_sub_task.py:40
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__project_template_id
 msgid "Select a project task template to use for this task."
 msgstr "Seleccione una plantilla de tarea de proyecto para usar en esta tarea."
 
-#: model_terms:views/project_project_views.xml
+#. module: project_tasks_from_templates
+#: model_terms:ir.ui.view,arch_db:project_tasks_from_templates.project_project_view_form_simplified
 msgid "Select a template"
 msgstr "Seleccione una plantilla"
 
-#: code:models/project_sub_task.py:49
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__parent_id
 msgid "Select the parent task, if any."
 msgstr "Seleccione la tarea principal, si corresponde."
 
-#: code:models/project_stage.py:34
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_stage__project_stage_id
 msgid "Select the project stage."
 msgstr "Seleccione la etapa del proyecto."
 
-#: code:models/project_sub_task.py:45
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__user_ids
 msgid "Select the users who are assigned to this task."
 msgstr "Seleccione los usuarios que están asignados a esta tarea."
 
-#: code:models/project_sub_task.py:55
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__show_tasks_page
 msgid "Show Tasks Page"
 msgstr "Mostrar página de tareas"
 
-#: code:models/project_task_template.py:36
-#: model_terms:views/project_task_template_views.xml
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__stage_ids
+#: model_terms:ir.ui.view,arch_db:project_tasks_from_templates.project_task_template_view_form
 msgid "Stages"
 msgstr "Etapas"
 
-#: code:models/project_sub_task.py:58
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__state
 msgid "State"
 msgstr "Estado"
 
-#: code:models/project_sub_task.py:52
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__child_ids
 msgid "Sub-Tasks"
 msgstr "Subtareas"
 
-#: code:models/project_stage.py:37
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__task_ids
 msgid "Subtasks"
 msgstr "Subtareas"
 
-#: code:models/project_stage.py:37
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_stage__task_ids
 msgid "Subtasks associated with this stage."
 msgstr "Subtareas asociadas a esta etapa."
 
-#: code:models/project_sub_task.py:43
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__description
 msgid "Task Description"
 msgstr "Descripción de la tarea"
 
-#: code:models/project_task_template.py:32
-#: model_terms:views/project_sub_task_views.xml
-#: model_terms:views/project_task_template_views.xml
+#. module: project_tasks_from_templates
+#: model:ir.model,name:project_tasks_from_templates.model_project_task_type
+#, fuzzy
+#| msgid "Show Tasks Page"
+msgid "Task Stage"
+msgstr "Mostrar página de tareas"
+
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__task_ids
+#: model_terms:ir.ui.view,arch_db:project_tasks_from_templates.project_task_custom_view_form
+#: model_terms:ir.ui.view,arch_db:project_tasks_from_templates.project_task_template_view_form
 msgid "Tasks"
 msgstr "Tareas"
 
-#: code:models/project_task_template.py:30
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__name
 msgid "Template Name"
 msgstr "Nombre de la plantilla"
 
-#: code:models/project_task_type.py:29
+#. module: project_tasks_from_templates
+#: model:ir.model.fields,help:project_tasks_from_templates.field_project_task_type__project_template_id
 msgid "The template associated with this task type."
 msgstr "La plantilla asociada con este tipo de tarea."
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "This app allows your project team to create projecttemplate and task template"
-msgstr "Esta aplicación le permite a su equipo de proyecto crear una plantilla de proyecto y una plantilla de tarea."
-
-#: model_terms:views/project_task_template_views.xml
+#. module: project_tasks_from_templates
+#: model_terms:ir.ui.view,arch_db:project_tasks_from_templates.project_task_template_view_form
 msgid "View Task"
 msgstr "Ver tarea"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid "When faced with the need to create multiple projects that share similar tasks, manually inputting data such as task names, descriptions, and assigned individuals can be time-consuming. In such situations, this module offers assistance in creating and managing projects based on pre-defined templates."
-msgstr "Cuando nos enfrentamos a la necesidad de crear varios proyectos que comparten tareas similares, ingresar manualmente datos como nombres de tareas, descripciones e individuos asignados puede llevar mucho tiempo. En tales situaciones, este módulo ofrece asistencia para crear y gestionar proyectos basados ​​en plantillas predefinidas."
+#. module: project_tasks_from_templates
+#: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__04_waiting_normal
+msgid "Waiting"
+msgstr ""
+
+#~ msgid "This app allows your project team to create projecttemplate and task template"
+#~ msgstr "Esta aplicación le permite a su equipo de proyecto crear una plantilla de proyecto y una plantilla de tarea."
+
+#~ msgid "When faced with the need to create multiple projects that share similar tasks, manually inputting data such as task names, descriptions, and assigned individuals can be time-consuming. In such situations, this module offers assistance in creating and managing projects based on pre-defined templates."
+#~ msgstr "Cuando nos enfrentamos a la necesidad de crear varios proyectos que comparten tareas similares, ingresar manualmente datos como nombres de tareas, descripciones e individuos asignados puede llevar mucho tiempo. En tales situaciones, este módulo ofrece asistencia para crear y gestionar proyectos basados ​​en plantillas predefinidas."

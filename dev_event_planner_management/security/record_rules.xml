@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="planner_event_rule_user" model="ir.rule">
+        <field name="name">Event Planner: own or followed events</field>
+        <field name="model_id" ref="model_planner_event"/>
+        <field name="domain_force">['|', '|',
+            ('user_id', '=', user.id),
+            ('coordinator_id', '=', user.id),
+            ('message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_user'))]"/>
+    </record>
+
+    <record id="planner_event_rule_manager" model="ir.rule">
+        <field name="name">Event Planner: manager sees all</field>
+        <field name="model_id" ref="model_planner_event"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_manager'))]"/>
+    </record>
+
+    <record id="planner_event_rule_company" model="ir.rule">
+        <field name="name">Event Planner: multi-company</field>
+        <field name="model_id" ref="model_planner_event"/>
+        <field name="domain_force">[('company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <record id="planner_event_rule_portal" model="ir.rule">
+        <field name="name">Event Planner: portal sees shared events</field>
+        <field name="model_id" ref="model_planner_event"/>
+        <field name="domain_force">['|', ('message_partner_ids', 'child_of', [user.partner_id.commercial_partner_id.id]), ('partner_id', 'child_of', [user.partner_id.commercial_partner_id.id])]</field>
+        <field name="groups" eval="[(4, ref('base.group_portal'))]"/>
+    </record>
+
+    <!-- Line models mirror the event visibility: without these, the Guests /
+         Staff Schedule menus (and raw RPC) would expose every event's data to
+         every planner user, across planners and companies. -->
+
+    <record id="planner_vendor_line_rule_user" model="ir.rule">
+        <field name="name">Vendor lines follow event visibility</field>
+        <field name="model_id" ref="model_planner_event_vendor_line"/>
+        <field name="domain_force">['|', '|',
+            ('event_id.user_id', '=', user.id),
+            ('event_id.coordinator_id', '=', user.id),
+            ('event_id.message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_user'))]"/>
+    </record>
+    <record id="planner_vendor_line_rule_manager" model="ir.rule">
+        <field name="name">Vendor lines: manager sees all</field>
+        <field name="model_id" ref="model_planner_event_vendor_line"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_manager'))]"/>
+    </record>
+    <record id="planner_vendor_line_rule_company" model="ir.rule">
+        <field name="name">Vendor lines: multi-company</field>
+        <field name="model_id" ref="model_planner_event_vendor_line"/>
+        <field name="domain_force">[('event_id.company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <record id="planner_budget_line_rule_user" model="ir.rule">
+        <field name="name">Budget lines follow event visibility</field>
+        <field name="model_id" ref="model_planner_event_budget_line"/>
+        <field name="domain_force">['|', '|',
+            ('event_id.user_id', '=', user.id),
+            ('event_id.coordinator_id', '=', user.id),
+            ('event_id.message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_user'))]"/>
+    </record>
+    <record id="planner_budget_line_rule_manager" model="ir.rule">
+        <field name="name">Budget lines: manager sees all</field>
+        <field name="model_id" ref="model_planner_event_budget_line"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_manager'))]"/>
+    </record>
+    <record id="planner_budget_line_rule_company" model="ir.rule">
+        <field name="name">Budget lines: multi-company</field>
+        <field name="model_id" ref="model_planner_event_budget_line"/>
+        <field name="domain_force">[('event_id.company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <record id="planner_schedule_line_rule_user" model="ir.rule">
+        <field name="name">Run-of-show lines follow event visibility</field>
+        <field name="model_id" ref="model_planner_event_schedule_line"/>
+        <field name="domain_force">['|', '|',
+            ('event_id.user_id', '=', user.id),
+            ('event_id.coordinator_id', '=', user.id),
+            ('event_id.message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_user'))]"/>
+    </record>
+    <record id="planner_schedule_line_rule_manager" model="ir.rule">
+        <field name="name">Run-of-show lines: manager sees all</field>
+        <field name="model_id" ref="model_planner_event_schedule_line"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_manager'))]"/>
+    </record>
+    <record id="planner_schedule_line_rule_company" model="ir.rule">
+        <field name="name">Run-of-show lines: multi-company</field>
+        <field name="model_id" ref="model_planner_event_schedule_line"/>
+        <field name="domain_force">[('event_id.company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <record id="planner_staff_line_rule_user" model="ir.rule">
+        <field name="name">Staff shifts follow event visibility</field>
+        <field name="model_id" ref="model_planner_event_staff_line"/>
+        <field name="domain_force">['|', '|', '|',
+            ('event_id.user_id', '=', user.id),
+            ('event_id.coordinator_id', '=', user.id),
+            ('event_id.message_partner_ids', 'in', [user.partner_id.id]),
+            ('employee_id.user_id', '=', user.id)]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_user'))]"/>
+    </record>
+    <record id="planner_staff_line_rule_manager" model="ir.rule">
+        <field name="name">Staff shifts: manager sees all</field>
+        <field name="model_id" ref="model_planner_event_staff_line"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_manager'))]"/>
+    </record>
+    <record id="planner_staff_line_rule_company" model="ir.rule">
+        <field name="name">Staff shifts: multi-company</field>
+        <field name="model_id" ref="model_planner_event_staff_line"/>
+        <field name="domain_force">[('event_id.company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <record id="planner_guest_rule_user" model="ir.rule">
+        <field name="name">Guests follow event visibility</field>
+        <field name="model_id" ref="model_planner_event_guest"/>
+        <field name="domain_force">['|', '|',
+            ('event_id.user_id', '=', user.id),
+            ('event_id.coordinator_id', '=', user.id),
+            ('event_id.message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_user'))]"/>
+    </record>
+    <record id="planner_guest_rule_manager" model="ir.rule">
+        <field name="name">Guests: manager sees all</field>
+        <field name="model_id" ref="model_planner_event_guest"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_manager'))]"/>
+    </record>
+    <record id="planner_guest_rule_company" model="ir.rule">
+        <field name="name">Guests: multi-company</field>
+        <field name="model_id" ref="model_planner_event_guest"/>
+        <field name="domain_force">[('event_id.company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <record id="planner_meal_choice_rule_user" model="ir.rule">
+        <field name="name">Meal choices follow event visibility</field>
+        <field name="model_id" ref="model_planner_meal_choice"/>
+        <field name="domain_force">['|', '|',
+            ('event_id.user_id', '=', user.id),
+            ('event_id.coordinator_id', '=', user.id),
+            ('event_id.message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_user'))]"/>
+    </record>
+    <record id="planner_meal_choice_rule_manager" model="ir.rule">
+        <field name="name">Meal choices: manager sees all</field>
+        <field name="model_id" ref="model_planner_meal_choice"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_manager'))]"/>
+    </record>
+    <record id="planner_meal_choice_rule_company" model="ir.rule">
+        <field name="name">Meal choices: multi-company</field>
+        <field name="model_id" ref="model_planner_meal_choice"/>
+        <field name="domain_force">[('event_id.company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <record id="planner_payment_line_rule_user" model="ir.rule">
+        <field name="name">Payment lines follow event visibility</field>
+        <field name="model_id" ref="model_planner_event_payment_line"/>
+        <field name="domain_force">['|', '|',
+            ('event_id.user_id', '=', user.id),
+            ('event_id.coordinator_id', '=', user.id),
+            ('event_id.message_partner_ids', 'in', [user.partner_id.id])]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_user'))]"/>
+    </record>
+    <record id="planner_payment_line_rule_manager" model="ir.rule">
+        <field name="name">Payment lines: manager sees all</field>
+        <field name="model_id" ref="model_planner_event_payment_line"/>
+        <field name="domain_force">[(1, '=', 1)]</field>
+        <field name="groups" eval="[(4, ref('group_event_planner_manager'))]"/>
+    </record>
+    <record id="planner_payment_line_rule_company" model="ir.rule">
+        <field name="name">Payment lines: multi-company</field>
+        <field name="model_id" ref="model_planner_event_payment_line"/>
+        <field name="domain_force">[('event_id.company_id', 'in', company_ids + [False])]</field>
+    </record>
+
+    <!-- Public / Portal Website Visibility -->
+    <record id="planner_event_type_rule_public" model="ir.rule">
+        <field name="name">Event Planner: Public read published event types</field>
+        <field name="model_id" ref="model_planner_event_type"/>
+        <field name="domain_force">[('website_published', '=', True)]</field>
+        <field name="groups" eval="[(4, ref('base.group_public')), (4, ref('base.group_portal'))]"/>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="False"/>
+        <field name="perm_create" eval="False"/>
+        <field name="perm_unlink" eval="False"/>
+    </record>
+</odoo>

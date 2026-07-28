@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo noupdate="1">
+    <record id="event_type_wedding" model="planner.event.type">
+        <field name="name">Wedding</field>
+        <field name="sequence">10</field>
+        <field name="payment_scheme_id" ref="payment_scheme_standard"/>
+    </record>
+    <record id="event_type_corporate" model="planner.event.type">
+        <field name="name">Corporate Event</field>
+        <field name="sequence">20</field>
+        <field name="payment_scheme_id" ref="payment_scheme_half"/>
+    </record>
+    <record id="event_type_conference" model="planner.event.type">
+        <field name="name">Conference</field>
+        <field name="sequence">30</field>
+        <field name="payment_scheme_id" ref="payment_scheme_half"/>
+    </record>
+    <record id="event_type_party" model="planner.event.type">
+        <field name="name">Birthday / Private Party</field>
+        <field name="sequence">40</field>
+        <field name="payment_scheme_id" ref="payment_scheme_half"/>
+    </record>
+    <record id="event_type_gala" model="planner.event.type">
+        <field name="name">Gala / Fundraiser</field>
+        <field name="sequence">50</field>
+        <field name="payment_scheme_id" ref="payment_scheme_standard"/>
+    </record>
+
+    <!-- Wedding checklist template (representative defaults, editable by the agency) -->
+    <record id="checklist_wedding_venue" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_wedding"/>
+        <field name="name">Confirm venue and sign venue contract</field>
+        <field name="days_offset">-180</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_wedding_vendors" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_wedding"/>
+        <field name="name">Book core vendors (catering, photo, florals, music)</field>
+        <field name="days_offset">-120</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_wedding_menu" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_wedding"/>
+        <field name="name">Menu tasting and final menu selection</field>
+        <field name="days_offset">-60</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_wedding_headcount" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_wedding"/>
+        <field name="name">Collect final headcount and meal choices</field>
+        <field name="days_offset">-30</field>
+        <field name="responsible_role">coordinator</field>
+    </record>
+    <record id="checklist_wedding_runsheet" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_wedding"/>
+        <field name="name">Finalize run-of-show and share with vendors</field>
+        <field name="days_offset">-7</field>
+        <field name="responsible_role">coordinator</field>
+    </record>
+    <record id="checklist_wedding_beo" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_wedding"/>
+        <field name="name">Distribute BEO to all vendors and staff</field>
+        <field name="days_offset">-3</field>
+        <field name="responsible_role">coordinator</field>
+    </record>
+    <record id="checklist_wedding_dayof" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_wedding"/>
+        <field name="name">Day-of coordination</field>
+        <field name="days_offset">0</field>
+        <field name="responsible_role">coordinator</field>
+    </record>
+    <record id="checklist_wedding_closeout" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_wedding"/>
+        <field name="name">Collect final balance, pay vendors, request review</field>
+        <field name="days_offset">3</field>
+        <field name="responsible_role">planner</field>
+    </record>
+
+    <!-- Corporate event checklist template -->
+    <record id="checklist_corporate_brief" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_corporate"/>
+        <field name="name">Client brief, objectives and budget sign-off</field>
+        <field name="days_offset">-60</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_corporate_venue" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_corporate"/>
+        <field name="name">Book venue, AV and catering</field>
+        <field name="days_offset">-45</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_corporate_agenda" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_corporate"/>
+        <field name="name">Finalize agenda and speaker requirements</field>
+        <field name="days_offset">-14</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_corporate_beo" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_corporate"/>
+        <field name="name">Distribute BEO and confirm staffing</field>
+        <field name="days_offset">-3</field>
+        <field name="responsible_role">coordinator</field>
+    </record>
+    <record id="checklist_corporate_closeout" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_corporate"/>
+        <field name="name">Invoice balance and send feedback survey</field>
+        <field name="days_offset">2</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <!-- Conference checklist template -->
+    <record id="checklist_conference_brief" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_conference"/>
+        <field name="name">Confirm venue and speakers</field>
+        <field name="days_offset">-90</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_conference_av" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_conference"/>
+        <field name="name">Book AV, catering, and staging</field>
+        <field name="days_offset">-60</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_conference_marketing" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_conference"/>
+        <field name="name">Finalize marketing materials and attendee list</field>
+        <field name="days_offset">-30</field>
+        <field name="responsible_role">coordinator</field>
+    </record>
+    <record id="checklist_conference_runsheet" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_conference"/>
+        <field name="name">Distribute run-of-show to staff</field>
+        <field name="days_offset">-7</field>
+        <field name="responsible_role">coordinator</field>
+    </record>
+
+    <!-- Party checklist template -->
+    <record id="checklist_party_venue" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_party"/>
+        <field name="name">Book venue and entertainment</field>
+        <field name="days_offset">-45</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_party_catering" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_party"/>
+        <field name="name">Confirm catering and bar menu</field>
+        <field name="days_offset">-21</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_party_decor" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_party"/>
+        <field name="name">Finalize decor and theme elements</field>
+        <field name="days_offset">-14</field>
+        <field name="responsible_role">coordinator</field>
+    </record>
+
+    <!-- Gala checklist template -->
+    <record id="checklist_gala_sponsors" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_gala"/>
+        <field name="name">Confirm sponsorships and venue</field>
+        <field name="days_offset">-180</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_gala_auction" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_gala"/>
+        <field name="name">Finalize auction items and entertainment</field>
+        <field name="days_offset">-90</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_gala_menu" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_gala"/>
+        <field name="name">Menu tasting and AV coordination</field>
+        <field name="days_offset">-60</field>
+        <field name="responsible_role">planner</field>
+    </record>
+    <record id="checklist_gala_seating" model="planner.checklist.template.line">
+        <field name="event_type_id" ref="event_type_gala"/>
+        <field name="name">Finalize seating chart and run-of-show</field>
+        <field name="days_offset">-14</field>
+        <field name="responsible_role">coordinator</field>
+    </record>
+</odoo>

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:19+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,68 +16,104 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: code:models/sale_order.py:97
+#. module: sale_order_line_to_purchase_order_line
+#: model:ir.model.fields,help:sale_order_line_to_purchase_order_line.field_sale_order_line__is_check
 msgid "Check box added for select sale order lines."
 msgstr "Casilla de verificación agregada para líneas de orden de venta seleccionadas."
 
-#: code:models/sale_order.py:34
+#. module: sale_order_line_to_purchase_order_line
+#: model:ir.model.fields,help:sale_order_line_to_purchase_order_line.field_sale_order__purchase_id
 msgid "Choose a purchase order from the list to add the chosen orders to an existing PO."
 msgstr "Elija una orden de compra de la lista para agregar las órdenes elegidas a una orden de compra existente."
 
-#: code:models/sale_order.py:31
+#. module: sale_order_line_to_purchase_order_line
+#: model:ir.model.fields,help:sale_order_line_to_purchase_order_line.field_sale_order__vendor_id
 msgid "Choose vendor for create new purchase order"
 msgstr "Elija proveedor para crear una nueva orden de compra"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Convert Sale Order Line To Purchase Order Line"
-msgstr "Convertir línea de orden de venta en línea de orden de compra"
-
-#: model_terms:views/sale_order_views.xml
+#. module: sale_order_line_to_purchase_order_line
+#: model_terms:ir.ui.view,arch_db:sale_order_line_to_purchase_order_line.view_order_form
 msgid "Convert to PO"
 msgstr "Convertir a orden de compra"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid ""
-"Module to convert selected sale order lines to purchase \n"
-"    order lines easily."
+#. module: sale_order_line_to_purchase_order_line
+#: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order__display_name
+#: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order_line__display_name
+msgid "Display Name"
 msgstr ""
-"Módulo para convertir líneas de orden de venta seleccionadas a compra \n"
-"    ordenar líneas fácilmente."
 
-#: code:models/sale_order.py:85
+#. module: sale_order_line_to_purchase_order_line
+#: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order__id
+#: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order_line__id
+msgid "ID"
+msgstr ""
+
+#. module: sale_order_line_to_purchase_order_line
+#. odoo-python
+#: code:addons/sale_order_line_to_purchase_order_line/models/sale_order.py:0
 msgid "New Purchase Order has been placed. %s"
 msgstr "Se ha realizado una nueva orden de compra. %s"
 
-#: code:models/sale_order.py:34
+#. module: sale_order_line_to_purchase_order_line
+#: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order__purchase_id
+#: model_terms:ir.ui.view,arch_db:sale_order_line_to_purchase_order_line.view_order_form
 msgid "Purchase Order"
 msgstr "Orden de compra"
 
-#: code:models/sale_order.py:97
+#. module: sale_order_line_to_purchase_order_line
+#: model:ir.model,name:sale_order_line_to_purchase_order_line.model_sale_order
+msgid "Sale Order Delivery Split"
+msgstr ""
+
+#. module: sale_order_line_to_purchase_order_line
+#: model:ir.model,name:sale_order_line_to_purchase_order_line.model_sale_order_line
+msgid "Sale Order Line Delivery Split"
+msgstr ""
+
+#. module: sale_order_line_to_purchase_order_line
+#: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order_line__is_check
 msgid "Select"
 msgstr "Seleccionar"
 
-#: code:models/sale_order.py:54
+#. module: sale_order_line_to_purchase_order_line
+#. odoo-python
+#: code:addons/sale_order_line_to_purchase_order_line/models/sale_order.py:0
 msgid "Select Order Line"
 msgstr "Seleccionar línea de pedido"
 
-#: code:models/sale_order.py:52
+#. module: sale_order_line_to_purchase_order_line
+#. odoo-python
+#: code:addons/sale_order_line_to_purchase_order_line/models/sale_order.py:0
 msgid "Select Vendor or Purchase Order"
 msgstr "Seleccionar proveedor u orden de compra"
 
-#: code:models/sale_order.py:72
+#. module: sale_order_line_to_purchase_order_line
+#. odoo-python
+#: code:addons/sale_order_line_to_purchase_order_line/models/sale_order.py:0
 msgid "Selected Order Lines added to existing Purchase Order. %s"
 msgstr "Las líneas de orden seleccionadas se agregaron a la orden de compra existente. %s"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"This module will help to create new purchase order from \n"
-"    sale order by selecting sale order lines. And also we can add the selected \n"
-"    lines to existing purchase order.."
-msgstr ""
-"Este módulo ayudará a crear una nueva orden de compra desde \n"
-"    orden de venta seleccionando líneas de orden de venta. Y también podemos agregar los seleccionados. \n"
-"    líneas a la orden de compra existente."
-
-#: code:models/sale_order.py:31
+#. module: sale_order_line_to_purchase_order_line
+#: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order__vendor_id
+#: model_terms:ir.ui.view,arch_db:sale_order_line_to_purchase_order_line.view_order_form
 msgid "Vendor"
 msgstr "Proveedor"
+
+#~ msgid "Convert Sale Order Line To Purchase Order Line"
+#~ msgstr "Convertir línea de orden de venta en línea de orden de compra"
+
+#~ msgid ""
+#~ "Module to convert selected sale order lines to purchase \n"
+#~ "    order lines easily."
+#~ msgstr ""
+#~ "Módulo para convertir líneas de orden de venta seleccionadas a compra \n"
+#~ "    ordenar líneas fácilmente."
+
+#~ msgid ""
+#~ "This module will help to create new purchase order from \n"
+#~ "    sale order by selecting sale order lines. And also we can add the selected \n"
+#~ "    lines to existing purchase order.."
+#~ msgstr ""
+#~ "Este módulo ayudará a crear una nueva orden de compra desde \n"
+#~ "    orden de venta seleccionando líneas de orden de venta. Y también podemos agregar los seleccionados. \n"
+#~ "    líneas a la orden de compra existente."

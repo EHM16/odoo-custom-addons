@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="planner_event_duplicate_wizard_view_form" model="ir.ui.view">
+        <field name="name">planner.event.duplicate.wizard.form</field>
+        <field name="model">planner.event.duplicate.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Duplicate Event">
+                <group>
+                    <field name="event_id" invisible="1"/>
+                    <field name="name"/>
+                    <field name="partner_id"/>
+                    <field name="date_start"/>
+                </group>
+                <footer>
+                    <button name="action_duplicate" type="object"
+                            string="Duplicate" class="btn-primary"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

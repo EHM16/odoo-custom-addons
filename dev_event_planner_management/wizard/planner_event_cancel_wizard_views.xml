@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="planner_event_cancel_wizard_view_form" model="ir.ui.view">
+        <field name="name">planner.event.cancel.wizard.form</field>
+        <field name="model">planner.event.cancel.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Cancel Event">
+                <div class="alert alert-warning" role="alert">
+                    This cancels staff shifts and vendor bookings, voids
+                    un-invoiced installments and closes open checklist tasks.
+                </div>
+                <group>
+                    <field name="event_id" invisible="1"/>
+                    <field name="reason"/>
+                    <field name="po_action" widget="radio"/>
+                    <field name="deposit_action" widget="radio"/>
+                    <field name="notify_staff"/>
+                </group>
+                <footer>
+                    <button name="action_cancel" type="object"
+                            string="Cancel Event" class="btn-primary"/>
+                    <button string="Discard" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

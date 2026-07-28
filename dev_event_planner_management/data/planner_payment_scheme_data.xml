@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo noupdate="1">
+    <record id="payment_scheme_standard" model="planner.payment.scheme">
+        <field name="name">Standard (50 / 40 / 10)</field>
+    </record>
+    <record id="payment_scheme_standard_deposit" model="planner.payment.scheme.line">
+        <field name="scheme_id" ref="payment_scheme_standard"/>
+        <field name="sequence">10</field>
+        <field name="name">Deposit</field>
+        <field name="percentage">50</field>
+        <field name="trigger">booking</field>
+    </record>
+    <record id="payment_scheme_standard_progress" model="planner.payment.scheme.line">
+        <field name="scheme_id" ref="payment_scheme_standard"/>
+        <field name="sequence">20</field>
+        <field name="name">Progress Payment</field>
+        <field name="percentage">40</field>
+        <field name="trigger">before_event</field>
+        <field name="days_offset">30</field>
+    </record>
+    <record id="payment_scheme_standard_final" model="planner.payment.scheme.line">
+        <field name="scheme_id" ref="payment_scheme_standard"/>
+        <field name="sequence">30</field>
+        <field name="name">Final Balance</field>
+        <field name="percentage">10</field>
+        <field name="trigger">before_event</field>
+        <field name="days_offset">14</field>
+    </record>
+
+    <record id="payment_scheme_half" model="planner.payment.scheme">
+        <field name="name">50% Deposit / 50% Final</field>
+    </record>
+    <record id="payment_scheme_half_deposit" model="planner.payment.scheme.line">
+        <field name="scheme_id" ref="payment_scheme_half"/>
+        <field name="sequence">10</field>
+        <field name="name">Deposit</field>
+        <field name="percentage">50</field>
+        <field name="trigger">booking</field>
+    </record>
+    <record id="payment_scheme_half_final" model="planner.payment.scheme.line">
+        <field name="scheme_id" ref="payment_scheme_half"/>
+        <field name="sequence">20</field>
+        <field name="name">Final Balance</field>
+        <field name="percentage">50</field>
+        <field name="trigger">before_event</field>
+        <field name="days_offset">14</field>
+    </record>
+</odoo>

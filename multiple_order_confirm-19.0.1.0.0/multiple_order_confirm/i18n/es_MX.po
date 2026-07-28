@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:17+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,32 +16,53 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"Adds \\\"Confirm\\\" and \\\"Cancel\\\" buttons to the tree view of\n"
-"                      Sale and Purchase orders, allowing users to confirm or\n"
-"                      cancel multiple records by selecting them directly from\n"
-"                      the tree view."
-msgstr ""
-"Agrega los botones \\\"Confirmar\\\" y \\\"Cancelar\\\" a la vista de árbol de\n"
-"                      Órdenes de compra y venta, permitiendo a los usuarios confirmar o\n"
-"                      cancelar múltiples registros seleccionándolos directamente desde\n"
-"                      la vista del árbol."
-
-#: model_terms:views/purchase_order_views.xml
-#: model_terms:views/sale_order_views.xml
+#. module: multiple_order_confirm
+#: model_terms:ir.ui.view,arch_db:multiple_order_confirm.purchase_order_view_list
+#: model_terms:ir.ui.view,arch_db:multiple_order_confirm.sale_order_view_list
 msgid "Cancel Orders"
 msgstr "Cancelar pedidos"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Confirm or Cancel Multiple Sale or Purchase Orders"
-msgstr "Confirmar o cancelar varias órdenes de venta o de compra"
-
-#: model_terms:views/purchase_order_views.xml
-#: model_terms:views/sale_order_views.xml
+#. module: multiple_order_confirm
+#: model_terms:ir.ui.view,arch_db:multiple_order_confirm.purchase_order_view_list
+#: model_terms:ir.ui.view,arch_db:multiple_order_confirm.sale_order_view_list
 msgid "Confirm Orders"
 msgstr "Confirmar pedidos"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Multiple Sale/Purchase Order Confirm And Cancel"
-msgstr "Confirmación y cancelación de varias órdenes de venta o de compra"
+#. module: multiple_order_confirm
+#: model:ir.model.fields,field_description:multiple_order_confirm.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:multiple_order_confirm.field_sale_order__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: multiple_order_confirm
+#: model:ir.model.fields,field_description:multiple_order_confirm.field_purchase_order__id
+#: model:ir.model.fields,field_description:multiple_order_confirm.field_sale_order__id
+msgid "ID"
+msgstr ""
+
+#. module: multiple_order_confirm
+#: model:ir.model,name:multiple_order_confirm.model_purchase_order
+msgid "Purchase Order"
+msgstr ""
+
+#. module: multiple_order_confirm
+#: model:ir.model,name:multiple_order_confirm.model_sale_order
+msgid "Sale Order Delivery Split"
+msgstr ""
+
+#~ msgid ""
+#~ "Adds \\\"Confirm\\\" and \\\"Cancel\\\" buttons to the tree view of\n"
+#~ "                      Sale and Purchase orders, allowing users to confirm or\n"
+#~ "                      cancel multiple records by selecting them directly from\n"
+#~ "                      the tree view."
+#~ msgstr ""
+#~ "Agrega los botones \\\"Confirmar\\\" y \\\"Cancelar\\\" a la vista de árbol de\n"
+#~ "                      Órdenes de compra y venta, permitiendo a los usuarios confirmar o\n"
+#~ "                      cancelar múltiples registros seleccionándolos directamente desde\n"
+#~ "                      la vista del árbol."
+
+#~ msgid "Confirm or Cancel Multiple Sale or Purchase Orders"
+#~ msgstr "Confirmar o cancelar varias órdenes de venta o de compra"
+
+#~ msgid "Multiple Sale/Purchase Order Confirm And Cancel"
+#~ msgstr "Confirmación y cancelación de varias órdenes de venta o de compra"

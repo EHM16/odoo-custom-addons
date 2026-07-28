@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:14+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,66 +16,150 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model_terms:wizards/expense_amount_views.xml
+#. module: create_expense_from_task_odoo
+#: model_terms:ir.ui.view,arch_db:create_expense_from_task_odoo.expense_amount_view_form
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: model_terms:views/project_task_views.xml
+#. module: create_expense_from_task_odoo
+#: model_terms:ir.ui.view,arch_db:create_expense_from_task_odoo.project_task_view_form
 msgid "Create Expense"
 msgstr "Crear gasto"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Create Expense From Task"
+#. module: create_expense_from_task_odoo
+#: model:ir.model,website_form_label:create_expense_from_task_odoo.model_project_task
+#, fuzzy
+#| msgid "Create Expense From Task"
+msgid "Create a Task"
 msgstr "Crear gasto a partir de tarea"
 
-#: code:wizards/expense_amount.py:36
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__create_date
+#, fuzzy
+#| msgid "Create Expense"
+msgid "Created on"
+msgstr "Crear gasto"
+
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__display_name
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_hr_expense__display_name
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_project_task__display_name
+#, fuzzy
+#| msgid "Employee Name"
+msgid "Display Name"
+msgstr "Nombre del empleado"
+
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__employee_name_ids
 msgid "Employee Name"
 msgstr "Nombre del empleado"
 
-#: model_terms:views/project_task_views.xml
+#. module: create_expense_from_task_odoo
+#: model:ir.model,name:create_expense_from_task_odoo.model_hr_expense
+#: model_terms:ir.ui.view,arch_db:create_expense_from_task_odoo.project_task_view_form
 msgid "Expense"
 msgstr "Gasto"
 
-#: model_terms:wizards/expense_amount_views.xml
+#. module: create_expense_from_task_odoo
+#: model:ir.model,name:create_expense_from_task_odoo.model_expense_amount
+msgid "Expense Amount for Creating Expense Records"
+msgstr ""
+
+#. module: create_expense_from_task_odoo
+#: model_terms:ir.ui.view,arch_db:create_expense_from_task_odoo.expense_amount_view_form
 msgid "Expense Report"
 msgstr "Informe de gastos"
 
-#: model_terms:wizards/expense_amount_views.xml
+#. module: create_expense_from_task_odoo
+#: model_terms:ir.ui.view,arch_db:create_expense_from_task_odoo.expense_amount_view_form
 msgid "Generate Expense"
 msgstr "Generar gasto"
 
-#: code:wizards/expense_amount.py:33
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__id
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_hr_expense__id
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_project_task__id
+msgid "ID"
+msgstr ""
+
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_hr_expense__project_id
+msgid "Project"
+msgstr ""
+
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__product_id
 msgid "Service Name"
 msgstr "Nombre del servicio"
 
-#: code:wizards/expense_amount.py:36
+#. module: create_expense_from_task_odoo
+#: model:ir.model,name:create_expense_from_task_odoo.model_project_task
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_hr_expense__task_id
+msgid "Task"
+msgstr ""
+
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,help:create_expense_from_task_odoo.field_expense_amount__employee_name_ids
 msgid "The employees associated with this record."
 msgstr "Los empleados asociados con este registro."
 
-#: code:wizards/expense_amount.py:33
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,help:create_expense_from_task_odoo.field_expense_amount__product_id
 msgid "The product associated with the record"
 msgstr "El producto asociado al registro."
 
-#: code:models/hr_expense.py:33
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,help:create_expense_from_task_odoo.field_hr_expense__project_id
 msgid "The project associated with this record."
 msgstr "El proyecto asociado a este registro."
 
-#: code:models/hr_expense.py:35
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,help:create_expense_from_task_odoo.field_hr_expense__task_id
 msgid "The task associated with this record."
 msgstr "La tarea asociada con este registro."
 
-#: code:wizards/expense_amount.py:40
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,help:create_expense_from_task_odoo.field_expense_amount__total_amount
 msgid "The total amount for this record."
 msgstr "El importe total de este registro."
 
-#: model:ir.module.module,description:__manifest__.py
-msgid "This apps helps User to create multiple expense from project task and split the amount between assigns"
-msgstr "Esta aplicación permite crear múltiples gastos desde una tarea de proyecto y distribuir el importe entre los responsables asignados."
-
-#: code:wizards/expense_amount.py:40
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__total_amount
 msgid "Total Amount"
 msgstr "Importe total"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "User can create Expense from Task"
-msgstr "El usuario puede crear gastos a partir de la tarea"
+#. module: create_expense_from_task_odoo
+#: model:ir.model.fields,help:create_expense_from_task_odoo.field_project_task__display_name
+msgid ""
+"Use these keywords in the title to set new tasks:\n"
+"\n"
+"        30h Allocate 30 hours to the task\n"
+"        #tags Set tags on the task\n"
+"        @user Assign the task to a user\n"
+"        ! Set the task a medium priority\n"
+"        !! Set the task a high priority\n"
+"        !!! Set the task a urgent priority\n"
+"\n"
+"        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
+msgstr ""
+
+#~ msgid "This apps helps User to create multiple expense from project task and split the amount between assigns"
+#~ msgstr "Esta aplicación permite crear múltiples gastos desde una tarea de proyecto y distribuir el importe entre los responsables asignados."
+
+#~ msgid "User can create Expense from Task"
+#~ msgstr "El usuario puede crear gastos a partir de la tarea"

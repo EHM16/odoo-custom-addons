@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo noupdate="1">
+    <record id="stage_new" model="planner.event.stage">
+        <field name="name">New</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="stage_consultation" model="planner.event.stage">
+        <field name="name">Consultation</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="stage_proposal" model="planner.event.stage">
+        <field name="name">Proposal Sent</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="stage_booked" model="planner.event.stage">
+        <field name="name">Booked</field>
+        <field name="sequence">40</field>
+        <field name="is_booked_stage" eval="True"/>
+    </record>
+    <record id="stage_planning" model="planner.event.stage">
+        <field name="name">In Planning</field>
+        <field name="sequence">50</field>
+        <field name="is_booked_stage" eval="True"/>
+    </record>
+    <record id="stage_ready" model="planner.event.stage">
+        <field name="name">Ready (Locked)</field>
+        <field name="sequence">60</field>
+        <field name="is_booked_stage" eval="True"/>
+        <field name="is_locked_stage" eval="True"/>
+    </record>
+    <record id="stage_in_progress" model="planner.event.stage">
+        <field name="name">In Progress</field>
+        <field name="sequence">70</field>
+        <field name="is_booked_stage" eval="True"/>
+        <field name="is_locked_stage" eval="True"/>
+    </record>
+    <record id="stage_closeout" model="planner.event.stage">
+        <field name="name">Closeout</field>
+        <field name="sequence">80</field>
+        <field name="is_booked_stage" eval="True"/>
+        <field name="is_closeout_stage" eval="True"/>
+    </record>
+    <record id="stage_done" model="planner.event.stage">
+        <field name="name">Done</field>
+        <field name="sequence">90</field>
+        <field name="fold" eval="True"/>
+        <field name="is_done_stage" eval="True"/>
+    </record>
+    <record id="stage_cancelled" model="planner.event.stage">
+        <field name="name">Cancelled</field>
+        <field name="sequence">100</field>
+        <field name="fold" eval="True"/>
+        <field name="is_cancelled_stage" eval="True"/>
+    </record>
+</odoo>

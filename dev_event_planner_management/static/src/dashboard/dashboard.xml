@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<templates xml:space="preserve">
+
+    <t t-name="dev_event_planner_management.KpiCard">
+        <div t-attf-class="o_planner_kpi_card #{props.tone or ''} #{props.onClick ? 'o_planner_clickable' : ''}"
+             t-on-click="() => props.onClick?.()">
+            <div class="o_planner_kpi_top">
+                <span class="o_planner_kpi_label" t-esc="props.label"/>
+                <span t-if="props.icon" class="o_planner_kpi_icon">
+                    <i t-attf-class="fa #{props.icon}"/>
+                </span>
+            </div>
+            <div class="o_planner_kpi_value_row">
+                <span class="o_planner_kpi_value" t-esc="props.value"/>
+                <span t-if="props.trend !== undefined and props.trend !== 0"
+                      t-attf-class="o_planner_kpi_trend #{props.trend > 0 ? 'up' : 'down'}">
+                    <i t-attf-class="fa #{props.trend > 0 ? 'fa-arrow-up' : 'fa-arrow-down'} me-1"/>
+                    <t t-esc="Math.abs(props.trend)"/>%
+                </span>
+            </div>
+            <div t-if="props.subtitle" class="o_planner_kpi_subtitle" t-esc="props.subtitle"/>
+        </div>
+    </t>
+
+    <t t-name="dev_event_planner_management.ChartCard">
+        <div class="o_planner_chart_card">
+            <h5 t-esc="props.title"/>
+            <div class="o_planner_chart_body">
+                <canvas t-ref="canvas"/>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="dev_event_planner_management.Dashboard">
+        <div class="o_planner_dashboard">
+            <!-- Header + filter bar -->
+            <div class="o_planner_filterbar d-flex flex-wrap align-items-center gap-2">
+                <div class="me-auto">
+                    <h3 class="o_planner_dash_title mb-0">Event Planner</h3>
+                    <div class="o_planner_dash_subtitle">
+                        Your agency at a glance
+                        <t t-if="state.data and state.data.generated_at">
+                            · updated <t t-esc="state.data.generated_at"/>
+                        </t>
+                    </div>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary o_planner_refresh"
+                        title="Refresh" t-on-click="refresh">
+                    <i class="fa fa-refresh"/>
+                </button>
+                <div class="btn-group" role="group">
+                    <t t-foreach="[['month', 'This Month'], ['quarter', 'Quarter'], ['year', '12 Months'], ['all', 'All']]" t-as="preset" t-key="preset[0]">
+                        <button t-attf-class="btn btn-sm #{state.preset === preset[0] ? 'btn-primary' : 'btn-outline-primary'}"
+                                t-on-click="() => this.onFilterChange('preset', preset[0])"
+                                t-esc="preset[1]"/>
+                    </t>
+                </div>
+                <select class="form-select form-select-sm o_planner_filter_select"
+                        t-on-change="(ev) => this.onFilterChange('typeId', ev.target.value)">
+                    <option value="">All Types</option>
+                    <t t-if="state.data" t-foreach="state.data.filters.types" t-as="type" t-key="type.id">
+                        <option t-att-value="type.id" t-att-selected="state.typeId === type.id" t-esc="type.name"/>
+                    </t>
+                </select>
+                <select class="form-select form-select-sm o_planner_filter_select"
+                        t-on-change="(ev) => this.onFilterChange('plannerId', ev.target.value)">
+                    <option value="">All Planners</option>
+                    <t t-if="state.data" t-foreach="state.data.filters.planners" t-as="planner" t-key="planner.id">
+                        <option t-att-value="planner.id" t-att-selected="state.plannerId === planner.id" t-esc="planner.name"/>
+                    </t>
+                </select>
+            </div>
+
+            <!-- Skeleton -->
+            <div t-if="state.loading" class="o_planner_skeleton_grid">
+                <t t-foreach="[1,2,3,4,5,6,7]" t-as="i" t-key="i">
+                    <div class="o_planner_skeleton"/>
+                </t>
+            </div>
+
+            <t t-if="!state.loading and state.data">
+                <!-- KPI row -->
+                <div class="o_planner_kpi_grid">
+                    <KpiCard label="'Upcoming (30d)'" icon="'fa-calendar'"
+                             value="state.data.kpis.upcoming_events"
+                             onClick.bind="() => this.openUpcomingEvents()"/>
+                    <KpiCard label="'Pipeline Value'" icon="'fa-filter'"
+                             value="formatMoney(state.data.kpis.pipeline_value)"
+                             onClick.bind="() => this.openEvents([['stage_id.is_booked_stage', '=', false]], 'Pipeline')"/>
+                    <KpiCard label="'Booked Revenue (Qtr)'" icon="'fa-line-chart'" tone="'o_planner_tone_primary'"
+                             value="formatMoney(state.data.kpis.booked_revenue)"
+                             trend="state.data.kpis.revenue_trend"
+                             onClick.bind="() => this.openBookedRevenueEvents()"/>
+                    <KpiCard label="'Avg Margin'" icon="'fa-percent'"
+                             value="state.data.kpis.avg_margin_pct + '%'"/>
+                    <KpiCard label="'Outstanding'" icon="'fa-money'"
+                             tone="state.data.kpis.overdue_count ? 'o_planner_tone_danger' : ''"
+                             value="formatMoney(state.data.kpis.outstanding_balance)"
+                             subtitle="state.data.kpis.overdue_count + ' overdue'"
+                             onClick.bind="() => this.openEvents([['stage_id.is_booked_stage', '=', true], ['payment_line_ids.state', 'in', ['overdue', 'invoiced', 'to_invoice']]], 'Unpaid Events')"/>
+                    <KpiCard label="'Unconfirmed Shifts'" icon="'fa-user-times'"
+                             tone="state.data.kpis.unconfirmed_shifts ? 'o_planner_tone_warning' : ''"
+                             value="state.data.kpis.unconfirmed_shifts"
+                             onClick.bind="() => this.openShifts()"/>
+                    <KpiCard label="'Overdue Tasks'" icon="'fa-exclamation-triangle'"
+                             tone="state.data.kpis.overdue_tasks ? 'o_planner_tone_warning' : ''"
+                             value="state.data.kpis.overdue_tasks"
+                             onClick.bind="() => this.openOverdueTasks()"/>
+                </div>
+
+                <!-- Charts -->
+                <div class="o_planner_section_label">Performance</div>
+                <div class="o_planner_chart_grid">
+                    <ChartCard title="'Revenue vs Contracted Cost (12 months)'" type="'bar'" data="revenueChart"/>
+                    <ChartCard title="'Events by Type'" type="'doughnut'" data="typeChart"/>
+                    <ChartCard title="'Pipeline by Stage'" type="'bar'" data="funnelChart"
+                               options="{ indexAxis: 'y' }"/>
+                    <ChartCard title="'Bookings by Source'" type="'bar'" data="sourceChart"/>
+                    <ChartCard title="'Margin % by Event Type'" type="'bar'" data="marginChart"/>
+                </div>
+
+                <!-- Workload heat strip -->
+                <div class="o_planner_chart_card">
+                    <h5>Workload — next 12 weeks</h5>
+                    <div class="o_planner_heat_strip">
+                        <t t-foreach="state.data.charts.week_load" t-as="week" t-key="week.label">
+                            <div t-attf-class="o_planner_heat_cell #{weekLoadTone(week.count)}">
+                                <div class="o_planner_heat_count" t-esc="week.count"/>
+                                <div class="o_planner_heat_label" t-esc="week.label"/>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+
+                <!-- Operational row -->
+                <div class="o_planner_section_label">Operations</div>
+                <div class="o_planner_bottom_grid">
+                    <div class="o_planner_chart_card">
+                        <h5>Needs Attention</h5>
+                        <p t-if="!state.data.attention.length" class="text-muted">
+                            All clear — nothing needs attention.
+                        </p>
+                        <ul class="list-unstyled o_planner_attention">
+                            <t t-foreach="state.data.attention" t-as="item" t-key="item_index">
+                                <li class="o_planner_clickable" t-on-click="() => this.openEvent(item.event_id)">
+                                    <i class="fa fa-exclamation-circle me-2"/>
+                                    <strong t-esc="item.event"/> — <span t-esc="item.reason"/>
+                                </li>
+                            </t>
+                        </ul>
+                    </div>
+                    <div class="o_planner_chart_card">
+                        <h5>Upcoming Events</h5>
+                        <p t-if="!state.data.upcoming.length" class="text-muted">No upcoming booked events.</p>
+                        <div t-foreach="state.data.upcoming" t-as="event" t-key="event.id"
+                             class="o_planner_upcoming_row o_planner_clickable"
+                             t-on-click="() => this.openEvent(event.id)">
+                            <div class="d-flex justify-content-between">
+                                <strong t-esc="event.name"/>
+                                <span class="text-muted" t-esc="event.date"/>
+                            </div>
+                            <div class="text-muted small">
+                                <span t-esc="event.partner"/>
+                                <t t-if="event.venue"> · <span t-esc="event.venue"/></t>
+                            </div>
+                            <div class="o_planner_progress_row">
+                                <t t-foreach="[['Checklist', event.checklist_pct], ['Paid', event.payment_pct], ['Staff', event.staff_pct]]"
+                                   t-as="bar" t-key="bar[0]">
+                                    <div class="o_planner_progress">
+                                        <span class="o_planner_progress_label">
+                                            <t t-esc="bar[0]"/> <t t-esc="bar[1]"/>%
+                                        </span>
+                                        <div class="progress" style="height: 4px;">
+                                            <div class="progress-bar" role="progressbar"
+                                                 t-attf-style="width: #{bar[1]}%"/>
+                                        </div>
+                                    </div>
+                                </t>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </div>
+    </t>
+</templates>

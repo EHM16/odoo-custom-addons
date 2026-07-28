@@ -16,6 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#. module: delivery_split
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 " In Odoo,currently delivery will be created to the customer\n"
@@ -26,31 +27,38 @@ msgstr ""
 "     Con la división de entregas, es posible separar la entrega entre los\n"
 "     distintos destinatarios indicados en cada línea de la orden de venta."
 
+#. module: delivery_split
 #: code:models/sale_order_line.py:29
 msgid "Choose a recipient for splitting delivery"
 msgstr "Elija un destinatario para dividir la entrega"
 
+#. module: delivery_split
 #: code:models/sale_order.py:34
 msgid "Consolidate Orders"
 msgstr "Consolidar pedidos"
 
+#. module: delivery_split
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Delivery can be split to different recipients"
 msgstr "La entrega se puede dividir entre diferentes destinatarios."
 
+#. module: delivery_split
 #: code:models/sale_order.py:30
 #: model:ir.module.module,name:__manifest__.py
 msgid "Delivery Split"
 msgstr "Entrega dividida"
 
+#. module: delivery_split
 #: code:models/sale_order.py:30
 msgid "Enable the option to add recipients to each sale order line to split delivery"
 msgstr "Habilite la opción para agregar destinatarios a cada línea de orden de venta para dividir la entrega"
 
+#. module: delivery_split
 #: code:models/sale_order.py:34
 msgid "Enable the option to consolidate orders if choose same recipients in split delivery"
 msgstr "Habilite la opción para consolidar pedidos si elige los mismos destinatarios en entrega dividida"
 
+#. module: delivery_split
 #: code:models/sale_order_line.py:29
 msgid "Recipient"
 msgstr "Destinatario"

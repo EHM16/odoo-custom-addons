@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="action_report_beo" model="ir.actions.report">
+        <field name="name">Banquet Event Order (BEO)</field>
+        <field name="model">planner.event</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">dev_event_planner_management.report_beo</field>
+        <field name="report_file">dev_event_planner_management.report_beo</field>
+        <field name="print_report_name">'BEO v%s - %s' % (object.beo_version, object.reference)</field>
+        <field name="binding_model_id" ref="model_planner_event"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="action_report_run_of_show" model="ir.actions.report">
+        <field name="name">Run of Show</field>
+        <field name="model">planner.event</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">dev_event_planner_management.report_run_of_show</field>
+        <field name="report_file">dev_event_planner_management.report_run_of_show</field>
+        <field name="print_report_name">'Run of Show - %s' % object.reference</field>
+        <field name="binding_model_id" ref="model_planner_event"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="action_report_vendor_sheet" model="ir.actions.report">
+        <field name="name">Vendor Contact Sheet</field>
+        <field name="model">planner.event</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">dev_event_planner_management.report_vendor_sheet</field>
+        <field name="report_file">dev_event_planner_management.report_vendor_sheet</field>
+        <field name="print_report_name">'Vendor Sheet - %s' % object.reference</field>
+        <field name="binding_model_id" ref="model_planner_event"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="action_report_budget_sheet" model="ir.actions.report">
+        <field name="name">Budget Sheet</field>
+        <field name="model">planner.event</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">dev_event_planner_management.report_budget_sheet</field>
+        <field name="report_file">dev_event_planner_management.report_budget_sheet</field>
+        <field name="print_report_name">'Budget - %s' % object.reference</field>
+        <field name="binding_model_id" ref="model_planner_event"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

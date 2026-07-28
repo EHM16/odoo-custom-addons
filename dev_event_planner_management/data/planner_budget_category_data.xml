@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo noupdate="1">
+    <record id="budget_category_venue" model="planner.budget.category">
+        <field name="name">Venue</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="budget_category_fnb" model="planner.budget.category">
+        <field name="name">Food &amp; Beverage</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="budget_category_decor" model="planner.budget.category">
+        <field name="name">Décor &amp; Florals</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="budget_category_av" model="planner.budget.category">
+        <field name="name">AV &amp; Production</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="budget_category_entertainment" model="planner.budget.category">
+        <field name="name">Entertainment</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="budget_category_staffing" model="planner.budget.category">
+        <field name="name">Staffing</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="budget_category_transport" model="planner.budget.category">
+        <field name="name">Transport</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="budget_category_misc" model="planner.budget.category">
+        <field name="name">Miscellaneous</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="budget_category_cancellation" model="planner.budget.category">
+        <field name="name">Cancellation Fees</field>
+        <field name="sequence">90</field>
+        <field name="is_cancellation_fee" eval="True"/>
+    </record>
+</odoo>

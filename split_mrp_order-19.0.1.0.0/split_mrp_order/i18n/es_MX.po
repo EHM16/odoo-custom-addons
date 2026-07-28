@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:19+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,112 +16,192 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: code:wizard/split_order.py:44
+#. module: split_mrp_order
+#: model:ir.model.fields.selection,name:split_mrp_order.selection__split_order__splitting_method__by_no_of_quantity
+#, fuzzy
+#| msgid "No of Quantity"
+msgid "By Number of Quantity"
+msgstr "Cantidad"
+
+#. module: split_mrp_order
+#: model:ir.model.fields.selection,name:split_mrp_order.selection__split_order__splitting_method__by_no_of_split
+#, fuzzy
+#| msgid "No of Split"
+msgid "By Number of Split"
+msgstr "Divisiones"
+
+#. module: split_mrp_order
+#: model:ir.model.fields,help:split_mrp_order.field_split_order__split_manually
 msgid "Can split mrp manually"
 msgstr "Puede dividir mrp manualmente"
 
-#: model_terms:wizard/split_order_views.xml
+#. module: split_mrp_order
+#: model_terms:ir.ui.view,arch_db:split_mrp_order.split_order_view_form
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: code:wizard/split_order.py:112
-#: code:wizard/split_order.py:215
-#: code:wizard/split_order.py:67
-msgid "Choose Valid Quantity"
-msgstr "Seleccione una cantidad válida"
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__create_uid
+msgid "Created by"
+msgstr ""
 
-#: code:wizard/split_order.py:245
-msgid "Enter the correct value"
-msgstr "Introduzca el valor correcto"
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__create_date
+msgid "Created on"
+msgstr ""
 
-#: code:wizard/split_order.py:49
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_mrp_production__display_name
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: split_mrp_order
+#: model:ir.model.fields,help:split_mrp_order.field_split_order__is_works
 msgid "For visible work center on wizard"
 msgstr "Indica si debe mostrarse el centro de trabajo en el asistente"
 
-#: code:models/mrp_production.py:32
-msgid "Here, splitting is not possible. Enter enough quantity."
-msgstr "Aquí la división no es posible. Introduzca cantidad suficiente."
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_mrp_production__id
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__id
+msgid "ID"
+msgstr ""
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Manufacturing Orders Splitting"
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: split_mrp_order
+#: model:ir.model,name:split_mrp_order.model_mrp_production
+#, fuzzy
+#| msgid "Manufacturing Orders Splitting"
+msgid "Manufacturing Order"
 msgstr "División de órdenes de fabricación"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Manufacturing Orders Splitting by different methods"
-msgstr "Órdenes de fabricación divididas por diferentes métodos"
-
-#: code:wizard/split_order.py:42
+#. module: split_mrp_order
+#: model:ir.model.fields,help:split_mrp_order.field_split_order__order_id
 msgid "Manufacturing production order"
 msgstr "orden de producción de fabricación"
 
-#: code:wizard/split_order.py:38
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__no_of_quantity
 msgid "No of Quantity"
 msgstr "Cantidad"
 
-#: code:wizard/split_order.py:40
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__no_of_split
 msgid "No of Split"
 msgstr "Divisiones"
 
-#: code:wizard/split_order.py:38
+#. module: split_mrp_order
+#: model:ir.model.fields,help:split_mrp_order.field_split_order__no_of_quantity
 msgid "Number of quantity splitting"
 msgstr "Número de división de cantidad"
 
-#: code:wizard/split_order.py:40
+#. module: split_mrp_order
+#: model:ir.model.fields,help:split_mrp_order.field_split_order__no_of_split
 msgid "Number of splits quantity"
 msgstr "Número de divisiones cantidad"
 
-#: code:wizard/split_order.py:42
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__order_id
 msgid "Order"
 msgstr "Orden"
 
-#: model_terms:wizard/split_order_views.xml
-msgid "split"
-msgstr "dividir"
-
-#: model_terms:wizard/split_order_views.xml
+#. module: split_mrp_order
+#: model_terms:ir.ui.view,arch_db:split_mrp_order.split_order_view_form
 msgid "Split"
 msgstr "dividir"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"Split manufacturing order from one order to another manufacturing order\n"
-"    on Odoo system. This module also helps to split order with the number\n"
-"    of qty & number of split manufacturing orders and split manually\n"
-"    by numbers."
-msgstr ""
-"Dividir orden de fabricación de una orden a otra orden de fabricación\n"
-"    en el sistema Odoo. Este módulo también ayuda a dividir el pedido con el número.\n"
-"    de cantidad y número de órdenes de fabricación divididas y divididas manualmente\n"
-"    por números."
-
-#: model_terms:views/mrp_production_views.xml
+#. module: split_mrp_order
+#: model_terms:ir.ui.view,arch_db:split_mrp_order.mrp_production_form_view
 msgid "Split MO"
 msgstr "Dividir orden de fabricación"
 
-#: code:wizard/split_order.py:33
+#. module: split_mrp_order
+#: model:ir.model.fields.selection,name:split_mrp_order.selection__split_order__splitting_method__split_manually
+#, fuzzy
+#| msgid "Can split mrp manually"
+msgid "Split Manually"
+msgstr "Puede dividir mrp manualmente"
+
+#. module: split_mrp_order
+#: model:ir.actions.act_window,name:split_mrp_order.split_order_action
+#, fuzzy
+#| msgid "Split MO"
+msgid "Split Order"
+msgstr "Dividir orden de fabricación"
+
+#. module: split_mrp_order
+#: model:ir.model,name:split_mrp_order.model_split_order
+#, fuzzy
+#| msgid "Split MO"
+msgid "Split Orders"
+msgstr "Dividir orden de fabricación"
+
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__splitting_method
 msgid "Splitting Method"
 msgstr "Método de división"
 
-#: code:wizard/split_order.py:44
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__split_manually
 msgid "Splitting Quantities"
 msgstr "Dividir cantidades"
 
-#: code:wizard/split_order.py:204
-msgid "The total of split must be equal to the order quantity"
-msgstr "El total de la división debe ser igual a la cantidad del pedido."
-
-#: code:wizard/split_order.py:33
+#. module: split_mrp_order
+#: model:ir.model.fields,help:split_mrp_order.field_split_order__splitting_method
 msgid "To select splitting method"
 msgstr "Para seleccionar el método de división"
 
-#: code:wizard/split_order.py:46
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__work_center_id
 msgid "Work Center"
 msgstr "Centro de Trabajo"
 
-#: code:wizard/split_order.py:46
+#. module: split_mrp_order
+#: model:ir.model.fields,field_description:split_mrp_order.field_split_order__is_works
+msgid "Works"
+msgstr "Trabajos"
+
+#. module: split_mrp_order
+#: model_terms:ir.ui.view,arch_db:split_mrp_order.split_order_view_form
+msgid "split"
+msgstr "dividir"
+
+#. module: split_mrp_order
+#: model:ir.model.fields,help:split_mrp_order.field_split_order__work_center_id
 msgid "work center"
 msgstr "centro de trabajo"
 
-#: code:wizard/split_order.py:49
-msgid "Works"
-msgstr "Trabajos"
+#~ msgid "Choose Valid Quantity"
+#~ msgstr "Seleccione una cantidad válida"
+
+#~ msgid "Enter the correct value"
+#~ msgstr "Introduzca el valor correcto"
+
+#~ msgid "Here, splitting is not possible. Enter enough quantity."
+#~ msgstr "Aquí la división no es posible. Introduzca cantidad suficiente."
+
+#~ msgid "Manufacturing Orders Splitting by different methods"
+#~ msgstr "Órdenes de fabricación divididas por diferentes métodos"
+
+#~ msgid ""
+#~ "Split manufacturing order from one order to another manufacturing order\n"
+#~ "    on Odoo system. This module also helps to split order with the number\n"
+#~ "    of qty & number of split manufacturing orders and split manually\n"
+#~ "    by numbers."
+#~ msgstr ""
+#~ "Dividir orden de fabricación de una orden a otra orden de fabricación\n"
+#~ "    en el sistema Odoo. Este módulo también ayuda a dividir el pedido con el número.\n"
+#~ "    de cantidad y número de órdenes de fabricación divididas y divididas manualmente\n"
+#~ "    por números."
+
+#~ msgid "The total of split must be equal to the order quantity"
+#~ msgstr "El total de la división debe ser igual a la cantidad del pedido."

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <record id="planner_event_type_view_form" model="ir.ui.view">
+        <field name="name">planner.event.type.form</field>
+        <field name="model">planner.event.type</field>
+        <field name="arch" type="xml">
+            <form string="Event Type">
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="name" placeholder="e.g. Wedding"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="sequence"/>
+                            <field name="project_template_id"/>
+                            <field name="payment_scheme_id"/>
+                        </group>
+                        <group>
+                            <field name="default_survey_id"/>
+                            <field name="event_count"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Checklist Template" name="checklist">
+                            <field name="checklist_template_ids">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="name"/>
+                                    <field name="days_offset"/>
+                                    <field name="responsible_role"/>
+                                    <field name="user_id" invisible="responsible_role != 'user'"
+                                           required="responsible_role == 'user'"/>
+                                    <field name="description" optional="hide"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Run-of-Show Template" name="schedule">
+                            <field name="schedule_template_ids">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="day_offset"/>
+                                    <field name="hour_start" widget="float_time"/>
+                                    <field name="hour_end" widget="float_time"/>
+                                    <field name="name"/>
+                                    <field name="location"/>
+                                    <field name="notes" optional="hide"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Packages" name="packages">
+                            <field name="default_package_product_ids"/>
+                        </page>
+
+                        <page string="Website" name="website">
+                            <group>
+                                <group>
+                                    <field name="website_published"/>
+                                    <field name="website_tagline"/>
+                                </group>
+                                <group>
+                                    <field name="cover_image" widget="image" class="oe_avatar"/>
+                                </group>
+                            </group>
+                            <field name="website_description"
+                                   placeholder="Rich description shown on the public service page..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="planner_event_type_view_list" model="ir.ui.view">
+        <field name="name">planner.event.type.list</field>
+        <field name="model">planner.event.type</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="payment_scheme_id"/>
+                <field name="default_survey_id"/>
+                <field name="event_count"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="planner_event_type_action" model="ir.actions.act_window">
+        <field name="name">Event Types</field>
+        <field name="res_model">planner.event.type</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

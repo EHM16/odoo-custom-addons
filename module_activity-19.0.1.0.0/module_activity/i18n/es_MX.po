@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:17+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,182 +16,289 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: code:models/module_activity.py:52
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__create_uid
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__create_uid
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__create_uid
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__create_date
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__create_date
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__create_date
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__display_name
+#: model:ir.model.fields,field_description:module_activity.field_ir_module_module__display_name
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__display_name
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__display_name
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_module_activity__installed_history_ids
 msgid "History of installation of the module"
 msgstr "Historial de instalación del módulo."
 
-#: code:models/module_activity.py:47
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_module_activity__uninstalled_history_ids
 msgid "History of uninstallation of the module"
 msgstr "Historial de desinstalación del módulo."
 
-#: code:models/module_activity.py:56
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_module_activity__upgrade_history_ids
 msgid "History of upgrade of the module"
 msgstr "Historial de actualización del módulo."
 
-#: code:models/module_activity.py:66
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__id
+#: model:ir.model.fields,field_description:module_activity.field_ir_module_module__id
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__id
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__id
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__id
+msgid "ID"
+msgstr ""
+
+#. module: module_activity
+#: model:ir.model,name:module_activity.model_install_history
+#, fuzzy
+#| msgid "Installed History"
+msgid "Installation History"
+msgstr "Historial de instación"
+
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__installed_module_id
 msgid "Installed"
 msgstr "Instalado"
 
-#: code:models/module_activity.py:74
-msgid "Installed date"
-msgstr "Fecha de instalación"
-
-#: code:models/module_activity.py:52
-#: model_terms:views/module_activity_views.xml
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__installed_history_ids
+#: model_terms:ir.ui.view,arch_db:module_activity.module_activity_view_form
 msgid "Installed History"
 msgstr "Historial de instación"
 
-#: code:models/module_activity.py:66
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_install_history__installed_module_id
 msgid "Installed Module Identifier"
 msgstr "Identificador del módulo instalado"
 
-#: code:models/module_activity.py:74
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__installed_date
 msgid "Installed On"
 msgstr "Instalado en"
 
-#: code:models/module_activity.py:76
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_install_history__installed_date
+msgid "Installed date"
+msgstr "Fecha de instalación"
+
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__install_id
 msgid "Inverse Install"
 msgstr "Instalación inversa"
 
-#: code:models/module_activity.py:90
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__uninstalled_date
 msgid "Last Uninstalled On"
 msgstr "Última desinstalación el"
 
-#: code:models/module_activity.py:34
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__write_uid
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__write_uid
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__write_uid
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__write_date
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__write_date
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__write_date
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__write_date
+#, fuzzy
+#| msgid "Last Uninstalled On"
+msgid "Last Updated on"
+msgstr "Última desinstalación el"
+
+#. module: module_activity
+#: model:ir.model,name:module_activity.model_ir_module_module
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__modules_id
 msgid "Module"
 msgstr "Módulo"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Module Activation Details"
-msgstr "Detalles de activación del módulo"
-
-#: model_terms:views/module_activity_views.xml
+#. module: module_activity
+#: model:ir.actions.act_window,name:module_activity.module_activity_action
+#: model:ir.model,name:module_activity.model_module_activity
+#: model:ir.ui.menu,name:module_activity.module_activity_menu_activity
+#: model:ir.ui.menu,name:module_activity.module_activity_menu_root
+#: model_terms:ir.ui.view,arch_db:module_activity.module_activity_view_form
+#: model_terms:ir.ui.view,arch_db:module_activity.module_activity_view_list
 msgid "Module Activity"
 msgstr "Actividad del módulo"
 
-#: code:models/module_activity.py:34
-msgid "Module identifier"
-msgstr "Identificador del módulo"
-
-#: code:models/module_activity.py:31
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__name
 msgid "Module Name"
 msgstr "Nombre del módulo"
 
-#: code:models/module_activity.py:31
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_module_activity__modules_id
+msgid "Module identifier"
+msgstr "Identificador del módulo"
+
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_module_activity__name
 msgid "Name of the module"
 msgstr "Nombre del módulo"
 
-#: code:models/module_activity.py:72
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_install_history__user_id
 msgid "Responsible"
 msgstr "Responsable"
 
-#: code:models/module_activity.py:72
-#: code:models/module_activity.py:88
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__user_id
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__user_id
 msgid "Responsible User"
 msgstr "Usuario responsable"
 
-#: code:models/module_activity.py:105
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__user_id
 msgid "Responsible user"
 msgstr "Usuario responsable"
 
-#: code:models/module_activity.py:88
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_uninstall_history__user_id
 msgid "Responsible user for the uninstallation"
 msgstr "Usuario responsable de la desinstalación."
 
-#: code:models/module_activity.py:105
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_upgrade_history__user_id
 msgid "Responsible user to upgrade"
 msgstr "Usuario responsable para actualizar"
 
-#: code:models/module_activity.py:39
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__status
 msgid "Status"
 msgstr "Estado"
 
-#: code:models/module_activity.py:39
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_module_activity__status
 msgid "Status of the module"
 msgstr "Estado del módulo"
 
-#: code:models/module_activity.py:103
-#: code:models/module_activity.py:36
-#: code:models/module_activity.py:70
-#: code:models/module_activity.py:86
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_install_history__technical_name
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__technical_name
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__technical_name
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__technical_name
 msgid "Technical Name"
 msgstr "Nombre técnico"
 
-#: code:models/module_activity.py:103
-#: code:models/module_activity.py:36
-#: code:models/module_activity.py:70
-#: code:models/module_activity.py:86
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_install_history__technical_name
+#: model:ir.model.fields,help:module_activity.field_module_activity__technical_name
+#: model:ir.model.fields,help:module_activity.field_uninstall_history__technical_name
+#: model:ir.model.fields,help:module_activity.field_upgrade_history__technical_name
 msgid "Technical name of the module"
 msgstr "Nombre técnico del módulo"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"This imodule is used to record the module activity of each\n"
-"    users, the activities like upgrade install and uninstall.While installing a\n"
-"    module record will be created to record the activity."
-msgstr ""
-"Este módulo registra la actividad de módulos de cada usuario,\n"
-"    como actualizaciones, instalaciones y desinstalaciones. Al instalar un\n"
-"    módulo se crea un registro de la actividad."
+#. module: module_activity
+#: model:ir.model,name:module_activity.model_uninstall_history
+#, fuzzy
+#| msgid "Uninstalled History"
+msgid "Uninstallation History"
+msgstr "Historial desinstalado"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid ""
-"This module helps to understand the history of activities \n"
-"    like upgrade install and uninstall"
-msgstr ""
-"Este módulo ayuda a comprender el historial de actividades. \n"
-"    como actualizar instalar y desinstalar"
-
-#: code:models/module_activity.py:92
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__uninstall_id
 msgid "Uninstalled"
 msgstr "Desinstalado"
 
-#: code:models/module_activity.py:90
-msgid "Uninstalled date"
-msgstr "Fecha de desinstalación"
-
-#: code:models/module_activity.py:47
-#: model_terms:views/module_activity_views.xml
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__uninstalled_history_ids
+#: model_terms:ir.ui.view,arch_db:module_activity.module_activity_view_form
 msgid "Uninstalled History"
 msgstr "Historial desinstalado"
 
-#: code:models/module_activity.py:92
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_uninstall_history__uninstalled_date
+msgid "Uninstalled date"
+msgstr "Fecha de desinstalación"
+
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_uninstall_history__uninstall_id
 msgid "Uninstalled inverse of module.activity"
 msgstr "Desinstalado inverso de module.activity"
 
-#: code:models/module_activity.py:83
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_uninstall_history__uninstalled_module_id
 msgid "Uninstalled module"
 msgstr "Módulo desinstalado"
 
-#: code:models/module_activity.py:83
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_uninstall_history__uninstalled_module_id
 msgid "Uninstalled module name"
 msgstr "Nombre del módulo desinstalado"
 
-#: code:models/module_activity.py:108
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__upgrade_id
 msgid "Upgrade"
 msgstr "Actualizar"
 
-#: code:models/module_activity.py:107
-msgid "Upgrade date"
-msgstr "Fecha de actualización"
-
-#: code:models/module_activity.py:56
-#: model_terms:views/module_activity_views.xml
+#. module: module_activity
+#: model:ir.model,name:module_activity.model_upgrade_history
+#: model:ir.model.fields,field_description:module_activity.field_module_activity__upgrade_history_ids
+#: model_terms:ir.ui.view,arch_db:module_activity.module_activity_view_form
 msgid "Upgrade History"
 msgstr "Historial de actualizaciones"
 
-#: code:models/module_activity.py:108
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__upgrade_date
+msgid "Upgrade On"
+msgstr "Actualizar en"
+
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_upgrade_history__upgrade_date
+msgid "Upgrade date"
+msgstr "Fecha de actualización"
+
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_upgrade_history__upgrade_id
 msgid "Upgrade inverse of module.activity"
 msgstr "Actualización inversa de module.activity"
 
-#: code:models/module_activity.py:100
+#. module: module_activity
+#: model:ir.model.fields,help:module_activity.field_upgrade_history__upgrade_module_id
 msgid "Upgrade module identifier using name"
 msgstr "Actualizar el identificador del módulo usando el nombre"
 
-#: code:models/module_activity.py:100
+#. module: module_activity
+#: model:ir.model.fields,field_description:module_activity.field_upgrade_history__upgrade_module_id
 msgid "Upgrade module name"
 msgstr "Nombre del módulo de actualización"
 
-#: code:models/module_activity.py:107
-msgid "Upgrade On"
-msgstr "Actualizar en"
+#~ msgid "Module Activation Details"
+#~ msgstr "Detalles de activación del módulo"
+
+#~ msgid ""
+#~ "This imodule is used to record the module activity of each\n"
+#~ "    users, the activities like upgrade install and uninstall.While installing a\n"
+#~ "    module record will be created to record the activity."
+#~ msgstr ""
+#~ "Este módulo registra la actividad de módulos de cada usuario,\n"
+#~ "    como actualizaciones, instalaciones y desinstalaciones. Al instalar un\n"
+#~ "    módulo se crea un registro de la actividad."
+
+#~ msgid ""
+#~ "This module helps to understand the history of activities \n"
+#~ "    like upgrade install and uninstall"
+#~ msgstr ""
+#~ "Este módulo ayuda a comprender el historial de actividades. \n"
+#~ "    como actualizar instalar y desinstalar"

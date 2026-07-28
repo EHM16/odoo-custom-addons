@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:14+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,105 +16,184 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-" This module generates a detailed PDF report of \n"
-"     components/products used for manufacturing products."
-msgstr "Este módulo genera un informe PDF detallado de los componentes utilizados para fabricar distintos productos terminados."
+#. module: bom_product_wise_usage_report
+#: model:ir.model,name:bom_product_wise_usage_report.model_bom_usage_details
+msgid " For Generating Products Pdf Reports used in BOM "
+msgstr ""
 
-#: model_terms:report/stock_move_templates.xml
+#. module: bom_product_wise_usage_report
+#: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.stock_move_report_template
+msgid "<strong>Date from :</strong>"
+msgstr ""
+
+#. module: bom_product_wise_usage_report
+#: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.stock_move_report_template
+msgid "<strong>Date to :</strong>"
+msgstr ""
+
+#. module: bom_product_wise_usage_report
+#: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.stock_move_report_template
 msgid "BOM Product Usage"
 msgstr "Uso de componentes en listas de materiales"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "BOM Product Wise Usage Report"
+#. module: bom_product_wise_usage_report
+#: model:ir.actions.act_window,name:bom_product_wise_usage_report.bom_usage_report_action
+msgid "BOM Usage Details"
+msgstr ""
+
+#. module: bom_product_wise_usage_report
+#: model:ir.actions.report,name:bom_product_wise_usage_report.action_bom_usage_report
+#, fuzzy
+#| msgid "BOM Product Wise Usage Report"
+msgid "BOM Usage PDF Report"
 msgstr "Informe de uso de componentes por producto terminado"
 
-#: model_terms:wizard/bom_usage_details_views.xml
+#. module: bom_product_wise_usage_report
+#: model:ir.ui.menu,name:bom_product_wise_usage_report.bom_usage_report_child_menu
+#, fuzzy
+#| msgid "BOM Product Wise Usage Report"
+msgid "BOM Usage Report"
+msgstr "Informe de uso de componentes por producto terminado"
+
+#. module: bom_product_wise_usage_report
+#: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.bom_usage_report_view_form
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: model_terms:report/stock_move_templates.xml
-msgid "Component Products"
-msgstr "Productos componentes"
+#. module: bom_product_wise_usage_report
+#: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.stock_move_report_template
+msgid "Component Products<span style=\"margin-left:100px\">Final Products</span>"
+msgstr ""
 
-#: model_terms:report/stock_move_templates.xml
-msgid "Date from :"
-msgstr "Fecha de:"
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__create_uid
+msgid "Created by"
+msgstr ""
 
-#: model_terms:report/stock_move_templates.xml
-msgid "Date to :"
-msgstr "Fecha hasta:"
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__create_date
+msgid "Created on"
+msgstr ""
 
-#: code:wizard/bom_usage_details.py:39
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,help:bom_product_wise_usage_report.field_bom_usage_details__to_date
 msgid "Ending date of report"
 msgstr "Fecha final del informe"
 
-#: model_terms:report/stock_move_templates.xml
-msgid "Final Products"
-msgstr "Productos terminados"
-
-#: code:wizard/bom_usage_details.py:38
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__from_date
 msgid "From Date"
 msgstr "Fecha desde"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Generate PDF report of Products used in Bill of materials"
-msgstr "Generar un informe PDF de los productos utilizados en las listas de materiales"
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__id
+msgid "ID"
+msgstr ""
 
-#: code:wizard/bom_usage_details.py:186
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: bom_product_wise_usage_report
+#. odoo-python
+#: code:addons/bom_product_wise_usage_report/wizard/bom_usage_details.py:0
 msgid "No data is available"
 msgstr "No hay datos disponibles"
 
-#: code:wizard/bom_usage_details.py:56
+#. module: bom_product_wise_usage_report
+#. odoo-python
+#: code:addons/bom_product_wise_usage_report/wizard/bom_usage_details.py:0
 msgid "Please check from date and to date"
 msgstr "Verifique que las fechas inicial y final sean correctas"
 
-#: model_terms:wizard/bom_usage_details_views.xml
+#. module: bom_product_wise_usage_report
+#: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.bom_usage_report_view_form
 msgid "Print PDF Report"
 msgstr "Imprimir informe PDF"
 
-#: code:wizard/bom_usage_details.py:33
-#: model_terms:wizard/bom_usage_details_views.xml
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__product_ids
+#: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.bom_usage_report_view_form
 msgid "Products"
 msgstr "Productos"
 
-#: model_terms:report/stock_move_templates.xml
+#. module: bom_product_wise_usage_report
+#: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.stock_move_report_template
 msgid "Quantity Used"
 msgstr "Cantidad utilizada"
 
-#: code:wizard/bom_usage_details.py:41
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__un_build_orders
 msgid "Reduce un build orders"
 msgstr "Descontar órdenes de desensamblaje"
 
-#: code:wizard/bom_usage_details.py:41
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,help:bom_product_wise_usage_report.field_bom_usage_details__un_build_orders
 msgid "Remove the un build orders in report"
 msgstr "Descontar en el informe las cantidades de las órdenes de desensamblaje"
 
-#: code:wizard/bom_usage_details.py:33
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,help:bom_product_wise_usage_report.field_bom_usage_details__product_ids
 msgid "Select the products that used in BOM"
 msgstr "Seleccione los componentes utilizados en las listas de materiales"
 
-#: code:wizard/bom_usage_details.py:44
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__byproducts
 msgid "Show byproducts"
 msgstr "Mostrar subproductos"
 
-#: code:wizard/bom_usage_details.py:44
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,help:bom_product_wise_usage_report.field_bom_usage_details__byproducts
 msgid "Show the Byproducts of BOM in report"
 msgstr "Mostrar en el informe los subproductos de las listas de materiales"
 
-#: code:wizard/bom_usage_details.py:38
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,help:bom_product_wise_usage_report.field_bom_usage_details__from_date
 msgid "Starting date of report"
 msgstr "Fecha inicial del informe"
 
-#: model_terms:wizard/bom_usage_details_views.xml
+#. module: bom_product_wise_usage_report
+#: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.bom_usage_report_view_form
 msgid "Stock Report"
 msgstr "Informe de inventario"
 
-#: code:wizard/bom_usage_details.py:39
+#. module: bom_product_wise_usage_report
+#: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__to_date
 msgid "To Date"
 msgstr "Fecha hasta"
 
-#: model_terms:report/stock_move_templates.xml
+#. module: bom_product_wise_usage_report
+#: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.stock_move_report_template
 msgid "Uom"
 msgstr "UdM"
+
+#~ msgid ""
+#~ " This module generates a detailed PDF report of \n"
+#~ "     components/products used for manufacturing products."
+#~ msgstr "Este módulo genera un informe PDF detallado de los componentes utilizados para fabricar distintos productos terminados."
+
+#~ msgid "Component Products"
+#~ msgstr "Productos componentes"
+
+#~ msgid "Date from :"
+#~ msgstr "Fecha de:"
+
+#~ msgid "Date to :"
+#~ msgstr "Fecha hasta:"
+
+#~ msgid "Final Products"
+#~ msgstr "Productos terminados"
+
+#~ msgid "Generate PDF report of Products used in Bill of materials"
+#~ msgstr "Generar un informe PDF de los productos utilizados en las listas de materiales"

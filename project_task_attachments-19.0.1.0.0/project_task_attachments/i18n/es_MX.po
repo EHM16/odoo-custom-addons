@@ -16,26 +16,32 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#. module: project_task_attachments
 #: code:models/ir_attachment.py:30
 msgid "Attach To"
 msgstr "Adjuntar a"
 
+#. module: project_task_attachments
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Helps to view all documents attached to Projects/Tasks"
 msgstr "Permite consultar todos los documentos adjuntos a proyectos y tareas"
 
+#. module: project_task_attachments
 #: code:models/ir_attachment.py:30
 msgid "if Project, file attached to Project. Otherwise to task."
 msgstr "Si corresponde a un proyecto, el archivo se adjunta al proyecto; de lo contrario, a la tarea."
 
+#. module: project_task_attachments
 #: code:models/ir_attachment.py:35
 msgid "Project"
 msgstr "Proyecto"
 
+#. module: project_task_attachments
 #: model:ir.module.module,name:__manifest__.py
 msgid "Project And Task Attachments"
 msgstr "Adjuntos de proyectos y tareas"
 
+#. module: project_task_attachments
 #: model:ir.module.module,description:__manifest__.py
 msgid ""
 "Project and Task Attachments module allows user to view \n"
@@ -48,14 +54,17 @@ msgstr ""
 "    independiente para los documentos de proyectos y de tareas. También \n"
 "    permite adjuntar nuevos documentos desde el menú Documentos."
 
+#. module: project_task_attachments
 #: code:models/ir_attachment.py:39
 msgid "Task"
 msgstr "Tarea"
 
+#. module: project_task_attachments
 #: code:models/ir_attachment.py:35
 msgid "This indicates the Project"
 msgstr "Indica el proyecto"
 
+#. module: project_task_attachments
 #: code:models/ir_attachment.py:39
 msgid "This indicates the Task"
 msgstr "Indica la tarea"

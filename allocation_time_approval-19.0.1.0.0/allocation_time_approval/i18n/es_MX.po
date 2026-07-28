@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:13+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,136 +16,243 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: code:models/manager_approval.py:37
+#. module: allocation_time_approval
+#: model:ir.ui.menu,name:allocation_time_approval.allocated_hour_approval
+#, fuzzy
+#| msgid "Allocated Hours"
+msgid "Allocated Hour Approval"
+msgstr "Horas asignadas"
+
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__planned_hours
 msgid "Allocated Hours"
 msgstr "Horas asignadas"
 
-#: model:ir.module.module,name:__manifest__.py
+#. module: allocation_time_approval
+#: model:ir.actions.act_window,name:allocation_time_approval.manager_approval_action
 msgid "Allocation Time Approval"
 msgstr "Aprobación del tiempo asignado"
 
-#: code:models/manager_approval.py:37
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_manager_approval__planned_hours
 msgid "Allocation time for assignees"
 msgstr "Tiempo asignado a las personas responsables"
 
-#: model_terms:views/manager_approval_views.xml
+#. module: allocation_time_approval
+#: model_terms:ir.ui.view,arch_db:allocation_time_approval.manager_approval_view_list
 msgid "Approve"
 msgstr "Aprobar"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Approve allocated time for project tasks and timesheets."
-msgstr "Aprobar el tiempo asignado a las tareas del proyecto y las hojas de horas."
-
-#: code:models/manager_approval.py:34
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__user_ids
 msgid "Assignees"
 msgstr "Personas asignadas"
 
-#: code:models/project_task.py:34
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_project_task__is_approve_stage
 msgid "Boolean to change to approve"
 msgstr "Indica si la tarea está en la etapa Por aprobar"
 
-#: code:models/project_task.py:37
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_project_task__is_progress_stage
 msgid "Boolean to progress stage"
 msgstr "Indica si la tarea está en la etapa En progreso"
 
-#: code:models/project_task.py:31
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_project_task__is_new_stage
 msgid "Boolean to visible manager approve"
 msgstr "Indica si la tarea está en una etapa nueva"
 
-#: code:models/manager_approval.py:39
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_manager_approval__is_button_view
 msgid "Button for approve button"
 msgstr "Botón para aprobar"
 
-#: code:models/manager_approval.py:41
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_manager_approval__is_button_view_cancel
 msgid "Button for cancel"
 msgstr "Botón para cancelar"
 
-#: code:models/manager_approval.py:39
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__is_button_view
 msgid "Button view"
 msgstr "Vista de botones"
 
-#: model_terms:views/manager_approval_views.xml
+#. module: allocation_time_approval
+#: model_terms:ir.ui.view,arch_db:allocation_time_approval.manager_approval_view_list
+#: model_terms:ir.ui.view,arch_db:allocation_time_approval.view_task_form2
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: code:models/manager_approval.py:41
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__is_button_view_cancel
 msgid "Cancel Button"
 msgstr "Botón Cancelar"
 
-#: code:models/manager_approval.py:34
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_manager_approval__user_ids
 msgid "Corresponding assignees name"
 msgstr "Nombre de las personas asignadas"
 
-#: code:models/manager_approval.py:32
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_manager_approval__project_id
 msgid "Corresponding project name"
 msgstr "Nombre del proyecto correspondiente"
 
-#: code:models/manager_approval.py:43
+#. module: allocation_time_approval
+#: model:ir.model,website_form_label:allocation_time_approval.model_project_task
+#, fuzzy
+#| msgid "Project Task"
+msgid "Create a Task"
+msgstr "Tarea del proyecto"
+
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__create_date
+#, fuzzy
+#| msgid "Task Create Boolean"
+msgid "Created on"
+msgstr "Control de creación de solicitud de aprobación"
+
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__display_name
+#: model:ir.model.fields,field_description:allocation_time_approval.field_project_task__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: allocation_time_approval
+#: model_terms:ir.ui.view,arch_db:allocation_time_approval.view_task_form2
+#, fuzzy
+#| msgid "Task Done"
+msgid "Done"
+msgstr "Tarea en progreso"
+
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_manager_approval__task_id
 msgid "Getting corresponding task"
 msgstr "Tarea relacionada"
 
-#: code:models/project_task.py:40
-#: model_terms:views/manager_approval_views.xml
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__id
+#: model:ir.model.fields,field_description:allocation_time_approval.field_project_task__id
+msgid "ID"
+msgstr ""
+
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: allocation_time_approval
+#: model:ir.model,name:allocation_time_approval.model_manager_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_project_task__manager_approval_id
+#: model:ir.model.fields,help:allocation_time_approval.field_project_task__manager_approval_id
+#: model_terms:ir.ui.view,arch_db:allocation_time_approval.manager_approval_view_list
+#: model_terms:ir.ui.view,arch_db:allocation_time_approval.view_task_form2
 msgid "Manager Approval"
 msgstr "Aprobación del gerente"
 
-#: code:models/project_task.py:31
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_project_task__is_new_stage
 msgid "New"
 msgstr "Nuevo"
 
-#: code:models/project_task.py:205
-#: code:models/project_task.py:213
-#: code:models/project_task.py:223
-#: code:models/project_task.py:232
-#: code:models/project_task.py:243
-#: code:models/project_task.py:248
+#. module: allocation_time_approval
+#. odoo-python
+#: code:addons/allocation_time_approval/models/project_task.py:0
 msgid "Only Managers can perform this move!"
 msgstr "¡Solo los gerentes pueden realizar este movimiento!"
 
-#: code:models/manager_approval.py:32
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__project_id
 msgid "Project"
 msgstr "Proyecto"
 
-#: code:models/manager_approval.py:43
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__task_id
 msgid "Project Task"
 msgstr "Tarea del proyecto"
 
-#: code:models/manager_approval.py:31
+#. module: allocation_time_approval
+#: model:ir.model,name:allocation_time_approval.model_project_task
+#: model:ir.model.fields,field_description:allocation_time_approval.field_manager_approval__task
 msgid "Task"
 msgstr "Tarea"
 
-#: code:models/project_task.py:43
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_project_task__is_create_task
+#: model:ir.model.fields,help:allocation_time_approval.field_project_task__is_create_task
 msgid "Task Create Boolean"
 msgstr "Control de creación de solicitud de aprobación"
 
-#: code:models/project_task.py:37
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_project_task__is_progress_stage
 msgid "Task Done"
 msgstr "Tarea en progreso"
 
-#: code:models/manager_approval.py:31
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_manager_approval__task
 msgid "Task name for project"
 msgstr "Nombre de la tarea para el proyecto"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"This module enables managers to review and approve \n"
-"    allocated hours on project tasks and timesheets."
-msgstr ""
-"Este módulo permite a los gerentes revisar y aprobar las \n"
-"    horas asignadas a tareas del proyecto y hojas de horas."
+#. module: allocation_time_approval
+#: model:project.task.type,name:allocation_time_approval.task_type_to_approve
+#, fuzzy
+#| msgid "To approve"
+msgid "To Approve"
+msgstr "Aprobar"
 
-#: code:models/project_task.py:34
+#. module: allocation_time_approval
+#: model:ir.model.fields,field_description:allocation_time_approval.field_project_task__is_approve_stage
 msgid "To approve"
 msgstr "Aprobar"
 
-#: code:models/project_task.py:266
+#. module: allocation_time_approval
+#: model:ir.model.fields,help:allocation_time_approval.field_project_task__display_name
+msgid ""
+"Use these keywords in the title to set new tasks:\n"
+"\n"
+"        30h Allocate 30 hours to the task\n"
+"        #tags Set tags on the task\n"
+"        @user Assign the task to a user\n"
+"        ! Set the task a medium priority\n"
+"        !! Set the task a high priority\n"
+"        !!! Set the task a urgent priority\n"
+"\n"
+"        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
+msgstr ""
+
+#. module: allocation_time_approval
+#. odoo-python
+#: code:addons/allocation_time_approval/models/project_task.py:0
 msgid "You can't move this..!"
 msgstr "¡No puedes mover esto...!"
 
-#: code:models/project_task.py:118
+#. module: allocation_time_approval
+#. odoo-python
+#: code:addons/allocation_time_approval/models/project_task.py:0
 msgid ""
 "You have exceeded the allocated hours.\n"
 "Only a Project Manager can mark this task as Done."
 msgstr ""
 "Excediste las horas asignadas.\n"
 "Solo un gerente de proyecto puede marcar esta tarea como hecha."
+
+#~ msgid "Approve allocated time for project tasks and timesheets."
+#~ msgstr "Aprobar el tiempo asignado a las tareas del proyecto y las hojas de horas."
+
+#~ msgid ""
+#~ "This module enables managers to review and approve \n"
+#~ "    allocated hours on project tasks and timesheets."
+#~ msgstr ""
+#~ "Este módulo permite a los gerentes revisar y aprobar las \n"
+#~ "    horas asignadas a tareas del proyecto y hojas de horas."

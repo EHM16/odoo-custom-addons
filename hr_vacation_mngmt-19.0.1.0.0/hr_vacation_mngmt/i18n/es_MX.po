@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:31+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,377 +16,716 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: code:models/pending_task.py:43
+#. module: hr_vacation_mngmt
+#: model:mail.template,body_html:hr_vacation_mngmt.email_template_hr_leave_reminder_mail
+msgid ""
+"<p>Hello ,</p>\n"
+"            <p>The employee <strong>${object.employee_id.name}</strong> has taken <strong>${object.no_of_days_temp}</strong> days leave starting from <strong>${object.date_from}</strong> to <strong>${object.date_to}</strong>.</p>\n"
+"            <p>Kindly do the needful.</p>\n"
+"            <p>Thank you!</p>\n"
+"        "
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__assigned_person_id
 msgid "Assigned to"
 msgstr "Asignado a"
 
-#: code:models/hr_leave.py:129
-#: model_terms:views/hr_leave_views.xml
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_leave__leave_salary__0
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__res_config_settings__default_leave_salary__0
+msgid "Basic"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_leave.py:0
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_leave_view_form
 msgid "Book Flight Ticket"
 msgstr "Reservar boleto de avión"
 
-#: model_terms:views/hr_flight_ticket_views.xml
+#. module: hr_vacation_mngmt
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.view_hr_book_flight_ticket_form
 msgid "Book Ticket"
 msgstr "Reservar boleto"
 
-#: model_terms:views/hr_flight_ticket_views.xml
-#: model_terms:wizard/task_reassign_views.xml
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__state__booked
+msgid "Booked"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_class__business
+msgid "Business"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_flight_ticket_view_form
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.task_reassign_view_form
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.view_hr_book_flight_ticket_form
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: code:models/hr_payslip.py:30
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__state__canceled
+#, fuzzy
+#| msgid "Cancel"
+msgid "Canceled"
+msgstr "Cancelar"
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_payslip__leave_salary
 msgid "Check leave if salary should be paid for the employee if is on ,leave"
 msgstr "Verificar si el permiso incluye goce de sueldo"
 
-#: model_terms:views/res_config_settings_views.xml
+#. module: hr_vacation_mngmt
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.res_config_settings_view_form_payroll
 msgid "Choose the expense account to post the flight tickets accounting entries"
 msgstr "Elija la cuenta de gastos para contabilizar los asientos de los boletos de avión"
 
-#: code:models/hr_flight_ticket.py:49
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__ticket_class
 msgid "Class"
 msgstr "Clase"
 
-#: code:models/hr_flight_ticket.py:72
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__company_id
+msgid "Company"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__company_id
 msgid "Company of the employee."
 msgstr "Empresa del empleado."
 
-#: model_terms:views/hr_flight_ticket_views.xml
-#: model_terms:wizard/task_reassign_views.xml
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__state__completed
+msgid "Completed"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model,name:hr_vacation_mngmt.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_flight_ticket_view_form
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.task_reassign_view_form
 msgid "Confirm"
 msgstr "Confirmar"
 
-#: code:models/pending_task.py:35
+#. module: hr_vacation_mngmt
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.task_reassign_view_form
+msgid ""
+"Confirm leave request and reassign pending works of the\n"
+"                    employee."
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__state__confirmed
+#, fuzzy
+#| msgid "Confirm"
+msgid "Confirmed"
+msgstr "Confirmar"
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__create_uid
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__create_uid
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__create_date
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__create_date
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__dept_id
 msgid "Department"
 msgstr "Departamento"
 
-#: code:models/pending_task.py:35
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_pending_task__dept_id
 msgid "Department of the employee."
 msgstr "Departamento del empleado."
 
-#: code:models/hr_flight_ticket.py:42
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__depart_from
 msgid "Departure"
 msgstr "Salida"
 
-#: code:models/pending_task.py:41
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__description
 msgid "Description"
 msgstr "Descripción"
 
-#: code:models/pending_task.py:41
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_pending_task__description
 msgid "Description of the task."
 msgstr "Descripción de la tarea."
 
-#: code:models/hr_flight_ticket.py:44
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__destination
 msgid "Destination"
 msgstr "Destino"
 
-#: code:models/hr_leave.py:57
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__leave_salary
 msgid "Details about leave salary of employee."
 msgstr "Detalles del salario por permiso del empleado"
 
-#: code:models/hr_leave.py:42
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__pending_task_ids
 msgid "Details of pending tasks"
 msgstr "Detalles de tareas pendientes"
 
-#: code:models/hr_flight_ticket.py:59
-msgid "Details of return flight"
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__return_flight_details
+#, fuzzy
+#| msgid "Details of return flight"
+msgid "Details of return flight "
 msgstr "Detalles del vuelo de regreso"
 
-#: code:models/hr_flight_ticket.py:37
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__display_name
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__display_name
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_payslip__display_name
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__display_name
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_class__economy
+msgid "Economy"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__employee_id
 msgid "Employee"
 msgstr "Empleado"
 
-#: code:models/pending_task.py:43
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_pending_task__assigned_person_id
 msgid "Employee who is assigned to"
 msgstr "Empleado que está asignado a"
 
-#: code:models/res_config_settings.py:30
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_res_config_settings__leave_reminder
 msgid "Enable this field send leave remainder emails to hr managers"
 msgstr "Habilite este campo para enviar correos electrónicos de permisos restantes a los gerentes de recursos humanos"
 
-#: code:models/hr_leave.py:53
-#: model_terms:views/res_config_settings_views.xml
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__expense_account_id
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.res_config_settings_view_form_payroll
 msgid "Expense Account"
 msgstr "Cuenta de gastos"
 
-#: code:models/hr_leave.py:53
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__expense_account_id
 msgid "Expense account to account the flight expenses."
 msgstr "Cuenta de gastos para contabilizar los gastos de vuelo."
 
-#: code:models/hr_flight_ticket.py:57
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_class__first_class
+#, fuzzy
+#| msgid "Class"
+msgid "First Class"
+msgstr "Clase"
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__flight_details
 msgid "Flight Details"
 msgstr "Detalles del vuelo"
 
-#: code:models/hr_flight_ticket.py:57
-msgid "Flight details of the employee."
-msgstr "Detalles del vuelo del empleado."
-
-#: code:models/hr_leave.py:149
-#: code:models/hr_leave.py:49
-#: model_terms:views/hr_flight_ticket_views.xml
-#: model_terms:views/hr_leave_views.xml
-#: model_terms:views/res_config_settings_views.xml
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_leave.py:0
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__flight_ticket_ids
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_flight_ticket_view_form
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_flight_ticket_view_tree
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_leave_view_form
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.res_config_settings_view_form_payroll
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.view_hr_book_flight_ticket_form
 msgid "Flight Ticket"
 msgstr "Boleto de avión"
 
-#: code:models/hr_leave.py:49
-msgid "Flight ticket Details"
-msgstr "Detalles del boleto de avión"
-
-#: code:models/hr_flight_ticket.py:174
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_flight_ticket.py:0
 msgid "Flight Ticket Invoice"
 msgstr "Factura del boleto de avión"
 
-#: code:models/hr_flight_ticket.py:93
+#. module: hr_vacation_mngmt
+#: model:ir.actions.act_window,name:hr_vacation_mngmt.action_hr_flight_tickets
+#: model:ir.ui.menu,name:hr_vacation_mngmt.hr_flight_tickets_menu_root
+#, fuzzy
+#| msgid "Flight Ticket"
+msgid "Flight Tickets"
+msgstr "Boleto de avión"
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__flight_details
+msgid "Flight details of the employee."
+msgstr "Detalles del vuelo del empleado."
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__flight_ticket_ids
+msgid "Flight ticket Details"
+msgstr "Detalles del boleto de avión"
+
+#. module: hr_vacation_mngmt
+#: model:ir.actions.server,name:hr_vacation_mngmt.ir_cron_ticket_status_update_ir_actions_server
+#, fuzzy
+#| msgid "Flight ticket Details"
+msgid "Flight ticket status update"
+msgstr "Detalles del boleto de avión"
+
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_flight_ticket.py:0
 msgid "Flight travelling start date must be less than flight return date."
 msgstr "La fecha de inicio del viaje del vuelo debe ser anterior a la fecha de regreso del vuelo."
 
-#: code:models/hr_flight_ticket.py:55
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__ticket_fare
 msgid "Give the ticket fare"
 msgstr "Indique la tarifa del boleto"
 
-#: code:models/hr_flight_ticket.py:68
-#: model_terms:views/hr_flight_ticket_views.xml
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_leave__leave_salary__1
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__res_config_settings__default_leave_salary__1
+msgid "Gross"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model,name:hr_vacation_mngmt.model_hr_flight_ticket
+#, fuzzy
+#| msgid "Flight Ticket"
+msgid "HR Flight Ticket"
+msgstr "Boleto de avión"
+
+#. module: hr_vacation_mngmt
+#: model:ir.actions.server,name:hr_vacation_mngmt.hr_email_leave_reminder_ir_actions_server
+#, fuzzy
+#| msgid "Leave Reminder Email"
+msgid "HR Leave Reminder"
+msgstr "Dejar correo electrónico de recordatorio"
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__holiday_managers_ids
+#, fuzzy
+#| msgid "Responsible holiday managers"
+msgid "Holiday Managers"
+msgstr "Aprobadores de Permisos"
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__id
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__id
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_payslip__id
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__id
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__id
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__invoice_id
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_flight_ticket_view_form
 msgid "Invoice"
 msgstr "Factura"
 
-#: code:models/hr_flight_ticket.py:68
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__invoice_id
 msgid "Invoice of the employee"
 msgstr "Factura del empleado"
 
-#: code:models/hr_flight_ticket.py:70
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__write_uid
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__write_uid
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__write_date
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__write_date
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__leave_id
 msgid "Leave"
 msgstr "Permiso"
 
-#: code:models/hr_flight_ticket.py:70
-msgid "Leave of the employee."
-msgstr "Permiso del empleado."
+#. module: hr_vacation_mngmt
+#: model:mail.template,name:hr_vacation_mngmt.email_template_hr_leave_reminder_mail
+#, fuzzy
+#| msgid "Leave Reminder Email"
+msgid "Leave : Reminder"
+msgstr "Dejar correo electrónico de recordatorio"
 
-#: code:models/res_config_settings.py:30
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__leave_reminder
 msgid "Leave Reminder Email"
 msgstr "Dejar correo electrónico de recordatorio"
 
-#: code:models/pending_task.py:33
-#: code:wizard/task_reassign.py:38
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__leave_id
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__leave_req_id
 msgid "Leave Request"
 msgstr "Solicitud de permiso"
 
-#: code:models/hr_leave.py:99
-msgid "Leave request must be confirmed (\"To Approve\") in order to approve it."
-msgstr "La solicitud de permiso debe ser confirmada (\"Para Aprobar\") para poder aprobarla."
-
-#: code:models/pending_task.py:33
-msgid "Leave request of the employee."
-msgstr "Solicitud de permiso del empleado."
-
-#: code:wizard/task_reassign.py:38
-msgid "Leave request to which the pending tasks are related."
-msgstr "Dejar solicitud con la que se relacionan las tareas pendientes."
-
-#: code:models/hr_leave.py:57
-#: code:models/hr_payslip.py:30
-#: code:models/res_config_settings.py:41
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__leave_salary
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_payslip__leave_salary
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__default_leave_salary
 msgid "Leave Salary"
 msgstr "Permiso pagado"
 
-#: model_terms:views/res_config_settings_views.xml
+#. module: hr_vacation_mngmt
+#: model:hr.salary.rule,name:hr_vacation_mngmt.hr_salary_rule_leave_salary_basic
+#, fuzzy
+#| msgid "Leave Salary"
+msgid "Leave Salary Basic"
+msgstr "Permiso pagado"
+
+#. module: hr_vacation_mngmt
+#: model:hr.salary.rule,name:hr_vacation_mngmt.hr_salary_rule_leave_salary_gross
+#, fuzzy
+#| msgid "Leave Salary"
+msgid "Leave Salary Gross"
+msgstr "Permiso pagado"
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__leave_id
+msgid "Leave of the employee."
+msgstr "Permiso del empleado."
+
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_leave.py:0
+msgid "Leave request must be confirmed (\"To Approve\") in order to approve it."
+msgstr "La solicitud de permiso debe ser confirmada (\"Para Aprobar\") para poder aprobarla."
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_pending_task__leave_id
+msgid "Leave request of the employee."
+msgstr "Solicitud de permiso del empleado."
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_task_reassign__leave_req_id
+msgid "Leave request to which the pending tasks are related."
+msgstr "Dejar solicitud con la que se relacionan las tareas pendientes."
+
+#. module: hr_vacation_mngmt
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.res_config_settings_view_form_payroll
 msgid "Leave salary calculation"
 msgstr "Cálculo del salario por permiso"
 
-#: code:wizard/task_reassign.py:32
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_task_reassign__pending_task_ids
 msgid "List of pending tasks associated with the leave request."
 msgstr "Listado de tareas pendientes asociadas a la solicitud de permiso."
 
-#: code:models/hr_flight_ticket.py:37
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__employee_id
 msgid "Name of the employee"
 msgstr "Nombre del empleado"
 
-#: code:models/pending_task.py:31
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_pending_task__name
 msgid "Name of the pending task."
 msgstr "Nombre de la tarea pendiente."
 
-#: code:models/pending_task.py:48
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_pending_task__unavailable_employee_ids
 msgid "Name of unavailableemployees"
 msgstr "Nombre de los empleados no disponibles"
 
-#: code:models/hr_flight_ticket.py:34
-#: code:models/hr_flight_ticket.py:80
-#: code:models/hr_flight_ticket.py:82
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_flight_ticket.py:0
 msgid "New"
 msgstr "Nuevo"
 
-#: code:models/hr_leave.py:95
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_type__one
+msgid "One Way"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_leave.py:0
 msgid "Only an HR Officer or Manager can approve leave requests."
 msgstr "Solo un responsable o gerente de recursos humanos puede aprobar solicitudes de permiso."
 
-#: code:models/hr_leave.py:123
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_leave.py:0
 msgid "Only an HR Officer or Manager can book flight tickets."
 msgstr "Solo un responsable o gerente de recursos humanos puede reservar boletos de avión."
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Open HRMS Vacation Management"
-msgstr "Gestión de vacaciones de Open HRMS"
-
-#: code:models/hr_leave.py:37
-#: model_terms:views/hr_leave_views.xml
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__overlapping_leaves_ids
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_leave_view_form
 msgid "Overlapping Leaves"
 msgstr "Superposición de permisos"
 
-#: code:models/hr_leave.py:37
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__overlapping_leaves_ids
 msgid "Overlapping leaves of employees."
 msgstr "Superposición de permisos de empleados."
 
-#: code:models/hr_leave.py:42
-#: code:wizard/task_reassign.py:32
-#: model_terms:views/pending_task_views.xml
+#. module: hr_vacation_mngmt
+#: model:ir.model,name:hr_vacation_mngmt.model_hr_payslip
+msgid "Pay Slip"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model,name:hr_vacation_mngmt.model_pending_task
+#, fuzzy
+#| msgid "Pending Tasks"
+msgid "Pending Task"
+msgstr "Tareas pendientes"
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__pending_task_ids
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_task_reassign__pending_task_ids
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.pending_task_view_form
 msgid "Pending Tasks"
 msgstr "Tareas pendientes"
 
-#: model_terms:views/hr_leave_views.xml
+#. module: hr_vacation_mngmt
+#: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.hr_leave_view_form
 msgid "Pending Works"
 msgstr "Trabajos Pendientes"
 
-#: code:models/hr_flight_ticket.py:102
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_flight_ticket.py:0
 msgid "Please add ticket fare."
 msgstr "Por favor agregue la tarifa del boleto."
 
-#: code:wizard/task_reassign.py:52
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/wizard/task_reassign.py:0
 msgid "Please assign pending task to employees."
 msgstr "Asigne tareas pendientes a los empleados."
 
-#: code:models/hr_flight_ticket.py:107
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_flight_ticket.py:0
 msgid "Please select expense account for the flight tickets."
 msgstr "Seleccione la cuenta de gastos para los boletos de avión."
 
-#: code:models/pending_task.py:38
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_class__premium_economy
+msgid "Premium Economy"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__project_id
 msgid "Project"
 msgstr "Proyecto"
 
-#: code:models/pending_task.py:38
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_pending_task__project_id
 msgid "Project of the employee"
 msgstr "Proyecto del empleado"
 
-#: code:models/hr_leave.py:108
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/models/hr_leave.py:0
 msgid "Re-Assign Task"
 msgstr "Reasignar tarea"
 
-#: code:models/hr_leave.py:32
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__remaining_leaves
 msgid "Remaining Legal Leaves"
 msgstr "Permisos por ley restantes"
 
-#: code:models/hr_leave.py:32
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__remaining_leaves
 msgid "Remaining legal leaves"
 msgstr "Permisos por ley restantes"
 
-#: code:models/res_config_settings.py:34
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__reminder_day_before
 msgid "Reminder Day Before"
 msgstr "Recordatorio un día antes"
 
-#: code:models/hr_leave.py:46
+#. module: hr_vacation_mngmt
+#: model:mail.template,subject:hr_vacation_mngmt.email_template_hr_leave_reminder_mail
+msgid "Reminder: ${object.display_name}"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__holiday_managers_ids
 msgid "Responsible holiday managers"
 msgstr "Aprobadores de Permisos"
 
-#: code:models/hr_flight_ticket.py:48
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__date_return
 msgid "Return Date"
 msgstr "Fecha de regreso"
 
-#: code:models/hr_flight_ticket.py:48
-msgid "Return date"
-msgstr "fecha de regreso"
-
-#: code:models/hr_flight_ticket.py:59
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__return_flight_details
 msgid "Return Flight Details"
 msgstr "Detalles del vuelo de regreso"
 
-#: code:models/hr_flight_ticket.py:49
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__date_return
+#, fuzzy
+#| msgid "Return date"
+msgid "Return date "
+msgstr "fecha de regreso"
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__ticket_type__round
+msgid "Round Trip"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__ticket_class
 msgid "Select the ticket class"
 msgstr "Seleccione la clase del boleto"
 
-#: code:models/hr_flight_ticket.py:39
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__ticket_type
 msgid "Select the ticket type"
 msgstr "Seleccione el tipo de boleto"
 
-#: code:wizard/task_reassign.py:61
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/wizard/task_reassign.py:0
 msgid "Selected employee %s is not available"
 msgstr "El empleado seleccionado %s no está disponible"
 
-#: code:wizard/task_reassign.py:63
+#. module: hr_vacation_mngmt
+#. odoo-python
+#: code:addons/hr_vacation_mngmt/wizard/task_reassign.py:0
 msgid "Selected employees %s are not available"
 msgstr "Los empleados seleccionados %s no están disponibles"
 
-#: code:models/hr_flight_ticket.py:33
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__name
 msgid "Sequence No"
 msgstr "Número de secuencia"
 
-#: code:models/hr_flight_ticket.py:33
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__name
 msgid "Sequence number of Flight Ticket"
 msgstr "Número de secuencia del boleto de avión"
 
-#: code:models/res_config_settings.py:34
-msgid "Set the day to send reminder ."
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_res_config_settings__reminder_day_before
+#, fuzzy
+#| msgid "Set the day to send reminder ."
+msgid "Set the day to send  reminder ."
 msgstr "Configure el día para enviar el recordatorio."
 
-#: code:models/res_config_settings.py:37
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_res_config_settings__expense_id
 msgid "Set the default expense account"
 msgstr "Establecer la cuenta de gastos predeterminada"
 
-#: code:models/res_config_settings.py:41
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_res_config_settings__default_leave_salary
 msgid "Set the default leave salary of employee."
 msgstr "Establezca el salario de permiso predeterminado del empleado."
 
-#: code:models/hr_flight_ticket.py:42
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__depart_from
 msgid "Specify the departure place."
 msgstr "Especifique el lugar de salida."
 
-#: code:models/hr_flight_ticket.py:44
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__destination
 msgid "Specify the destination place."
 msgstr "Especifique el lugar de destino."
 
-#: code:models/hr_flight_ticket.py:46
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__date_start
 msgid "Start Date"
 msgstr "Fecha de inicio"
 
-#: code:models/hr_flight_ticket.py:46
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__date_start
 msgid "Start date of the travel."
 msgstr "Fecha de inicio del viaje."
 
-#: code:models/hr_flight_ticket.py:61
-msgid "States of the flight ticket."
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields.selection,name:hr_vacation_mngmt.selection__hr_flight_ticket__state__started
+#, fuzzy
+#| msgid "Start Date"
+msgid "Started"
+msgstr "Fecha de inicio"
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__state
+#, fuzzy
+#| msgid "States of the flight ticket."
+msgid "States of the flight ticket. "
 msgstr "Estados del boleto de avión."
 
-#: code:models/hr_flight_ticket.py:61
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__state
 msgid "Status"
 msgstr "Estado"
 
-#: code:models/pending_task.py:31
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__name
 msgid "Task"
 msgstr "Tarea"
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"The 'Vacation Management System' is a robust platform\n"
-"     designed to streamline and optimize the management of employee \n"
-"     vacations within an organization."
+#. module: hr_vacation_mngmt
+#: model:ir.model,name:hr_vacation_mngmt.model_task_reassign
+msgid "Task Reassign"
 msgstr ""
-"El 'Sistema de Gestión de Vacaciones' es una plataforma robusta\n"
-"     diseñado para agilizar y optimizar la gestión de los empleados \n"
-"     vacaciones dentro de una organización."
 
-#: code:models/hr_flight_ticket.py:55
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__ticket_fare
 msgid "Ticket Fare"
 msgstr "Tarifa del boleto"
 
-#: code:models/hr_flight_ticket.py:39
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__ticket_type
 msgid "Ticket Type"
 msgstr "Tipo de boleto"
 
-#: code:models/res_config_settings.py:37
+#. module: hr_vacation_mngmt
+#: model:ir.model,name:hr_vacation_mngmt.model_hr_leave
+msgid "Time Off"
+msgstr ""
+
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__expense_id
 msgid "Travel Expense Account"
 msgstr "Cuenta de gastos de viaje"
 
-#: code:models/pending_task.py:48
+#. module: hr_vacation_mngmt
+#: model:ir.model.fields,field_description:hr_vacation_mngmt.field_pending_task__unavailable_employee_ids
 msgid "Unavailable Employees"
 msgstr "Empleados no disponibles"
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Vacation Management,manages employee vacation"
-msgstr "Gestión de vacaciones, gestiona las vacaciones de los empleados."
+#~ msgid "Open HRMS Vacation Management"
+#~ msgstr "Gestión de vacaciones de Open HRMS"
+
+#~ msgid ""
+#~ "The 'Vacation Management System' is a robust platform\n"
+#~ "     designed to streamline and optimize the management of employee \n"
+#~ "     vacations within an organization."
+#~ msgstr ""
+#~ "El 'Sistema de Gestión de Vacaciones' es una plataforma robusta\n"
+#~ "     diseñado para agilizar y optimizar la gestión de los empleados \n"
+#~ "     vacaciones dentro de una organización."
+
+#~ msgid "Vacation Management,manages employee vacation"
+#~ msgstr "Gestión de vacaciones, gestiona las vacaciones de los empleados."

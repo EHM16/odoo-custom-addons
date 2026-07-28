@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:15+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,32 +16,53 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model_terms:views/stock_picking_views.xml
+#. module: force_availability_in_stock
+#: model:ir.model.fields,field_description:force_availability_in_stock.field_stock_picking__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: force_availability_in_stock
+#: model_terms:ir.ui.view,arch_db:force_availability_in_stock.view_picking_form
 msgid "Force Availability"
 msgstr "Forzar disponibilidad"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Force Availability Button in Delivery"
-msgstr "Botón forzar disponibilidad en entrega"
+#. module: force_availability_in_stock
+#: model:ir.model.fields,field_description:force_availability_in_stock.field_stock_picking__id
+msgid "ID"
+msgstr ""
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid "Make goods available forcefully in the time of delivery when there is an availability problem occurs."
-msgstr "Hacer que los bienes estén disponibles a la fuerza en el momento de la entrega cuando se produzca un problema de disponibilidad."
+#. module: force_availability_in_stock
+#: model:ir.model.fields,field_description:force_availability_in_stock.field_stock_picking__is_available
+#, fuzzy
+#| msgid "Force Availability"
+msgid "Make Available"
+msgstr "Forzar disponibilidad"
 
-#: code:models/stock_picking.py:34
+#. module: force_availability_in_stock
+#: model:ir.model.fields,help:force_availability_in_stock.field_stock_picking__is_available
 msgid "The Force Availability button will show based on this field."
 msgstr "El botón forzar disponibilidad se mostrará según este campo."
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"This module will help you to make goods available \n"
-"    forcefully in the time of delivery and deliver goods to the customer \n"
-"    without any interruptions when there is an availability problem occurs.\n"
-"    Force availability button in delivery/stock picking.Can change done \n"
-"    quantities just by a button click."
+#. module: force_availability_in_stock
+#: model:ir.model,name:force_availability_in_stock.model_stock_picking
+msgid "Transfer"
 msgstr ""
-"Este módulo permite forzar la disponibilidad de productos \n"
-"    al momento de la entrega y entregarlos al cliente \n"
-"    sin interrupciones cuando exista un problema de disponibilidad.\n"
-"    El botón Forzar disponibilidad en la transferencia permite cambiar las \n"
-"    cantidades hechas con un solo clic."
+
+#~ msgid "Force Availability Button in Delivery"
+#~ msgstr "Botón forzar disponibilidad en entrega"
+
+#~ msgid "Make goods available forcefully in the time of delivery when there is an availability problem occurs."
+#~ msgstr "Hacer que los bienes estén disponibles a la fuerza en el momento de la entrega cuando se produzca un problema de disponibilidad."
+
+#~ msgid ""
+#~ "This module will help you to make goods available \n"
+#~ "    forcefully in the time of delivery and deliver goods to the customer \n"
+#~ "    without any interruptions when there is an availability problem occurs.\n"
+#~ "    Force availability button in delivery/stock picking.Can change done \n"
+#~ "    quantities just by a button click."
+#~ msgstr ""
+#~ "Este módulo permite forzar la disponibilidad de productos \n"
+#~ "    al momento de la entrega y entregarlos al cliente \n"
+#~ "    sin interrupciones cuando exista un problema de disponibilidad.\n"
+#~ "    El botón Forzar disponibilidad en la transferencia permite cambiar las \n"
+#~ "    cantidades hechas con un solo clic."

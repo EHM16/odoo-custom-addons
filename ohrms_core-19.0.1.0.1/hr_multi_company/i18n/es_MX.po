@@ -16,27 +16,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
+#. module: hr_multi_company
 #: code:models/hr_attendance.py:30
 #: code:models/hr_payslip_run.py:30
 msgid "Company"
 msgstr "Empresa"
 
+#. module: hr_multi_company
 #: code:models/hr_payslip_run.py:30
 msgid "Company od the payslip."
 msgstr "Empresa de nómina."
 
+#. module: hr_multi_company
 #: code:models/hr_attendance.py:30
 msgid "Company of the attendance."
 msgstr "Empresa de asistencia."
 
+#. module: hr_multi_company
 #: model:ir.module.module,summary:__manifest__.py
 msgid "Enables Multi-Company"
 msgstr "Habilita el entorno multiempresa"
 
+#. module: hr_multi_company
 #: model:ir.module.module,name:__manifest__.py
 msgid "Open HRMS Multi-Company"
 msgstr "Open HRMS: Multiempresa"
 
+#. module: hr_multi_company
 #: model:ir.module.module,description:__manifest__.py
 msgid "This module enables multi company features"
 msgstr "Este módulo habilita funciones para múltiples empresas."

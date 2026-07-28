@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <template id="portal_my_home_events" name="Show Events Section" inherit_id="portal.portal_my_home" customize_show="True" priority="30">
+        <xpath expr="//div[hasclass('o_portal_docs')]" position="before">
+            <t t-set="portal_client_category_enable" t-value="True"/>
+        </xpath>
+        <div id="portal_client_category" position="inside">
+            <style>
+                #portal_client_category .o_portal_icon img[src*='/dev_event_planner_management/'] {
+                    max-width: 50px;
+                    max-height: 50px;
+                    object-fit: contain;
+                }
+            </style>
+            <t t-call="portal.portal_docs_entry">
+                <t t-set="icon" t-value="'/dev_event_planner_management/static/description/images/portal_event_icon.png'"/>
+                <t t-set="title">My Events</t>
+                <t t-set="text">Follow your planned events</t>
+                <t t-set="url" t-value="'/my/events'"/>
+                <t t-set="placeholder_count" t-value="'event_count'"/>
+                <t t-set="config_card" t-value="True"/>
+            </t>
+        </div>
+    </template>
+
+    <template id="portal_my_home_menu_events" inherit_id="portal.portal_breadcrumbs" priority="40">
+        <xpath expr="//ol[hasclass('o_portal_submenu')]" position="inside">
+            <li id="portal_breadcrumbs_events" t-if="page_name == 'planner_events'" t-attf-class="breadcrumb-item #{'active ' if not event else ''}">
+                <a t-if="event" t-attf-href="/my/events?{{ keep_query() }}">Events</a>
+                <t t-else="">Events</t>
+            </li>
+            <li t-if="event" class="breadcrumb-item active">
+                <t t-out="event.name"/>
+            </li>
+        </xpath>
+    </template>
+
+    <template id="portal_my_events" name="My Events">
+        <t t-call="portal.portal_layout">
+            <t t-set="breadcrumbs_searchbar" t-value="True"/>
+            <t t-call="portal.portal_searchbar">
+                <t t-set="title">Events</t>
+            </t>
+            <t t-if="not events">
+                <p class="alert alert-warning">There are currently no events for your account.</p>
+            </t>
+            <t t-if="events" t-call="portal.portal_table">
+                <thead>
+                    <tr class="active">
+                        <th>Reference</th>
+                        <th>Event</th>
+                        <th>Date</th>
+                        <th>Venue</th>
+                        <th class="text-end">Stage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr t-foreach="events" t-as="event">
+                        <td><a t-attf-href="/my/events/#{event.id}"><span t-field="event.reference"/></a></td>
+                        <td><span t-field="event.name"/></td>
+                        <td><span t-field="event.date_start"/></td>
+                        <td><span t-field="event.venue_id.name"/></td>
+                        <td class="text-end"><span class="badge text-bg-info" t-field="event.stage_id.name"/></td>
+                    </tr>
+                </tbody>
+            </t>
+        </t>
+    </template>
+
+    <template id="portal_event_page" name="Event Page">
+        <t t-call="portal.portal_layout">
+            <div class="card mb-3 shadow-sm border-0">
+                <div class="card-header bg-white py-3">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                            <h5 class="mb-0">
+                                <span t-field="event.name"/>
+                                <small class="text-muted"> (<span t-field="event.reference"/>)</small>
+                            </h5>
+                        </div>
+                        <div class="col-4 text-end">
+                            <span class="badge text-bg-info fs-6" t-field="event.stage_id.name"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <ul class="nav nav-tabs px-3 pt-3 bg-light" id="eventTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active fw-bold text-dark" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                        </li>
+                        <li class="nav-item" role="presentation" t-if="event.schedule_line_ids">
+                            <button class="nav-link text-dark" id="schedule-tab" data-bs-toggle="tab" data-bs-target="#schedule" type="button" role="tab" aria-controls="schedule" aria-selected="false">Schedule</button>
+                        </li>
+                        <li class="nav-item" role="presentation" t-if="event.guest_ids">
+                            <button class="nav-link text-dark" id="guests-tab" data-bs-toggle="tab" data-bs-target="#guests" type="button" role="tab" aria-controls="guests" aria-selected="false">Guests</button>
+                        </li>
+                        <li class="nav-item" role="presentation" t-if="event.payment_line_ids">
+                            <button class="nav-link text-dark" id="payments-tab" data-bs-toggle="tab" data-bs-target="#payments" type="button" role="tab" aria-controls="payments" aria-selected="false">Payments</button>
+                        </li>
+                        <li class="nav-item" role="presentation" t-if="event.vendor_line_ids">
+                            <button class="nav-link text-dark" id="vendors-tab" data-bs-toggle="tab" data-bs-target="#vendors" type="button" role="tab" aria-controls="vendors" aria-selected="false">Vendors</button>
+                        </li>
+                        <li class="nav-item" role="presentation" t-if="event.budget_line_ids">
+                            <button class="nav-link text-dark" id="budget-tab" data-bs-toggle="tab" data-bs-target="#budget" type="button" role="tab" aria-controls="budget" aria-selected="false">Budget</button>
+                        </li>
+                    </ul>
+                    
+                    <div class="tab-content p-4" id="eventTabsContent">
+                        <!-- Overview Tab -->
+                        <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-3">
+                                    <strong>When</strong>
+                                    <div><span t-field="event.date_start"/>
+                                        <t t-if="event.date_end"> — <span t-field="event.date_end"/></t>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3" t-if="event.venue_id">
+                                    <strong>Where</strong>
+                                    <div><span t-field="event.venue_id.name"/></div>
+                                    <div t-if="event.venue_id.contact_address" class="text-muted">
+                                        <span t-field="event.venue_id.contact_address"/>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <strong>Your Planner</strong>
+                                    <div><span t-field="event.user_id.name"/></div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <strong>Guests</strong>
+                                    <div>
+                                        <span t-if="event.headcount_locked" t-field="event.guest_count_final"/>
+                                        <span t-if="not event.headcount_locked" t-field="event.guest_count_expected"/>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3" t-if="event.event_type_id">
+                                    <strong>Event Type</strong>
+                                    <div><span t-field="event.event_type_id.name"/></div>
+                                </div>
+                                <div class="col-12 mb-3" t-if="event.note">
+                                    <strong>Note</strong>
+                                    <div class="mt-1 p-3 bg-light rounded text-muted">
+                                        <span t-field="event.note"/>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <t t-set="quotes" t-value="event.sale_order_ids.filtered(lambda so: so.state in ('draft', 'sent', 'sale'))"/>
+                            <t t-if="quotes">
+                                <hr/>
+                                <h6>Quotes &amp; Orders</h6>
+                                <ul class="list-unstyled">
+                                    <li t-foreach="quotes" t-as="event_order" class="mb-2">
+                                        <a t-att-href="event_order.get_portal_url()">
+                                            <span t-field="event_order.name"/>
+                                        </a>
+                                        — <span t-field="event_order.amount_total" t-options="{'widget': 'monetary', 'display_currency': event_order.currency_id}"/>
+                                        <span class="badge text-bg-secondary ms-2" t-field="event_order.state"/>
+                                    </li>
+                                </ul>
+                            </t>
+
+                            <t t-set="posted_invoices" t-value="event.invoice_ids.filtered(lambda m: m.state == 'posted')"/>
+                            <t t-if="posted_invoices">
+                                <h6>Invoices</h6>
+                                <ul class="list-unstyled">
+                                    <li t-foreach="posted_invoices" t-as="event_invoice" class="mb-2">
+                                        <a t-att-href="event_invoice.get_portal_url()">
+                                            <span t-field="event_invoice.name"/>
+                                        </a>
+                                        — <span t-field="event_invoice.amount_total" t-options="{'widget': 'monetary', 'display_currency': event_invoice.currency_id}"/>
+                                        <span class="badge text-bg-secondary ms-2" t-field="event_invoice.payment_state"/>
+                                    </li>
+                                </ul>
+                            </t>
+                        </div>
+                        
+                        <!-- Schedule Tab -->
+                        <div class="tab-pane fade" id="schedule" role="tabpanel" aria-labelledby="schedule-tab" t-if="event.schedule_line_ids">
+                            <table class="table table-sm table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Activity</th>
+                                        <th>Location</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="event.schedule_line_ids" t-as="line">
+                                        <td style="white-space: nowrap;">
+                                            <span t-field="line.time_start" t-options="{'format': 'EEE HH:mm'}"/>
+                                        </td>
+                                        <td><span t-field="line.name"/></td>
+                                        <td><span t-field="line.location"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Guests Tab -->
+                        <div class="tab-pane fade" id="guests" role="tabpanel" aria-labelledby="guests-tab" t-if="event.guest_ids">
+                            <table class="table table-sm table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Seats</th>
+                                        <th>Status</th>
+                                        <th>Meal Choice</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="event.guest_ids" t-as="guest">
+                                        <td>
+                                            <span t-field="guest.name"/>
+                                            <i t-if="guest.is_vip" class="fa fa-star text-warning ms-1" title="VIP"></i>
+                                        </td>
+                                        <td><span t-field="guest.seats"/></td>
+                                        <td>
+                                            <span t-if="guest.rsvp_state == 'accepted'" class="badge text-bg-success">Accepted</span>
+                                            <span t-if="guest.rsvp_state == 'declined'" class="badge text-bg-danger">Declined</span>
+                                            <span t-if="guest.rsvp_state == 'pending'" class="badge text-bg-secondary">Pending</span>
+                                        </td>
+                                        <td><span t-field="guest.meal_choice_id.name"/></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Payments Tab -->
+                        <div class="tab-pane fade" id="payments" role="tabpanel" aria-labelledby="payments-tab" t-if="event.payment_line_ids">
+                            <table class="table table-sm table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Due Date</th>
+                                        <th class="text-end">Amount</th>
+                                        <th class="text-center">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="event.payment_line_ids" t-as="pay">
+                                        <td><span t-field="pay.name"/></td>
+                                        <td><span t-field="pay.due_date"/></td>
+                                        <td class="text-end">
+                                            <span t-field="pay.amount" t-options="{'widget': 'monetary', 'display_currency': pay.currency_id}"/>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-if="pay.state == 'draft'" class="badge text-bg-secondary">Draft</span>
+                                            <span t-if="pay.state == 'pending'" class="badge text-bg-info">Pending</span>
+                                            <span t-if="pay.state == 'overdue'" class="badge text-bg-danger">Overdue</span>
+                                            <span t-if="pay.state == 'paid'" class="badge text-bg-success">Paid</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <!-- Vendors Tab -->
+                        <div class="tab-pane fade" id="vendors" role="tabpanel" aria-labelledby="vendors-tab" t-if="event.vendor_line_ids">
+                            <table class="table table-sm table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Vendor</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="event.vendor_line_ids" t-as="vendor">
+                                        <td><span t-field="vendor.category_id.name"/></td>
+                                        <td><span t-field="vendor.vendor_id.name"/></td>
+                                        <td>
+                                            <span t-field="vendor.state" class="badge text-bg-secondary"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Budget Tab -->
+                        <div class="tab-pane fade" id="budget" role="tabpanel" aria-labelledby="budget-tab" t-if="event.budget_line_ids">
+                            <table class="table table-sm table-hover">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Category</th>
+                                        <th class="text-end">Estimated</th>
+                                        <th class="text-end">Actual</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="event.budget_line_ids" t-as="budget">
+                                        <td><span t-field="budget.category_id.name"/></td>
+                                        <td class="text-end">
+                                            <span t-field="budget.amount_estimated" t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/>
+                                        </td>
+                                        <td class="text-end">
+                                            <span t-field="budget.amount_actual" t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr class="fw-bold bg-light">
+                                        <td>Total</td>
+                                        <td class="text-end">
+                                            <span t-field="event.budget_total_estimated" t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/>
+                                        </td>
+                                        <td class="text-end">
+                                            <span t-field="event.budget_total_actual" t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4">
+                <h5 class="mb-3">Communication History</h5>
+                <t t-call="portal.message_thread">
+                    <t t-set="object" t-value="event"/>
+                </t>
+            </div>
+        </t>
+    </template>
+
+    <!-- Staff shift accept/decline landing page -->
+    <template id="shift_answer_page" name="Shift Answer">
+        <t t-call="web.frontend_layout">
+            <div class="container my-5 text-center" style="max-width: 560px;">
+                <t t-if="status == 'ask'">
+                    <h2>Shift <t t-esc="answer == 'accept' and 'confirmation' or 'refusal'"/></h2>
+                    <p class="mt-3">
+                        <strong t-out="line.event_id.sudo().name"/><br/>
+                        <span t-esc="line.role"/> ·
+                        <span t-field="line.date_from"/> — <span t-field="line.date_to"/>
+                    </p>
+                    <form t-attf-action="/planner/shift/#{line.id}/#{answer}/#{token}/confirm"
+                          method="post" class="mt-4">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <button type="submit"
+                                t-attf-class="btn btn-lg #{answer == 'accept' and 'btn-success' or 'btn-danger'}">
+                            <t t-esc="answer == 'accept' and 'Confirm this shift' or 'Decline this shift'"/>
+                        </button>
+                    </form>
+                </t>
+                <t t-elif="status == 'accepted'">
+                    <h2 class="text-success">Shift confirmed — thank you!</h2>
+                    <p t-if="line">You are confirmed for <strong t-out="line.event_id.sudo().name"/>.</p>
+                </t>
+                <t t-elif="status == 'declined'">
+                    <h2 class="text-danger">Shift declined</h2>
+                    <p>Thanks for letting us know — the planner has been notified.</p>
+                </t>
+                <t t-elif="status == 'conflict'">
+                    <h2 class="text-warning">Cannot confirm</h2>
+                    <p>You already have a confirmed shift that overlaps this one.
+                       Please contact your planner.</p>
+                </t>
+                <t t-elif="status == 'closed'">
+                    <h2>This request is no longer open</h2>
+                </t>
+                <t t-else="">
+                    <h2>Invalid or expired link</h2>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>

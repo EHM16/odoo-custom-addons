@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-23 00:00+0000\n"
+"POT-Creation-Date: 2026-07-25 07:15+0000\n"
 "PO-Revision-Date: 2026-07-23 00:00+0000\n"
 "Last-Translator: Codex\n"
 "Language-Team: Spanish (Mexico)\n"
@@ -16,54 +16,122 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: model:ir.module.module,name:__manifest__.py
-msgid "Customer's Dealers Special Price"
-msgstr "Precio especial para distribuidores del cliente"
+#. module: customers_dealers_quantity
+#: model:ir.model,name:customers_dealers_quantity.model_res_partner
+msgid "Contact"
+msgstr ""
 
-#: code:models/res_partner.py:29
-#: model_terms:views/res_partner_views.xml
+#. module: customers_dealers_quantity
+#: model:ir.model,website_form_label:customers_dealers_quantity.model_res_partner
+msgid "Create a Customer"
+msgstr ""
+
+#. module: customers_dealers_quantity
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_res_partner__dealer
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_res_users__dealer
+#: model_terms:ir.ui.view,arch_db:customers_dealers_quantity.view_partner_form
 msgid "Dealer"
 msgstr "Distribuidor"
 
-#: code:models/product_product.py:29
+#. module: customers_dealers_quantity
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_product_product__price
 msgid "Dealer Price"
 msgstr "Precio del distribuidor"
 
-#: code:models/product_product.py:29
+#. module: customers_dealers_quantity
+#: model:ir.model.fields,help:customers_dealers_quantity.field_product_product__price
 msgid "Dealer price"
 msgstr "Precio de distribuidor"
 
-#: code:models/product_product.py:30
-#: model_terms:views/product_product_views.xml
+#. module: customers_dealers_quantity
+#: model_terms:ir.ui.view,arch_db:customers_dealers_quantity.product_normal_form_view
+#, fuzzy
+#| msgid "Dealer"
+msgid "Dealers"
+msgstr "Distribuidor"
+
+#. module: customers_dealers_quantity
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_product_product__minimum_quantity
+#: model_terms:ir.ui.view,arch_db:customers_dealers_quantity.product_normal_form_view
 msgid "Dealers Min Quantity"
 msgstr "Cantidad mínima para distribuidores"
 
-#: code:models/product_product.py:30
-msgid "Dealers minimum quantity"
-msgstr "Cantidad mínima para distribuidores"
-
-#: model_terms:views/product_product_views.xml
+#. module: customers_dealers_quantity
+#: model_terms:ir.ui.view,arch_db:customers_dealers_quantity.product_normal_form_view
 msgid "Dealers Price"
 msgstr "Precio de distribuidores"
 
-#: code:models/res_partner.py:29
+#. module: customers_dealers_quantity
+#: model:ir.model.fields,help:customers_dealers_quantity.field_product_product__minimum_quantity
+msgid "Dealers minimum quantity"
+msgstr "Cantidad mínima para distribuidores"
+
+#. module: customers_dealers_quantity
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_account_move__display_name
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_product_product__display_name
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_res_partner__display_name
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_sale_order__display_name
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: customers_dealers_quantity
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_account_move__id
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_account_move_line__id
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_product_product__id
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_res_partner__id
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_sale_order__id
+#: model:ir.model.fields,field_description:customers_dealers_quantity.field_sale_order_line__id
+msgid "ID"
+msgstr ""
+
+#. module: customers_dealers_quantity
+#: model:ir.model.fields,help:customers_dealers_quantity.field_res_partner__dealer
+#: model:ir.model.fields,help:customers_dealers_quantity.field_res_users__dealer
 msgid "It helps to know whether the customer is a Dealer or not"
 msgstr "Es útil saber si el cliente es distribuidor o no."
 
-#: model:ir.module.module,summary:__manifest__.py
-msgid ""
-"The Dealer will get a Special Price if he Orders the Minimum\n"
-"     Amount of Products"
+#. module: customers_dealers_quantity
+#: model:ir.model,name:customers_dealers_quantity.model_account_move
+msgid "Journal Entry"
 msgstr ""
-"El distribuidor obtendrá un precio especial si solicita la cantidad mínima\n"
-"     de productos."
 
-#: model:ir.module.module,description:__manifest__.py
-msgid ""
-"When the Dealer Ordered a Specific Product\n"
-"     Quantity and if it's above the company's pre-defined criteria then the \n"
-"     company can allow some Special Price to the Dealer."
+#. module: customers_dealers_quantity
+#: model:ir.model,name:customers_dealers_quantity.model_account_move_line
+msgid "Journal Item"
 msgstr ""
-"Cuando el distribuidor solicita una cantidad específica de un producto\n"
-"     y esta supera los criterios predefinidos de la empresa, la \n"
-"     empresa puede otorgarle un precio especial."
+
+#. module: customers_dealers_quantity
+#: model:ir.model,name:customers_dealers_quantity.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: customers_dealers_quantity
+#: model:ir.model,name:customers_dealers_quantity.model_sale_order
+msgid "Sale Order Delivery Split"
+msgstr ""
+
+#. module: customers_dealers_quantity
+#: model:ir.model,name:customers_dealers_quantity.model_sale_order_line
+msgid "Sale Order Line Delivery Split"
+msgstr ""
+
+#~ msgid "Customer's Dealers Special Price"
+#~ msgstr "Precio especial para distribuidores del cliente"
+
+#~ msgid ""
+#~ "The Dealer will get a Special Price if he Orders the Minimum\n"
+#~ "     Amount of Products"
+#~ msgstr ""
+#~ "El distribuidor obtendrá un precio especial si solicita la cantidad mínima\n"
+#~ "     de productos."
+
+#~ msgid ""
+#~ "When the Dealer Ordered a Specific Product\n"
+#~ "     Quantity and if it's above the company's pre-defined criteria then the \n"
+#~ "     company can allow some Special Price to the Dealer."
+#~ msgstr ""
+#~ "Cuando el distribuidor solicita una cantidad específica de un producto\n"
+#~ "     y esta supera los criterios predefinidos de la empresa, la \n"
+#~ "     empresa puede otorgarle un precio especial."

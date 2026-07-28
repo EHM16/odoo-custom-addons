@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright (C) 2015 DevIntelle Consulting Service Pvt.Ltd (<http://www.devintellecs.com>).
+
+For Module Support : devintelle@gmail.com  or Skype : devintelle 
+ -->
+<odoo>
+    <!-- Shared event header block -->
+    <template id="report_event_header">
+        <div class="row mb-3">
+            <div class="col-7">
+                <h2><span t-field="event.name"/></h2>
+                <div class="text-muted">
+                    <span t-field="event.reference"/> ·
+                    <span t-field="event.event_type_id.name"/>
+                </div>
+            </div>
+            <div class="col-5 text-end">
+                <div><strong>Date:</strong> <span t-field="event.date_start"/></div>
+                <div t-if="event.date_end"><strong>Until:</strong> <span t-field="event.date_end"/></div>
+                <div t-if="event.venue_id"><strong>Venue:</strong> <span t-field="event.venue_id.name"/></div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-4">
+                <strong>Client</strong><br/>
+                <span t-field="event.partner_id.name"/><br/>
+                <span t-if="event.contact_person" t-field="event.contact_person"/><br/>
+                <span t-if="event.client_phone" t-field="event.client_phone"/>
+            </div>
+            <div class="col-4">
+                <strong>Lead Planner</strong><br/>
+                <span t-field="event.user_id.name"/><br/>
+                <t t-if="event.coordinator_id">
+                    <strong>Coordinator</strong><br/>
+                    <span t-field="event.coordinator_id.name"/>
+                </t>
+            </div>
+            <div class="col-4">
+                <strong>Headcount</strong><br/>
+                <span t-if="event.headcount_locked" t-field="event.guest_count_final"/>
+                <span t-if="not event.headcount_locked" t-field="event.guest_count_expected"/>
+                <span t-if="event.headcount_locked" class="text-muted">(final, locked)</span>
+                <span t-if="not event.headcount_locked" class="text-muted">(expected)</span>
+                <br/>
+                <t t-if="event.on_site_contact">
+                    <strong>On-site Contact</strong><br/>
+                    <span t-field="event.on_site_contact"/>
+                </t>
+            </div>
+        </div>
+    </template>
+
+    <!-- Run-of-show table (shared by BEO and standalone report) -->
+    <template id="report_schedule_table">
+        <table class="table table-sm">
+            <thead>
+                <tr>
+                    <th>Start</th><th>End</th><th>Activity</th><th>Location</th><th>Owner</th><th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr t-foreach="event.schedule_line_ids" t-as="line">
+                    <td><span t-field="line.time_start" t-options="{'format': 'EEE HH:mm'}"/></td>
+                    <td><span t-if="line.time_end" t-field="line.time_end" t-options="{'format': 'EEE HH:mm'}"/></td>
+                    <td><span t-field="line.name"/></td>
+                    <td><span t-field="line.location"/></td>
+                    <td>
+                        <span t-if="line.employee_id" t-field="line.employee_id.name"/>
+                        <span t-if="line.vendor_line_id" t-field="line.vendor_line_id.vendor_id.name"/>
+                        <span t-if="not line.employee_id and not line.vendor_line_id"
+                              t-field="line.responsible_type"/>
+                    </td>
+                    <td><span t-field="line.notes"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </template>
+
+    <!-- 1. BEO — the operational master document -->
+    <template id="report_beo">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="event">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h1>Banquet Event Order</h1>
+                            <div class="text-end">
+                                <span class="badge text-bg-dark">
+                                    Version <span t-out="event.beo_version"/>
+                                </span><br/>
+                                <small class="text-muted">
+                                    Last updated <span t-field="event.write_date"/>
+                                </small>
+                            </div>
+                        </div>
+                        <t t-call="dev_event_planner_management.report_event_header"/>
+
+                        <h4>Run of Show</h4>
+                        <t t-call="dev_event_planner_management.report_schedule_table"/>
+
+                        <h4>Food &amp; Beverage</h4>
+                        <t t-if="event.locked_meal_totals">
+                            <pre t-out="event.locked_meal_totals" style="font-family: inherit;"/>
+                            <p class="text-muted"><small>Totals locked with the final headcount.</small></p>
+                        </t>
+                        <t t-else="">
+                            <table class="table table-sm w-50">
+                                <tr t-foreach="event.meal_choice_ids" t-as="meal">
+                                    <td><span t-field="meal.name"/>
+                                        <small t-if="meal.notes" class="text-muted">(<span t-field="meal.notes"/>)</small>
+                                    </td>
+                                    <td class="text-end"><span t-field="meal.guest_count"/></td>
+                                </tr>
+                            </table>
+                        </t>
+
+                        <h4>Vendors</h4>
+                        <table class="table table-sm">
+                            <thead><tr><th>Category</th><th>Vendor</th><th>Service</th><th>Arrival</th><th>Contact</th><th>Status</th></tr></thead>
+                            <tbody>
+                                <tr t-foreach="event.vendor_line_ids.filtered(lambda l: l.state != 'cancelled')" t-as="vline">
+                                    <td><span t-field="vline.category_id.name"/></td>
+                                    <td><span t-field="vline.vendor_id.name"/></td>
+                                    <td><span t-field="vline.description"/></td>
+                                    <td><span t-if="vline.arrival_time" t-field="vline.arrival_time" t-options="{'format': 'EEE HH:mm'}"/></td>
+                                    <td><span t-field="vline.contact_name"/> <span t-field="vline.contact_phone"/></td>
+                                    <td><span t-field="vline.state"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <h4>Staffing</h4>
+                        <table class="table table-sm">
+                            <thead><tr><th>Staff</th><th>Role</th><th>From</th><th>To</th><th>Status</th></tr></thead>
+                            <tbody>
+                                <tr t-foreach="event.staff_line_ids.filtered(lambda l: l.state not in ('declined', 'cancelled'))" t-as="sline">
+                                    <td><span t-field="sline.employee_id.name"/></td>
+                                    <td><span t-field="sline.role"/> <span t-field="sline.role_note"/></td>
+                                    <td><span t-field="sline.date_from" t-options="{'format': 'EEE HH:mm'}"/></td>
+                                    <td><span t-field="sline.date_to" t-options="{'format': 'EEE HH:mm'}"/></td>
+                                    <td><span t-field="sline.state"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <t t-if="event.note">
+                            <h4>Notes</h4>
+                            <div t-field="event.note"/>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!-- 2. Run of Show (standalone) -->
+    <template id="report_run_of_show">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="event">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h1>Run of Show</h1>
+                        <t t-call="dev_event_planner_management.report_event_header"/>
+                        <t t-call="dev_event_planner_management.report_schedule_table"/>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!-- 3. Vendor contact sheet — one page for the day-of binder -->
+    <template id="report_vendor_sheet">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="event">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h1>Vendor Contact Sheet</h1>
+                        <t t-call="dev_event_planner_management.report_event_header"/>
+                        <table class="table table-sm">
+                            <thead><tr><th>Category</th><th>Vendor</th><th>Contact</th><th>Phone</th><th>Arrival</th><th>Service</th></tr></thead>
+                            <tbody>
+                                <tr t-foreach="event.vendor_line_ids.filtered(lambda l: l.state != 'cancelled')" t-as="vline">
+                                    <td><span t-field="vline.category_id.name"/></td>
+                                    <td><span t-field="vline.vendor_id.name"/></td>
+                                    <td><span t-field="vline.contact_name"/></td>
+                                    <td><span t-field="vline.contact_phone"/></td>
+                                    <td><span t-if="vline.arrival_time" t-field="vline.arrival_time" t-options="{'format': 'EEE HH:mm'}"/></td>
+                                    <td><span t-field="vline.description"/></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!-- 4. Budget sheet -->
+    <template id="report_budget_sheet">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="event">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h1>Budget Sheet</h1>
+                        <t t-call="dev_event_planner_management.report_event_header"/>
+                        <table class="table table-sm">
+                            <thead>
+                                <tr><th>Category</th><th>Description</th>
+                                    <th class="text-end">Estimated</th>
+                                    <th class="text-end">Contracted</th>
+                                    <th class="text-end">Actual</th>
+                                    <th class="text-end">Variance</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="event.budget_line_ids" t-as="bline">
+                                    <td><span t-field="bline.category_id.name"/></td>
+                                    <td><span t-field="bline.description"/></td>
+                                    <td class="text-end"><span t-field="bline.amount_estimated"
+                                        t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/></td>
+                                    <td class="text-end"><span t-field="bline.amount_contracted"
+                                        t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/></td>
+                                    <td class="text-end"><span t-field="bline.amount_actual"
+                                        t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/></td>
+                                    <td class="text-end"><span t-field="bline.variance"
+                                        t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th colspan="2">Total</th>
+                                    <th class="text-end"><span t-field="event.budget_total_estimated"
+                                        t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/></th>
+                                    <th class="text-end"><span t-field="event.budget_total_contracted"
+                                        t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/></th>
+                                    <th class="text-end"><span t-field="event.budget_total_actual"
+                                        t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/></th>
+                                    <th/>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="row mt-3">
+                            <div class="col-6 offset-6">
+                                <table class="table table-sm">
+                                    <tr><td>Revenue (confirmed orders)</td>
+                                        <td class="text-end"><span t-field="event.total_revenue"
+                                            t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/></td></tr>
+                                    <tr><th>Projected Margin</th>
+                                        <th class="text-end"><span t-field="event.margin"
+                                            t-options="{'widget': 'monetary', 'display_currency': event.currency_id}"/></th></tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

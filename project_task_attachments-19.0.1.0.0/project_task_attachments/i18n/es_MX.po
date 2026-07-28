@@ -39,7 +39,7 @@ msgstr "Proyecto"
 #. module: project_task_attachments
 #: model:ir.module.module,name:base.module_project_task_attachments
 msgid "Project And Task Attachments"
-msgstr "Adjuntos de proyectos y tareas"
+msgstr "Archivos adjuntos de proyectos y tareas"
 
 #. module: project_task_attachments
 #: model:ir.module.module,description:base.module_project_task_attachments

@@ -57,10 +57,10 @@ msgid ""
 "This module adds delivery status on purchase order form \n"
 "     and tree view."
 msgstr ""
-"Este módulo agrega el estado de entrega en el formulario de orden de compra. \n"
-"     y vista de árbol."
+"Este módulo agrega el estado de entrega al formulario y a la vista de lista \n"
+"     de la orden de compra."
 
 #. module: purchase_order_delivery_status
 #: code:models/purchase_order.py:29
 msgid "To Receive"
-msgstr "Para recibir"
+msgstr "Pendiente de recibir"

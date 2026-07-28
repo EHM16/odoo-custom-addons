@@ -24,17 +24,17 @@ msgstr "Generar lotes de productos durante el proceso de compra de forma automá
 #. module: purchase_auto_lot_creation
 #: code:models/purchase_order_line.py:30
 msgid "Lot"
-msgstr "lote"
+msgstr "Lote"
 
 #. module: purchase_auto_lot_creation
 #: code:models/custom_stock_lot.py:32
 msgid "Lot ID of the order line"
-msgstr "ID de lote de la línea de pedido"
+msgstr "ID del lote de la línea de la orden"
 
 #. module: purchase_auto_lot_creation
 #: code:models/purchase_order_line.py:30
 msgid "Lot name to create for this order line"
-msgstr "Nombre del lote a crear para esta línea de pedido"
+msgstr "Nombre del lote que se creará para esta línea de la orden"
 
 #. module: purchase_auto_lot_creation
 #: code:models/purchase_order_line.py:33
@@ -54,7 +54,7 @@ msgstr "Nombre del lote a comprar"
 #. module: purchase_auto_lot_creation
 #: code:models/custom_stock_lot.py:32
 msgid "Order id"
-msgstr "Identificación del pedido"
+msgstr "ID de la orden"
 
 #. module: purchase_auto_lot_creation
 #: model:ir.module.module,name:base.module_purchase_auto_lot_creation

@@ -20,7 +20,7 @@ msgstr ""
 #: code:models/project_project.py:29
 #: code:models/project_task.py:29
 msgid "Calculate the progress of the task based on the task stage"
-msgstr "Calcular el progreso de la tarea según la etapa de la tarea."
+msgstr "Calcula el progreso de la tarea según su etapa."
 
 #. module: project_progress_bar
 #: model:ir.module.module,description:base.module_project_progress_bar
@@ -36,7 +36,7 @@ msgstr "Asegúrese de que el progreso no se duplique."
 #: code:models/project_project.py:33
 #: code:models/project_task_type.py:33
 msgid "Is Progress Bar"
-msgstr "Es la barra de progreso"
+msgstr "Usar barra de progreso"
 
 #. module: project_progress_bar
 #: model:ir.module.module,summary:base.module_project_progress_bar
@@ -62,7 +62,7 @@ msgstr "Estado de progreso del proyecto y la tarea"
 #. module: project_progress_bar
 #: code:models/project_task_type.py:31
 msgid "Set your progress of the stage"
-msgstr "Establece tu progreso de la etapa."
+msgstr "Establezca el progreso de la etapa."
 
 #. module: project_progress_bar
 #: code:models/project_project.py:33
@@ -73,12 +73,14 @@ msgstr "Estado de la tarea según la etapa."
 #. module: project_progress_bar
 #: code:models/project_task_type.py:54
 msgid "The progress in this stage must greater than that of the other stages progress bars. Alternatively, reassess the priority assigned to this stage."
-msgstr "El progreso en esta etapa debe ser mayor que el de las barras de progreso de las otras etapas. Alternativamente, reevaluar la prioridad asignada a esta etapa."
+msgstr ""
+"El progreso de esta etapa debe ser mayor que el de las barras de progreso de las demás etapas. Como alternativa, revise la prioridad asignada a esta etapa."
 
 #. module: project_progress_bar
 #: code:models/project_task_type.py:62
 msgid "The progress in this stage must less than that of theother stages progress bars. Alternatively, reassess the priority assigned to this stage."
-msgstr "El progreso en esta etapa debe ser menor que el de las barras de progreso de las otras etapas. Alternativamente, reevaluar la prioridad asignada a esta etapa."
+msgstr ""
+"El progreso de esta etapa debe ser menor que el de las barras de progreso de las demás etapas. Como alternativa, revise la prioridad asignada a esta etapa."
 
 #. module: project_progress_bar
 #: code:models/project_task_type.py:69
@@ -88,4 +90,4 @@ msgstr "El progreso debe ser menor o igual a 100."
 #. module: project_progress_bar
 #: code:models/project_task_type.py:33
 msgid "You can only see the progress if you enable this"
-msgstr "Solo puedes ver el progreso si habilitas esto."
+msgstr "Solo puede ver el progreso si habilita esta opción."

@@ -44,7 +44,7 @@ msgstr "Método de envío"
 #. module: product_wise_shipping_method
 #: code:models/sale_order.py:106
 msgid "Shipping method is already applied...!!"
-msgstr "¡¡Ya está aplicado el método de envío...!!"
+msgstr "El método de envío ya está aplicado."
 
 #. module: product_wise_shipping_method
 #: model:ir.module.module,description:base.module_product_wise_shipping_method

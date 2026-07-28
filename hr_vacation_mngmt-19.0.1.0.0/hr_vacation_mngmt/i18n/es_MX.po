@@ -300,7 +300,7 @@ msgstr "Bruto"
 #. module: hr_vacation_mngmt
 #: model:ir.model,name:hr_vacation_mngmt.model_hr_flight_ticket
 msgid "HR Flight Ticket"
-msgstr "Boleto de avión de RR. HH."
+msgstr "Boleto de avión del empleado"
 
 #. module: hr_vacation_mngmt
 #: model:ir.actions.server,name:hr_vacation_mngmt.hr_email_leave_reminder_ir_actions_server
@@ -310,7 +310,7 @@ msgstr "Recordatorio de permisos de RR. HH."
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_leave__holiday_managers_ids
 msgid "Holiday Managers"
-msgstr "Responsables de permisos"
+msgstr "Responsables de vacaciones"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__id
@@ -373,17 +373,17 @@ msgstr "Solicitud de permiso"
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_payslip__leave_salary
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_res_config_settings__default_leave_salary
 msgid "Leave Salary"
-msgstr "Permiso pagado"
+msgstr "Salario vacacional"
 
 #. module: hr_vacation_mngmt
 #: model:hr.salary.rule,name:hr_vacation_mngmt.hr_salary_rule_leave_salary_basic
 msgid "Leave Salary Basic"
-msgstr "Salario básico por permiso"
+msgstr "Salario vacacional básico"
 
 #. module: hr_vacation_mngmt
 #: model:hr.salary.rule,name:hr_vacation_mngmt.hr_salary_rule_leave_salary_gross
 msgid "Leave Salary Gross"
-msgstr "Salario bruto por permiso"
+msgstr "Salario vacacional bruto"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__leave_id

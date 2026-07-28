@@ -23,7 +23,7 @@ msgid "Calculate the progress of the task based on the task stage"
 msgstr "Calcular el progreso de la tarea según la etapa de la tarea."
 
 #. module: project_progress_bar
-#: model:ir.module.module,description:__manifest__.py
+#: model:ir.module.module,description:base.module_project_progress_bar
 msgid "Dive into project progression with a sleek module offering a task-focused progress bar. Switch between Kanban and list views seamlessly, ensuring a comprehensive understanding of your projects evolving landscape. Streamline your workflow and meet deadlines with ease."
 msgstr "Sumérgete en la progresión del proyecto con un módulo elegante que ofrece una barra de progreso centrada en las tareas. Cambie entre vistas Kanban y de lista sin problemas, garantizando una comprensión integral del panorama cambiante de sus proyectos. Optimice su flujo de trabajo y cumpla los plazos con facilidad."
 
@@ -39,7 +39,7 @@ msgid "Is Progress Bar"
 msgstr "Es la barra de progreso"
 
 #. module: project_progress_bar
-#: model:ir.module.module,summary:__manifest__.py
+#: model:ir.module.module,summary:base.module_project_progress_bar
 msgid "Keep your finger on the projects pulse with this module. Featuring a dynamic progress bar, it provides a visual snapshot of project and task advancement. Toggle effortlessly between Kanban and list views for a personalized project tracking experience."
 msgstr "Mantenga el control del avance de sus proyectos con este módulo. La barra de progreso dinámica ofrece una vista rápida del avance de proyectos y tareas. Cambie fácilmente entre las vistas kanban y de lista para adaptar el seguimiento a sus necesidades."
 
@@ -55,7 +55,7 @@ msgid "Progress Bar"
 msgstr "Barra de progreso"
 
 #. module: project_progress_bar
-#: model:ir.module.module,name:__manifest__.py
+#: model:ir.module.module,name:base.module_project_progress_bar
 msgid "Project and Task Progress Status"
 msgstr "Estado de progreso del proyecto y la tarea"
 

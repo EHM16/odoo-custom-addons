@@ -33,16 +33,16 @@ msgid "Company of the attendance."
 msgstr "Empresa de asistencia."
 
 #. module: hr_multi_company
-#: model:ir.module.module,summary:__manifest__.py
+#: model:ir.module.module,summary:base.module_hr_multi_company
 msgid "Enables Multi-Company"
 msgstr "Habilita el entorno multiempresa"
 
 #. module: hr_multi_company
-#: model:ir.module.module,name:__manifest__.py
+#: model:ir.module.module,name:base.module_hr_multi_company
 msgid "Open HRMS Multi-Company"
 msgstr "Open HRMS: Multiempresa"
 
 #. module: hr_multi_company
-#: model:ir.module.module,description:__manifest__.py
+#: model:ir.module.module,description:base.module_hr_multi_company
 msgid "This module enables multi company features"
 msgstr "Este módulo habilita funciones para múltiples empresas."

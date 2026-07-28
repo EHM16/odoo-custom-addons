@@ -22,7 +22,7 @@ msgid "Attach To"
 msgstr "Adjuntar a"
 
 #. module: project_task_attachments
-#: model:ir.module.module,summary:__manifest__.py
+#: model:ir.module.module,summary:base.module_project_task_attachments
 msgid "Helps to view all documents attached to Projects/Tasks"
 msgstr "Permite consultar todos los documentos adjuntos a proyectos y tareas"
 
@@ -37,12 +37,12 @@ msgid "Project"
 msgstr "Proyecto"
 
 #. module: project_task_attachments
-#: model:ir.module.module,name:__manifest__.py
+#: model:ir.module.module,name:base.module_project_task_attachments
 msgid "Project And Task Attachments"
 msgstr "Adjuntos de proyectos y tareas"
 
 #. module: project_task_attachments
-#: model:ir.module.module,description:__manifest__.py
+#: model:ir.module.module,description:base.module_project_task_attachments
 msgid ""
 "Project and Task Attachments module allows user to view \n"
 "    all the documents attached to projects and tasks. There is a separate\n"

@@ -17,7 +17,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: purchase_auto_lot_creation
-#: model:ir.module.module,summary:__manifest__.py
+#: model:ir.module.module,summary:base.module_purchase_auto_lot_creation
 msgid "Generate product lots during the purchasing process automatically"
 msgstr "Generar lotes de productos durante el proceso de compra de forma automática"
 
@@ -57,11 +57,11 @@ msgid "Order id"
 msgstr "Identificación del pedido"
 
 #. module: purchase_auto_lot_creation
-#: model:ir.module.module,name:__manifest__.py
+#: model:ir.module.module,name:base.module_purchase_auto_lot_creation
 msgid "Purchase Auto Lot Creation"
 msgstr "Creación automática de lotes en compras"
 
 #. module: purchase_auto_lot_creation
-#: model:ir.module.module,description:__manifest__.py
+#: model:ir.module.module,description:base.module_purchase_auto_lot_creation
 msgid "This module automates the creation of product lots during the purchase workflow. When a purchase order is confirmed, the system automatically generates lot numbers It helps streamline inventory tracking, ensures better traceability, and reduces manual effort in lot management during the goods receipt process."
 msgstr "Este módulo automatiza la creación de lotes de productos durante el flujo de trabajo de compra. Cuando se confirma una orden de compra, el sistema genera automáticamente números de lote. Ayuda a agilizar el seguimiento del inventario, garantiza una mejor trazabilidad y reduce el esfuerzo manual en la gestión de lotes durante el proceso de recepción de mercancías."

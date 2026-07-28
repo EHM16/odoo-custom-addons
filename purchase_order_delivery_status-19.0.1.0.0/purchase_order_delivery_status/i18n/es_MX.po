@@ -22,7 +22,7 @@ msgid "Delivery Status"
 msgstr "Estado de entrega"
 
 #. module: purchase_order_delivery_status
-#: model:ir.module.module,name:__manifest__.py
+#: model:ir.module.module,name:base.module_purchase_order_delivery_status
 msgid "Delivery Status on Purchase Order"
 msgstr "Estado de entrega en la orden de compra"
 
@@ -47,12 +47,12 @@ msgid "Status of delivery of purchase order."
 msgstr "Estado de entrega de la orden de compra."
 
 #. module: purchase_order_delivery_status
-#: model:ir.module.module,summary:__manifest__.py
+#: model:ir.module.module,summary:base.module_purchase_order_delivery_status
 msgid "Status of delivery on purchase order."
 msgstr "Estado de entrega de la orden de compra."
 
 #. module: purchase_order_delivery_status
-#: model:ir.module.module,description:__manifest__.py
+#: model:ir.module.module,description:base.module_purchase_order_delivery_status
 msgid ""
 "This module adds delivery status on purchase order form \n"
 "     and tree view."

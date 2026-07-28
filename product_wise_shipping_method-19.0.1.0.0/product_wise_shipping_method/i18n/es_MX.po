@@ -27,12 +27,12 @@ msgid "Choose shipping method."
 msgstr "Elija el método de envío."
 
 #. module: product_wise_shipping_method
-#: model:ir.module.module,name:__manifest__.py
+#: model:ir.module.module,name:base.module_product_wise_shipping_method
 msgid "Product Wise Shipping Method"
 msgstr "Método de envío por producto"
 
 #. module: product_wise_shipping_method
-#: model:ir.module.module,summary:__manifest__.py
+#: model:ir.module.module,summary:base.module_product_wise_shipping_method
 msgid "Product Wise Shipping Method for sale order."
 msgstr "Método de envío por producto para la orden de venta."
 
@@ -47,7 +47,7 @@ msgid "Shipping method is already applied...!!"
 msgstr "¡¡Ya está aplicado el método de envío...!!"
 
 #. module: product_wise_shipping_method
-#: model:ir.module.module,description:__manifest__.py
+#: model:ir.module.module,description:base.module_product_wise_shipping_method
 msgid ""
 "This module helps to provide shipping methods easily via\n"
 "     choosing products in sale order line."

@@ -81,7 +81,7 @@ msgid ""
 "                        <span style=\"font-size:25px;\"><strong>Direct Labour Cost</strong></span>"
 msgstr ""
 "<br/>\n"
-"                        <span style=\"font-size:25px;\"><strong>Costo directo de mano de obra</strong></span>"
+"                        <span style=\"font-size:25px;\"><strong>Costo de mano de obra directa</strong></span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
@@ -90,7 +90,7 @@ msgid ""
 "                        <span style=\"font-size:25px;\"><strong>Direct Material Cost</strong></span>"
 msgstr ""
 "<br/>\n"
-"                        <span style=\"font-size:25px;\"><strong>Costo directo de materiales</strong></span>"
+"                        <span style=\"font-size:25px;\"><strong>Costo de materiales directos</strong></span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
@@ -99,7 +99,7 @@ msgid ""
 "                        <span style=\"font-size:25px;\"><strong>Direct Overhead Cost</strong></span>"
 msgstr ""
 "<br/>\n"
-"                        <span style=\"font-size:25px;\"><strong>Costo indirecto directo</strong></span>"
+"                        <span style=\"font-size:25px;\"><strong>Costo indirecto asignado directamente</strong></span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
@@ -351,17 +351,17 @@ msgstr "Fecha"
 #. module: manufacture_process_costing
 #: model:ir.model,name:manufacture_process_costing.model_direct_labour_cost
 msgid "Direct Labour Cost"
-msgstr "Costo directo de mano de obra"
+msgstr "Costo de mano de obra directa"
 
 #. module: manufacture_process_costing
 #: model:ir.model,name:manufacture_process_costing.model_direct_material_cost
 msgid "Direct Material Cost"
-msgstr "Costo directo de materiales"
+msgstr "Costo de materiales directos"
 
 #. module: manufacture_process_costing
 #: model:ir.model,name:manufacture_process_costing.model_direct_overhead_cost
 msgid "Direct Overhead Cost"
-msgstr "Costo indirecto directo"
+msgstr "Costo indirecto asignado directamente"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_direct_labour_cost__display_name

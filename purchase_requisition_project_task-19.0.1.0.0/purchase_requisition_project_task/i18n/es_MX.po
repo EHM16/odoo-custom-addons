@@ -43,12 +43,12 @@ msgstr "Permite seleccionar un proyecto del módulo Proyectos."
 #. module: purchase_requisition_project_task
 #: model:ir.model.fields,help:purchase_requisition_project_task.field_project_task__purchase_count
 msgid "It shows the count of the purchase requisitions that we made for the project in smart tab"
-msgstr "Muestra en el botón inteligente el número de solicitudes de compra relacionadas con el proyecto."
+msgstr "Muestra en el botón inteligente el número de solicitudes de compra relacionadas con la tarea."
 
 #. module: purchase_requisition_project_task
 #: model:ir.model.fields,help:purchase_requisition_project_task.field_project_project__purchase_count
 msgid "It shows the count of the purchase requisitions that we made for the task in smart tab"
-msgstr "Muestra en el botón inteligente el número de solicitudes de compra relacionadas con la tarea."
+msgstr "Muestra en el botón inteligente el número de solicitudes de compra relacionadas con el proyecto."
 
 #. module: purchase_requisition_project_task
 #: model:ir.model,name:purchase_requisition_project_task.model_project_project

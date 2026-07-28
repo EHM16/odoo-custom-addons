@@ -25,7 +25,7 @@ msgstr "%s (copiar)"
 #. module: hr_payroll_community
 #: model:ir.actions.report,print_report_name:hr_payroll_community.hr_payslip_report_action
 msgid "('Payslip Details - %s' % (object.employee_id.name))"
-msgstr ""
+msgstr "('Detalles del recibo de nómina - %s' % (object.employee_id.name))"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip__state
@@ -51,7 +51,7 @@ msgstr ""
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.res_config_settings_view_form
 msgid "<span class=\"o_form_label\">Payroll Rules</span>"
-msgstr ""
+msgstr "<span class=\"o_form_label\">Reglas de nómina</span>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_payslip_employees_view_form
@@ -62,91 +62,93 @@ msgid ""
 "                        and credit note specified on Payslips Run.\n"
 "                    </span>"
 msgstr ""
+"<span colspan=\"4\" nolabel=\"1\">Este asistente generará\n"
+"                        recibos de nómina para todos los empleados seleccionados según las\n"
+"                        fechas\n"
+"                        y la nota de crédito especificadas en el lote de nómina.\n"
+"                    </span>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_contract_template_form_view
 msgid "<span>/ month</span>"
-msgstr ""
+msgstr "<span>/ mes</span>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslip
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslipdetails
-#, fuzzy
 #| msgid "Authorized signature"
 msgid "<strong>Authorized signature</strong>"
-msgstr "Firma autorizada"
+msgstr "<strong>Firma autorizada</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslip
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslipdetails
 msgid "<strong>Bank Account</strong>"
-msgstr ""
+msgstr "<strong>Cuenta bancaria</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_contributionregister
 msgid "<strong>Date From:</strong>"
-msgstr ""
+msgstr "<strong>Fecha inicial:</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslip
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslipdetails
 msgid "<strong>Date From</strong>"
-msgstr ""
+msgstr "<strong>Fecha inicial</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_contributionregister
 msgid "<strong>Date To:</strong>"
-msgstr ""
+msgstr "<strong>Fecha final:</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslip
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslipdetails
 msgid "<strong>Date To</strong>"
-msgstr ""
+msgstr "<strong>Fecha final</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslip
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslipdetails
 msgid "<strong>Designation</strong>"
-msgstr ""
+msgstr "<strong>Puesto</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslip
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslipdetails
 msgid "<strong>Email</strong>"
-msgstr ""
+msgstr "<strong>Correo electrónico</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslip
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslipdetails
-#, fuzzy
 #| msgid "Identification No"
 msgid "<strong>Identification No</strong>"
-msgstr "Número de identificación"
+msgstr "<strong>Número de identificación</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslip
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslipdetails
 msgid "<strong>Name</strong>"
-msgstr ""
+msgstr "<strong>Nombre</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslip
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_payslipdetails
 msgid "<strong>Reference</strong>"
-msgstr ""
+msgstr "<strong>Referencia</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_contributionregister
-#, fuzzy
 #| msgid "Register Name:"
 msgid "<strong>Register Name:</strong>"
-msgstr "Nombre del registro:"
+msgstr "<strong>Nombre del registro:</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_contributionregister
 msgid "<strong>Total</strong>"
-msgstr ""
+msgstr "<strong>Total</strong>"
 
 #. module: hr_payroll_community
 #: model_terms:ir.actions.act_window,help:hr_payroll_community.hr_contribution_register_action
@@ -156,6 +158,10 @@ msgid ""
 "                    payment of the employees. It can be the social security, the\n"
 "                    state or anyone that collect or inject money on payslips."
 msgstr ""
+"Un registro de aportaciones representa a un tercero que interviene en el\n"
+"                    pago de salarios\n"
+"                    de los empleados. Puede ser la seguridad social, el\n"
+"                    Estado o cualquier entidad que retenga o aporte dinero en los recibos de nómina."
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_res_config_settings__module_account_accountant
@@ -176,7 +182,7 @@ msgstr "Información contable"
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Acción requerida"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_line__active
@@ -186,10 +192,9 @@ msgstr "Activo"
 
 #. module: hr_payroll_community
 #: model_terms:ir.actions.act_window,help:hr_payroll_community.hr_contribution_register_action
-#, fuzzy
 #| msgid "Contribution Register"
 msgid "Add a new contribution register"
-msgstr "Registro de contribuciones"
+msgstr "Agregar un nuevo registro de aportaciones"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_payslip_view_form
@@ -198,23 +203,21 @@ msgstr "Añade una nota interna..."
 
 #. module: hr_payroll_community
 #: model:ir.actions.act_window,name:hr_payroll_community.hr_salary_rule_action
-#, fuzzy
 #| msgid "Child Rules"
 msgid "All Children Rules"
-msgstr "Reglas secundarias"
+msgstr "Todas las reglas secundarias"
 
 #. module: hr_payroll_community
 #: model:hr.salary.rule.category,name:hr_payroll_community.ALW
-#, fuzzy
 #| msgid "Meal Allowance"
 msgid "Allowance"
-msgstr "Subsidio de comida"
+msgstr "Prestación"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_payslip_line__condition_select__none
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_salary_rule__condition_select__none
 msgid "Always True"
-msgstr ""
+msgstr "Siempre verdadero"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_input__amount
@@ -235,7 +238,7 @@ msgstr "Tipo de importe"
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_version__schedule_pay__annually
 msgid "Annually"
-msgstr ""
+msgstr "Anualmente"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_line__appears_on_payslip
@@ -252,19 +255,18 @@ msgstr "Se aplicó esta regla para el cálculo si la condición es verdadera. Pu
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Número de archivos adjuntos"
 
 #. module: hr_payroll_community
 #: model:hr.salary.rule.category,name:hr_payroll_community.BASIC
 msgid "Basic"
-msgstr ""
+msgstr "Básico"
 
 #. module: hr_payroll_community
 #: model:hr.salary.rule,name:hr_payroll_community.hr_rule_basic
-#, fuzzy
 #| msgid "Search Salary Rule"
 msgid "Basic Salary"
-msgstr "Buscar regla salarial"
+msgstr "Salario básico"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_res_config_settings__module_l10n_be_hr_payroll
@@ -274,12 +276,12 @@ msgstr "Nómina de Bélgica"
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_version__schedule_pay__bi-monthly
 msgid "Bi-monthly"
-msgstr ""
+msgstr "Bimestral"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_version__schedule_pay__bi-weekly
 msgid "Bi-weekly"
-msgstr ""
+msgstr "Quincenal"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_payslip_line_view_form
@@ -487,10 +489,9 @@ msgstr "Código para tipo de tiempo libre"
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_payroll_structure_view_kanban
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_salary_rule_view_kanban
-#, fuzzy
 #| msgid "Code"
 msgid "Code:"
-msgstr "Código"
+msgstr "Código:"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_payslip_search
@@ -537,14 +538,13 @@ msgstr "Condiciones"
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Ajustes de configuración"
 
 #. module: hr_payroll_community
 #: model:ir.ui.menu,name:hr_payroll_community.menu_hr_payroll_community_configuration
-#, fuzzy
 #| msgid "Contribution"
 msgid "Configuration"
-msgstr "Contribución"
+msgstr "Configuración"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_payslip_view_form
@@ -579,10 +579,9 @@ msgstr "Nombre del registro de aportaciones"
 
 #. module: hr_payroll_community
 #: model:ir.actions.report,name:hr_payroll_community.contribution_register_action
-#, fuzzy
 #| msgid "Contribution Register"
 msgid "Contribution Register PDF"
-msgstr "Registro de contribuciones"
+msgstr "Registro de aportaciones en PDF"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.payslip_lines_contribution_register_view_form
@@ -611,7 +610,7 @@ msgstr "Registros de aportaciones"
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_salary_rule_category__create_uid
 #: model:ir.model.fields,field_description:hr_payroll_community.field_payslip_lines_contribution_register__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_contract_advantage_template__create_date
@@ -628,7 +627,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_salary_rule_category__create_date
 #: model:ir.model.fields,field_description:hr_payroll_community.field_payslip_lines_contribution_register__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__credit_note
@@ -659,18 +658,16 @@ msgstr "Fecha hasta"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_input__date_from
-#, fuzzy
 #| msgid "Date From"
 msgid "Date from"
-msgstr "Fecha desde"
+msgstr "Fecha inicial"
 
 #. module: hr_payroll_community
 #: model:hr.salary.rule,name:hr_payroll_community.hr_rule_da
 #: model:hr.salary.rule.category,name:hr_payroll_community.DA
-#, fuzzy
 #| msgid "Dearness allowance"
 msgid "Dearness Allowance"
-msgstr "Subsidio por carestía"
+msgstr "Prestación por costo de vida"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_employee__da
@@ -680,10 +677,9 @@ msgstr "Subsidio por carestía"
 
 #. module: hr_payroll_community
 #: model:hr.salary.rule.category,name:hr_payroll_community.DED
-#, fuzzy
 #| msgid "Description"
 msgid "Deduction"
-msgstr "Descripción"
+msgstr "Deducción"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_contract_advantage_template__default_value
@@ -789,7 +785,7 @@ msgstr "Detalles de la categoría de regla salarial"
 #: model:ir.model.fields,field_description:hr_payroll_community.field_res_config_settings__display_name
 #: model:ir.model.fields,field_description:hr_payroll_community.field_resource_mixin__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_payslip__state__done
@@ -836,10 +832,9 @@ msgstr "Empleado"
 
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_hr_version
-#, fuzzy
 #| msgid "Employee Function"
 msgid "Employee Contract"
-msgstr "Puesto del empleado"
+msgstr "Contrato del empleado"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_payroll_structure_view_form
@@ -849,17 +844,15 @@ msgstr "Puesto del empleado"
 #. module: hr_payroll_community
 #: model:ir.actions.act_window,name:hr_payroll_community.hr_payslip_action
 #: model:ir.ui.menu,name:hr_payroll_community.menu_department_tree
-#, fuzzy
 #| msgid "Choose Employee for Payslip"
 msgid "Employee Payslips"
-msgstr "Elegir empleado para el recibo de nómina"
+msgstr "Recibos de nómina de empleados"
 
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_hr_contract_advantage_template
-#, fuzzy
 #| msgid "Code for Employee's Advantage on Contract"
 msgid "Employee's Advantage on Contract"
-msgstr "Código para la prestación del empleado en el contrato"
+msgstr "Prestación del empleado en el contrato"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_employees__employee_ids
@@ -881,10 +874,9 @@ msgstr "Fecha de finalización del lote"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip_input__date_to
-#, fuzzy
 #| msgid "End date for Payslip"
 msgid "End date for the payslip input."
-msgstr "Fecha de finalización del recibo de nómina"
+msgstr "Fecha final de la entrada del recibo de nómina."
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_payslip_lines_contribution_register__date_to
@@ -931,12 +923,12 @@ msgstr "Importe fijo"
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Seguidores"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Seguidores (contactos)"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip_line__amount_percentage
@@ -973,10 +965,9 @@ msgstr "Generar nóminas"
 
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_hr_payslip_employees
-#, fuzzy
 #| msgid "Choose Payslip for Employee"
 msgid "Generate Payslips for All Selected Employees"
-msgstr "Elegir recibo de nómina para el empleado"
+msgstr "Generar recibos de nómina para todos los empleados seleccionados"
 
 #. module: hr_payroll_community
 #. odoo-python
@@ -988,7 +979,7 @@ msgstr "Hojas globales"
 #: model:hr.salary.rule,name:hr_payroll_community.hr_rule_taxable
 #: model:hr.salary.rule.category,name:hr_payroll_community.GROSS
 msgid "Gross"
-msgstr ""
+msgstr "Bruto"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_employee__hra
@@ -999,20 +990,19 @@ msgstr ""
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Tiene mensaje"
 
 #. module: hr_payroll_community
 #: model:ir.module.category,description:hr_payroll_community.module_category_hr_payroll_community
 msgid "Helps you manage your payrolls."
-msgstr ""
+msgstr "Le ayuda a administrar la nómina."
 
 #. module: hr_payroll_community
 #: model:hr.salary.rule,name:hr_payroll_community.hr_rule_hra
 #: model:hr.salary.rule.category,name:hr_payroll_community.HRA
-#, fuzzy
 #| msgid "House rent allowance."
 msgid "House Rent Allowance"
-msgstr "Subsidio a la vivienda."
+msgstr "Prestación para vivienda"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_employee__hra
@@ -1052,18 +1042,18 @@ msgstr "Nombre de la categoría de regla salarial de RR. HH."
 #: model:ir.model.fields,field_description:hr_payroll_community.field_res_config_settings__id
 #: model:ir.model.fields,field_description:hr_payroll_community.field_resource_mixin__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Si se selecciona, hay mensajes nuevos que requieren su atención."
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip__message_has_error
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Si se selecciona, algunos mensajes tienen un error de entrega."
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip_run__credit_note
@@ -1117,7 +1107,7 @@ msgstr "¿Es la nómina de Bélgica?"
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Es seguidor"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_res_config_settings__module_l10n_fr_hr_payroll
@@ -1164,7 +1154,7 @@ msgstr "Se utiliza en los cálculos. Por ejemplo, una regla de ventas con una co
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_salary_rule_category__write_uid
 #: model:ir.model.fields,field_description:hr_payroll_community.field_payslip_lines_contribution_register__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_contract_advantage_template__write_date
@@ -1181,7 +1171,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_salary_rule_category__write_date
 #: model:ir.model.fields,field_description:hr_payroll_community.field_payslip_lines_contribution_register__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_salary_rule_category__parent_id
@@ -1200,15 +1190,14 @@ msgstr "Límite inferior autorizado por el empleador para esta prestación"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__paid
-#, fuzzy
 #| msgid "Made Payment Order ?"
 msgid "Made Payment Order ? "
-msgstr "¿Orden de pago realizada?"
+msgstr "¿Se generó la orden de pago? "
 
 #. module: hr_payroll_community
 #: model:res.groups,name:hr_payroll_community.group_hr_payroll_community_manager
 msgid "Manager"
-msgstr ""
+msgstr "Responsable"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_line__condition_range_max
@@ -1247,12 +1236,12 @@ msgstr "Subsidio médico"
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Error de entrega del mensaje"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Mensajes"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_line__condition_range_min
@@ -1268,7 +1257,7 @@ msgstr "Varios"
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_version__schedule_pay__monthly
 msgid "Monthly"
-msgstr ""
+msgstr "Mensualmente"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_contract_template_form_view
@@ -1310,14 +1299,13 @@ msgstr "Nombre de la entrada"
 #. module: hr_payroll_community
 #: model:hr.salary.rule.category,name:hr_payroll_community.NET
 msgid "Net"
-msgstr ""
+msgstr "Neto"
 
 #. module: hr_payroll_community
 #: model:hr.salary.rule,name:hr_payroll_community.hr_rule_net
-#, fuzzy
 #| msgid "Parent Salary Rule"
 msgid "Net Salary"
-msgstr "Regla de salario principal"
+msgstr "Salario neto"
 
 #. module: hr_payroll_community
 #. odoo-python
@@ -1332,10 +1320,9 @@ msgstr "Notas"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__message_needaction_counter
-#, fuzzy
 #| msgid "Number of Hours"
 msgid "Number of Actions"
-msgstr "Número de horas"
+msgstr "Número de acciones"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_worked_days__number_of_days
@@ -1354,10 +1341,9 @@ msgstr "Número de días trabajados"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__message_has_error_counter
-#, fuzzy
 #| msgid "Number of Hours"
 msgid "Number of errors"
-msgstr "Número de horas"
+msgstr "Número de errores"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip_worked_days__number_of_hours
@@ -1367,17 +1353,17 @@ msgstr "Número de horas trabajadas"
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Número de mensajes que requieren una acción"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Número de mensajes con error de entrega"
 
 #. module: hr_payroll_community
 #: model:res.groups,name:hr_payroll_community.group_hr_payroll_community_user
 msgid "Officer"
-msgstr ""
+msgstr "Encargado"
 
 #. module: hr_payroll_community
 #: model:hr.salary.rule,name:hr_payroll_community.hr_rule_other
@@ -1432,10 +1418,9 @@ msgstr "Lote de nómina"
 
 #. module: hr_payroll_community
 #: model:ir.actions.act_window,name:hr_payroll_community.payslip_lines_contribution_register_action
-#, fuzzy
 #| msgid "Payslip Lines"
 msgid "PaySlip Lines"
-msgstr "Líneas de nómina"
+msgstr "Líneas del recibo de nómina"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.report_contributionregister
@@ -1463,10 +1448,9 @@ msgstr "Código de nómina"
 
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_report_hr_payroll_community_report_contributionregister
-#, fuzzy
 #| msgid "Contribution Register Name"
 msgid "Payroll Contribution Register Report"
-msgstr "Nombre del registro de aportaciones"
+msgstr "Informe del registro de aportaciones de nómina"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.res_config_settings_view_form
@@ -1481,7 +1465,7 @@ msgstr "Estructuras de nómina"
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.res_config_settings_view_form
 msgid "Payroll rules that apply to your country"
-msgstr ""
+msgstr "Reglas de nómina aplicables a su país"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_payslip_view_form
@@ -1515,24 +1499,21 @@ msgstr "Conteo de nóminas"
 
 #. module: hr_payroll_community
 #: model:ir.actions.report,name:hr_payroll_community.hr_payslip_report_action
-#, fuzzy
 #| msgid "Payslip Computation Details"
 msgid "Payslip Details"
-msgstr "Detalles del cálculo del recibo de nómina"
+msgstr "Detalles del recibo de nómina"
 
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_report_hr_payroll_community_report_payslipdetails
-#, fuzzy
 #| msgid "Payslip Computation Details"
 msgid "Payslip Details Report"
-msgstr "Detalles del cálculo del recibo de nómina"
+msgstr "Informe detallado del recibo de nómina"
 
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_hr_payslip_input
-#, fuzzy
 #| msgid "Payslip Inputs"
 msgid "Payslip Input"
-msgstr "Entradas de nómina"
+msgstr "Entrada del recibo de nómina"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__input_line_ids
@@ -1561,10 +1542,9 @@ msgstr "Líneas de nómina por registro de aportaciones"
 
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_payslip_lines_contribution_register
-#, fuzzy
 #| msgid "Payslip Lines by Contribution Register"
 msgid "Payslip Lines by Contribution Registers"
-msgstr "Líneas de nómina por registro de aportaciones"
+msgstr "Líneas del recibo de nómina por registro de aportaciones"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__name
@@ -1634,7 +1614,7 @@ msgstr "Periodo"
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.res_config_settings_view_form
 msgid "Post payroll slips in accounting"
-msgstr ""
+msgstr "Registrar recibos de nómina en contabilidad"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.payslip_lines_contribution_register_view_form
@@ -1658,10 +1638,9 @@ msgstr "Condición de Python"
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_payslip_line__condition_select__python
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_salary_rule__condition_select__python
-#, fuzzy
 #| msgid "Python Condition"
 msgid "Python Expression"
-msgstr "Condición de Python"
+msgstr "Expresión de Python"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_line__quantity
@@ -1683,13 +1662,13 @@ msgstr "Cantidad/Tasa"
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_version__schedule_pay__quarterly
 msgid "Quarterly"
-msgstr ""
+msgstr "Trimestralmente"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_payslip_line__condition_select__range
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_salary_rule__condition_select__range
 msgid "Range"
-msgstr ""
+msgstr "Rango"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_line__condition_range
@@ -1704,10 +1683,9 @@ msgstr "Tasa (%)"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__rating_ids
-#, fuzzy
 #| msgid "Waiting"
 msgid "Ratings"
-msgstr "Esperando"
+msgstr "Calificaciones"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payroll_structure__code
@@ -1734,10 +1712,9 @@ msgstr "Recibo de reembolso de nómina"
 #. module: hr_payroll_community
 #. odoo-python
 #: code:addons/hr_payroll_community/models/hr_payslip.py:0
-#, fuzzy
 #| msgid "Refund:"
 msgid "Refund: "
-msgstr "Reembolso:"
+msgstr "Reembolso: "
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_contribution_register__register_line_ids
@@ -1752,7 +1729,7 @@ msgstr "Rechazado"
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_resource_mixin
 msgid "Resource Mixin"
-msgstr ""
+msgstr "Mixin de recursos"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_line__salary_rule_id
@@ -1762,7 +1739,7 @@ msgstr "Regla"
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "Error de entrega de SMS"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_salary_rule_category_view_form
@@ -1776,10 +1753,9 @@ msgstr "Cálculo del salario"
 
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_hr_salary_rule
-#, fuzzy
 #| msgid "Salary Rules"
 msgid "Salary Rule"
-msgstr "Reglas salariales"
+msgstr "Regla salarial"
 
 #. module: hr_payroll_community
 #: model:ir.actions.act_window,name:hr_payroll_community.hr_salary_rule_category_action
@@ -1843,10 +1819,9 @@ msgstr "Estructura salarial"
 #. module: hr_payroll_community
 #: model:ir.actions.act_window,name:hr_payroll_community.hr_payroll_structure_action
 #: model:ir.ui.menu,name:hr_payroll_community.menu_hr_payroll_structure_view
-#, fuzzy
 #| msgid "Salary Structure"
 msgid "Salary Structures"
-msgstr "Estructura salarial"
+msgstr "Estructuras salariales"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_employee__schedule_pay
@@ -1877,7 +1852,7 @@ msgstr "Buscar regla salarial"
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_version__schedule_pay__semi-annually
 msgid "Semi-annually"
-msgstr ""
+msgstr "Semestralmente"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_input__sequence
@@ -1939,7 +1914,7 @@ msgstr "Restablecer a borrador"
 #: model:ir.actions.act_window,name:hr_payroll_community.res_config_settings_action
 #: model:ir.ui.menu,name:hr_payroll_community.menu_hr_payroll_global_settings
 msgid "Settings"
-msgstr ""
+msgstr "Ajustes"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip__date_from
@@ -1948,10 +1923,9 @@ msgstr "Fecha de inicio del recibo de nómina"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip_input__date_from
-#, fuzzy
 #| msgid "Start date for Payslip"
 msgid "Start date for the payslip input."
-msgstr "Fecha de inicio del recibo de nómina"
+msgstr "Fecha inicial de la entrada del recibo de nómina."
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_payslip_lines_contribution_register__date_from
@@ -2028,10 +2002,9 @@ msgstr "Se utiliza para calcular los valores porcentuales. Generalmente se basa 
 
 #. module: hr_payroll_community
 #: model:ir.model,name:hr_payroll_community.model_hr_leave_type
-#, fuzzy
 #| msgid "Code for Time Off Type"
 msgid "Time Off Type"
-msgstr "Código para tipo de tiempo libre"
+msgstr "Tipo de ausencia"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip_line__total
@@ -2043,10 +2016,9 @@ msgstr "Total"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_payslip_view_form
-#, fuzzy
 #| msgid "Payslip Worked Days"
 msgid "Total Working Days"
-msgstr "Nómina días Laborados"
+msgstr "Total de días trabajados"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip_line__total
@@ -2070,7 +2042,7 @@ msgstr "Subsidio de viaje"
 #. module: hr_payroll_community
 #: model:hr.salary.rule,name:hr_payroll_community.hr_rule_unpaid
 msgid "Unpaid"
-msgstr ""
+msgstr "No pagado"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_contract_advantage_template__upper_bound
@@ -2102,17 +2074,17 @@ msgstr "Esperando"
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Mensajes del sitio web"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,help:hr_payroll_community.field_hr_payslip__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Historial de comunicaciones del sitio web"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields.selection,name:hr_payroll_community.selection__hr_version__schedule_pay__weekly
 msgid "Weekly"
-msgstr ""
+msgstr "Semanalmente"
 
 #. module: hr_payroll_community
 #: model_terms:ir.ui.view,arch_db:hr_payroll_community.hr_payslip_view_form

@@ -28,10 +28,9 @@ msgstr "Aprobar"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__approve
-#, fuzzy
 #| msgid "Approve"
 msgid "Approved"
-msgstr "Aprobar"
+msgstr "Aprobada"
 
 #. module: ohrms_loan_accounting
 #: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.hr_loan_view_form
@@ -40,10 +39,9 @@ msgstr "Cancelar"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__cancel
-#, fuzzy
 #| msgid "Cancel"
 msgid "Canceled"
-msgstr "Cancelar"
+msgstr "Cancelada"
 
 #. module: ohrms_loan_accounting
 #: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.hr_loan_view_form
@@ -53,7 +51,7 @@ msgstr "Calcular cuota"
 #. module: ohrms_loan_accounting
 #: model:ir.model,name:ohrms_loan_accounting.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Ajustes de configuración"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields,field_description:ohrms_loan_accounting.field_account_move_line__display_name
@@ -62,12 +60,12 @@ msgstr ""
 #: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_payslip__display_name
 #: model:ir.model.fields,field_description:ohrms_loan_accounting.field_res_config_settings__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__draft
 msgid "Draft"
-msgstr ""
+msgstr "Borrador"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields,help:ohrms_loan_accounting.field_hr_loan__employee_account_id
@@ -81,14 +79,13 @@ msgstr "Cuenta del empleado"
 #: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_payslip__id
 #: model:ir.model.fields,field_description:ohrms_loan_accounting.field_res_config_settings__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model,name:ohrms_loan_accounting.model_hr_loan_line
-#, fuzzy
 #| msgid "Compute Installment"
 msgid "Installment Line"
-msgstr "Calcular cuota"
+msgstr "Línea de cuota"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan__journal_id
@@ -97,10 +94,9 @@ msgstr "Diario"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model,name:ohrms_loan_accounting.model_account_move_line
-#, fuzzy
 #| msgid "Journal"
 msgid "Journal Item"
-msgstr "Diario"
+msgstr "Apunte contable"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields,help:ohrms_loan_accounting.field_hr_loan__journal_id
@@ -114,10 +110,9 @@ msgstr "Cuenta de préstamo"
 
 #. module: ohrms_loan_accounting
 #: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.res_config_settings_view_form
-#, fuzzy
 #| msgid "Approve"
 msgid "Loan Approval"
-msgstr "Aprobar"
+msgstr "Aprobación de préstamos"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields,help:ohrms_loan_accounting.field_res_config_settings__loan_approve
@@ -133,7 +128,7 @@ msgstr "Identificación del préstamo"
 #. module: ohrms_loan_accounting
 #: model:ir.model,name:ohrms_loan_accounting.model_hr_loan
 msgid "Loan Request"
-msgstr ""
+msgstr "Solicitud de préstamo"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields,help:ohrms_loan_accounting.field_account_move_line__loan_id
@@ -143,7 +138,7 @@ msgstr "ID de préstamo en la línea de factura"
 #. module: ohrms_loan_accounting
 #: model:ir.model,name:ohrms_loan_accounting.model_hr_payslip
 msgid "Pay Slip"
-msgstr ""
+msgstr "Recibo de nómina"
 
 #. module: ohrms_loan_accounting
 #: model_terms:ir.ui.view,arch_db:ohrms_loan_accounting.hr_loan_view_form
@@ -152,10 +147,9 @@ msgstr "Rechazar"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__refuse
-#, fuzzy
 #| msgid "Refuse"
 msgid "Refused"
-msgstr "Rechazar"
+msgstr "Rechazada"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan__state
@@ -174,10 +168,9 @@ msgstr "Enviar"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__waiting_approval_1
-#, fuzzy
 #| msgid "Submit"
 msgid "Submitted"
-msgstr "Enviar"
+msgstr "Enviada"
 
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields,field_description:ohrms_loan_accounting.field_hr_loan__treasury_account_id
@@ -192,7 +185,7 @@ msgstr "Cuenta de tesorería para el préstamo"
 #. module: ohrms_loan_accounting
 #: model:ir.model.fields.selection,name:ohrms_loan_accounting.selection__hr_loan__state__waiting_approval_2
 msgid "Waiting Approval"
-msgstr ""
+msgstr "En espera de aprobación"
 
 #~ msgid "Create accounting entries for loan requests."
 #~ msgstr "Crear asientos contables para solicitudes de préstamos."

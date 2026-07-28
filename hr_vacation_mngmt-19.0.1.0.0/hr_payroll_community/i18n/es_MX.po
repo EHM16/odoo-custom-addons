@@ -985,7 +985,7 @@ msgstr "Bruto"
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_employee__hra
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_version__hra
 msgid "HRA"
-msgstr ""
+msgstr "HRA"
 
 #. module: hr_payroll_community
 #: model:ir.model.fields,field_description:hr_payroll_community.field_hr_payslip__has_message

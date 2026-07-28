@@ -79,7 +79,7 @@ msgstr "Cancelado"
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_payslip__leave_salary
 msgid "Check leave if salary should be paid for the employee if is on ,leave"
-msgstr "Verificar si el permiso incluye goce de sueldo"
+msgstr "Indique si debe pagarse salario vacacional al empleado"
 
 #. module: hr_vacation_mngmt
 #: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.res_config_settings_view_form_payroll
@@ -178,7 +178,7 @@ msgstr "Destino"
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__leave_salary
 msgid "Details about leave salary of employee."
-msgstr "Detalles del salario por permiso del empleado"
+msgstr "Detalles del salario vacacional del empleado"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__pending_task_ids
@@ -409,7 +409,7 @@ msgstr "Solicitud de permiso con la que se relacionan las tareas pendientes."
 #. module: hr_vacation_mngmt
 #: model_terms:ir.ui.view,arch_db:hr_vacation_mngmt.res_config_settings_view_form_payroll
 msgid "Leave salary calculation"
-msgstr "Cálculo del salario por permiso"
+msgstr "Cálculo del salario vacacional"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_task_reassign__pending_task_ids
@@ -549,7 +549,7 @@ msgstr "Recordatorio: ${object.display_name}"
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_leave__holiday_managers_ids
 msgid "Responsible holiday managers"
-msgstr "Responsables de permisos"
+msgstr "Responsables de vacaciones"
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,field_description:hr_vacation_mngmt.field_hr_flight_ticket__date_return
@@ -616,7 +616,7 @@ msgstr "Establecer la cuenta de gastos predeterminada"
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_res_config_settings__default_leave_salary
 msgid "Set the default leave salary of employee."
-msgstr "Establezca el salario de permiso predeterminado del empleado."
+msgstr "Establezca el salario vacacional predeterminado del empleado."
 
 #. module: hr_vacation_mngmt
 #: model:ir.model.fields,help:hr_vacation_mngmt.field_hr_flight_ticket__depart_from

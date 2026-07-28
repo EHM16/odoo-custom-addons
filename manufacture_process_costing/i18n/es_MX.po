@@ -19,14 +19,12 @@ msgstr ""
 #. module: manufacture_process_costing
 #: model:ir.actions.report,print_report_name:manufacture_process_costing.action_report_bom_cost
 msgid "'BOM Cost Report - %s' % object.display_name"
-msgstr ""
+msgstr "'Informe de costos de la LdM - %s' % object.display_name"
 
 #. module: manufacture_process_costing
 #: model:ir.actions.report,print_report_name:manufacture_process_costing.action_production_cost_report
-#, fuzzy
-#| msgid "Production Cost Report"
 msgid "'Production Cost Report - %s' % object.display_name"
-msgstr "Informe de costos de producción"
+msgstr "'Informe de costos de producción - %s' % object.display_name"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
@@ -36,6 +34,10 @@ msgid ""
 "                            <strong>Consumed Materials</strong>\n"
 "                        </span>"
 msgstr ""
+"<br/>\n"
+"                        <span style=\"font-size:25px;\">\n"
+"                            <strong>Materiales consumidos</strong>\n"
+"                        </span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
@@ -45,6 +47,10 @@ msgid ""
 "                            <strong>Manufacturing Labour Cost</strong>\n"
 "                        </span>"
 msgstr ""
+"<br/>\n"
+"                        <span style=\"font-size:25px;\">\n"
+"                            <strong>Costo de mano de obra de fabricación</strong>\n"
+"                        </span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
@@ -54,6 +60,10 @@ msgid ""
 "                            <strong>Manufacturing Overhead Cost</strong>\n"
 "                        </span>"
 msgstr ""
+"<br/>\n"
+"                        <span style=\"font-size:25px;\">\n"
+"                            <strong>Costos indirectos de fabricación</strong>\n"
+"                        </span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
@@ -61,6 +71,8 @@ msgid ""
 "<br/>\n"
 "                        <span style=\"font-size:25px;\"><strong>Components</strong></span>"
 msgstr ""
+"<br/>\n"
+"                        <span style=\"font-size:25px;\"><strong>Componentes</strong></span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
@@ -68,6 +80,8 @@ msgid ""
 "<br/>\n"
 "                        <span style=\"font-size:25px;\"><strong>Direct Labour Cost</strong></span>"
 msgstr ""
+"<br/>\n"
+"                        <span style=\"font-size:25px;\"><strong>Costo directo de mano de obra</strong></span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
@@ -75,6 +89,8 @@ msgid ""
 "<br/>\n"
 "                        <span style=\"font-size:25px;\"><strong>Direct Material Cost</strong></span>"
 msgstr ""
+"<br/>\n"
+"                        <span style=\"font-size:25px;\"><strong>Costo directo de materiales</strong></span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
@@ -82,6 +98,8 @@ msgid ""
 "<br/>\n"
 "                        <span style=\"font-size:25px;\"><strong>Direct Overhead Cost</strong></span>"
 msgstr ""
+"<br/>\n"
+"                        <span style=\"font-size:25px;\"><strong>Costo indirecto directo</strong></span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
@@ -90,6 +108,9 @@ msgid ""
 "                                <strong>Finished Products</strong>\n"
 "                            </span>"
 msgstr ""
+"<span style=\"font-size:25px;\">\n"
+"                                <strong>Productos terminados</strong>\n"
+"                            </span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
@@ -98,6 +119,9 @@ msgid ""
 "                            <strong>Manufacturing Material Cost</strong>\n"
 "                        </span>"
 msgstr ""
+"<span style=\"font-size:25px;\">\n"
+"                            <strong>Costo de materiales de fabricación</strong>\n"
+"                        </span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
@@ -106,73 +130,66 @@ msgid ""
 "                            <strong>Bill Of Materials</strong>\n"
 "                        </span>"
 msgstr ""
+"<span style=\"font-size:30px;\">\n"
+"                            <strong>Lista de materiales</strong>\n"
+"                        </span>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
-#, fuzzy
-#| msgid "Bill Of Material :"
 msgid "<strong>Bill Of Material :</strong>"
-msgstr "Lista de materiales:"
+msgstr "<strong>Lista de materiales:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
 msgid "<strong>Bom Type :</strong>"
-msgstr ""
+msgstr "<strong>Tipo de LdM:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
 msgid "<strong>Company :</strong>"
-msgstr ""
+msgstr "<strong>Empresa:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
-#, fuzzy
-#| msgid "Deadline Start :"
 msgid "<strong>Deadline Start :</strong>"
-msgstr "Fecha límite de inicio:"
+msgstr "<strong>Fecha límite de inicio:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
 msgid "<strong>Product :</strong>"
-msgstr ""
+msgstr "<strong>Producto:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
-#, fuzzy
-#| msgid "Product Variant :"
 msgid "<strong>Product Variant :</strong>"
-msgstr "Variante del producto:"
+msgstr "<strong>Variante del producto:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
 msgid "<strong>Quantity :</strong>"
-msgstr ""
+msgstr "<strong>Cantidad:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
-#, fuzzy
-#| msgid "Quantity To Produce :"
 msgid "<strong>Quantity To Produce :</strong>"
-msgstr "Cantidad por producir:"
+msgstr "<strong>Cantidad por producir:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.report_bom_cost
 msgid "<strong>Reference :</strong>"
-msgstr ""
+msgstr "<strong>Referencia:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
-#, fuzzy
-#| msgid "Responsible :"
 msgid "<strong>Responsible :</strong>"
-msgstr "Responsable:"
+msgstr "<strong>Responsable:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
 msgid "<strong>Source :</strong>"
-msgstr ""
+msgstr "<strong>Origen:</strong>"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.mrp_workcenter_view
@@ -209,8 +226,6 @@ msgstr "Cantidad real empleada en el trabajo"
 
 #. module: manufacture_process_costing
 #: model:ir.model,name:manufacture_process_costing.model_mrp_bom
-#, fuzzy
-#| msgid "Bill Of Materials"
 msgid "Bill of Material"
 msgstr "Lista de materiales"
 
@@ -249,7 +264,7 @@ msgstr "Cancelado por"
 #. module: manufacture_process_costing
 #: model:ir.model,name:manufacture_process_costing.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Ajustes de configuración"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
@@ -318,7 +333,7 @@ msgstr "Costeo"
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_direct_overhead_cost__create_uid
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_mrp_cancel_reason__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_direct_labour_cost__create_date
@@ -326,7 +341,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_direct_overhead_cost__create_date
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_mrp_cancel_reason__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.mrp_cancel_reason_view_search
@@ -346,7 +361,7 @@ msgstr "Costo directo de materiales"
 #. module: manufacture_process_costing
 #: model:ir.model,name:manufacture_process_costing.model_direct_overhead_cost
 msgid "Direct Overhead Cost"
-msgstr "Costos indirectos"
+msgstr "Costo indirecto directo"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_direct_labour_cost__display_name
@@ -359,7 +374,7 @@ msgstr "Costos indirectos"
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_mrp_workorder__display_name
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_res_config_settings__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields,help:manufacture_process_costing.field_res_config_settings__process_costing_method
@@ -377,7 +392,7 @@ msgstr "Cómo calcular el costeo del proceso, ya sea manualmente o según el cen
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_mrp_workorder__id
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_res_config_settings__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_direct_labour_cost__labour_cost_id
@@ -408,7 +423,7 @@ msgstr "Costo de mano de obra"
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_direct_overhead_cost__write_uid
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_mrp_cancel_reason__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_direct_labour_cost__write_date
@@ -416,17 +431,17 @@ msgstr ""
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_direct_overhead_cost__write_date
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_mrp_cancel_reason__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.res_config_settings_view_form
 msgid "MO Process Costing"
-msgstr "Costeo la orden de fabricación"
+msgstr "Costeo del proceso de la orden de fabricación"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields.selection,name:manufacture_process_costing.selection__res_config_settings__process_costing_method__manually
 msgid "Manually"
-msgstr "Manualmente"
+msgstr "Manual"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_mrp_cancel_reason__manufacturing_id
@@ -436,10 +451,8 @@ msgstr "Orden de fabricación"
 
 #. module: manufacture_process_costing
 #: model:ir.model,name:manufacture_process_costing.model_mrp_production
-#, fuzzy
-#| msgid "Manufacturing Orders -"
 msgid "Manufacturing Order"
-msgstr "Órdenes de fabricación -"
+msgstr "Orden de fabricación"
 
 #. module: manufacture_process_costing
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.production_cost_report
@@ -489,7 +502,7 @@ msgstr "Operación necesaria para el trabajo"
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.mrp_bom_form_view
 #: model_terms:ir.ui.view,arch_db:manufacture_process_costing.mrp_production_form_view
 msgid "Overhead Cost"
-msgstr "Costos indirectos"
+msgstr "Costo indirecto"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_mrp_production__overhead_cost_ids
@@ -504,7 +517,7 @@ msgstr "Costos indirectos por minuto"
 #. module: manufacture_process_costing
 #: model:ir.model.fields,help:manufacture_process_costing.field_mrp_bom__overhead_cost_ids
 msgid "Overhead cost"
-msgstr "Costos indirectos"
+msgstr "Costo indirecto"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields,field_description:manufacture_process_costing.field_direct_labour_cost__planned_minute
@@ -860,10 +873,8 @@ msgstr "Centro de trabajo"
 
 #. module: manufacture_process_costing
 #: model:ir.model,name:manufacture_process_costing.model_mrp_workorder
-#, fuzzy
-#| msgid "Work Center"
 msgid "Work Order"
-msgstr "Centro de trabajo"
+msgstr "Orden de trabajo"
 
 #. module: manufacture_process_costing
 #: model:ir.model.fields,help:manufacture_process_costing.field_direct_labour_cost__production_labour_id

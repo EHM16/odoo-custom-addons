@@ -18,24 +18,22 @@ msgstr ""
 
 #. module: product_sales_by_location
 #: model:ir.model.fields,help:product_sales_by_location.field_sale_order_line__line_location_id
-#, fuzzy
-#| msgid "Choose the location from where the product taken from"
 msgid " Choose the location from where the product taken from"
-msgstr "Elija la ubicación de donde se extrajo el producto."
+msgstr " Seleccione la ubicación desde la que se tomará el producto."
 
 #. module: product_sales_by_location
 #: model:ir.model.fields,field_description:product_sales_by_location.field_sale_order__display_name
 #: model:ir.model.fields,field_description:product_sales_by_location.field_sale_order_line__display_name
 #: model:ir.model.fields,field_description:product_sales_by_location.field_stock_rule__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: product_sales_by_location
 #: model:ir.model.fields,field_description:product_sales_by_location.field_sale_order__id
 #: model:ir.model.fields,field_description:product_sales_by_location.field_sale_order_line__id
 #: model:ir.model.fields,field_description:product_sales_by_location.field_stock_rule__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: product_sales_by_location
 #: model:ir.model.fields,field_description:product_sales_by_location.field_sale_order_line__line_location_id
@@ -47,23 +45,23 @@ msgstr "Ubicación"
 #. module: product_sales_by_location
 #: model:ir.model,name:product_sales_by_location.model_sale_order
 msgid "Sale Order Delivery Split"
-msgstr ""
+msgstr "División de entregas de la orden de venta"
 
 #. module: product_sales_by_location
 #: model:ir.model,name:product_sales_by_location.model_sale_order_line
 msgid "Sale Order Line Delivery Split"
-msgstr ""
+msgstr "División de entregas de la línea de la orden de venta"
 
 #. module: product_sales_by_location
 #: model:ir.model,name:product_sales_by_location.model_stock_rule
 msgid "Stock Rule"
-msgstr ""
+msgstr "Regla de inventario"
 
 #. module: product_sales_by_location
 #. odoo-python
 #: code:addons/product_sales_by_location/models/sale_order.py:0
 msgid "You cannot add the same product"
-msgstr ""
+msgstr "No puede agregar el mismo producto"
 
 #~ msgid "Product Sales By Location"
 #~ msgstr "Ventas de productos por ubicación"

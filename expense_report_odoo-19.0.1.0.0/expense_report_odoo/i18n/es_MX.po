@@ -18,54 +18,49 @@ msgstr ""
 
 #. module: expense_report_odoo
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
-#, fuzzy
 #| msgid "Date from :"
 msgid "<b>Date from :</b>"
-msgstr "Fecha de:"
+msgstr "<b>Fecha inicial:</b>"
 
 #. module: expense_report_odoo
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
-#, fuzzy
 #| msgid "Date to :"
 msgid "<b>Date to :</b>"
-msgstr "Fecha hasta:"
+msgstr "<b>Fecha final:</b>"
 
 #. module: expense_report_odoo
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
-#, fuzzy
 #| msgid "Employee Name:"
 msgid "<b>Employee Name:</b>"
-msgstr "Nombre del empleado:"
+msgstr "<b>Nombre del empleado:</b>"
 
 #. module: expense_report_odoo
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
-#, fuzzy
 #| msgid "Total Expense:"
 msgid "<strong>Total Expense:</strong>"
-msgstr "Gasto Total:"
+msgstr "<strong>Total de gastos:</strong>"
 
 #. module: expense_report_odoo
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
-#, fuzzy
 #| msgid "Expense Report"
 msgid "<u>Expense Report</u>"
-msgstr "Informe de gastos"
+msgstr "<u>Informe de gastos</u>"
 
 #. module: expense_report_odoo
 #: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__approved
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "Approved"
-msgstr ""
+msgstr "Aprobada"
 
 #. module: expense_report_odoo
 #: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: expense_report_odoo
 #: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: expense_report_odoo
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
@@ -79,16 +74,15 @@ msgstr "Descripción"
 
 #. module: expense_report_odoo
 #: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__display_name
-#, fuzzy
 #| msgid "Employee Name"
 msgid "Display Name"
-msgstr "Nombre del empleado"
+msgstr "Nombre mostrado"
 
 #. module: expense_report_odoo
 #: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__done
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "Done"
-msgstr ""
+msgstr "Hecho"
 
 #. module: expense_report_odoo
 #: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__employee_name_ids
@@ -121,10 +115,9 @@ msgstr "Informe de gastos"
 
 #. module: expense_report_odoo
 #: model:ir.model,name:expense_report_odoo.model_expense_report_filter
-#, fuzzy
 #| msgid "Expense Report"
 msgid "Expense Report Wizard"
-msgstr "Informe de gastos"
+msgstr "Asistente de informe de gastos"
 
 #. module: expense_report_odoo
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.expense_report_filter_view_form
@@ -134,17 +127,17 @@ msgstr "Generar informe"
 #. module: expense_report_odoo
 #: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: expense_report_odoo
 #: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: expense_report_odoo
 #: model:ir.model.fields,field_description:expense_report_odoo.field_expense_report_filter__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: expense_report_odoo
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
@@ -155,7 +148,7 @@ msgstr "Cantidad"
 #: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__refused
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "Refused"
-msgstr ""
+msgstr "Rechazada"
 
 #. module: expense_report_odoo
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
@@ -177,7 +170,7 @@ msgstr "Estado"
 #: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__submitted
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "Submitted"
-msgstr ""
+msgstr "Enviada"
 
 #. module: expense_report_odoo
 #: model:ir.model.fields,help:expense_report_odoo.field_expense_report_filter__state
@@ -202,16 +195,15 @@ msgstr "La fecha de inicio del período de gastos."
 #. module: expense_report_odoo
 #: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__draft
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
-#, fuzzy
 #| msgid "Expense Report"
 msgid "To Report"
-msgstr "Informe de gastos"
+msgstr "Pendiente de reportar"
 
 #. module: expense_report_odoo
 #: model:ir.model.fields.selection,name:expense_report_odoo.selection__expense_report_filter__state__reported
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details
 msgid "To Submit"
-msgstr ""
+msgstr "Para enviar"
 
 #. module: expense_report_odoo
 #: model_terms:ir.ui.view,arch_db:expense_report_odoo.report_expense_report_details

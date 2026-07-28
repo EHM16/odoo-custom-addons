@@ -1,0 +1,3532 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* dev_event_planner_management
+#
+# Catalog reconstructed from source code; pending comparison with an authentic
+# Odoo 19 export.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-28 00:00+0000\n"
+"PO-Revision-Date: 2026-07-28 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid "!"
+msgstr "!"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:42
+msgid "\"%(name)s\": end time cannot be before start time."
+msgstr "\"%(name)s\": la hora de finalización no puede ser anterior a la hora de inicio."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "\"We never saw the work, only the magic.\""
+msgstr "\"Nunca vimos el trabajo, solo la magia.\""
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:29
+#: dev_event_planner_management/models/planner_payment_scheme.py:52
+#: dev_event_planner_management/views/planner_config_views.xml:46
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/planner_event_views.xml:254
+msgid "%"
+msgstr "%"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:139
+msgid "%(amount).2f already billed by %(vendor)s could not be reclassified: no budget category is flagged as \"Cancellation Fees\"."
+msgstr "No fue posible reclasificar los %(amount).2f ya facturados por %(vendor)s: ninguna categoría presupuestal está marcada como \"Cargos por cancelación\"."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_dashboard.py:135
+msgid "%(count)s unconfirmed staff shift(s)"
+msgstr "Turnos de personal sin confirmar: %(count)s"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_dashboard.py:141
+msgid "%(count)s vendor(s) need reconfirmation"
+msgstr "Proveedores que requieren reconfirmación: %(count)s"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/controllers/staff.py:71
+msgid "%(employee)s %(answer)s the %(role)s shift via email link."
+msgstr "%(employee)s %(answer)s el turno de %(role)s mediante el enlace del correo."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard.py:143
+msgid "%(employee)s is already confirmed on \"%(event)s\" at the target date. Tick \"Ignore Conflicts\" to proceed anyway."
+msgstr "%(employee)s ya está confirmado para \"%(event)s\" en la fecha seleccionada. Marque \"Ignorar conflictos\" para continuar de todos modos."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:76
+msgid "%(employee)s is already confirmed on \"%(event)s\" from %(start)s to %(end)s."
+msgstr "%(employee)s ya está confirmado para \"%(event)s\" de %(start)s a %(end)s."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_duplicate_wizard.py:25
+msgid "%(name)s (copy)"
+msgstr "%(name)s (copia)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:257
+msgid "%(venue)s is already booked on this date by the confirmed event \"%(event)s\". Venue double-booking is blocked in the Event Planner settings."
+msgstr "%(venue)s ya está reservada en esta fecha por el evento confirmado \"%(event)s\". La configuración del planificador de eventos impide reservar una sede dos veces."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+msgid "&nbsp;"
+msgstr "&nbsp;"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "("
+msgstr "("
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+msgid "(expected)"
+msgstr "(previsto)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+msgid "(final, locked)"
+msgstr "(final, bloqueado)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid ")"
+msgstr ")"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:13
+#: dev_event_planner_management/data/mail_template_data.xml:33
+#: dev_event_planner_management/data/mail_template_data.xml:54
+#: dev_event_planner_management/data/mail_template_data.xml:82
+#: dev_event_planner_management/data/mail_template_data.xml:99
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid ","
+msgstr ","
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:13
+#: dev_event_planner_management/data/mail_template_data.xml:33
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid "."
+msgstr "."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:99
+msgid ""
+".\n"
+"       We would love to hear how it went — it takes two minutes:"
+msgstr ""
+".\n"
+"       Nos encantaría saber cómo resultó; solo le tomará dos minutos:"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "0"
+msgstr "0"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:81
+msgid "0 = event start day, 1 = next day (multi-day events)."
+msgstr "0 = día de inicio del evento; 1 = día siguiente (eventos de varios días)."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_payment_scheme_data.xml:36
+msgid "50% Deposit / 50% Final"
+msgstr "50% de anticipo / 50% de saldo final"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+msgid ":"
+msgstr ":"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:254
+msgid "<i class=\"fa fa-calendar me-1\" title=\"Date\"/>"
+msgstr "<i class=\"fa fa-calendar me-1\" title=\"Fecha\"/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "<i class=\"fa fa-check-circle\"/> Booked in one online step"
+msgstr "<i class=\"fa fa-check-circle\"/> Reserva en línea en un solo paso"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "<i class=\"fa fa-clock-o\"/> Reply within 24h"
+msgstr "<i class=\"fa fa-clock-o\"/> Respuesta en un plazo de 24 h"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "<i class=\"fa fa-clock-o\"/> Run of show, to the minute"
+msgstr "<i class=\"fa fa-clock-o\"/> Programa operativo minuto a minuto"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "<i class=\"fa fa-diamond\" title=\"Vendors\"/>"
+msgstr "<i class=\"fa fa-diamond\" title=\"Proveedores\"/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "<i class=\"fa fa-diamond\"/> A curated vendor black book"
+msgstr "<i class=\"fa fa-diamond\"/> Una red selecta de proveedores"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid "<i class=\"fa fa-envelope-o\"/> We've also sent a confirmation to your inbox."
+msgstr "<i class=\"fa fa-envelope-o\"/> También enviamos una confirmación a su correo."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "<i class=\"fa fa-eye\" title=\"Transparency\"/>"
+msgstr "<i class=\"fa fa-eye\" title=\"Transparencia\"/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid "<i class=\"fa fa-home me-1\"/> Back to Home"
+msgstr "<i class=\"fa fa-home me-1\"/> Volver al inicio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "<i class=\"fa fa-lock\"/> No spam, ever"
+msgstr "<i class=\"fa fa-lock\"/> Nunca enviamos correo no deseado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "<i class=\"fa fa-lock\"/> Your information stays private — used only to prepare your proposal."
+msgstr "<i class=\"fa fa-lock\"/> Su información se mantiene privada; solo la usamos para preparar su propuesta."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "<i class=\"fa fa-long-arrow-left me-1\"/> Back"
+msgstr "<i class=\"fa fa-long-arrow-left me-1\"/> Volver"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:254
+msgid "<i class=\"fa fa-map-marker me-1\" title=\"Venue\"/>"
+msgstr "<i class=\"fa fa-map-marker me-1\" title=\"Sede\"/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "<i class=\"fa fa-user\" title=\"One contact\"/>"
+msgstr "<i class=\"fa fa-user\" title=\"Un solo contacto\"/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "<i class=\"fa fa-user\"/> A dedicated planner"
+msgstr "<i class=\"fa fa-user\"/> Un planificador dedicado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:254
+msgid "<i class=\"fa fa-users me-1\" title=\"Guests\"/>"
+msgstr "<i class=\"fa fa-users me-1\" title=\"Invitados\"/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "<small>Totals locked with the final headcount.</small>"
+msgstr "<small>Los totales se bloquean con el número final de asistentes.</small>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:264
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "<span class=\"o_planner_card_link\">Discover <i class=\"fa fa-long-arrow-right ms-1\"/></span>"
+msgstr "<span class=\"o_planner_card_link\">Descubrir <i class=\"fa fa-long-arrow-right ms-1\"/></span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid ""
+"<span class=\"o_planner_field_icon\"><i class=\"fa fa-money\"/></span>\n"
+"                                                        <select name=\"budget_range\" class=\"form-select border-0\">\n"
+"                                                            <option value=\"\">Prefer not to say</option>\n"
+"                                                            <option>Under 10,000</option>\n"
+"                                                            <option>10,000 – 25,000</option>\n"
+"                                                            <option>25,000 – 50,000</option>\n"
+"                                                            <option>50,000+</option>\n"
+"                                                        </select>"
+msgstr ""
+"<span class=\"o_planner_field_icon\"><i class=\"fa fa-money\"/></span>\n"
+"                                                        <select name=\"budget_range\" class=\"form-select border-0\">\n"
+"                                                            <option value=\"\">Prefiero no decirlo</option>\n"
+"                                                            <option>Menos de 10,000</option>\n"
+"                                                            <option>10,000 – 25,000</option>\n"
+"                                                            <option>25,000 – 50,000</option>\n"
+"                                                            <option>50,000+</option>\n"
+"                                                        </select>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid ""
+"<span class=\"o_planner_stars\" aria-hidden=\"true\">★★★★★</span>\n"
+"                            Trusted for weddings, summits and galas"
+msgstr ""
+"<span class=\"o_planner_stars\" aria-hidden=\"true\">★★★★★</span>\n"
+"                            La confianza de bodas, cumbres y galas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid ""
+"<span class=\"o_planner_steps_dot\"><i class=\"fa fa-magic\"/></span>\n"
+"                                            <span class=\"o_planner_steps_text\">Your event</span>"
+msgstr ""
+"<span class=\"o_planner_steps_dot\"><i class=\"fa fa-magic\"/></span>\n"
+"                                            <span class=\"o_planner_steps_text\">Su evento</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid ""
+"<span class=\"o_planner_steps_dot\"><i class=\"fa fa-sliders\"/></span>\n"
+"                                            <span class=\"o_planner_steps_text\">The details</span>"
+msgstr ""
+"<span class=\"o_planner_steps_dot\"><i class=\"fa fa-sliders\"/></span>\n"
+"                                            <span class=\"o_planner_steps_text\">Los detalles</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid ""
+"<span class=\"o_planner_steps_dot\"><i class=\"fa fa-user\"/></span>\n"
+"                                            <span class=\"o_planner_steps_text\">About you</span>"
+msgstr ""
+"<span class=\"o_planner_steps_dot\"><i class=\"fa fa-user\"/></span>\n"
+"                                            <span class=\"o_planner_steps_text\">Sobre usted</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "<span class=\"o_planner_submit_label\">Send my inquiry <i class=\"fa fa-paper-plane ms-1\"/></span>"
+msgstr "<span class=\"o_planner_submit_label\">Enviar mi consulta <i class=\"fa fa-paper-plane ms-1\"/></span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid ""
+"<span class=\"o_planner_thanks_node\"><i class=\"fa fa-inbox\"/></span>\n"
+"                                    <span>We review your inquiry</span>"
+msgstr ""
+"<span class=\"o_planner_thanks_node\"><i class=\"fa fa-inbox\"/></span>\n"
+"                                    <span>Revisamos su consulta</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid ""
+"<span class=\"o_planner_thanks_node\"><i class=\"fa fa-magic\"/></span>\n"
+"                                    <span>Your proposal is crafted</span>"
+msgstr ""
+"<span class=\"o_planner_thanks_node\"><i class=\"fa fa-magic\"/></span>\n"
+"                                    <span>Su propuesta está preparada</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid ""
+"<span class=\"o_planner_thanks_node\"><i class=\"fa fa-phone\"/></span>\n"
+"                                    <span>A planner reaches out</span>"
+msgstr ""
+"<span class=\"o_planner_thanks_node\"><i class=\"fa fa-phone\"/></span>\n"
+"                                    <span>Un planificador se comunica con usted</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "<span class=\"o_stat_text\">Checklist</span>"
+msgstr "<span class=\"o_stat_text\">Lista de verificación</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/crm_lead_views.xml:12
+msgid "<span class=\"o_stat_text\">Event</span>"
+msgstr "<span class=\"o_stat_text\">Evento</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/project_views.xml:12
+msgid ""
+"<span class=\"o_stat_text\">Planned</span>\n"
+"                        <span class=\"o_stat_text\">Event</span>"
+msgstr ""
+"<span class=\"o_stat_text\">Planeado</span>\n"
+"                        <span class=\"o_stat_text\">Evento</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid ""
+"<span>Weddings</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Corporate</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Conferences</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Galas</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Private Parties</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Weddings</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Corporate</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Conferences</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Galas</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Private Parties</span><span class=\"o_planner_dot\">·</span>"
+msgstr ""
+"<span>Bodas</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Corporativos</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Conferencias</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Galas</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Fiestas privadas</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Bodas</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Corporativos</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Conferencias</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Galas</span><span class=\"o_planner_dot\">·</span>\n"
+"                        <span>Fiestas privadas</span><span class=\"o_planner_dot\">·</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "<strong>A vetted black book</strong>"
+msgstr "<strong>Una red selecta de proveedores</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+msgid "<strong>Client</strong><br/>"
+msgstr "<strong>Cliente</strong><br/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+msgid "<strong>Coordinator</strong><br/>"
+msgstr "<strong>Coordinador</strong><br/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Fecha:</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "<strong>Event Type</strong>"
+msgstr "<strong>Tipo de evento</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "<strong>Guests</strong>"
+msgstr "<strong>Invitados</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+msgid "<strong>Headcount</strong><br/>"
+msgstr "<strong>Número de asistentes</strong><br/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+msgid "<strong>Lead Planner</strong><br/>"
+msgstr "<strong>Planificador principal</strong><br/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "<strong>Note</strong>"
+msgstr "<strong>Nota</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+msgid "<strong>On-site Contact</strong><br/>"
+msgstr "<strong>Contacto en sitio</strong><br/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "<strong>One point of contact</strong>"
+msgstr "<strong>Un punto de contacto</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "<strong>Transparent budgets</strong>"
+msgstr "<strong>Presupuestos transparentes</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+msgid "<strong>Until:</strong>"
+msgstr "<strong>Hasta:</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+msgid "<strong>Venue:</strong>"
+msgstr "<strong>Sede:</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "<strong>When</strong>"
+msgstr "<strong>Cuándo</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "<strong>Where</strong>"
+msgstr "<strong>Dónde</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "<strong>Your Planner</strong>"
+msgstr "<strong>Su planificador</strong>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:33
+msgid "A friendly reminder that the installment"
+msgstr "Le recordamos que la parcialidad"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:89
+msgid "A purchase order is already linked."
+msgstr "Ya existe una orden de compra vinculada."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "A vetted black book"
+msgstr "Una red selecta de proveedores"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_budget_category_data.xml:21
+msgid "AV & Production"
+msgstr "Audiovisuales y producción"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_vendor_category_data.xml:25
+msgid "AV / Sound & Lighting"
+msgstr "Audiovisuales / Sonido e iluminación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+msgid "Accept"
+msgstr "Aceptar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:46
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Accepted"
+msgstr "Aceptado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:24
+#: dev_event_planner_management/models/planner_event_type.py:78
+#: dev_event_planner_management/report/planner_report_templates.xml:55
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Activity"
+msgstr "Actividad"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_budget_line.py:32
+#: dev_event_planner_management/report/planner_report_templates.xml:200
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Actual"
+msgstr "Real"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:93
+msgid "Actual Cost"
+msgstr "Costo real"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_vendor_views.xml:15
+msgid "Add your first vendor"
+msgstr "Agregue su primer proveedor"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_vendor_views.xml:27
+msgid "Add your first venue"
+msgstr "Agregue su primera sede"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:327
+msgid "All"
+msgstr "Todos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Almost there"
+msgstr "Ya casi terminamos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:33
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Amount"
+msgstr "Importe"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:86
+msgid "Analytic Account"
+msgstr "Cuenta analítica"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard.py:27
+msgid "Apply the new date even if the venue or staff have conflicts."
+msgstr "Aplicar la nueva fecha aunque existan conflictos con la sede o el personal."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:381
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:173
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "Arrival"
+msgstr "Llegada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:47
+msgid "Arrival Time"
+msgstr "Hora de llegada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:48
+msgid "Attendance Status"
+msgstr "Estado de asistencia"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:680
+msgid "BEO version %(version)s distributed to %(count)s recipient(s)."
+msgstr "La versión %(version)s del BEO se distribuyó. Destinatarios: %(count)s."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "Banquet Event Order"
+msgstr "Orden de servicio para banquete"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_actions.xml:9
+msgid "Banquet Event Order (BEO)"
+msgstr "Orden de servicio para banquete (BEO)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:45
+msgid "Billed"
+msgstr "Facturado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:24
+msgid "Birthday / Private Party"
+msgstr "Cumpleaños / Fiesta privada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:209
+msgid ""
+"Birthdays, anniversaries, and milestones celebrated in style.\n"
+"            Custom themes, lively entertainment, and delectable catering to give you\n"
+"            the perfect celebration."
+msgstr ""
+"Cumpleaños, aniversarios y momentos especiales celebrados con estilo.\n"
+"            Temas personalizados, entretenimiento animado y un banquete delicioso para ofrecerle\n"
+"            la celebración perfecta."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:166
+msgid "Black Tie"
+msgstr "Etiqueta rigurosa"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_config_settings.py:17
+#: dev_event_planner_management/views/res_config_settings_views.xml:12
+msgid "Block Venue Double-Booking"
+msgstr "Impedir reservas dobles de la sede"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:73
+msgid "Blocked"
+msgstr "Bloqueado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:124
+msgid "Book AV, catering, and staging"
+msgstr "Contratar audiovisuales, banquete y montaje"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:43
+msgid "Book core vendors (catering, photo, florals, music)"
+msgstr "Contratar proveedores principales (banquete, fotografía, floristería y música)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:144
+msgid "Book venue and entertainment"
+msgstr "Reservar sede y entretenimiento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:93
+msgid "Book venue, AV and catering"
+msgstr "Reservar sede, AV y banquete"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_stage_data.xml:21
+#: dev_event_planner_management/models/planner_event_vendor_line.py:33
+#: dev_event_planner_management/views/planner_event_views.xml:381
+msgid "Booked"
+msgstr "Reservado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:24
+msgid "Booked Stage"
+msgstr "Etapa de reserva"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:82
+msgid "Booked on"
+msgstr "Reservado el"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid "Browse our work meanwhile <i class=\"fa fa-long-arrow-right ms-1\"/>"
+msgstr "Mientras tanto, conozca nuestro trabajo <i class=\"fa fa-long-arrow-right ms-1\"/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Budget"
+msgstr "Presupuesto"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_config_views.xml:21
+#: dev_event_planner_management/views/planner_menus.xml:56
+msgid "Budget Categories"
+msgstr "Categorías presupuestales"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_categories.py:42
+msgid "Budget Category"
+msgstr "Categoría presupuestal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_actions.xml:42
+#: dev_event_planner_management/report/planner_report_templates.xml:200
+msgid "Budget Sheet"
+msgstr "Hoja de presupuesto"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Budget range"
+msgstr "Rango de presupuesto"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_vendor_views.xml:15
+msgid "Build your black book: caterers, florists, AV crews, photographers..."
+msgstr "Cree su red de proveedores: servicios de banquete, floristas, equipos audiovisuales, fotógrafos..."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_menus.xml:20
+msgid "Calendar"
+msgstr "Calendario"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:554
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:16
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard_views.xml:11
+msgid "Cancel Event"
+msgstr "Cancelar evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Cancel booking (vendor drop-out)"
+msgstr "Cancelar contratación (incumplimiento del proveedor)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:21
+msgid "Cancel open purchase orders"
+msgstr "Cancelar las órdenes de compra abiertas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Cancel this vendor booking? Linked orders are cancelled or flagged, billed amounts become cancellation fees."
+msgstr "¿Desea cancelar esta contratación de proveedor? Las órdenes vinculadas se cancelarán o marcarán, y los importes facturados se convertirán en cargos por cancelación."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_budget_category_data.xml:41
+msgid "Cancellation Fees"
+msgstr "Cargos por cancelación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_categories.py:49
+msgid "Cancellation Fees Category"
+msgstr "Categoría de cargos por cancelación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:19
+msgid "Cancellation Reason"
+msgstr "Motivo de cancelación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:134
+msgid "Cancellation: %(vendor)s"
+msgstr "Cancelación: %(vendor)s"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_stage_data.xml:55
+#: dev_event_planner_management/models/planner_event_staff_line.py:42
+#: dev_event_planner_management/models/planner_event_vendor_line.py:36
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:36
+msgid "Cancelled Stage"
+msgstr "Etapa de cancelación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid "Cannot confirm"
+msgstr "No se puede confirmar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_budget_line.py:22
+#: dev_event_planner_management/models/planner_event_vendor_line.py:25
+#: dev_event_planner_management/report/planner_report_templates.xml:173
+#: dev_event_planner_management/report/planner_report_templates.xml:200
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Category"
+msgstr "Categoría"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Caterers, florists, AV and more."
+msgstr "Servicios de banquete, floristas, AV y más."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_vendor_category_data.xml:13
+msgid "Catering"
+msgstr "Banquete"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:327
+msgid "Celebrations we're proud of"
+msgstr "Celebraciones que nos enorgullecen"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:371
+msgid "Changed after lock (BEO now v%(version)s): %(description)s"
+msgstr "Modificado después del bloqueo (el BEO ahora es la versión %(version)s): %(description)s"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_dashboard.py:146
+msgid "Changed after lock (BEO v%(version)s)"
+msgstr "Modificado después del bloqueo (BEO versión %(version)s)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:600
+msgid "Checklist"
+msgstr "Lista de verificación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:107
+msgid "Checklist Progress"
+msgstr "Avance de la lista de verificación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:105
+msgid "Checklist Tasks"
+msgstr "Tareas de la lista de verificación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:31
+#: dev_event_planner_management/views/planner_event_type_views.xml:11
+msgid "Checklist Template"
+msgstr "Plantilla de lista de verificación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:52
+#: dev_event_planner_management/models/project_task.py:21
+msgid "Checklist Template Line"
+msgstr "Línea de plantilla de lista de verificación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:41
+#: dev_event_planner_management/models/planner_event_schedule_line.py:29
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/wizard/planner_event_duplicate_wizard.py:19
+msgid "Client"
+msgstr "Cliente"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:44
+msgid "Client Email"
+msgstr "Correo del cliente"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:43
+msgid "Client Phone"
+msgstr "Teléfono del cliente"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:87
+msgid "Client brief, objectives and budget sign-off"
+msgstr "Resumen del cliente, objetivos y aprobación del presupuesto"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Client-visible notes..."
+msgstr "Notas visibles para el cliente..."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:35
+msgid "Closed"
+msgstr "Cerrado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_stage_data.xml:43
+msgid "Closeout"
+msgstr "Cierre"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:32
+msgid "Closeout Stage"
+msgstr "etapa de cierre"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:79
+msgid "Collect final balance, pay vendors, request review"
+msgstr "Cobrar el saldo final, pagar a los proveedores y solicitar una reseña"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:55
+msgid "Collect final headcount and meal choices"
+msgstr "Recopilar el número final de asistentes y sus elecciones de menú"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_categories.py:19
+#: dev_event_planner_management/models/planner_event.py:33
+#: dev_event_planner_management/models/planner_event_type.py:21
+msgid "Color Index"
+msgstr "Índice de color"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Communication History"
+msgstr "Historial de comunicaciones"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:19
+msgid "Conference"
+msgstr "Conferencia"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_menus.xml:42
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_staff_line_views.xml:11
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:150
+msgid "Confirm catering and bar menu"
+msgstr "Confirmar los menús de banquete y barra"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:98
+msgid "Confirm shift: %(event)s"
+msgstr "Confirmar turno: %(event)s"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:164
+msgid "Confirm sponsorships and venue"
+msgstr "Confirmar patrocinios y sede"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:37
+msgid "Confirm venue and sign venue contract"
+msgstr "Confirmar la sede y firmar su contrato"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:118
+msgid "Confirm venue and speakers"
+msgstr "Confirmar la sede y los ponentes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:40
+#: dev_event_planner_management/models/planner_event_vendor_line.py:34
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_stage_data.xml:13
+msgid "Consultation"
+msgstr "Consulta"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:173
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:42
+msgid "Contact Person"
+msgstr "Persona de contacto"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_budget_line.py:29
+#: dev_event_planner_management/report/planner_report_templates.xml:200
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Contracted"
+msgstr "Contratado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:91
+msgid "Contracted Cost"
+msgstr "Costo contratado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/crm_lead_views.xml:12
+msgid "Convert to Event"
+msgstr "Convertir en evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/crm_lead.py:46
+msgid "Converted to planned event %(ref)s."
+msgstr "Convertida en el evento planeado %(ref)s."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:81
+#: dev_event_planner_management/models/planner_event_staff_line.py:28
+#: dev_event_planner_management/models/planner_event_type.py:65
+msgid "Coordinator"
+msgstr "Coordinador"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:29
+msgid "Copied to create the event-owned project at booking."
+msgstr "Se copia para crear el proyecto del evento al confirmar la reserva."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:14
+msgid "Corporate Event"
+msgstr "Evento corporativo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:20
+#: dev_event_planner_management/models/planner_website.py:39
+msgid "Cover Image"
+msgstr "Imagen de portada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_quote_wizard.py:16
+msgid "Create Event Quotation"
+msgstr "Crear cotización del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_quote_wizard_views.xml:11
+msgid "Create Quotation"
+msgstr "Crear cotización"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Create RFQ"
+msgstr "Crear solicitud de cotización"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Create invoice"
+msgstr "Crear factura"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_dashboard_views.xml:15
+msgid "Dashboard"
+msgstr "Tablero"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:43
+msgid "Date"
+msgstr "Fecha"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:80
+msgid "Day"
+msgstr "Día"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:73
+msgid "Day-of coordination"
+msgstr "Coordinación el día del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:41
+#: dev_event_planner_management/models/planner_payment_scheme.py:59
+msgid "Days"
+msgstr "Días"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:39
+#: dev_event_planner_management/models/planner_payment_scheme.py:56
+msgid "Days After Event"
+msgstr "Días después del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:38
+#: dev_event_planner_management/models/planner_payment_scheme.py:55
+msgid "Days Before Event"
+msgstr "Días antes del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:60
+msgid "Days Offset"
+msgstr "Desfase en días"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:61
+msgid "Deadline relative to the event date: -30 = 30 days before, 3 = 3 days after."
+msgstr "Fecha límite respecto a la fecha del evento: -30 = 30 días antes; 3 = 3 días después."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:13
+#: dev_event_planner_management/data/mail_template_data.xml:33
+#: dev_event_planner_management/data/mail_template_data.xml:82
+#: dev_event_planner_management/data/mail_template_data.xml:99
+msgid "Dear"
+msgstr "Estimado(a)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+#: dev_event_planner_management/views/planner_event_staff_line_views.xml:11
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Decline"
+msgstr "Rechazar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:47
+#: dev_event_planner_management/models/planner_event_staff_line.py:41
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Declined"
+msgstr "Rechazado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:24
+msgid "Default Packages"
+msgstr "Paquetes predeterminados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:39
+msgid "Default installment plan applied to events of this type."
+msgstr "Plan de parcialidades predeterminado para los eventos de este tipo."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_budget_line.py:33
+msgid "Defaults from posted vendor bills; can be overridden."
+msgstr "Se obtiene de las facturas de proveedor publicadas; puede modificarse."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_budget_line.py:30
+msgid "Defaults from the linked vendor booking; can be overridden."
+msgstr "Se obtiene de la contratación de proveedor vinculada; puede modificarse."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:41
+msgid "Defaults to the confirmed purchase order total; can be overridden."
+msgstr "Se establece con el total de la orden de compra confirmada; puede modificarse."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_payment_scheme_data.xml:14
+#: dev_event_planner_management/data/planner_payment_scheme_data.xml:41
+msgid "Deposit"
+msgstr "Anticipo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_payment_scheme.py:24
+#: dev_event_planner_management/views/planner_config_views.xml:75
+#: dev_event_planner_management/wizard/planner_event_quote_wizard.py:28
+msgid "Deposit %"
+msgstr "Anticipo %"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:84
+msgid "Deposit of %(amount).2f retained as cancellation fee."
+msgstr "Se retuvo el anticipo de %(amount).2f como cargo por cancelación."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:200
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Description"
+msgstr "Descripción"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:21
+msgid "Dietary Notes"
+msgstr "Notas alimentarias"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_dashboard.py:103
+msgid "Direct"
+msgstr "Directo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard_views.xml:11
+#: dev_event_planner_management/wizard/planner_event_duplicate_wizard_views.xml:11
+#: dev_event_planner_management/wizard/planner_event_quote_wizard_views.xml:11
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard_views.xml:11
+msgid "Discard"
+msgstr "Descartar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:105
+msgid "Distribute BEO and confirm staffing"
+msgstr "Distribuir BEO y confirmar personal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:67
+msgid "Distribute BEO to all vendors and staff"
+msgstr "Distribuir el BEO a todos los proveedores y al personal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:136
+msgid "Distribute run-of-show to staff"
+msgstr "Distribuir el programa operativo al personal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_stage_data.xml:49
+msgid "Done"
+msgstr "Finalizado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:35
+msgid "Done Stage"
+msgstr "Etapa de finalización"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:38
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Due Date"
+msgstr "Fecha de vencimiento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/wizard/planner_event_duplicate_wizard_views.xml:11
+msgid "Duplicate"
+msgstr "Duplicar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:565
+#: dev_event_planner_management/wizard/planner_event_duplicate_wizard.py:15
+#: dev_event_planner_management/wizard/planner_event_duplicate_wizard_views.xml:11
+msgid "Duplicate Event"
+msgstr "Duplicar evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_duplicate_wizard.py:59
+msgid "Duplicated from %(ref)s."
+msgstr "Duplicado a partir de %(ref)s."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_vendor_category_data.xml:29
+msgid "Décor"
+msgstr "Decoración"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_budget_category_data.xml:17
+msgid "Décor & Florals"
+msgstr "Decoración y floristería"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Email *"
+msgstr "Correo *"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:38
+msgid "Email Template"
+msgstr "Plantilla de correo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Emma & Noah <span>· Garden Wedding</span>"
+msgstr "Emma y Noah <span>· Boda en jardín</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Emma & Noah, Garden Wedding"
+msgstr "Emma y Noah, boda en jardín"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:26
+#: dev_event_planner_management/views/planner_event_staff_line_views.xml:42
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:23
+#: dev_event_planner_management/report/planner_report_templates.xml:55
+msgid "End"
+msgstr "Fin"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:83
+msgid "End Time"
+msgstr "Hora de finalización"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:29
+msgid "Entering this stage stamps the final headcount and meal totals used on the BEO."
+msgstr "Al entrar en esta etapa se registran el número final de asistentes y los totales de menús utilizados en el BEO."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_budget_category_data.xml:25
+#: dev_event_planner_management/data/planner_vendor_category_data.xml:33
+msgid "Entertainment"
+msgstr "Entretenimiento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_budget_line.py:27
+#: dev_event_planner_management/report/planner_report_templates.xml:200
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Estimated"
+msgstr "Estimado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:89
+msgid "Estimated Cost"
+msgstr "Costo estimado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_guest_views.xml:29
+#: dev_event_planner_management/views/planner_event_staff_line_views.xml:42
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/portal_templates.xml:43
+msgid "Event"
+msgstr "Evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:357
+#: dev_event_planner_management/views/planner_event_views.xml:370
+#: dev_event_planner_management/views/planner_event_views.xml:430
+#: dev_event_planner_management/views/planner_menus.xml:39
+msgid "Event Analysis"
+msgstr "Análisis de eventos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_budget_line.py:15
+msgid "Event Budget Line"
+msgstr "Línea presupuestal del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:423
+msgid "Event Calendar"
+msgstr "Calendario de eventos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:49
+msgid "Event End"
+msgstr "Fin del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:36
+msgid "Event Guest"
+msgstr "Invitado del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:20
+msgid "Event Payment Installment"
+msgstr "Parcialidad del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_menus.xml:11
+#: dev_event_planner_management/views/res_config_settings_views.xml:12
+msgid "Event Planner"
+msgstr "Planificador de eventos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/__manifest__.py:17
+msgid "Event Planner Management Event Planning Management Event Management Event Planning Software Event Planner Software Wedding Planner Software Catering Management Banquet Event Order BEO Event Agency Management Event Booking Event Budget Management Run of Show Event Vendor Management Event Staffing Guest List Management Event CRM Event Project Management Party Planning Corporate Event Management Event Coordination Wedding Management Event Checklist Event Proposal Venue Management Event Payment Schedule"
+msgstr "Gestión del planificador de eventos Gestión de planeación de eventos Gestión de eventos Software de planeación de eventos Software para planificadores de eventos Software para organización de bodas Gestión de banquetes Orden de servicio para banquete BEO Gestión de agencias de eventos Reserva de eventos Gestión del presupuesto de eventos Programa operativo Gestión de proveedores para eventos Personal de eventos Gestión de listas de invitados CRM para eventos Gestión de proyectos de eventos Planeación de fiestas Gestión de eventos corporativos Coordinación de eventos Gestión de bodas Lista de verificación de eventos Propuesta de evento Gestión de sedes Calendario de pagos del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/ir_cron_data.xml:29
+msgid "Event Planner: move past events to closeout"
+msgstr "Planificador de eventos: mover eventos vencidos a cierre"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/ir_cron_data.xml:9
+msgid "Event Planner: payment reminders"
+msgstr "Planificador de eventos: recordatorios de pago"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/ir_cron_data.xml:39
+msgid "Event Planner: post-event feedback surveys"
+msgstr "Planificador de eventos: encuestas posteriores al evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/ir_cron_data.xml:19
+msgid "Event Planner: staff confirmation reminders"
+msgstr "Planificador de eventos: recordatorios de confirmación del personal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/res_partner_views.xml:12
+msgid "Event Planning"
+msgstr "Planeación de eventos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/__manifest__.py:13
+msgid "Event Planning Management for Odoo | Wedding Planner and Catering Software"
+msgstr "Gestión de planeación de eventos para Odoo | Software para organización de bodas y banquetes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:19
+msgid "Event Staff Shift"
+msgstr "Turno de personal del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:15
+msgid "Event Stage"
+msgstr "Etapa del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_stage_views.xml:27
+msgid "Event Stages"
+msgstr "Etapas del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:48
+msgid "Event Start"
+msgstr "Inicio del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_categories.py:15
+msgid "Event Tag"
+msgstr "Etiqueta de evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_config_views.xml:38
+msgid "Event Tags"
+msgstr "Etiquetas de evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:28
+msgid "Event Title"
+msgstr "Título del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/crm_lead.py:19
+#: dev_event_planner_management/models/planner_event.py:31
+#: dev_event_planner_management/models/planner_event_type.py:15
+#: dev_event_planner_management/views/planner_event_type_views.xml:11
+#: dev_event_planner_management/views/planner_event_views.xml:381
+msgid "Event Type"
+msgstr "Tipo de evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_type_views.xml:93
+#: dev_event_planner_management/views/planner_menus.xml:50
+msgid "Event Types"
+msgstr "Tipos de evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_partner.py:16
+msgid "Event Vendor"
+msgstr "Proveedor del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:16
+msgid "Event Vendor Booking"
+msgstr "Contratación de proveedor para evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_partner.py:27
+msgid "Event Venue"
+msgstr "Sede del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:61
+msgid "Event cancelled — order has posted bills, settle with the vendor"
+msgstr "Evento cancelado: la orden tiene facturas publicadas; liquide con el proveedor"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:46
+msgid "Event cancelled — shift released: %(event)s"
+msgstr "Evento cancelado; turno liberado: %(event)s"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:94
+msgid "Event cancelled. Reason: %(reason)s"
+msgstr "Evento cancelado. Motivo: %(reason)s"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:79
+msgid "Event cancelled: %(name)s"
+msgstr "Evento cancelado: %(name)s"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/security/security_groups.xml:23
+msgid "Event planners: see their own and followed events."
+msgstr "Los planificadores de eventos pueden ver sus propios eventos y aquellos que siguen."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard.py:101
+msgid "Event rescheduled from %(old)s to %(new)s. Open checklist deadlines, run-of-show, staff shifts, vendor arrival times and pending payment due dates were shifted. %(staff)s confirmed staff shift(s) were reset to Requested; %(vendors)s booked vendor(s) flagged for reconfirmation."
+msgstr "El evento se reprogramó de %(old)s a %(new)s. Se ajustaron las fechas límite de tareas abiertas, el programa operativo, los turnos del personal, las horas de llegada de proveedores y los vencimientos de pagos pendientes. Turnos confirmados restablecidos a Solicitado: %(staff)s. Proveedores contratados que requieren reconfirmación: %(vendors)s."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:9
+msgid "Event: Booking Confirmation"
+msgstr "Evento: confirmación de reserva"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:95
+msgid "Event: Feedback Survey Invitation"
+msgstr "Evento: invitación a encuesta de satisfacción"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:78
+msgid "Event: Inquiry Auto-Response"
+msgstr "Evento: respuesta automática a consulta"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:29
+msgid "Event: Installment Reminder"
+msgstr "Evento: recordatorio de parcialidad"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:50
+msgid "Event: Staff Shift Request"
+msgstr "Evento: solicitud de turno al personal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:340
+#: dev_event_planner_management/views/planner_event_views.xml:381
+#: dev_event_planner_management/views/planner_event_views.xml:411
+#: dev_event_planner_management/views/planner_menus.xml:14
+#: dev_event_planner_management/views/portal_templates.xml:31
+#: dev_event_planner_management/views/portal_templates.xml:43
+msgid "Events"
+msgstr "Eventos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Events delivered"
+msgstr "Eventos realizados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:25
+msgid "Events in or after this stage are confirmed bookings: they act as conflict sources for venue and staff double-booking checks."
+msgstr "Los eventos en esta etapa o en una posterior son reservas confirmadas y se consideran al comprobar conflictos por reservas dobles de sede o personal."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:184
+msgid "Events that mean business"
+msgstr "Eventos que impulsan negocios"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_partner.py:24
+msgid "Excellent"
+msgstr "Excelente"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:59
+msgid "Expected Guests"
+msgstr "Invitados previstos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid "Explore Services <i class=\"fa fa-long-arrow-right ms-1\"/>"
+msgstr "Conozca los servicios <i class=\"fa fa-long-arrow-right ms-1\"/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_partner.py:21
+msgid "Fair"
+msgstr "Regular"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:33
+msgid "Feature this event in the public website portfolio."
+msgstr "Destacar este evento en el portafolio público del sitio web."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:48
+msgid "Feature this team member on the public event planning website."
+msgstr "Mostrar a este integrante del equipo en el sitio web público de planeación de eventos."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:35
+msgid "Feedback Survey"
+msgstr "Encuesta de satisfacción"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_payment_scheme_data.xml:29
+#: dev_event_planner_management/data/planner_payment_scheme_data.xml:48
+msgid "Final Balance"
+msgstr "Saldo final"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:28
+msgid "Final Details Lock"
+msgstr "Bloqueo de detalles finales"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:60
+msgid "Final Guests"
+msgstr "Número final de invitados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:343
+msgid "Final details locked: %(count)s guests."
+msgstr "Detalles finales bloqueados. Invitados: %(count)s."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:99
+msgid "Finalize agenda and speaker requirements"
+msgstr "Finalizar la agenda y los requisitos de los ponentes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:170
+msgid "Finalize auction items and entertainment"
+msgstr "Finalizar los artículos de la subasta y el entretenimiento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:156
+msgid "Finalize decor and theme elements"
+msgstr "Finalizar la decoración y los elementos temáticos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:130
+msgid "Finalize marketing materials and attendee list"
+msgstr "Finalizar los materiales de mercadotecnia y la lista de asistentes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:61
+msgid "Finalize run-of-show and share with vendors"
+msgstr "Finalizar programa operativo y compartir con proveedores"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:182
+msgid "Finalize seating chart and run-of-show"
+msgstr "Finalizar la distribución de mesas y el programa operativo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:49
+msgid "First invoice of the installment (installments prorated over several orders can have one invoice per order)."
+msgstr "Primera factura de la parcialidad (las parcialidades prorrateadas entre varias órdenes pueden tener una factura por orden)."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_vendor_category_data.xml:21
+msgid "Florist"
+msgstr "Florista"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:20
+msgid "Folded in Kanban"
+msgstr "Plegada en kanban"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:8
+msgid "Follow your planned events"
+msgstr "Consulte sus eventos planeados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_budget_category_data.xml:13
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "Food & Beverage"
+msgstr "Alimentos y bebidas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Foundation Chair <span>· Charity Gala</span>"
+msgstr "Presidencia de la fundación <span>· Gala benéfica</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "From"
+msgstr "Desde"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "From idea to encore"
+msgstr "De la idea al gran final"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:198
+msgid ""
+"From large-scale conventions to intimate industry gatherings, we manage\n"
+"            registration, speaker logistics, exhibition spaces, and technical production\n"
+"            flawlessly."
+msgstr ""
+"Desde grandes convenciones hasta reuniones íntimas del sector, gestionamos\n"
+"            el registro, la logística de ponentes, los espacios de exposición y la producción técnica\n"
+"            de forma impecable."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:176
+msgid ""
+"From the first venue visit to the last dance, we plan every detail of your\n"
+"            wedding day: venue, florals, catering, photography, music and a\n"
+"            minute-by-minute timeline — so you can simply be present."
+msgstr ""
+"Desde la primera visita a la sede hasta el último baile, planeamos cada detalle\n"
+"            del día de su boda: sede, flores, banquete, fotografía, música y un\n"
+"            programa minuto a minuto, para que usted solo tenga que disfrutar."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+msgid "From:"
+msgstr "Desde:"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/security/security_groups.xml:30
+msgid "Full access to all events and configuration."
+msgstr "Acceso completo a todos los eventos y a la configuración."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Full portfolio"
+msgstr "Portafolio completo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:217
+msgid "Fundraisers your guests remember"
+msgstr "Recaudaciones de fondos que sus invitados recordarán"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:29
+msgid "Gala / Fundraiser"
+msgstr "Gala / Recaudación de fondos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:220
+msgid ""
+"Galas and fundraisers with impact: elegant staging, seamless guest flow,\n"
+"            auction logistics and a run of show timed to the minute."
+msgstr ""
+"Galas y recaudaciones de fondos con impacto: montaje elegante, circulación fluida de invitados,\n"
+"            logística de subastas y un programa operativo medido al minuto."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Generate Checklist"
+msgstr "Generar lista de verificación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_partner.py:22
+msgid "Good"
+msgstr "Buena"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:651
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Guest List"
+msgstr "Lista de invitados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:120
+msgid "Guest List Size"
+msgstr "Tamaño de la lista de invitados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:41
+msgid "Guest Name"
+msgstr "Nombre del invitado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:121
+msgid "Guest Seats"
+msgstr "Lugares para invitados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Guest count"
+msgstr "Número de invitados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:53
+msgid "Guest plus companions."
+msgstr "Invitado más acompañantes."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:22
+#: dev_event_planner_management/views/planner_event_guest_views.xml:45
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/planner_menus.xml:23
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Guests"
+msgstr "Invitados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Guests & Money"
+msgstr "Invitados y finanzas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Guests hosted"
+msgstr "Invitados recibidos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+msgid "Hi"
+msgstr "Hola"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:97
+msgid "How was your event? — {{ object.name }}"
+msgstr "¿Cómo estuvo su evento? — {{ object.name }}"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "How we work"
+msgstr "Cómo trabajamos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:381
+msgid "I Coordinate"
+msgstr "Yo coordino"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard.py:26
+msgid "Ignore Conflicts"
+msgstr "Ignorar conflictos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_stage_data.xml:26
+msgid "In Planning"
+msgstr "En planeación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_stage_data.xml:37
+#: dev_event_planner_management/models/planner_event.py:71
+msgid "In Progress"
+msgstr "En curso"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/crm_lead_views.xml:42
+#: dev_event_planner_management/views/planner_menus.xml:17
+msgid "Inquiries"
+msgstr "Consultas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid "Inquiry received"
+msgstr "Consulta recibida"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:195
+msgid "Inspire, educate, and connect"
+msgstr "Inspirar, educar y conectar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:28
+msgid "Installment"
+msgstr "Parcialidad"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:207
+msgid "Installment Invoices"
+msgstr "Facturas de parcialidades"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_payment_scheme.py:22
+msgid "Installments"
+msgstr "Parcialidades"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:295
+msgid "Interested?"
+msgstr "¿Le interesa?"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:133
+msgid "Internal Brief"
+msgstr "Resumen interno"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Internal Notes"
+msgstr "Notas internas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Internal brief — never shown to the client..."
+msgstr "Resumen interno; nunca se muestra al cliente..."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid "Invalid or expired link"
+msgstr "Enlace no válido o vencido"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:48
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:111
+msgid "Invoice balance and send feedback survey"
+msgstr "Facturar el saldo y enviar la encuesta de satisfacción"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:53
+msgid "Invoiced"
+msgstr "Facturada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:111
+#: dev_event_planner_management/models/planner_event.py:625
+#: dev_event_planner_management/models/planner_event_payment_line.py:46
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:22
+msgid "Keep purchase orders (settle manually)"
+msgstr "Conservar las órdenes de compra (liquidar manualmente)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Kind words"
+msgstr "Comentarios de nuestros clientes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "Last updated"
+msgstr "Última actualización"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:381
+msgid "Late Activities"
+msgstr "Actividades atrasadas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:79
+#: dev_event_planner_management/models/planner_event_type.py:64
+msgid "Lead Planner"
+msgstr "Planificador principal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Let's plan something <em>remarkable</em>."
+msgstr "Planeemos algo <em>extraordinario</em>."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Let's plan something<br/><em>remarkable</em>."
+msgstr "Planeemos algo<br/><em>extraordinario</em>."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:34
+msgid "Live base: percentage of the total of confirmed sale orders — change orders automatically flow into remaining installments."
+msgstr "Base dinámica: porcentaje del total de las órdenes de venta confirmadas; las órdenes de cambio se distribuyen automáticamente entre las parcialidades restantes."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:55
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Location"
+msgstr "Ubicación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Locked"
+msgstr "Bloqueado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/security/security_groups.xml:27
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:99
+msgid "Margin %"
+msgstr "% de margen"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Mark as Booked"
+msgstr "Marcar como reservado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Mark this event as booked? This creates the project, checklist and payment schedule."
+msgstr "¿Desea marcar este evento como reservado? Esta acción crea el proyecto, la lista de verificación y el calendario de pagos."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Marketing Director <span>· Annual Summit</span>"
+msgstr "Director de mercadotecnia <span>· Cumbre anual</span>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:15
+#: dev_event_planner_management/models/planner_event_guest.py:50
+#: dev_event_planner_management/views/planner_event_guest_views.xml:29
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Meal Choice"
+msgstr "Elección de menú"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Meal Choices"
+msgstr "Elecciones de menú"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:635
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Meetings"
+msgstr "Reuniones"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:206
+msgid "Memories that last a lifetime"
+msgstr "Memories que último un lifetime"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:176
+msgid "Menu tasting and AV coordination"
+msgstr "Degustación del menú y coordinación audiovisual"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:49
+msgid "Menu tasting and final menu selection"
+msgstr "Degustación y selección final del menú"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_budget_category_data.xml:37
+msgid "Miscellaneous"
+msgstr "Varios"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:381
+msgid "Month"
+msgstr "Mes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:381
+#: dev_event_planner_management/views/portal_templates.xml:8
+msgid "My Events"
+msgstr "Mis eventos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Name"
+msgstr "Nombre"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:28
+msgid "Needed Service"
+msgstr "Servicio requerido"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_stage_data.xml:9
+#: dev_event_planner_management/models/planner_event.py:268
+#: dev_event_planner_management/models/planner_event.py:270
+#: dev_event_planner_management/models/planner_event.py:30
+msgid "New"
+msgstr "Nuevo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard.py:24
+msgid "New End"
+msgstr "Nueva fecha de finalización"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_duplicate_wizard.py:20
+msgid "New Event Start"
+msgstr "Nuevo inicio del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_duplicate_wizard.py:18
+msgid "New Event Title"
+msgstr "Nuevo título del evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:532
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/wizard/planner_event_quote_wizard_views.xml:11
+msgid "New Quotation"
+msgstr "Nueva cotización"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard.py:22
+msgid "New Start"
+msgstr "Nueva fecha de inicio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Next <i class=\"fa fa-long-arrow-right ms-1\"/>"
+msgstr "Siguiente <i class=\"fa fa-long-arrow-right ms-1\"/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:36
+msgid "No cancelled stage is configured."
+msgstr "No hay una etapa de cancelación configurada."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:130
+msgid "No confirmed sale order on this event to invoice against."
+msgstr "Este evento no tiene una orden de venta confirmada contra la cual facturar."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/crm_lead_views.xml:47
+msgid "No inquiries found. Let's plan an event!"
+msgstr "No se encontraron consultas. ¡Planeemos un evento!"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "No surprises on the invoice."
+msgstr "Sin sorpresas en la factura."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:132
+#: dev_event_planner_management/report/planner_report_templates.xml:55
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "Notes"
+msgstr "Notas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:28
+msgid "Notify Confirmed Staff"
+msgstr "Notificar al personal confirmado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_payment_scheme.py:60
+msgid "Number of days before/after the event date the installment is due."
+msgstr "Número de días antes o después de la fecha del evento en que vence la parcialidad."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:37
+#: dev_event_planner_management/models/planner_payment_scheme.py:54
+msgid "On Booking"
+msgstr "Al reservar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:56
+msgid "On-site Contact"
+msgstr "Contacto en sitio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:82
+msgid ""
+"One of our planners will get back to you within one business day to\n"
+"       schedule a consultation and start shaping your celebration."
+msgstr ""
+"Uno de nuestros planificadores se comunicará con usted en un día hábil para\n"
+"       programar una consulta y comenzar a dar forma a su celebración."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid ""
+"One planner owns your event end to end.\n"
+"                                   No chasing five vendors — we do that for you."
+msgstr ""
+"Un planificador se encarga de su evento de principio a fin.\n"
+"                                   No tendrá que perseguir a cinco proveedores; nosotros lo hacemos por usted."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "One planner, start to finish."
+msgstr "Un solo planificador, de principio a fin."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "One point of contact"
+msgstr "Un punto de contacto"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_quote_wizard.py:26
+msgid "Online Deposit Payment"
+msgstr "Pago del anticipo en línea"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_quote_wizard.py:25
+msgid "Online Signature"
+msgstr "Firma en línea"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard_views.xml:11
+msgid ""
+"Open checklist deadlines, run-of-show lines, staff shifts,\n"
+"                    vendor arrival times and pending payment due dates will be\n"
+"                    shifted. Confirmed staff will be asked to re-confirm and\n"
+"                    booked vendors flagged for reconfirmation."
+msgstr ""
+"Las fechas límite de tareas abiertas, las líneas del programa operativo, los turnos del personal,\n"
+"                    las horas de llegada de proveedores y los vencimientos de pagos pendientes\n"
+"                    se ajustarán. Se pedirá al personal confirmado que vuelva a confirmar y\n"
+"                    los proveedores contratados se marcarán para reconfirmación."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Open invoice"
+msgstr "Abrir factura"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:32
+msgid "Other"
+msgstr "Otro"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Our work"
+msgstr "Nuestro trabajo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:162
+msgid "Outdoor"
+msgstr "Al aire libre"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:55
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Overdue"
+msgstr "Vencido"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_dashboard.py:127
+msgid "Overdue: %(name)s (%(amount).2f)"
+msgstr "Vencida: %(name)s (%(amount).2f)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Overview"
+msgstr "Resumen"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:55
+msgid "Owner"
+msgstr "Responsable"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:43
+msgid "PO Status"
+msgstr "Estado de la orden de compra"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_type_views.xml:11
+msgid "Packages"
+msgstr "Paquetes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_quote_wizard.py:21
+msgid "Packages / Services"
+msgstr "Paquetes / Servicios"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:54
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Paid"
+msgstr "Pagada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:27
+msgid "Paid Deposits"
+msgstr "Anticipos pagados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:38
+#: dev_event_planner_management/models/planner_payment_scheme.py:17
+#: dev_event_planner_management/views/planner_config_views.xml:46
+msgid "Payment Scheme"
+msgstr "Esquema de pagos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_payment_scheme.py:46
+msgid "Payment Scheme Installment"
+msgstr "Parcialidad del esquema de pagos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_config_views.xml:84
+#: dev_event_planner_management/views/planner_menus.xml:58
+msgid "Payment Schemes"
+msgstr "Esquemas de pago"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:31
+msgid "Payment reminder — {{ object.name }} for {{ object.event_id.name }}"
+msgstr "Recordatorio de pago — {{ object.name }} para {{ object.event_id.name }}"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:209
+msgid "Payment schedule total (%(schedule)s) differs from confirmed order total (%(orders)s)."
+msgstr "El total del calendario de pagos (%(schedule)s) difiere del total de las órdenes confirmadas (%(orders)s)."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_payment_scheme.py:40
+msgid "Payment scheme \"%(name)s\" installments must total 100%% (currently %(total).1f%%)."
+msgstr "Las parcialidades del esquema de pagos \"%(name)s\" deben sumar 100%% (actualmente suman %(total).1f%%)."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:45
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Pending"
+msgstr "Pendiente"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "People behind the magic"
+msgstr "Las personas detrás de la magia"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_payment_scheme.py:25
+msgid "Percentage of the first on-booking installment; used as the prepayment percentage on portal quotes."
+msgstr "Porcentaje de la primera parcialidad al reservar; se usa como porcentaje de anticipo en las cotizaciones del portal."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:173
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_vendor_category_data.xml:17
+msgid "Photography & Video"
+msgstr "Fotografía y video"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Pick the occasion closest to your vision."
+msgstr "Elija la ocasión que más se acerque a su visión."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Plan my event"
+msgstr "Planear mi evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:415
+msgid "Plan your first event"
+msgstr "Planee su primer evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/account_move.py:17
+#: dev_event_planner_management/models/crm_lead.py:17
+#: dev_event_planner_management/models/planner_event.py:21
+#: dev_event_planner_management/models/project_project.py:17
+#: dev_event_planner_management/models/project_task.py:17
+#: dev_event_planner_management/models/purchase_order.py:17
+#: dev_event_planner_management/models/sale_order.py:17
+msgid "Planned Event"
+msgstr "Evento planeado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid ""
+"Planned, agreed and actual costs — visible at\n"
+"                                   every step. No surprises on the final invoice."
+msgstr ""
+"Costos planeados, contratados y reales, visibles en\n"
+"                                   cada paso. Sin sorpresas en la factura final."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:381
+msgid "Planner"
+msgstr "Planificador"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Planning without the chaos"
+msgstr "Planeación sin caos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+msgid "Please confirm or decline:"
+msgstr "Confirme o rechace la solicitud:"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_partner.py:20
+msgid "Poor"
+msgstr "Mala"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/website_templates.xml:327
+msgid "Portfolio"
+msgstr "Portafolio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:38
+msgid "Portfolio Description"
+msgstr "Descripción del portafolio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:35
+msgid "Portfolio Title"
+msgstr "Título del portafolio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:327
+msgid "Portfolio coming soon."
+msgstr "Próximamente habrá contenido en el portafolio."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Preferred date"
+msgstr "Fecha preferida"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_quote_wizard.py:29
+msgid "Prepayment percentage requested to confirm the quote online."
+msgstr "Porcentaje de anticipo solicitado para confirmar la cotización en línea."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/res_config_settings_views.xml:12
+msgid "Prevent saving events that overlap a confirmed booking at the same venue. Otherwise a warning banner is shown."
+msgstr "Impide guardar eventos que se superpongan con una reserva confirmada en la misma sede. De lo contrario, solo se muestra una advertencia."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:187
+msgid ""
+"Product launches, summits and team celebrations, produced end-to-end:\n"
+"            venue sourcing, AV and staging, catering, registration and on-site\n"
+"            coordination — on brand and on budget."
+msgstr ""
+"Lanzamientos de productos, cumbres y celebraciones de equipo, producidos de principio a fin:\n"
+"            búsqueda de sede, audiovisuales y montaje, banquete, registro y\n"
+"            coordinación en sitio, siempre conforme a la marca y al presupuesto."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_payment_scheme_data.xml:21
+msgid "Progress Payment"
+msgstr "Pago parcial"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:104
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:28
+msgid "Project Template"
+msgstr "Plantilla de proyecto"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:98
+#: dev_event_planner_management/report/planner_report_templates.xml:200
+msgid "Projected Margin"
+msgstr "Margen proyectado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_stage_data.xml:17
+msgid "Proposal Sent"
+msgstr "Propuesta enviada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:36
+msgid "Public name shown in the portfolio — keep it anonymous if needed (e.g. \"Garden Wedding for 150\")."
+msgstr "Nombre público que se muestra en el portafolio; manténgalo anónimo si es necesario (p. ej., \"Boda en jardín para 150 personas\")."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:51
+msgid "Public role title, e.g. \"Senior Wedding Planner\"."
+msgstr "Nombre público del puesto, p. ej., \"Planificador sénior de bodas\"."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:42
+msgid "Purchase Order"
+msgstr "Orden de compra"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:362
+msgid "Quotation %(order)s confirmed."
+msgstr "Cotización %(order)s confirmada."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_quote_wizard.py:24
+msgid "Quotation Template"
+msgstr "Plantilla de cotización"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:576
+msgid "Quotations"
+msgstr "Cotizaciones"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Quote 1"
+msgstr "Cotización 1"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Quote 2"
+msgstr "Cotización 2"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Quote 3"
+msgstr "Cotización 3"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:32
+msgid "Quoted"
+msgstr "Cotizado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Quotes"
+msgstr "Cotizaciones"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Quotes & Orders"
+msgstr "Cotizaciones y órdenes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_guest_views.xml:29
+msgid "RSVP"
+msgstr "RSVP"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_guest_views.xml:29
+msgid "RSVP Pending"
+msgstr "Confirmación de asistencia pendiente"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_stage_data.xml:31
+msgid "Ready (Locked)"
+msgstr "Listo (Bloqueado)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:72
+msgid "Ready for Next Stage"
+msgstr "Listo para la siguiente etapa"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Recent celebrations"
+msgstr "Celebraciones recientes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard.py:93
+msgid "Reconfirm vendor %(vendor)s for the new date"
+msgstr "Reconfirmar al proveedor %(vendor)s para la nueva fecha"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:30
+#: dev_event_planner_management/views/portal_templates.xml:43
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:26
+msgid "Refund deposit (create credit note)"
+msgstr "Reembolsar el anticipo (crear nota de crédito)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_vendor_category_data.xml:45
+msgid "Rentals"
+msgstr "Rentas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_menus.xml:36
+msgid "Reporting"
+msgstr "Informes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:295
+msgid "Request a proposal"
+msgstr "Solicitar una propuesta"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_staff_line_views.xml:11
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Request confirmation"
+msgstr "Solicitar confirmación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:39
+#: dev_event_planner_management/models/planner_event_vendor_line.py:31
+msgid "Requested"
+msgstr "Solicitado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard_views.xml:11
+msgid "Reschedule"
+msgstr "Reprogramar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:543
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard.py:18
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard_views.xml:11
+msgid "Reschedule Event"
+msgstr "Reprogramar evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:25
+msgid "Retain deposit as cancellation fee"
+msgstr "Retener el anticipo como cargo por cancelación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:95
+msgid "Revenue"
+msgstr "Ingresos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:200
+msgid "Revenue (confirmed orders)"
+msgstr "Ingresos (órdenes confirmadas)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_type_views.xml:11
+msgid "Rich description shown on the public service page..."
+msgstr "Descripción detallada que se muestra en la página pública del servicio..."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "Role"
+msgstr "Función"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:34
+msgid "Role Details"
+msgstr "Detalles de la función"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+msgid "Role:"
+msgstr "Función:"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_actions.xml:20
+#: dev_event_planner_management/report/planner_report_templates.xml:158
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Run of Show"
+msgstr "Programa operativo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:16
+msgid "Run-of-Show Line"
+msgstr "Línea del programa operativo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:33
+#: dev_event_planner_management/views/planner_event_type_views.xml:11
+msgid "Run-of-Show Template"
+msgstr "Plantilla del programa operativo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:73
+msgid "Run-of-Show Template Line"
+msgstr "Línea de plantilla del programa operativo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Schedule"
+msgstr "Programa"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/res_config_settings_views.xml:12
+msgid "Scheduling"
+msgstr "Programación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Seats"
+msgstr "Lugares"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_vendor_category_data.xml:41
+msgid "Security"
+msgstr "Seguridad"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "See our work"
+msgstr "Vea nuestro trabajo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Send BEO"
+msgstr "Enviar BEO"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Send the current BEO PDF to all vendors, confirmed staff and the coordinator?"
+msgstr "¿Desea enviar el PDF actual del BEO a todos los proveedores, al personal confirmado y al coordinador?"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:36
+msgid "Sent to the client after the event ends."
+msgstr "Se envía al cliente después de que finaliza el evento."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:40
+msgid "Sent to the customer when the event reaches this stage."
+msgstr "Se envía al cliente cuando el evento llega a esta etapa."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:30
+#: dev_event_planner_management/report/planner_report_templates.xml:173
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "Service"
+msgstr "Servicio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:26
+msgid "Service products proposed by default on quotations for this event type."
+msgstr "Productos de servicio propuestos de manera predeterminada en las cotizaciones de este tipo de evento."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:264
+msgid "Services"
+msgstr "Servicios"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:87
+msgid "Set a vendor on the line first."
+msgstr "Primero seleccione un proveedor en la línea."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_menus.xml:46
+#: dev_event_planner_management/views/res_config_settings_views.xml:26
+msgid "Settings"
+msgstr "Ajustes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:29
+msgid "Setup"
+msgstr "Montaje"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:295
+msgid "Share your date and vision — we'll craft a proposal."
+msgstr "Comparta su fecha y su visión; nosotros prepararemos una propuesta."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:99
+msgid "Share your feedback"
+msgstr "Compartir sus comentarios"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid "Shift"
+msgstr "Turno"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:36
+msgid "Shift End"
+msgstr "Fin del turno"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:35
+msgid "Shift Start"
+msgstr "Inicio del turno"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:52
+msgid "Shift confirmation needed — {{ object.event_id.name }}"
+msgstr "Se requiere confirmar el turno — {{ object.event_id.name }}"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid "Shift confirmed — thank you!"
+msgstr "Turno confirmado. ¡Gracias!"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid "Shift declined"
+msgstr "Turno rechazado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:59
+msgid "Shift end must be after shift start."
+msgstr "La hora de finalización del turno debe ser posterior a la hora de inicio."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:32
+msgid "Show in Portfolio"
+msgstr "Mostrar en el portafolio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:46
+msgid "Show on Event Website"
+msgstr "Mostrar en el sitio web de eventos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Signature services"
+msgstr "Servicios destacados"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "So a planner can reach out personally."
+msgstr "Para que un planificador pueda comunicarse personalmente."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:45
+msgid "Source Opportunity"
+msgstr "Oportunidad de origen"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:66
+#: dev_event_planner_management/models/planner_event_type.py:68
+msgid "Specific User"
+msgstr "Usuario específico"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:27
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Staff"
+msgstr "Personal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:31
+msgid "Staff Member"
+msgstr "Miembro del personal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_staff_line_views.xml:58
+#: dev_event_planner_management/views/planner_menus.xml:26
+msgid "Staff Schedule"
+msgstr "Programa del personal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_budget_category_data.xml:29
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "Staffing"
+msgstr "Personal"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:67
+#: dev_event_planner_management/views/planner_event_views.xml:381
+#: dev_event_planner_management/views/portal_templates.xml:43
+msgid "Stage"
+msgstr "Etapa"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_menus.xml:48
+msgid "Stages"
+msgstr "Etapas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_payment_scheme_data.xml:9
+msgid "Standard (50 / 40 / 10)"
+msgstr "Estándar (50 / 40 / 10)"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:22
+#: dev_event_planner_management/report/planner_report_templates.xml:55
+msgid "Start"
+msgstr "Inicio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:82
+msgid "Start Time"
+msgstr "Hora de inicio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Start here"
+msgstr "Comience aquí"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Start planning"
+msgstr "Comenzar a planear"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:56
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+#: dev_event_planner_management/views/planner_event_staff_line_views.xml:42
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Status"
+msgstr "Estado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Step 1 of 3"
+msgstr "Paso 1 de 3"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Step 2 of 3"
+msgstr "Paso 2 de 3"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Step 3 of 3"
+msgstr "Paso 3 de 3"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:52
+msgid "Table"
+msgstr "Mesa"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:19
+msgid "Tagline"
+msgstr "Eslogan"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:32
+#: dev_event_planner_management/views/planner_menus.xml:52
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_type.py:57
+msgid "Task"
+msgstr "Tarea"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Team"
+msgstr "Equipo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_staff_line.py:31
+msgid "Teardown"
+msgstr "Desmontaje"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid ""
+"Tell us about your event — a real planner replies\n"
+"                           within one business day."
+msgstr ""
+"Cuéntenos sobre su evento; un planificador real responderá\n"
+"                           en un día hábil."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Tell us about your vision"
+msgstr "Cuéntenos su visión"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Tell us the details"
+msgstr "Cuéntenos los detalles"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid "Thank you"
+msgstr "Gracias"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:82
+msgid "Thank you for reaching out about your event — we're excited already!"
+msgstr "Gracias por comunicarse con nosotros sobre su evento. ¡Estamos muy entusiasmados!"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:99
+msgid "Thank you for trusting us with"
+msgstr "Gracias por confiarnos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:33
+msgid "Thank you,<br/>"
+msgstr "Gracias,<br/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid "Thanks for letting us know — the planner has been notified."
+msgstr "Gracias por informarnos. Se notificó al planificador."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_stage.py:33
+msgid "The daily cron moves events past their end date to the first closeout stage."
+msgstr "La acción programada diaria mueve los eventos cuya fecha de finalización ya pasó a la primera etapa de cierre."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:143
+msgid "The installment amount is zero."
+msgstr "El importe de la parcialidad es cero."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:33
+msgid "The invoice"
+msgstr "La factura"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "The more we know, the sharper your proposal."
+msgstr "Cuanto más sepamos, más precisa será su propuesta."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "The studio"
+msgstr "El estudio"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_reschedule_wizard.py:127
+msgid "The venue is already booked on the target date by \"%(event)s\". Tick \"Ignore Conflicts\" to proceed anyway."
+msgstr "La sede ya está reservada en la fecha seleccionada por \"%(event)s\". Marque \"Ignorar conflictos\" para continuar de todos modos."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Theme, venue ideas, must-haves..."
+msgstr "Tema, ideas de sedes, elementos indispensables..."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:43
+msgid "There are currently no events for your account."
+msgstr "Actualmente no hay eventos para su cuenta."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_quote_wizard.py:45
+msgid "These packages are invoiced on delivered quantities, which breaks installment invoicing — set their invoicing policy to \"Ordered quantities\": %(products)s"
+msgstr "Estos paquetes se facturan por cantidades entregadas, lo que impide facturar por parcialidades. Cambie su política de facturación a \"Cantidades ordenadas\": %(products)s"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:381
+msgid "This Month"
+msgstr "Este mes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard_views.xml:11
+msgid ""
+"This cancels staff shifts and vendor bookings, voids\n"
+"                    un-invoiced installments and closes open checklist tasks."
+msgstr ""
+"Esta acción cancela los turnos del personal y las contrataciones de proveedores, anula\n"
+"                    las parcialidades sin facturar y cierra las tareas abiertas de la lista de verificación."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:222
+msgid "This date at %(venue)s already has %(confirmed)s confirmed and %(tentative)s tentative event(s)."
+msgstr "En esta fecha, %(venue)s ya tiene eventos confirmados: %(confirmed)s; eventos provisionales: %(tentative)s."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:316
+msgid "This event still has %(unpaid)s unpaid installment(s) and %(tasks)s open task(s). Only an Event Planner Manager can move it to Done."
+msgstr "Este evento aún tiene parcialidades sin pagar: %(unpaid)s; tareas abiertas: %(tasks)s. Solo un responsable del planificador de eventos puede moverlo a Finalizado."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:126
+msgid "This installment is already invoiced."
+msgstr "Esta parcialidad ya está facturada."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid "This request is no longer open"
+msgstr "Esta solicitud ya no está abierta"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Three quick steps — a real planner replies within one business day."
+msgstr "Tres pasos rápidos; un planificador real responderá en un día hábil."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Time"
+msgstr "Hora"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:51
+msgid "Timezone"
+msgstr "Zona horaria"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "To"
+msgstr "A"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:52
+msgid "To Invoice"
+msgstr "Por facturar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:30
+msgid "To Source"
+msgstr "Por contratar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+msgid "To:"
+msgstr "A:"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:200
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/planner_event_views.xml:305
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Total"
+msgstr "Total"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:415
+msgid ""
+"Track every event from inquiry to closeout: quotes, checklist,\n"
+"               vendors, budget, staffing, guests and payments — in one place."
+msgstr ""
+"Dé seguimiento a cada evento desde la consulta hasta el cierre: cotizaciones, lista de verificación,\n"
+"               proveedores, presupuesto, personal, invitados y pagos, todo en un solo lugar."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Transparent budgets"
+msgstr "Presupuestos transparentes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_budget_category_data.xml:33
+#: dev_event_planner_management/data/planner_vendor_category_data.xml:37
+msgid "Transport"
+msgstr "Transporte"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Trusted vendors"
+msgstr "Proveedores de confianza"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_staff_line_views.xml:42
+msgid "Unconfirmed"
+msgstr "Sin confirmar"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_dashboard.py:94
+msgid "Undefined"
+msgstr "Sin definir"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Unforgettable events,<br/><em>flawlessly</em> delivered."
+msgstr "Eventos inolvidables,<br/>realizados de forma <em>impecable</em>."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:96
+msgid "Untaxed total of confirmed sale orders."
+msgstr "Total sin impuestos de las órdenes de venta confirmadas."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:46
+msgid "Untaxed total of posted vendor bills on the linked purchase order."
+msgstr "Total sin impuestos de las facturas de proveedor publicadas en la orden de compra vinculada."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_staff_line_views.xml:42
+#: dev_event_planner_management/views/planner_event_views.xml:381
+msgid "Upcoming"
+msgstr "Próximo"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_payment_line.py:31
+msgid "Used instead of the percentage when set."
+msgstr "Cuando se establece, se utiliza en lugar del porcentaje."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/security/security_groups.xml:20
+msgid "User"
+msgstr "Usuario"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:54
+#: dev_event_planner_management/views/planner_event_guest_views.xml:29
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "VIP"
+msgstr "VIP"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_budget_line.py:34
+#: dev_event_planner_management/report/planner_report_templates.xml:200
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Variance"
+msgstr "Variación"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:28
+#: dev_event_planner_management/models/planner_event_schedule_line.py:33
+#: dev_event_planner_management/models/planner_event_vendor_line.py:27
+#: dev_event_planner_management/report/planner_report_templates.xml:173
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+#: dev_event_planner_management/views/portal_templates.xml:75
+#: dev_event_planner_management/views/res_partner_views.xml:12
+msgid "Vendor"
+msgstr "Proveedor"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_budget_line.py:25
+msgid "Vendor Booking"
+msgstr "Contratación de proveedor"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_partner.py:18
+#: dev_event_planner_management/views/planner_menus.xml:54
+#: dev_event_planner_management/views/planner_vendor_views.xml:44
+msgid "Vendor Categories"
+msgstr "Categorías de proveedores"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_categories.py:28
+msgid "Vendor Category"
+msgstr "Categoría de proveedor"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_actions.xml:31
+#: dev_event_planner_management/report/planner_report_templates.xml:173
+msgid "Vendor Contact Sheet"
+msgstr "Hoja de contactos de proveedores"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_menus.xml:31
+#: dev_event_planner_management/views/planner_vendor_views.xml:10
+msgid "Vendor Directory"
+msgstr "Directorio de proveedores"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_partner.py:26
+msgid "Vendor Notes"
+msgstr "Notas del proveedor"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event.py:614
+#: dev_event_planner_management/wizard/planner_event_cancel_wizard.py:23
+msgid "Vendor Orders"
+msgstr "Órdenes de compra a proveedores"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "Vendor POs"
+msgstr "Órdenes de compra a proveedores"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_partner.py:25
+msgid "Vendor Rating"
+msgstr "Calificación del proveedor"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:145
+msgid "Vendor booking cancelled: %(vendor)s (%(service)s)."
+msgstr "Contratación de proveedor cancelada: %(vendor)s (%(service)s)."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_categories.py:50
+msgid "Vendor drop-out costs are reclassified to this category."
+msgstr "Los costos por incumplimiento del proveedor se reclasifican en esta categoría."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:120
+msgid "Vendor dropped out — settle this order"
+msgstr "El proveedor incumplió; liquide esta orden"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+#: dev_event_planner_management/views/planner_event_views.xml:11
+#: dev_event_planner_management/views/planner_menus.xml:29
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "Vendors"
+msgstr "Proveedores"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_budget_category_data.xml:9
+#: dev_event_planner_management/data/planner_vendor_category_data.xml:9
+#: dev_event_planner_management/models/planner_event.py:53
+#: dev_event_planner_management/views/planner_event_views.xml:381
+#: dev_event_planner_management/views/portal_templates.xml:43
+#: dev_event_planner_management/views/res_partner_views.xml:12
+msgid "Venue"
+msgstr "Sede"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+msgid "Venue:"
+msgstr "Sede:"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_menus.xml:33
+#: dev_event_planner_management/views/planner_vendor_views.xml:22
+msgid "Venues"
+msgstr "Sedes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:81
+msgid "Version"
+msgstr "Versión"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_partner.py:23
+msgid "Very Good"
+msgstr "Muy buena"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:13
+#: dev_event_planner_management/data/mail_template_data.xml:82
+#: dev_event_planner_management/data/mail_template_data.xml:99
+msgid "Warm regards,<br/>"
+msgstr "Saludos cordiales,<br/>"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:80
+msgid "We received your inquiry — {{ object.name }}"
+msgstr "Recibimos su consulta — {{ object.name }}"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_type_views.xml:11
+msgid "Website"
+msgstr "Sitio web"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:18
+msgid "Website Description"
+msgstr "Descripción para el sitio web"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_website.py:50
+msgid "Website Role"
+msgstr "Función en el sitio web"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/planner_event_type_data.xml:9
+msgid "Wedding"
+msgstr "Boda"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid ""
+"Weddings, galas and corporate experiences — imagined together,\n"
+"                            executed to the minute."
+msgstr ""
+"Bodas, galas y experiencias corporativas, imaginadas en conjunto\n"
+"                            y ejecutadas al minuto."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "What are we celebrating?"
+msgstr "¿Qué vamos a celebrar?"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "What clients say"
+msgstr "Lo que dicen nuestros clientes"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "What we create"
+msgstr "Lo que creamos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:264
+msgid "What we plan"
+msgstr "Lo que planeamos"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/res_config_settings.py:19
+msgid "When enabled, saving an event that overlaps a confirmed booking at the same venue is blocked instead of only warned about."
+msgstr "Cuando se habilita, se impide guardar un evento que se superponga con una reserva confirmada en la misma sede, en lugar de mostrar solo una advertencia."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Why couples and companies choose us"
+msgstr "Por qué las parejas y empresas nos eligen"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Why plan with us"
+msgstr "Por qué planear con nosotros"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:13
+msgid "Wonderful news — your event"
+msgstr "Buenas noticias: su evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid ""
+"Years of curated caterers, florists, AV crews\n"
+"                                   and artists — matched to your style and budget."
+msgstr ""
+"Años de seleccionar servicios de banquete, floristas, equipos audiovisuales\n"
+"                                   y artistas que se adaptan a su estilo y presupuesto."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid ""
+"You already have a confirmed shift that overlaps this one.\n"
+"                       Please contact your planner."
+msgstr ""
+"Ya tiene un turno confirmado que se superpone con este.\n"
+"                       Comuníquese con su planificador."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid "You are confirmed for"
+msgstr "Su participación está confirmada para"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:54
+msgid "You are requested for the event"
+msgstr "Se solicita su participación en el evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid "Your date is waiting"
+msgstr "Su fecha está disponible"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:11
+msgid "Your event is booked — {{ object.name }}"
+msgstr "Su evento está reservado — {{ object.name }}"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:578
+msgid ""
+"Your inquiry is with our planners — expect a personal reply\n"
+"                                within one business day."
+msgstr ""
+"Nuestros planificadores ya recibieron su consulta; recibirá una respuesta personal\n"
+"                                en un día hábil."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/demo/planner_demo.xml:173
+msgid "Your love story, staged to perfection"
+msgstr "Su historia de amor, puesta en escena a la perfección"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "Your name *"
+msgstr "Su nombre *"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:13
+msgid "Your planner"
+msgstr "Su planificador"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:13
+msgid "at"
+msgstr "en"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:369
+msgid "e.g. 120"
+msgstr "p. ej., 120"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_config_views.xml:46
+msgid "e.g. 50 / 40 / 10"
+msgstr "p. ej., 50 / 40 / 10"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "e.g. Garden Wedding for 150"
+msgstr "p. ej., Boda en jardín para 150 personas"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_views.xml:11
+msgid "e.g. Smith & Jones Wedding"
+msgstr "p. ej., Boda de Smith y Jones"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/planner_event_type_views.xml:11
+msgid "e.g. Wedding"
+msgstr "p. ej., Boda"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:33
+msgid "for your event"
+msgstr "para su evento"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:60
+#: dev_event_planner_management/models/planner_event_guest.py:66
+msgid "guest list changed"
+msgstr "lista de invitados modificada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_guest.py:72
+msgid "guest removed"
+msgstr "invitado eliminado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:33
+msgid "is available in your portal."
+msgstr "está disponible en su portal."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:13
+msgid ""
+"is confirmed\n"
+"       for"
+msgstr ""
+"está confirmado\n"
+"       para"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:33
+msgid "is due on"
+msgstr "vence el"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:33
+msgid "of"
+msgstr "de"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:47
+msgid "run-of-show line added"
+msgstr "línea del programa operativo agregada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:59
+msgid "run-of-show line removed"
+msgstr "línea del programa operativo eliminada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_schedule_line.py:53
+msgid "run-of-show updated"
+msgstr "programa operativo actualizado"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:159
+msgid "vendor booking added"
+msgstr "contratación de proveedor agregada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/models/planner_event_vendor_line.py:165
+msgid "vendor booking updated"
+msgstr "contratación de proveedor actualizada"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/data/mail_template_data.xml:13
+msgid ""
+"will guide you through\n"
+"       every next step. You can follow your event, quotes and invoices from your\n"
+"       customer portal at any time."
+msgstr ""
+"le guiará durante\n"
+"       cada paso. Puede consultar su evento, sus cotizaciones y sus facturas desde el\n"
+"       portal del cliente en cualquier momento."
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/report/planner_report_templates.xml:9
+#: dev_event_planner_management/views/portal_templates.xml:333
+msgid "·"
+msgstr "·"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/portal_templates.xml:333
+#: dev_event_planner_management/views/portal_templates.xml:75
+msgid "—"
+msgstr "—"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid ""
+"“Four hundred guests, a live auction, zero hiccups.\n"
+"                                        Our most successful gala yet.”"
+msgstr ""
+"“Cuatrocientos invitados, una subasta en vivo y ningún contratiempo.\n"
+"                                        Nuestra gala más exitosa hasta ahora.”"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid ""
+"“Our wedding ran to the minute — we never saw the work,\n"
+"                                        only the magic. Every vendor knew exactly where to be.”"
+msgstr ""
+"“Nuestra boda se desarrolló al minuto; nunca vimos el trabajo,\n"
+"                                        solo la magia. Cada proveedor sabía exactamente dónde debía estar.”"
+
+#. module: dev_event_planner_management
+#: dev_event_planner_management/views/website_templates.xml:9
+msgid ""
+"“The one agency that made budget conversations easy.\n"
+"                                        We always knew what was planned, agreed and spent.”"
+msgstr ""
+"“La única agencia que facilitó las conversaciones sobre el presupuesto.\n"
+"                                        Siempre supimos qué se había planeado, contratado y gastado.”"

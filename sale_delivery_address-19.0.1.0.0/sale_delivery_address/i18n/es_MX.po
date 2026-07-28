@@ -32,7 +32,7 @@ msgstr "Dirección de entrega"
 #: model:ir.model.fields,field_description:sale_delivery_address.field_sale_order_line__display_name
 #: model:ir.model.fields,field_description:sale_delivery_address.field_stock_move__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: sale_delivery_address
 #: model:ir.model.fields,help:sale_delivery_address.field_sale_order_line__is_address_readonly
@@ -43,17 +43,17 @@ msgstr "Ayuda a encontrar que la dirección sea de solo lectura o no"
 #: model:ir.model.fields,field_description:sale_delivery_address.field_sale_order_line__id
 #: model:ir.model.fields,field_description:sale_delivery_address.field_stock_move__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: sale_delivery_address
 #: model:ir.model,name:sale_delivery_address.model_sale_order_line
 msgid "Sale Order Line Delivery Split"
-msgstr ""
+msgstr "Línea de orden de venta"
 
 #. module: sale_delivery_address
 #: model:ir.model,name:sale_delivery_address.model_stock_move
 msgid "Stock Move Delivery Split"
-msgstr ""
+msgstr "Movimiento de inventario"
 
 #. module: sale_delivery_address
 #: model:ir.model.fields,help:sale_delivery_address.field_sale_order_line__delivery_addr_id

@@ -26,7 +26,7 @@ msgstr "%s (Copia)"
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__message_needaction
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Acción requerida"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__active
@@ -70,10 +70,8 @@ msgstr "Referencia del acuerdo"
 
 #. module: purchase_recurring_orders
 #: model:ir.model,name:purchase_recurring_orders.model_agreement_renewal
-#, fuzzy
-#| msgid "Agreement Renewals"
 msgid "Agreement Renewal Wizard"
-msgstr "Renovaciones de acuerdos"
+msgstr "Asistente de renovación de acuerdos"
 
 #. module: purchase_recurring_orders
 #: model_terms:ir.ui.view,arch_db:purchase_recurring_orders.purchase_agreement_renewal_view_tree
@@ -108,12 +106,15 @@ msgid ""
 "                products/services that you are providing them which requires a\n"
 "                recurring order."
 msgstr ""
+"Los acuerdos permiten definir la relación comercial con sus proveedores y\n"
+"                especificar los productos o servicios que requieren una\n"
+"                orden recurrente."
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__message_attachment_count
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Número de archivos adjuntos"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__start_date
@@ -128,7 +129,7 @@ msgstr "Cancelar"
 #. module: purchase_recurring_orders
 #: model_terms:ir.actions.act_window,help:purchase_recurring_orders.recurring_orders_agreement_action
 msgid "Click to set a new agreement."
-msgstr ""
+msgstr "Haga clic para crear un acuerdo."
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__comments
@@ -149,7 +150,7 @@ msgstr "Empresa que firma el acuerdo"
 #. module: purchase_recurring_orders
 #: model:ir.actions.server,name:purchase_recurring_orders.cron_recurring_orders_confirm_orders_ir_actions_server
 msgid "Confirm Current Orders"
-msgstr ""
+msgstr "Confirmar órdenes actuales"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__create_uid
@@ -157,7 +158,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__create_uid
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_recurring_agreement_line__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__create_date
@@ -165,7 +166,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__create_date
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_recurring_agreement_line__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_agreement_renewal__date
@@ -184,10 +185,8 @@ msgstr "Fecha de la última orden de compra generada"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__next_expiration_date
-#, fuzzy
-#| msgid "Date when agreement will expired"
 msgid "Date when agreement will expired "
-msgstr "Fecha en que expirará el acuerdo"
+msgstr "Fecha en que vencerá el acuerdo "
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields.selection,name:purchase_recurring_orders.selection__purchase_recurring_agreement__prolong_unit__days
@@ -213,7 +212,7 @@ msgstr "Descripción del producto"
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__display_name
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_recurring_agreement_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_agreement_renewal__date
@@ -233,7 +232,7 @@ msgstr "Fecha de finalización"
 #. module: purchase_recurring_orders
 #: model:ir.model.fields.selection,name:purchase_recurring_orders.selection__purchase_recurring_agreement__state__first
 msgid "First Order Created"
-msgstr "Primer pedido creado"
+msgstr "Primera orden creada"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields.selection,name:purchase_recurring_orders.selection__purchase_recurring_agreement__prolong__fixed
@@ -244,18 +243,18 @@ msgstr "Plazo fijo"
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__message_follower_ids
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Seguidores"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__message_partner_ids
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Seguidores (contactos)"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_order__from_agreement
 msgid "From Agreement?"
-msgstr "¿De Acuerdo?"
+msgstr "¿Proviene de un acuerdo?"
 
 #. module: purchase_recurring_orders
 #: model_terms:ir.ui.view,arch_db:purchase_recurring_orders.purchase_recurring_agreement_view_form
@@ -265,14 +264,12 @@ msgstr "Generar orden inicial"
 #. module: purchase_recurring_orders
 #: model_terms:ir.ui.view,arch_db:purchase_recurring_orders.purchase_recurring_agreement_view_form
 msgid "Generate Next Year Orders"
-msgstr "Generar pedidos del próximo año"
+msgstr "Generar órdenes del próximo año"
 
 #. module: purchase_recurring_orders
 #: model:ir.actions.server,name:purchase_recurring_orders.cron_recurring_orders_generate_orders_ir_actions_server
-#, fuzzy
-#| msgid "Purchase Recurring Orders"
 msgid "Generate Recurring Orders for Next Year"
-msgstr "Órdenes de compra recurrentes"
+msgstr "Generar órdenes recurrentes para el próximo año"
 
 #. module: purchase_recurring_orders
 #: model_terms:ir.ui.view,arch_db:purchase_recurring_orders.purchase_order_form
@@ -283,7 +280,7 @@ msgstr "Generar acuerdo"
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__has_message
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Tiene mensajes"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__id
@@ -292,13 +289,13 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__id
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_recurring_agreement_line__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_agreement_renewal__message_needaction
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Si está marcado, hay mensajes nuevos que requieren su atención."
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_agreement_renewal__message_has_error
@@ -306,12 +303,12 @@ msgstr ""
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__message_has_error
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__order_count
 msgid "Indicates the No. of Orders Generated with this Agreement"
-msgstr "Indica el No. de Órdenes Generadas con este Acuerdo"
+msgstr "Indica el número de órdenes generadas con este acuerdo"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__state
@@ -344,12 +341,12 @@ msgstr "Intervalo en unidades de tiempo para prorrogar el contrato hasta nueva r
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__message_is_follower
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Es seguidor"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_recurring_agreement_line__ordering_unit
 msgid "It indicated the Recurring Time Unit"
-msgstr "Indicó la Unidad de Tiempo Recurrente"
+msgstr "Indica la unidad de tiempo de la recurrencia"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_recurring_agreement_line__last_order_date
@@ -367,7 +364,7 @@ msgstr "Fecha de la última renovación"
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__write_uid
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_recurring_agreement_line__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__write_date
@@ -375,7 +372,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__write_date
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_recurring_agreement_line__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__last_renovation_date
@@ -401,13 +398,13 @@ msgstr "Precio de lista"
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__message_has_error
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Error de entrega del mensaje"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__message_ids
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Mensajes"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields.selection,name:purchase_recurring_orders.selection__purchase_recurring_agreement__prolong_unit__months
@@ -433,12 +430,12 @@ msgstr "Próxima fecha de vencimiento"
 #. module: purchase_recurring_orders
 #: model_terms:ir.ui.view,arch_db:purchase_recurring_orders.view_purchase_order_filter
 msgid "Not from agreements"
-msgstr "No de acuerdos"
+msgstr "No proviene de acuerdos"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__notes
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__notes
@@ -449,35 +446,35 @@ msgstr "Notas sobre el acuerdo de renovación"
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__message_needaction_counter
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Número de acciones"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__number
 msgid "Number of Agreement. Keep Empty to Get the Number Assigned by a Sequence."
-msgstr "Número de Acuerdo. Mantener vacío para obtener el número asignado por una secuencia."
+msgstr "Número del acuerdo. Déjelo vacío para obtener el número asignado por una secuencia."
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__message_has_error_counter
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Número de errores"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_agreement_renewal__message_needaction_counter
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Número de mensajes que requieren una acción"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_agreement_renewal__message_has_error_counter
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Número de mensajes con error de entrega"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__order_count
 msgid "Order Count"
-msgstr ""
+msgstr "Número de órdenes"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__order_ids
@@ -504,38 +501,32 @@ msgstr "Productos"
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__prolong
 msgid "Prolongation"
-msgstr "Prolongación"
+msgstr "Prórroga"
 
 #. module: purchase_recurring_orders
 #: model:ir.actions.server,name:purchase_recurring_orders.cron_recurring_orders_prolong_check_ir_actions_server
-#, fuzzy
-#| msgid "Recurring Orders Agreements"
 msgid ""
 "Prolongation Check for Recurring Orders Agreements\n"
 "            "
-msgstr "Acuerdos de pedidos recurrentes"
+msgstr ""
+"Comprobación de prórroga de acuerdos de órdenes recurrentes\n"
+"            "
 
 #. module: purchase_recurring_orders
 #: model:ir.model,name:purchase_recurring_orders.model_purchase_agreement_renewal
-#, fuzzy
-#| msgid "Agreement Renewals"
 msgid "Purchase Agreement Renewal"
-msgstr "Renovaciones de acuerdos"
+msgstr "Renovación de acuerdo de compra"
 
 #. module: purchase_recurring_orders
 #: model:ir.model,name:purchase_recurring_orders.model_purchase_order
-#, fuzzy
-#| msgid "Purchase Recurring Orders"
 msgid "Purchase Order"
-msgstr "Órdenes de compra recurrentes"
+msgstr "Orden de compra"
 
 #. module: purchase_recurring_orders
 #: model:ir.actions.act_window,name:purchase_recurring_orders.purchase_recurring_agreement_action
 #: model:ir.model,name:purchase_recurring_orders.model_purchase_recurring_agreement
-#, fuzzy
-#| msgid "Purchase Recurring Orders"
 msgid "Purchase Recurring Agreement"
-msgstr "Órdenes de compra recurrentes"
+msgstr "Acuerdo de compra recurrente"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_recurring_agreement_line__quantity
@@ -551,22 +542,18 @@ msgstr "Cantidad del producto"
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__rating_ids
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__rating_ids
 msgid "Ratings"
-msgstr ""
+msgstr "Calificaciones"
 
 #. module: purchase_recurring_orders
 #: model:ir.model,name:purchase_recurring_orders.model_recurring_agreement_line
-#, fuzzy
-#| msgid "Recurring Orders Agreements"
 msgid "Recurring Agreement Line"
-msgstr "Acuerdos de pedidos recurrentes"
+msgstr "Línea de acuerdo recurrente"
 
 #. module: purchase_recurring_orders
 #: model:ir.actions.act_window,name:purchase_recurring_orders.recurring_orders_agreement_action
 #: model:ir.ui.menu,name:purchase_recurring_orders.menu_recurring_order_agreement
-#, fuzzy
-#| msgid "Recurring Orders Agreements"
 msgid "Recurring Order Agreement"
-msgstr "Acuerdos de pedidos recurrentes"
+msgstr "Acuerdo de órdenes recurrentes"
 
 #. module: purchase_recurring_orders
 #: model_terms:ir.ui.view,arch_db:purchase_recurring_orders.purchase_recurring_agreement_view_tree
@@ -583,12 +570,12 @@ msgstr "Referencia del acuerdo"
 #: model_terms:ir.ui.view,arch_db:purchase_recurring_orders.agreement_renewal_view_form
 #: model_terms:ir.ui.view,arch_db:purchase_recurring_orders.purchase_recurring_agreement_view_form
 msgid "Renew Agreement"
-msgstr "Renovar Acuerdo"
+msgstr "Renovar acuerdo"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields.selection,name:purchase_recurring_orders.selection__purchase_recurring_agreement__prolong__recurrent
 msgid "Renewable Fixed Term"
-msgstr "Plazo Fijo Renovable"
+msgstr "Plazo fijo renovable"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__date
@@ -625,7 +612,7 @@ msgstr "Renovaciones"
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__message_has_sms_error
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "Error de entrega por SMS"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__prolong
@@ -635,7 +622,7 @@ msgstr "Establece el plazo del acuerdo. 'Término fijo renovable': Fija un plazo
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_recurring_agreement_line__specific_price
 msgid "Specific Price"
-msgstr "Precio Específico"
+msgstr "Precio específico"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_recurring_agreement_line__specific_price
@@ -680,7 +667,7 @@ msgstr "Unidad de tiempo para el intervalo de prolongación"
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_recurring_agreement_line__uom_id
 msgid "UOM of the product"
-msgstr "UM del producto"
+msgstr "UdM del producto"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__active
@@ -706,13 +693,13 @@ msgstr "UdM"
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_agreement_renewal__website_message_ids
 #: model:ir.model.fields,field_description:purchase_recurring_orders.field_purchase_recurring_agreement__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Mensajes del sitio web"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_agreement_renewal__website_message_ids
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_recurring_agreement__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Historial de comunicaciones del sitio web"
 
 #. module: purchase_recurring_orders
 #: model:ir.model.fields.selection,name:purchase_recurring_orders.selection__purchase_recurring_agreement__prolong_unit__weeks
@@ -745,7 +732,7 @@ msgstr "¡No puede eliminar acuerdos con pedidos confirmados!"
 #. module: purchase_recurring_orders
 #: model:ir.model.fields,help:purchase_recurring_orders.field_purchase_order__recurring_agreement_id
 msgid "this indicates the Purchase Agreement"
-msgstr "esto indica el acuerdo de compra"
+msgstr "Indica el acuerdo de compra"
 
 #~ msgid "Helps to create Purchase Recurring orders"
 #~ msgstr "Ayuda a crear órdenes de compra recurrentes."

@@ -23,6 +23,9 @@ msgid ""
 "                        this transfer request.\n"
 "                    </span>"
 msgstr ""
+"<span>Advertencia: este empleado permanecerá en la misma empresa hasta que la sucursal de destino acepte\n"
+"                        esta solicitud de transferencia.\n"
+"                    </span>"
 
 #. module: hr_employee_transfer
 #: model_terms:ir.ui.view,arch_db:hr_employee_transfer.employee_transfer_view_form
@@ -31,10 +34,8 @@ msgstr "Cancelar"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields.selection,name:hr_employee_transfer.selection__employee_transfer__state__cancel
-#, fuzzy
-#| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Cancelar"
+msgstr "Cancelada"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__company_id
@@ -43,20 +44,18 @@ msgstr "Empresa"
 
 #. module: hr_employee_transfer
 #: model_terms:ir.actions.act_window,help:hr_employee_transfer.employee_transfer_action
-#, fuzzy
-#| msgid "Employee Transfer"
 msgid "Create a new Employee Transfer."
-msgstr "Transferencia de empleado"
+msgstr "Cree una nueva transferencia de empleado."
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__transfer_date
@@ -66,13 +65,13 @@ msgstr "Fecha"
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields.selection,name:hr_employee_transfer.selection__employee_transfer__state__done
 #: model_terms:ir.ui.view,arch_db:hr_employee_transfer.employee_transfer_view_search
 msgid "Done"
-msgstr "Hecho"
+msgstr "Completada"
 
 #. module: hr_employee_transfer
 #: model_terms:ir.ui.view,arch_db:hr_employee_transfer.employee_transfer_view_search
@@ -107,7 +106,7 @@ msgstr "Ingrese cualquier nota relevante sobre el proceso de transferencia o los
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__note
@@ -118,12 +117,12 @@ msgstr "Notas internas"
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__name
@@ -134,14 +133,14 @@ msgstr "Nombre"
 #. module: hr_employee_transfer
 #: model:ir.model.fields,help:hr_employee_transfer.field_employee_transfer__name
 msgid "Name of the Transfer"
-msgstr "Nombre de la Transferencia"
+msgstr "Nombre de la transferencia"
 
 #. module: hr_employee_transfer
 #. odoo-python
 #: code:addons/hr_employee_transfer/models/employee_transfer.py:0
 #: model:ir.model.fields.selection,name:hr_employee_transfer.selection__employee_transfer__state__draft
 msgid "New"
-msgstr "Nuevo"
+msgstr "Nueva"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,help:hr_employee_transfer.field_employee_transfer__state
@@ -152,11 +151,11 @@ msgid ""
 "        Done: Employee is Joined/Received in the transferred Branch.\n"
 "        Cancelled: Transfer is cancelled."
 msgstr ""
-"Nuevo: la transferencia se creó y no está confirmada.\n"
-"        Transferido: la transferencia está confirmada y permanece en este estado hasta que\n"
+"Nueva: la transferencia se creó y no está confirmada.\n"
+"        Transferida: la transferencia está confirmada y permanece en este estado hasta que\n"
 "         la sucursal de destino reciba al empleado.\n"
-"        Hecho: el empleado se incorporó o fue recibido en la sucursal de destino.\n"
-"        Cancelado: la transferencia está cancelada."
+"        Completada: el empleado se incorporó o fue recibido en la sucursal de destino.\n"
+"        Cancelada: la transferencia está cancelada."
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__old_employee_id
@@ -182,7 +181,7 @@ msgstr "Responsable"
 #. module: hr_employee_transfer
 #: model_terms:ir.ui.view,arch_db:hr_employee_transfer.employee_transfer_view_search
 msgid "Responsible Person"
-msgstr "Persona Responsable"
+msgstr "Persona responsable"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,help:hr_employee_transfer.field_employee_transfer__transfer_company_id
@@ -192,7 +191,7 @@ msgstr "Seleccione la empresa a la que se transfiere el empleado"
 #. module: hr_employee_transfer
 #: model:ir.model.fields,help:hr_employee_transfer.field_employee_transfer__employee_id
 msgid "Select the employee who is being transferred."
-msgstr "Seleccione el empleado que está siendo transferido."
+msgstr "Seleccione al empleado que será transferido."
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__state
@@ -223,7 +222,7 @@ msgstr "Transferir a"
 #. module: hr_employee_transfer
 #: model:ir.model.fields,help:hr_employee_transfer.field_employee_transfer__transfer_date
 msgid "Transfer date"
-msgstr "fecha de transferencia"
+msgstr "Fecha de transferencia"
 
 #. module: hr_employee_transfer
 #: model:ir.model.fields,field_description:hr_employee_transfer.field_employee_transfer__transferred
@@ -231,15 +230,13 @@ msgstr "fecha de transferencia"
 #: model:ir.model.fields.selection,name:hr_employee_transfer.selection__employee_transfer__state__transfer
 #: model_terms:ir.ui.view,arch_db:hr_employee_transfer.employee_transfer_view_search
 msgid "Transferred"
-msgstr "Transferido"
+msgstr "Transferida"
 
 #. module: hr_employee_transfer
 #: model:ir.actions.act_window,name:hr_employee_transfer.employee_transfer_action
 #: model:ir.ui.menu,name:hr_employee_transfer.employee_transfer_menu_create_transfer
-#, fuzzy
-#| msgid "Transfer"
 msgid "Transfers"
-msgstr "Transferir"
+msgstr "Transferencias"
 
 #. module: hr_employee_transfer
 #. odoo-python

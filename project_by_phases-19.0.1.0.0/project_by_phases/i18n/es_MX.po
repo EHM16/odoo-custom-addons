@@ -24,7 +24,7 @@ msgstr "Agregar notas internas"
 #. module: project_by_phases
 #: model:ir.model.fields,help:project_by_phases.field_project_phase__company_id
 msgid "By default, current login company will selected here. You can choose other companies also."
-msgstr "De forma predeterminada, aquí se seleccionará la empresa de inicio de sesión actual. También puedes elegir otras empresas."
+msgstr "De forma predeterminada, se seleccionará la empresa actual. También puede elegir otras empresas."
 
 #. module: project_by_phases
 #: model:ir.model.fields,help:project_by_phases.field_project_phase__project_id
@@ -39,24 +39,24 @@ msgstr "Empresa"
 #. module: project_by_phases
 #: model:ir.model,website_form_label:project_by_phases.model_project_task
 msgid "Create a Task"
-msgstr ""
+msgstr "Crear una tarea"
 
 #. module: project_by_phases
 #: model:ir.model.fields,field_description:project_by_phases.field_project_phase__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: project_by_phases
 #: model:ir.model.fields,field_description:project_by_phases.field_project_phase__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: project_by_phases
 #: model:ir.model.fields,field_description:project_by_phases.field_project_phase__display_name
 #: model:ir.model.fields,field_description:project_by_phases.field_project_project__display_name
 #: model:ir.model.fields,field_description:project_by_phases.field_project_task__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: project_by_phases
 #: model:ir.model.fields,field_description:project_by_phases.field_project_phase__end_date
@@ -66,14 +66,14 @@ msgstr "Fecha de finalización"
 #. module: project_by_phases
 #: model:ir.model.fields,help:project_by_phases.field_project_phase__sequence
 msgid "Give a sequence number."
-msgstr "Da un número de secuencia."
+msgstr "Indique un número de secuencia."
 
 #. module: project_by_phases
 #: model:ir.model.fields,field_description:project_by_phases.field_project_phase__id
 #: model:ir.model.fields,field_description:project_by_phases.field_project_project__id
 #: model:ir.model.fields,field_description:project_by_phases.field_project_task__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: project_by_phases
 #: model:ir.model.fields,field_description:project_by_phases.field_project_phase__internal_notes
@@ -89,12 +89,12 @@ msgstr "Es un campo obligatorio, así que seleccione cualquier usuario de la lis
 #. module: project_by_phases
 #: model:ir.model.fields,field_description:project_by_phases.field_project_phase__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: project_by_phases
 #: model:ir.model.fields,field_description:project_by_phases.field_project_phase__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: project_by_phases
 #: model:ir.model.fields,field_description:project_by_phases.field_project_phase__name
@@ -128,10 +128,8 @@ msgstr "Fases del proyecto"
 
 #. module: project_by_phases
 #: model_terms:ir.ui.view,arch_db:project_by_phases.project_phase_view_kanban
-#, fuzzy
-#| msgid "Project"
 msgid "Project:"
-msgstr "Proyecto"
+msgstr "Proyecto:"
 
 #. module: project_by_phases
 #: model:ir.model.fields,help:project_by_phases.field_project_phase__name
@@ -193,16 +191,26 @@ msgid ""
 "\n"
 "        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
 msgstr ""
+"Use estas palabras clave en el título para configurar nuevas tareas:\n"
+"\n"
+"        30h Asigna 30 horas a la tarea\n"
+"        #etiquetas Establece etiquetas en la tarea\n"
+"        @usuario Asigna la tarea a un usuario\n"
+"        ! Establece una prioridad media para la tarea\n"
+"        !! Establece una prioridad alta para la tarea\n"
+"        !!! Establece una prioridad urgente para la tarea\n"
+"\n"
+"        Asegúrese de usar el formato y el orden correctos; por ejemplo: Mejorar la pantalla de configuración 5h #función #v16 @Mitchell !"
 
 #. module: project_by_phases
 #: model_terms:ir.ui.view,arch_db:project_by_phases.project_phase_view_tree
 msgid "phase"
-msgstr "fase"
+msgstr "Fase"
 
 #. module: project_by_phases
 #: model_terms:ir.ui.view,arch_db:project_by_phases.project_phase_view_form
 msgid "project_phase"
-msgstr "fase_proyecto"
+msgstr "Fase del proyecto"
 
 #~ msgid "A Module For Managing Different Phases of Project."
 #~ msgstr "Un módulo para gestionar las diferentes fases del proyecto."

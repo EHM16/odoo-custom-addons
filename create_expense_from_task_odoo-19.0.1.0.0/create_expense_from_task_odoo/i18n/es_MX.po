@@ -28,31 +28,28 @@ msgstr "Crear gasto"
 
 #. module: create_expense_from_task_odoo
 #: model:ir.model,website_form_label:create_expense_from_task_odoo.model_project_task
-#, fuzzy
 #| msgid "Create Expense From Task"
 msgid "Create a Task"
-msgstr "Crear gasto a partir de tarea"
+msgstr "Crear una tarea"
 
 #. module: create_expense_from_task_odoo
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: create_expense_from_task_odoo
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__create_date
-#, fuzzy
 #| msgid "Create Expense"
 msgid "Created on"
-msgstr "Crear gasto"
+msgstr "Creado el"
 
 #. module: create_expense_from_task_odoo
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__display_name
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_hr_expense__display_name
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_project_task__display_name
-#, fuzzy
 #| msgid "Employee Name"
 msgid "Display Name"
-msgstr "Nombre del empleado"
+msgstr "Nombre mostrado"
 
 #. module: create_expense_from_task_odoo
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__employee_name_ids
@@ -68,7 +65,7 @@ msgstr "Gasto"
 #. module: create_expense_from_task_odoo
 #: model:ir.model,name:create_expense_from_task_odoo.model_expense_amount
 msgid "Expense Amount for Creating Expense Records"
-msgstr ""
+msgstr "Importe del gasto para crear registros de gastos"
 
 #. module: create_expense_from_task_odoo
 #: model_terms:ir.ui.view,arch_db:create_expense_from_task_odoo.expense_amount_view_form
@@ -85,22 +82,22 @@ msgstr "Generar gasto"
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_hr_expense__id
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_project_task__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: create_expense_from_task_odoo
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: create_expense_from_task_odoo
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: create_expense_from_task_odoo
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_hr_expense__project_id
 msgid "Project"
-msgstr ""
+msgstr "Proyecto"
 
 #. module: create_expense_from_task_odoo
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_expense_amount__product_id
@@ -111,7 +108,7 @@ msgstr "Nombre del servicio"
 #: model:ir.model,name:create_expense_from_task_odoo.model_project_task
 #: model:ir.model.fields,field_description:create_expense_from_task_odoo.field_hr_expense__task_id
 msgid "Task"
-msgstr ""
+msgstr "Tarea"
 
 #. module: create_expense_from_task_odoo
 #: model:ir.model.fields,help:create_expense_from_task_odoo.field_expense_amount__employee_name_ids
@@ -157,6 +154,16 @@ msgid ""
 "\n"
 "        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
 msgstr ""
+"Use estas palabras clave en el título para configurar tareas nuevas:\n"
+"\n"
+"        30h Asigne 30 horas a la tarea\n"
+"        #etiquetas Establezca etiquetas en la tarea\n"
+"        @usuario Asigne la tarea a un usuario\n"
+"        ! Establezca una prioridad media para la tarea\n"
+"        !! Establezca una prioridad alta para la tarea\n"
+"        !!! Establezca una prioridad urgente para la tarea\n"
+"\n"
+"        Asegúrese de usar el formato y el orden correctos; por ejemplo: Mejorar la pantalla de configuración 5h #función #v16 @Mitchell !"
 
 #~ msgid "This apps helps User to create multiple expense from project task and split the amount between assigns"
 #~ msgstr "Esta aplicación permite crear múltiples gastos desde una tarea de proyecto y distribuir el importe entre los responsables asignados."

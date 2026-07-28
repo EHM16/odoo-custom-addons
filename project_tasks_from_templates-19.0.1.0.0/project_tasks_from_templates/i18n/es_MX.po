@@ -19,7 +19,7 @@ msgstr ""
 #. module: project_tasks_from_templates
 #: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__03_approved
 msgid "Approved"
-msgstr ""
+msgstr "Aprobada"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__user_ids
@@ -29,12 +29,12 @@ msgstr "Personas asignadas"
 #. module: project_tasks_from_templates
 #: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__1_canceled
 msgid "Canceled"
-msgstr ""
+msgstr "Cancelada"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__02_changes_requested
 msgid "Changes Requested"
-msgstr ""
+msgstr "Cambios solicitados"
 
 #. module: project_tasks_from_templates
 #: model_terms:ir.ui.view,arch_db:project_tasks_from_templates.project_project_view_form_simplified_footer
@@ -46,14 +46,14 @@ msgstr "Crear proyecto a partir de plantilla"
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__create_uid
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__create_date
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__create_date
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,help:project_tasks_from_templates.field_project_stage__sequence
@@ -66,15 +66,13 @@ msgstr "Define el orden de esta etapa."
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__display_name
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__display_name
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_type__display_name
-#, fuzzy
-#| msgid "Template Name"
 msgid "Display Name"
-msgstr "Nombre de la plantilla"
+msgstr "Nombre mostrado"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__1_done
 msgid "Done"
-msgstr ""
+msgstr "Hecha"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__description
@@ -93,31 +91,31 @@ msgstr "Ingrese el nombre de la tarea"
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__id
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_type__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__01_in_progress
 msgid "In Progress"
-msgstr ""
+msgstr "En curso"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__show_tasks_page
 msgid "Indicates whether the Sub-Tasks page should be displayed."
-msgstr "Indica si se debe mostrar la página Subtareas."
+msgstr "Indica si debe mostrarse la página de subtareas."
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__write_uid
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__write_uid
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__write_date
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__write_date
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,help:project_tasks_from_templates.field_project_sub_task__child_ids
@@ -151,10 +149,8 @@ msgstr "Tarea principal"
 
 #. module: project_tasks_from_templates
 #: model:ir.model,name:project_tasks_from_templates.model_project_project
-#, fuzzy
-#| msgid "Project Stage"
 msgid "Project"
-msgstr "Etapa del proyecto"
+msgstr "Proyecto"
 
 #. module: project_tasks_from_templates
 #: model:ir.model,name:project_tasks_from_templates.model_project_stage
@@ -164,17 +160,13 @@ msgstr "Etapa del proyecto"
 
 #. module: project_tasks_from_templates
 #: model:ir.model,name:project_tasks_from_templates.model_project_sub_task
-#, fuzzy
-#| msgid "Project Stage"
 msgid "Project Sub Task"
-msgstr "Etapa del proyecto"
+msgstr "Subtarea de proyecto"
 
 #. module: project_tasks_from_templates
 #: model:ir.model,name:project_tasks_from_templates.model_project_task_template
-#, fuzzy
-#| msgid "Project Template"
 msgid "Project Task Template"
-msgstr "Plantilla de proyecto"
+msgstr "Plantilla de tareas de proyecto"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_project__project_template_id
@@ -234,7 +226,7 @@ msgstr "Seleccione los usuarios que están asignados a esta tarea."
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_stage__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Secuencia"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_sub_task__show_tasks_page
@@ -274,10 +266,8 @@ msgstr "Descripción de la tarea"
 
 #. module: project_tasks_from_templates
 #: model:ir.model,name:project_tasks_from_templates.model_project_task_type
-#, fuzzy
-#| msgid "Show Tasks Page"
 msgid "Task Stage"
-msgstr "Mostrar página de tareas"
+msgstr "Etapa de tarea"
 
 #. module: project_tasks_from_templates
 #: model:ir.model.fields,field_description:project_tasks_from_templates.field_project_task_template__task_ids
@@ -304,7 +294,7 @@ msgstr "Ver tarea"
 #. module: project_tasks_from_templates
 #: model:ir.model.fields.selection,name:project_tasks_from_templates.selection__project_sub_task__state__04_waiting_normal
 msgid "Waiting"
-msgstr ""
+msgstr "En espera"
 
 #~ msgid "This app allows your project team to create projecttemplate and task template"
 #~ msgstr "Esta aplicación le permite a su equipo de proyecto crear una plantilla de proyecto y una plantilla de tarea."

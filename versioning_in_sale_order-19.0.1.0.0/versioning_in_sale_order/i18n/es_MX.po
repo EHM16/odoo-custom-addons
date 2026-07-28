@@ -28,15 +28,14 @@ msgstr "Crear versión"
 
 #. module: versioning_in_sale_order
 #: model:ir.model.fields,field_description:versioning_in_sale_order.field_sale_order__current_version_id
-#, fuzzy
 #| msgid "Create Version"
 msgid "Current Version"
-msgstr "Crear versión"
+msgstr "Versión actual"
 
 #. module: versioning_in_sale_order
 #: model:ir.model.fields,field_description:versioning_in_sale_order.field_sale_order__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: versioning_in_sale_order
 #: model:ir.model.fields,help:versioning_in_sale_order.field_sale_order__is_version
@@ -51,7 +50,7 @@ msgstr "Para crear versiones"
 #. module: versioning_in_sale_order
 #: model:ir.model.fields,field_description:versioning_in_sale_order.field_sale_order__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: versioning_in_sale_order
 #: model:ir.model.fields,field_description:versioning_in_sale_order.field_sale_order__is_version
@@ -60,10 +59,9 @@ msgstr "es la versión"
 
 #. module: versioning_in_sale_order
 #: model:ir.model,name:versioning_in_sale_order.model_sale_order
-#, fuzzy
 #| msgid "Sale Order Versions"
 msgid "Sale Order Delivery Split"
-msgstr "Versiones de órdenes de venta"
+msgstr "Orden de venta"
 
 #. module: versioning_in_sale_order
 #. odoo-python
@@ -78,10 +76,9 @@ msgstr "Recuento de versiones de venta"
 
 #. module: versioning_in_sale_order
 #: model:ir.model.fields,field_description:versioning_in_sale_order.field_sale_order__version_ids
-#, fuzzy
 #| msgid "Versions"
 msgid "Version"
-msgstr "Versiones"
+msgstr "Versión"
 
 #. module: versioning_in_sale_order
 #: model_terms:ir.ui.view,arch_db:versioning_in_sale_order.view_order_form

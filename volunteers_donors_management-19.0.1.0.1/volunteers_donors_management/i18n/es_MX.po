@@ -18,36 +18,32 @@ msgstr ""
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
-#, fuzzy
 #| msgid "Allocated Hours"
 msgid "<strong>Allocated Hours</strong>"
-msgstr "Horas asignadas"
+msgstr "<strong>Horas asignadas</strong>"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
-#, fuzzy
 #| msgid "Customer Name:"
 msgid "<strong>Customer Name:</strong>"
-msgstr "Nombre del cliente:"
+msgstr "<strong>Nombre del cliente:</strong>"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
 msgid "<strong>Planned Date</strong>"
-msgstr ""
+msgstr "<strong>Fecha planificada</strong>"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
-#, fuzzy
 #| msgid "Project Manger:"
 msgid "<strong>Project Manger:</strong>"
-msgstr "Gerente del proyecto:"
+msgstr "<strong>Responsable del proyecto:</strong>"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
-#, fuzzy
 #| msgid "Project Report"
 msgid "<u>Project Report</u>"
-msgstr "Reporte del proyecto"
+msgstr "<u>Informe del proyecto</u>"
 
 #. module: volunteers_donors_management
 #: model:ir.model.fields,help:volunteers_donors_management.field_donor_type__description
@@ -77,7 +73,7 @@ msgstr "Fecha de asignación"
 #. module: volunteers_donors_management
 #: model:res.groups.privilege,name:volunteers_donors_management.res_groups_privilege_certificate_license
 msgid "Certificate"
-msgstr ""
+msgstr "Certificado"
 
 #. module: volunteers_donors_management
 #: model:ir.model.fields,help:volunteers_donors_management.field_res_partner__is_donor
@@ -99,41 +95,41 @@ msgstr "Color"
 #. module: volunteers_donors_management
 #: model:ir.ui.menu,name:volunteers_donors_management.volunteers_donors_management_configuration_menu
 msgid "Configuration"
-msgstr ""
+msgstr "Configuración"
 
 #. module: volunteers_donors_management
 #: model:ir.model,name:volunteers_donors_management.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #. module: volunteers_donors_management
 #: model:ir.model,website_form_label:volunteers_donors_management.model_res_partner
 msgid "Create a Customer"
-msgstr ""
+msgstr "Crear un cliente"
 
 #. module: volunteers_donors_management
 #: model:ir.model,website_form_label:volunteers_donors_management.model_project_task
 msgid "Create a Task"
-msgstr ""
+msgstr "Crear una tarea"
 
 #. module: volunteers_donors_management
 #: model:ir.model,website_form_label:volunteers_donors_management.model_crm_lead
 msgid "Create an Opportunity"
-msgstr ""
+msgstr "Crear una oportunidad"
 
 #. module: volunteers_donors_management
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_donor_type__create_uid
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_skill__create_uid
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_type__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: volunteers_donors_management
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_donor_type__create_date
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_skill__create_date
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_type__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
@@ -156,7 +152,7 @@ msgstr "Descripción"
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_skill__display_name
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_type__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.view_partner_form
@@ -186,18 +182,16 @@ msgstr "Tipo de donante"
 
 #. module: volunteers_donors_management
 #: model:ir.ui.menu,name:volunteers_donors_management.donor_type_menu_create_donor_type
-#, fuzzy
 #| msgid "Donor Type"
 msgid "Donor Types"
-msgstr "Tipo de donante"
+msgstr "Tipos de donante"
 
 #. module: volunteers_donors_management
 #: model:ir.actions.act_window,name:volunteers_donors_management.res_partner_donor_action
 #: model:ir.ui.menu,name:volunteers_donors_management.res_partner_menu_create_donors
-#, fuzzy
 #| msgid "Donor"
 msgid "Donors"
-msgstr "Donante"
+msgstr "Donantes"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
@@ -213,7 +207,7 @@ msgstr "Correo electrónico"
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_skill__id
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_type__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.donor_type_view_form
@@ -239,19 +233,19 @@ msgstr "es voluntario"
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_skill__write_uid
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_type__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: volunteers_donors_management
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_donor_type__write_date
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_skill__write_date
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_type__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: volunteers_donors_management
 #: model:ir.model,name:volunteers_donors_management.model_crm_lead
 msgid "Lead"
-msgstr ""
+msgstr "Iniciativa"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
@@ -265,17 +259,15 @@ msgstr "Horas planificadas"
 
 #. module: volunteers_donors_management
 #: model:ir.model,name:volunteers_donors_management.model_project_project
-#, fuzzy
 #| msgid "Project Report"
 msgid "Project"
-msgstr "Reporte del proyecto"
+msgstr "Proyecto"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
-#, fuzzy
 #| msgid "Project Manger:"
 msgid "Project Name :"
-msgstr "Gerente del proyecto:"
+msgstr "Nombre del proyecto:"
 
 #. module: volunteers_donors_management
 #: model:ir.actions.report,name:volunteers_donors_management.project_report_action
@@ -304,10 +296,9 @@ msgstr "Etapa"
 
 #. module: volunteers_donors_management
 #: model:ir.model,name:volunteers_donors_management.model_project_task
-#, fuzzy
 #| msgid "Tasks:"
 msgid "Task"
-msgstr "Tareas:"
+msgstr "Tarea"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
@@ -419,11 +410,21 @@ msgid ""
 "\n"
 "        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
 msgstr ""
+"Use estas palabras clave en el título para configurar tareas nuevas:\n"
+"\n"
+"        30h Asigne 30 horas a la tarea\n"
+"        #etiquetas Establezca etiquetas en la tarea\n"
+"        @usuario Asigne la tarea a un usuario\n"
+"        ! Establezca una prioridad media para la tarea\n"
+"        !! Establezca una prioridad alta para la tarea\n"
+"        !!! Establezca una prioridad urgente para la tarea\n"
+"\n"
+"        Asegúrese de usar el formato y el orden correctos; por ejemplo: Mejorar la pantalla de configuración 5h #función #v16 @Mitchell !"
 
 #. module: volunteers_donors_management
 #: model:res.groups,name:volunteers_donors_management.volunteers_donors_management_user
 msgid "User"
-msgstr ""
+msgstr "Usuario"
 
 #. module: volunteers_donors_management
 #: model_terms:ir.ui.view,arch_db:volunteers_donors_management.report_project_details
@@ -433,10 +434,9 @@ msgstr "Voluntario"
 
 #. module: volunteers_donors_management
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_type__volunteer_code
-#, fuzzy
 #| msgid "Volunteer Type"
 msgid "Volunteer Code"
-msgstr "Tipo de voluntario"
+msgstr "Código del voluntario"
 
 #. module: volunteers_donors_management
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_project_project__project_partner_ids
@@ -462,17 +462,15 @@ msgstr "Habilidad del voluntario"
 
 #. module: volunteers_donors_management
 #: model:ir.model.fields,field_description:volunteers_donors_management.field_volunteer_skill__volunteer_skill_code
-#, fuzzy
 #| msgid "Volunteer Skill"
 msgid "Volunteer Skill Code"
-msgstr "Habilidad del voluntario"
+msgstr "Código de habilidad del voluntario"
 
 #. module: volunteers_donors_management
 #: model:ir.ui.menu,name:volunteers_donors_management.volunteer_skill_menu_create_volunteer_skill
-#, fuzzy
 #| msgid "Volunteer Skill"
 msgid "Volunteer Skills"
-msgstr "Habilidad del voluntario"
+msgstr "Habilidades del voluntario"
 
 #. module: volunteers_donors_management
 #: model:ir.actions.act_window,name:volunteers_donors_management.volunteer_type_action
@@ -489,17 +487,15 @@ msgstr "Tipo de voluntario"
 #. module: volunteers_donors_management
 #: model:ir.actions.act_window,name:volunteers_donors_management.res_partner_action
 #: model:ir.ui.menu,name:volunteers_donors_management.res_partner_menu_create_volunteers
-#, fuzzy
 #| msgid "Volunteer"
 msgid "Volunteers"
-msgstr "Voluntario"
+msgstr "Voluntarios"
 
 #. module: volunteers_donors_management
 #: model:ir.module.category,name:volunteers_donors_management.volunteers_donors_management_category
-#, fuzzy
 #| msgid "Volunteers and Donors Management"
 msgid "Volunteers Donors Management"
-msgstr "Gestión de Voluntarios y Donantes"
+msgstr "Gestión de voluntarios y donantes"
 
 #. module: volunteers_donors_management
 #: model:ir.ui.menu,name:volunteers_donors_management.res_partner_menu_root

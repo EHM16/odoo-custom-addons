@@ -19,7 +19,6 @@ msgstr ""
 #. module: oh_employee_documents_expiry
 #. odoo-python
 #: code:addons/oh_employee_documents_expiry/models/hr_employee.py:0
-#, fuzzy
 #| msgid ""
 #| "<p class=\\\"oe_view_nocontent_create\\\">\n"
 #| "                           Click to Create for New Documents\n"
@@ -29,8 +28,8 @@ msgid ""
 "                           Click to Create for New Documents\n"
 "                        </p>"
 msgstr ""
-"<p class=\\\"oe_view_nocontent_create\\\">\n"
-"                           Haga clic para crear un documento nuevo\n"
+"<p class=\"oe_view_nocontent_create\">\n"
+"                           Haga clic para crear nuevos documentos\n"
 "                        </p>"
 
 #. module: oh_employee_documents_expiry
@@ -54,21 +53,21 @@ msgstr "Recuento de documentos."
 #. module: oh_employee_documents_expiry
 #: model_terms:ir.actions.act_window,help:oh_employee_documents_expiry.hr_document_action
 msgid "Create First Document Template"
-msgstr ""
+msgstr "Crear la primera plantilla de documento"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_document_type__create_uid
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_document__create_uid
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_employee_document__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_document_type__create_date
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_document__create_date
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_employee_document__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,help:oh_employee_documents_expiry.field_hr_employee_document__issue_date
@@ -98,7 +97,7 @@ msgstr "Descripción de los documentos."
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_employee_document__display_name
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_ir_attachment__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_document__name
@@ -114,10 +113,9 @@ msgstr "Número de documento"
 #. module: oh_employee_documents_expiry
 #: model:ir.actions.act_window,name:oh_employee_documents_expiry.hr_document_action
 #: model:ir.ui.menu,name:oh_employee_documents_expiry.hr_document_menu
-#, fuzzy
 #| msgid "Document Type"
 msgid "Document Templates"
-msgstr "Tipo de documento"
+msgstr "Plantillas de documento"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model,name:oh_employee_documents_expiry.model_document_type
@@ -149,44 +147,39 @@ msgstr "Empleado"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.actions.server,name:oh_employee_documents_expiry.ir_cron_scheduler_employee_data_reminder_ir_actions_server
-#, fuzzy
 #| msgid "Open HRMS Employee Documents Expiry"
 msgid "Employee Document Expiration"
-msgstr "Open HRMS: vencimiento de documentos de empleados"
+msgstr "Vencimiento de documentos de empleados"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.actions.act_window,name:oh_employee_documents_expiry.document_type_action
 #: model:ir.ui.menu,name:oh_employee_documents_expiry.document_type_menu
-#, fuzzy
 #| msgid "Document Type"
 msgid "Employee Document Types"
-msgstr "Tipo de documento"
+msgstr "Tipos de documento de empleados"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.actions.act_window,name:oh_employee_documents_expiry.hr_employee_document_action
-#, fuzzy
 #| msgid "Open HRMS Employee Documents Expiry"
 msgid "Employee Documents"
-msgstr "Open HRMS: vencimiento de documentos de empleados"
+msgstr "Documentos de empleados"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_employee_document__employee_ref_id
-#, fuzzy
 #| msgid "Employee"
 msgid "Employee Ref"
-msgstr "Empleado"
+msgstr "Referencia del empleado"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.ui.menu,name:oh_employee_documents_expiry.hr_employee_menu
-#, fuzzy
 #| msgid "Employee"
 msgid "Employees"
-msgstr "Empleado"
+msgstr "Empleados"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields.selection,name:oh_employee_documents_expiry.selection__hr_employee_document__notification_type__everyday
 msgid "Everyday till expiry date"
-msgstr ""
+msgstr "Diariamente hasta la fecha de vencimiento"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_employee_document__expiry_date
@@ -200,17 +193,15 @@ msgstr "Fecha de caducidad de los documentos."
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model,name:oh_employee_documents_expiry.model_hr_document
-#, fuzzy
 #| msgid "Document Type"
 msgid "HR Document Template "
-msgstr "Tipo de documento"
+msgstr "Plantilla de documento de RR. HH. "
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model,name:oh_employee_documents_expiry.model_hr_employee_document
-#, fuzzy
 #| msgid "Open HRMS Employee Documents Expiry"
 msgid "HR Employee Documents"
-msgstr "Open HRMS: vencimiento de documentos de empleados"
+msgstr "Documentos de empleados de RR. HH."
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,help:oh_employee_documents_expiry.field_hr_employee_document__before_days
@@ -224,7 +215,7 @@ msgstr "Cuántos días antes para recibir el correo electrónico de notificació
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_employee_document__id
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_ir_attachment__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_employee_document__issue_date
@@ -236,14 +227,14 @@ msgstr "Fecha de emisión"
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_document__write_uid
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_employee_document__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_document_type__write_date
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_document__write_date
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_hr_employee_document__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,field_description:oh_employee_documents_expiry.field_document_type__name
@@ -273,22 +264,20 @@ msgstr "Tipo de notificación"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields.selection,name:oh_employee_documents_expiry.selection__hr_employee_document__notification_type__multi
-#, fuzzy
 #| msgid "Notification Type"
 msgid "Notification before few days"
-msgstr "Tipo de notificación"
+msgstr "Notificación unos días antes"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields.selection,name:oh_employee_documents_expiry.selection__hr_employee_document__notification_type__everyday_after
 msgid "Notification on and after expiry"
-msgstr ""
+msgstr "Notificación al vencer y después del vencimiento"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields.selection,name:oh_employee_documents_expiry.selection__hr_employee_document__notification_type__single
-#, fuzzy
 #| msgid "Notification Type"
 msgid "Notification on expiry date"
-msgstr "Tipo de notificación"
+msgstr "Notificación en la fecha de vencimiento"
 
 #. module: oh_employee_documents_expiry
 #: model:ir.model.fields,help:oh_employee_documents_expiry.field_hr_employee_document__notification_type
@@ -348,10 +337,9 @@ msgstr "Su documento ha caducado."
 #. module: oh_employee_documents_expiry
 #. odoo-python
 #: code:addons/oh_employee_documents_expiry/models/hr_employee.py:0
-#, fuzzy
 #| msgid "Employee"
 msgid "employee_ref_id"
-msgstr "Empleado"
+msgstr "Referencia del empleado"
 
 #~ msgid "Manages Employee Documents With Expiry Notifications."
 #~ msgstr "Gestiona documentos de empleados con notificaciones de vencimiento."

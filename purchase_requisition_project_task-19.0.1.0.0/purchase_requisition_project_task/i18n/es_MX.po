@@ -19,36 +19,36 @@ msgstr ""
 #. module: purchase_requisition_project_task
 #: model:ir.model,website_form_label:purchase_requisition_project_task.model_project_task
 msgid "Create a Task"
-msgstr ""
+msgstr "Crear una tarea"
 
 #. module: purchase_requisition_project_task
 #: model:ir.model.fields,field_description:purchase_requisition_project_task.field_project_project__display_name
 #: model:ir.model.fields,field_description:purchase_requisition_project_task.field_project_task__display_name
 #: model:ir.model.fields,field_description:purchase_requisition_project_task.field_purchase_requisition__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: purchase_requisition_project_task
 #: model:ir.model.fields,field_description:purchase_requisition_project_task.field_project_project__id
 #: model:ir.model.fields,field_description:purchase_requisition_project_task.field_project_task__id
 #: model:ir.model.fields,field_description:purchase_requisition_project_task.field_purchase_requisition__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: purchase_requisition_project_task
 #: model:ir.model.fields,help:purchase_requisition_project_task.field_purchase_requisition__project_id
 msgid "It helps to get the project from project module"
-msgstr "Ayuda a obtener el proyecto del módulo del proyecto."
+msgstr "Permite seleccionar un proyecto del módulo Proyectos."
 
 #. module: purchase_requisition_project_task
 #: model:ir.model.fields,help:purchase_requisition_project_task.field_project_task__purchase_count
 msgid "It shows the count of the purchase requisitions that we made for the project in smart tab"
-msgstr "Muestra el recuento de las solicitudes de compra que realizamos para el proyecto en pestaña inteligente."
+msgstr "Muestra en el botón inteligente el número de solicitudes de compra relacionadas con la tarea."
 
 #. module: purchase_requisition_project_task
 #: model:ir.model.fields,help:purchase_requisition_project_task.field_project_project__purchase_count
 msgid "It shows the count of the purchase requisitions that we made for the task in smart tab"
-msgstr "Muestra el conteo de las solicitudes de compra que realizamos para la tarea en pestaña inteligente"
+msgstr "Muestra en el botón inteligente el número de solicitudes de compra relacionadas con el proyecto."
 
 #. module: purchase_requisition_project_task
 #: model:ir.model,name:purchase_requisition_project_task.model_project_project
@@ -66,16 +66,14 @@ msgstr "Compra"
 
 #. module: purchase_requisition_project_task
 #: model:ir.model,name:purchase_requisition_project_task.model_purchase_requisition
-#, fuzzy
-#| msgid "No Purchase Requisition"
 msgid "Purchase Requisition"
-msgstr "Sin solicitud de compra"
+msgstr "Solicitud de compra"
 
 #. module: purchase_requisition_project_task
 #: model:ir.model,name:purchase_requisition_project_task.model_project_task
 #: model:ir.model.fields,field_description:purchase_requisition_project_task.field_purchase_requisition__task_ids
 msgid "Task"
-msgstr ""
+msgstr "Tarea"
 
 #. module: purchase_requisition_project_task
 #: model:ir.model.fields,help:purchase_requisition_project_task.field_project_task__display_name
@@ -91,11 +89,21 @@ msgid ""
 "\n"
 "        Make sure to use the right format and order e.g. Improve the configuration screen 5h #feature #v16 @Mitchell !"
 msgstr ""
+"Use estas palabras clave en el título para configurar tareas nuevas:\n"
+"\n"
+"        30h Asigne 30 horas a la tarea\n"
+"        #etiquetas Establezca etiquetas en la tarea\n"
+"        @usuario Asigne la tarea a un usuario\n"
+"        ! Establezca una prioridad media para la tarea\n"
+"        !! Establezca una prioridad alta para la tarea\n"
+"        !!! Establezca una prioridad urgente para la tarea\n"
+"\n"
+"        Asegúrese de usar el formato y el orden correctos; por ejemplo: Mejorar la pantalla de configuración 5h #función #v16 @Mitchell !"
 
 #. module: purchase_requisition_project_task
 #: model:ir.model.fields,help:purchase_requisition_project_task.field_purchase_requisition__task_ids
 msgid "this filed show all the tasks of the selected project."
-msgstr "Este archivo muestra todas las tareas del proyecto seleccionado."
+msgstr "Este campo muestra todas las tareas del proyecto seleccionado."
 
 #~ msgid "Purchase Requisition & Project Task Integration"
 #~ msgstr "Integración de solicitudes de compra con tareas de proyecto"

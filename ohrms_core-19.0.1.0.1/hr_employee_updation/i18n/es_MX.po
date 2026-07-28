@@ -36,6 +36,7 @@ msgstr "Adjunto"
 #: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_hr_employee_view_form
 msgid "Badges are rewards of good work. Give them to people you believe deserve it."
 msgstr ""
+"Las insignias reconocen el buen trabajo. Otórguelas a quienes considere que las merecen."
 
 #. module: hr_employee_updation
 #: model:ir.model.fields,help:hr_employee_updation.field_hr_employee_family__birth_date
@@ -45,7 +46,7 @@ msgstr "Fecha de nacimiento del familiar"
 #. module: hr_employee_updation
 #: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_hr_employee_view_form
 msgid "Click to grant this employee his first badge"
-msgstr ""
+msgstr "Haga clic para otorgar a este empleado su primera insignia"
 
 #. module: hr_employee_updation
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__member_contact
@@ -61,13 +62,13 @@ msgstr "Número de contacto del familiar"
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__create_uid
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: hr_employee_updation
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__create_date
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: hr_employee_updation
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__birth_date
@@ -85,7 +86,7 @@ msgstr "Detalles de dependencia"
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__display_name
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_version__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: hr_employee_updation
 #: model:ir.model,name:hr_employee_updation.model_hr_employee
@@ -95,10 +96,9 @@ msgstr "Empleado"
 
 #. module: hr_employee_updation
 #: model:ir.model,name:hr_employee_updation.model_hr_version
-#, fuzzy
 #| msgid "Employee"
 msgid "Employee Contract"
-msgstr "Empleado"
+msgstr "Contrato del empleado"
 
 #. module: hr_employee_updation
 #: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__joining_date
@@ -139,21 +139,19 @@ msgstr "Otorgar una insignia"
 #. module: hr_employee_updation
 #: model:ir.actions.server,name:hr_employee_updation.ir_con_employee_data_reminder_ir_actions_server
 msgid "HR Employee Data Expiration"
-msgstr ""
+msgstr "Vencimiento de datos del empleado de RR. HH."
 
 #. module: hr_employee_updation
 #: model:ir.model,name:hr_employee_updation.model_hr_employee_family
-#, fuzzy
 #| msgid "Open HRMS Employee Info"
 msgid "HR Employee Family Info"
-msgstr "Open HRMS: información del empleado"
+msgstr "Información familiar del empleado"
 
 #. module: hr_employee_updation
 #: model:ir.model,name:hr_employee_updation.model_hr_employee_relation
-#, fuzzy
 #| msgid "Open HRMS Employee Info"
 msgid "HR Employee Relation"
-msgstr "Open HRMS: información del empleado"
+msgstr "Relación familiar del empleado"
 
 #. module: hr_employee_updation
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__id
@@ -161,7 +159,7 @@ msgstr "Open HRMS: información del empleado"
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__id
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_version__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: hr_employee_updation
 #. odoo-python
@@ -183,13 +181,13 @@ msgstr "Fecha de ingreso"
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__write_uid
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: hr_employee_updation
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__write_date
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: hr_employee_updation
 #: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__personal_mobile
@@ -263,7 +261,7 @@ msgstr "Seleccione el empleado correspondiente"
 #. module: hr_employee_updation
 #: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_hr_employee_view_form
 msgid "to reward this employee for a good action"
-msgstr ""
+msgstr "para reconocer a este empleado por una buena acción"
 
 #~ msgid "Adding Advanced Fields In Employee Master"
 #~ msgstr "Campos avanzados en la ficha del empleado"

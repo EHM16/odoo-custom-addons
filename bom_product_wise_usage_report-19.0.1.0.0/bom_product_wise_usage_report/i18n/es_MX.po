@@ -20,16 +20,17 @@ msgstr ""
 #: model:ir.model,name:bom_product_wise_usage_report.model_bom_usage_details
 msgid " For Generating Products Pdf Reports used in BOM "
 msgstr ""
+" Para generar informes PDF de productos utilizados en listas de materiales "
 
 #. module: bom_product_wise_usage_report
 #: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.stock_move_report_template
 msgid "<strong>Date from :</strong>"
-msgstr ""
+msgstr "<strong>Fecha desde:</strong>"
 
 #. module: bom_product_wise_usage_report
 #: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.stock_move_report_template
 msgid "<strong>Date to :</strong>"
-msgstr ""
+msgstr "<strong>Fecha hasta:</strong>"
 
 #. module: bom_product_wise_usage_report
 #: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.stock_move_report_template
@@ -39,21 +40,17 @@ msgstr "Uso de componentes en listas de materiales"
 #. module: bom_product_wise_usage_report
 #: model:ir.actions.act_window,name:bom_product_wise_usage_report.bom_usage_report_action
 msgid "BOM Usage Details"
-msgstr ""
+msgstr "Detalles de consumo de la LdM"
 
 #. module: bom_product_wise_usage_report
 #: model:ir.actions.report,name:bom_product_wise_usage_report.action_bom_usage_report
-#, fuzzy
-#| msgid "BOM Product Wise Usage Report"
 msgid "BOM Usage PDF Report"
-msgstr "Informe de uso de componentes por producto terminado"
+msgstr "Informe PDF de consumo por LdM"
 
 #. module: bom_product_wise_usage_report
 #: model:ir.ui.menu,name:bom_product_wise_usage_report.bom_usage_report_child_menu
-#, fuzzy
-#| msgid "BOM Product Wise Usage Report"
 msgid "BOM Usage Report"
-msgstr "Informe de uso de componentes por producto terminado"
+msgstr "Informe de consumo por LdM"
 
 #. module: bom_product_wise_usage_report
 #: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.bom_usage_report_view_form
@@ -64,21 +61,23 @@ msgstr "Cancelar"
 #: model_terms:ir.ui.view,arch_db:bom_product_wise_usage_report.stock_move_report_template
 msgid "Component Products<span style=\"margin-left:100px\">Final Products</span>"
 msgstr ""
+"Productos componentes<span style=\"margin-left:100px\">Productos "
+"finales</span>"
 
 #. module: bom_product_wise_usage_report
 #: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: bom_product_wise_usage_report
 #: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: bom_product_wise_usage_report
 #: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: bom_product_wise_usage_report
 #: model:ir.model.fields,help:bom_product_wise_usage_report.field_bom_usage_details__to_date
@@ -93,17 +92,17 @@ msgstr "Fecha desde"
 #. module: bom_product_wise_usage_report
 #: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: bom_product_wise_usage_report
 #: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: bom_product_wise_usage_report
 #: model:ir.model.fields,field_description:bom_product_wise_usage_report.field_bom_usage_details__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: bom_product_wise_usage_report
 #. odoo-python
@@ -141,7 +140,8 @@ msgstr "Descontar órdenes de desensamblaje"
 #. module: bom_product_wise_usage_report
 #: model:ir.model.fields,help:bom_product_wise_usage_report.field_bom_usage_details__un_build_orders
 msgid "Remove the un build orders in report"
-msgstr "Descontar en el informe las cantidades de las órdenes de desensamblaje"
+msgstr ""
+"Descontar en el informe las cantidades de las órdenes de desensamblaje"
 
 #. module: bom_product_wise_usage_report
 #: model:ir.model.fields,help:bom_product_wise_usage_report.field_bom_usage_details__product_ids
@@ -181,7 +181,9 @@ msgstr "UdM"
 #~ msgid ""
 #~ " This module generates a detailed PDF report of \n"
 #~ "     components/products used for manufacturing products."
-#~ msgstr "Este módulo genera un informe PDF detallado de los componentes utilizados para fabricar distintos productos terminados."
+#~ msgstr ""
+#~ "Este módulo genera un informe PDF detallado de los componentes utilizados "
+#~ "para fabricar distintos productos terminados."
 
 #~ msgid "Component Products"
 #~ msgstr "Productos componentes"
@@ -196,4 +198,6 @@ msgstr "UdM"
 #~ msgstr "Productos terminados"
 
 #~ msgid "Generate PDF report of Products used in Bill of materials"
-#~ msgstr "Generar un informe PDF de los productos utilizados en las listas de materiales"
+#~ msgstr ""
+#~ "Generar un informe PDF de los productos utilizados en las listas de "
+#~ "materiales"

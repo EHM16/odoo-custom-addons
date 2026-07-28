@@ -30,18 +30,18 @@ msgstr "Puede seleccionar todas las líneas."
 #: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_move__display_name
 #: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_picking__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: done_quantity_auto_fill
 #: model_terms:ir.ui.view,arch_db:done_quantity_auto_fill.view_picking_form
 msgid "Fill Done Qty"
-msgstr "Llenar cantidad hecha"
+msgstr "Completar cantidad realizada"
 
 #. module: done_quantity_auto_fill
 #: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_move__id
 #: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_picking__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: done_quantity_auto_fill
 #: model:ir.model.fields,field_description:done_quantity_auto_fill.field_stock_move__product_select
@@ -56,22 +56,22 @@ msgstr "Seleccionar todo"
 #. module: done_quantity_auto_fill
 #: model:ir.model.fields,help:done_quantity_auto_fill.field_stock_move__product_select
 msgid "Select products from order line"
-msgstr "Seleccionar productos de la línea de pedido"
+msgstr "Seleccionar productos de la línea de la orden"
 
 #. module: done_quantity_auto_fill
 #: model:ir.model,name:done_quantity_auto_fill.model_stock_move
 msgid "Stock Move Delivery Split"
-msgstr ""
+msgstr "Movimiento de inventario"
 
 #. module: done_quantity_auto_fill
 #: model:ir.model,name:done_quantity_auto_fill.model_stock_picking
 msgid "Transfer"
-msgstr ""
+msgstr "Transferencia"
 
 #. module: done_quantity_auto_fill
 #: model_terms:ir.ui.view,arch_db:done_quantity_auto_fill.view_picking_form
 msgid "Unfill Done Qty"
-msgstr "Desechar cantidad hecha"
+msgstr "Vaciar cantidad realizada"
 
 #. module: done_quantity_auto_fill
 #: model_terms:ir.ui.view,arch_db:done_quantity_auto_fill.view_picking_form

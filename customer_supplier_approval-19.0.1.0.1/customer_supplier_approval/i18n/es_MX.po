@@ -20,19 +20,19 @@ msgstr ""
 #: model:res.groups,name:customer_supplier_approval.customer_supplier_approval_group_admin
 #: model:res.groups.privilege,name:customer_supplier_approval.res_groups_privilege_administrator
 msgid "Administrator"
-msgstr ""
+msgstr "Administrador"
 
 #. module: customer_supplier_approval
 #: model:res.groups,name:customer_supplier_approval.customer_supplier_approval_group_approval
 #: model:res.groups.privilege,name:customer_supplier_approval.res_groups_privilege_approve_partner
 msgid "Allow Approve Partner"
-msgstr ""
+msgstr "Permitir aprobar contactos"
 
 #. module: customer_supplier_approval
 #: model:res.groups,name:customer_supplier_approval.customer_supplier_approval_group_validation
 #: model:res.groups.privilege,name:customer_supplier_approval.res_groups_privilege_validate_partner
 msgid "Allow Validate Partner"
-msgstr ""
+msgstr "Permitir validar contactos"
 
 #. module: customer_supplier_approval
 #: model_terms:ir.ui.view,arch_db:customer_supplier_approval.view_partner_form
@@ -42,22 +42,20 @@ msgstr "Aprobar"
 
 #. module: customer_supplier_approval
 #: model:ir.model.fields.selection,name:customer_supplier_approval.selection__res_partner__state__approved
-#, fuzzy
 #| msgid "Approve"
 msgid "Approved"
-msgstr "Aprobar"
+msgstr "Aprobada"
 
 #. module: customer_supplier_approval
 #: model:ir.model,name:customer_supplier_approval.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #. module: customer_supplier_approval
 #: model:ir.model,website_form_label:customer_supplier_approval.model_res_partner
-#, fuzzy
 #| msgid "Customer"
 msgid "Create a Customer"
-msgstr "Cliente"
+msgstr "Crear un cliente"
 
 #. module: customer_supplier_approval
 #: model:ir.model.fields,field_description:customer_supplier_approval.field_sale_order__partner_id
@@ -76,12 +74,12 @@ msgstr "ID del cliente/proveedor"
 #: model:ir.model.fields,field_description:customer_supplier_approval.field_sale_order__display_name
 #: model:ir.model.fields,field_description:customer_supplier_approval.field_stock_picking__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: customer_supplier_approval
 #: model:ir.model.fields.selection,name:customer_supplier_approval.selection__res_partner__state__draft
 msgid "Draft"
-msgstr ""
+msgstr "Borrador"
 
 #. module: customer_supplier_approval
 #: model:ir.model.fields,field_description:customer_supplier_approval.field_res_partner__is_hide_button
@@ -101,7 +99,7 @@ msgstr "Ocultar botón Validar"
 #: model:ir.model.fields,field_description:customer_supplier_approval.field_sale_order__id
 #: model:ir.model.fields,field_description:customer_supplier_approval.field_stock_picking__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: customer_supplier_approval
 #. odoo-python
@@ -118,12 +116,12 @@ msgstr "¡Solo los gerentes pueden realizar ese movimiento!"
 #. module: customer_supplier_approval
 #: model:ir.module.category,name:customer_supplier_approval.module_approval_validate
 msgid "Partner Approval and Validation"
-msgstr ""
+msgstr "Aprobación y validación de contactos"
 
 #. module: customer_supplier_approval
 #: model:ir.model,name:customer_supplier_approval.model_purchase_order
 msgid "Purchase Order"
-msgstr ""
+msgstr "Orden de compra"
 
 #. module: customer_supplier_approval
 #: model:ir.model.fields,field_description:customer_supplier_approval.field_stock_picking__partner_id
@@ -133,7 +131,7 @@ msgstr "Recibir de"
 #. module: customer_supplier_approval
 #: model:ir.model,name:customer_supplier_approval.model_sale_order
 msgid "Sale Order Delivery Split"
-msgstr ""
+msgstr "Orden de venta"
 
 #. module: customer_supplier_approval
 #: model_terms:ir.ui.view,arch_db:customer_supplier_approval.view_res_partner_filter
@@ -165,7 +163,7 @@ msgstr "Indica si debe ocultarse el botón Validar"
 #. module: customer_supplier_approval
 #: model:ir.model,name:customer_supplier_approval.model_stock_picking
 msgid "Transfer"
-msgstr ""
+msgstr "Transferencia"
 
 #. module: customer_supplier_approval
 #: model:ir.model.fields,help:customer_supplier_approval.field_res_partner__customer_supplier
@@ -176,7 +174,7 @@ msgstr "Identificación única para socios"
 #. module: customer_supplier_approval
 #: model:ir.module.category,description:customer_supplier_approval.module_approval_validate
 msgid "User access level for validating and approving"
-msgstr ""
+msgstr "Nivel de acceso de usuario para validar y aprobar"
 
 #. module: customer_supplier_approval
 #: model_terms:ir.ui.view,arch_db:customer_supplier_approval.view_partner_form
@@ -186,10 +184,9 @@ msgstr "Validar"
 
 #. module: customer_supplier_approval
 #: model:ir.model.fields.selection,name:customer_supplier_approval.selection__res_partner__state__validated
-#, fuzzy
 #| msgid "Validate"
 msgid "Validated"
-msgstr "Validar"
+msgstr "Validado"
 
 #. module: customer_supplier_approval
 #: model:ir.model.fields,field_description:customer_supplier_approval.field_purchase_order__partner_id

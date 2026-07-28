@@ -19,7 +19,7 @@ msgstr ""
 #. module: force_availability_in_stock
 #: model:ir.model.fields,field_description:force_availability_in_stock.field_stock_picking__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: force_availability_in_stock
 #: model_terms:ir.ui.view,arch_db:force_availability_in_stock.view_picking_form
@@ -29,14 +29,12 @@ msgstr "Forzar disponibilidad"
 #. module: force_availability_in_stock
 #: model:ir.model.fields,field_description:force_availability_in_stock.field_stock_picking__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: force_availability_in_stock
 #: model:ir.model.fields,field_description:force_availability_in_stock.field_stock_picking__is_available
-#, fuzzy
-#| msgid "Force Availability"
 msgid "Make Available"
-msgstr "Forzar disponibilidad"
+msgstr "Hacer disponible"
 
 #. module: force_availability_in_stock
 #: model:ir.model.fields,help:force_availability_in_stock.field_stock_picking__is_available
@@ -46,7 +44,7 @@ msgstr "El botón forzar disponibilidad se mostrará según este campo."
 #. module: force_availability_in_stock
 #: model:ir.model,name:force_availability_in_stock.model_stock_picking
 msgid "Transfer"
-msgstr ""
+msgstr "Transferencia"
 
 #~ msgid "Force Availability Button in Delivery"
 #~ msgstr "Botón forzar disponibilidad en entrega"

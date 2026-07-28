@@ -19,7 +19,6 @@ msgstr ""
 #. module: base_accounting_kit
 #. odoo-python
 #: code:addons/base_accounting_kit/models/account_journal.py:0
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
@@ -50,7 +49,6 @@ msgstr ""
 #. module: base_accounting_kit
 #. odoo-python
 #: code:addons/base_accounting_kit/models/account_asset_asset.py:0
-#, fuzzy
 #| msgid "(copy)"
 msgid " (copy)"
 msgstr "(copia)"
@@ -58,7 +56,6 @@ msgstr "(copia)"
 #. module: base_accounting_kit
 #. odoo-python
 #: code:addons/base_accounting_kit/models/account_asset_depreciation_line.py:0
-#, fuzzy
 #| msgid "(grouped)"
 msgid " (grouped)"
 msgstr "(agrupado)"
@@ -82,7 +79,6 @@ msgstr "# de líneas de pago a plazos"
 #. odoo-python
 #: code:addons/base_accounting_kit/models/account_move.py:0
 #: code:addons/base_accounting_kit/models/sale_order.py:0
-#, fuzzy
 #| msgid "%s is in Blocking Stage and has a due amount of %s %s to pay"
 msgid "%s is in  Blocking Stage and has a due amount of %s %s to pay"
 msgstr "%s se encuentra en la etapa de bloqueo y tiene un importe vencido de %s %s por pagar"
@@ -90,17 +86,17 @@ msgstr "%s se encuentra en la etapa de bloqueo y tiene un importe vencido de %s 
 #. module: base_accounting_kit
 #: model:ir.actions.report,print_report_name:base_accounting_kit.action_report_bulk_payment
 msgid "'Bulk Payment - %s' % (object.name)"
-msgstr ""
+msgstr "'Pago masivo - %s' % (object.name)"
 
 #. module: base_accounting_kit
 #: model:ir.actions.report,print_report_name:base_accounting_kit.action_report_followup_letter
 msgid "'Follow-up - %s' % (object.name)"
-msgstr ""
+msgstr "'Seguimiento - %s' % (object.name)"
 
 #. module: base_accounting_kit
 #: model:ir.actions.report,print_report_name:base_accounting_kit.res_partner_action
 msgid "'Statement Report- %s' %(object.name)"
-msgstr ""
+msgstr "'Estado de cuenta - %s' %(object.name)"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_bank_book
@@ -109,17 +105,15 @@ msgstr ": Informe del libro bancario"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_book
-#, fuzzy
 #| msgid "Cash Book Report"
 msgid ": Cash Book Report"
-msgstr "Informe del libro de caja"
+msgstr ": Informe del libro de caja"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.day_book_report_template
-#, fuzzy
 #| msgid ": Bank Book Report"
 msgid ": Day Book Report"
-msgstr ": Informe del libro bancario"
+msgstr ": Informe del libro diario"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_general_ledger
@@ -133,7 +127,6 @@ msgstr ": Balanza de comprobación"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_flow
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                    of\n"
@@ -142,12 +135,11 @@ msgid ""
 "<br/>\n"
 "                                    <strong>Date to :</strong>"
 msgstr ""
-"\n"
-"                    de"
+"<br/>\n"
+"                                    <strong>Fecha hasta:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_bulk_payment_document
-#, fuzzy
 #| msgid ""
 #| "Tel:\n"
 #| "                                "
@@ -155,8 +147,8 @@ msgid ""
 "<br/>\n"
 "                                <strong>Type:</strong>"
 msgstr ""
-"Teléfono:\n"
-"                                "
+"<br/>\n"
+"                                <strong>Tipo:</strong>"
 
 #. module: base_accounting_kit
 #: model:mail.template,body_html:base_accounting_kit.mail_template_followup
@@ -200,46 +192,84 @@ msgid ""
 "                </div>\n"
 "            "
 msgstr ""
+"<div style=\"margin:0px;padding:0px;font-size:13px;\">\n"
+"                    <p>Estimado <t t-out=\"object.name or ''\">cliente</t>:</p>\n"
+"                    <p>\n"
+"                        Según nuestros registros, las siguientes facturas continúan\n"
+"                        pendientes de pago y ya están vencidas. Le solicitamos realizar\n"
+"                        el pago a la brevedad.\n"
+"                    </p>\n"
+"                    <table border=\"1\" width=\"100%\" style=\"border-collapse:collapse;margin:12px 0;\">\n"
+"                        <thead>\n"
+"                            <tr style=\"background-color:#f2f2f2;\">\n"
+"                                <th style=\"padding:6px;text-align:left;\">Factura</th>\n"
+"                                <th style=\"padding:6px;text-align:left;\">Fecha</th>\n"
+"                                <th style=\"padding:6px;text-align:left;\">Fecha de vencimiento</th>\n"
+"                                <th style=\"padding:6px;text-align:right;\">Importe pendiente</th>\n"
+"                            </tr>\n"
+"                        </thead>\n"
+"                        <tbody>\n"
+"                            <t t-foreach=\"object.invoice_list\" t-as=\"inv\">\n"
+"                                <tr>\n"
+"                                    <td style=\"padding:6px;\"><t t-out=\"inv.name or ''\"/></td>\n"
+"                                    <td style=\"padding:6px;\"><t t-out=\"inv.invoice_date or ''\"/></td>\n"
+"                                    <td style=\"padding:6px;\"><t t-out=\"inv.invoice_date_due or ''\"/></td>\n"
+"                                    <td style=\"padding:6px;text-align:right;\">\n"
+"                                        <t t-out=\"inv.amount_residual\" t-options=\"{'widget': 'monetary', 'display_currency': inv.currency_id}\"/>\n"
+"                                    </td>\n"
+"                                </tr>\n"
+"                            </t>\n"
+"                        </tbody>\n"
+"                    </table>\n"
+"                    <p>\n"
+"                        <strong>Total vencido:\n"
+"                            <t t-out=\"object.total_overdue\" t-options=\"{'widget': 'monetary', 'display_currency': object.env.company.currency_id}\"/>\n"
+"                        </strong>\n"
+"                    </p>\n"
+"                    <p>Si ya realizó el pago, ignore este mensaje.</p>\n"
+"                    <p>Saludos cordiales,<br/><t t-out=\"object.env.company.name or ''\"/></p>\n"
+"                </div>\n"
+"            "
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_followup_view_kanban
 msgid "<i class=\"fa fa-building\" role=\"img\" aria-label=\"Enterprise\"/>"
-msgstr ""
+msgstr "<i class=\"fa fa-building\" role=\"img\" aria-label=\"Empresa\"/>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_bank_statement_line_view_kanban
-#, fuzzy
 #| msgid ""
 #| "Pleasant Hill CA 94523\n"
 #| "                                                "
 msgid ""
 "<i class=\"fa fa-check me-1\"/>\n"
 "                                                Matched"
-msgstr "Pleasant Hill CA 94523                                                "
+msgstr ""
+"<i class=\"fa fa-check me-1\"/>\n"
+"                                                Conciliado"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.import_bank_statement_view_form
 msgid "<i>Upload csv or xlsx or ofx or qif file format</i>"
-msgstr ""
+msgstr "<i>Cargue un archivo en formato csv, xlsx, ofx o qif</i>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_bank_reconcile_widget_form
 msgid "<span class=\"ml4 mr4\">in</span>"
-msgstr ""
+msgstr "<span class=\"ml4 mr4\">en</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_lock_date_view_form
 msgid "<span class=\"text-muted\"><i>to lock bills</i></span>"
-msgstr ""
+msgstr "<span class=\"text-muted\"><i>para bloquear facturas de proveedor</i></span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_lock_date_view_form
 msgid "<span class=\"text-muted\"><i>to lock invoices</i></span>"
-msgstr ""
+msgstr "<span class=\"text-muted\"><i>para bloquear facturas de cliente</i></span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid ""
 #| "Tax\n"
 #| "                                                    16%\n"
@@ -249,12 +279,12 @@ msgid ""
 "                                                    18,750.00\n"
 "                                                </span>"
 msgstr ""
-"Impuesto\n"
-"                                                    16%                                                "
+"<span class=\"text-nowrap\">$\n"
+"                                                    18,750.00\n"
+"                                                </span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
@@ -271,17 +301,14 @@ msgid ""
 "                                                    </span>\n"
 "                                                </span>"
 msgstr ""
-"\n"
-"                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
-"                                ¡Nada que hacer aquí!\n"
-"                            </p>\n"
-"                            <p>\n"
-"                                No se encontraron transacciones que coincidan con sus filtros.\n"
-"                            </p>"
+"<span class=\"text-nowrap\">$\n"
+"                                                    <span class=\"oe_currency_value\">\n"
+"                                                        143,750.00\n"
+"                                                    </span>\n"
+"                                                </span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
@@ -298,17 +325,14 @@ msgid ""
 "                                        </span>\n"
 "                                    </span>"
 msgstr ""
-"\n"
-"                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
-"                                ¡Nada que hacer aquí!\n"
-"                            </p>\n"
-"                            <p>\n"
-"                                No se encontraron transacciones que coincidan con sus filtros.\n"
-"                            </p>"
+"<span class=\"text-nowrap\">$\n"
+"                                        <span class=\"oe_currency_value\">\n"
+"                                            117,500.00\n"
+"                                        </span>\n"
+"                                    </span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
@@ -325,27 +349,24 @@ msgid ""
 "                                        </span>\n"
 "                                    </span>"
 msgstr ""
-"\n"
-"                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
-"                                ¡Nada que hacer aquí!\n"
-"                            </p>\n"
-"                            <p>\n"
-"                                No se encontraron transacciones que coincidan con sus filtros.\n"
-"                            </p>"
+"<span class=\"text-nowrap\">$\n"
+"                                        <span class=\"oe_currency_value\">\n"
+"                                            7,500.00\n"
+"                                        </span>\n"
+"                                    </span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 msgid "<span class=\"text-nowrap\">1,500.00</span>"
-msgstr ""
+msgstr "<span class=\"text-nowrap\">1,500.00</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 msgid "<span class=\"text-nowrap\">23,500.00</span>"
-msgstr ""
+msgstr "<span class=\"text-nowrap\">23,500.00</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid ""
 #| "Tax\n"
 #| "                                                    16%\n"
@@ -355,12 +376,12 @@ msgid ""
 "                                                    15%\n"
 "                                                </span>"
 msgstr ""
-"Impuesto\n"
-"                                                    16%                                                "
+"<span class=\"text-nowrap\">Impuesto\n"
+"                                                    15%\n"
+"                                                </span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
@@ -377,27 +398,24 @@ msgid ""
 "                                                <br/>United States\n"
 "                                            </span>"
 msgstr ""
-"\n"
-"                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
-"                                ¡Nada que hacer aquí!\n"
-"                            </p>\n"
-"                            <p>\n"
-"                                No se encontraron transacciones que coincidan con sus filtros.\n"
-"                            </p>"
+"<span class=\"w-100 o_force_ltr\" itemprop=\"streetAddress\">77\n"
+"                                                Santa Barbara\n"
+"                                                Rd<br/>Pleasant Hill CA 94523\n"
+"                                                <br/>Estados Unidos\n"
+"                                            </span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 msgid "<span id=\"line_tax_ids\">15.00%</span>"
-msgstr ""
+msgstr "<span id=\"line_tax_ids\">15.00%</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 msgid "<span itemprop=\"name\">Deco Addict</span>"
-msgstr ""
+msgstr "<span itemprop=\"name\">Deco Addict</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                                    Amount\n"
@@ -407,13 +425,12 @@ msgid ""
 "                                    Amount\n"
 "                                </span>"
 msgstr ""
-"\n"
+"<span>\n"
 "                                    Importe\n"
-"                                "
+"                                </span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
@@ -430,41 +447,38 @@ msgid ""
 "                                                    </span>\n"
 "                                                </span>"
 msgstr ""
-"\n"
-"                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
-"                                ¡Nada que hacer aquí!\n"
-"                            </p>\n"
-"                            <p>\n"
-"                                No se encontraron transacciones que coincidan con sus filtros.\n"
-"                            </p>"
+"<span>$\n"
+"                                                    <span class=\"oe_currency_value\">\n"
+"                                                        125,000.00\n"
+"                                                    </span>\n"
+"                                                </span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 msgid "<span>5.000</span>"
-msgstr ""
+msgstr "<span>5.000</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 msgid "<span>Amount</span>"
-msgstr ""
+msgstr "<span>Importe</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_financial
 msgid "<span>Comp</span>"
-msgstr ""
+msgstr "<span>Comparación</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
-#, fuzzy
 #| msgid "Description"
 msgid "<span>Description</span>"
-msgstr "Descripción"
+msgstr "<span>Descripción</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
 msgid "<span>Disc.%</span>"
-msgstr ""
+msgstr "<span>Desc.%</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
@@ -472,49 +486,47 @@ msgid ""
 "<span>Invoice</span>\n"
 "                        <span>INV/2020/07/0003</span>"
 msgstr ""
+"<span>Factura</span>\n"
+"                        <span>INV/2020/07/0003</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_agedpartnerbalance
 msgid "<span>Not due</span>"
-msgstr ""
+msgstr "<span>No vencido</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid "Payment terms: 300 Days"
 msgid "<span>Payment terms: 300 Days</span>"
-msgstr "Condiciones de pago: 300 días"
+msgstr "<span>Condiciones de pago: 300 días</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
 msgid "<span>Quantity</span>"
-msgstr ""
+msgstr "<span>Cantidad</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid "Sample Name"
 msgid "<span>Sample Name</span>"
-msgstr "Nombre de la muestra"
+msgstr "<span>Nombre de muestra</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
 msgid "<span>Taxes</span>"
-msgstr ""
+msgstr "<span>Impuestos</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
-#, fuzzy
 #| msgid "Unit Price"
 msgid "<span>Unit Price</span>"
-msgstr "Precio unitario"
+msgstr "<span>Precio unitario</span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                                        Four person modern office workstation\n"
@@ -525,12 +537,13 @@ msgid ""
 "                                        Four person modern office workstation\n"
 "                                    </span>"
 msgstr ""
-"\n"
-"                                        Estación de trabajo de oficina moderna para cuatro personas"
+"<span>[FURN_8220] Escritorio para cuatro personas\n"
+"                                        <br/>\n"
+"                                        Estación de trabajo de oficina moderna para cuatro personas\n"
+"                                    </span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                                        Three Seater Sofa with Lounger in Steel\n"
@@ -543,18 +556,18 @@ msgid ""
 "                                        Grey Colour\n"
 "                                    </span>"
 msgstr ""
-"\n"
-"                                        Sofá de tres plazas con chaise longue en\n"
-"                                        color gris acero"
+"<span>[FURN_8999] Sofá de tres plazas\n"
+"                                        <br/>\n"
+"                                        Sofá de tres plazas con chaise longue en color gris acero\n"
+"                                    </span>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
 msgid "<strong class=\"mr16\">Subtotal</strong>"
-msgstr ""
+msgstr "<strong class=\"mr16\">Subtotal</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
-#, fuzzy
 #| msgid ""
 #| "Tax\n"
 #| "                                                    16%\n"
@@ -566,37 +579,39 @@ msgid ""
 "                        <br/>\n"
 "                        <br/>"
 msgstr ""
-"Impuesto\n"
-"                                                    16%                                                "
+"<strong class=\"text-center\">Escanéeme con su aplicación\n"
+"                            bancaria.\n"
+"                        </strong>\n"
+"                        <br/>\n"
+"                        <br/>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_flow
 msgid "<strong>Balance</strong>"
-msgstr ""
+msgstr "<strong>Saldo</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_bulk_payment_document
 msgid "<strong>Bank:</strong>"
-msgstr ""
+msgstr "<strong>Banco:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_journal_audit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_partnerledger
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_tax
 msgid "<strong>Company:</strong>"
-msgstr ""
+msgstr "<strong>Empresa:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_flow
 msgid "<strong>Credit</strong>"
-msgstr ""
+msgstr "<strong>Crédito</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
-#, fuzzy
 #| msgid "Customer Code:"
 msgid "<strong>Customer Code:</strong>"
-msgstr "Código de cliente:"
+msgstr "<strong>Código de cliente:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.day_book_report_template
@@ -609,7 +624,7 @@ msgstr "Código de cliente:"
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_tax
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_trial_balance
 msgid "<strong>Date from :</strong>"
-msgstr ""
+msgstr "<strong>Fecha desde:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.day_book_report_template
@@ -621,64 +636,60 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_tax
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_trial_balance
 msgid "<strong>Date to :</strong>"
-msgstr ""
+msgstr "<strong>Fecha hasta:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_bulk_payment_document
 msgid "<strong>Date:</strong>"
-msgstr ""
+msgstr "<strong>Fecha:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_flow
 msgid "<strong>Debit</strong>"
-msgstr ""
+msgstr "<strong>Débito</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_trial_balance
-#, fuzzy
 #| msgid "Display Account:"
 msgid "<strong>Display Account:</strong>"
-msgstr "Mostrar cuenta:"
+msgstr "<strong>Mostrar cuenta:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_bank_book
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_book
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_general_ledger
-#, fuzzy
 #| msgid "Display Accounts"
 msgid "<strong>Display Account</strong>"
-msgstr "Mostrar cuentas"
+msgstr "<strong>Mostrar cuentas</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
 msgid "<strong>Due Date:</strong>"
-msgstr ""
+msgstr "<strong>Fecha de vencimiento:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_journal_audit
-#, fuzzy
 #| msgid "Entries Sorted By:"
 msgid "<strong>Entries Sorted By:</strong>"
-msgstr "Asientos ordenados por:"
+msgstr "<strong>Asientos ordenados por:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
 msgid "<strong>Incoterm:</strong>"
-msgstr ""
+msgstr "<strong>Incoterm:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
-#, fuzzy
 #| msgid "Invoice Date:"
 msgid "<strong>Invoice Date:</strong>"
-msgstr "Fecha de la factura:"
+msgstr "<strong>Fecha de la factura:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_journal_audit
 msgid "<strong>Journal:</strong>"
-msgstr ""
+msgstr "<strong>Diario:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.day_book_report_template
@@ -686,56 +697,55 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_book
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_general_ledger
 msgid "<strong>Journals:</strong>"
-msgstr ""
+msgstr "<strong>Diarios:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_flow
 msgid "<strong>Name</strong>"
-msgstr ""
+msgstr "<strong>Nombre</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_agedpartnerbalance
 msgid "<strong>Partner's:</strong>"
-msgstr ""
+msgstr "<strong>Contactos:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_agedpartnerbalance
-#, fuzzy
 #| msgid "Period Length (days)"
 msgid "<strong>Period Length (days)</strong>"
-msgstr "Duración del período (días)"
+msgstr "<strong>Duración del periodo (días)</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_tax
 msgid "<strong>Purchase</strong>"
-msgstr ""
+msgstr "<strong>Compras</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
 msgid "<strong>Reference:</strong>"
-msgstr ""
+msgstr "<strong>Referencia:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_bank_book
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_book
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_general_ledger
 msgid "<strong>Sorted By:</strong>"
-msgstr ""
+msgstr "<strong>Ordenado por:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
 msgid "<strong>Source:</strong>"
-msgstr ""
+msgstr "<strong>Origen:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_agedpartnerbalance
 msgid "<strong>Start Date:</strong>"
-msgstr ""
+msgstr "<strong>Fecha de inicio:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 msgid "<strong>Subtotal</strong>"
-msgstr ""
+msgstr "<strong>Subtotal</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.day_book_report_template
@@ -748,28 +758,26 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_journal_audit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_partnerledger
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_trial_balance
-#, fuzzy
 #| msgid "Target Moves:"
 msgid "<strong>Target Moves:</strong>"
-msgstr "Asientos objetivo:"
+msgstr "<strong>Asientos objetivo:</strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_followup_letter_document
-#, fuzzy
 #| msgid "Total overdue:"
 msgid "<strong>Total overdue: </strong>"
-msgstr "Total vencido:"
+msgstr "<strong>Total vencido: </strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_bulk_payment_document
 msgid "<strong>Total: </strong>"
-msgstr ""
+msgstr "<strong>Total: </strong>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_journal_audit
 msgid "<strong>Total</strong>"
-msgstr ""
+msgstr "<strong>Total</strong>"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_res_partner__warning_stage
@@ -780,11 +788,10 @@ msgstr "Se mostrará una advertencia cuando el cliente seleccionado supere el im
 #. module: base_accounting_kit
 #: model:res.groups,name:base_accounting_kit.group_account_dashboard
 msgid "Access to Accounting Dashboard"
-msgstr ""
+msgstr "Acceso al tablero de contabilidad"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_followup_letter_document
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                            According to our records, the following invoices are\n"
@@ -796,10 +803,9 @@ msgid ""
 "                            still unpaid and now overdue. We kindly ask you to\n"
 "                            arrange payment at your earliest convenience."
 msgstr ""
-"\n"
-"                            Según nuestros registros, las siguientes facturas \n"
-"                            continúan pendientes de pago y ya están vencidas. \n"
-"                            Le agradeceremos realizar el pago a la brevedad. "
+"Según nuestros registros, las siguientes facturas continúan\n"
+"                            pendientes de pago y ya están vencidas. Le agradeceremos\n"
+"                            realizar el pago a la brevedad."
 
 #. module: base_accounting_kit
 #. odoo-javascript
@@ -821,59 +827,51 @@ msgstr "Informe de antigüedad de saldos de cuentas"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_bank_book_report
-#, fuzzy
 #| msgid ": Bank Book Report"
 msgid "Account Bank Book Report"
-msgstr ": Informe del libro bancario"
+msgstr "Informe del libro bancario"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_cash_book_report
-#, fuzzy
 #| msgid "Cash Book Report"
 msgid "Account Cash Book Report"
 msgstr "Informe del libro de caja"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_common_account_report
-#, fuzzy
 #| msgid "Account Report"
 msgid "Account Common Account Report"
-msgstr "Informe de cuenta"
+msgstr "Informe contable común"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_common_partner_report
-#, fuzzy
 #| msgid "Account Report"
 msgid "Account Common Partner Report"
-msgstr "Informe de cuenta"
+msgstr "Informe común de contactos"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_common_report
-#, fuzzy
 #| msgid "Account Report"
 msgid "Account Common Report"
-msgstr "Informe de cuenta"
+msgstr "Informe contable común"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_asset_depreciation_confirmation__date
-#, fuzzy
 #| msgid "Account Type"
 msgid "Account Date"
-msgstr "Tipo de cuenta"
+msgstr "Fecha contable"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_day_book_report
-#, fuzzy
 #| msgid "Account Report"
 msgid "Account Day Book Report"
-msgstr "Informe de cuenta"
+msgstr "Informe del libro diario"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_followup
-#, fuzzy
 #| msgid "Send Follow-up"
 msgid "Account Follow-up"
-msgstr "Enviar seguimiento"
+msgstr "Seguimiento contable"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_group
@@ -885,24 +883,21 @@ msgstr "Grupos de cuentas"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_report_partner_ledger
-#, fuzzy
 #| msgid "Partner Ledger"
 msgid "Account Partner Ledger"
 msgstr "Libro mayor de contactos"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_print_journal
-#, fuzzy
 #| msgid "Account Total"
 msgid "Account Print Journal"
-msgstr "Total de la cuenta"
+msgstr "Impresión de diario contable"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_recurring_entries_line
-#, fuzzy
 #| msgid "Monthly Recurring Revenue"
 msgid "Account Recurring Entries Line"
-msgstr "Ingresos recurrentes mensuales"
+msgstr "Línea de asientos recurrentes"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_financial_report
@@ -911,7 +906,7 @@ msgstr "Ingresos recurrentes mensuales"
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_financial_report_view_search
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_financial_report_view_tree
 msgid "Account Report"
-msgstr "Informe de cuenta"
+msgstr "Informe contable"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_cash_flow_report__account_report_id
@@ -989,15 +984,14 @@ msgstr "Información contable"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_recurring_payments
-#, fuzzy
 #| msgid "Monthly Recurring Revenue"
 msgid "Accounting Recurring Payment"
-msgstr "Ingresos recurrentes mensuales"
+msgstr "Pago contable recurrente"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_report_xlsx_mixin
 msgid "Accounting Report XLSX Export Mixin"
-msgstr ""
+msgstr "Mixin de exportación XLSX de informes contables"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_book_report__account_ids
@@ -1030,51 +1024,48 @@ msgstr "Depreciación acumulada"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__message_needaction
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__message_needaction
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__message_needaction
-#, fuzzy
 #| msgid "No action needed"
 msgid "Action Needed"
-msgstr "No se necesita acción"
+msgstr "Acción requerida"
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.actions_menu
-#, fuzzy
 #| msgid "Transactions"
 msgid "Actions"
-msgstr "Transacciones"
+msgstr "Acciones"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__active
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_category__active
 msgid "Active"
-msgstr ""
+msgstr "Activo"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__active_limit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_users__active_limit
-#, fuzzy
 #| msgid "Credit Limit"
 msgid "Active Credit Limit"
-msgstr "Límite de crédito"
+msgstr "Límite de crédito activo"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__activity_ids
 msgid "Activities"
-msgstr ""
+msgstr "Actividades"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Decoración de excepción de actividad"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Estado de la actividad"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__activity_type_icon
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "Icono del tipo de actividad"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_bank_statement_line_form_bank_reconcile_widget
@@ -1106,10 +1097,9 @@ msgstr "Agregue al menos un pago al lote."
 
 #. module: base_accounting_kit
 #: model:ir.actions.server,name:base_accounting_kit.action_add_payments_to_bulk
-#, fuzzy
 #| msgid "Bulk Payment"
 msgid "Add to Bulk Payment"
-msgstr "Pago masivo"
+msgstr "Agregar al pago masivo"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_asset_view_form
@@ -1120,7 +1110,7 @@ msgstr "Opciones adicionales"
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.followup_line_view_form
 msgid "After"
-msgstr ""
+msgstr "Después de"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_aged_balance_view
@@ -1128,14 +1118,13 @@ msgstr ""
 #: model:ir.ui.menu,name:base_accounting_kit.menu_aged_trial_balance
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_agedpartnerbalance
 msgid "Aged Partner Balance"
-msgstr "Saldos de Socios por Antigüedad"
+msgstr "Saldos vencidos por contacto"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_report_base_accounting_kit_report_agedpartnerbalance
-#, fuzzy
 #| msgid "Aged Partner Balance"
 msgid "Aged Partner Balance Report"
-msgstr "Saldos de Socios por Antigüedad"
+msgstr "Informe de saldos vencidos por contacto"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_balance_report__display_account__all
@@ -1144,11 +1133,10 @@ msgstr "Saldos de Socios por Antigüedad"
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_common_account_report__display_account__all
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_report_general_ledger__display_account__all
 msgid "All"
-msgstr ""
+msgstr "Todas"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_trial_balance
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                    of\n"
@@ -1157,12 +1145,11 @@ msgid ""
 "All\n"
 "                                    Entries"
 msgstr ""
-"\n"
-"                    de"
+"Todos los\n"
+"                                    asientos"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_trial_balance
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                    of\n"
@@ -1171,8 +1158,8 @@ msgid ""
 "All\n"
 "                                    Posted Entries"
 msgstr ""
-"\n"
-"                    de"
+"Todos los\n"
+"                                    asientos contabilizados"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_aged_trial_balance__target_move__all
@@ -1204,7 +1191,6 @@ msgstr "Todos los asientos"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_book
-#, fuzzy
 #| msgid ""
 #| "Tel:\n"
 #| "                                "
@@ -1212,8 +1198,8 @@ msgid ""
 "All Posted\n"
 "                                Entries"
 msgstr ""
-"Teléfono:\n"
-"                                "
+"Todos los asientos\n"
+"                                contabilizados"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_aged_trial_balance__target_move__posted
@@ -1244,7 +1230,6 @@ msgstr "Todos los asientos contabilizados"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_trial_balance
-#, fuzzy
 #| msgid "All accounts'"
 msgid "All accounts"
 msgstr "Todas las cuentas"
@@ -1293,10 +1278,9 @@ msgstr "Importe adeudado"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__amount_total
-#, fuzzy
 #| msgid "Account Total"
 msgid "Amount Total"
-msgstr "Total de la cuenta"
+msgstr "Importe total"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_asset_revaluation__value_increase
@@ -1337,14 +1321,13 @@ msgstr "Cuenta analítica"
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__analytic_distribution
 msgid "Analytic Distribution"
-msgstr ""
+msgstr "Distribución analítica"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__analytic_precision
-#, fuzzy
 #| msgid "Analytic Account"
 msgid "Analytic Precision"
-msgstr "Cuenta analítica"
+msgstr "Precisión analítica"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_depreciation_line__asset_id
@@ -1373,10 +1356,9 @@ msgstr "Categoría de activo"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_asset_depreciation_confirmation
-#, fuzzy
 #| msgid "Assets Depreciation Lines"
 msgid "Asset Depreciation Confirmation"
-msgstr "Líneas de depreciación de activos"
+msgstr "Confirmación de depreciación de activos"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.asset_modify_view_form
@@ -1407,10 +1389,9 @@ msgstr "Nombre del activo"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_asset_revaluation
-#, fuzzy
 #| msgid "Asset revaluation"
 msgid "Asset Revaluation"
-msgstr "Revaluación de activo"
+msgstr "Revaluación de activos"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_move_line__asset_start_date
@@ -1428,10 +1409,9 @@ msgstr "Tipo de activo"
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_asset_asset_list_normal_purchase
 #: model:ir.ui.menu,name:base_accounting_kit.menu_action_account_asset_asset_list_normal_purchase
-#, fuzzy
 #| msgid "Asset Type"
 msgid "Asset Types"
-msgstr "Tipo de activo"
+msgstr "Tipos de activo"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_asset_category
@@ -1449,10 +1429,9 @@ msgstr "Activo creado"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_asset_depreciation_line
-#, fuzzy
 #| msgid "Assets Depreciation Lines"
 msgid "Asset depreciation line"
-msgstr "Líneas de depreciación de activos"
+msgstr "Línea de depreciación de activo"
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -1493,7 +1472,7 @@ msgstr "El valor del activo aumentó en %s. Se contabilizó el asiento de revalu
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_asset_asset
 msgid "Asset/Revenue Recognition"
-msgstr ""
+msgstr "Reconocimiento de activos/ingresos"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_assets0
@@ -1523,10 +1502,9 @@ msgstr "Líneas de depreciación de activos"
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.menu_finance_config_assets
-#, fuzzy
 #| msgid "Cost of Revenue"
 msgid "Assets and Revenues"
-msgstr "Costo de ingresos"
+msgstr "Activos e ingresos"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_asset_view_search
@@ -1554,14 +1532,13 @@ msgstr "Activos en funcionamiento"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__message_attachment_count
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__message_attachment_count
 msgid "Attachment Count"
-msgstr ""
+msgstr "Número de archivos adjuntos"
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.account_reports_audit
-#, fuzzy
 #| msgid "Account Reports"
 msgid "Audit Reports"
-msgstr "Informes de cuenta"
+msgstr "Informes de auditoría"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__auto_post
@@ -1575,10 +1552,9 @@ msgstr "Conciliación automática"
 
 #. module: base_accounting_kit
 #: model:ir.actions.server,name:base_accounting_kit.ir_cron_bank_auto_reconcile_ir_actions_server
-#, fuzzy
 #| msgid "Show Unreconciled Bank Statement Lines"
 msgid "Auto-Reconcile Bank Statement Lines"
-msgstr "Mostrar líneas de estados de cuenta bancarios no conciliadas"
+msgstr "Conciliar automáticamente líneas del estado de cuenta bancario"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__open_asset
@@ -1589,7 +1565,7 @@ msgstr "Confirmar activos automáticamente"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__style_overwrite__0
 msgid "Automatic formatting"
-msgstr ""
+msgstr "Formato automático"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_recurring_invoice__auto_post
@@ -1616,19 +1592,17 @@ msgstr "Saldo"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_partner_form
-#, fuzzy
 #| msgid "Balance"
 msgid "Balance Due"
-msgstr "Saldo"
+msgstr "Saldo pendiente"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_balancesheet0
 #: model:ir.actions.act_window,name:base_accounting_kit.action_balance_sheet_report
 #: model:ir.ui.menu,name:base_accounting_kit._account_financial_reports_balance_sheet
-#, fuzzy
 #| msgid "Off-Balance Sheet"
 msgid "Balance Sheet"
-msgstr "Fuera de balance"
+msgstr "Balance general"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__journal_id
@@ -1638,10 +1612,9 @@ msgstr "Banco"
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.account_bank_book_menu
-#, fuzzy
 #| msgid "Bank Book Report"
 msgid "Bank Book"
-msgstr "Informe del libro bancario"
+msgstr "Libro bancario"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_bank_book_view
@@ -1665,10 +1638,9 @@ msgstr "Referencia bancaria"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__bank_state
-#, fuzzy
 #| msgid "Bank Statement"
 msgid "Bank State"
-msgstr "Estado de cuenta bancario"
+msgstr "Estado bancario"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_bank_statement_view_form
@@ -1677,10 +1649,9 @@ msgstr "Estado de cuenta bancario"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_bank_statement_line
-#, fuzzy
 #| msgid "Bank Statement"
 msgid "Bank Statement Line"
-msgstr "Estado de cuenta bancario"
+msgstr "Línea del estado de cuenta bancario"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__account_type_ids__asset_cash
@@ -1722,12 +1693,12 @@ msgstr "Posición del texto del cuerpo"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__body_text_position__bl
 msgid "Bottom Left"
-msgstr ""
+msgstr "Inferior izquierda"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__body_text_position__br
 msgid "Bottom Right"
-msgstr ""
+msgstr "Inferior derecha"
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -1771,17 +1742,15 @@ msgstr "Cancelar activo"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_asset__state__cancelled
-#, fuzzy
 #| msgid "Cancel"
 msgid "Cancelled"
-msgstr "Cancelar"
+msgstr "Cancelado"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
-#, fuzzy
 #| msgid "Multiple Invoice"
 msgid "Cancelled Invoice"
-msgstr "Factura múltiple"
+msgstr "Factura cancelada"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_res_partner__blocking_stage
@@ -1791,10 +1760,9 @@ msgstr "No se pueden realizar ventas cuando el cliente seleccionado supera el im
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.account_cash_book_menu
-#, fuzzy
 #| msgid "Cash Book Report"
 msgid "Cash Book"
-msgstr "Informe del libro de caja"
+msgstr "Libro de caja"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_cash_book_view
@@ -1817,10 +1785,9 @@ msgstr "Informe de flujo de caja"
 #: model:ir.actions.act_window,name:base_accounting_kit.action_cash_flow_report
 #: model:ir.actions.report,name:base_accounting_kit.action_report_cash_flow
 #: model:ir.ui.menu,name:base_accounting_kit.menu_account_cash_flow_report
-#, fuzzy
 #| msgid "Cash Flow type"
 msgid "Cash Flow Statement"
-msgstr "Tipo de flujo de caja"
+msgstr "Estado de flujo de efectivo"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_account__cash_flow_type
@@ -1832,14 +1799,14 @@ msgstr "Tipo de flujo de caja"
 #: model:account.financial.report,name:base_accounting_kit.cash_in_from_operation0
 #: model:account.financial.report,name:base_accounting_kit.cash_in_investing0
 msgid "Cash In"
-msgstr ""
+msgstr "Entrada de efectivo"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.cash_out_financial1
 #: model:account.financial.report,name:base_accounting_kit.cash_out_investing1
 #: model:account.financial.report,name:base_accounting_kit.cash_out_operation1
 msgid "Cash Out"
-msgstr ""
+msgstr "Salida de efectivo"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_asset_view_search
@@ -1855,7 +1822,7 @@ msgstr "Categoría de activo"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__text_align__center
 msgid "Center"
-msgstr ""
+msgstr "Centro"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_journal__text_align
@@ -1883,10 +1850,9 @@ msgstr "Referencia del cheque"
 
 #. module: base_accounting_kit
 #: model:res.groups,name:base_accounting_kit.group_account_chief
-#, fuzzy
 #| msgid "Asset Account"
 msgid "Chief Accountant"
-msgstr "Cuenta de activos"
+msgstr "Contador principal"
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -1931,12 +1897,11 @@ msgstr "Elija el período para el cual desea contabilizar automáticamente las l
 #. module: base_accounting_kit
 #: model_terms:ir.actions.act_window,help:base_accounting_kit.action_account_recurring_payments_view
 msgid "Click to create new recurring payment template"
-msgstr ""
+msgstr "Haga clic para crear una plantilla de pago recurrente"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_asset__state__close
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__asset_asset_report__state__close
-#, fuzzy
 #| msgid "Closed"
 msgid "Close"
 msgstr "Cerrado"
@@ -1959,14 +1924,13 @@ msgstr "Etiqueta de columna"
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_common_journal_report
 msgid "Common Journal Report"
-msgstr ""
+msgstr "Informe común de diarios"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_res_company
-#, fuzzy
 #| msgid "Company"
 msgid "Companies"
-msgstr "Empresa"
+msgstr "Empresas"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_aged_trial_balance__company_id
@@ -2000,10 +1964,9 @@ msgstr "Empresa"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_followup__name
-#, fuzzy
 #| msgid "Company"
 msgid "Company Name"
-msgstr "Empresa"
+msgstr "Nombre de la empresa"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.cash_flow_report_view
@@ -2043,7 +2006,7 @@ msgstr "Calcular la depreciación"
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Ajustes de configuración"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_account_journal_form
@@ -2052,7 +2015,6 @@ msgstr "Configurar el diseño de copia"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_multiple_invoice_layout_configurator
-#, fuzzy
 #| msgid "Configure Copy Layout"
 msgid "Configure Copy layout"
 msgstr "Configurar el diseño de copia"
@@ -2067,7 +2029,7 @@ msgstr "Confirmar"
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Contacto"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.financial_report_cost_of_revenue
@@ -2088,24 +2050,21 @@ msgstr "Cuenta contraparte"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_bank_statement_create_form_bank_reconcile_widget
-#, fuzzy
 #| msgid "Customer Statement"
 msgid "Create Statement"
-msgstr "Declaración del cliente"
+msgstr "Crear estado de cuenta"
 
 #. module: base_accounting_kit
 #: model:ir.model,website_form_label:base_accounting_kit.model_res_partner
-#, fuzzy
 #| msgid "Created Asset Moves"
 msgid "Create a Customer"
-msgstr "Movimientos de activos creados"
+msgstr "Crear un cliente"
 
 #. module: base_accounting_kit
 #: model_terms:ir.actions.act_window,help:base_accounting_kit.action_account_recurring_invoice
-#, fuzzy
 #| msgid "Recurring Template"
 msgid "Create a recurring invoice template"
-msgstr "Plantilla recurrente"
+msgstr "Crear una plantilla de factura recurrente"
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -2155,10 +2114,9 @@ msgstr "Movimientos de ingresos creados"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_kit_account_tax_report__create_uid
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice__create_uid
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice_layout__create_uid
-#, fuzzy
 #| msgid "Sorted By:"
 msgid "Created by"
-msgstr "Ordenado por:"
+msgstr "Creado por"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_aged_trial_balance__create_date
@@ -2196,10 +2154,9 @@ msgstr "Ordenado por:"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_kit_account_tax_report__create_date
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice__create_date
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice_layout__create_date
-#, fuzzy
 #| msgid "Created Asset Moves"
 msgid "Created on"
-msgstr "Movimientos de activos creados"
+msgstr "Creado el"
 
 #. module: base_accounting_kit
 #. odoo-javascript
@@ -2217,10 +2174,9 @@ msgstr "Crédito"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_payments__credit_account
-#, fuzzy
 #| msgid "Asset Account"
 msgid "Credit Account"
-msgstr "Cuenta de activos"
+msgstr "Cuenta de crédito"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__account_type_ids__liability_credit_card
@@ -2280,7 +2236,6 @@ msgstr "Moneda"
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_fx_revaluation
 #: model:ir.ui.menu,name:base_accounting_kit.menu_account_fx_revaluation
-#, fuzzy
 #| msgid "Foreign Currency Revaluation"
 msgid "Currency Revaluation"
 msgstr "Revaluación de moneda extranjera"
@@ -2317,18 +2272,16 @@ msgstr "Límite de crédito del cliente"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_recurring_invoice__move_type__out_invoice
-#, fuzzy
 #| msgid "Customer Code:"
 msgid "Customer Invoice"
-msgstr "Código de cliente:"
+msgstr "Factura de cliente"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__customer_report_ids
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_users__customer_report_ids
-#, fuzzy
 #| msgid "Customer Code:"
 msgid "Customer Report"
-msgstr "Código de cliente:"
+msgstr "Informe de cliente"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_partner_form
@@ -2337,10 +2290,9 @@ msgstr "Declaración del cliente"
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.account_reports_daily_reports
-#, fuzzy
 #| msgid "Tax Report"
 msgid "Daily Reports"
-msgstr "Informe de impuestos"
+msgstr "Informes diarios"
 
 #. module: base_accounting_kit
 #. odoo-javascript
@@ -2408,22 +2360,20 @@ msgstr "Fechas"
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.account_day_book_menu
 msgid "Day Book"
-msgstr ""
+msgstr "Libro diario"
 
 #. module: base_accounting_kit
 #: model:ir.actions.report,name:base_accounting_kit.day_book_pdf_report
-#, fuzzy
 #| msgid "Bank Book Report"
 msgid "Day Book PDF Report"
-msgstr "Informe del libro bancario"
+msgstr "Informe PDF del libro diario"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_day_book_view
 #: model:ir.model,name:base_accounting_kit.model_report_base_accounting_kit_day_book_report_template
-#, fuzzy
 #| msgid "Bank Book Report"
 msgid "Day Book Report"
-msgstr "Informe del libro bancario"
+msgstr "Informe del libro diario"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_recurring_invoice__interval_type__days
@@ -2447,16 +2397,15 @@ msgstr "Débito"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_payments__debit_account
-#, fuzzy
 #| msgid "Asset Account"
 msgid "Debit Account"
-msgstr "Cuenta de activos"
+msgstr "Cuenta de débito"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_asset__method__degressive
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_category__method__degressive
 msgid "Declining"
-msgstr ""
+msgstr "Degresivo"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_asset_view_form
@@ -2482,11 +2431,13 @@ msgid ""
 "Define a partner, invoice lines and a schedule; running\n"
 "                templates generate invoices automatically."
 msgstr ""
+"Defina un contacto, las líneas de factura y una programación; al ejecutar\n"
+"                las plantillas se generarán facturas automáticamente."
 
 #. module: base_accounting_kit
 #: model_terms:ir.actions.act_window,help:base_accounting_kit.action_account_followup_definition_form
 msgid "Define follow-up levels and their related actions"
-msgstr ""
+msgstr "Defina niveles de seguimiento y sus acciones relacionadas"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__method_progress_factor
@@ -2665,10 +2616,9 @@ msgstr "Mostrar columnas de débito / crédito"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_config_settings__display_name
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__display_name
 #: model:ir.model.fields,field_description:base_accounting_kit.field_sale_order__display_name
-#, fuzzy
 #| msgid "Display Type"
 msgid "Display Name"
-msgstr "Tipo de visualización"
+msgstr "Nombre mostrado"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_journal__multiple_invoice_type
@@ -2678,22 +2628,20 @@ msgstr "Tipo de visualización"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__display_detail__detail_flat
-#, fuzzy
 #| msgid "Display Account"
 msgid "Display children flat"
-msgstr "Mostrar cuenta"
+msgstr "Mostrar elementos secundarios sin jerarquía"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__display_detail__detail_with_hierarchy
 msgid "Display children with hierarchy"
-msgstr ""
+msgstr "Mostrar elementos secundarios con jerarquía"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_financial_report__display_detail
-#, fuzzy
 #| msgid "Display Type"
 msgid "Display details"
-msgstr "Tipo de visualización"
+msgstr "Mostrar detalles"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_asset_dispose__date
@@ -2725,17 +2673,15 @@ msgstr "Ingresos por la venta"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__distribution_analytic_account_ids
-#, fuzzy
 #| msgid "Analytic Account"
 msgid "Distribution Analytic Account"
-msgstr "Cuenta analítica"
+msgstr "Cuenta de distribución analítica"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__text_position__body
-#, fuzzy
 #| msgid "Document Type"
 msgid "Document Body"
-msgstr "Tipo de documento"
+msgstr "Cuerpo del documento"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__move_type
@@ -2769,10 +2715,9 @@ msgstr "Borrador"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
-#, fuzzy
 #| msgid "Invoice"
 msgid "Draft Invoice"
-msgstr "Factura"
+msgstr "Factura en borrador"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__due_amount
@@ -2789,18 +2734,16 @@ msgstr "Fecha de vencimiento"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_followup_line__delay
-#, fuzzy
 #| msgid "Due Date"
 msgid "Due Days"
-msgstr "Fecha de vencimiento"
+msgstr "Días de vencimiento"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_payment__effective_date
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_payment_register__effective_date
-#, fuzzy
 #| msgid "Effective date of PDC"
 msgid "Effective Date"
-msgstr "Fecha efectiva del cheque posfechado"
+msgstr "Fecha efectiva"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_payment__effective_date
@@ -2861,10 +2804,9 @@ msgstr "Fecha de finalización"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_print_journal__sort_selection
-#, fuzzy
 #| msgid "Entries Sorted By:"
 msgid "Entries Sorted by"
-msgstr "Asientos ordenados por:"
+msgstr "Asientos ordenados por"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.day_book_report_template
@@ -2893,7 +2835,6 @@ msgstr "Error al leer el archivo CSV: %s"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_expense0
-#, fuzzy
 #| msgid "Expenses"
 msgid "Expense"
 msgstr "Gastos"
@@ -2966,30 +2907,27 @@ msgstr "Informe financiero"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_financial_report__style_overwrite
-#, fuzzy
 #| msgid "Financial Report"
 msgid "Financial Report Style"
-msgstr "Informe financiero"
+msgstr "Estilo del informe financiero"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_financial_report_tree
 #: model:ir.model,name:base_accounting_kit.model_financial_report
-#, fuzzy
 #| msgid "Financial Report"
 msgid "Financial Reports"
-msgstr "Informe financiero"
+msgstr "Informes financieros"
 
 #. module: base_accounting_kit
 #: model:ir.actions.report,name:base_accounting_kit.financial_report_pdf
-#, fuzzy
 #| msgid "Financial Report"
 msgid "Financial reports"
-msgstr "Informe financiero"
+msgstr "Informes financieros"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_financing_activity1
 msgid "Financing Activities"
-msgstr ""
+msgstr "Actividades de financiamiento"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.res_config_settings_view_form_base_accounting_kit
@@ -2998,15 +2936,14 @@ msgstr "Año fiscal"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_config_settings__fiscalyear_last_day
-#, fuzzy
 #| msgid "Fiscal Year"
 msgid "Fiscalyear Last Day"
-msgstr "Año fiscal"
+msgstr "Último día del ejercicio fiscal"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_config_settings__fiscalyear_last_month
 msgid "Fiscalyear Last Month"
-msgstr ""
+msgstr "Último mes del ejercicio fiscal"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__account_type_ids__asset_fixed
@@ -3015,17 +2952,15 @@ msgstr "Activos fijos"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_followup_line__followup_id
-#, fuzzy
 #| msgid "Follow-up"
 msgid "Follow Ups"
-msgstr "Seguimiento"
+msgstr "Seguimientos"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_followup_line__name
-#, fuzzy
 #| msgid "Follow-up sent."
 msgid "Follow-Up Action"
-msgstr "Seguimiento enviado."
+msgstr "Acción de seguimiento"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_followup__followup_line_ids
@@ -3042,17 +2977,15 @@ msgstr "Seguimiento '%s' enviado a %s."
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_followup_line
-#, fuzzy
 #| msgid "Follow-up Steps"
 msgid "Follow-up Criteria"
-msgstr "Pasos de seguimiento"
+msgstr "Criterio de seguimiento"
 
 #. module: base_accounting_kit
 #: model:ir.actions.report,name:base_accounting_kit.action_report_followup_letter
-#, fuzzy
 #| msgid "Follow-up Level"
 msgid "Follow-up Letter"
-msgstr "Nivel de seguimiento"
+msgstr "Carta de seguimiento"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__followup_level_id
@@ -3062,18 +2995,16 @@ msgstr "Nivel de seguimiento"
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.account_followup_menu
-#, fuzzy
 #| msgid "Follow-up Level"
 msgid "Follow-up Levels"
-msgstr "Nivel de seguimiento"
+msgstr "Niveles de seguimiento"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_view_list_customer_statements
 #: model:ir.ui.menu,name:base_accounting_kit.customer_statements_menu
-#, fuzzy
 #| msgid "Follow-up Steps"
 msgid "Follow-up Reports"
-msgstr "Pasos de seguimiento"
+msgstr "Informes de seguimiento"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.res_partner_statements_view_tree
@@ -3097,10 +3028,9 @@ msgstr "Seguimiento enviado."
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__message_follower_ids
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__message_follower_ids
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__message_follower_ids
-#, fuzzy
 #| msgid "Follow-up"
 msgid "Followers"
-msgstr "Seguimiento"
+msgstr "Seguidores"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__message_partner_ids
@@ -3108,7 +3038,7 @@ msgstr "Seguimiento"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__message_partner_ids
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Seguidores (contactos)"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__followup_status
@@ -3119,12 +3049,12 @@ msgstr "Estado de seguimiento"
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_bank_statement_line__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
+msgstr "Icono de Font Awesome, por ejemplo, fa-tasks"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__text_position__footer
 msgid "Footer"
-msgstr ""
+msgstr "Pie de página"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_financial_report__sign
@@ -3138,6 +3068,9 @@ msgid ""
 "                possible to use print and e-mail templates to send specific messages to\n"
 "                the customer."
 msgstr ""
+"Para cada paso, especifique las acciones que se realizarán y el plazo en días.\n"
+"                Puede utilizar plantillas impresas y de correo electrónico para enviar\n"
+"                mensajes específicos al cliente."
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_fx_revaluation
@@ -3148,17 +3081,15 @@ msgstr "Revaluación de moneda extranjera"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__form_balance
-#, fuzzy
 #| msgid "Balance"
 msgid "Form Balance"
-msgstr "Saldo"
+msgstr "Saldo del formulario"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__form_name
-#, fuzzy
 #| msgid "File Name"
 msgid "Form Name"
-msgstr "Nombre del archivo"
+msgstr "Nombre del formulario"
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -3186,6 +3117,8 @@ msgid ""
 "From this report, you can have an overview on all depreciation's. The\n"
 "            search bar can also be used to personalize your assets depreciation reporting."
 msgstr ""
+"Este informe ofrece una visión general de todas las depreciaciones. La\n"
+"            barra de búsqueda también permite personalizar el informe de depreciación de activos."
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -3210,17 +3143,15 @@ msgstr "Libro mayor"
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_report_general_ledger
 #: model:ir.model,name:base_accounting_kit.model_report_base_accounting_kit_report_general_ledger
-#, fuzzy
 #| msgid "Partner Ledger Report"
 msgid "General Ledger Report"
-msgstr "Informe del libro mayor de contactos"
+msgstr "Informe del libro mayor"
 
 #. module: base_accounting_kit
 #: model:ir.actions.server,name:base_accounting_kit.account_asset_cron_ir_actions_server
-#, fuzzy
 #| msgid "Assets Depreciation Lines"
 msgid "Generate Asset Depreciation Entries"
-msgstr "Líneas de depreciación de activos"
+msgstr "Generar asientos de depreciación de activos"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.asset_depreciation_confirmation_view_form
@@ -3239,24 +3170,21 @@ msgstr "Generar ahora"
 
 #. module: base_accounting_kit
 #: model:ir.actions.server,name:base_accounting_kit.recurring_template_cron_ir_actions_server
-#, fuzzy
 #| msgid "Generate Entries"
 msgid "Generate Recurring Entries"
-msgstr "Generar entradas"
+msgstr "Generar asientos recurrentes"
 
 #. module: base_accounting_kit
 #: model:ir.actions.server,name:base_accounting_kit.account_recurring_invoice_cron_ir_actions_server
-#, fuzzy
 #| msgid "Recurring Invoices"
 msgid "Generate Recurring Invoices"
-msgstr "Facturas recurrentes"
+msgstr "Generar facturas recurrentes"
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.account_reports_generic_statements
-#, fuzzy
 #| msgid "Bank Statement"
 msgid "Generic Statements"
-msgstr "Estado de cuenta bancario"
+msgstr "Estados de cuenta generales"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_followup_line__sequence
@@ -3270,10 +3198,9 @@ msgstr "Importe bruto"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.financial_report_gross_profit
-#, fuzzy
 #| msgid "Gross Amount"
 msgid "Gross Profit"
-msgstr "Importe bruto"
+msgstr "Utilidad bruta"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__value
@@ -3297,7 +3224,7 @@ msgstr "Entradas de diario de grupo"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__has_message
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Tiene mensajes"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__has_due
@@ -3309,12 +3236,12 @@ msgstr "Tiene saldo vencido"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__text_position__header
 msgid "Header"
-msgstr ""
+msgstr "Encabezado"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__financial_report__view_format__horizontal
 msgid "Horizontal"
-msgstr ""
+msgstr "Horizontal"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_account__id
@@ -3380,7 +3307,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__id
 #: model:ir.model.fields,field_description:base_accounting_kit.field_sale_order__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.import_bank_statement_view_form
@@ -3390,12 +3317,12 @@ msgstr "IMPORTAR"
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__activity_exception_icon
 msgid "Icon"
-msgstr ""
+msgstr "Icono"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_bank_statement_line__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Icono para indicar una excepción de actividad."
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_asset_asset__message_needaction
@@ -3403,7 +3330,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_accounting_kit.field_account_bulk_payment__message_needaction
 #: model:ir.model.fields,help:base_accounting_kit.field_account_recurring_invoice__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Si está marcado, hay mensajes nuevos que requieren su atención."
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_asset_asset__message_has_error
@@ -3415,11 +3342,10 @@ msgstr ""
 #: model:ir.model.fields,help:base_accounting_kit.field_account_recurring_invoice__message_has_error
 #: model:ir.model.fields,help:base_accounting_kit.field_account_recurring_invoice__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_followup_letter_document
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                            If payment has already been made, please disregard\n"
@@ -3429,8 +3355,8 @@ msgid ""
 "If payment has already been made, please disregard\n"
 "                            this letter."
 msgstr ""
-"\n"
-"                            Si ya realizó el pago, haga caso omiso de esta carta."
+"Si ya realizó el pago, haga caso omiso\n"
+"                            de esta carta."
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_bank_statement_line__to_check
@@ -3447,10 +3373,9 @@ msgstr "Si seleccionó la fecha, este campo le permite agregar una fila para mos
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_journal_dashboard_kanban_view
-#, fuzzy
 #| msgid "report"
 msgid "Import"
-msgstr "Informe"
+msgstr "Importar"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.import_bank_statement_view_form
@@ -3460,7 +3385,7 @@ msgstr "Importar estado de cuenta bancario en formato CSV o XLSX"
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_import_bank_statement
 msgid "Import button"
-msgstr ""
+msgstr "Botón de importación"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__res_partner__followup_status__in_need_of_action
@@ -3477,7 +3402,7 @@ msgstr "Para poder imprimir varios cheques a la vez, deben pertenecer al mismo d
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_bulk_payment__batch_type__inbound
 msgid "Inbound"
-msgstr ""
+msgstr "Entrante"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_book_report__initial_balance
@@ -3515,7 +3440,7 @@ msgstr "Declaración no válida"
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_investing_activity0
 msgid "Investing Activities"
-msgstr ""
+msgstr "Actividades de inversión"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__invoice_id
@@ -3532,10 +3457,9 @@ msgstr "Nombre de la copia de la factura"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__invoice_count
-#, fuzzy
 #| msgid "Invoice No."
 msgid "Invoice Count"
-msgstr "Factura No."
+msgstr "Número de facturas"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_partner_form
@@ -3557,7 +3481,7 @@ msgstr "Líneas de factura"
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_partner_form
 msgid "Invoice No."
-msgstr "Factura No."
+msgstr "Núm. de factura"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.res_partner_statement_report_template
@@ -3582,10 +3506,9 @@ msgstr "Facturas/Débito"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__message_is_follower
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__message_is_follower
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__message_is_follower
-#, fuzzy
 #| msgid "Follow-up"
 msgid "Is Follower"
-msgstr "Seguimiento"
+msgstr "Es seguidor"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__is_warning
@@ -3612,7 +3535,7 @@ msgstr "Registrará el costo de ventas."
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__style_overwrite__5
 msgid "Italic Text (smaller)"
-msgstr ""
+msgstr "Texto en cursiva (más pequeño)"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_asset_view_form
@@ -3645,10 +3568,9 @@ msgstr "Diario"
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_bank_book_report__sortby__sort_journal_partner
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_cash_book_report__sortby__sort_journal_partner
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_report_general_ledger__sortby__sort_journal_partner
-#, fuzzy
 #| msgid "Journal and Partner"
 msgid "Journal & Partner"
-msgstr "Diario y Socio"
+msgstr "Diario y contacto"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_print_journal__name
@@ -3682,31 +3604,28 @@ msgstr "ID del diario"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_move_line
-#, fuzzy
 #| msgid "Journal ID"
 msgid "Journal Item"
-msgstr "ID del diario"
+msgstr "Apunte contable"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_report_base_accounting_kit_report_journal_audit
-#, fuzzy
 #| msgid "Account Report"
 msgid "Journal Report"
-msgstr "Informe de cuenta"
+msgstr "Informe de diario"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__journal_type
-#, fuzzy
 #| msgid "Journal"
 msgid "Journal Type"
-msgstr "Diario"
+msgstr "Tipo de diario"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_bank_book
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_cash_book
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_general_ledger
 msgid "Journal and Partner"
-msgstr "Diario y Socio"
+msgstr "Diario y contacto"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_import_bank_statement__journal_id
@@ -3742,7 +3661,6 @@ msgstr "Diarios contables"
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_print_journal_menu
 #: model:ir.actions.report,name:base_accounting_kit.action_report_journal
 #: model:ir.ui.menu,name:base_accounting_kit.menu_print_journal
-#, fuzzy
 #| msgid "Journal Audit"
 msgid "Journals Audit"
 msgstr "Auditoría de diarios"
@@ -3750,7 +3668,7 @@ msgstr "Auditoría de diarios"
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice_layout__layout
 msgid "Key"
-msgstr ""
+msgstr "Clave"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_bank_statement_line_view_tree
@@ -3801,10 +3719,9 @@ msgstr "Último día"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_kit_account_tax_report__write_uid
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice__write_uid
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice_layout__write_uid
-#, fuzzy
 #| msgid "Last Day"
 msgid "Last Updated by"
-msgstr "Último día"
+msgstr "Última actualización por"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_aged_trial_balance__write_date
@@ -3843,7 +3760,7 @@ msgstr "Último día"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice__write_date
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice_layout__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_res_partner__followup_level_id
@@ -3875,7 +3792,7 @@ msgstr "Déjelo vacío para usar la cuenta predeterminada del producto/diario."
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__text_align__left
 msgid "Left"
-msgstr ""
+msgstr "Izquierda"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_financial_report__level
@@ -3886,7 +3803,7 @@ msgstr "Nivel"
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_liability0
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_liabilitysum0
 msgid "Liability"
-msgstr ""
+msgstr "Pasivo"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__line_ids
@@ -3900,10 +3817,9 @@ msgstr "Widget de líneas"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__lines_widget_json
-#, fuzzy
 #| msgid "Lines Widget"
 msgid "Lines Widget Json"
-msgstr "Widget de líneas"
+msgstr "JSON del widget de líneas"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_depreciation_line__move_check
@@ -3912,10 +3828,9 @@ msgstr "Vinculado"
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.menu_lock_dates
-#, fuzzy
 #| msgid "Sales Lock Date"
 msgid "Lock Dates"
-msgstr "Fecha de bloqueo de ventas"
+msgstr "Fechas de bloqueo"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_lock_date__hard_lock_date
@@ -3925,12 +3840,12 @@ msgstr "Bloquear a todos"
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_lock_date
 msgid "Lock date for accounting"
-msgstr ""
+msgstr "Fecha de bloqueo contable"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.account_update_lock_date_act_window
 msgid "Lock your Fiscal Period"
-msgstr ""
+msgstr "Bloquee su periodo fiscal"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.bold
@@ -3949,14 +3864,13 @@ msgstr "Pérdida por baja"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__style_overwrite__1
 msgid "Main Title 1 (bold, underlined)"
-msgstr ""
+msgstr "Título principal 1 (negrita y subrayado)"
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.management_menu
-#, fuzzy
 #| msgid "Bank Statement"
 msgid "Management"
-msgstr "Estado de cuenta bancario"
+msgstr "Gestión"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_bank_reconcile_widget_form
@@ -3995,7 +3909,7 @@ msgstr "Nota"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__message_has_error
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Error de entrega del mensaje"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__message_ids
@@ -4003,7 +3917,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__message_ids
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Mensajes"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.asset_modify_view_form
@@ -4073,15 +3987,14 @@ msgstr "Varias copias de facturas"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_multiple_invoice_layout
-#, fuzzy
 #| msgid "Multiple Invoice Copies"
 msgid "Multiple Invoice Document Layout"
-msgstr "Varias copias de facturas"
+msgstr "Diseño del documento de facturas múltiples"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "Fecha límite de mi actividad"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_entries_line__template_name
@@ -4111,22 +4024,22 @@ msgstr "Nuevo"
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr ""
+msgstr "Evento de calendario de la siguiente actividad"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "Fecha límite de la siguiente actividad"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "Resumen de la siguiente actividad"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "Tipo de la siguiente actividad"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__date_next
@@ -4141,22 +4054,20 @@ msgstr "Depreciación del siguiente período"
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__next_reminder_date
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_users__next_reminder_date
-#, fuzzy
 #| msgid "Next Invoice Date"
 msgid "Next Reminder Date"
-msgstr "Fecha de la próxima factura"
+msgstr "Fecha del siguiente recordatorio"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_payments__next_date
 msgid "Next Schedule"
-msgstr ""
+msgstr "Siguiente programación"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__cash_flow_report__filter_cmp__filter_no
-#, fuzzy
 #| msgid "Filter by"
 msgid "No Filters"
-msgstr "Filtrado por"
+msgstr "Sin filtros"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_bank_statement_line_view_search
@@ -4178,14 +4089,13 @@ msgstr "No se necesita acción"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__display_detail__no_detail
 msgid "No detail"
-msgstr ""
+msgstr "Sin detalle"
 
 #. module: base_accounting_kit
 #: model_terms:ir.actions.act_window,help:base_accounting_kit.action_view_list_customer_statements
-#, fuzzy
 #| msgid "Follow-up sent."
 msgid "No follow-up to send!"
-msgstr "Seguimiento enviado."
+msgstr "¡No hay seguimientos por enviar!"
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -4234,7 +4144,7 @@ msgstr "Pasivos no corrientes"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__style_overwrite__4
 msgid "Normal Text"
-msgstr ""
+msgstr "Texto normal"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_bank_statement_line_view_search
@@ -4248,10 +4158,9 @@ msgstr "No archivado"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__note
-#, fuzzy
 #| msgid "Notes"
 msgid "Note"
-msgstr "Notas"
+msgstr "Nota"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_bank_statement_line_view_search
@@ -4264,10 +4173,9 @@ msgstr "Notas"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__message_needaction_counter
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__message_needaction_counter
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__message_needaction_counter
-#, fuzzy
 #| msgid "Number of Depreciations"
 msgid "Number of Actions"
-msgstr "Número de depreciaciones"
+msgstr "Número de acciones"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__method_number
@@ -4294,20 +4202,18 @@ msgstr "Número de meses en un período"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__message_has_error_counter
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__message_has_error_counter
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__message_has_error_counter
-#, fuzzy
 #| msgid "Number of Entries"
 msgid "Number of errors"
-msgstr "Número de entradas"
+msgstr "Número de errores"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_asset_asset__message_needaction_counter
 #: model:ir.model.fields,help:base_accounting_kit.field_account_bank_statement_line__message_needaction_counter
 #: model:ir.model.fields,help:base_accounting_kit.field_account_bulk_payment__message_needaction_counter
 #: model:ir.model.fields,help:base_accounting_kit.field_account_recurring_invoice__message_needaction_counter
-#, fuzzy
 #| msgid "Number of Depreciations"
 msgid "Number of messages requiring action"
-msgstr "Número de depreciaciones"
+msgstr "Número de mensajes que requieren una acción"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_asset_asset__message_has_error_counter
@@ -4315,7 +4221,7 @@ msgstr "Número de depreciaciones"
 #: model:ir.model.fields,help:base_accounting_kit.field_account_bulk_payment__message_has_error_counter
 #: model:ir.model.fields,help:base_accounting_kit.field_account_recurring_invoice__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Número de mensajes con error de entrega"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__account_type_ids__off_balance
@@ -4351,17 +4257,15 @@ msgstr "Importe pendiente en moneda"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_operating_income0
-#, fuzzy
 #| msgid "Other Income"
 msgid "Operating Income"
-msgstr "Otros ingresos"
+msgstr "Ingresos operativos"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_operation0
-#, fuzzy
 #| msgid "Manual Operations"
 msgid "Operations"
-msgstr "Operaciones manuales"
+msgstr "Operaciones"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_other_income0
@@ -4377,7 +4281,7 @@ msgstr "Otra información"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_bulk_payment__batch_type__outbound
 msgid "Outbound"
-msgstr ""
+msgstr "Saliente"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_res_partner_filter
@@ -4388,12 +4292,11 @@ msgstr "Facturas vencidas"
 #: model:account.payment.method,name:base_accounting_kit.account_payment_method_pdc_in
 #: model:account.payment.method,name:base_accounting_kit.account_payment_method_pdc_out
 msgid "PDC"
-msgstr ""
+msgstr "PDC"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.boxed
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.standard
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                                    Amount\n"
@@ -4404,13 +4307,13 @@ msgid ""
 "                    /\n"
 "                    <span class=\"topage\"/>"
 msgstr ""
-"\n"
-"                                    Importe\n"
-"                                "
+"Página:\n"
+"                    <span class=\"page\"/>\n"
+"                    /\n"
+"                    <span class=\"topage\"/>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.striped
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                                    Amount\n"
@@ -4421,9 +4324,10 @@ msgid ""
 "                    of\n"
 "                    <span class=\"topage\"/>"
 msgstr ""
-"\n"
-"                                    Importe\n"
-"                                "
+"Página:\n"
+"                    <span class=\"page\"/>\n"
+"                    de\n"
+"                    <span class=\"topage\"/>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
@@ -4432,10 +4336,9 @@ msgstr "Pagado en"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_financial_report__parent_id
-#, fuzzy
 #| msgid "Parent Report"
 msgid "Parent"
-msgstr "Informe principal"
+msgstr "Principal"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_financial_report_view_search
@@ -4497,10 +4400,9 @@ msgstr "Informe del libro mayor de contactos"
 
 #. module: base_accounting_kit
 #: model:ir.ui.menu,name:base_accounting_kit.account_reports_partner
-#, fuzzy
 #| msgid "Parent Report"
 msgid "Partner Reports"
-msgstr "Informe principal"
+msgstr "Informes de contactos"
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -4513,7 +4415,7 @@ msgstr "El contacto no existe"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_common_partner_report__result_selection
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_report_partner_ledger__result_selection
 msgid "Partner's"
-msgstr "Socios"
+msgstr "Contactos"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_agedpartnerbalance
@@ -4523,26 +4425,24 @@ msgstr "Contactos"
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_asset_view_form
 msgid "Pause"
-msgstr "Pausa"
+msgstr "Pausar"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_asset__state__paused
-#, fuzzy
 #| msgid "Pause"
 msgid "Paused"
-msgstr "Pausa"
+msgstr "Pausado"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__pause_date
 msgid "Paused On"
-msgstr "En pausa"
+msgstr "Fecha de pausa"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_payment_register
-#, fuzzy
 #| msgid "Payable"
 msgid "Pay"
-msgstr "por pagar"
+msgstr "Pagar"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_recurring_payments__pay_time__pay_now
@@ -4552,14 +4452,13 @@ msgstr "Pagar directamente"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_recurring_payments__pay_time__pay_later
 msgid "Pay Later"
-msgstr "Paga después"
+msgstr "Pagar después"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_payments__pay_time
-#, fuzzy
 #| msgid "Pay Directly"
 msgid "Pay Time"
-msgstr "Pagar directamente"
+msgstr "Momento del pago"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__account_type_ids__liability_payable
@@ -4581,24 +4480,21 @@ msgstr "Pago"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__payment_count
-#, fuzzy
 #| msgid "Payment"
 msgid "Payment Count"
-msgstr "Pago"
+msgstr "Número de pagos"
 
 #. module: base_accounting_kit
 #: model:mail.template,name:base_accounting_kit.mail_template_followup
-#, fuzzy
 #| msgid "Payment Reminder"
 msgid "Payment Follow-up Reminder"
-msgstr "Recordatorio de pago"
+msgstr "Recordatorio de seguimiento de pago"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_followup_definition_form
-#, fuzzy
 #| msgid "Latest Follow-up"
 msgid "Payment Follow-ups"
-msgstr "Último seguimiento"
+msgstr "Seguimientos de pago"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__payment_method_line_id
@@ -4607,10 +4503,9 @@ msgstr "Método de pago"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_payment_method
-#, fuzzy
 #| msgid "Payment Method"
 msgid "Payment Methods"
-msgstr "Método de pago"
+msgstr "Métodos de pago"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_followup_letter_document
@@ -4620,7 +4515,7 @@ msgstr "Recordatorio de pago"
 #. module: base_accounting_kit
 #: model:mail.template,subject:base_accounting_kit.mail_template_followup
 msgid "Payment Reminder - {{ object.env.company.name }}"
-msgstr ""
+msgstr "Recordatorio de pago - {{ object.env.company.name }}"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.res_partner_statement_report_template
@@ -4647,7 +4542,7 @@ msgstr "Los pagos para imprimir como cheques deben tener seleccionado \"Cheque\"
 #. odoo-python
 #: code:addons/base_accounting_kit/models/account_payment.py:0
 msgid "Payments without a customer can't be matched"
-msgstr "Los pagos sin un cliente no se pueden igualar"
+msgstr "Los pagos sin cliente no se pueden conciliar"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__interval_type
@@ -4673,7 +4568,6 @@ msgstr "Periodicidad"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_wizard_preview
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
@@ -4692,32 +4586,28 @@ msgid ""
 "                            </span>\n"
 "                        </b>"
 msgstr ""
-"\n"
-"                            <p class=\\\"o_view_nocontent_smiling_face\\\">\n"
-"                                ¡Nada que hacer aquí!\n"
-"                            </p>\n"
-"                            <p>\n"
-"                                No se encontraron transacciones que coincidan con sus filtros.\n"
-"                            </p>"
+"Utilice la siguiente referencia al realizar su pago\n"
+"                        :\n"
+"                        <b>\n"
+"                            <span>\n"
+"                                INV/2020/07/0003\n"
+"                            </span>\n"
+"                        </b>"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
-#, fuzzy
 #| msgid ""
 #| "\n"
 #| "                    Please use the following communication for your payment :\n"
 #| "                    "
 msgid "Please use the following communication for your payment :"
-msgstr ""
-"\n"
-"                    Utilice la siguiente referencia al realizar su pago : "
+msgstr "Utilice la siguiente referencia al realizar su pago:"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_asset_depreciation_confirmation_wizard
-#, fuzzy
 #| msgid "Depreciation Lines"
 msgid "Post Depreciation Lines"
-msgstr "Líneas de depreciación"
+msgstr "Contabilizar líneas de depreciación"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_fx_revaluation__auto_reverse
@@ -4750,7 +4640,7 @@ msgstr "Prepagos"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__sign__1
 msgid "Preserve balance sign"
-msgstr ""
+msgstr "Conservar el signo del saldo"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_lock_date__purchase_lock_date
@@ -4765,7 +4655,7 @@ msgstr "Impide crear y modificar facturas de cliente hasta la fecha indicada."
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice_layout__preview
 msgid "Preview"
-msgstr ""
+msgstr "Vista previa"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_category__price
@@ -4790,10 +4680,9 @@ msgstr "Imprimir cheque"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_partner_form
-#, fuzzy
 #| msgid "Print Check"
 msgid "Print Excel"
-msgstr "Imprimir cheque"
+msgstr "Imprimir Excel"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.res_partner_followup_view_form
@@ -4802,10 +4691,9 @@ msgstr "Imprimir carta"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_partner_form
-#, fuzzy
 #| msgid "Print"
 msgid "Print PDF"
-msgstr "Imprimir"
+msgstr "Imprimir PDF"
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -4843,14 +4731,14 @@ msgstr "Producto"
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_profitloss_toreport0
 msgid "Profit (Loss) to report"
-msgstr ""
+msgstr "Utilidad (pérdida) por informar"
 
 #. module: base_accounting_kit
 #: model:account.financial.report,name:base_accounting_kit.account_financial_report_profitandloss0
 #: model:ir.actions.act_window,name:base_accounting_kit.action_profit_and_loss_report
 #: model:ir.ui.menu,name:base_accounting_kit.account_financial_reports_profit_loss
 msgid "Profit and Loss"
-msgstr ""
+msgstr "Estado de resultados"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__prorata
@@ -4882,10 +4770,9 @@ msgstr "Mes de compra"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_asset__type__purchase
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_category__type__purchase
-#, fuzzy
 #| msgid "Purchase"
 msgid "Purchase: Asset"
-msgstr "Compra"
+msgstr "Compra: activo"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice_line__quantity
@@ -4898,7 +4785,7 @@ msgstr "Cantidad"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__rating_ids
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__rating_ids
 msgid "Ratings"
-msgstr ""
+msgstr "Calificaciones"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_asset_modify__name
@@ -4940,10 +4827,9 @@ msgstr "Cuenta de ingresos por reconocimiento"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__reconcile_models_widget
-#, fuzzy
 #| msgid "Reconciled"
 msgid "Reconcile Models Widget"
-msgstr "Reconciliado"
+msgstr "Widget de modelos de conciliación"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_bank_statement_line__bank_state__reconciled
@@ -4952,10 +4838,9 @@ msgstr "Reconciliado"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_report_partner_ledger__reconciled
-#, fuzzy
 #| msgid "Reconciled"
 msgid "Reconciled Entries"
-msgstr "Reconciliado"
+msgstr "Asientos conciliados"
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -4965,17 +4850,15 @@ msgstr "Reconciliación"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__record_id
-#, fuzzy
 #| msgid "Reconciled"
 msgid "Record"
-msgstr "Reconciliado"
+msgstr "Registro"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_payments__recurring_interval
-#, fuzzy
 #| msgid "Recurring Invoice"
 msgid "Recurring Interval"
-msgstr "Factura recurrente"
+msgstr "Intervalo de recurrencia"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__recurring_invoice_id
@@ -4987,14 +4870,12 @@ msgstr "Factura recurrente"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_recurring_invoice_line
-#, fuzzy
 #| msgid "Recurring Invoice"
 msgid "Recurring Invoice Line"
-msgstr "Factura recurrente"
+msgstr "Línea de factura recurrente"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_recurring_invoice
-#, fuzzy
 #| msgid "Recurring Template"
 msgid "Recurring Invoice Template"
 msgstr "Plantilla recurrente"
@@ -5009,17 +4890,15 @@ msgstr "Facturas recurrentes"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_payments__recurring_lines
-#, fuzzy
 #| msgid "Recurring Invoices"
 msgid "Recurring Lines"
-msgstr "Facturas recurrentes"
+msgstr "Líneas recurrentes"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_payments__recurring_period
-#, fuzzy
 #| msgid "Recurring Ref"
 msgid "Recurring Period"
-msgstr "Referencia recurrente"
+msgstr "Periodo de recurrencia"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__recurring_ref
@@ -5057,10 +4936,9 @@ msgstr "Referencia"
 
 #. module: base_accounting_kit
 #: model:followup.line,name:base_accounting_kit.followup_line_id
-#, fuzzy
 #| msgid "Payment Reminder"
 msgid "Reminder"
-msgstr "Recordatorio de pago"
+msgstr "Recordatorio"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__interval_number
@@ -5075,17 +4953,15 @@ msgstr "Informe"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_report_base_accounting_kit_report_multiple_invoice
-#, fuzzy
 #| msgid "Next Invoice Date"
 msgid "Report Invoice Multiple"
-msgstr "Fecha de la próxima factura"
+msgstr "Informe de facturas múltiples"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_financial_report__name
-#, fuzzy
 #| msgid "Report Type"
 msgid "Report Name"
-msgstr "Tipo de informe"
+msgstr "Nombre del informe"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_aged_trial_balance_view_form
@@ -5101,10 +4977,9 @@ msgstr "Tipo de informe"
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_financial_report__account_report_id
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__type__account_report
-#, fuzzy
 #| msgid "Report Type"
 msgid "Report Value"
-msgstr "Tipo de informe"
+msgstr "Valor del informe"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_bank_reconcile_widget_form
@@ -5124,7 +4999,7 @@ msgstr "Valor residual"
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Usuario responsable"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_asset_view_form
@@ -5166,15 +5041,14 @@ msgstr "Revertir automáticamente"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__sign__-1
-#, fuzzy
 #| msgid "Reversal of asset %s"
 msgid "Reverse balance sign"
-msgstr "Reversión del activo %s"
+msgstr "Invertir el signo del saldo"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__text_align__right
 msgid "Right"
-msgstr ""
+msgstr "Derecha"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__rowdata
@@ -5202,7 +5076,7 @@ msgstr "Saldo acumulado"
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__message_has_sms_error
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "Error de entrega por SMS"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__asset_dispose__disposal_type__sale
@@ -5213,7 +5087,7 @@ msgstr "Rebaja"
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_sale_order
 msgid "Sale Order Delivery Split"
-msgstr ""
+msgstr "Orden de venta"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_asset_dispose__sale_value
@@ -5224,7 +5098,7 @@ msgstr "Valor de venta"
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_asset__type__sale
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_category__type__sale
 msgid "Sale: Revenue Recognition"
-msgstr ""
+msgstr "Venta: reconocimiento de ingresos"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_category_view_search
@@ -5254,7 +5128,7 @@ msgstr "Guardar como modelo"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__asset_dispose__disposal_type__scrap
 msgid "Scrap"
-msgstr ""
+msgstr "Desecho"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_category_view_search
@@ -5294,17 +5168,15 @@ msgstr "Vender o disponer"
 
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_asset_dispose
-#, fuzzy
 #| msgid "Sell or Dispose"
 msgid "Sell or Dispose Asset"
-msgstr "Vender o disponer"
+msgstr "Vender o dar de baja un activo"
 
 #. module: base_accounting_kit
 #: model:ir.actions.server,name:base_accounting_kit.ir_cron_send_followups_ir_actions_server
-#, fuzzy
 #| msgid "Send Follow-up"
 msgid "Send Customer Follow-ups"
-msgstr "Enviar seguimiento"
+msgstr "Enviar seguimientos a clientes"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.res_partner_followup_view_form
@@ -5325,26 +5197,23 @@ msgstr "Enviado"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_partner_form
-#, fuzzy
 #| msgid "Send an Email"
 msgid "Sent Excel By Email"
-msgstr "Enviar un correo electrónico"
+msgstr "Enviar Excel por correo electrónico"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_partner_form
-#, fuzzy
 #| msgid "Send an Email"
 msgid "Sent PDF By Email"
-msgstr "Enviar un correo electrónico"
+msgstr "Enviar PDF por correo electrónico"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_depreciation_line__sequence
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_financial_report__sequence
 #: model:ir.model.fields,field_description:base_accounting_kit.field_followup_line__sequence
-#, fuzzy
 #| msgid "Sequence No"
 msgid "Sequence"
-msgstr "Número de secuencia"
+msgstr "Secuencia"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_multiple_invoice__sequence
@@ -5382,15 +5251,14 @@ msgstr "Mostrar asientos no contabilizados"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_financial_report__sign
-#, fuzzy
 #| msgid "Account Reports"
 msgid "Sign on Reports"
-msgstr "Informes de cuenta"
+msgstr "Signo en los informes"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__style_overwrite__6
 msgid "Smallest Text"
-msgstr ""
+msgstr "Texto más pequeño"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_book_report__sortby
@@ -5426,14 +5294,12 @@ msgstr "Fecha de inicio"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_payments__date
-#, fuzzy
 #| msgid "Start Date"
 msgid "Starting Date"
 msgstr "Fecha de inicio"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__state
-#, fuzzy
 #| msgid "Status"
 msgid "State"
 msgstr "Estado"
@@ -5456,10 +5322,9 @@ msgstr "Estado de cuenta"
 
 #. module: base_accounting_kit
 #: model:ir.actions.report,name:base_accounting_kit.res_partner_action
-#, fuzzy
 #| msgid "Payment Statement Report"
 msgid "Statement Report"
-msgstr "Informe de estado de cuenta de pagos"
+msgstr "Informe de estado de cuenta"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_bank_statement_line_tree
@@ -5484,6 +5349,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Estado basado en las actividades\n"
+"Vencida: la fecha límite ya pasó\n"
+"Hoy: la fecha de la actividad es hoy\n"
+"Planificada: actividades futuras."
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_recurring_invoice_view_form
@@ -5494,7 +5363,7 @@ msgstr "Detener"
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_asset__method__linear
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_asset_category__method__linear
 msgid "Straight Line"
-msgstr ""
+msgstr "Línea recta"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_partner_form
@@ -5552,7 +5421,6 @@ msgstr "Informe de impuestos"
 
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.action_account_tax_report
-#, fuzzy
 #| msgid "Tax Report"
 msgid "Tax Reports"
 msgstr "Informe de impuestos"
@@ -5569,7 +5437,7 @@ msgstr "Impuestos"
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.bold
 msgid "Tel:"
-msgstr ""
+msgstr "Tel.:"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_followup_line__email_template_id
@@ -5579,7 +5447,7 @@ msgstr "Plantilla utilizada para el correo electrónico de recordatorio. Vuelve 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__multiple_invoice_type__text
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.multiple_invoice_layout_view_form
@@ -5605,7 +5473,6 @@ msgstr "El informe de la carta de seguimiento no está disponible."
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_followup_line__delay
-#, fuzzy
 #| msgid "The number of days after the due date of the invoice to wait before sending the reminder. Could be negative if you want to send a polite alert beforehand."
 msgid "The number of days after the due date of the invoice to wait before sending the reminder.  Could be negative if you want to send a polite alert beforehand."
 msgstr "El número de días después de la fecha de vencimiento de la factura que se deben esperar antes de enviar el recordatorio. Podría ser negativo si desea enviar una alerta cortés de antemano."
@@ -5658,13 +5525,13 @@ msgstr "Treinta y un dólar y cinco centavos"
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_move_form
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_order_form
 msgid "This Customer's due amount is"
-msgstr ""
+msgstr "El importe vencido de este cliente es"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_move_form
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_order_form
 msgid "This customer's <strong>warning limit</strong> has been crossed."
-msgstr ""
+msgstr "Se superó el <strong>límite de advertencia</strong> de este cliente."
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -5689,6 +5556,8 @@ msgid ""
 "This wizard will post installment/depreciation lines for the selected month.<br/>\n"
 "                        This will generate journal entries for all related installment lines on this period of asset/revenue recognition as well."
 msgstr ""
+"Este asistente contabilizará las líneas de cuotas o depreciación del mes seleccionado.<br/>\n"
+"                        También generará asientos contables para todas las líneas de cuotas relacionadas con este periodo de reconocimiento de activos o ingresos."
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__method_time
@@ -5705,12 +5574,12 @@ msgstr "Método de tiempo basado en"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__style_overwrite__2
 msgid "Title 2 (bold)"
-msgstr ""
+msgstr "Título 2 (negrita)"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__style_overwrite__3
 msgid "Title 3 (bold, smaller)"
-msgstr ""
+msgstr "Título 3 (negrita, más pequeño)"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bank_statement_line__to_check
@@ -5733,16 +5602,23 @@ msgid ""
 "                    same customer, the actions of the most\n"
 "                    overdue invoice will be executed."
 msgstr ""
+"Para recordar a los clientes que paguen sus facturas, puede\n"
+"                    definir distintas acciones según el grado de vencimiento.\n"
+"                    Estas acciones se agrupan en niveles de seguimiento que se\n"
+"                    activan cuando han transcurrido determinados días desde la\n"
+"                    fecha de vencimiento de una factura. Si el mismo cliente tiene\n"
+"                    otras facturas vencidas, se ejecutarán las acciones de la\n"
+"                    factura con mayor vencimiento."
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__body_text_position__tl
 msgid "Top Left"
-msgstr ""
+msgstr "Superior izquierda"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__body_text_position__tr
 msgid "Top Right"
-msgstr ""
+msgstr "Superior derecha"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_agedpartnerbalance
@@ -5768,18 +5644,16 @@ msgstr "Saldo total:"
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__total_due
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_users__total_due
-#, fuzzy
 #| msgid "Total Sale"
 msgid "Total Due"
-msgstr "Venta total"
+msgstr "Total pendiente"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__total_overdue
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_users__total_overdue
-#, fuzzy
 #| msgid "Total overdue:"
 msgid "Total Overdue"
-msgstr "Total vencido:"
+msgstr "Total vencido"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__due_amount
@@ -5790,7 +5664,7 @@ msgstr "Venta total"
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
 msgid "Total amount in words: <br/>"
-msgstr ""
+msgstr "Importe total con letra: <br/>"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_bank_statement_line__due_amount
@@ -5798,10 +5672,9 @@ msgstr ""
 #: model:ir.model.fields,help:base_accounting_kit.field_res_partner__due_amount
 #: model:ir.model.fields,help:base_accounting_kit.field_res_users__due_amount
 #: model:ir.model.fields,help:base_accounting_kit.field_sale_order__due_amount
-#, fuzzy
 #| msgid "Total Amount"
 msgid "Total due amount"
-msgstr "Importe total"
+msgstr "Importe vencido total"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_bank_statement_line_view_search
@@ -5824,7 +5697,6 @@ msgstr "Balanza de comprobación"
 #. module: base_accounting_kit
 #: model:ir.model,name:base_accounting_kit.model_account_balance_report
 #: model:ir.model,name:base_accounting_kit.model_report_base_accounting_kit_report_trial_balance
-#, fuzzy
 #| msgid "Trial Balance"
 msgid "Trial Balance Report"
 msgstr "Balanza de comprobación"
@@ -5842,7 +5714,7 @@ msgstr "Tipo"
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_bank_statement_line__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Tipo de actividad de excepción del registro."
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice_line__price_unit
@@ -5853,7 +5725,7 @@ msgstr "Precio unitario"
 #. odoo-python
 #: code:addons/base_accounting_kit/report/report_aged_partner.py:0
 msgid "Unknown Partner"
-msgstr "Socio desconocido"
+msgstr "Contacto desconocido"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.view_account_payment_form
@@ -5932,10 +5804,9 @@ msgstr "Aumento de valor"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_trial_balance
-#, fuzzy
 #| msgid "Balance"
 msgid "Variance"
-msgstr "Saldo"
+msgstr "Variación"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_asset_view_form
@@ -5951,23 +5822,21 @@ msgstr "Factura de proveedor"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_multiple_invoice_new
-#, fuzzy
 #| msgid "Credit Note"
 msgid "Vendor Credit Note"
-msgstr "Nota de crédito"
+msgstr "Nota de crédito de proveedor"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_partner__vendor_statement_ids
 #: model:ir.model.fields,field_description:base_accounting_kit.field_res_users__vendor_statement_ids
-#, fuzzy
 #| msgid "No Statement"
 msgid "Vendor Statement"
-msgstr "Sin estado de cuenta"
+msgstr "Estado de cuenta de proveedor"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__financial_report__view_format__vertical
 msgid "Vertical"
-msgstr ""
+msgstr "Vertical"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_financial_report__type__sum
@@ -5990,7 +5859,7 @@ msgstr "La cantidad de advertencia debe ser menor que la cantidad de bloqueo"
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_journal__multiple_invoice_type__watermark
 msgid "Watermark"
-msgstr ""
+msgstr "Marca de agua"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_asset_asset__website_message_ids
@@ -5998,7 +5867,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_bulk_payment__website_message_ids
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_recurring_invoice__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Mensajes del sitio web"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_account_asset_asset__website_message_ids
@@ -6006,7 +5875,7 @@ msgstr ""
 #: model:ir.model.fields,help:base_accounting_kit.field_account_bulk_payment__website_message_ids
 #: model:ir.model.fields,help:base_accounting_kit.field_account_recurring_invoice__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Historial de comunicaciones del sitio web"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_recurring_invoice__interval_type__weeks
@@ -6037,10 +5906,9 @@ msgstr "Al alcanzarse este nivel, envía el recordatorio al cliente por correo e
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_common_journal_report__amount_currency
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_print_journal__amount_currency
 #: model:ir.model.fields,field_description:base_accounting_kit.field_account_report_partner_ledger__amount_currency
-#, fuzzy
 #| msgid "Currency"
 msgid "With Currency"
-msgstr "Moneda"
+msgstr "Con moneda"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_balance_report__display_account__not_zero
@@ -6048,10 +5916,9 @@ msgstr "Moneda"
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_cash_book_report__display_account__not_zero
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_common_account_report__display_account__not_zero
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__account_report_general_ledger__display_account__not_zero
-#, fuzzy
 #| msgid "With balance not equal to zero"
 msgid "With balance is not equal to 0"
-msgstr "Con saldo no igual a cero"
+msgstr "Con saldo distinto de cero"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.report_bank_book
@@ -6076,10 +5943,9 @@ msgstr "Con movimientos"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields.selection,name:base_accounting_kit.selection__res_partner__followup_status__with_overdue_invoices
-#, fuzzy
 #| msgid "Overdue Invoices"
 msgid "With overdue invoices"
-msgstr "Facturas vencidas"
+msgstr "Con facturas vencidas"
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -6150,7 +6016,7 @@ msgstr "Debe establecer una fecha de inicio."
 #. odoo-python
 #: code:addons/base_accounting_kit/models/account_journal.py:0
 msgid "account_id.account_type"
-msgstr ""
+msgstr "account_id.account_type"
 
 #. module: base_accounting_kit
 #: model:ir.model.fields,help:base_accounting_kit.field_res_partner__currency_id
@@ -6161,7 +6027,7 @@ msgstr "Moneda relacionada con el Cliente o el Proveedor"
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.followup_line_view_form
 msgid "days overdue, do the following actions:"
-msgstr ""
+msgstr "días de vencimiento, realice las siguientes acciones:"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_bank_statement_view_form
@@ -6180,10 +6046,9 @@ msgstr "p.ej. iBook portátil"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.res_partner_followup_view_form
-#, fuzzy
 #| msgid "Base Amount"
 msgid "has no due amount."
-msgstr "Importe base"
+msgstr "no tiene importes vencidos."
 
 #. module: base_accounting_kit
 #. odoo-python
@@ -6196,24 +6061,22 @@ msgstr "identificación"
 #. module: base_accounting_kit
 #: model:ir.actions.act_window,name:base_accounting_kit.import_bank_statement_view_action
 msgid "import.bank.statement.view.action"
-msgstr ""
+msgstr "import.bank.statement.view.action"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_asset_view_form
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_asset_category_view_form
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.asset_modify_view_form
-#, fuzzy
 #| msgid "Months"
 msgid "months"
-msgstr "Meses"
+msgstr "meses"
 
 #. module: base_accounting_kit
 #. odoo-python
 #: code:addons/base_accounting_kit/models/account_payment.py:0
-#, fuzzy
 #| msgid "Partner"
 msgid "partner_id"
-msgstr "Contacto"
+msgstr "partner_id"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.res_partner_followup_view_form
@@ -6222,10 +6085,9 @@ msgstr "Informe"
 
 #. module: base_accounting_kit
 #: model_terms:ir.ui.view,arch_db:base_accounting_kit.account_journal_dashboard_kanban_view
-#, fuzzy
 #| msgid "Auto-Reconcile"
 msgid "to Reconcile"
-msgstr "Conciliación automática"
+msgstr "por conciliar"
 
 #~ msgid ""
 #~ "\n"

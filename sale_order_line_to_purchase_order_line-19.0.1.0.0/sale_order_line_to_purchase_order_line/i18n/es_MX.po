@@ -19,7 +19,7 @@ msgstr ""
 #. module: sale_order_line_to_purchase_order_line
 #: model:ir.model.fields,help:sale_order_line_to_purchase_order_line.field_sale_order_line__is_check
 msgid "Check box added for select sale order lines."
-msgstr "Casilla de verificación agregada para líneas de orden de venta seleccionadas."
+msgstr "Casilla para seleccionar líneas de la orden de venta."
 
 #. module: sale_order_line_to_purchase_order_line
 #: model:ir.model.fields,help:sale_order_line_to_purchase_order_line.field_sale_order__purchase_id
@@ -29,7 +29,7 @@ msgstr "Elija una orden de compra de la lista para agregar las órdenes elegidas
 #. module: sale_order_line_to_purchase_order_line
 #: model:ir.model.fields,help:sale_order_line_to_purchase_order_line.field_sale_order__vendor_id
 msgid "Choose vendor for create new purchase order"
-msgstr "Elija proveedor para crear una nueva orden de compra"
+msgstr "Elija un proveedor para crear una nueva orden de compra"
 
 #. module: sale_order_line_to_purchase_order_line
 #: model_terms:ir.ui.view,arch_db:sale_order_line_to_purchase_order_line.view_order_form
@@ -40,13 +40,13 @@ msgstr "Convertir a orden de compra"
 #: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order__display_name
 #: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: sale_order_line_to_purchase_order_line
 #: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order__id
 #: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order_line__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: sale_order_line_to_purchase_order_line
 #. odoo-python
@@ -63,12 +63,12 @@ msgstr "Orden de compra"
 #. module: sale_order_line_to_purchase_order_line
 #: model:ir.model,name:sale_order_line_to_purchase_order_line.model_sale_order
 msgid "Sale Order Delivery Split"
-msgstr ""
+msgstr "Orden de venta"
 
 #. module: sale_order_line_to_purchase_order_line
 #: model:ir.model,name:sale_order_line_to_purchase_order_line.model_sale_order_line
 msgid "Sale Order Line Delivery Split"
-msgstr ""
+msgstr "Línea de orden de venta"
 
 #. module: sale_order_line_to_purchase_order_line
 #: model:ir.model.fields,field_description:sale_order_line_to_purchase_order_line.field_sale_order_line__is_check
@@ -79,7 +79,7 @@ msgstr "Seleccionar"
 #. odoo-python
 #: code:addons/sale_order_line_to_purchase_order_line/models/sale_order.py:0
 msgid "Select Order Line"
-msgstr "Seleccionar línea de pedido"
+msgstr "Seleccionar línea de la orden"
 
 #. module: sale_order_line_to_purchase_order_line
 #. odoo-python

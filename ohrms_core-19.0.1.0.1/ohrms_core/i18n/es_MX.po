@@ -62,12 +62,12 @@ msgstr "Integración de dispositivos biométricos"
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__priority__3
 msgid "Blocker"
-msgstr ""
+msgstr "Bloqueante"
 
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__bug
 msgid "Bug"
-msgstr ""
+msgstr "Error"
 
 #. module: ohrms_core
 #: model_terms:ir.ui.view,arch_db:ohrms_core.ohrms_core_support_view_form
@@ -82,12 +82,12 @@ msgstr "Categoría"
 #. module: ohrms_core
 #: model:ir.model,name:ohrms_core.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Ajustes de configuración"
 
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__configuration
 msgid "Configuration"
-msgstr ""
+msgstr "Configuración"
 
 #. module: ohrms_core
 #. odoo-javascript
@@ -109,12 +109,12 @@ msgstr "No se pudo comunicar con el servicio de soporte. Por favor verifique su 
 #. module: ohrms_core
 #: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: ohrms_core
 #: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: ohrms_core
 #: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
@@ -136,7 +136,7 @@ msgstr "Descripción"
 #: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__display_name
 #: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: ohrms_core
 #. odoo-javascript
@@ -172,18 +172,18 @@ msgstr "Ingrese su correo electrónico"
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__feature_request
 msgid "Feature Request"
-msgstr ""
+msgstr "Solicitud de función"
 
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__support_type__functional
 msgid "Functional Support"
-msgstr ""
+msgstr "Soporte funcional"
 
 #. module: ohrms_core
 #: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
 #: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_leave_configuration_inherited
 msgid "Get This App"
-msgstr ""
+msgstr "Obtener esta aplicación"
 
 #. module: ohrms_core
 #: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__test_module_hr_custody
@@ -307,7 +307,7 @@ msgstr ""
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__priority__2
 msgid "High"
-msgstr ""
+msgstr "Alta"
 
 #. module: ohrms_core
 #: model:ir.model.fields,help:ohrms_core.field_ohrms_core_support__priority
@@ -319,22 +319,22 @@ msgstr "¿Qué tan urgente es este problema?"
 #: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__id
 #: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__installation
 msgid "Installation"
-msgstr ""
+msgstr "Instalación"
 
 #. module: ohrms_core
 #: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: ohrms_core
 #: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: ohrms_core
 #: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
@@ -350,7 +350,7 @@ msgstr "Cerrar sesión"
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__priority__0
 msgid "Low"
-msgstr ""
+msgstr "Baja"
 
 #. module: ohrms_core
 #: model:ir.model.fields,field_description:ohrms_core.field_res_config_settings__module_hr_insurance
@@ -395,7 +395,7 @@ msgstr "Gestiona acciones legales."
 #. module: ohrms_core
 #: model:ir.model,name:ohrms_core.model_ir_ui_menu
 msgid "Menu"
-msgstr ""
+msgstr "Menú"
 
 #. module: ohrms_core
 #: model_terms:ir.ui.view,arch_db:ohrms_core.res_config_settings_view_form
@@ -404,10 +404,9 @@ msgstr "Gestión de menú"
 
 #. module: ohrms_core
 #: model_terms:ir.ui.view,arch_db:ohrms_core.res_config_settings_view_form
-#, fuzzy
 #| msgid "Order the menus in alphabetic order"
 msgid "Menu With Alphabetic Order"
-msgstr "Ordenar los menús en orden alfabético"
+msgstr "Menú en orden alfabético"
 
 #. module: ohrms_core
 #: model_terms:ir.ui.view,arch_db:ohrms_core.view_hr_general_config_advanced_features
@@ -416,6 +415,8 @@ msgid ""
 "Module is not Present in Your Repository.\n"
 "                            <br/>"
 msgstr ""
+"El módulo no está disponible en su repositorio.\n"
+"                            <br/>"
 
 #. module: ohrms_core
 #. odoo-javascript
@@ -426,7 +427,7 @@ msgstr "Mi cuenta de Odoo.com"
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__priority__1
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 #. module: ohrms_core
 #. odoo-javascript
@@ -459,7 +460,7 @@ msgstr "Ordenar los menús en orden alfabético"
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__other
 msgid "Other"
-msgstr ""
+msgstr "Otro"
 
 #. module: ohrms_core
 #: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__payload_preview
@@ -469,7 +470,7 @@ msgstr "Vista previa de carga útil"
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__category__performance
 msgid "Performance"
-msgstr ""
+msgstr "Rendimiento"
 
 #. module: ohrms_core
 #: model:ir.model.fields,field_description:ohrms_core.field_ohrms_core_support__phone
@@ -552,7 +553,7 @@ msgstr "Tipo de soporte"
 #. module: ohrms_core
 #: model:ir.model.fields.selection,name:ohrms_core.selection__ohrms_core_support__support_type__technical
 msgid "Technical Support"
-msgstr ""
+msgstr "Soporte técnico"
 
 #. module: ohrms_core
 #. odoo-python

@@ -19,7 +19,7 @@ msgstr ""
 #. module: hr_leave_request_aliasing
 #: model:ir.model,name:hr_leave_request_aliasing.model_res_config_settings
 msgid "Config Settings"
-msgstr ""
+msgstr "Ajustes de configuración"
 
 #. module: hr_leave_request_aliasing
 #: model:ir.model.fields,help:hr_leave_request_aliasing.field_res_config_settings__alias_domain
@@ -35,7 +35,7 @@ msgstr "Nombre predeterminado del alias de correo para solicitudes de ausencia"
 #: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_hr_leave__display_name
 #: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_res_config_settings__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: hr_leave_request_aliasing
 #: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_res_config_settings__alias_domain
@@ -47,12 +47,12 @@ msgstr "Dominio"
 #: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_hr_leave__id
 #: model:ir.model.fields,field_description:hr_leave_request_aliasing.field_res_config_settings__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: hr_leave_request_aliasing
 #: model:ir.actions.act_window,name:hr_leave_request_aliasing.res_config_settings_action_email_alias
 msgid "Leave Configuration"
-msgstr ""
+msgstr "Configuración de ausencias"
 
 #. module: hr_leave_request_aliasing
 #: model_terms:ir.ui.view,arch_db:hr_leave_request_aliasing.res_config_settings_view_form
@@ -73,7 +73,7 @@ msgstr "Prefijo"
 #. module: hr_leave_request_aliasing
 #: model:ir.ui.menu,name:hr_leave_request_aliasing.res_config_settings_menu_email_alias
 msgid "Settings"
-msgstr ""
+msgstr "Ajustes"
 
 #. module: hr_leave_request_aliasing
 #: model:ir.model,name:hr_leave_request_aliasing.model_hr_leave

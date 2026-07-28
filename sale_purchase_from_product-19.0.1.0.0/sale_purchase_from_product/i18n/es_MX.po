@@ -20,13 +20,13 @@ msgstr ""
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_purchase_order__line_ids
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_sale_order__line_ids
 msgid "Add orderlines"
-msgstr "Agregar líneas de pedido"
+msgstr "Agregar líneas de orden"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields.selection,name:sale_purchase_from_product.selection__quick_purchase_order__type__existing_order
 #: model:ir.model.fields.selection,name:sale_purchase_from_product.selection__quick_sale_order__type__existing_order
 msgid "Add to existing Orders"
-msgstr ""
+msgstr "Agregar a órdenes existentes"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_sale_order__user_id
@@ -48,7 +48,7 @@ msgstr "Cancelar"
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_purchase_order__type
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_sale_order__type
 msgid "Choose between new order and existing"
-msgstr "Elija entre pedido nuevo y existente"
+msgstr "Elija entre una orden nueva y una existente"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_purchase_order__user_id
@@ -64,18 +64,18 @@ msgstr "Elija órdenes de compra para actualizar"
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_sale_order__sale_ids
 msgid "Choose sale orders to update"
-msgstr "Elegir órdenes de venta para actualizar"
+msgstr "Elija las órdenes de venta que desea actualizar"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_sale_line__tax_id
 msgid "Choose taxes for the products"
-msgstr "Elige impuestos para los productos."
+msgstr "Elija los impuestos de los productos"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_purchase_order__partner_id
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_sale_order__partner_id
 msgid "Choose the customer"
-msgstr "Elige el cliente"
+msgstr "Elija el cliente o proveedor, según corresponda"
 
 #. module: sale_purchase_from_product
 #: model_terms:ir.ui.view,arch_db:sale_purchase_from_product.quick_purchase_order_view_form
@@ -86,10 +86,8 @@ msgstr "Crear"
 #. module: sale_purchase_from_product
 #: model:ir.model.fields.selection,name:sale_purchase_from_product.selection__quick_purchase_order__type__new_order
 #: model:ir.model.fields.selection,name:sale_purchase_from_product.selection__quick_sale_order__type__new_order
-#, fuzzy
-#| msgid "Created sale order"
 msgid "Create New Order"
-msgstr "Orden de venta creada"
+msgstr "Crear nueva orden"
 
 #. module: sale_purchase_from_product
 #: model_terms:ir.ui.view,arch_db:sale_purchase_from_product.quick_purchase_order_view_form
@@ -102,20 +100,16 @@ msgstr "Crear y ver"
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_order__create_uid
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_line__create_uid
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__create_uid
-#, fuzzy
-#| msgid "Create"
 msgid "Created by"
-msgstr "Crear"
+msgstr "Creado por"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_line__create_date
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_order__create_date
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_line__create_date
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__create_date
-#, fuzzy
-#| msgid "Create"
 msgid "Created on"
-msgstr "Crear"
+msgstr "Creado el"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_sale_line__order_id
@@ -133,13 +127,13 @@ msgstr "Cliente"
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_line__display_name
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: sale_purchase_from_product
 #: model_terms:ir.ui.view,arch_db:sale_purchase_from_product.quick_purchase_order_view_form
 #: model_terms:ir.ui.view,arch_db:sale_purchase_from_product.quick_sale_order_view_form
 msgid "Do you want to Discard?"
-msgstr "¿Quieres descartar?"
+msgstr "¿Desea descartar los cambios?"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_line__id
@@ -147,7 +141,7 @@ msgstr "¿Quieres descartar?"
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_line__id
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_line__write_uid
@@ -155,7 +149,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_line__write_uid
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_line__write_date
@@ -163,7 +157,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_line__write_date
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_line__order_id
@@ -181,7 +175,7 @@ msgstr "Fecha de la orden"
 #: model_terms:ir.ui.view,arch_db:sale_purchase_from_product.quick_purchase_order_view_form
 #: model_terms:ir.ui.view,arch_db:sale_purchase_from_product.quick_sale_order_view_form
 msgid "Order Line"
-msgstr "Línea de pedido"
+msgstr "Línea de orden"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__payment_term_id
@@ -219,24 +213,22 @@ msgstr "Productos"
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_order__purchase_ids
 msgid "Purchase Orders"
-msgstr "Orden de compras"
+msgstr "Órdenes de compra"
 
 #. module: sale_purchase_from_product
 #: model:ir.actions.act_window,name:sale_purchase_from_product.quick_purchase_order_action
-#, fuzzy
-#| msgid "Quick Create"
 msgid "Purchase Quick Create"
-msgstr "Creación rápida"
+msgstr "Creación rápida de compra"
 
 #. module: sale_purchase_from_product
 #: model_terms:ir.ui.view,arch_db:sale_purchase_from_product.quick_purchase_order_view_form
 msgid "Purchase order created successfully"
-msgstr "Orden de compra creada exitosamente"
+msgstr "La orden de compra se creó correctamente"
 
 #. module: sale_purchase_from_product
 #: model_terms:ir.ui.view,arch_db:sale_purchase_from_product.quick_purchase_order_view_form
 msgid "Purchase orders updated successfully"
-msgstr "Órdenes de compra actualizadas exitosamente"
+msgstr "Las órdenes de compra se actualizaron correctamente"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_line__product_qty
@@ -252,10 +244,8 @@ msgstr "Creación rápida"
 
 #. module: sale_purchase_from_product
 #: model:ir.model,name:sale_purchase_from_product.model_quick_purchase_line
-#, fuzzy
-#| msgid "Quick Purchase Order"
 msgid "Quick Purchase Line"
-msgstr "Orden de compra rápida"
+msgstr "Línea de compra rápida"
 
 #. module: sale_purchase_from_product
 #: model:ir.model,name:sale_purchase_from_product.model_quick_purchase_order
@@ -265,10 +255,8 @@ msgstr "Orden de compra rápida"
 
 #. module: sale_purchase_from_product
 #: model:ir.model,name:sale_purchase_from_product.model_quick_sale_line
-#, fuzzy
-#| msgid "Quick Sale Order"
 msgid "Quick Sale Line"
-msgstr "Orden de venta rápida"
+msgstr "Línea de venta rápida"
 
 #. module: sale_purchase_from_product
 #: model:ir.model,name:sale_purchase_from_product.model_quick_sale_order
@@ -280,7 +268,7 @@ msgstr "Orden de venta rápida"
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_order__line_ids
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__line_ids
 msgid "Sale Order Line"
-msgstr "Línea de orden de venta"
+msgstr "Líneas de orden"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__sale_ids
@@ -289,20 +277,18 @@ msgstr "Órdenes de venta"
 
 #. module: sale_purchase_from_product
 #: model:ir.actions.act_window,name:sale_purchase_from_product.quick_sale_purchase_wizard_action
-#, fuzzy
-#| msgid "Quick Create"
 msgid "Sale/Purchase Quick Create"
-msgstr "Creación rápida"
+msgstr "Creación rápida de venta/compra"
 
 #. module: sale_purchase_from_product
 #: model_terms:ir.ui.view,arch_db:sale_purchase_from_product.quick_sale_order_view_form
 msgid "Sales order created successfully"
-msgstr "Orden de venta creada exitosamente"
+msgstr "La orden de venta se creó correctamente"
 
 #. module: sale_purchase_from_product
 #: model_terms:ir.ui.view,arch_db:sale_purchase_from_product.quick_sale_order_view_form
 msgid "Sales orders updated successfully"
-msgstr "Órdenes de venta actualizadas correctamente"
+msgstr "Las órdenes de venta se actualizaron correctamente"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__user_id
@@ -313,12 +299,12 @@ msgstr "Vendedor"
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_purchase_order__order_date
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_sale_order__order_date
 msgid "Set order date"
-msgstr "Establecer fecha de pedido"
+msgstr "Establezca la fecha de la orden"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,help:sale_purchase_from_product.field_quick_purchase_line__tax_id
 msgid "Tax for the products"
-msgstr "Impuesto para los productos."
+msgstr "Impuestos de los productos"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_line__tax_id
@@ -330,7 +316,7 @@ msgstr "Impuestos"
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_order__type
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_sale_order__type
 msgid "Type"
-msgstr ""
+msgstr "Tipo"
 
 #. module: sale_purchase_from_product
 #: model:ir.model.fields,field_description:sale_purchase_from_product.field_quick_purchase_line__price_unit

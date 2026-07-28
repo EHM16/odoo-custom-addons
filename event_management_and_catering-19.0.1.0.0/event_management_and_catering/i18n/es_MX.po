@@ -110,7 +110,7 @@ msgstr "Cerrar"
 msgid "Company"
 msgstr "Empresa"
 
-#: model:ir.module.module,summary:__manifest__.py
+#: model:ir.module.module,summary:base.module_event_management_and_catering
 msgid ""
 "Comprehensive event management with integrated catering \n"
 "     service."
@@ -250,7 +250,7 @@ msgstr "Evento"
 msgid "Event Management"
 msgstr "Gestión de eventos"
 
-#: model:ir.module.module,name:__manifest__.py
+#: model:ir.module.module,name:base.module_event_management_and_catering
 msgid "Event Management and Catering"
 msgstr "Gestión de eventos y banquetes"
 
@@ -537,7 +537,7 @@ msgstr "Términos y condiciones"
 msgid "This field holds the image used as image for the event, limited to 1080x720px."
 msgstr "Este campo contiene la imagen utilizada como imagen del evento, limitada a 1080x720px."
 
-#: model:ir.module.module,description:__manifest__.py
+#: model:ir.module.module,description:base.module_event_management_and_catering
 msgid ""
 "This module combines event management and catering \n"
 "     services, allowing you to manage event types, service orders, and \n"

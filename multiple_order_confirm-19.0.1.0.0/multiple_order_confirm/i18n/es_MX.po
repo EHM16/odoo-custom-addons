@@ -32,23 +32,23 @@ msgstr "Confirmar pedidos"
 #: model:ir.model.fields,field_description:multiple_order_confirm.field_purchase_order__display_name
 #: model:ir.model.fields,field_description:multiple_order_confirm.field_sale_order__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: multiple_order_confirm
 #: model:ir.model.fields,field_description:multiple_order_confirm.field_purchase_order__id
 #: model:ir.model.fields,field_description:multiple_order_confirm.field_sale_order__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: multiple_order_confirm
 #: model:ir.model,name:multiple_order_confirm.model_purchase_order
 msgid "Purchase Order"
-msgstr ""
+msgstr "Orden de compra"
 
 #. module: multiple_order_confirm
 #: model:ir.model,name:multiple_order_confirm.model_sale_order
 msgid "Sale Order Delivery Split"
-msgstr ""
+msgstr "Orden de venta"
 
 #~ msgid ""
 #~ "Adds \\\"Confirm\\\" and \\\"Cancel\\\" buttons to the tree view of\n"

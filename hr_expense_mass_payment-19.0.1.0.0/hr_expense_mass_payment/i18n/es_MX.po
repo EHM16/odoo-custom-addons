@@ -17,25 +17,25 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. module: hr_expense_mass_payment
-#: model:ir.module.module,name:__manifest__.py
+#: model:ir.module.module,name:base.module_hr_expense_mass_payment
 msgid "Mass Register Expense Payment"
 msgstr "Registro masivo de pagos de gastos"
 
 #. module: hr_expense_mass_payment
-#: model:ir.module.module,summary:__manifest__.py
+#: model:ir.module.module,summary:base.module_hr_expense_mass_payment
 msgid "Register the payments of multiple expenses together."
-msgstr "Registra los pagos de múltiples gastos juntos."
+msgstr "Registre conjuntamente los pagos de varios gastos."
 
 #. module: hr_expense_mass_payment
-#: model:ir.module.module,description:__manifest__.py
+#: model:ir.module.module,description:base.module_hr_expense_mass_payment
 msgid ""
 "This module allows you to register payments of multiple \n"
 "    expenses at once. This makes the payment and journal posting of \n"
 "    expenses quicker and makes the process more efficient."
 msgstr ""
-"Este módulo le permite registrar pagos de múltiples \n"
-"    gastos a la vez. Esto hace que el pago y la contabilización en el diario de \n"
-"    agiliza los gastos y hace el proceso más eficiente."
+"Este módulo permite registrar pagos de múltiples \n"
+"    gastos a la vez. Agiliza el pago y la contabilización de los \n"
+"    gastos, y hace más eficiente el proceso."
 
 #. module: hr_expense_mass_payment
 #: code:models/hr_expense.py:39

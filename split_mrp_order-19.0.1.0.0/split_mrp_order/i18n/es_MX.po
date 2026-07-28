@@ -18,22 +18,18 @@ msgstr ""
 
 #. module: split_mrp_order
 #: model:ir.model.fields.selection,name:split_mrp_order.selection__split_order__splitting_method__by_no_of_quantity
-#, fuzzy
-#| msgid "No of Quantity"
 msgid "By Number of Quantity"
-msgstr "Cantidad"
+msgstr "Por cantidad"
 
 #. module: split_mrp_order
 #: model:ir.model.fields.selection,name:split_mrp_order.selection__split_order__splitting_method__by_no_of_split
-#, fuzzy
-#| msgid "No of Split"
 msgid "By Number of Split"
-msgstr "Divisiones"
+msgstr "Por número de divisiones"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,help:split_mrp_order.field_split_order__split_manually
 msgid "Can split mrp manually"
-msgstr "Puede dividir mrp manualmente"
+msgstr "Permite indicar manualmente las cantidades de cada división"
 
 #. module: split_mrp_order
 #: model_terms:ir.ui.view,arch_db:split_mrp_order.split_order_view_form
@@ -43,18 +39,18 @@ msgstr "Cancelar"
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_mrp_production__display_name
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,help:split_mrp_order.field_split_order__is_works
@@ -65,49 +61,47 @@ msgstr "Indica si debe mostrarse el centro de trabajo en el asistente"
 #: model:ir.model.fields,field_description:split_mrp_order.field_mrp_production__id
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: split_mrp_order
 #: model:ir.model,name:split_mrp_order.model_mrp_production
-#, fuzzy
-#| msgid "Manufacturing Orders Splitting"
 msgid "Manufacturing Order"
-msgstr "División de órdenes de fabricación"
+msgstr "Orden de fabricación"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,help:split_mrp_order.field_split_order__order_id
 msgid "Manufacturing production order"
-msgstr "orden de producción de fabricación"
+msgstr "Orden de fabricación que se dividirá"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__no_of_quantity
 msgid "No of Quantity"
-msgstr "Cantidad"
+msgstr "Cantidad por separar"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__no_of_split
 msgid "No of Split"
-msgstr "Divisiones"
+msgstr "Número de divisiones"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,help:split_mrp_order.field_split_order__no_of_quantity
 msgid "Number of quantity splitting"
-msgstr "Número de división de cantidad"
+msgstr "Cantidad que se asignará a la nueva orden"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,help:split_mrp_order.field_split_order__no_of_split
 msgid "Number of splits quantity"
-msgstr "Número de divisiones cantidad"
+msgstr "Número de divisiones que se crearán"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__order_id
@@ -117,7 +111,7 @@ msgstr "Orden"
 #. module: split_mrp_order
 #: model_terms:ir.ui.view,arch_db:split_mrp_order.split_order_view_form
 msgid "Split"
-msgstr "dividir"
+msgstr "Dividir"
 
 #. module: split_mrp_order
 #: model_terms:ir.ui.view,arch_db:split_mrp_order.mrp_production_form_view
@@ -126,24 +120,18 @@ msgstr "Dividir orden de fabricación"
 
 #. module: split_mrp_order
 #: model:ir.model.fields.selection,name:split_mrp_order.selection__split_order__splitting_method__split_manually
-#, fuzzy
-#| msgid "Can split mrp manually"
 msgid "Split Manually"
-msgstr "Puede dividir mrp manualmente"
+msgstr "Dividir manualmente"
 
 #. module: split_mrp_order
 #: model:ir.actions.act_window,name:split_mrp_order.split_order_action
-#, fuzzy
-#| msgid "Split MO"
 msgid "Split Order"
-msgstr "Dividir orden de fabricación"
+msgstr "Dividir orden"
 
 #. module: split_mrp_order
 #: model:ir.model,name:split_mrp_order.model_split_order
-#, fuzzy
-#| msgid "Split MO"
 msgid "Split Orders"
-msgstr "Dividir orden de fabricación"
+msgstr "División de órdenes"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__splitting_method
@@ -153,17 +141,17 @@ msgstr "Método de división"
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__split_manually
 msgid "Splitting Quantities"
-msgstr "Dividir cantidades"
+msgstr "Cantidades de las divisiones"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,help:split_mrp_order.field_split_order__splitting_method
 msgid "To select splitting method"
-msgstr "Para seleccionar el método de división"
+msgstr "Seleccione el método de división"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__work_center_id
 msgid "Work Center"
-msgstr "Centro de Trabajo"
+msgstr "Centro de trabajo"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,field_description:split_mrp_order.field_split_order__is_works
@@ -173,7 +161,7 @@ msgstr "Trabajos"
 #. module: split_mrp_order
 #: model_terms:ir.ui.view,arch_db:split_mrp_order.split_order_view_form
 msgid "split"
-msgstr "dividir"
+msgstr "División"
 
 #. module: split_mrp_order
 #: model:ir.model.fields,help:split_mrp_order.field_split_order__work_center_id

@@ -22,7 +22,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:module_activity.field_uninstall_history__create_uid
 #: model:ir.model.fields,field_description:module_activity.field_upgrade_history__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: module_activity
 #: model:ir.model.fields,field_description:module_activity.field_install_history__create_date
@@ -30,7 +30,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:module_activity.field_uninstall_history__create_date
 #: model:ir.model.fields,field_description:module_activity.field_upgrade_history__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: module_activity
 #: model:ir.model.fields,field_description:module_activity.field_install_history__display_name
@@ -39,7 +39,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:module_activity.field_uninstall_history__display_name
 #: model:ir.model.fields,field_description:module_activity.field_upgrade_history__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: module_activity
 #: model:ir.model.fields,help:module_activity.field_module_activity__installed_history_ids
@@ -63,14 +63,13 @@ msgstr "Historial de actualización del módulo."
 #: model:ir.model.fields,field_description:module_activity.field_uninstall_history__id
 #: model:ir.model.fields,field_description:module_activity.field_upgrade_history__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: module_activity
 #: model:ir.model,name:module_activity.model_install_history
-#, fuzzy
 #| msgid "Installed History"
 msgid "Installation History"
-msgstr "Historial de instación"
+msgstr "Historial de instalación"
 
 #. module: module_activity
 #: model:ir.model.fields,field_description:module_activity.field_install_history__installed_module_id
@@ -114,17 +113,16 @@ msgstr "Última desinstalación el"
 #: model:ir.model.fields,field_description:module_activity.field_uninstall_history__write_uid
 #: model:ir.model.fields,field_description:module_activity.field_upgrade_history__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: module_activity
 #: model:ir.model.fields,field_description:module_activity.field_install_history__write_date
 #: model:ir.model.fields,field_description:module_activity.field_module_activity__write_date
 #: model:ir.model.fields,field_description:module_activity.field_uninstall_history__write_date
 #: model:ir.model.fields,field_description:module_activity.field_upgrade_history__write_date
-#, fuzzy
 #| msgid "Last Uninstalled On"
 msgid "Last Updated on"
-msgstr "Última desinstalación el"
+msgstr "Última actualización el"
 
 #. module: module_activity
 #: model:ir.model,name:module_activity.model_ir_module_module
@@ -211,10 +209,9 @@ msgstr "Nombre técnico del módulo"
 
 #. module: module_activity
 #: model:ir.model,name:module_activity.model_uninstall_history
-#, fuzzy
 #| msgid "Uninstalled History"
 msgid "Uninstallation History"
-msgstr "Historial desinstalado"
+msgstr "Historial de desinstalación"
 
 #. module: module_activity
 #: model:ir.model.fields,field_description:module_activity.field_uninstall_history__uninstall_id

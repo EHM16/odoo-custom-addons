@@ -37,40 +37,39 @@ msgstr "Retiro de efectivo"
 #. module: dynamic_cashflow_statement
 #: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: dynamic_cashflow_statement
 #: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: dynamic_cashflow_statement
 #: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: dynamic_cashflow_statement
 #: model:ir.ui.menu,name:dynamic_cashflow_statement.cashflow_menu
 #: model:ir.ui.menu,name:dynamic_cashflow_statement.cashflow_menu_root
-#, fuzzy
 #| msgid "Dynamic Cash Flow Statements"
 msgid "Dynamic Cash Flow Statement"
-msgstr "Estados de flujo de efectivo dinámicos"
+msgstr "Estado dinámico de flujo de efectivo"
 
 #. module: dynamic_cashflow_statement
 #: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: dynamic_cashflow_statement
 #: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: dynamic_cashflow_statement
 #: model:ir.model.fields,field_description:dynamic_cashflow_statement.field_cashflow__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: dynamic_cashflow_statement
 #. odoo-javascript
@@ -81,13 +80,13 @@ msgstr "Nombre"
 #. module: dynamic_cashflow_statement
 #: model:ir.model,name:dynamic_cashflow_statement.model_cashflow
 msgid "Report advanced cash flows"
-msgstr ""
+msgstr "Informe avanzado de flujos de efectivo"
 
 #. module: dynamic_cashflow_statement
 #. odoo-javascript
 #: code:addons/dynamic_cashflow_statement/static/src/xml/cashflow.xml:0
 msgid "Show Journal Entry"
-msgstr ""
+msgstr "Mostrar apunte contable"
 
 #. module: dynamic_cashflow_statement
 #. odoo-javascript
@@ -98,7 +97,7 @@ msgstr "Total"
 #. module: dynamic_cashflow_statement
 #: model:ir.actions.client,name:dynamic_cashflow_statement.cash_flow_action
 msgid "cashflow"
-msgstr ""
+msgstr "Flujo de efectivo"
 
 #~ msgid ""
 #~ "\n"

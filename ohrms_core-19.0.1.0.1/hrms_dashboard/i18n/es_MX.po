@@ -20,7 +20,7 @@ msgstr ""
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
 msgid "ATTENDANCE"
-msgstr ""
+msgstr "ASISTENCIA"
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -31,7 +31,6 @@ msgstr "Agregar título de trabajo"
 #. module: hrms_dashboard
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
-#, fuzzy
 #| msgid ""
 #| "Payslips\n"
 #| "                                "
@@ -39,14 +38,14 @@ msgid ""
 "Address\n"
 "                                :"
 msgstr ""
-"Recibos de nómina\n"
-"                                "
+"Dirección\n"
+"                                :"
 
 #. module: hrms_dashboard
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
 msgid "Ago"
-msgstr ""
+msgstr "atrás"
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -57,10 +56,9 @@ msgstr "Importe"
 #. module: hrms_dashboard
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
-#, fuzzy
 #| msgid "No Announcements"
 msgid "Announcements"
-msgstr "Sin anuncios"
+msgstr "Anuncios"
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -127,7 +125,7 @@ msgstr "Contratos"
 #: model:ir.actions.client,name:hrms_dashboard.hr_action_dashboard
 #: model:ir.ui.menu,name:hrms_dashboard.hrms_dashboard_menu_root
 msgid "Dashboard"
-msgstr ""
+msgstr "Tablero"
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -149,16 +147,15 @@ msgstr "Fecha de nacimiento"
 #. module: hrms_dashboard
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
-#, fuzzy
 #| msgid "Date :"
 msgid "Date:"
-msgstr "Fecha :"
+msgstr "Fecha:"
 
 #. module: hrms_dashboard
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
 msgid "Days Left"
-msgstr ""
+msgstr "Días restantes"
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -172,7 +169,7 @@ msgstr "Departamentos"
 #: model:ir.model.fields,field_description:hrms_dashboard.field_hr_version__display_name
 #: model:ir.model.fields,field_description:hrms_dashboard.field_report_hrms_dashboard_report_broadfactor__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -194,17 +191,15 @@ msgstr "Empleado"
 
 #. module: hrms_dashboard
 #: model:ir.model,name:hrms_dashboard.model_hr_employee_broad_factor
-#, fuzzy
 #| msgid "Broad factor"
 msgid "Employee Broadfactor"
-msgstr "Factor de ausentismo"
+msgstr "Factor Bradford del empleado"
 
 #. module: hrms_dashboard
 #: model:ir.model,name:hrms_dashboard.model_hr_version
-#, fuzzy
 #| msgid "Employee"
 msgid "Employee Contract"
-msgstr "Empleado"
+msgstr "Contrato del empleado"
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -242,7 +237,7 @@ msgstr "Feliz Cumpleaños..!! 🎁"
 #: model:ir.model.fields,field_description:hrms_dashboard.field_hr_version__id
 #: model:ir.model.fields,field_description:hrms_dashboard.field_report_hrms_dashboard_report_broadfactor__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -387,10 +382,9 @@ msgstr "PROYECTOS"
 #. module: hrms_dashboard
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
-#, fuzzy
 #| msgid "Employee Payslips"
 msgid "Payslips"
-msgstr "Recibos de nómina del empleado"
+msgstr "Recibos de nómina"
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -444,7 +438,7 @@ msgstr "Asunto"
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/js/dashboard.js:0
 msgid "Successfully "
-msgstr ""
+msgstr "Correctamente "
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -504,24 +498,22 @@ msgstr "Desconocido"
 #. module: hrms_dashboard
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
-#, fuzzy
 #| msgid "No Upcoming Birthdays"
 msgid "Upcoming Birthdays"
-msgstr "No hay cumpleaños próximos"
+msgstr "Próximos cumpleaños"
 
 #. module: hrms_dashboard
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
-#, fuzzy
 #| msgid "No Upcoming Events"
 msgid "Upcoming Events"
-msgstr "No hay eventos próximos"
+msgstr "Próximos eventos"
 
 #. module: hrms_dashboard
 #. odoo-javascript
 #: code:addons/hrms_dashboard/static/src/xml/dashboard.xml:0
 msgid "Venue:"
-msgstr ""
+msgstr "Lugar:"
 
 #. module: hrms_dashboard
 #. odoo-javascript
@@ -532,7 +524,7 @@ msgstr "Horas trabajadas"
 #. module: hrms_dashboard
 #: model:ir.model,name:hrms_dashboard.model_report_hrms_dashboard_report_broadfactor
 msgid "report.hrms_dashboard.report_broadfactor"
-msgstr ""
+msgstr "report.hrms_dashboard.report_broadfactor"
 
 #~ msgid ""
 #~ "\n"

@@ -24,27 +24,27 @@ msgstr "# Anuncios"
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__message_needaction
 msgid "Action Needed"
-msgstr ""
+msgstr "Acción requerida"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__activity_ids
 msgid "Activities"
-msgstr ""
+msgstr "Actividades"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__activity_exception_decoration
 msgid "Activity Exception Decoration"
-msgstr ""
+msgstr "Decoración de excepción de actividad"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__activity_state
 msgid "Activity State"
-msgstr ""
+msgstr "Estado de la actividad"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__activity_type_icon
 msgid "Activity Type Icon"
-msgstr ""
+msgstr "Icono del tipo de actividad"
 
 #. module: hr_reward_warning
 #: model_terms:ir.ui.view,arch_db:hr_reward_warning.hr_announcement_view_search
@@ -106,24 +106,21 @@ msgstr "Adjunto"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__message_attachment_count
-#, fuzzy
 #| msgid "Attachment"
 msgid "Attachment Count"
-msgstr "Adjunto"
+msgstr "Número de archivos adjuntos"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields.selection,name:hr_reward_warning.selection__hr_announcement__announcement_type__department
-#, fuzzy
 #| msgid "Departments"
 msgid "By Department"
-msgstr "Departamentos"
+msgstr "Por departamento"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields.selection,name:hr_reward_warning.selection__hr_announcement__announcement_type__employee
-#, fuzzy
 #| msgid "Employees"
 msgid "By Employee"
-msgstr "Empleados"
+msgstr "Por empleado"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__announcement_type
@@ -138,17 +135,15 @@ msgstr ""
 
 #. module: hr_reward_warning
 #: model:ir.model.fields.selection,name:hr_reward_warning.selection__hr_announcement__announcement_type__job_position
-#, fuzzy
 #| msgid "Job Positions"
 msgid "By Job Position"
-msgstr "Puestos de Trabajo"
+msgstr "Por puesto de trabajo"
 
 #. module: hr_reward_warning
 #: model_terms:ir.actions.act_window,help:hr_reward_warning.hr_announcement_action
-#, fuzzy
 #| msgid "State of announcement."
 msgid "Click to Create a New Announcement."
-msgstr "Estado de anuncio."
+msgstr "Haga clic para crear un nuevo anuncio."
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__name
@@ -173,12 +168,12 @@ msgstr "Crear fecha de registro"
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado el"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__department_ids
@@ -194,7 +189,7 @@ msgstr "Departamentos"
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__display_name
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_employee__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre mostrado"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields.selection,name:hr_reward_warning.selection__hr_announcement__state__draft
@@ -203,10 +198,9 @@ msgstr "Borrador"
 
 #. module: hr_reward_warning
 #: model:ir.model,name:hr_reward_warning.model_hr_employee
-#, fuzzy
 #| msgid "Employees"
 msgid "Employee"
-msgstr "Empleados"
+msgstr "Empleado"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__employee_ids
@@ -241,17 +235,17 @@ msgstr "Caducado"
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__message_follower_ids
 msgid "Followers"
-msgstr ""
+msgstr "Seguidores"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__message_partner_ids
 msgid "Followers (Partners)"
-msgstr ""
+msgstr "Seguidores (contactos)"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__activity_type_icon
 msgid "Font awesome icon e.g. fa-tasks"
-msgstr ""
+msgstr "Icono de Font Awesome, por ejemplo, fa-tasks"
 
 #. module: hr_reward_warning
 #: model_terms:ir.ui.view,arch_db:hr_reward_warning.hr_announcement_view_form
@@ -265,54 +259,52 @@ msgstr "Anuncios generales"
 
 #. module: hr_reward_warning
 #: model:ir.model,name:hr_reward_warning.model_hr_announcement
-#, fuzzy
 #| msgid "# Announcements"
 msgid "HR Announcement"
-msgstr "# Anuncios"
+msgstr "Anuncio de RR. HH."
 
 #. module: hr_reward_warning
 #: model:ir.actions.server,name:hr_reward_warning.ir_cron_hr_announcement_expiry_date_ir_actions_server
-#, fuzzy
 #| msgid "Announcement Type"
 msgid "HR Announcement Expiry Date"
-msgstr "Tipo de anuncio"
+msgstr "Fecha de vencimiento del anuncio de RR. HH."
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__has_message
 msgid "Has Message"
-msgstr ""
+msgstr "Tiene mensajes"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__id
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_employee__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__activity_exception_icon
 msgid "Icon"
-msgstr ""
+msgstr "Icono"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__activity_exception_icon
 msgid "Icon to indicate an exception activity."
-msgstr ""
+msgstr "Icono para indicar una excepción de actividad."
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__message_needaction
 msgid "If checked, new messages require your attention."
-msgstr ""
+msgstr "Si está marcado, hay mensajes nuevos que requieren su atención."
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__message_has_error
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__message_has_sms_error
 msgid "If checked, some messages have a delivery error."
-msgstr ""
+msgstr "Si está marcado, algunos mensajes tienen un error de entrega."
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__message_is_follower
 msgid "Is Follower"
-msgstr ""
+msgstr "Es seguidor"
 
 #. module: hr_reward_warning
 #: model_terms:ir.ui.view,arch_db:hr_reward_warning.hr_announcement_view_search
@@ -332,12 +324,12 @@ msgstr "Puestos de Trabajo"
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Última actualización el"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__announcement
@@ -353,17 +345,17 @@ msgstr "Empresa del usuario actual"
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__message_has_error
 msgid "Message Delivery error"
-msgstr ""
+msgstr "Error de entrega del mensaje"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__message_ids
 msgid "Messages"
-msgstr ""
+msgstr "Mensajes"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__my_activity_date_deadline
 msgid "My Activity Deadline"
-msgstr ""
+msgstr "Fecha límite de mi actividad"
 
 #. module: hr_reward_warning
 #: model_terms:ir.ui.view,arch_db:hr_reward_warning.hr_announcement_view_search
@@ -373,42 +365,42 @@ msgstr "Nombre"
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__activity_calendar_event_id
 msgid "Next Activity Calendar Event"
-msgstr ""
+msgstr "Evento de calendario de la siguiente actividad"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__activity_date_deadline
 msgid "Next Activity Deadline"
-msgstr ""
+msgstr "Fecha límite de la siguiente actividad"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__activity_summary
 msgid "Next Activity Summary"
-msgstr ""
+msgstr "Resumen de la siguiente actividad"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__activity_type_id
 msgid "Next Activity Type"
-msgstr ""
+msgstr "Tipo de la siguiente actividad"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__message_needaction_counter
 msgid "Number of Actions"
-msgstr ""
+msgstr "Número de acciones"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__message_has_error_counter
 msgid "Number of errors"
-msgstr ""
+msgstr "Número de errores"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__message_needaction_counter
 msgid "Number of messages requiring action"
-msgstr ""
+msgstr "Número de mensajes que requieren una acción"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__message_has_error_counter
 msgid "Number of messages with delivery error"
-msgstr ""
+msgstr "Número de mensajes con error de entrega"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__position_ids
@@ -418,7 +410,7 @@ msgstr "Cargo del empleado que está autorizado a ver estos anuncios."
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__rating_ids
 msgid "Ratings"
-msgstr ""
+msgstr "Calificaciones"
 
 #. module: hr_reward_warning
 #: model_terms:ir.ui.view,arch_db:hr_reward_warning.hr_announcement_view_form
@@ -438,12 +430,12 @@ msgstr "Fecha solicitada"
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__activity_user_id
 msgid "Responsible User"
-msgstr ""
+msgstr "Usuario responsable"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__message_has_sms_error
 msgid "SMS Delivery error"
-msgstr ""
+msgstr "Error de entrega por SMS"
 
 #. module: hr_reward_warning
 #: model_terms:ir.ui.view,arch_db:hr_reward_warning.hr_announcement_view_form
@@ -489,6 +481,10 @@ msgid ""
 "Today: Activity date is today\n"
 "Planned: Future activities."
 msgstr ""
+"Estado basado en las actividades\n"
+"Vencida: la fecha límite ya pasó\n"
+"Hoy: la fecha de la actividad es hoy\n"
+"Planificada: actividades futuras."
 
 #. module: hr_reward_warning
 #. odoo-python
@@ -504,7 +500,7 @@ msgstr "Título"
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__activity_exception_decoration
 msgid "Type of the exception activity on record."
-msgstr ""
+msgstr "Tipo de actividad de excepción del registro."
 
 #. module: hr_reward_warning
 #: model:ir.model.fields.selection,name:hr_reward_warning.selection__hr_announcement__state__to_approve
@@ -514,12 +510,12 @@ msgstr "Esperando aprobación"
 #. module: hr_reward_warning
 #: model:ir.model.fields,field_description:hr_reward_warning.field_hr_announcement__website_message_ids
 msgid "Website Messages"
-msgstr ""
+msgstr "Mensajes del sitio web"
 
 #. module: hr_reward_warning
 #: model:ir.model.fields,help:hr_reward_warning.field_hr_announcement__website_message_ids
 msgid "Website communication history"
-msgstr ""
+msgstr "Historial de comunicaciones del sitio web"
 
 #~ msgid "Manages Official Announcements"
 #~ msgstr "Gestiona anuncios oficiales"

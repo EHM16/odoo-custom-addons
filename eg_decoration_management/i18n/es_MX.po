@@ -1,0 +1,579 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* eg_decoration_management
+#
+# Catalog reconstructed from source code; pending comparison with an authentic
+# Odoo 19 export.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-07-29 04:48+0000\n"
+"PO-Revision-Date: 2026-07-29 04:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (Mexico)\n"
+"Language: es_MX\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: eg_decoration_management/reports/ir_action_report.xml:26
+msgid "'Decoration Order- %s'%(object.name or \"No Name\")"
+msgstr "'Orden de decoración - %s'%(object.name or \"Sin nombre\")"
+
+#: eg_decoration_management/reports/ir_action_report.xml:38
+msgid "'Decoration Package- %s'%(object.name or \"No Name\")"
+msgstr "'Paquete de decoración - %s'%(object.name or \"Sin nombre\")"
+
+#: eg_decoration_management/views/decoration_checklist_template_view.xml:31
+msgid "Add a item"
+msgstr "Agregar un elemento"
+
+#: eg_decoration_management/views/decoration_order_view.xml:95 eg_decoration_management/views/decoration_package_view.xml:58
+msgid "Add a Line"
+msgstr "Agregar una línea"
+
+#: eg_decoration_management/views/decoration_checklist_template_view.xml:33
+msgid "Add a section"
+msgstr "Agregar una sección"
+
+#: eg_decoration_management/views/decoration_package_view.xml:106
+msgid "Add Image"
+msgstr "Agregar imagen"
+
+#: eg_decoration_management/views/decoration_order_view.xml:129
+msgid "Add Item"
+msgstr "Agregar elemento"
+
+#: eg_decoration_management/views/decoration_order_view.xml:98 eg_decoration_management/views/decoration_package_view.xml:61
+msgid "Add Note"
+msgstr "Agregar nota"
+
+#: eg_decoration_management/views/decoration_order_view.xml:97 eg_decoration_management/views/decoration_package_view.xml:60
+msgid "Add Section"
+msgstr "Agregar sección"
+
+#: eg_decoration_management/views/decoration_order_view.xml:159
+msgid "Add Service"
+msgstr "Agregar servicio"
+
+#: eg_decoration_management/views/decoration_order_view.xml:125
+msgid "Additinal"
+msgstr "Adicionales"
+
+#: eg_decoration_management/views/decoration_order_view.xml:79
+msgid "Additional Details"
+msgstr "Detalles adicionales"
+
+#: eg_decoration_management/views/product_product_view.xml:44 eg_decoration_management/views/product_product_view.xml:54
+msgid "Additional Item"
+msgstr "Elemento adicional"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:152 eg_decoration_management/reports/report_decoration_order_template.xml:249
+msgid "Additional Items"
+msgstr "Elementos adicionales"
+
+#: eg_decoration_management/views/decoration_order_view.xml:155 eg_decoration_management/views/product_product_view.xml:46 eg_decoration_management/views/product_product_view.xml:56
+msgid "Additional Service"
+msgstr "Servicio adicional"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:198 eg_decoration_management/reports/report_decoration_order_template.xml:256
+msgid "Additional Services"
+msgstr "Servicios adicionales"
+
+#: eg_decoration_management/views/crm_leads_view.xml:14 eg_decoration_management/views/decoration_order_view.xml:63
+msgid "Address Details"
+msgstr "Dirección del evento"
+
+#: eg_decoration_management/models/crm_lead.py:20
+msgid "Approx Guest"
+msgstr "Número aproximado de invitados"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:275
+msgid "Assigned Staff"
+msgstr "Personal asignado"
+
+#: eg_decoration_management/models/decoration_package.py:20
+msgid "BoM"
+msgstr "Lista de materiales"
+
+#: eg_decoration_management/views/decoration_order_view.xml:31
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: eg_decoration_management/models/decoration_checklist_template.py:9 eg_decoration_management/views/decoration_checklist_template_view.xml:11 eg_decoration_management/views/decoration_checklist_template_view.xml:27
+msgid "Checklist Items"
+msgstr "Elementos de la lista de verificación"
+
+#: eg_decoration_management/models/decoration_checklist_item.py:10
+msgid "Checklist Template"
+msgstr "Plantilla de lista de verificación"
+
+#: eg_decoration_management/views/decoration_checklist_template_view.xml:48 eg_decoration_management/views/decoration_checklist_template_view.xml:54
+msgid "Checklist Templates"
+msgstr "Plantillas de listas de verificación"
+
+#: eg_decoration_management/models/crm_lead.py:11 eg_decoration_management/views/crm_leads_view.xml:18 eg_decoration_management/views/decoration_order_view.xml:67
+msgid "City"
+msgstr "Ciudad"
+
+#: eg_decoration_management/models/decoration_package.py:17 eg_decoration_management/models/product_product.py:16
+msgid "Color"
+msgstr "Color"
+
+#: eg_decoration_management/views/decoration_order_view.xml:27
+msgid "Complete"
+msgstr "Completar"
+
+#: eg_decoration_management/views/decoration_order_view.xml:340
+msgid "Completed"
+msgstr "Completado"
+
+#: eg_decoration_management/views/decoration_event_type_view.xml:65
+msgid "Configurations"
+msgstr "Configuración"
+
+#: eg_decoration_management/models/decoration_package.py:19 eg_decoration_management/views/decoration_package_view.xml:22
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: eg_decoration_management/models/decoration_package.py:25
+msgid "Cost"
+msgstr "Costo"
+
+#: eg_decoration_management/reports/report_decoration_package_template.xml:46 eg_decoration_management/views/decoration_package_view.xml:46
+msgid "Cost Price"
+msgstr "Costo"
+
+#: eg_decoration_management/models/crm_lead.py:14 eg_decoration_management/views/crm_leads_view.xml:26 eg_decoration_management/views/decoration_order_view.xml:75
+msgid "Country"
+msgstr "País"
+
+#: eg_decoration_management/views/decoration_order_view.xml:152
+msgid "Create Additinal Item Sale Order"
+msgstr "Crear orden de venta de elementos adicionales"
+
+#: eg_decoration_management/views/decoration_order_view.xml:178
+msgid "Create Additinal Service Sale Order"
+msgstr "Crear orden de venta de servicios adicionales"
+
+#: eg_decoration_management/views/crm_leads_view.xml:9
+msgid "Create Decoration Order"
+msgstr "Crear orden de decoración"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:75 eg_decoration_management/views/hr_employee_view.xml:26
+msgid "Customer"
+msgstr "Cliente"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:69
+msgid "Customer Information"
+msgstr "Información del cliente"
+
+#: eg_decoration_management/views/decoration_event_type_view.xml:64 eg_decoration_management/views/product_product_view.xml:38
+msgid "Decoration"
+msgstr "Decoración"
+
+#: eg_decoration_management/models/decoration_additional_item.py:6
+msgid "Decoration Additional Item"
+msgstr "Elemento adicional de decoración"
+
+#: eg_decoration_management/models/decoration_additional_service.py:6
+msgid "Decoration Additional Service"
+msgstr "Servicio adicional de decoración"
+
+#: eg_decoration_management/views/decoration_order_view.xml:307 eg_decoration_management/views/decoration_order_view.xml:320
+msgid "Decoration Analysis"
+msgstr "Análisis de decoración"
+
+#: eg_decoration_management/models/decoration_checklist_item.py:6
+msgid "Decoration Checklist Item"
+msgstr "Elemento de la lista de verificación de decoración"
+
+#: eg_decoration_management/models/decoration_checklist_template.py:6
+msgid "Decoration Checklist Template"
+msgstr "Plantilla de lista de verificación de decoración"
+
+#: eg_decoration_management/models/decoration_package.py:29 eg_decoration_management/reports/report_decoration_package_template.xml:105
+msgid "Decoration Images"
+msgstr "Imágenes de la decoración"
+
+#: eg_decoration_management/models/decoration_additional_item.py:9
+msgid "Decoration Item"
+msgstr "Elemento de decoración"
+
+#: eg_decoration_management/models/decoration_package.py:27 eg_decoration_management/reports/report_decoration_package_template.xml:62
+msgid "Decoration Items"
+msgstr "Elementos de decoración"
+
+#: eg_decoration_management/__manifest__.py:2
+msgid "Decoration Management"
+msgstr "Gestión de decoración"
+
+#: eg_decoration_management/models/decoration_additional_item.py:8 eg_decoration_management/models/decoration_additional_service.py:8 eg_decoration_management/models/decoration_package_item.py:9 eg_decoration_management/models/sale_order.py:7 eg_decoration_management/models/crm_lead.py:87 eg_decoration_management/models/crm_lead.py:97 eg_decoration_management/models/crm_lead.py:60 eg_decoration_management/reports/report_decoration_order_template.xml:23 eg_decoration_management/views/crm_leads_view.xml:12
+msgid "Decoration Order"
+msgstr "Orden de decoración"
+
+#: eg_decoration_management/models/crm_lead.py:22
+msgid "Decoration Order Created"
+msgstr "Orden de decoración creada"
+
+#: eg_decoration_management/models/crm_lead.py:24 eg_decoration_management/views/crm_leads_view.xml:45 eg_decoration_management/views/decoration_order_view.xml:294 eg_decoration_management/views/decoration_order_view.xml:354 eg_decoration_management/views/decoration_order_view.xml:360
+msgid "Decoration Orders"
+msgstr "Órdenes de decoración"
+
+#: eg_decoration_management/models/crm_lead.py:19 eg_decoration_management/models/decoration_package.py:10 eg_decoration_management/models/decoration_package_image.py:13 eg_decoration_management/models/decoration_package_item.py:12 eg_decoration_management/reports/report_decoration_package_template.xml:25 eg_decoration_management/views/decoration_package_view.xml:128 eg_decoration_management/views/product_product_view.xml:42 eg_decoration_management/views/product_product_view.xml:52
+msgid "Decoration Package"
+msgstr "Paquete de decoración"
+
+#: eg_decoration_management/models/decoration_package_image.py:8
+msgid "Decoration Package Images"
+msgstr "Imágenes del paquete de decoración"
+
+#: eg_decoration_management/models/decoration_package_item.py:6
+msgid "Decoration Package Item"
+msgstr "Elemento del paquete de decoración"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:105
+msgid "Decoration Package Items"
+msgstr "Elementos del paquete de decoración"
+
+#: eg_decoration_management/views/product_product_view.xml:40 eg_decoration_management/views/product_product_view.xml:50
+msgid "Decoration Product"
+msgstr "Producto de decoración"
+
+#: eg_decoration_management/models/hr_employee.py:7 eg_decoration_management/views/hr_employee_view.xml:17 eg_decoration_management/views/hr_employee_view.xml:24
+msgid "Decoration Staff"
+msgstr "Personal de decoración"
+
+#: eg_decoration_management/views/decoration_order_view.xml:195
+msgid "Decoration Staffs"
+msgstr "Personal de decoración"
+
+#: eg_decoration_management/views/decoration_order_view.xml:40
+msgid "Deliveries"
+msgstr "Entregas"
+
+#: eg_decoration_management/models/decoration_additional_item.py:42
+msgid "Delivery Orders"
+msgstr "Órdenes de entrega"
+
+#: eg_decoration_management/models/decoration_additional_item.py:10 eg_decoration_management/models/decoration_additional_service.py:10 eg_decoration_management/models/decoration_event_type.py:10 eg_decoration_management/models/decoration_package.py:31 eg_decoration_management/reports/report_decoration_order_template.xml:111 eg_decoration_management/reports/report_decoration_order_template.xml:159 eg_decoration_management/reports/report_decoration_order_template.xml:205 eg_decoration_management/views/decoration_package_view.xml:117 eg_decoration_management/views/decoration_package_view.xml:118
+msgid "Description"
+msgstr "Descripción"
+
+#: eg_decoration_management/views/decoration_event_type_view.xml:23
+msgid "Description..."
+msgstr "Descripción..."
+
+#: eg_decoration_management/models/decoration_package.py:19
+msgid "Draft"
+msgstr "Borrador"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:79
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: eg_decoration_management/views/decoration_order_view.xml:204
+msgid "Employee"
+msgstr "Empleado"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:64
+msgid "End Date"
+msgstr "Fecha de finalización"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:90
+msgid "Event Address"
+msgstr "Dirección del evento"
+
+#: eg_decoration_management/__manifest__.py:45
+msgid "Event Decoration Management application delivers an integrated solution for planning, organizing, and executing decoration services across diverse event categories. The system supports structured management of event configurations, service packages, and operational workflows to ensure consistent and high-quality service delivery. Centralized customer and sales management enables efficient handling of inquiries, quotations, and confirmed service commitments. Resource and workforce coordination improves task allocation and execution accuracy during event preparation. Financial processing supports accurate billing, revenue tracking, and service cost control. Consolidated reporting enhances operational visibility, accountability, and informed business decision-making."
+msgstr "La aplicación Gestión de decoración de eventos ofrece una solución integral para planear, organizar y ejecutar servicios de decoración en distintas categorías de eventos. El sistema permite administrar de forma estructurada la configuración de los eventos, los paquetes de servicios y los flujos operativos para brindar un servicio uniforme y de alta calidad. La gestión centralizada de clientes y ventas facilita el seguimiento de solicitudes, cotizaciones y servicios confirmados. La coordinación de recursos y personal mejora la asignación de tareas y la precisión durante la preparación del evento. El procesamiento financiero permite controlar correctamente la facturación, los ingresos y los costos de los servicios. Los informes consolidados mejoran la visibilidad operativa, la rendición de cuentas y la toma de decisiones."
+
+#: eg_decoration_management/__manifest__.py:5
+msgid "Event Decoration Management Event Management Catering Mangement event decoration management event management software decoration service management wedding decoration management party decoration management event planning software event organizer management decoration business management event service management event booking management event order management event package management decoration package management event vendor management event resource management event staff management event sales management event customer management event billing management event scheduling software event workflow management function decoration management stage decoration management corporate event management birthday event management wedding planner software event logistics management event inventory management event service booking software event business automation event decoration software event decoration system event decoration planning software event decoration order management event decoration workflow management event decoration sales management event decoration billing software event decoration staff management event decoration package software event decoration inventory management event services management software event operations management event quotation management event invoice management event service automation event planning and decoration software event decoration erp event decoration management system catering mangement ."
+msgstr "Gestión de decoración de eventos, servicios de decoración, banquetes, bodas, fiestas, eventos corporativos y cumpleaños; planeación, cotizaciones, reservas, órdenes, paquetes, proveedores, recursos, personal, ventas, clientes, facturación, programación, logística, inventario, operaciones y automatización de servicios para eventos."
+
+#: eg_decoration_management/reports/ir_action_report.xml:5
+msgid "Event Decoration Paper"
+msgstr "Papel para reportes de decoración de eventos"
+
+#: eg_decoration_management/models/decoration_event_type.py:6
+msgid "Event Decoration Type"
+msgstr "Tipo de evento"
+
+#: eg_decoration_management/views/decoration_order_view.xml:85
+msgid "Event Details"
+msgstr "Detalles del evento"
+
+#: eg_decoration_management/views/decoration_order_view.xml:57
+msgid "Event Duration"
+msgstr "Duración del evento"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:44 eg_decoration_management/views/decoration_order_view.xml:346
+msgid "Event Leader"
+msgstr "Responsable del evento"
+
+#: eg_decoration_management/models/crm_lead.py:16 eg_decoration_management/models/decoration_event_type.py:8 eg_decoration_management/reports/report_decoration_order_template.xml:50 eg_decoration_management/views/decoration_event_type_view.xml:20 eg_decoration_management/views/decoration_order_view.xml:345
+msgid "Event Type"
+msgstr "Tipo de evento"
+
+#: eg_decoration_management/views/decoration_event_type_view.xml:59 eg_decoration_management/views/decoration_event_type_view.xml:67
+msgid "Event Types"
+msgstr "Tipos de evento"
+
+#: eg_decoration_management/models/decoration_package_image.py:12
+msgid "File Size"
+msgstr "Tamaño del archivo"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:287 eg_decoration_management/reports/report_decoration_package_template.xml:123
+msgid "Generated by"
+msgstr "Generado por"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:264
+msgid "Grand Total"
+msgstr "Total general"
+
+#: eg_decoration_management/views/product_product_view.xml:48
+msgid "Group By"
+msgstr "Agrupar por"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:54
+msgid "Guests"
+msgstr "Invitados"
+
+#: eg_decoration_management/models/decoration_event_type.py:9 eg_decoration_management/models/decoration_package.py:18 eg_decoration_management/models/decoration_package_image.py:11
+msgid "Image"
+msgstr "Imagen"
+
+#: eg_decoration_management/views/decoration_package_view.xml:80
+msgid "Images"
+msgstr "Imágenes"
+
+#: eg_decoration_management/views/decoration_order_view.xml:25 eg_decoration_management/views/decoration_order_view.xml:339
+msgid "In Progress"
+msgstr "En curso"
+
+#: eg_decoration_management/models/product_product.py:13
+msgid "Is Additional Item"
+msgstr "Es un elemento adicional"
+
+#: eg_decoration_management/models/product_product.py:14
+msgid "Is Additional Service"
+msgstr "Es un servicio adicional"
+
+#: eg_decoration_management/models/product_product.py:12
+msgid "Is Decoration Package"
+msgstr "Es un paquete de decoración"
+
+#: eg_decoration_management/models/product_product.py:11
+msgid "Is Decoration Product"
+msgstr "Es un producto de decoración"
+
+#: eg_decoration_management/models/decoration_package_item.py:13 eg_decoration_management/reports/report_decoration_order_template.xml:112
+msgid "Item"
+msgstr "Elemento"
+
+#: eg_decoration_management/views/crm_leads_view.xml:59
+msgid "Lead"
+msgstr "Iniciativa"
+
+#: eg_decoration_management/views/crm_leads_view.xml:53 eg_decoration_management/views/crm_leads_view.xml:61
+msgid "Leads"
+msgstr "Iniciativas"
+
+#: eg_decoration_management/models/decoration_checklist_item.py:9 eg_decoration_management/models/decoration_checklist_template.py:8 eg_decoration_management/models/decoration_package.py:16 eg_decoration_management/models/decoration_package_item.py:14 eg_decoration_management/reports/report_decoration_package_template.xml:68 eg_decoration_management/views/decoration_package_view.xml:27 eg_decoration_management/views/decoration_package_view.xml:29
+msgid "Name"
+msgstr "Nombre"
+
+#: eg_decoration_management/views/decoration_order_view.xml:338
+msgid "New"
+msgstr "Nuevo"
+
+#: eg_decoration_management/models/decoration_checklist_item.py:11 eg_decoration_management/models/decoration_package_item.py:11
+msgid "Note"
+msgstr "Nota"
+
+#: eg_decoration_management/views/crm_leads_view.xml:29 eg_decoration_management/views/decoration_order_view.xml:51
+msgid "Order Details"
+msgstr "Detalles de la orden"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:26
+msgid "Order Information"
+msgstr "Información de la orden"
+
+#: eg_decoration_management/views/decoration_order_view.xml:91 eg_decoration_management/views/decoration_package_view.xml:54
+msgid "Order Item"
+msgstr "Elementos de la orden"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:30
+msgid "Order No"
+msgstr "Núm. de orden"
+
+#: eg_decoration_management/views/decoration_package_view.xml:133
+msgid "Package"
+msgstr "Paquetes"
+
+#: eg_decoration_management/reports/report_decoration_package_template.xml:28
+msgid "Package Information"
+msgstr "Información del paquete"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:238
+msgid "Package Items Total"
+msgstr "Total de los elementos del paquete"
+
+#: eg_decoration_management/reports/report_decoration_package_template.xml:32
+msgid "Package Name"
+msgstr "Nombre del paquete"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:85
+msgid "Phone"
+msgstr "Teléfono"
+
+#: eg_decoration_management/views/crm_leads_view.xml:63
+msgid "Pipeline"
+msgstr "Flujo"
+
+#: eg_decoration_management/reports/report_decoration_package_template.xml:71
+msgid "Price"
+msgstr "Precio"
+
+#: eg_decoration_management/models/decoration_package_item.py:17
+msgid "Price Unit"
+msgstr "Precio unitario"
+
+#: eg_decoration_management/reports/ir_action_report.xml:19 eg_decoration_management/reports/ir_action_report.xml:31
+msgid "Print"
+msgstr "Imprimir"
+
+#: eg_decoration_management/models/decoration_package.py:21 eg_decoration_management/reports/report_decoration_order_template.xml:158 eg_decoration_management/reports/report_decoration_order_template.xml:204 eg_decoration_management/reports/report_decoration_package_template.xml:42 eg_decoration_management/reports/report_decoration_package_template.xml:69 eg_decoration_management/views/product_product_view.xml:64 eg_decoration_management/views/product_product_view.xml:70
+msgid "Product"
+msgstr "Producto"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:113 eg_decoration_management/reports/report_decoration_order_template.xml:160 eg_decoration_management/reports/report_decoration_package_template.xml:70
+msgid "Qty"
+msgstr "Cant."
+
+#: eg_decoration_management/models/decoration_additional_item.py:11
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: eg_decoration_management/models/decoration_additional_item.py:16 eg_decoration_management/models/decoration_additional_service.py:14 eg_decoration_management/reports/report_decoration_order_template.xml:164 eg_decoration_management/reports/report_decoration_order_template.xml:207
+msgid "Sale Order"
+msgstr "Orden de venta"
+
+#: eg_decoration_management/models/decoration_additional_item.py:17 eg_decoration_management/models/decoration_additional_service.py:15
+msgid "Sale Order Status"
+msgstr "Estado de la orden de venta"
+
+#: eg_decoration_management/views/decoration_order_view.xml:37
+msgid "Sale Orders"
+msgstr "Órdenes de venta"
+
+#: eg_decoration_management/views/decoration_package_view.xml:41
+msgid "Sale Price"
+msgstr "Precio de venta"
+
+#: eg_decoration_management/models/decoration_package.py:23 eg_decoration_management/reports/report_decoration_package_template.xml:52
+msgid "Sales Price"
+msgstr "Precio de venta"
+
+#: eg_decoration_management/models/decoration_checklist_item.py:11 eg_decoration_management/models/decoration_package_item.py:11
+msgid "Section"
+msgstr "Sección"
+
+#: eg_decoration_management/views/decoration_order_view.xml:29 eg_decoration_management/views/decoration_package_view.xml:20
+msgid "Send Mail"
+msgstr "Enviar correo"
+
+#: eg_decoration_management/models/decoration_additional_service.py:9
+msgid "Service"
+msgstr "Servicio"
+
+#: eg_decoration_management/models/decoration_additional_service.py:11
+msgid "Service Charge"
+msgstr "Cargo por servicio"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:60
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#: eg_decoration_management/models/crm_lead.py:12 eg_decoration_management/views/crm_leads_view.xml:22 eg_decoration_management/views/decoration_order_view.xml:71
+msgid "State"
+msgstr "Estado"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:34 eg_decoration_management/reports/report_decoration_package_template.xml:36 eg_decoration_management/views/decoration_order_view.xml:347
+msgid "Status"
+msgstr "Estado"
+
+#: eg_decoration_management/models/crm_lead.py:9
+msgid "Street"
+msgstr "Calle"
+
+#: eg_decoration_management/models/crm_lead.py:10
+msgid "Street 2"
+msgstr "Calle 2"
+
+#: eg_decoration_management/views/crm_leads_view.xml:17 eg_decoration_management/views/decoration_order_view.xml:66
+msgid "Street 2..."
+msgstr "Calle 2..."
+
+#: eg_decoration_management/views/crm_leads_view.xml:16 eg_decoration_management/views/decoration_order_view.xml:65
+msgid "Street..."
+msgstr "Calle..."
+
+#: eg_decoration_management/models/decoration_additional_item.py:15 eg_decoration_management/reports/report_decoration_order_template.xml:116 eg_decoration_management/reports/report_decoration_order_template.xml:163
+msgid "Subtotal"
+msgstr "Subtotal"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:233
+msgid "Summary"
+msgstr "Resumen"
+
+#: eg_decoration_management/models/decoration_package_image.py:10 eg_decoration_management/reports/report_decoration_order_template.xml:40 eg_decoration_management/views/decoration_order_view.xml:47
+msgid "Title"
+msgstr "Título"
+
+#: eg_decoration_management/views/decoration_order_view.xml:342
+msgid "Today Events"
+msgstr "Eventos de hoy"
+
+#: eg_decoration_management/models/decoration_package_item.py:18
+msgid "Total Price"
+msgstr "Precio total"
+
+#: eg_decoration_management/models/decoration_package_item.py:11
+msgid "Type"
+msgstr "Tipo"
+
+#: eg_decoration_management/views/decoration_package_view.xml:44 eg_decoration_management/views/decoration_package_view.xml:49
+msgid "Unit Of Measure"
+msgstr "Unidad de medida"
+
+#: eg_decoration_management/models/decoration_additional_item.py:13 eg_decoration_management/reports/report_decoration_order_template.xml:115 eg_decoration_management/reports/report_decoration_order_template.xml:162 eg_decoration_management/reports/report_decoration_order_template.xml:206
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#: eg_decoration_management/models/decoration_package.py:24
+msgid "Units"
+msgstr "Unidades"
+
+#: eg_decoration_management/reports/report_decoration_order_template.xml:114 eg_decoration_management/reports/report_decoration_order_template.xml:161
+msgid "UoM"
+msgstr "UdM"
+
+#: eg_decoration_management/reports/report_decoration_package_template.xml:56
+msgid "UOM"
+msgstr "UdM"
+
+#: eg_decoration_management/views/decoration_order_view.xml:146
+msgid "View Delivery"
+msgstr "Ver entrega"
+
+#: eg_decoration_management/models/crm_lead.py:13
+msgid "Zip"
+msgstr "Código postal"
+
+#: eg_decoration_management/views/crm_leads_view.xml:23 eg_decoration_management/views/decoration_order_view.xml:72
+msgid "ZIP"
+msgstr "Código postal"

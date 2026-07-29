@@ -1,0 +1,11 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_decoration_event_type,access.decoration.event.type,model_decoration_event_type,,1,1,1,1
+access_decoration_checklist_template,access.decoration.checklist.template,model_decoration_checklist_template,,1,1,1,1
+access_decoration_checklist_item,access.decoration.checklist.item,model_decoration_checklist_item,,1,1,1,1
+access_decoration_package,access.decoration.package,model_decoration_package,,1,1,1,1
+access_decoration_package_item,access.decoration.package.item,model_decoration_package_item,,1,1,1,1
+access_decoration_package_image,access.decoration.package.image,model_decoration_package_image,,1,1,1,1
+access_decoration_order,access.decoration.order,model_decoration_order,,1,1,1,1
+access_decoration_additional_item,access.decoration.additional.item,model_decoration_additional_item,,1,1,1,1
+access_decoration_additional_service,access.decoration.additional.service,model_decoration_additional_service,,1,1,1,1

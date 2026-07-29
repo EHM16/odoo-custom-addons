@@ -1,0 +1,131 @@
+<odoo>
+    <template id="report_decoration_package_template">
+        <t t-call="web.basic_layout">
+            <t t-foreach="docs" t-as="doc">
+                <div class="page" style="font-size:14px; color:#000;">
+                    <!-- Company Information -->
+                    <t t-set="company" t-value="user.company_id"/>
+                    <div style="text-align:center; margin-bottom:20px;">
+                        <t t-if="company.logo">
+                            <img t-att-src="image_data_uri(company.logo)"
+                                 style="max-height:80px; margin-bottom:10px;"/>
+                        </t>
+                        <div style="font-size:13px;">
+                            <strong t-esc="company.name"/>
+                            <div t-esc="company.street"/>
+                            <div>
+                                <span t-esc="company.city"/>
+                                -
+                                <span t-esc="company.zip"/>
+                            </div>
+                            <div t-esc="company.country_id.name"/>
+                        </div>
+                        <hr style="border:1px solid #999; margin-top:15px;"/>
+                    </div>
+                    <h2 style="text-align:center; margin-bottom:25px;">
+                        Decoration Package
+                    </h2>
+                    <h4 style="background:#e5e5e5; padding:6px;">Package Information</h4>
+                    <table class="table table-borderless" style="width:100%;">
+                        <tr>
+                            <td>
+                                <strong>Package Name</strong>
+                            </td>
+                            <td t-esc="doc.name"/>
+                            <td>
+                                <strong>Status</strong>
+                            </td>
+                            <td t-esc="doc.state"/>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Product</strong>
+                            </td>
+                            <td t-esc="doc.product_id.name"/>
+                            <td>
+                                <strong>Cost Price</strong>
+                            </td>
+                            <td t-esc="doc.cost_price"/>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Sales Price</strong>
+                            </td>
+                            <td t-esc="doc.sales_price"/>
+                            <td>
+                                <strong>UOM</strong>
+                            </td>
+                            <td t-esc="doc.uom_id.name"/>
+                        </tr>
+                    </table>
+                    <t t-if="doc.package_item_ids">
+                        <h4 style="background:#e5e5e5; padding:6px; margin-top:20px;">
+                            Decoration Items
+                        </h4>
+                        <table class="table table-sm table-borderless" style="width:100%; border-spacing:0;">
+                            <thead style="background:#f2f2f2;">
+                                <tr>
+                                    <th style="padding:5px; text-align:left;">Name</th>
+                                    <th style="padding:5px; text-align:left;">Product</th>
+                                    <th style="padding:5px; text-align:right;">Qty</th>
+                                    <th style="padding:5px; text-align:right;">Price</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="doc.package_item_ids" t-as="item">
+                                    <t t-if="item.display_type != 'line_section'">
+                                        <tr>
+                                            <td style="padding:8px; text-align:left;">
+                                                <t t-esc="item.name"/>
+                                            </td>
+                                            <td style="padding:8px; text-align:left;">
+                                                <t t-esc="item.product_id.display_name"/>
+                                            </td>
+                                            <td style="padding:8px; text-align:right;">
+                                                <t t-esc="item.quantity"/>
+                                            </td>
+                                            <td style="padding:8px; text-align:right;">
+                                                <span t-field="item.price_unit"
+                                                      t-options="{'widget':'monetary','display_currency':doc.currency_id}"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <t t-elif="item.display_type == 'line_section'">
+                                        <tr>
+                                            <td colspan="4" style="padding:8px; font-weight:bold; background:#f7f7f7;">
+                                                <t t-esc="item.name"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </t>
+                            </tbody>
+                        </table>
+                    </t>
+                    <t t-if="doc.image_ids and len(doc.image_ids) &gt; 0">
+                        <h4 style="background:#e5e5e5; padding:6px; margin-top:20px;">
+                            Decoration Images
+                        </h4>
+                        <table style="width:100%; table-layout:fixed;">
+                            <t t-foreach="range(0, len(doc.image_ids), 4)" t-as="row">
+                                <tr>
+                                    <t t-foreach="doc.image_ids[row:row+4]" t-as="img">
+                                        <td style="padding:8px; text-align:center;">
+                                            <img t-if="img.image"
+                                                 t-att-src="image_data_uri(img.image)"
+                                                 style="max-width:150px; max-height:120px;"/>
+                                            <div style="font-size:11px;" t-esc="img.name"/>
+                                        </td>
+                                    </t>
+                                </tr>
+                            </t>
+                        </table>
+                    </t>
+                    <p style="text-align:right; font-size:12px; margin-top:20px;">
+                        Generated by
+                        <strong t-esc="user.name"/>
+                    </p>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

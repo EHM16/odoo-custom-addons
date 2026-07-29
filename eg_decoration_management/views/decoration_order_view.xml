@@ -1,0 +1,361 @@
+<odoo>
+    <record id="decoration_order_list_view" model="ir.ui.view">
+        <field name="name">decoration.order.list</field>
+        <field name="model">decoration.order</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="event_type_id"/>
+                <field name="event_start"/>
+                <field name="event_end"/>
+                <field name="approx_guests"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="decoration_order_form_view" model="ir.ui.view">
+        <field name="name">decoration.order.form</field>
+        <field name="model">decoration.order</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_state_progress" type="object" string="In Progress" class="btn-primary"
+                            invisible="state !='new'"/>
+                    <button name="action_create_sale_order" type="object" string="Complete" class="btn-success"
+                            invisible="state !='progress'"/>
+                    <button name="action_send_decoration_order_mail" type="object" string="Send Mail"
+                            class="btn-primary"/>
+                    <button name="action_state_cancel" type="object" string="Cancel" class="btn-danger"
+                            invisible="state !='progress'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="new,progress,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_sale_order" type="object" class="oe_stat_button" icon="fa-bar-chart">
+                            <field name="sale_order_count" widget="statinfo" string="Sale Orders"/>
+                        </button>
+                        <button name="action_view_delivery_orders" type="object" class="oe_stat_button" icon="fa-truck">
+                            <field name="delivery_count" widget="statinfo" string="Deliveries"/>
+                        </button>
+                    </div>
+                    <h1>
+                        <field name="name" readonly="1"/>
+                    </h1>
+                    <h2>
+                        <field name="title" placeholder="Title" required="1"/>
+                    </h2>
+                    <field name="currency_id" invisible="1"/>
+                    <group>
+                        <group string="Order Details">
+                            <field name="lead_id"/>
+                            <field name="partner_id" required="1" widget="many2one_avatar"/>
+                            <field name="phone" widget="phone"/>
+                            <field name="email" widget="email"/>
+                        </group>
+                        <group string="Event Duration">
+                            <field name="event_start" required="1"/>
+                            <field name="event_end" required="1"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Address Details">
+                            <div class="o_address_format">
+                                <field name="street" placeholder="Street..." class="o_address_street"/>
+                                <field name="street2" placeholder="Street 2..." class="o_address_street"/>
+                                <field name="city" placeholder="City" class="o_address_city"/>
+                                <field name="state_id" class="o_address_state" placeholder="State"
+                                       can_write="True"
+                                       can_create="True" options="{'no_open': True, 'no_quick_create': True}"
+                                       context="{'country_id': country_id, 'default_country_id': country_id, 'zip': zip}"/>
+                                <field name="zip" placeholder="ZIP" class="o_address_zip"/>
+                                <field name="country_id" placeholder="Country" can_create="True"
+                                       can_write="True"
+                                       options="{'no_open': True, 'no_create': True}" class="o_address_country"/>
+                            </div>
+                        </group>
+
+                        <group string="Additional Details">
+                            <field name="event_type_id" required="1"/>
+                            <field name="user_id" required="1" widget="many2one_avatar_user"/>
+                            <field name="company_id" required="1"/>
+                        </group>
+                    </group>
+                    <group string="Event Details">
+                        <field name="decoration_package_ids" widget="many2many_tags"
+                               options="{'color_field': 'color'}"/>
+                        <field name="approx_guests"/>
+                    </group>
+                    <notebook>
+                        <page string="Order Item">
+                            <field name="decoration_package_item_ids">
+                                <list editable="bottom">
+                                    <control>
+                                        <create string="Add a Line"/>
+                                        <create string="Add Section"
+                                                context="{'default_display_type': 'line_section'}"/>
+                                        <create string="Add Note" context="{'default_display_type': 'line_note'}"/>
+                                    </control>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="display_type" column_invisible="True"/>
+                                    <field name="name" required="display_type"
+                                           decoration-bf="display_type == 'line_section'"
+                                           decoration-it="display_type == 'line_note'"/>
+                                    <field name="product_id" domain="[('is_decoration_product','=',True)]"
+                                           invisible="display_type"/>
+                                    <field name="quantity" invisible="display_type"/>
+                                    <field name="uom_id" readonly="1" invisible="display_type"/>
+                                    <field name="price_unit" sum="Price Unit" invisible="display_type" widget="monetary"
+                                           options="{'currency_field': 'currency_id'}"/>
+                                    <field name="total_price" sum="Total Price" readonly="1" invisible="display_type"
+                                           widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                </list>
+                            </field>
+                            <group col="2">
+                                <group/>
+                                <group class="oe_subtotal_footer oe_right">
+                                    <field name="total_package_item_amount" widget="monetary"
+                                           options="{'currency_field': 'currency_id'}"/>
+                                </group>
+                            </group>
+                        </page>
+
+                        <page string="Additinal">
+                            <field name="additional_item_ids">
+                                <list editable="bottom">
+                                    <control>
+                                        <create string="Add Item"/>
+                                    </control>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="product_id" domain="[('is_additional_item','=',True)]" required="1"/>
+                                    <field name="name"/>
+                                    <field name="quantity" required="1"/>
+                                    <field name="uom_id" required="1"/>
+                                    <field name="price_unit" widget="monetary" sum="Price Unit"
+                                           options="{'currency_field': 'currency_id'}" required="1"/>
+                                    <field name="subtotal" widget="monetary" sum="Total" required="1"
+                                           options="{'currency_field': 'currency_id'}"/>
+                                    <field name="item_sale_order_id" invisible="not item_sale_order_id" readonly="1"/>
+                                    <field name="item_sale_order_state" widget="badge"
+                                           decoration-success="item_sale_order_state == 'sale'"
+                                           decoration-info="item_sale_order_state == 'draft'"
+                                           decoration-primary="item_sale_order_state == 'sent'"/>
+                                    <button name="action_view_delivery_order" type="object" icon="fa-truck"
+                                            title="View Delivery" invisible="item_sale_order_id == False"/>
+                                </list>
+                            </field>
+                            <group>
+                                <group>
+                                    <button name="action_create_additional_item_sale_order" type="object"
+                                            class="btn-primary" string="Create Additinal Item Sale Order"/>
+                                </group>
+                            </group>
+                            <separator string="Additional Service"/>
+                            <field name="additional_service_ids">
+                                <list editable="bottom">
+                                    <control>
+                                        <create string="Add Service"/>
+                                    </control>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="product_id" domain="[('is_additional_service','=',True)]"
+                                           required="1"/>
+                                    <field name="name"/>
+                                    <field name="price_unit" sum="Price Unit" widget="monetary"
+                                           options="{'currency_field': 'currency_id'}"/>
+                                    <field name="service_sale_order_id" invisible="not service_sale_order_id"
+                                           readonly="1"/>
+                                    <field name="service_sale_order_state" widget="badge"
+                                           decoration-success="service_sale_order_state == 'sale'"
+                                           decoration-info="service_sale_order_state == 'draft'"
+                                           decoration-primary="service_sale_order_state == 'sent'"/>
+                                </list>
+                            </field>
+                            <group>
+                                <group>
+                                    <button name="action_create_additional_service_sale_order" type="object"
+                                            class="btn-primary" string="Create Additinal Service Sale Order"/>
+                                </group>
+                            </group>
+
+                            <group col="2">
+                                <group/>
+                                <group class="oe_subtotal_footer oe_right">
+                                    <field name="total_additional_item_amount" widget="monetary"
+                                           options="{'currency_field': 'currency_id'}"/>
+                                    <field name="total_additional_service_amount" widget="monetary"
+                                           options="{'currency_field': 'currency_id'}"/>
+                                    <separator/>
+                                    <field name="total_amount" widget="monetary"
+                                           options="{'currency_field': 'currency_id'}" class="fw-bold"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Decoration Staffs">
+                            <field name="employee_ids" widget="many2many_kanban"
+                                   domain="[('is_decoration_staff','=',True)]">
+                                <kanban>
+                                    <templates>
+                                        <t t-name="kanban-box">
+                                            <div class="oe_kanban_global_click o_kanban_card">
+                                                <div class="o_kanban_image">
+                                                    <img t-att-src="kanban_image('hr.employee','image_1920',
+                                    record.id.raw_value)" alt="Employee"/>
+                                                </div>
+                                                <div class="oe_kanban_details">
+                                                    <strong>
+                                                        <field name="name"/>
+                                                    </strong>
+                                                    <div>
+                                                        <field name="job_title"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="decoration_order_kanban_view" model="ir.ui.view">
+        <field name="name">decoration.order.kanban</field>
+        <field name="model">decoration.order</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_small_column" default_order="create_date desc">
+                <field name="name"/>
+                <field name="state"/>
+                <field name="event_type_id"/>
+                <field name="partner_id"/>
+                <field name="event_start"/>
+                <field name="event_end"/>
+                <field name="user_id"/>
+                <field name="total_amount"/>
+                <field name="currency_id"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_kanban_card p-3">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <strong class="o_kanban_record_title">
+                                    <field name="name"/>
+                                </strong>
+                                <field name="state" widget="badge" class="text-capitalize"/>
+                            </div>
+                            <div class="text-muted mb-2">
+                                <field name="event_type_id"/>
+                            </div>
+                            <div class="mb-2">
+                                <i class="fa fa-user me-1"/>
+                                <field name="partner_id"/>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <div>
+                                    <small class="text-muted">Start Date</small>
+                                    <br/>
+                                    <field name="event_start"/>
+                                </div>
+                                <div class="text-end">
+                                    <small class="text-muted">End Date</small>
+                                    <br/>
+                                    <field name="event_end"/>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
+                                <div class="d-flex align-items-center">
+                                    <field name="user_id" widget="many2one_avatar_user"
+                                           options="{'size': 'sm'}"/>
+                                    <span class="ms-2 text-muted">
+                                        <field name="user_id"/>
+                                    </span>
+                                </div>
+                                <div class="fw-bold text-end">
+                                    <field name="total_amount" widget="monetary"
+                                           options="{'currency_field': 'currency_id'}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="decoration_order_calendar_view" model="ir.ui.view">
+        <field name="name">decoration.order.calendar</field>
+        <field name="model">decoration.order</field>
+        <field name="arch" type="xml">
+            <calendar string="Decoration Orders" date_start="event_start" date_stop="event_end" color="state"
+                      mode="month">
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="event_type_id"/>
+                <field name="state"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="decoration_order_pivot_view" model="ir.ui.view">
+        <field name="name">decoration.order.pivot</field>
+        <field name="model">decoration.order</field>
+        <field name="arch" type="xml">
+            <pivot string="Decoration Analysis">
+                <field name="event_type_id" type="row"/>
+                <field name="user_id" type="col"/>
+                <field name="total_amount" type="measure"/>
+                <field name="total_package_item_amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="decoration_order_pivot_view" model="ir.ui.view">
+        <field name="name">decoration.order.pivot</field>
+        <field name="model">decoration.order</field>
+        <field name="arch" type="xml">
+            <pivot string="Decoration Analysis">
+                <field name="event_type_id" type="row"/>
+                <field name="user_id" type="col"/>
+                <field name="total_amount" type="measure"/>
+                <field name="total_package_item_amount" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+    <record id="decoration_order_search_view" model="ir.ui.view">
+        <field name="name">decoration.order.search</field>
+        <field name="model">decoration.order</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="partner_id"/>
+                <field name="event_type_id"/>
+                <field name="user_id"/>
+                <filter string="New" name="filter_new" domain="[('state','=','new')]"/>
+                <filter string="In Progress" name="filter_progress" domain="[('state','=','progress')]"/>
+                <filter string="Completed" name="filter_done" domain="[('state','=','done')]"/>
+                <separator/>
+                <filter string="Today Events" name="today_event" domain="[('event_start','=',context_today())]"/>
+                <separator/>
+                <group>
+                    <filter string="Event Type" name="group_event_type" context="{'group_by':'event_type_id'}"/>
+                    <filter string="Event Leader" name="group_user" context="{'group_by':'user_id'}"/>
+                    <filter string="Status" name="group_state" context="{'group_by':'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_decoration_order" model="ir.actions.act_window">
+        <field name="name">Decoration Orders</field>
+        <field name="res_model">decoration.order</field>
+        <field name="view_mode">list,form,kanban,calendar,pivot,graph,activity</field>
+    </record>
+
+    <menuitem id="decoration_order_menu" name="Decoration Orders" parent="decoration_main_menu"
+              action="action_decoration_order" sequence="30"/>
+</odoo>

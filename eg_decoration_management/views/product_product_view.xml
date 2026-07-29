@@ -1,0 +1,71 @@
+<odoo>
+    <record id="decoration_product_variant_form_view" model="ir.ui.view">
+        <field name="name">product.product.form</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='options']" position="after">
+                <span class="d-inline-block">
+                    <field name="is_decoration_product"/>
+                    <label for="is_decoration_product"/>
+                </span>
+                <span class="d-inline-block">
+                    <field name="is_decoration_package"/>
+                    <label for="is_decoration_package"/>
+                </span>
+                <span class="d-inline-block">
+                    <field name="is_additional_item"/>
+                    <label for="is_additional_item"/>
+                </span>
+                <span class="d-inline-block">
+                    <field name="is_additional_service"/>
+                    <label for="is_additional_service"/>
+                </span>
+                <br/>
+                <group>
+                    <field name="color" widget="color_picker"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+    <odoo>
+        <record id="product_product_search_view_decoration" model="ir.ui.view">
+            <field name="name">product.product.search.decoration</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_search_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search" position="inside">
+                    <separator string="Decoration"/>
+                    <filter name="decoration_product" string="Decoration Product"
+                            domain="[('is_decoration_product','=',True)]"/>
+                    <filter name="decoration_package" string="Decoration Package"
+                            domain="[('is_decoration_package','=',True)]"/>
+                    <filter name="additional_item" string="Additional Item"
+                            domain="[('is_additional_item','=',True)]"/>
+                    <filter name="additional_service" string="Additional Service"
+                            domain="[('is_additional_service','=',True)]"/>
+                    <separator/>
+                    <group expand="0" string="Group By">
+                        <filter string="Decoration Product" name="group_decoration_product"
+                                context="{'group_by':'is_decoration_product'}"/>
+                        <filter string="Decoration Package" name="group_decoration_package"
+                                context="{'group_by':'is_decoration_package'}"/>
+                        <filter string="Additional Item" name="group_additional_item"
+                                context="{'group_by':'is_additional_item'}"/>
+                        <filter string="Additional Service" name="group_additional_service"
+                                context="{'group_by':'is_additional_service'}"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </odoo>
+
+    <record id="product_normal_action_sell" model="ir.actions.act_window">
+        <field name="name">Product</field>
+        <field name="res_model">product.product</field>
+        <field name="view_mode">kanban,list,form,activity</field>
+    </record>
+
+    <menuitem id="decoration_product_variant_menu" name="Product" parent="decoration_main_menu" sequence="40"
+              action="product_normal_action_sell"/>
+</odoo>

@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+
+        <record id="event_decoration_paper_format_a4" model="report.paperformat">
+            <field name="name">Event Decoration Paper</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">8</field>
+            <field name="margin_bottom">8</field>
+            <field name="margin_left">0</field>
+            <field name="margin_right">0</field>
+            <field name="dpi">96</field>
+        </record>
+
+        <record id="report_decoration_order_custom" model="ir.actions.report">
+            <field name="name">Print</field>
+            <field name="model">decoration.order</field>
+            <field name="binding_model_id" ref="model_decoration_order"/>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">eg_decoration_management.report_decoration_order_template</field>
+            <field name="report_file">eg_decoration_management.report_decoration_order_template</field>
+            <field name="paperformat_id" ref="eg_decoration_management.event_decoration_paper_format_a4"/>
+            <field name="print_report_name">'Decoration Order- %s'%(object.name or "No Name")</field>
+            <field name="binding_type">report</field>
+        </record>
+
+        <record id="report_decoration_package_custom" model="ir.actions.report">
+            <field name="name">Print</field>
+            <field name="model">decoration.package</field>
+            <field name="binding_model_id" ref="model_decoration_package"/>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">eg_decoration_management.report_decoration_package_template</field>
+            <field name="report_file">eg_decoration_management.report_decoration_package_template</field>
+            <field name="paperformat_id" ref="eg_decoration_management.event_decoration_paper_format_a4"/>
+            <field name="print_report_name">'Decoration Package- %s'%(object.name or "No Name")</field>
+            <field name="binding_type">report</field>
+        </record>
+
+    </data>
+</odoo>

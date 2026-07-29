@@ -1,0 +1,134 @@
+<odoo>
+    <record id="decoration_package_list_view" model="ir.ui.view">
+        <field name="name">decoration.package.list</field>
+        <field name="model">decoration.package</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="product_id"/>
+                <field name="state" widget="badge"/>
+            </list>
+        </field>
+    </record>
+    <record id="decoration_package_form_view" model="ir.ui.view">
+        <field name="name">decoration.package.form</field>
+        <field name="model">decoration.package</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_send_decoration_package_mail" type="object" string="Send Mail"
+                            class="btn-primary"/>
+                    <button name="action_confirm" string="Confirm" type="object" class="btn-primary"
+                            invisible="state != 'draft'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
+                </header>
+                <sheet>
+                    <field name="image" widget="image" class="oe_avatar"/>
+                    <label for="name" string="Name"/>
+                    <h1>
+                        <field name="name" required="1" placeholder="Name"/>
+                    </h1>
+                    <field name="currency_id" invisible="1"/>
+                    <group>
+                        <field name="color" widget="color_picker" nolabel="1"/>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="bom_id" required="1"/>
+                            <field name="product_id" required="1" domain="[('is_decoration_package','=',True)]"/>
+                        </group>
+                        <group>
+                            <label for="sales_price" string="Sale Price"/>
+                            <div class="o_row">
+                                <field name="sales_price" required="1"/>per
+                                <field name="uom_id" placeholder="Unit Of Measure" readonly="0"/>
+                            </div>
+                            <label for="cost_price" string="Cost Price"/>
+                            <div class="o_row">
+                                <field name="cost_price" required="1"/>per
+                                <field name="uom" placeholder="Unit Of Measure" readonly="0"/>
+                            </div>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Order Item">
+                            <field name="package_item_ids">
+                                <list editable="bottom">
+                                    <control>
+                                        <create string="Add a Line"/>
+                                        <create string="Add Section"
+                                                context="{'default_display_type': 'line_section'}"/>
+                                        <create string="Add Note" context="{'default_display_type': 'line_note'}"/>
+                                    </control>
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="display_type" column_invisible="True"/>
+                                    <field name="name" required="display_type"
+                                           decoration-bf="display_type == 'line_section'"
+                                           decoration-it="display_type == 'line_note'"/>
+                                    <field name="product_id" domain="[('is_decoration_product','=',True)]"
+                                           invisible="display_type"/>
+                                    <field name="quantity" invisible="display_type"/>
+                                    <field name="uom_id" readonly="1" invisible="display_type"/>
+                                    <field name="price_unit" sum="Price Unit" invisible="display_type" widget="monetary"
+                                           options="{'currency_field': 'currency_id'}"/>
+                                    <field name="total_price" sum="Total Price" readonly="1" invisible="display_type"
+                                           widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Images" name="food_images">
+                            <field name="image_ids" mode="kanban" context="{'default_decoration_package_id': id}">
+                                <kanban>
+                                    <field name="name"/>
+                                    <field name="image"/>
+                                    <field name="file_size"/>
+                                    <templates>
+                                        <t t-name="kanban-box">
+                                            <div class="o_kanban_record p-2"
+                                                 style="border:1px solid #ddd; border-radius:10px; background:#fff;">
+                                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                                    <span class="fw-bold">
+                                                        <field name="name"/>
+                                                    </span>
+                                                    <span class="badge bg-success">
+                                                        <field name="file_size"/>
+                                                    </span>
+                                                </div>
+                                                <div class="text-center" style="text-align:center;">
+                                                    <field name="image" widget="image" options="{'size':[250,220]}"
+                                                           class="rounded shadow-sm"/>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                                <form string="Add Image">
+                                    <sheet>
+                                        <group>
+                                            <field name="name" required="1"/>
+                                            <field name="file_size" invisible="1"/>
+                                            <field name="image" widget="image" required="1"/>
+                                        </group>
+                                    </sheet>
+                                </form>
+                            </field>
+                        </page>
+                        <page string="Description">
+                            <field name="description" placeholder="Description"/>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_decoration_package" model="ir.actions.act_window">
+        <field name="name">Decoration Package</field>
+        <field name="res_model">decoration.package</field>
+        <field name="view_mode">list,form</field>
+    </record>
+    <menuitem id="decoration_package_menu" name="Package" parent="decoration_main_menu" sequence="50"
+              action="action_decoration_package"/>
+</odoo>

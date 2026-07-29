@@ -1,0 +1,295 @@
+<odoo>
+    <template id="report_decoration_order_template">
+        <t t-call="web.basic_layout">
+            <t t-foreach="docs" t-as="doc">
+                <div class="page" style="font-size:14px; color:#000;">
+                    <t t-set="company" t-value="user.company_id"/>
+                    <div style="text-align:center; margin-bottom:20px;">
+                        <t t-if="company.logo">
+                            <img t-att-src="image_data_uri(company.logo)" style="max-height:80px; margin-bottom:10px;"/>
+                        </t>
+                        <div style="font-size:13px;">
+                            <strong t-esc="company.name"/>
+                            <div t-esc="company.street"/>
+                            <div>
+                                <span t-esc="company.city"/>
+                                -
+                                <span t-esc="company.zip"/>
+                            </div>
+                            <div t-esc="company.country_id.name"/>
+                        </div>
+                        <hr style="border:1px solid #999; margin-top:15px;"/>
+                    </div>
+                    <h2 style="text-align:center; margin-bottom:25px;">
+                        Decoration Order
+                    </h2>
+                    <h4 style="background:#e5e5e5; padding:6px;">Order Information</h4>
+                    <table class="table table-sm table-borderless" width="100%">
+                        <tr>
+                            <td>
+                                <strong>Order No</strong>
+                            </td>
+                            <td t-esc="doc.name"/>
+                            <td>
+                                <strong>Status</strong>
+                            </td>
+                            <td t-esc="dict(doc._fields['state'].selection).get(doc.state)"/>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Title</strong>
+                            </td>
+                            <td t-esc="doc.title"/>
+                            <td>
+                                <strong>Event Leader</strong>
+                            </td>
+                            <td t-esc="doc.user_id.name"/>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Event Type</strong>
+                            </td>
+                            <td t-esc="doc.event_type_id.name"/>
+                            <td>
+                                <strong>Guests</strong>
+                            </td>
+                            <td t-esc="doc.approx_guests"/>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Start Date</strong>
+                            </td>
+                            <td t-esc="doc.event_start"/>
+                            <td>
+                                <strong>End Date</strong>
+                            </td>
+                            <td t-esc="doc.event_end"/>
+                        </tr>
+                    </table>
+                    <h4 style="background:#e5e5e5; padding:6px; margin-top:20px;">
+                        Customer Information
+                    </h4>
+                    <table class="table table-sm table-borderless" width="100%">
+                        <tr>
+                            <td>
+                                <strong>Customer</strong>
+                            </td>
+                            <td t-esc="doc.partner_id.name"/>
+                            <td>
+                                <strong>Email</strong>
+                            </td>
+                            <td t-esc="doc.email"/>
+                        </tr>
+                        <tr>
+                            <td>
+                                <strong>Phone</strong>
+                            </td>
+                            <td t-esc="doc.phone"/>
+                        </tr>
+                    </table>
+                    <h4 style="background:#e5e5e5; padding:6px; margin-top:20px;">
+                        Event Address
+                    </h4>
+                    <div>
+                        <t t-esc="doc.street"/>
+                        <t t-esc="doc.street2"/>
+                        <br/>
+                        <t t-esc="doc.city"/>
+                        -
+                        <t t-esc="doc.zip"/>
+                        <br/>
+                        <t t-esc="doc.state_id.name"/>,
+                        <t t-esc="doc.country_id.name"/>
+                    </div>
+                    <t t-if="doc.decoration_package_item_ids">
+                        <h4 style="background:#e5e5e5;padding:6px;margin-top:20px;">
+                            Decoration Package Items
+                        </h4>
+                        <table class="table table-sm table-bordered" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Description</th>
+                                    <th>Item</th>
+                                    <th>Qty</th>
+                                    <th>UoM</th>
+                                    <th align="right">Unit Price</th>
+                                    <th align="right">Subtotal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="doc.decoration_package_item_ids" t-as="line">
+                                    <tr t-if="line.display_type == 'line_section'">
+                                        <td colspan="6">
+                                            <strong t-esc="line.name"/>
+                                        </td>
+                                    </tr>
+                                    <tr t-elif="line.display_type == 'line_note'">
+                                        <td colspan="6" t-esc="line.name"/>
+                                    </tr>
+                                    <tr t-else="">
+                                        <td t-esc="line.name"/>
+                                        <td>
+                                            <t t-if="line.product_id">
+                                                <span t-field="line.product_id.display_name"/>
+                                            </t>
+                                        </td>
+                                        <td t-esc="line.quantity"/>
+                                        <td t-esc="line.uom_id.name"/>
+                                        <td align="right">
+                                            <span t-field="line.price_unit"
+                                                  t-options="{'widget':'monetary','display_currency':doc.currency_id}"/>
+                                        </td>
+                                        <td align="right">
+                                            <span t-field="line.total_price"
+                                                  t-options="{'widget':'monetary','display_currency':doc.currency_id}"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </t>
+                    <t t-if="doc.additional_item_ids">
+                        <h4 style="background:#e5e5e5;padding:6px;margin-top:20px;">
+                            Additional Items
+                        </h4>
+                        <table class="table table-sm table-bordered" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th>Qty</th>
+                                    <th>UoM</th>
+                                    <th align="right">Unit Price</th>
+                                    <th align="right">Subtotal</th>
+                                    <th>Sale Order</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="doc.additional_item_ids" t-as="line">
+                                    <tr>
+                                        <td>
+                                            <t t-if="line.product_id">
+                                                <span t-field="line.product_id.display_name"/>
+                                            </t>
+                                        </td>
+                                        <td t-esc="line.name"/>
+                                        <td t-esc="line.quantity"/>
+                                        <td t-esc="line.uom_id.name"/>
+                                        <td align="right">
+                                            <span t-field="line.price_unit"
+                                                  t-options="{'widget':'monetary','display_currency':doc.currency_id}"/>
+                                        </td>
+                                        <td align="right">
+                                            <span t-field="line.subtotal"
+                                                  t-options="{'widget':'monetary','display_currency':doc.currency_id}"/>
+                                        </td>
+                                        <td>
+                                            <t t-if="line.item_sale_order_id">
+                                                <span t-esc="line.item_sale_order_id.name"/>
+                                            </t>
+                                        </td>
+
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </t>
+                    <t t-if="doc.additional_service_ids">
+                        <h4 style="background:#e5e5e5;padding:6px;margin-top:20px;">
+                            Additional Services
+                        </h4>
+                        <table class="table table-sm table-bordered" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Description</th>
+                                    <th align="right">Unit Price</th>
+                                    <th>Sale Order</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="doc.additional_service_ids" t-as="line">
+                                    <tr>
+                                        <td>
+                                            <t t-if="line.product_id">
+                                                <span t-field="line.product_id.display_name"/>
+                                            </t>
+                                        </td>
+                                        <td t-esc="line.name"/>
+                                        <td align="right">
+                                            <span t-field="line.price_unit"
+                                                  t-options="{'widget':'monetary','display_currency':doc.currency_id}"/>
+                                        </td>
+                                        <td>
+                                            <t t-if="line.service_sale_order_id">
+                                                <span t-esc="line.service_sale_order_id.name"/>
+                                            </t>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </t>
+                    <h4 style="background:#e5e5e5; padding:6px; margin-top:20px;">
+                        Summary
+                    </h4>
+                    <table class="table table-sm table-borderless" width="100%">
+                        <tr>
+                            <td>Package Items Total</td>
+                            <td align="right">
+                                <span t-field="doc.total_package_item_amount"
+                                      t-options="{'widget':'monetary','display_currency':doc.currency_id}"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <hr style="border:1px solid #000;"/>
+                    <table class="table table-sm table-borderless" width="100%">
+
+                        <tr>
+                            <td>Additional Items</td>
+                            <td align="right">
+                                <span t-field="doc.total_additional_item_amount"
+                                      t-options="{'widget':'monetary','display_currency':doc.currency_id}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Additional Services</td>
+                            <td align="right">
+                                <span t-field="doc.total_additional_service_amount"
+                                      t-options="{'widget':'monetary','display_currency':doc.currency_id}"/>
+                            </td>
+                        </tr>
+                        <tr style="background:#f0f0f0;">
+                            <td>
+                                <strong>Grand Total</strong>
+                            </td>
+                            <td align="right">
+                                <strong>
+                                    <span t-field="doc.total_amount"
+                                          t-options="{'widget':'monetary','display_currency':doc.currency_id}"/>
+                                </strong>
+                            </td>
+                        </tr>
+                    </table>
+                    <t t-if="doc.employee_ids">
+                        <h4 style="background:#e5e5e5; padding:6px; margin-top:20px;">
+                            Assigned Staff
+                        </h4>
+                        <table class="table table-sm table-borderless" width="100%">
+                            <t t-foreach="doc.employee_ids" t-as="emp">
+                                <tr>
+                                    <td t-esc="emp.name"/>
+                                    <td t-esc="emp.job_title"/>
+                                </tr>
+                            </t>
+                        </table>
+                    </t>
+                    <p style="text-align:right; font-size:12px; margin-top:30px;">
+                        Generated by
+                        <strong t-esc="user.name"/>
+                    </p>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

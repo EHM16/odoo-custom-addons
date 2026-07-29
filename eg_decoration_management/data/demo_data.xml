@@ -1,0 +1,172 @@
+<odoo>
+    <record id="event_type_birthday" model="decoration.event.type">
+        <field name="name">Birthday Party</field>
+        <field name="description">Fun and colorful decorations with balloons, banners, and themed props.</field>
+    </record>
+    <record id="event_type_wedding" model="decoration.event.type">
+        <field name="name">Wedding Celebration</field>
+        <field name="description">Elegant wedding decorations with floral setups, stage decor, and lighting.</field>
+    </record>
+    <record id="event_type_corporate" model="decoration.event.type">
+        <field name="name">Corporate Event</field>
+        <field name="description">Professional decoration arrangements for conferences and meetings.</field>
+    </record>
+    <record id="event_type_anniversary" model="decoration.event.type">
+        <field name="name">Anniversary Party</field>
+        <field name="description">Romantic decorations with candles, flowers, and ambient lighting.</field>
+    </record>
+    <record id="event_type_festival" model="decoration.event.type">
+        <field name="name">Festival / Holiday Event</field>
+        <field name="description">Vibrant decorations for festivals, holidays, and cultural events.</field>
+    </record>
+
+    <record id="checklist_template_birthday" model="decoration.checklist.template">
+        <field name="name">Birthday Party Template</field>
+    </record>
+    <record id="checklist_template_wedding" model="decoration.checklist.template">
+        <field name="name">Wedding Decoration Template</field>
+    </record>
+    <record id="checklist_template_corporate" model="decoration.checklist.template">
+        <field name="name">Corporate Event Template</field>
+    </record>
+
+    <record id="birthday_section_decor" model="decoration.checklist.item">
+        <field name="sequence">1</field>
+        <field name="name">Decorative Elements</field>
+        <field name="display_type">line_section</field>
+        <field name="checklist_template_id" ref="checklist_template_birthday"/>
+    </record>
+    <record id="birthday_balloons" model="decoration.checklist.item">
+        <field name="sequence">2</field>
+        <field name="name">Balloons</field>
+        <field name="checklist_template_id" ref="checklist_template_birthday"/>
+    </record>
+    <record id="birthday_cake_table" model="decoration.checklist.item">
+        <field name="sequence">3</field>
+        <field name="name">Cake Table Setup</field>
+        <field name="checklist_template_id" ref="checklist_template_birthday"/>
+    </record>
+    <record id="wedding_section_stage" model="decoration.checklist.item">
+        <field name="sequence">1</field>
+        <field name="name">Stage Decoration</field>
+        <field name="display_type">line_section</field>
+        <field name="checklist_template_id" ref="checklist_template_wedding"/>
+    </record>
+    <record id="wedding_flower_arch" model="decoration.checklist.item">
+        <field name="sequence">2</field>
+        <field name="name">Floral Arch</field>
+        <field name="checklist_template_id" ref="checklist_template_wedding"/>
+    </record>
+    <record id="wedding_lighting" model="decoration.checklist.item">
+        <field name="sequence">3</field>
+        <field name="name">Stage &amp; Ambient Lighting</field>
+        <field name="checklist_template_id" ref="checklist_template_wedding"/>
+    </record>
+    <record id="corporate_section_setup" model="decoration.checklist.item">
+        <field name="sequence">1</field>
+        <field name="name">Conference Setup</field>
+        <field name="display_type">line_section</field>
+        <field name="checklist_template_id" ref="checklist_template_corporate"/>
+    </record>
+    <record id="corporate_stage_backdrop" model="decoration.checklist.item">
+        <field name="sequence">2</field>
+        <field name="name">Stage Backdrop &amp; Branding</field>
+        <field name="checklist_template_id" ref="checklist_template_corporate"/>
+    </record>
+    <record id="corporate_audio_visual" model="decoration.checklist.item">
+        <field name="sequence">3</field>
+        <field name="name">Audio &amp; Visual Equipment</field>
+        <field name="checklist_template_id" ref="checklist_template_corporate"/>
+    </record>
+
+    <record id="hr_employee_decoration_staff_1" model="hr.employee">
+        <field name="name">Demo Decoration Staff</field>
+        <field name="image_1920" eval="False"/>
+        <field name="job_title">Decoration Supervisor</field>
+        <field name="is_decoration_staff">True</field>
+        <field name="work_phone">+1 555 210 3344</field>
+        <field name="work_email">demo.decoration.staff@example.com</field>
+    </record>
+
+    <record id="product_decoration_balloon" model="product.product">
+        <field name="name">Decoration Balloons Pack</field>
+        <field name="type">consu</field>
+        <field name="list_price">25.0</field>
+        <field name="is_decoration_product">True</field>
+        <field name="color">3</field>
+    </record>
+    <record id="product_decoration_stage_package" model="product.product">
+        <field name="name">Stage Decoration Package</field>
+        <field name="type">service</field>
+        <field name="list_price">450.0</field>
+        <field name="is_decoration_package">True</field>
+        <field name="color">6</field>
+    </record>
+    <record id="product_additional_flower_vase" model="product.product">
+        <field name="name">Flower Vase (Additional Item)</field>
+        <field name="type">consu</field>
+        <field name="list_price">15.0</field>
+        <field name="is_additional_item">True</field>
+        <field name="color">9</field>
+    </record>
+    <record id="product_additional_lighting_service" model="product.product">
+        <field name="name">Extra Lighting Service</field>
+        <field name="type">service</field>
+        <field name="list_price">120.0</field>
+        <field name="is_additional_service">True</field>
+        <field name="color">11</field>
+    </record>
+
+    <record id="decoration_package_birthday_basic" model="decoration.package">
+        <field name="name">Birthday Basic Decoration Package</field>
+        <field name="state">confirm</field>
+        <field name="product_id" ref="product_decoration_stage_package"/>
+        <field name="sales_price">599.0</field>
+        <field name="cost_price">420.0</field>
+        <field name="description">Complete birthday decoration package including balloons, banners, lighting, and basic
+            furniture setup. Ideal for home and small venue parties.
+        </field>
+    </record>
+
+    <record id="birthday_package_section_decor" model="decoration.package.item">
+        <field name="sequence">1</field>
+        <field name="name">Decorative Items</field>
+        <field name="display_type">line_section</field>
+        <field name="decoration_package_id" ref="decoration_package_birthday_basic"/>
+    </record>
+    <record id="birthday_package_balloons" model="decoration.package.item">
+        <field name="sequence">2</field>
+        <field name="product_id" ref="product_decoration_balloon"/>
+        <field name="quantity">3</field>
+        <field name="price_unit">25.0</field>
+        <field name="decoration_package_id" ref="decoration_package_birthday_basic"/>
+    </record>
+    <record id="birthday_package_section_lighting" model="decoration.package.item">
+        <field name="sequence">10</field>
+        <field name="name">Lighting</field>
+        <field name="display_type">line_section</field>
+        <field name="decoration_package_id" ref="decoration_package_birthday_basic"/>
+    </record>
+    <record id="birthday_package_lighting_service" model="decoration.package.item">
+        <field name="sequence">11</field>
+        <field name="product_id" ref="product_additional_lighting_service"/>
+        <field name="quantity">1</field>
+        <field name="price_unit">120.0</field>
+        <field name="decoration_package_id" ref="decoration_package_birthday_basic"/>
+    </record>
+
+    <record id="crm_lead_decoration_demo" model="crm.lead">
+        <field name="name">Demo Birthday Event with Catering</field>
+        <field name="partner_id" ref="base.partner_demo"/>
+        <field name="stage_id" ref="crm.stage_lead4"/>
+        <field name="decoration_event_type_id" ref="event_type_birthday"/>
+        <field name="decoration_start" eval="datetime.now()"/>
+        <field name="decoration_end" eval="datetime.now() + relativedelta(days=2)"/>
+        <field name="decoration_guest">50</field>
+        <field name="decoration_street">123 Party Street</field>
+        <field name="decoration_city">New York</field>
+        <field name="decoration_state_id" ref="base.state_us_39"/>
+        <field name="decoration_country_id" ref="base.us"/>
+        <field name="decoration_package_ids" eval="[(6, 0, [ref('decoration_package_birthday_basic')])]"/>
+    </record>
+</odoo>

@@ -1,0 +1,28 @@
+<odoo>
+    <data>
+        <record id="hr_employee_event_form_view" model="ir.ui.view">
+            <field name="name">hr.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet//group" position="before">
+                    <group>
+                        <field name="is_decoration_staff"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="action_event_decoration_employees" model="ir.actions.act_window">
+            <field name="name">Decoration Staff</field>
+            <field name="res_model">hr.employee</field>
+            <field name="view_mode">kanban,list,form</field>
+            <field name="domain">[('is_decoration_staff', '=', True)]</field>
+        </record>
+
+        <menuitem id="decoration_staff_menu" name="Decoration Staff" parent="decoration_main_menu" sequence="70"
+                  action="action_event_decoration_employees"/>
+        <menuitem id="decoration_customer_menu" name="Customer" parent="decoration_main_menu" sequence="60"
+                  action="base.action_partner_form"/>
+    </data>
+</odoo>

@@ -1,0 +1,68 @@
+<odoo>
+    <record id="event_type_list_view" model="ir.ui.view">
+        <field name="name">decoration.event.type.list</field>
+        <field name="model">decoration.event.type</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+    <record id="event_type_form_view" model="ir.ui.view">
+        <field name="name">decoration.event.type.form</field>
+        <field name="model">decoration.event.type</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <field name="image" widget="image" class="oe_avatar"/>
+                    <label for="name"/>
+                    <h1>
+                        <field name="name" placeholder="Event Type" required="1"/>
+                    </h1>
+                    <label for="description"/>
+                    <field name="description" placeholder="Description..."/>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="event_type_kanban_view" model="ir.ui.view">
+        <field name="name">decoration.event.type.kanban</field>
+        <field name="model">decoration.event.type</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_small_column">
+                <field name="name"/>
+                <field name="image"/>
+                <templates>
+                    <t t-name="kanban-box" class="o_kanban_record">
+                        <div class="d-flex align-items-center gap-3 p-3"
+                             style="border:1px solid #e0e0e0; border-radius:12px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.1);">
+                            <div style="flex:0 0 80px; text-align:center;">
+                                <field name="image" widget="image" options="{'size':[120,120]}" class="rounded"/>
+                            </div>
+                            <div style="flex:1;">
+                                <div class="fw-bold" style="font-size:15px; margin-bottom:4px;">
+                                    <field name="name"/>
+                                </div>
+                                <div style="color:#666; font-size:13px; line-height:1.4; white-space:normal;">
+                                    <field name="description"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="action_event_type" model="ir.actions.act_window">
+        <field name="name">Event Types</field>
+        <field name="res_model">decoration.event.type</field>
+        <field name="view_mode">kanban,list,form</field>
+    </record>
+
+    <menuitem id="decoration_main_menu" name="Decoration"/>
+    <menuitem id="decoration_configuration_menu" name="Configurations" parent="decoration_main_menu" sequence="80"/>
+    <menuitem id="event_type_submenu" name="Event Types" parent="decoration_configuration_menu" sequence="10"
+              action="action_event_type"/>
+</odoo>

@@ -12,6 +12,7 @@
                 <page string="Decoration Order">
                     <group>
                         <group string="Address Details">
+                            <label for="street" string="Address"/>
                             <div class="o_address_format">
                                 <field name="decoration_street" placeholder="Street..." class="o_address_street"/>
                                 <field name="decoration_street2" placeholder="Street 2..." class="o_address_street"/>

@@ -11,3 +11,4 @@ from . import sale_order
 from . import decoration_order
 from . import decoration_additional_item
 from . import decoration_additional_service
+from . import decoration_dashboard

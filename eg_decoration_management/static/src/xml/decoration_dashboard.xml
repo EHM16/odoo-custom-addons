@@ -1,0 +1,127 @@
+<templates xml:space="preserve">
+    <t t-name="eg_decoration_management.DecorationDashboard">
+        <div class="o_decoration_dashboard">
+            <t t-if="state.loading">
+                <div class="o_decoration_dashboard_loading">
+                    <div class="spinner-border" role="status" aria-label="Loading"/>
+                    <span>Preparing your decoration overview…</span>
+                </div>
+            </t>
+
+            <t t-elif="state.error">
+                <div class="o_decoration_dashboard_error">
+                    <div class="o_decoration_error_icon"><i class="fa fa-exclamation-triangle"/></div>
+                    <h2>Dashboard data could not be loaded</h2>
+                    <p>Please refresh the dashboard. If the problem continues, check access rights for decoration orders.</p>
+                    <button class="btn btn-primary" t-on-click="loadDashboard"><i class="fa fa-refresh me-1"/> Retry</button>
+                </div>
+            </t>
+
+            <t t-elif="state.data">
+                <header class="o_decoration_dashboard_header">
+                    <div class="o_decoration_header_identity">
+                        <span class="o_decoration_company_logo"><img t-att-src="state.data.company.logo_url" t-att-alt="state.data.company.name"/></span>
+                        <h1 t-esc="state.data.company.name"/>
+                    </div>
+
+                    <div class="o_decoration_header_controls">
+                        <div class="o_decoration_range_picker">
+                            <button class="o_decoration_range_trigger" t-on-click="toggleCalendar" t-att-aria-expanded="state.calendar.open ? 'true' : 'false'">
+                                <span class="o_decoration_range_icon"><i class="fa fa-calendar"/></span>
+                                <span class="o_decoration_range_copy"><small>Date range</small><strong t-esc="dateRangeLabel()"/></span>
+                                <i t-attf-class="fa {{ state.calendar.open ? 'fa-chevron-up' : 'fa-chevron-down' }} o_decoration_range_chevron"/>
+                            </button>
+
+                            <section class="o_decoration_calendar_popover" t-if="state.calendar.open">
+                                <div class="o_decoration_calendar_popover_head">
+                                    <div><span>Select date range</span><strong>Choose start and end date</strong></div>
+                                    <button class="o_decoration_icon_button" title="Close calendar" t-on-click="closeCalendar"><i class="fa fa-times"/></button>
+                                </div>
+                                <div class="o_decoration_calendar_selection">
+                                    <div t-attf-class="o_decoration_calendar_selection_item {{ state.filters.startDate ? 'is-selected' : '' }}"><span>Start date</span><strong t-esc="formatCompactDate(state.filters.startDate)"/></div>
+                                    <i class="fa fa-long-arrow-right"/>
+                                    <div t-attf-class="o_decoration_calendar_selection_item {{ state.filters.endDate ? 'is-selected' : '' }}"><span>End date</span><strong t-esc="formatCompactDate(state.filters.endDate)"/></div>
+                                </div>
+                                <div class="o_decoration_calendar_presets">
+                                    <button t-on-click="() => chooseDatePreset('week')">This week</button>
+                                    <button t-on-click="() => chooseDatePreset('next7')">Next 7 days</button>
+                                    <button t-on-click="() => chooseDatePreset('month')">This month</button>
+                                </div>
+                                <div class="o_decoration_calendar_month_nav">
+                                    <button class="o_decoration_icon_button" title="Previous month" t-on-click="previousCalendarMonth"><i class="fa fa-chevron-left"/></button>
+                                    <strong t-esc="calendarMonthTitle()"/>
+                                    <button class="o_decoration_icon_button" title="Next month" t-on-click="nextCalendarMonth"><i class="fa fa-chevron-right"/></button>
+                                </div>
+                                <div class="o_decoration_calendar_weekdays"><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span></div>
+                                <div class="o_decoration_calendar_days">
+                                    <t t-foreach="calendarDays()" t-as="day" t-key="day.value">
+                                        <button t-attf-class="o_decoration_calendar_day {{ calendarDayClass(day) }}" t-on-click="() => selectCalendarDate(day.value)"><span t-esc="day.day"/></button>
+                                    </t>
+                                </div>
+                                <div class="o_decoration_calendar_footer">
+                                    <button class="o_decoration_calendar_clear" t-on-click="resetDateRange">Reset</button>
+                                    <button class="o_decoration_calendar_apply" t-on-click="applyCalendarRange"><i class="fa fa-check"/> Apply range</button>
+                                </div>
+                            </section>
+                        </div>
+                        <button t-attf-class="o_decoration_header_button o_decoration_edit_layout_button {{ state.layout.editing ? 'is-active' : '' }}" t-on-click="toggleLayoutEditor"><i class="fa fa-sliders"/> Edit layout</button>
+                        <button class="o_decoration_header_button o_decoration_new_event_button" t-on-click="createOrder"><i class="fa fa-plus"/> New Order</button>
+                        <button class="o_decoration_header_button o_decoration_refresh_button" title="Refresh dashboard" t-on-click="loadDashboard"><i class="fa fa-refresh"/></button>
+                    </div>
+                </header>
+
+                <aside class="o_decoration_layout_drawer" t-if="state.layout.editing">
+                    <div class="o_decoration_layout_drawer_header">
+                        <div><span>Dashboard layout</span><h2>Arrange your workspace</h2><p>Drag panels to change their order or hide panels you do not need.</p></div>
+                        <button class="o_decoration_icon_button" title="Close layout editor" t-on-click="closeLayoutEditor"><i class="fa fa-times"/></button>
+                    </div>
+                    <div class="o_decoration_layout_list">
+                        <t t-foreach="layoutItems()" t-as="layoutItem" t-key="layoutItem.key">
+                            <div t-attf-class="o_decoration_layout_item {{ state.layout.dragged === layoutItem.key ? 'is-dragging' : '' }} {{ state.layout.dragOver === layoutItem.key &amp;&amp; state.layout.dragged !== layoutItem.key ? 'is-drag-over' : '' }} {{ !layoutItem.visible ? 'is-hidden' : '' }}" draggable="true" t-on-dragstart="(event) => startDrag(event, layoutItem.key)" t-on-dragover="(event) => dragOver(event, layoutItem.key)" t-on-drop="(event) => dropWidget(event, layoutItem.key)" t-on-dragend="endDrag">
+                                <i class="fa fa-bars o_decoration_layout_drag_handle"/>
+                                <span class="o_decoration_layout_item_icon"><i t-attf-class="fa {{ layoutItem.icon }}"/></span>
+                                <span class="o_decoration_layout_item_copy"><strong t-esc="layoutItem.label"/><small t-esc="layoutItem.description"/></span>
+                                <span class="o_decoration_layout_item_actions">
+                                    <button t-attf-class="o_decoration_layout_visibility {{ layoutItem.visible ? 'is-visible' : '' }}" t-on-click="() => toggleWidget(layoutItem.key)" t-att-title="layoutItem.visible ? 'Hide panel' : 'Show panel'"><i t-attf-class="fa {{ layoutItem.visible ? 'fa-eye' : 'fa-eye-slash' }}"/></button>
+                                    <button class="o_decoration_layout_move" title="Move up" t-on-click="() => moveWidget(layoutItem.key, -1)"><i class="fa fa-chevron-up"/></button>
+                                    <button class="o_decoration_layout_move" title="Move down" t-on-click="() => moveWidget(layoutItem.key, 1)"><i class="fa fa-chevron-down"/></button>
+                                </span>
+                            </div>
+                        </t>
+                    </div>
+                    <div class="o_decoration_layout_drawer_footer"><button class="o_decoration_restore_layout" t-on-click="resetLayout">Restore default</button><button class="o_decoration_layout_done" t-on-click="closeLayoutEditor">Done</button></div>
+                </aside>
+
+                <section class="o_decoration_metrics_grid">
+                    <button class="o_decoration_metric_card metric-purple" t-on-click="() => openRangeOrders(['new', 'progress'], 'Active Decoration Projects')"><span class="o_decoration_metric_icon"><i class="fa fa-paint-brush"/></span><span class="o_decoration_metric_content"><span class="o_decoration_metric_label">Active Orders</span><strong t-esc="state.data.metrics.active_installations"/><span t-attf-class="o_decoration_metric_trend {{ changeClass(state.data.metrics.active_change) }}"><i t-attf-class="fa {{ changeIcon(state.data.metrics.active_change) }}"/><b><t t-esc="state.data.metrics.active_change.value"/>%</b><em t-esc="state.data.metrics.active_change.label"/></span></span></button>
+                    <button class="o_decoration_metric_card metric-gold" t-on-click="() => openRangeOrders(['new', 'progress', 'done'], 'Booked Decoration Value')"><span class="o_decoration_metric_icon"><i class="fa fa-money"/></span><span class="o_decoration_metric_content"><span class="o_decoration_metric_label">Booked Value</span><strong t-esc="formatMoney(state.data.metrics.selected_value)"/><span t-attf-class="o_decoration_metric_trend {{ changeClass(state.data.metrics.value_change) }}"><i t-attf-class="fa {{ changeIcon(state.data.metrics.value_change) }}"/><b><t t-esc="state.data.metrics.value_change.value"/>%</b><em t-esc="state.data.metrics.value_change.label"/></span></span></button>
+                    <button class="o_decoration_metric_card metric-teal" t-on-click="() => openRangeOrders(['new', 'progress', 'done'], 'Planned Guests')"><span class="o_decoration_metric_icon"><i class="fa fa-users"/></span><span class="o_decoration_metric_content"><span class="o_decoration_metric_label">Planned Guests</span><strong t-esc="state.data.metrics.selected_guests"/><span t-attf-class="o_decoration_metric_trend {{ changeClass(state.data.metrics.guests_change) }}"><i t-attf-class="fa {{ changeIcon(state.data.metrics.guests_change) }}"/><b><t t-esc="state.data.metrics.guests_change.value"/>%</b><em t-esc="state.data.metrics.guests_change.label"/></span></span></button>
+                    <button class="o_decoration_metric_card metric-rose" t-on-click="openLeads"><span class="o_decoration_metric_icon"><i class="fa fa-lightbulb-o"/></span><span class="o_decoration_metric_content"><span class="o_decoration_metric_label">Open Enquiries</span><strong t-esc="state.data.metrics.open_leads"/><span class="o_decoration_metric_subtext" t-esc="state.data.metrics.leads_label"/></span></button>
+                </section>
+
+                <section class="o_decoration_status_strip">
+                    <t t-foreach="state.data.status_rows" t-as="status" t-key="status.key"><button class="o_decoration_status_item" t-on-click="() => openRangeOrdersByState(status.key, status.label + ' Projects')"><i t-attf-class="o_decoration_status_dot dot-{{ status.class }}"/><strong t-esc="status.count"/><span class="o_decoration_status_label" t-esc="status.label"/></button></t>
+                    <button class="o_decoration_status_item" t-on-click="openPackages"><i class="o_decoration_status_dot dot-packages fa fa-gift"/><strong t-esc="state.data.counts.confirmed_packages"/><span class="o_decoration_status_label">Live packages</span></button>
+                    <button class="o_decoration_status_item" t-on-click="() => openRangeOrders(['new', 'progress'], 'Decoration Team Schedule')"><i class="o_decoration_status_dot dot-staff fa fa-users"/><strong t-esc="state.data.counts.decoration_staff"/><span class="o_decoration_status_label">Decoration staff</span></button>
+                </section>
+
+                <div class="o_decoration_dashboard_workspace">
+                    <t t-foreach="visibleWidgets()" t-as="widget" t-key="widget">
+                        <section class="o_decoration_panel o_decoration_widget o_decoration_widget_schedule" t-if="widget === 'schedule'">
+                            <div class="o_decoration_panel_header"><div><span class="o_decoration_panel_kicker">Orders</span><h2>Upcoming Decoration Schedule</h2></div><button class="o_decoration_text_button" t-on-click="() => openRangeOrders(['new', 'progress'], 'All Active Decoration Projects')">View all <i class="fa fa-arrow-right"/></button></div>
+                            <div class="o_decoration_event_list">
+                                <t t-if="state.data.upcoming_events.length"><t t-foreach="state.data.upcoming_events" t-as="event" t-key="event.id"><button class="o_decoration_event_row" t-on-click="() => openOrder(event.id)"><div t-attf-class="o_decoration_event_date {{ event.is_today ? 'is-today' : '' }}"><span t-esc="event.is_today ? 'Today' : formatDate(event.date)"/></div><div class="o_decoration_event_copy"><strong t-esc="event.title"/><span><i class="fa fa-user-o"/> <t t-esc="event.customer"/> · <i class="fa fa-tags"/> <t t-esc="event.event_type"/></span></div><div class="o_decoration_event_meta"><span><i class="fa fa-users"/> <t t-esc="event.guests"/></span><strong t-esc="formatMoney(event.value)"/></div><span t-attf-class="o_decoration_event_state state-{{ event.state_key }}" t-esc="event.state"/><i class="fa fa-chevron-right o_decoration_event_arrow"/></button></t></t>
+                                <t t-else=""><div class="o_decoration_empty_state"><i class="fa fa-calendar-o"/><strong>No active projects in this range</strong><span>Adjust the date range or create a decoration project to see it here.</span></div></t>
+                            </div>
+                        </section>
+                        <section class="o_decoration_panel o_decoration_widget o_decoration_widget_workload o_decoration_activity_panel" t-if="widget === 'workload'"><div class="o_decoration_panel_header"><div><span class="o_decoration_panel_kicker">First seven days in range</span><h2>Setup Load</h2></div><span class="o_decoration_legend"><i/>Active Orders</span></div><div class="o_decoration_activity_chart"><t t-foreach="state.data.activity" t-as="day" t-key="day.date"><button t-attf-class="o_decoration_activity_bar {{ day.is_today ? 'is-today' : '' }}" t-on-click="() => openOrders([['event_start', '=', day.date], ['state', 'in', ['new', 'progress']]], day.label + ' Projects')"><span class="o_decoration_activity_count" t-esc="day.count"/><span class="o_decoration_activity_track"><span class="o_decoration_activity_fill" t-att-style="'height:' + day.height + '%'"/></span><span class="o_decoration_activity_label" t-esc="day.label"/></button></t></div><div class="o_decoration_activity_footer"><i class="fa fa-info-circle"/><span><t t-esc="state.data.counts.events_in_range"/> new or live projects within the selected range.</span></div></section>
+                        <section class="o_decoration_panel o_decoration_widget o_decoration_widget_pipeline" t-if="widget === 'pipeline'"><div class="o_decoration_panel_header"><div><span class="o_decoration_panel_kicker">Workflow health</span><h2>Order Pipeline</h2></div></div><div class="o_decoration_pipeline_list"><t t-foreach="state.data.status_rows" t-as="status" t-key="status.key"><button class="o_decoration_pipeline_row" t-on-click="() => openRangeOrdersByState(status.key, status.label + ' Projects')"><span t-attf-class="o_decoration_pipeline_bullet bullet-{{ status.class }}"/><span class="o_decoration_pipeline_name" t-esc="status.label"/><span class="o_decoration_pipeline_track"><span t-attf-class="o_decoration_pipeline_fill fill-{{ status.class }}" t-att-style="'width:' + status.percent + '%'"/></span><strong t-esc="status.count"/></button></t></div></section>
+                        <section class="o_decoration_panel o_decoration_widget o_decoration_widget_event_types" t-if="widget === 'eventTypes'"><div class="o_decoration_panel_header"><div><span class="o_decoration_panel_kicker">Demand mix</span><h2>Popular Event Types</h2></div></div><div class="o_decoration_type_list"><t t-if="state.data.event_types.length"><t t-foreach="state.data.event_types" t-as="eventType" t-key="eventType.name"><div class="o_decoration_type_row"><div class="o_decoration_type_name"><span><i class="fa fa-star"/></span><strong t-esc="eventType.name"/></div><div class="o_decoration_type_bar"><span t-att-style="'width:' + eventType.percent + '%'"/></div><strong><t t-esc="eventType.count"/> <small>projects</small></strong></div></t></t><t t-else=""><div class="o_decoration_empty_compact">Event type performance appears when projects are created in this range.</div></t></div></section>
+                        <section class="o_decoration_panel o_decoration_widget o_decoration_widget_alerts" t-if="widget === 'alerts'"><div class="o_decoration_panel_header"><div><span class="o_decoration_panel_kicker">Action center</span><h2>Operations Alerts</h2></div></div><div class="o_decoration_alert_list"><t t-foreach="state.data.alerts" t-as="alert" t-key="alert.title"><button t-attf-class="o_decoration_alert alert-{{ alert.kind }}" t-on-click="() => openOrders(alert.domain, alert.title)"><span class="o_decoration_alert_icon"><i t-attf-class="fa {{ alert.icon }}"/></span><span class="o_decoration_alert_copy"><strong t-esc="alert.title"/><small t-esc="alert.description"/></span><i class="fa fa-angle-right"/></button></t></div></section>
+                        <section class="o_decoration_panel o_decoration_widget o_decoration_widget_packages o_decoration_insight_band" t-if="widget === 'packages'"><div class="o_decoration_insight_intro"><span class="o_decoration_panel_kicker">Package Pulse</span><h2>What clients are selecting</h2></div><div class="o_decoration_packages_list"><t t-if="state.data.packages.length"><t t-foreach="state.data.packages" t-as="package" t-key="package.name"><div class="o_decoration_package_item"><div class="o_decoration_package_title"><strong t-esc="package.name"/><span><t t-esc="package.count"/> projects</span></div><div class="o_decoration_package_track"><span t-att-style="'width:' + package.percent + '%'"/></div></div></t></t><t t-else=""><span class="o_decoration_empty_compact">Package performance appears after projects are created in this range.</span></t></div></section>
+                    </t>
+                </div>
+            </t>
+        </div>
+    </t>
+</templates>

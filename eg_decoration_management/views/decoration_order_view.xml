@@ -10,7 +10,7 @@
                 <field name="event_start"/>
                 <field name="event_end"/>
                 <field name="approx_guests"/>
-                <field name="state"/>
+                <field name="state" widget="badge"/>
             </list>
         </field>
     </record>
@@ -22,21 +22,23 @@
             <form>
                 <header>
                     <button name="action_state_progress" type="object" string="In Progress" class="btn-primary"
-                            invisible="state !='new'"/>
+                            invisible="state != 'new'"/>
                     <button name="action_create_sale_order" type="object" string="Complete" class="btn-success"
-                            invisible="state !='progress'"/>
+                            invisible="state != 'progress'"/>
                     <button name="action_send_decoration_order_mail" type="object" string="Send Mail"
                             class="btn-primary"/>
                     <button name="action_state_cancel" type="object" string="Cancel" class="btn-danger"
-                            invisible="state !='progress'"/>
+                            invisible="state != 'progress'"/>
                     <field name="state" widget="statusbar" statusbar_visible="new,progress,done"/>
                 </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
-                        <button name="action_view_sale_order" type="object" class="oe_stat_button" icon="fa-bar-chart">
+                        <button name="action_view_sale_order" type="object" class="oe_stat_button" icon="fa-bar-chart"
+                                invisible="not sale_order_count">
                             <field name="sale_order_count" widget="statinfo" string="Sale Orders"/>
                         </button>
-                        <button name="action_view_delivery_orders" type="object" class="oe_stat_button" icon="fa-truck">
+                        <button name="action_view_delivery_orders" type="object" class="oe_stat_button" icon="fa-truck"
+                                invisible="not delivery_count">
                             <field name="delivery_count" widget="statinfo" string="Deliveries"/>
                         </button>
                     </div>
@@ -46,7 +48,9 @@
                     <h2>
                         <field name="title" placeholder="Title" required="1"/>
                     </h2>
+
                     <field name="currency_id" invisible="1"/>
+
                     <group>
                         <group string="Order Details">
                             <field name="lead_id"/>
@@ -59,36 +63,37 @@
                             <field name="event_end" required="1"/>
                         </group>
                     </group>
+
                     <group>
                         <group string="Address Details">
+                            <label for="street" string="Address"/>
                             <div class="o_address_format">
                                 <field name="street" placeholder="Street..." class="o_address_street"/>
                                 <field name="street2" placeholder="Street 2..." class="o_address_street"/>
                                 <field name="city" placeholder="City" class="o_address_city"/>
-                                <field name="state_id" class="o_address_state" placeholder="State"
-                                       can_write="True"
+                                <field name="state_id" class="o_address_state" placeholder="State" can_write="True"
                                        can_create="True" options="{'no_open': True, 'no_quick_create': True}"
                                        context="{'country_id': country_id, 'default_country_id': country_id, 'zip': zip}"/>
                                 <field name="zip" placeholder="ZIP" class="o_address_zip"/>
-                                <field name="country_id" placeholder="Country" can_create="True"
-                                       can_write="True"
+                                <field name="country_id" placeholder="Country" can_create="True" can_write="True"
                                        options="{'no_open': True, 'no_create': True}" class="o_address_country"/>
                             </div>
                         </group>
-
                         <group string="Additional Details">
                             <field name="event_type_id" required="1"/>
                             <field name="user_id" required="1" widget="many2one_avatar_user"/>
                             <field name="company_id" required="1"/>
                         </group>
                     </group>
+
                     <group string="Event Details">
                         <field name="decoration_package_ids" widget="many2many_tags"
                                options="{'color_field': 'color'}"/>
                         <field name="approx_guests"/>
                     </group>
+
                     <notebook>
-                        <page string="Order Item">
+                        <page string="Order Items">
                             <field name="decoration_package_item_ids">
                                 <list editable="bottom">
                                     <control>
@@ -106,7 +111,7 @@
                                     <field name="product_id" domain="[('is_decoration_product','=',True)]"
                                            invisible="display_type"/>
                                     <field name="quantity" invisible="display_type"/>
-                                    <field name="uom_id" readonly="1" invisible="display_type"/>
+                                    <field name="uom_id" readonly="1" invisible="display_type" optional="show"/>
                                     <field name="price_unit" sum="Price Unit" invisible="display_type" widget="monetary"
                                            options="{'currency_field': 'currency_id'}"/>
                                     <field name="total_price" sum="Total Price" readonly="1" invisible="display_type"
@@ -122,7 +127,7 @@
                             </group>
                         </page>
 
-                        <page string="Additinal">
+                        <page string="Additional Items and Services">
                             <field name="additional_item_ids">
                                 <list editable="bottom">
                                     <control>
@@ -130,29 +135,33 @@
                                     </control>
                                     <field name="currency_id" column_invisible="1"/>
                                     <field name="product_id" domain="[('is_additional_item','=',True)]" required="1"/>
-                                    <field name="name"/>
+                                    <field name="name" optional="hide"/>
                                     <field name="quantity" required="1"/>
                                     <field name="uom_id" required="1"/>
                                     <field name="price_unit" widget="monetary" sum="Price Unit"
                                            options="{'currency_field': 'currency_id'}" required="1"/>
                                     <field name="subtotal" widget="monetary" sum="Total" required="1"
                                            options="{'currency_field': 'currency_id'}"/>
-                                    <field name="item_sale_order_id" invisible="not item_sale_order_id" readonly="1"/>
-                                    <field name="item_sale_order_state" widget="badge"
+                                    <field name="item_sale_order_id" invisible="not item_sale_order_id" readonly="1"
+                                           optional="show"/>
+                                    <field name="item_sale_order_state" widget="badge" optional="show"
                                            decoration-success="item_sale_order_state == 'sale'"
                                            decoration-info="item_sale_order_state == 'draft'"
                                            decoration-primary="item_sale_order_state == 'sent'"/>
                                     <button name="action_view_delivery_order" type="object" icon="fa-truck"
-                                            title="View Delivery" invisible="item_sale_order_id == False"/>
+                                            title="View Delivery" invisible="not item_sale_order_id"/>
                                 </list>
                             </field>
+
                             <group>
                                 <group>
                                     <button name="action_create_additional_item_sale_order" type="object"
-                                            class="btn-primary" string="Create Additinal Item Sale Order"/>
+                                            class="btn-primary" string="Create Additional Item Sale Order"/>
                                 </group>
                             </group>
-                            <separator string="Additional Service"/>
+
+                            <separator string="Additional Services"/>
+
                             <field name="additional_service_ids">
                                 <list editable="bottom">
                                     <control>
@@ -161,21 +170,22 @@
                                     <field name="currency_id" column_invisible="1"/>
                                     <field name="product_id" domain="[('is_additional_service','=',True)]"
                                            required="1"/>
-                                    <field name="name"/>
+                                    <field name="name" optional="hide"/>
                                     <field name="price_unit" sum="Price Unit" widget="monetary"
                                            options="{'currency_field': 'currency_id'}"/>
                                     <field name="service_sale_order_id" invisible="not service_sale_order_id"
-                                           readonly="1"/>
+                                           readonly="1" optional="show"/>
                                     <field name="service_sale_order_state" widget="badge"
                                            decoration-success="service_sale_order_state == 'sale'"
                                            decoration-info="service_sale_order_state == 'draft'"
-                                           decoration-primary="service_sale_order_state == 'sent'"/>
+                                           decoration-primary="service_sale_order_state == 'sent'" optional="show"/>
                                 </list>
                             </field>
+
                             <group>
                                 <group>
                                     <button name="action_create_additional_service_sale_order" type="object"
-                                            class="btn-primary" string="Create Additinal Service Sale Order"/>
+                                            class="btn-primary" string="Create Additional Service Sale Order"/>
                                 </group>
                             </group>
 
@@ -192,22 +202,26 @@
                                 </group>
                             </group>
                         </page>
-                        <page string="Decoration Staffs">
+
+                        <page string="Decoration Staff">
                             <field name="employee_ids" widget="many2many_kanban"
                                    domain="[('is_decoration_staff','=',True)]">
                                 <kanban>
+                                    <field name="name"/>
+                                    <field name="job_title"/>
+                                    <field name="image_1920"/>
                                     <templates>
-                                        <t t-name="kanban-box">
-                                            <div class="oe_kanban_global_click o_kanban_card">
-                                                <div class="o_kanban_image">
-                                                    <img t-att-src="kanban_image('hr.employee','image_1920',
-                                    record.id.raw_value)" alt="Employee"/>
+                                        <t t-name="card">
+                                            <div class="d-flex align-items-center gap-3 p-2">
+                                                <div class="flex-shrink-0 text-center" style="width:80px;">
+                                                    <field name="image_1920" widget="image" options="{'size':[80,80]}"
+                                                           class="rounded"/>
                                                 </div>
-                                                <div class="oe_kanban_details">
-                                                    <strong>
+                                                <div class="flex-grow-1">
+                                                    <strong class="d-block">
                                                         <field name="name"/>
                                                     </strong>
-                                                    <div>
+                                                    <div class="text-muted mt-1">
                                                         <field name="job_title"/>
                                                     </div>
                                                 </div>
@@ -239,22 +253,25 @@
                 <field name="total_amount"/>
                 <field name="currency_id"/>
                 <templates>
-                    <t t-name="kanban-box">
-                        <div class="oe_kanban_global_click o_kanban_card p-3">
-                            <div class="d-flex justify-content-between align-items-center mb-2">
-                                <strong class="o_kanban_record_title">
+                    <t t-name="card">
+                        <div class="p-2">
+                            <div class="d-flex justify-content-between align-items-center gap-2 mb-2">
+                                <strong class="o_kanban_record_title text-truncate">
                                     <field name="name"/>
                                 </strong>
                                 <field name="state" widget="badge" class="text-capitalize"/>
                             </div>
+
                             <div class="text-muted mb-2">
                                 <field name="event_type_id"/>
                             </div>
+
                             <div class="mb-2">
-                                <i class="fa fa-user me-1"/>
+                                <i class="fa fa-user me-1" title="Customer"/>
                                 <field name="partner_id"/>
                             </div>
-                            <div class="d-flex justify-content-between mb-2">
+
+                            <div class="d-flex justify-content-between gap-3 mb-2">
                                 <div>
                                     <small class="text-muted">Start Date</small>
                                     <br/>
@@ -266,13 +283,10 @@
                                     <field name="event_end"/>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center mt-2 pt-2 border-top">
-                                <div class="d-flex align-items-center">
-                                    <field name="user_id" widget="many2one_avatar_user"
-                                           options="{'size': 'sm'}"/>
-                                    <span class="ms-2 text-muted">
-                                        <field name="user_id"/>
-                                    </span>
+
+                            <div class="d-flex justify-content-between align-items-center gap-2 mt-2 pt-2 border-top">
+                                <div>
+                                    <field name="user_id" widget="many2one_avatar_user"/>
                                 </div>
                                 <div class="fw-bold text-end">
                                     <field name="total_amount" widget="monetary"
@@ -290,8 +304,7 @@
         <field name="name">decoration.order.calendar</field>
         <field name="model">decoration.order</field>
         <field name="arch" type="xml">
-            <calendar string="Decoration Orders" date_start="event_start" date_stop="event_end" color="state"
-                      mode="month">
+            <calendar date_start="event_start" date_stop="event_end" color="state" mode="month">
                 <field name="name"/>
                 <field name="partner_id"/>
                 <field name="event_type_id"/>
@@ -304,20 +317,7 @@
         <field name="name">decoration.order.pivot</field>
         <field name="model">decoration.order</field>
         <field name="arch" type="xml">
-            <pivot string="Decoration Analysis">
-                <field name="event_type_id" type="row"/>
-                <field name="user_id" type="col"/>
-                <field name="total_amount" type="measure"/>
-                <field name="total_package_item_amount" type="measure"/>
-            </pivot>
-        </field>
-    </record>
-
-    <record id="decoration_order_pivot_view" model="ir.ui.view">
-        <field name="name">decoration.order.pivot</field>
-        <field name="model">decoration.order</field>
-        <field name="arch" type="xml">
-            <pivot string="Decoration Analysis">
+            <pivot>
                 <field name="event_type_id" type="row"/>
                 <field name="user_id" type="col"/>
                 <field name="total_amount" type="measure"/>
@@ -353,7 +353,8 @@
     <record id="action_decoration_order" model="ir.actions.act_window">
         <field name="name">Decoration Orders</field>
         <field name="res_model">decoration.order</field>
-        <field name="view_mode">list,form,kanban,calendar,pivot,graph,activity</field>
+        <field name="view_mode">list,kanban,form,calendar,pivot,graph,activity</field>
+        <field name="search_view_id" ref="decoration_order_search_view"/>
     </record>
 
     <menuitem id="decoration_order_menu" name="Decoration Orders" parent="decoration_main_menu"

@@ -45,7 +45,7 @@
                     <filter name="additional_service" string="Additional Service"
                             domain="[('is_additional_service','=',True)]"/>
                     <separator/>
-                    <group expand="0" string="Group By">
+                    <group>
                         <filter string="Decoration Product" name="group_decoration_product"
                                 context="{'group_by':'is_decoration_product'}"/>
                         <filter string="Decoration Package" name="group_decoration_package"

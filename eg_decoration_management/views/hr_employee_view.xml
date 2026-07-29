@@ -18,6 +18,7 @@
             <field name="res_model">hr.employee</field>
             <field name="view_mode">kanban,list,form</field>
             <field name="domain">[('is_decoration_staff', '=', True)]</field>
+            <field name="context">{'default_is_decoration_staff': True}</field>
         </record>
 
         <menuitem id="decoration_staff_menu" name="Decoration Staff" parent="decoration_main_menu" sequence="70"

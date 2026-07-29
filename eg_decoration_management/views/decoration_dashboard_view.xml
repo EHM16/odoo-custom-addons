@@ -1,0 +1,9 @@
+<odoo>
+    <record id="action_decoration_dashboard" model="ir.actions.client">
+        <field name="name">Dashboard</field>
+        <field name="tag">eg_decoration_management.decoration_dashboard</field>
+    </record>
+
+    <menuitem id="decoration_dashboard_menu" name="Dashboard" parent="decoration_main_menu"
+              action="action_decoration_dashboard" sequence="1"/>
+</odoo>

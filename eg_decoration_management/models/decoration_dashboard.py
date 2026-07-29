@@ -197,7 +197,7 @@ class DecorationDashboard(models.AbstractModel):
                 "kind": "draft",
                 "icon": "fa-paint-brush",
                 "title": _("%s new project(s) are waiting for planning") % new_project_count,
-                "description": "Review event details, package selection, customer requirements, and staff allocation",
+                "description": _("Review event details, package selection, customer requirements, and staff allocation"),
                 "domain": new_decoration_order_domain,
             })
         if not alert_rows:

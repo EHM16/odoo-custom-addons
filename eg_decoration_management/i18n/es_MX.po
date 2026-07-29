@@ -128,11 +128,11 @@ msgstr "Completar"
 
 #: eg_decoration_management/views/decoration_order_view.xml:340
 msgid "Completed"
-msgstr "Completado"
+msgstr "Completada"
 
 #: eg_decoration_management/views/decoration_event_type_view.xml:65
 msgid "Configurations"
-msgstr "Configuración"
+msgstr "Configuraciones"
 
 #: eg_decoration_management/models/decoration_package.py:19 eg_decoration_management/views/decoration_package_view.xml:22
 msgid "Confirm"
@@ -296,7 +296,7 @@ msgstr "Gestión de decoración de eventos, servicios de decoración, banquetes,
 
 #: eg_decoration_management/reports/ir_action_report.xml:5
 msgid "Event Decoration Paper"
-msgstr "Papel para reportes de decoración de eventos"
+msgstr "Formato de papel para decoración de eventos"
 
 #: eg_decoration_management/models/decoration_event_type.py:6
 msgid "Event Decoration Type"
@@ -388,7 +388,7 @@ msgstr "Nombre"
 
 #: eg_decoration_management/views/decoration_order_view.xml:338
 msgid "New"
-msgstr "Nuevo"
+msgstr "Nueva"
 
 #: eg_decoration_management/models/decoration_checklist_item.py:11 eg_decoration_management/models/decoration_package_item.py:11
 msgid "Note"
@@ -412,7 +412,7 @@ msgstr "Núm. de orden"
 
 #: eg_decoration_management/views/decoration_package_view.xml:133
 msgid "Package"
-msgstr "Paquetes"
+msgstr "Paquete"
 
 #: eg_decoration_management/reports/report_decoration_package_template.xml:28
 msgid "Package Information"
@@ -420,7 +420,7 @@ msgstr "Información del paquete"
 
 #: eg_decoration_management/reports/report_decoration_order_template.xml:238
 msgid "Package Items Total"
-msgstr "Total de los elementos del paquete"
+msgstr "Total de elementos del paquete"
 
 #: eg_decoration_management/reports/report_decoration_package_template.xml:32
 msgid "Package Name"
@@ -577,3 +577,583 @@ msgstr "Código postal"
 #: eg_decoration_management/views/crm_leads_view.xml:23 eg_decoration_management/views/decoration_order_view.xml:72
 msgid "ZIP"
 msgstr "Código postal"
+
+#: eg_decoration_management/models/decoration_dashboard.py:8
+msgid "Event Decoration Management Dashboard"
+msgstr "Tablero de gestión de decoración de eventos"
+
+#: eg_decoration_management/models/crm_lead.py:17 eg_decoration_management/models/decoration_order.py:23
+msgid "Event Start"
+msgstr "Inicio del evento"
+
+#: eg_decoration_management/models/crm_lead.py:18 eg_decoration_management/models/decoration_order.py:24
+msgid "Event End"
+msgstr "Fin del evento"
+
+#: eg_decoration_management/models/decoration_order.py:27
+msgid "Street2"
+msgstr "Calle 2"
+
+#: eg_decoration_management/models/decoration_order.py:35
+msgid "Approx Guests"
+msgstr "Número aproximado de invitados"
+
+#: eg_decoration_management/models/decoration_order.py:50
+msgid "Additional Item Total"
+msgstr "Total de elementos adicionales"
+
+#: eg_decoration_management/models/decoration_order.py:52
+msgid "Additional Service Total"
+msgstr "Total de servicios adicionales"
+
+#: eg_decoration_management/models/decoration_order.py:55
+msgid "Package Item Total"
+msgstr "Total de elementos del paquete"
+
+#: eg_decoration_management/views/crm_leads_view.xml:14 eg_decoration_management/views/decoration_order_view.xml:68
+msgid "Address"
+msgstr "Dirección"
+
+#: eg_decoration_management/views/decoration_order_view.xml:96
+msgid "Order Items"
+msgstr "Elementos de la orden"
+
+#: eg_decoration_management/views/decoration_order_view.xml:130
+msgid "Additional Items and Services"
+msgstr "Elementos y servicios adicionales"
+
+#: eg_decoration_management/views/decoration_order_view.xml:159
+msgid "Create Additional Item Sale Order"
+msgstr "Crear orden de venta de elementos adicionales"
+
+#: eg_decoration_management/views/decoration_order_view.xml:188
+msgid "Create Additional Service Sale Order"
+msgstr "Crear orden de venta de servicios adicionales"
+
+#: eg_decoration_management/views/decoration_dashboard_view.xml:3
+msgid "Dashboard"
+msgstr "Tablero"
+
+#: eg_decoration_management/models/decoration_dashboard.py:19
+msgid "vs. previous period"
+msgstr "respecto al periodo anterior"
+
+#: eg_decoration_management/models/decoration_dashboard.py:83
+msgid "Cancelled"
+msgstr "Cancelada"
+
+#: eg_decoration_management/models/decoration_dashboard.py:103
+msgid "Untitled project"
+msgstr "Proyecto sin título"
+
+#: eg_decoration_management/models/decoration_dashboard.py:104
+msgid "Walk-in customer"
+msgstr "Cliente sin registro previo"
+
+#: eg_decoration_management/models/decoration_dashboard.py:105
+msgid "Decoration project"
+msgstr "Proyecto de decoración"
+
+#: eg_decoration_management/models/decoration_dashboard.py:122
+msgid "Other Events"
+msgstr "Otros eventos"
+
+#: eg_decoration_management/models/decoration_dashboard.py:128
+msgid "Custom Project"
+msgstr "Proyecto personalizado"
+
+#: eg_decoration_management/models/decoration_dashboard.py:132
+msgid "Untitled Package"
+msgstr "Paquete sin título"
+
+#: eg_decoration_management/models/decoration_dashboard.py:185
+msgid "%s installation(s) need attention soon"
+msgstr "Montajes que requieren atención próximamente: %s"
+
+#: eg_decoration_management/models/decoration_dashboard.py:186
+msgid "New or in-progress decoration projects are scheduled within the next two days."
+msgstr "Hay proyectos de decoración nuevos o en curso programados para los próximos dos días."
+
+#: eg_decoration_management/models/decoration_dashboard.py:192
+msgid "%s project(s) have no decoration staff"
+msgstr "Proyectos sin personal de decoración: %s"
+
+#: eg_decoration_management/models/decoration_dashboard.py:193
+msgid "Assign a decoration team before material preparation and setup begin."
+msgstr "Asigne un equipo de decoración antes de comenzar la preparación de materiales y el montaje."
+
+#: eg_decoration_management/models/decoration_dashboard.py:199
+msgid "%s new project(s) are waiting for planning"
+msgstr "Proyectos nuevos pendientes de planeación: %s"
+
+#: eg_decoration_management/models/decoration_dashboard.py:207
+msgid "Everything is on track"
+msgstr "Todo está en orden"
+
+#: eg_decoration_management/models/decoration_dashboard.py:208
+msgid "There are no immediate decoration actions requiring attention in this date range."
+msgstr "No hay acciones de decoración inmediatas que requieran atención en este intervalo de fechas."
+
+#: eg_decoration_management/models/decoration_dashboard.py:237
+msgid "opportunities in selected range"
+msgstr "oportunidades en el intervalo seleccionado"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:138
+msgid "Select both a start date and an end date."
+msgstr "Seleccione una fecha de inicio y una fecha de fin."
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:138
+msgid "Date range required"
+msgstr "Se requiere un intervalo de fechas"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:142
+msgid "The start date must be earlier than or equal to the end date."
+msgstr "La fecha de inicio debe ser anterior o igual a la fecha de fin."
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:142
+msgid "Invalid date range"
+msgstr "Intervalo de fechas no válido"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:263
+msgid "Select dates"
+msgstr "Seleccionar fechas"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:266
+msgid "Select end date"
+msgstr "Seleccionar fecha de fin"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:273
+msgid "Not selected"
+msgstr "Sin seleccionar"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:295
+msgid "Project schedule"
+msgstr "Calendario de proyectos"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:295
+msgid "Upcoming decoration projects"
+msgstr "Próximos proyectos de decoración"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:296
+msgid "Setup load"
+msgstr "Carga de montajes"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:296
+msgid "Seven-day project capacity"
+msgstr "Capacidad de proyectos para siete días"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:297
+msgid "Project pipeline"
+msgstr "Flujo de proyectos"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:297
+msgid "Order workflow health"
+msgstr "Estado del flujo de órdenes"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:298
+msgid "Popular event types"
+msgstr "Tipos de evento populares"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:298
+msgid "Demand by event category"
+msgstr "Demanda por categoría de evento"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:299
+msgid "Operations alerts"
+msgstr "Alertas operativas"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:299
+msgid "Tasks needing attention"
+msgstr "Tareas que requieren atención"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:300
+msgid "Package performance"
+msgstr "Desempeño de los paquetes"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:300
+msgid "Most selected decoration packages"
+msgstr "Paquetes de decoración más seleccionados"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:398
+msgid "Date to be set"
+msgstr "Fecha pendiente"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:454
+msgid "New Decoration Order"
+msgstr "Nueva orden de decoración"
+
+#: eg_decoration_management/static/src/js/decoration_dashboard.js:473
+msgid "Decoration Leads"
+msgstr "Iniciativas de decoración"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:7
+msgid "Preparing your decoration overview…"
+msgstr "Preparando el resumen de decoración…"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:14
+msgid "Dashboard data could not be loaded"
+msgstr "No se pudieron cargar los datos del tablero"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:15
+msgid "Please refresh the dashboard. If the problem continues, check access rights for decoration orders."
+msgstr "Actualice el tablero. Si el problema continúa, revise los permisos de acceso a las órdenes de decoración."
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:16
+msgid "Retry"
+msgstr "Reintentar"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:31
+msgid "Date range"
+msgstr "Intervalo de fechas"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:37
+msgid "Select date range"
+msgstr "Seleccionar intervalo de fechas"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:37
+msgid "Choose start and end date"
+msgstr "Elija las fechas de inicio y fin"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:41
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:43
+msgid "End date"
+msgstr "Fecha de fin"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:46
+msgid "This week"
+msgstr "Esta semana"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:47
+msgid "Next 7 days"
+msgstr "Próximos 7 días"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:48
+msgid "This month"
+msgstr "Este mes"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:51
+msgid "Mo"
+msgstr "Lu"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:55
+msgid "Tu"
+msgstr "Ma"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:55
+msgid "We"
+msgstr "Mi"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:46
+msgid "Th"
+msgstr "Ju"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:55
+msgid "Fr"
+msgstr "Vi"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:55
+msgid "Sa"
+msgstr "Sá"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:55
+msgid "Su"
+msgstr "Do"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:62
+msgid "Reset"
+msgstr "Restablecer"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:63
+msgid "Apply range"
+msgstr "Aplicar intervalo"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:67
+msgid "Edit layout"
+msgstr "Editar distribución"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:68
+msgid "New Order"
+msgstr "Nueva orden"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:38
+msgid "Close calendar"
+msgstr "Cerrar calendario"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:51
+msgid "Previous month"
+msgstr "Mes anterior"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:53
+msgid "Next month"
+msgstr "Mes siguiente"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:69
+msgid "Refresh dashboard"
+msgstr "Actualizar tablero"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:76
+msgid "Close layout editor"
+msgstr "Cerrar editor de distribución"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:75
+msgid "Dashboard layout"
+msgstr "Distribución del tablero"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:75
+msgid "Arrange your workspace"
+msgstr "Organice su espacio de trabajo"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:75
+msgid "Drag panels to change their order or hide panels you do not need."
+msgstr "Arrastre los paneles para cambiar su orden u oculte los que no necesite."
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:86
+msgid "Move up"
+msgstr "Subir"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:87
+msgid "Move down"
+msgstr "Bajar"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:92
+msgid "Restore default"
+msgstr "Restaurar distribución predeterminada"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:92
+msgid "Done"
+msgstr "Listo"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:96
+msgid "Active Orders"
+msgstr "Órdenes activas"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:97
+msgid "Booked Value"
+msgstr "Valor contratado"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:98
+msgid "Planned Guests"
+msgstr "Invitados previstos"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:99
+msgid "Open Enquiries"
+msgstr "Consultas abiertas"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:104
+msgid "Live packages"
+msgstr "Paquetes confirmados"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:105
+msgid "Decoration staff"
+msgstr "Personal de decoración"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:96
+msgid "Orders"
+msgstr "Órdenes"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:111
+msgid "Upcoming Decoration Schedule"
+msgstr "Próximos eventos de decoración"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:111
+msgid "View all"
+msgstr "Ver todo"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:114
+msgid "No active projects in this range"
+msgstr "No hay proyectos activos en este intervalo"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:114
+msgid "Adjust the date range or create a decoration project to see it here."
+msgstr "Ajuste el intervalo de fechas o cree un proyecto de decoración para verlo aquí."
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:117
+msgid "First seven days in range"
+msgstr "Primeros siete días del intervalo"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:117
+msgid "Setup Load"
+msgstr "Carga de montajes"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:117
+msgid "new or live projects within the selected range."
+msgstr "proyectos nuevos o activos dentro del intervalo seleccionado."
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:118
+msgid "Workflow health"
+msgstr "Estado del flujo"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:118
+msgid "Order Pipeline"
+msgstr "Flujo de órdenes"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:119
+msgid "Demand mix"
+msgstr "Distribución de la demanda"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:119
+msgid "Popular Event Types"
+msgstr "Tipos de evento populares"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:114
+msgid "projects"
+msgstr "proyectos"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:119
+msgid "Event type performance appears when projects are created in this range."
+msgstr "El desempeño por tipo de evento aparecerá cuando se creen proyectos en este intervalo."
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:120
+msgid "Action center"
+msgstr "Centro de acciones"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:120
+msgid "Operations Alerts"
+msgstr "Alertas operativas"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:121
+msgid "Package Pulse"
+msgstr "Actividad de los paquetes"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:121
+msgid "What clients are selecting"
+msgstr "Lo que eligen los clientes"
+
+#: eg_decoration_management/static/src/xml/decoration_dashboard.xml:121
+msgid "Package performance appears after projects are created in this range."
+msgstr "El desempeño de los paquetes aparecerá cuando se creen proyectos en este intervalo."
+
+#: eg_decoration_management/data/demo_data.xml:3
+msgid "Birthday Party"
+msgstr "Fiesta de cumpleaños"
+
+#: eg_decoration_management/data/demo_data.xml:4
+msgid "Fun and colorful decorations with balloons, banners, and themed props."
+msgstr "Decoración divertida y colorida con globos, pancartas y accesorios temáticos."
+
+#: eg_decoration_management/data/demo_data.xml:7
+msgid "Wedding Celebration"
+msgstr "Celebración de boda"
+
+#: eg_decoration_management/data/demo_data.xml:8
+msgid "Elegant wedding decorations with floral setups, stage decor, and lighting."
+msgstr "Decoración elegante para bodas con arreglos florales, decoración de escenario e iluminación."
+
+#: eg_decoration_management/data/demo_data.xml:11
+msgid "Corporate Event"
+msgstr "Evento corporativo"
+
+#: eg_decoration_management/data/demo_data.xml:12
+msgid "Professional decoration arrangements for conferences and meetings."
+msgstr "Montajes de decoración profesionales para conferencias y reuniones."
+
+#: eg_decoration_management/data/demo_data.xml:15
+msgid "Anniversary Party"
+msgstr "Fiesta de aniversario"
+
+#: eg_decoration_management/data/demo_data.xml:16
+msgid "Romantic decorations with candles, flowers, and ambient lighting."
+msgstr "Decoración romántica con velas, flores e iluminación ambiental."
+
+#: eg_decoration_management/data/demo_data.xml:19
+msgid "Festival / Holiday Event"
+msgstr "Festival o celebración festiva"
+
+#: eg_decoration_management/data/demo_data.xml:20
+msgid "Vibrant decorations for festivals, holidays, and cultural events."
+msgstr "Decoración vibrante para festivales, celebraciones y eventos culturales."
+
+#: eg_decoration_management/data/demo_data.xml:24
+msgid "Birthday Party Template"
+msgstr "Plantilla para fiesta de cumpleaños"
+
+#: eg_decoration_management/data/demo_data.xml:27
+msgid "Wedding Decoration Template"
+msgstr "Plantilla de decoración para bodas"
+
+#: eg_decoration_management/data/demo_data.xml:30
+msgid "Corporate Event Template"
+msgstr "Plantilla para evento corporativo"
+
+#: eg_decoration_management/data/demo_data.xml:35
+msgid "Decorative Elements"
+msgstr "Elementos decorativos"
+
+#: eg_decoration_management/data/demo_data.xml:41
+msgid "Balloons"
+msgstr "Globos"
+
+#: eg_decoration_management/data/demo_data.xml:46
+msgid "Cake Table Setup"
+msgstr "Montaje de mesa para pastel"
+
+#: eg_decoration_management/data/demo_data.xml:51
+msgid "Stage Decoration"
+msgstr "Decoración de escenario"
+
+#: eg_decoration_management/data/demo_data.xml:57
+msgid "Floral Arch"
+msgstr "Arco floral"
+
+#: eg_decoration_management/data/demo_data.xml:62
+msgid "Stage & Ambient Lighting"
+msgstr "Decoración de escenario e iluminación ambiental"
+
+#: eg_decoration_management/data/demo_data.xml:67
+msgid "Conference Setup"
+msgstr "Montaje para conferencia"
+
+#: eg_decoration_management/data/demo_data.xml:73
+msgid "Stage Backdrop & Branding"
+msgstr "Fondo de escenario e identidad de marca"
+
+#: eg_decoration_management/data/demo_data.xml:78
+msgid "Audio & Visual Equipment"
+msgstr "Equipo audiovisual"
+
+#: eg_decoration_management/data/demo_data.xml:83
+msgid "Demo Decoration Staff"
+msgstr "Personal de decoración de demostración"
+
+#: eg_decoration_management/data/demo_data.xml:85
+msgid "Decoration Supervisor"
+msgstr "Supervisor de decoración"
+
+#: eg_decoration_management/data/demo_data.xml:92
+msgid "Decoration Balloons Pack"
+msgstr "Paquete de globos decorativos"
+
+#: eg_decoration_management/data/demo_data.xml:99
+msgid "Stage Decoration Package"
+msgstr "Paquete de decoración de escenario"
+
+#: eg_decoration_management/data/demo_data.xml:106
+msgid "Flower Vase (Additional Item)"
+msgstr "Florero (elemento adicional)"
+
+#: eg_decoration_management/data/demo_data.xml:113
+msgid "Extra Lighting Service"
+msgstr "Servicio de iluminación adicional"
+
+#: eg_decoration_management/data/demo_data.xml:121
+msgid "Birthday Basic Decoration Package"
+msgstr "Paquete básico de decoración para cumpleaños"
+
+#: eg_decoration_management/data/demo_data.xml:1
+msgid "Complete birthday decoration package including balloons, banners, lighting, and basic furniture setup. Ideal for home and small venue parties."
+msgstr "Paquete completo de decoración para cumpleaños que incluye globos, pancartas, iluminación y montaje básico de mobiliario. Ideal para fiestas en casa y recintos pequeños."
+
+#: eg_decoration_management/data/demo_data.xml:133
+msgid "Decorative Items"
+msgstr "Elementos decorativos"
+
+#: eg_decoration_management/data/demo_data.xml:62
+msgid "Lighting"
+msgstr "Iluminación"
+
+#: eg_decoration_management/data/demo_data.xml:159
+msgid "Demo Birthday Event with Catering"
+msgstr "Evento de cumpleaños de demostración con banquete"

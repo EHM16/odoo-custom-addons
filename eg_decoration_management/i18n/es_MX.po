@@ -686,6 +686,10 @@ msgstr "Asigne un equipo de decoración antes de comenzar la preparación de mat
 msgid "%s new project(s) are waiting for planning"
 msgstr "Proyectos nuevos pendientes de planeación: %s"
 
+#: eg_decoration_management/models/decoration_dashboard.py:200
+msgid "Review event details, package selection, customer requirements, and staff allocation"
+msgstr "Revise los detalles del evento, la selección del paquete, los requisitos del cliente y la asignación de personal."
+
 #: eg_decoration_management/models/decoration_dashboard.py:207
 msgid "Everything is on track"
 msgstr "Todo está en orden"
